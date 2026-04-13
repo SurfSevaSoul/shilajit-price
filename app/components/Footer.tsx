@@ -59,10 +59,13 @@ export default function Footer() {
             </h3>
             <ul className="space-y-2">
               {[
-                { label: "Compare Prices", href: "#deals" },
-                { label: "How It Works", href: "#how-it-works" },
+                { label: "Compare Prices", href: "/#deals" },
+                { label: "How It Works", href: "/#how-it-works" },
                 { label: "FAQ", href: "/#faq" },
                 { label: "Blog", href: "/blog" },
+                { label: "About", href: "/about" },
+                { label: "Disclaimer", href: "/disclaimer" },
+                { label: "Privacy Policy", href: "/privacy" },
                 {
                   label: "Black Lotus Shilajit",
                   href: AFFILIATE_LINKS.base,

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Footer from "../../components/Footer";
+import RelatedPosts from "../../components/RelatedPosts";
 
 const AFFILIATE_RESIN =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
@@ -702,8 +703,11 @@ export default function BestShilajitResin2026() {
               </div>
             </section>
 
+            {/* Related posts */}
+            <RelatedPosts currentSlug="best-shilajit-resin-2026" />
+
             {/* Back to blog */}
-            <div className="flex items-center gap-3 pt-4 border-t border-[#2a4535]">
+            <div className="flex items-center gap-3 pt-4">
               <Link
                 href="/blog"
                 className="inline-flex items-center gap-2 text-sm text-[#9ec9ad] hover:text-emerald-400 transition-colors"

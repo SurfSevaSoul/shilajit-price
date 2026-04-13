@@ -25,5 +25,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     ...blogPostEntries,
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: new Date("2026-04-13"),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${BASE_URL}/disclaimer`,
+      lastModified: new Date("2026-04-13"),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/privacy`,
+      lastModified: new Date("2026-04-13"),
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
   ];
 }
