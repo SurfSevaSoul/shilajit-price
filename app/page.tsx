@@ -93,6 +93,12 @@ export default function Home() {
             >
               FAQ
             </a>
+            <a
+              href="/blog"
+              className="text-[#9ec9ad] hover:text-emerald-400 transition-colors"
+            >
+              Blog
+            </a>
           </div>
 
           <a

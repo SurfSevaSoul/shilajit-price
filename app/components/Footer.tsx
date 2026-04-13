@@ -37,7 +37,8 @@ export default function Footer() {
               {[
                 { label: "Compare Prices", href: "#deals" },
                 { label: "How It Works", href: "#how-it-works" },
-                { label: "FAQ", href: "#faq" },
+                { label: "FAQ", href: "/#faq" },
+                { label: "Blog", href: "/blog" },
                 {
                   label: "Black Lotus Shilajit",
                   href: AFFILIATE_LINKS.base,
