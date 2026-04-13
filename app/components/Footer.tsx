@@ -1,10 +1,34 @@
 import { AFFILIATE_LINKS } from "../data/products";
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "ShilajitPrice",
+  alternateName: "ShilajitPrice.com",
+  url: "https://shilajitprice.com",
+  description:
+    "Independent shilajit price comparison site. We research, test, and rank shilajit supplements so you can buy with confidence.",
+  sameAs: ["https://shilajitprice.com"],
+  foundingDate: "2026",
+  areaServed: "Worldwide",
+  knowsAbout: [
+    "Shilajit supplements",
+    "Fulvic acid",
+    "Supplement price comparison",
+    "Certificate of Analysis (COA)",
+    "Himalayan shilajit",
+  ],
+};
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
     <footer className="bg-[#0a1a10] border-t border-[#1e3527]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
       {/* Main footer */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">

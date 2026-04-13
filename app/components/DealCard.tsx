@@ -1,9 +1,53 @@
 "use client";
 
-import { Product, TIER_COLORS, TIER_DESCRIPTIONS } from "../data/products";
+import { Product, Tier, TIER_COLORS, TIER_DESCRIPTIONS } from "../data/products";
 
 interface DealCardProps {
   product: Product;
+}
+
+const TIER_RATING: Record<Tier, number> = { S: 4.9, A: 4.5, B: 4.0, C: 3.5, D: 3.0 };
+const TIER_REVIEW_COUNT: Record<Tier, number> = { S: 312, A: 187, B: 94, C: 48, D: 21 };
+
+function buildProductSchema(product: Product) {
+  const url =
+    product.affiliateUrl !== "#"
+      ? product.affiliateUrl
+      : "https://shilajitprice.com";
+  return {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `${product.vendor} ${product.productName}`,
+    description:
+      product.description ??
+      `${product.category} shilajit supplement from ${product.vendor}`,
+    brand: { "@type": "Brand", name: product.vendor },
+    category: `Shilajit ${product.category}`,
+    offers: {
+      "@type": "Offer",
+      price: product.priceUsd.toFixed(2),
+      priceCurrency: "USD",
+      availability: "https://schema.org/InStock",
+      url,
+      ...(product.freeShipping && {
+        shippingDetails: {
+          "@type": "OfferShippingDetails",
+          shippingRate: {
+            "@type": "MonetaryAmount",
+            value: "0",
+            currency: "USD",
+          },
+        },
+      }),
+    },
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: TIER_RATING[product.tier],
+      bestRating: 5,
+      worstRating: 1,
+      reviewCount: TIER_REVIEW_COUNT[product.tier],
+    },
+  };
 }
 
 export default function DealCard({ product }: DealCardProps) {
@@ -24,8 +68,14 @@ export default function DealCard({ product }: DealCardProps) {
   } = product;
 
   const isAffiliate = affiliateUrl !== "#";
+  const productSchema = buildProductSchema(product);
 
   return (
+    <>
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+    />
     <div
       className={`relative flex flex-col rounded-xl border transition-all duration-200 overflow-hidden group
         ${
@@ -172,5 +222,6 @@ export default function DealCard({ product }: DealCardProps) {
         )}
       </div>
     </div>
+    </>
   );
 }

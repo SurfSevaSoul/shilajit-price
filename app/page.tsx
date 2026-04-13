@@ -2,6 +2,53 @@
 
 import { useState, useMemo } from "react";
 import { PRODUCTS, CATEGORIES, Category, Tier } from "./data/products";
+
+const BASE_URL = "https://shilajitprice.com";
+
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "ShilajitPrice",
+  alternateName: "ShilajitPrice.com",
+  url: BASE_URL,
+  description:
+    "Independent shilajit price comparison site. Compare lab-tested shilajit resin, capsules, gummies, tinctures, and honey from top vendors.",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: { "@type": "EntryPoint", urlTemplate: `${BASE_URL}/?q={search_term_string}` },
+    "query-input": "required name=search_term_string",
+  },
+};
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Best Shilajit Products — Price Comparison",
+  description: "Ranked list of top shilajit supplements compared by price per gram, fulvic acid content, and COA transparency.",
+  url: BASE_URL,
+  numberOfItems: PRODUCTS.length,
+  itemListElement: PRODUCTS.map((p, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${p.vendor} — ${p.productName}`,
+    url: p.affiliateUrl !== "#" ? p.affiliateUrl : BASE_URL,
+    item: {
+      "@type": "Product",
+      name: `${p.vendor} ${p.productName}`,
+      description: p.description ?? `${p.category} shilajit supplement`,
+      offers: {
+        "@type": "Offer",
+        price: p.priceUsd.toFixed(2),
+        priceCurrency: "USD",
+        availability: "https://schema.org/InStock",
+        url: p.affiliateUrl !== "#" ? p.affiliateUrl : BASE_URL,
+        shippingDetails: p.freeShipping
+          ? { "@type": "OfferShippingDetails", shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "USD" } }
+          : undefined,
+      },
+    },
+  })),
+};
 import HeroSection from "./components/HeroSection";
 import CategoryFilter from "./components/CategoryFilter";
 import SidebarFilters, { FilterState } from "./components/SidebarFilters";
@@ -64,6 +111,16 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex flex-col">
+      {/* Structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }}
+      />
+
       {/* Nav */}
       <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">

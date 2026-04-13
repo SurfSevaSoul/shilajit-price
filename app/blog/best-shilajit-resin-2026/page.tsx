@@ -28,6 +28,31 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: "https://shilajitprice.com",
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Blog",
+      item: "https://shilajitprice.com/blog",
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: "Best Shilajit Resin in 2026 — Prices Compared",
+      item: "https://shilajitprice.com/blog/best-shilajit-resin-2026",
+    },
+  ],
+};
+
 const faqSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -80,15 +105,33 @@ const articleSchema = {
   "@type": "Article",
   headline: "Best Shilajit Resin in 2026 — Prices Compared",
   description:
-    "We compared 6 top shilajit resins on fulvic acid %, COA quality, and price per gram.",
+    "We compared 6 top shilajit resins on fulvic acid %, COA quality, and price per gram. Here's the definitive ranking for 2026.",
   datePublished: "2026-04-01",
   dateModified: "2026-04-13",
-  author: { "@type": "Organization", name: "ShilajitPrice.com" },
-  publisher: {
+  url: "https://shilajitprice.com/blog/best-shilajit-resin-2026",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://shilajitprice.com/blog/best-shilajit-resin-2026",
+  },
+  author: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
     url: "https://shilajitprice.com",
   },
+  publisher: {
+    "@type": "Organization",
+    name: "ShilajitPrice.com",
+    url: "https://shilajitprice.com",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://shilajitprice.com/logo.png",
+      width: 200,
+      height: 60,
+    },
+  },
+  keywords: "best shilajit resin 2026, shilajit resin price comparison, pure shilajit resin",
+  articleSection: "Buying Guide",
+  wordCount: 1350,
 };
 
 const COMPARISON_TABLE = [
@@ -181,6 +224,10 @@ export default function BestShilajitResin2026() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Nav */}
