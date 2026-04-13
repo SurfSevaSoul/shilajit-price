@@ -114,11 +114,16 @@ const articleSchema = {
     "@type": "WebPage",
     "@id": "https://shilajitprice.com/blog/best-shilajit-resin-2026",
   },
-  author: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: "https://shilajitprice.com",
-  },
+  author: [
+    { "@type": "Organization", name: "ShilajitPrice.com", url: "https://shilajitprice.com" },
+    {
+      "@type": "Person",
+      name: "ShilajitPrice Research Team",
+      jobTitle: "Supplement Research & Price Analysis",
+      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: "https://shilajitprice.com" },
+      knowsAbout: ["Shilajit resin", "Fulvic acid potency", "Supplement price comparison", "COA analysis"],
+    },
+  ],
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
@@ -358,7 +363,7 @@ export default function BestShilajitResin2026() {
                 <h3 className="text-lg font-bold text-emerald-400 mb-2">1. Fulvic acid percentage (aim for 60%+)</h3>
                 <div className="space-y-3 text-sm text-[#9ec9ad] leading-relaxed">
                   <p>
-                    Fulvic acid is the primary active compound in shilajit. It&apos;s the molecule responsible for the mineral transport, antioxidant activity, and cellular energy benefits that make shilajit worth taking. A quality resin should contain <strong className="text-[#e8f4ec]">at least 60% fulvic acid</strong>, with premium grades reaching 80–85%.
+                    <Link href="/blog/what-is-fulvic-acid" className="text-emerald-400 hover:underline">Fulvic acid</Link> is the primary active compound in shilajit. It&apos;s the molecule responsible for the mineral transport, antioxidant activity, and cellular energy benefits that make shilajit worth taking. A quality resin should contain <strong className="text-[#e8f4ec]">at least 60% fulvic acid</strong>, with premium grades reaching 80–85%.
                   </p>
                   <p>
                     Be skeptical of any brand that doesn&apos;t list their fulvic acid percentage or only provides it &quot;on request.&quot; That usually means the number isn&apos;t one they want you to see. Black Lotus publishes 85%+ fulvic acid on their COA, verified by an independent lab.

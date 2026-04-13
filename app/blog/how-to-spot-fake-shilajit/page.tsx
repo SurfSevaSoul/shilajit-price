@@ -39,7 +39,16 @@ const articleSchema = {
   dateModified: "2026-04-13",
   url: POST_URL,
   mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
+  author: [
+    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
+    {
+      "@type": "Person",
+      name: "ShilajitPrice Research Team",
+      jobTitle: "Supplement Research & Price Analysis",
+      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
+      knowsAbout: ["Shilajit authenticity", "Supplement adulteration", "COA verification", "Lab testing"],
+    },
+  ],
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
@@ -205,7 +214,7 @@ export default function HowToSpotFakeShilajit() {
               <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The fake shilajit problem is bigger than you think</h2>
               <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
                 <p>
-                  In 2023, independent lab testing of popular shilajit products sold on major e-commerce platforms found that a significant portion contained little to no detectable fulvic acid — the primary bioactive compound that defines authentic shilajit. Some contained heavy metals at levels above safe limits. Others were nothing more than leonardite (a coal derivative) ground into powder and dyed dark brown.
+                  In 2023, independent lab testing of popular shilajit products sold on major e-commerce platforms found that a significant portion contained little to no detectable <Link href="/blog/what-is-fulvic-acid" className="text-emerald-400 hover:underline">fulvic acid</Link> — the primary bioactive compound that defines authentic shilajit. Some contained heavy metals at levels above safe limits. Others were nothing more than leonardite (a coal derivative) ground into powder and dyed dark brown.
                 </p>
                 <p>
                   Authentic, high-grade shilajit is expensive to source and purify correctly. A legitimate 30g jar of resin costs real money to produce. A fake that mimics its appearance can be made for cents. Without meaningful regulatory oversight or third-party verification requirements on supplement marketplaces, the economics strongly favor adulteration.

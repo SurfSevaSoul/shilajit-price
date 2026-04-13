@@ -6,8 +6,8 @@ interface DealCardProps {
   product: Product;
 }
 
-const TIER_RATING: Record<Tier, number> = { S: 4.9, A: 4.5, B: 4.0, C: 3.5, D: 3.0 };
-const TIER_REVIEW_COUNT: Record<Tier, number> = { S: 312, A: 187, B: 94, C: 48, D: 21 };
+// Editorial quality score assigned by ShilajitPrice.com methodology (not consumer reviews)
+const TIER_EDITORIAL_SCORE: Record<Tier, number> = { S: 4.9, A: 4.5, B: 4.0, C: 3.5, D: 3.0 };
 
 function buildProductSchema(product: Product) {
   const url =
@@ -42,10 +42,11 @@ function buildProductSchema(product: Product) {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: TIER_RATING[product.tier],
+      ratingValue: TIER_EDITORIAL_SCORE[product.tier],
       bestRating: 5,
       worstRating: 1,
-      reviewCount: TIER_REVIEW_COUNT[product.tier],
+      ratingCount: 1,
+      description: `ShilajitPrice.com editorial quality score based on COA verification, fulvic acid content, sourcing transparency, and price-per-gram analysis.`,
     },
   };
 }

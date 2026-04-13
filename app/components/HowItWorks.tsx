@@ -1,3 +1,37 @@
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How We Compare and Rank Shilajit Supplements",
+  description:
+    "Our 4-step process to independently evaluate and rank shilajit products by COA quality, fulvic acid content, price per gram, and sourcing transparency.",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Research & Test",
+      text: "We analyze lab reports, COAs, and third-party test results for every product. Only brands with verifiable testing make our list.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Calculate Value",
+      text: "Every product is broken down to a price-per-gram to give you an apples-to-apples comparison regardless of container size.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Assign Tiers",
+      text: "Products earn S through D tier ratings based on purity, transparency, COA quality, source credibility, and overall value.",
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "You Save Time & Money",
+      text: "Click through to the best deal for your needs. No guesswork — just the best shilajit at the best price, verified.",
+    },
+  ],
+};
+
 const STEPS = [
   {
     number: "01",
@@ -32,6 +66,10 @@ const STEPS = [
 export default function HowItWorks() {
   return (
     <section className="py-16 sm:py-20 bg-[#0d1f14]" id="how-it-works">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center mb-12">

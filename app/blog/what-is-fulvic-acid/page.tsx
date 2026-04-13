@@ -39,7 +39,16 @@ const articleSchema = {
   dateModified: "2026-04-13",
   url: POST_URL,
   mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
+  author: [
+    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
+    {
+      "@type": "Person",
+      name: "ShilajitPrice Research Team",
+      jobTitle: "Supplement Research & Price Analysis",
+      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
+      knowsAbout: ["Shilajit", "Fulvic acid", "Supplement COA analysis", "Himalayan minerals"],
+    },
+  ],
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
@@ -116,12 +125,37 @@ function CheckIcon() {
   );
 }
 
+const definedTermSchemas = [
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: "Fulvic Acid",
+    description:
+      "A naturally occurring organic acid with low molecular weight found in shilajit. Formed over millennia from decomposed plant matter in mineral-rich mountain rock. Acts as a carrier molecule, transporting minerals into cells and enhancing mitochondrial function.",
+    sameAs: "https://en.wikipedia.org/wiki/Fulvic_acid",
+    inDefinedTermSet: { "@type": "DefinedTermSet", name: "Shilajit Supplement Glossary" },
+    inLanguage: "en-US",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    name: "Certificate of Analysis (COA)",
+    description:
+      "A third-party laboratory document verifying a supplement's contents. For shilajit, a valid COA must be from an ISO 17025-accredited lab and show: fulvic acid percentage with test method, heavy metals panel (lead, arsenic, mercury, cadmium below FDA limits), and microbial testing results.",
+    inDefinedTermSet: { "@type": "DefinedTermSet", name: "Shilajit Supplement Glossary" },
+    inLanguage: "en-US",
+  },
+];
+
 export default function WhatIsFulvicAcid() {
   return (
     <div className="min-h-screen flex flex-col bg-[#0d1f14]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      {definedTermSchemas.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      ))}
 
       {/* Nav */}
       <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
@@ -324,7 +358,7 @@ export default function WhatIsFulvicAcid() {
               <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">How to verify fulvic acid content before buying</h2>
               <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
                 <p>
-                  Any brand can print &quot;85% fulvic acid&quot; on a label. Without third-party verification, that number means nothing. Here&apos;s the standard we apply to every product on this site:
+                  Any brand can print &quot;85% fulvic acid&quot; on a label. Without third-party verification, that number means nothing. Here&apos;s the standard we apply to every product on this site. If you want to go deeper, our full guide on <Link href="/blog/how-to-spot-fake-shilajit" className="text-emerald-400 hover:underline">how to spot fake shilajit</Link> covers 5 at-home tests plus a complete red flags checklist.
                 </p>
 
                 <div className="space-y-3">
