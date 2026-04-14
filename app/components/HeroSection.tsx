@@ -32,29 +32,28 @@ export default function HeroSection() {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-900/50 border border-emerald-700/50 text-emerald-400 text-xs font-semibold mb-6 tracking-wide">
               <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-              Updated April 2026 — 15 Products Compared
+              Updated April 2026 — 55+ Products, 20+ Brands
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#e8f4ec] leading-tight tracking-tight mb-5">
-              Find the{" "}
+              The Most Complete{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-300">
-                Best Shilajit
+                Shilajit Database
               </span>{" "}
-              Price Online
+              — Prices, Purity & Lab Data
             </h1>
 
             <p className="text-lg text-[#9ec9ad] leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-              We compare lab-tested shilajit from top vendors so you get the
-              most fulvic acid per dollar. Every product rated on purity, COA
-              transparency, and value.
+              We track prices, purity scores, fulvic acid content, COA availability, and sourcing data across 55+ shilajit products from 20+ brands — so you never overpay or buy fake shilajit again.
             </p>
 
             {/* Stats row */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-6 mb-8">
               {[
-                { label: "Products Tracked", value: "15+" },
-                { label: "Vendors Compared", value: "8" },
-                { label: "Lab-Tested Only", value: "100%" },
+                { label: "Products Tracked", value: "55+" },
+                { label: "Brands Compared", value: "20+" },
+                { label: "Data Points Per Product", value: "25+" },
+                { label: "Updated", value: "Weekly" },
               ].map(({ label, value }) => (
                 <div key={label} className="text-center">
                   <div className="text-2xl font-black text-emerald-400">

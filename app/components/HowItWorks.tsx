@@ -3,31 +3,31 @@ const howToSchema = {
   "@type": "HowTo",
   name: "How We Compare and Rank Shilajit Supplements",
   description:
-    "Our 4-step process to independently evaluate and rank shilajit products by COA quality, fulvic acid content, price per gram, and sourcing transparency.",
+    "Our 4-step process to independently evaluate and rank shilajit products by purity score, fulvic acid content, COA quality, lab testing, sourcing transparency, and price per gram.",
   step: [
     {
       "@type": "HowToStep",
       position: 1,
-      name: "Research & Test",
-      text: "We analyze lab reports, COAs, and third-party test results for every product. Only brands with verifiable testing make our list.",
+      name: "Collect Purity & Lab Data",
+      text: "We gather COAs, third-party lab reports, fulvic acid percentages, heavy metals test results, and sourcing details for every product. We track 25+ data points per product so you can compare what actually matters.",
     },
     {
       "@type": "HowToStep",
       position: 2,
-      name: "Calculate Value",
-      text: "Every product is broken down to a price-per-gram to give you an apples-to-apples comparison regardless of container size.",
+      name: "Calculate Price & Value",
+      text: "Every product is broken down to price-per-gram and cost-per-serving for an apples-to-apples comparison regardless of container size or form factor.",
     },
     {
       "@type": "HowToStep",
       position: 3,
-      name: "Assign Tiers",
-      text: "Products earn S through D tier ratings based on purity, transparency, COA quality, source credibility, and overall value.",
+      name: "Score & Assign Tiers",
+      text: "Products receive a 1–10 Purity Score based on COA availability, third-party testing, fulvic acid content, heavy metals testing, sourcing transparency, and GMP certification. Then S–D tier ratings are assigned based on the combined purity and value analysis.",
     },
     {
       "@type": "HowToStep",
       position: 4,
-      name: "You Save Time & Money",
-      text: "Click through to the best deal for your needs. No guesswork — just the best shilajit at the best price, verified.",
+      name: "You Shop with Confidence",
+      text: "Filter by tier, purity score, COA status, source location, and budget. Click through to the best deal for your needs — no guesswork, no fake reviews, just verified data.",
     },
   ],
 };
@@ -36,30 +36,30 @@ const STEPS = [
   {
     number: "01",
     icon: "🔬",
-    title: "We Research & Test",
+    title: "We Collect Purity & Lab Data",
     description:
-      "We analyze lab reports, COAs, and third-party test results for every product. Only brands with verifiable testing make our list.",
+      "We gather COAs, third-party lab reports, fulvic acid percentages, heavy metals results, and sourcing details — 25+ data points tracked per product.",
   },
   {
     number: "02",
     icon: "⚖️",
-    title: "We Calculate Value",
+    title: "We Calculate Price & Value",
     description:
-      "Every product is broken down to a price-per-gram to give you an apples-to-apples comparison regardless of container size.",
+      "Every product is broken down to price-per-gram and cost-per-serving for a true apples-to-apples comparison across all form factors and sizes.",
   },
   {
     number: "03",
     icon: "🏅",
-    title: "We Assign Tiers",
+    title: "We Score & Rank",
     description:
-      "Products earn S through D tier ratings based on purity, transparency, COA quality, source credibility, and overall value.",
+      "Products receive a 1–10 Purity Score and an S–D Tier rating based on COA quality, lab testing, fulvic acid content, source credibility, and value.",
   },
   {
     number: "04",
     icon: "🛒",
-    title: "You Save Time & Money",
+    title: "You Shop with Confidence",
     description:
-      "Click through to the best deal for your needs. No guesswork — just the best shilajit at the best price, verified.",
+      "Filter by tier, purity score, COA status, source location, and budget. No guesswork — just verified lab data and the best price for what you need.",
   },
 ];
 
@@ -80,8 +80,7 @@ export default function HowItWorks() {
             How We Compare Shilajit
           </h2>
           <p className="text-[#9ec9ad] max-w-lg mx-auto text-sm leading-relaxed">
-            We do the heavy lifting so you don&apos;t have to. Here&apos;s exactly how
-            every product on this site gets evaluated.
+            We track purity data, lab results, and pricing — so you get the most fulvic acid per dollar and never waste money on unverified products.
           </p>
         </div>
 
@@ -111,8 +110,26 @@ export default function HowItWorks() {
           ))}
         </div>
 
+        {/* Data points callout */}
+        <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3">
+          {[
+            { icon: "📋", label: "COA & Lab Reports" },
+            { icon: "⚗️", label: "Fulvic Acid %" },
+            { icon: "🏔️", label: "Source Location" },
+            { icon: "🧪", label: "Heavy Metals Testing" },
+          ].map(({ icon, label }) => (
+            <div
+              key={label}
+              className="flex items-center gap-2.5 bg-[#182b1f] border border-[#2a4535] rounded-lg px-3 py-2.5"
+            >
+              <span className="text-base shrink-0">{icon}</span>
+              <span className="text-[11px] text-[#9ec9ad] font-medium leading-snug">{label}</span>
+            </div>
+          ))}
+        </div>
+
         {/* Tier explanation */}
-        <div className="mt-12 bg-[#182b1f] border border-[#2a4535] rounded-xl p-6">
+        <div className="mt-5 bg-[#182b1f] border border-[#2a4535] rounded-xl p-6">
           <h3 className="text-base font-bold text-[#e8f4ec] mb-4 text-center">
             Understanding Our Tier System
           </h3>
