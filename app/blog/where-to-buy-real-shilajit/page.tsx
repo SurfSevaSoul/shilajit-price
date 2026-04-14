@@ -244,6 +244,7 @@ export default function WhereToBuyRealShilajit() {
         currentSlug="where-to-buy-real-shilajit"
         breadcrumbLabel="Where to Buy Real Shilajit"
         faqItems={faqItems}
+        ctaVariant="pure-himalayan"
       >
         <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
           <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Vendor rankings are based on documented quality and transparency — not commission rates.

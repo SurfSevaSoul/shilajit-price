@@ -239,6 +239,9 @@ export default function DealCard({ product }: DealCardProps) {
               Check Price →
             </span>
           )}
+          <p className="text-[9px] text-[#5d8c6e] text-center mt-1.5">
+            Price verified April 2026. Confirm at checkout.
+          </p>
         </div>
       </div>
     </>

@@ -27,8 +27,8 @@ interface BlackLotusCTAProps {
 export default function BlackLotusCTA({
   emoji = "🏆",
   headline = "Our #1 Pick: Black Lotus Shilajit Resin",
-  subtext = "85%+ fulvic acid · Third-party COA · Cold-processed · Free shipping — the only S-tier resin under $40.",
-  buttonText = "Shop Black Lotus Resin — $39.99 →",
+  subtext = "85%+ fulvic acid · Third-party COA · Cold-processed · Free shipping — S-tier resin at $36.99.",
+  buttonText = "Shop Black Lotus Resin — $36.99 →",
 }: BlackLotusCTAProps) {
   return (
     <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl overflow-hidden shadow-lg shadow-emerald-900/10">

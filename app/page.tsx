@@ -143,20 +143,19 @@ export default function Home() {
     return counts;
   }, []);
 
-  // Top Picks: 2 featured BL products + best non-featured Amazon pick
+  // Top Picks: Black Lotus #1 + Pure Himalayan #2 + best Amazon value
   const topPicks = useMemo(() => {
-    const featured = PRODUCTS.filter((p) => p.featured)
-      .sort((a, b) => TIER_ORDER[a.tier] - TIER_ORDER[b.tier])
-      .slice(0, 2);
+    const blPick = PRODUCTS.find((p) => p.id === "bl-resin");
+    const phPick = PRODUCTS.find((p) => p.id === "ph-resin-30g");
 
     const bestAmazon = [...PRODUCTS]
       .filter((p) => !p.featured && p.affiliateUrl.includes("amazon.com"))
       .sort((a, b) => bestValueScore(b) - bestValueScore(a))[0];
 
-    return [...featured, bestAmazon].filter(Boolean) as (typeof PRODUCTS)[0][];
+    return [blPick, phPick, bestAmazon].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
-  const topPickLabels = ["#1 Overall Pick", "#2 Best Capsule", "Best Amazon Value"];
+  const topPickLabels = ["#1 Overall Pick", "#2 Pick — ISO Verified", "Best Amazon Value"];
 
   const filtered = useMemo(() => {
     let list = PRODUCTS.filter((p) => {

@@ -176,6 +176,7 @@ export default function CheapVsHighQualityShilajit() {
         currentSlug="cheap-vs-high-quality-shilajit"
         breadcrumbLabel="Cheap vs High Quality Shilajit"
         faqItems={faqItems}
+        ctaVariant="pure-himalayan"
       >
         <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
           <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Price analysis is based on our database of 55+ products — not on which brands pay us more.

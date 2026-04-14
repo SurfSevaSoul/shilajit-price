@@ -1,4 +1,4 @@
-import { AFFILIATE_LINKS } from "../data/products";
+import { AFFILIATE_LINKS, PURE_HIMALAYAN_LINKS } from "../data/products";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -115,7 +115,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Products */}
+          {/* Products — Black Lotus */}
           <div>
             <h3 className="text-xs font-bold text-[#5d8c6e] uppercase tracking-widest mb-4">
               Shop Black Lotus
@@ -151,6 +151,39 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            <h3 className="text-xs font-bold text-[#5d8c6e] uppercase tracking-widest mb-4 mt-6">
+              Shop Pure Himalayan
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Resin (30g)", href: PURE_HIMALAYAN_LINKS.resin },
+                { label: "Liquid Drops", href: PURE_HIMALAYAN_LINKS.drops },
+                { label: "Tablets (90ct)", href: PURE_HIMALAYAN_LINKS.tablets },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="text-sm text-[#9ec9ad] hover:text-amber-400 transition-colors duration-150 flex items-center gap-1.5"
+                  >
+                    <svg
+                      className="w-2.5 h-2.5 text-amber-500 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
@@ -166,11 +199,14 @@ export default function Footer() {
               ShilajitPrice.com participates in affiliate advertising programs.
               When you click affiliate links on this site and make a purchase,
               we may receive a commission at no additional cost to you. Our
-              featured partner is Black Lotus Shilajit. Affiliate relationships
-              do not influence product rankings or tier assignments — all ratings
-              are based on independent evaluation of lab reports, COAs, pricing,
-              and sourcing transparency. We only recommend products we genuinely
-              believe provide value to consumers.
+              featured partners are Black Lotus Shilajit and Pure Himalayan
+              Shilajit. Affiliate relationships do not influence product rankings
+              or tier assignments — all ratings are based on independent
+              evaluation of lab reports, COAs, pricing, and sourcing
+              transparency. We only recommend products we genuinely believe
+              provide value to consumers. Prices are updated regularly; always
+              confirm the final price on the retailer&apos;s website before
+              purchasing.
             </p>
           </div>
 

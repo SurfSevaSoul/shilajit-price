@@ -213,6 +213,7 @@ export default function IsExpensiveShilajitWorthIt() {
         currentSlug="is-expensive-shilajit-worth-it"
         breadcrumbLabel="Is Expensive Shilajit Worth It"
         faqItems={faqItems}
+        ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
         <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">

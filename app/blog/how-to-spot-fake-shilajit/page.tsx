@@ -141,6 +141,7 @@ export default function HowToSpotFakeShilajit() {
         currentSlug="how-to-spot-fake-shilajit"
         breadcrumbLabel="How to Spot Fake Shilajit"
         faqItems={faqItems}
+        ctaVariant="pure-himalayan"
       >
         {/* Affiliate disclosure */}
         <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import RelatedPosts from "../RelatedPosts";
 import BlackLotusCTA from "./BlackLotusCTA";
+import PureHimalayanCTA from "./PureHimalayanCTA";
 import BlogSidebar from "./BlogSidebar";
 
 const BASE_URL = "https://shilajitprice.com";
@@ -25,6 +26,7 @@ interface BlogPostLayoutProps {
   currentSlug: string;
   breadcrumbLabel: string;
   faqItems?: FaqItem[];
+  ctaVariant?: "black-lotus" | "pure-himalayan";
   children: ReactNode;
 }
 
@@ -46,6 +48,7 @@ export default function BlogPostLayout({
   currentSlug,
   breadcrumbLabel,
   faqItems,
+  ctaVariant = "black-lotus",
   children,
 }: BlogPostLayoutProps) {
   const postUrl = `${BASE_URL}/blog/${currentSlug}`;
@@ -156,8 +159,8 @@ export default function BlogPostLayout({
             <article className="flex-1 min-w-0 space-y-10">
               {children}
 
-              {/* Auto-injected: Black Lotus CTA */}
-              <BlackLotusCTA />
+              {/* Auto-injected: CTA */}
+              {ctaVariant === "pure-himalayan" ? <PureHimalayanCTA /> : <BlackLotusCTA />}
 
               {/* Auto-injected: FAQ */}
               {faqItems && faqItems.length > 0 && (

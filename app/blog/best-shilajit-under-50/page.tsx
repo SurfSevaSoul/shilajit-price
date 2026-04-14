@@ -212,6 +212,7 @@ export default function BestShilajitUnder50() {
         currentSlug="best-shilajit-under-50"
         breadcrumbLabel="Best Shilajit Under $50"
         faqItems={faqItems}
+        ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
         <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">

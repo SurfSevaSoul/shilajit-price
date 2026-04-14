@@ -142,6 +142,7 @@ export default function ShilajitPricePerGram() {
         currentSlug="shilajit-price-per-gram"
         breadcrumbLabel="Shilajit Price Per Gram"
         faqItems={faqItems}
+        ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
         <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
