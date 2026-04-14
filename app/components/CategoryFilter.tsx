@@ -12,6 +12,7 @@ const CATEGORY_ICONS: Record<Category, string> = {
   All: "◈",
   Resin: "⬡",
   Capsules: "◉",
+  Powder: "◌",
   Gummies: "◍",
   Tinctures: "◫",
   Honey: "◆",

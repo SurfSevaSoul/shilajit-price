@@ -43,5 +43,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.4,
     },
+    {
+      url: `${BASE_URL}/compare`,
+      lastModified: new Date("2026-04-13"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
   ];
 }

@@ -2,6 +2,13 @@
 
 import { useState, useMemo } from "react";
 import { PRODUCTS, CATEGORIES, Category, Tier } from "./data/products";
+import HeroSection from "./components/HeroSection";
+import CategoryFilter from "./components/CategoryFilter";
+import SidebarFilters, { FilterState, DEFAULT_FILTERS } from "./components/SidebarFilters";
+import DealCard from "./components/DealCard";
+import HowItWorks from "./components/HowItWorks";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 const BASE_URL = "https://shilajitprice.com";
 
@@ -49,24 +56,8 @@ const itemListSchema = {
     },
   })),
 };
-import HeroSection from "./components/HeroSection";
-import CategoryFilter from "./components/CategoryFilter";
-import SidebarFilters, { FilterState } from "./components/SidebarFilters";
-import DealCard from "./components/DealCard";
-import HowItWorks from "./components/HowItWorks";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
 
-const ALL_TIERS: Tier[] = ["S", "A", "B", "C", "D"];
-
-const DEFAULT_FILTERS: FilterState = {
-  tiers: ALL_TIERS,
-  maxPrice: 100,
-  coaOnly: false,
-  freeShippingOnly: false,
-  labTestedOnly: false,
-  sortBy: "pricePerGram",
-};
+const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3, D: 4 };
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
@@ -85,25 +76,45 @@ export default function Home() {
 
   const filtered = useMemo(() => {
     let list = PRODUCTS.filter((p) => {
-      if (activeCategory !== "All" && p.category !== activeCategory)
-        return false;
+      if (activeCategory !== "All" && p.category !== activeCategory) return false;
       if (!filters.tiers.includes(p.tier)) return false;
       if (p.priceUsd > filters.maxPrice) return false;
       if (filters.coaOnly && !p.coaVerified) return false;
       if (filters.freeShippingOnly && !p.freeShipping) return false;
-      if (filters.labTestedOnly && !p.labTested) return false;
+      if (filters.thirdPartyOnly && !p.thirdPartyTested) return false;
+      if (filters.heavyMetalsOnly && !p.heavyMetalsTested) return false;
+      if (filters.knownSourceOnly && !p.sourceLocation) return false;
+      if (filters.gmpOnly && !p.gmpCertified) return false;
+      if (filters.minRating > 0) {
+        const rating = p.amazonRating ?? 0;
+        if (rating < filters.minRating) return false;
+      }
+      if (filters.minReviews > 0) {
+        const reviews = p.amazonReviewCount ?? 0;
+        if (reviews < filters.minReviews) return false;
+      }
       return true;
     });
 
-    const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3, D: 4 };
-
     list.sort((a, b) => {
-      if (filters.sortBy === "pricePerGram")
-        return a.pricePerGram - b.pricePerGram;
-      if (filters.sortBy === "price") return a.priceUsd - b.priceUsd;
-      if (filters.sortBy === "tier")
-        return TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
-      return 0;
+      switch (filters.sortBy) {
+        case "pricePerGram": return a.pricePerGram - b.pricePerGram;
+        case "price": return a.priceUsd - b.priceUsd;
+        case "tier": return TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
+        case "purityScore": return b.purityScore - a.purityScore;
+        case "mostReviews": return (b.amazonReviewCount ?? 0) - (a.amazonReviewCount ?? 0);
+        case "highestRated": return (b.amazonRating ?? 0) - (a.amazonRating ?? 0);
+        case "costPerServing": return a.costPerServing - b.costPerServing;
+        case "bestValue": {
+          // Score = tier weight (40%) + purity score (30%) + inverted $/g (30%)
+          const tierScore = (a: typeof PRODUCTS[0]) => (4 - TIER_ORDER[a.tier]) * 10;
+          const ppgScore = (a: typeof PRODUCTS[0]) => Math.max(0, 10 - a.pricePerGram * 3);
+          const scoreA = tierScore(a) * 0.4 + a.purityScore * 3 * 0.3 + ppgScore(a) * 0.3;
+          const scoreB = tierScore(b) * 0.4 + b.purityScore * 3 * 0.3 + ppgScore(b) * 0.3;
+          return scoreB - scoreA;
+        }
+        default: return 0;
+      }
     });
 
     return list;
@@ -125,37 +136,16 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <a href="/" className="flex items-center gap-1 shrink-0">
-            <span className="text-lg font-black text-emerald-400">
-              ShilajitPrice
-            </span>
+            <span className="text-lg font-black text-emerald-400">ShilajitPrice</span>
             <span className="text-lg font-black text-[#e8f4ec]">.com</span>
           </a>
 
           <div className="hidden sm:flex items-center gap-5 text-sm">
-            <a
-              href="#deals"
-              className="text-[#9ec9ad] hover:text-emerald-400 transition-colors"
-            >
-              Compare
-            </a>
-            <a
-              href="#how-it-works"
-              className="text-[#9ec9ad] hover:text-emerald-400 transition-colors"
-            >
-              How It Works
-            </a>
-            <a
-              href="#faq"
-              className="text-[#9ec9ad] hover:text-emerald-400 transition-colors"
-            >
-              FAQ
-            </a>
-            <a
-              href="/blog"
-              className="text-[#9ec9ad] hover:text-emerald-400 transition-colors"
-            >
-              Blog
-            </a>
+            <a href="#deals" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Compare</a>
+            <a href="/compare" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Full Table</a>
+            <a href="#how-it-works" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">How It Works</a>
+            <a href="#faq" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">FAQ</a>
+            <a href="/blog" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Blog</a>
           </div>
 
           <a
@@ -177,13 +167,21 @@ export default function Home() {
         <section id="deals" className="py-10 bg-[#0d1f14]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             {/* Section heading */}
-            <div className="mb-6">
-              <h2 className="text-2xl font-black text-[#e8f4ec] mb-1">
-                Shilajit Price Comparison
-              </h2>
-              <p className="text-sm text-[#5d8c6e]">
-                Sorted by price per gram. Prices updated regularly.
-              </p>
+            <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
+              <div>
+                <h2 className="text-2xl font-black text-[#e8f4ec] mb-1">
+                  Shilajit Price Comparison
+                </h2>
+                <p className="text-sm text-[#5d8c6e]">
+                  {PRODUCTS.length}+ products ranked by tier, purity, and value. Prices updated regularly.
+                </p>
+              </div>
+              <a
+                href="/compare"
+                className="text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-700/50 hover:border-emerald-500/60 px-3 py-1.5 rounded-lg transition-colors"
+              >
+                View Full Comparison Table →
+              </a>
             </div>
 
             {/* Category filter */}
@@ -231,16 +229,12 @@ export default function Home() {
                     <div className="flex items-center justify-between mb-4">
                       <p className="text-xs text-[#5d8c6e]">
                         Showing{" "}
-                        <span className="text-[#9ec9ad] font-medium">
-                          {filtered.length}
-                        </span>{" "}
-                        products
+                        <span className="text-[#9ec9ad] font-medium">{filtered.length}</span>{" "}
+                        of {PRODUCTS.length} products
                       </p>
                       <div className="flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                        <span className="text-[10px] text-[#5d8c6e]">
-                          Featured = affiliate partner
-                        </span>
+                        <span className="text-[10px] text-[#5d8c6e]">Featured = affiliate partner</span>
                       </div>
                     </div>
 
