@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
+import AffiliateClickTracker from "./components/AffiliateClickTracker";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -72,6 +73,7 @@ export default function RootLayout({
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         {children}
+        <AffiliateClickTracker />
         <Analytics />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-DFZ31GCRBY"
