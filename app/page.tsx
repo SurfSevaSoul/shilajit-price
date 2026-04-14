@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import { PRODUCTS, CATEGORIES, Category, Tier, TIER_COLORS, AFFILIATE_LINKS } from "./data/products";
+import Link from "next/link";
+import { PRODUCTS, CATEGORIES, Category, Tier, TIER_COLORS } from "./data/products";
 import HeroSection from "./components/HeroSection";
 import CategoryFilter from "./components/CategoryFilter";
 import SidebarFilters, { FilterState, DEFAULT_FILTERS } from "./components/SidebarFilters";
@@ -63,73 +64,212 @@ function bestValueScore(p: (typeof PRODUCTS)[0]) {
   return tierScore * 0.4 + p.purityScore * 3 * 0.3 + ppgScore * 0.3;
 }
 
-// ── Top Picks card (horizontal, featured section) ───────────────────────────
-function TopPickCard({
+// Interleave BL and PH featured products so neither brand dominates the top
+function interleaveProducts(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][] {
+  const blFeatured = list.filter(
+    (p) => p.featured && p.vendor.toLowerCase().includes("black lotus")
+  );
+  const phFeatured = list.filter(
+    (p) => p.featured && p.vendor.toLowerCase().includes("pure himalayan")
+  );
+  const others = list.filter((p) => !p.featured);
+  const result: (typeof PRODUCTS)[0][] = [];
+  const max = Math.max(blFeatured.length, phFeatured.length);
+  for (let i = 0; i < max; i++) {
+    if (blFeatured[i]) result.push(blFeatured[i]);
+    if (phFeatured[i]) result.push(phFeatured[i]);
+  }
+  return [...result, ...others];
+}
+
+// ── Editor's Pick card (equal-weight, vertical layout) ──────────────────────
+type AccentVariant = "emerald" | "amber" | "blue";
+
+const ACCENT_STYLES: Record<
+  AccentVariant,
+  { border: string; badge: string; label: string; btn: string; ppg: string }
+> = {
+  emerald: {
+    border: "border-emerald-600/40 hover:border-emerald-500/60",
+    badge: "bg-emerald-900/50 border border-emerald-700/50 text-emerald-400",
+    label: "text-emerald-400",
+    btn: "bg-emerald-500 hover:bg-emerald-400 text-white shadow-emerald-900/30",
+    ppg: "text-emerald-400",
+  },
+  amber: {
+    border: "border-amber-600/40 hover:border-amber-500/60",
+    badge: "bg-amber-900/30 border border-amber-700/40 text-amber-400",
+    label: "text-amber-400",
+    btn: "bg-amber-500 hover:bg-amber-400 text-white shadow-amber-900/30",
+    ppg: "text-amber-400",
+  },
+  blue: {
+    border: "border-blue-700/40 hover:border-blue-500/60",
+    badge: "bg-blue-900/30 border border-blue-700/40 text-blue-400",
+    label: "text-blue-400",
+    btn: "bg-blue-600 hover:bg-blue-500 text-white shadow-blue-900/30",
+    ppg: "text-blue-400",
+  },
+};
+
+function EditorPickCard({
   product,
   label,
+  accent,
 }: {
   product: (typeof PRODUCTS)[0];
   label: string;
+  accent: AccentVariant;
 }) {
-  const isAffiliate = product.affiliateUrl !== "#";
+  const s = ACCENT_STYLES[accent];
   return (
-    <div className="flex items-center gap-3 bg-[#182b1f] border border-emerald-600/30 hover:border-emerald-500/50 rounded-xl p-3.5 transition-all duration-200 group">
-      {/* Tier */}
-      <div
-        className={`shrink-0 w-9 h-9 rounded-lg flex items-center justify-center text-sm font-black ${TIER_COLORS[product.tier]} shadow-sm`}
+    <div
+      className={`bg-[#182b1f] border ${s.border} rounded-xl p-5 flex flex-col transition-all duration-200 hover:bg-[#1e3527] hover:shadow-md`}
+    >
+      {/* Editor's Pick badge */}
+      <span
+        className={`inline-flex items-center self-start px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-widest ${s.badge} mb-3`}
       >
-        {product.tier}
+        Editor&apos;s Pick
+      </span>
+
+      {/* Pick label */}
+      <div className={`text-[10px] font-bold uppercase tracking-widest ${s.label} mb-2.5`}>
+        {label}
       </div>
 
-      {/* Info */}
-      <div className="flex-1 min-w-0">
-        <div className="text-[9px] font-bold text-emerald-500 uppercase tracking-widest truncate mb-0.5">
-          {label}
+      {/* Tier + name */}
+      <div className="flex items-center gap-2.5 mb-3">
+        <div
+          className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black ${TIER_COLORS[product.tier]} shadow-sm`}
+          title={`${product.tier}-Tier`}
+        >
+          {product.tier}
         </div>
-        <div className="text-[10px] font-bold text-[#5d8c6e] uppercase truncate leading-none">
-          {product.vendor}
-        </div>
-        <div className="text-xs font-semibold text-[#e8f4ec] truncate leading-snug">
-          {product.productName}
-        </div>
-        <div className="flex items-center gap-2 mt-0.5">
-          <span className="text-xs font-black text-[#e8f4ec] tabular-nums">
-            ${product.priceUsd.toFixed(2)}
-          </span>
-          <span className="text-[10px] text-emerald-400 font-semibold tabular-nums">
-            ${product.pricePerGram.toFixed(2)}/g
-          </span>
-          {product.fulvicAcidPct && (
-            <span className="text-[9px] text-[#5d8c6e]">⚗️ {product.fulvicAcidPct}% FA</span>
-          )}
+        <div className="flex-1 min-w-0">
+          <div className="text-[10px] font-bold text-[#5d8c6e] uppercase truncate leading-none">
+            {product.vendor}
+          </div>
+          <div className="text-sm font-semibold text-[#e8f4ec] truncate leading-snug">
+            {product.productName}
+          </div>
         </div>
       </div>
+
+      {/* Price row */}
+      <div className="flex items-baseline gap-2 mb-3">
+        <span className="text-2xl font-black text-[#e8f4ec] tabular-nums">
+          ${product.priceUsd.toFixed(2)}
+        </span>
+        <span className={`text-xs font-bold tabular-nums ${s.ppg}`}>
+          ${product.pricePerGram.toFixed(2)}/g
+        </span>
+      </div>
+
+      {/* Key specs */}
+      <ul className="space-y-1 mb-4 flex-1 text-[11px] text-[#9ec9ad]">
+        {product.fulvicAcidPct !== undefined && (
+          <li>⚗️ {product.fulvicAcidPct}% fulvic acid</li>
+        )}
+        {product.coaVerified && <li>✓ COA verified</li>}
+        {product.thirdPartyTested && <li>✓ Third-party tested</li>}
+        {product.heavyMetalsTested && <li>✓ Heavy metals panel</li>}
+        {product.freeShipping && <li>✓ Free shipping</li>}
+      </ul>
 
       {/* CTA */}
-      {isAffiliate && (
-        <a
-          href={product.affiliateUrl}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className={`shrink-0 px-3 py-1.5 rounded-lg text-[11px] font-semibold transition-colors whitespace-nowrap
-            ${product.featured
-              ? "bg-emerald-500 hover:bg-emerald-400 text-white"
-              : "bg-emerald-700/30 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-700/50"
-            }`}
-        >
-          {product.featured ? "View Deal →" : "Check Price →"}
-        </a>
-      )}
+      <a
+        href={product.affiliateUrl}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        className={`block w-full text-center py-2.5 rounded-lg text-xs font-bold transition-colors shadow-md ${s.btn}`}
+      >
+        View Deal →
+      </a>
+      <p className="text-center text-[9px] text-[#5d8c6e] mt-1.5">
+        Affiliate link — commission at no extra cost
+      </p>
     </div>
   );
 }
+
+// ── Blog guide preview card ──────────────────────────────────────────────────
+function BlogGuideCard({
+  emoji,
+  category,
+  title,
+  description,
+  readingTimeMin,
+  slug,
+}: {
+  emoji: string;
+  category: string;
+  title: string;
+  description: string;
+  readingTimeMin: number;
+  slug: string;
+}) {
+  return (
+    <Link
+      href={`/blog/${slug}`}
+      className="group bg-[#182b1f] border border-[#2a4535] hover:border-emerald-600/40 rounded-xl p-5 flex flex-col transition-all duration-200 hover:bg-[#1e3527] hover:shadow-md"
+    >
+      <div className="text-3xl mb-3">{emoji}</div>
+      <span className="inline-flex items-center self-start px-2 py-0.5 rounded bg-emerald-900/40 border border-emerald-800/40 text-emerald-400 text-[9px] font-bold uppercase tracking-widest mb-3">
+        {category}
+      </span>
+      <h3 className="text-sm font-bold text-[#e8f4ec] leading-snug mb-2 group-hover:text-emerald-300 transition-colors">
+        {title}
+      </h3>
+      <p className="text-[11px] text-[#5d8c6e] leading-relaxed flex-1 mb-4 line-clamp-3">
+        {description}
+      </p>
+      <div className="flex items-center justify-between">
+        <span className="text-[10px] text-[#5d8c6e]">{readingTimeMin} min read</span>
+        <span className="text-xs font-semibold text-emerald-400 group-hover:text-emerald-300 transition-colors">
+          Read Guide →
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+const FEATURED_GUIDES = [
+  {
+    slug: "best-shilajit-brands-ranked",
+    title: "Best Shilajit Brands Ranked in 2026 — Lab Data, Prices & Honest Reviews",
+    description:
+      "We ranked the top 10 shilajit brands using COA data, fulvic acid percentages, third-party testing, sourcing transparency, and price per gram.",
+    readingTimeMin: 8,
+    emoji: "🏅",
+    category: "Rankings",
+  },
+  {
+    slug: "how-to-spot-fake-shilajit",
+    title: "How to Spot Fake Shilajit — and Where to Find the Real Thing",
+    description:
+      "The shilajit market is flooded with fakes, fillers, and mislabeled products. Here are 5 tests to verify authenticity and the red flags that expose a counterfeit.",
+    readingTimeMin: 7,
+    emoji: "🔍",
+    category: "Safety",
+  },
+  {
+    slug: "shilajit-resin-vs-capsules",
+    title: "Shilajit Resin vs Capsules vs Powder — Which Form is Actually Best?",
+    description:
+      "We compare every shilajit form factor — resin, capsules, powder, gummies, and tinctures — on bioavailability, convenience, price per gram, and authenticity risk.",
+    readingTimeMin: 8,
+    emoji: "⚖️",
+    category: "Buying Guide",
+  },
+];
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
   const [filters, setFilters] = useState<FilterState>(DEFAULT_FILTERS);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Reset pagination when filters/category change
   useEffect(() => {
     setVisibleCount(PAGE_SIZE);
   }, [activeCategory, filters]);
@@ -143,19 +283,21 @@ export default function Home() {
     return counts;
   }, []);
 
-  // Top Picks: Black Lotus #1 + Pure Himalayan #2 + best Amazon value
-  const topPicks = useMemo(() => {
+  // Editor's Picks: BL Best Overall, PH Best Purity, Best Amazon Value
+  const editorPicks = useMemo(() => {
     const blPick = PRODUCTS.find((p) => p.id === "bl-resin");
     const phPick = PRODUCTS.find((p) => p.id === "ph-resin-30g");
-
     const bestAmazon = [...PRODUCTS]
       .filter((p) => !p.featured && p.affiliateUrl.includes("amazon.com"))
       .sort((a, b) => bestValueScore(b) - bestValueScore(a))[0];
-
     return [blPick, phPick, bestAmazon].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
-  const topPickLabels = ["#1 Overall Pick", "#2 Pick — ISO Verified", "Best Amazon Value"];
+  const editorPickMeta: { label: string; accent: AccentVariant }[] = [
+    { label: "Best Overall", accent: "emerald" },
+    { label: "Best Purity", accent: "amber" },
+    { label: "Best Value", accent: "blue" },
+  ];
 
   const filtered = useMemo(() => {
     let list = PRODUCTS.filter((p) => {
@@ -187,10 +329,14 @@ export default function Home() {
       }
     });
 
+    // Interleave BL and PH featured products for balanced presentation
+    if (filters.sortBy === "bestValue" || filters.sortBy === "tier") {
+      list = interleaveProducts(list);
+    }
+
     return list;
   }, [activeCategory, filters]);
 
-  // Quick stats
   const quickStats = useMemo(() => {
     if (filtered.length === 0) return null;
     const avgPrice = filtered.reduce((s, p) => s + p.priceUsd, 0) / filtered.length;
@@ -207,36 +353,98 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
-      {/* Nav */}
+      {/* ── NAV ─────────────────────────────────────────────────────────────── */}
       <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <a href="/" className="flex items-center gap-1 shrink-0">
             <span className="text-lg font-black text-emerald-400">ShilajitPrice</span>
             <span className="text-lg font-black text-[#e8f4ec]">.com</span>
           </a>
+
+          {/* Desktop links */}
           <div className="hidden sm:flex items-center gap-5 text-sm">
-            <a href="#deals" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Compare</a>
-            <a href="/compare" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Full Table</a>
-            <a href="#how-it-works" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">How It Works</a>
-            <a href="#faq" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">FAQ</a>
+            <a href="#deals" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Deals</a>
+            <a href="/compare" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Compare</a>
             <a href="/blog" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Blog</a>
+            <a href="#how-it-works" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">How It Works</a>
+            <a href="/about" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">About</a>
           </div>
-          <a
-            href={AFFILIATE_LINKS.base}
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="shrink-0 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors duration-200"
-          >
-            🏆 Our #1 Pick
-          </a>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="#top-picks"
+              className="hidden sm:inline-flex shrink-0 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors duration-200"
+            >
+              Editor&apos;s Picks
+            </a>
+
+            {/* Mobile hamburger */}
+            <button
+              onClick={() => setMobileMenuOpen((o) => !o)}
+              className="sm:hidden p-2 rounded-lg text-[#9ec9ad] hover:text-emerald-400 hover:bg-[#182b1f] transition-colors"
+              aria-label="Toggle menu"
+            >
+              {mobileMenuOpen ? (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
+
+        {/* Mobile dropdown */}
+        {mobileMenuOpen && (
+          <div className="sm:hidden border-t border-[#1e3527] bg-[#0a1a10] px-4 py-3 space-y-1">
+            {[
+              { label: "Deals", href: "#deals" },
+              { label: "Compare", href: "/compare" },
+              { label: "Blog", href: "/blog" },
+              { label: "How It Works", href: "#how-it-works" },
+              { label: "About", href: "/about" },
+              { label: "Editor's Picks", href: "#top-picks" },
+            ].map(({ label, href }) => (
+              <a
+                key={label}
+                href={href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block px-3 py-2.5 rounded-lg text-sm text-[#9ec9ad] hover:text-emerald-400 hover:bg-[#182b1f] transition-colors"
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+        )}
       </nav>
 
       <main className="flex-1">
-        {/* Hero */}
+        {/* ── 1. HERO ──────────────────────────────────────────────────────── */}
         <HeroSection />
 
-        {/* Deals section */}
+        {/* ── 2. STATS BAR ─────────────────────────────────────────────────── */}
+        <div className="bg-[#071009] border-y border-[#1e3527]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+              {[
+                { value: "55+", label: "Products Tracked" },
+                { value: "20+", label: "Brands Compared" },
+                { value: "25+", label: "Data Points Per Product" },
+                { value: "Weekly", label: "Price Updates" },
+              ].map(({ value, label }) => (
+                <div key={label}>
+                  <div className="text-xl sm:text-2xl font-black text-emerald-400">{value}</div>
+                  <div className="text-xs text-[#5d8c6e] mt-0.5">{label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* ── 3–5. DEALS SECTION ───────────────────────────────────────────── */}
         <section id="deals" className="py-10 bg-[#0d1f14]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
@@ -256,56 +464,57 @@ export default function Home() {
               </a>
             </div>
 
-            {/* ── TOP PICKS ─────────────────────────────────────────────────────── */}
+            {/* ── 3. CATEGORY FILTER ──────────────────────────────────────── */}
             <div className="mb-8">
-              <div className="flex items-center gap-2 mb-3">
-                <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">⭐ Top Picks</span>
+              <CategoryFilter active={activeCategory} onChange={setActiveCategory} counts={categoryCounts} />
+            </div>
+
+            {/* ── 4. EDITOR'S TOP 3 PICKS ─────────────────────────────────── */}
+            <div id="top-picks" className="mb-10">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">⭐ Editor&apos;s Picks</span>
                 <div className="flex-1 h-px bg-[#1e3527]" />
+                <span className="text-[10px] text-[#5d8c6e]">Independent editorial rankings</span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                {topPicks.map((p, i) => (
-                  <TopPickCard key={p.id} product={p} label={topPickLabels[i] ?? "Top Pick"} />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {editorPicks.map((p, i) => (
+                  <EditorPickCard
+                    key={p.id}
+                    product={p}
+                    label={editorPickMeta[i]?.label ?? "Top Pick"}
+                    accent={editorPickMeta[i]?.accent ?? "emerald"}
+                  />
                 ))}
               </div>
             </div>
 
-            {/* ── DIVIDER ──────────────────────────────────────────────────────── */}
+            {/* ── 5. ALL DEALS GRID ────────────────────────────────────────── */}
             <div className="flex items-center gap-2 mb-5">
               <span className="text-[10px] font-bold text-[#5d8c6e] uppercase tracking-widest">All Products</span>
               <div className="flex-1 h-px bg-[#1e3527]" />
-            </div>
-
-            {/* Category filter */}
-            <div className="mb-3">
-              <CategoryFilter active={activeCategory} onChange={setActiveCategory} counts={categoryCounts} />
             </div>
 
             {/* Quick stats bar */}
             {quickStats && (
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-5 text-xs text-[#5d8c6e]">
                 <span>
-                  Showing{" "}
-                  <strong className="text-[#9ec9ad]">{filtered.length}</strong> products
+                  Showing <strong className="text-[#9ec9ad]">{filtered.length}</strong> products
                 </span>
                 <span className="text-[#2a4535]">·</span>
                 <span>
-                  Avg price{" "}
-                  <strong className="text-[#9ec9ad]">${quickStats.avgPrice.toFixed(2)}</strong>
+                  Avg price <strong className="text-[#9ec9ad]">${quickStats.avgPrice.toFixed(2)}</strong>
                 </span>
                 <span className="text-[#2a4535]">·</span>
                 <span>
-                  Best value{" "}
-                  <strong className="text-emerald-400">${quickStats.bestPpg.toFixed(2)}/gram</strong>
+                  Best value <strong className="text-emerald-400">${quickStats.bestPpg.toFixed(2)}/gram</strong>
                 </span>
               </div>
             )}
 
             {/* Main content: sidebar + grid */}
             <div className="flex flex-col lg:flex-row gap-6 items-start">
-              {/* Sidebar */}
               <SidebarFilters filters={filters} onChange={setFilters} totalResults={filtered.length} />
 
-              {/* Product grid */}
               <div className="flex-1 min-w-0">
                 {filtered.length === 0 ? (
                   <div className="flex flex-col items-center justify-center py-20 text-center">
@@ -325,7 +534,6 @@ export default function Home() {
                   </div>
                 ) : (
                   <>
-                    {/* Results count */}
                     <div className="flex items-center justify-between mb-3">
                       <p className="text-xs text-[#5d8c6e]">
                         Showing{" "}
@@ -339,14 +547,12 @@ export default function Home() {
                       </div>
                     </div>
 
-                    {/* Grid — 1 col mobile, 2 col tablet, 3 col desktop */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                       {displayedProducts.map((product) => (
                         <DealCard key={product.id} product={product} />
                       ))}
                     </div>
 
-                    {/* Load More */}
                     {hasMore && (
                       <div className="mt-6 text-center">
                         <button
@@ -361,7 +567,6 @@ export default function Home() {
                       </div>
                     )}
 
-                    {/* All loaded indicator */}
                     {!hasMore && filtered.length > PAGE_SIZE && (
                       <div className="mt-6 text-center">
                         <p className="text-xs text-[#5d8c6e]">
@@ -379,49 +584,40 @@ export default function Home() {
           </div>
         </section>
 
-        {/* How It Works */}
-        <HowItWorks />
-
-        {/* FAQ */}
-        <FAQ />
-
-        {/* Bottom CTA */}
-        <section className="py-14 bg-[#0d1f14] border-t border-[#1e3527]">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6 text-center">
-            <div className="text-3xl mb-3">🏆</div>
-            <h2 className="text-2xl sm:text-3xl font-black text-[#e8f4ec] mb-3">
-              Ready to Buy the Best Shilajit?
-            </h2>
-            <p className="text-[#9ec9ad] text-sm mb-7 leading-relaxed">
-              Black Lotus Shilajit is our top-rated S-tier pick — full COA,
-              85%+ fulvic acid, free shipping. No other brand at this price
-              point offers the same transparency.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
-              <a
-                href={AFFILIATE_LINKS.resin}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm transition-all duration-200 shadow-lg shadow-emerald-900/40"
+        {/* ── 6. SHILAJIT BUYING GUIDES ────────────────────────────────────── */}
+        <section className="py-14 bg-[#071009] border-t border-[#1e3527]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="flex items-end justify-between gap-4 flex-wrap mb-8">
+              <div>
+                <h2 className="text-2xl font-black text-[#e8f4ec] mb-1">Shilajit Buying Guides</h2>
+                <p className="text-sm text-[#5d8c6e]">
+                  Research-backed guides to help you find the best shilajit for your needs
+                </p>
+              </div>
+              <Link
+                href="/blog"
+                className="text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-700/50 hover:border-emerald-500/60 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap"
               >
-                Shop Resin — $39.99 →
-              </a>
-              <a
-                href={AFFILIATE_LINKS.capsules}
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-[#182b1f] hover:bg-[#1e3527] text-emerald-300 font-semibold border border-emerald-700/50 hover:border-emerald-500/70 text-sm transition-all duration-200"
-              >
-                Shop Capsules — $34.99
-              </a>
+                View All Guides →
+              </Link>
             </div>
-            <p className="text-[10px] text-[#5d8c6e] mt-4">
-              Affiliate links — we earn a commission at no extra cost to you
-            </p>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {FEATURED_GUIDES.map((guide) => (
+                <BlogGuideCard key={guide.slug} {...guide} />
+              ))}
+            </div>
           </div>
         </section>
+
+        {/* ── 7. HOW IT WORKS ─────────────────────────────────────────────── */}
+        <HowItWorks />
+
+        {/* ── 8. FAQ ───────────────────────────────────────────────────────── */}
+        <FAQ />
       </main>
 
+      {/* ── 9. FOOTER ────────────────────────────────────────────────────── */}
       <Footer />
     </div>
   );
