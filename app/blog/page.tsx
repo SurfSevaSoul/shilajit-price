@@ -5,7 +5,7 @@ import { BLOG_POSTS } from "../data/blog";
 export const metadata: Metadata = {
   title: "Shilajit Blog — Guides, Reviews & Price Comparisons | ShilajitPrice.com",
   description:
-    "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 8 expert articles to help you find the best shilajit supplement.",
+    "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 16 expert articles to help you find the best shilajit supplement.",
   alternates: { canonical: "https://shilajitprice.com/blog" },
   openGraph: {
     title: "Shilajit Blog — Guides, Reviews & Price Comparisons",
@@ -21,7 +21,7 @@ const blogListSchema = {
   "@context": "https://schema.org",
   "@type": "Blog",
   name: "ShilajitPrice.com Blog",
-  description: "Expert guides on buying shilajit — brand rankings, price analysis, lab data, and authenticity verification.",
+  description: "Expert guides on buying shilajit — brand rankings, price analysis, lab data, health benefits, and authenticity verification.",
   url: "https://shilajitprice.com/blog",
   publisher: {
     "@type": "Organization",
@@ -54,6 +54,9 @@ const CATEGORY_COLORS: Record<string, string> = {
   Research: "bg-teal-900/40 border-teal-800/40 text-teal-400",
   "Buying Guide": "bg-emerald-900/50 border-emerald-800/40 text-emerald-400",
   "Price Analysis": "bg-green-900/40 border-green-800/40 text-green-400",
+  "Health Benefits": "bg-rose-900/40 border-rose-800/40 text-rose-400",
+  "Price Comparison": "bg-cyan-900/40 border-cyan-800/40 text-cyan-400",
+  "Brand Reviews": "bg-violet-900/40 border-violet-800/40 text-violet-400",
 };
 
 export default function BlogIndex() {
