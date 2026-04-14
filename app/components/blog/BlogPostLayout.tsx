@@ -53,6 +53,43 @@ export default function BlogPostLayout({
 }: BlogPostLayoutProps) {
   const postUrl = `${BASE_URL}/blog/${currentSlug}`;
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: breadcrumbLabel,
+    description,
+    url: postUrl,
+    datePublished: publishedAt,
+    dateModified: updatedAt ?? publishedAt,
+    author: {
+      "@type": "Organization",
+      name: "ShilajitPrice Research Team",
+      url: `${BASE_URL}/methodology`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "ShilajitPrice",
+      url: BASE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${BASE_URL}/icon`,
+        width: 32,
+        height: 32,
+      },
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["h1", ".article-intro"],
+    },
+    keywords: tags.join(", "),
+    inLanguage: "en-US",
+    isAccessibleForFree: true,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+  };
+
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -74,6 +111,10 @@ export default function BlogPostLayout({
   return (
     <>
       {/* Auto-injected structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -123,14 +164,20 @@ export default function BlogPostLayout({
             </h1>
 
             {/* Description */}
-            <p className="text-base text-[#9ec9ad] leading-relaxed mb-6 max-w-2xl">
+            <p className="article-intro text-base text-[#9ec9ad] leading-relaxed mb-6 max-w-2xl">
               {description}
             </p>
 
             {/* Meta */}
             <div className="flex flex-wrap items-center gap-4 text-xs text-[#5d8c6e]">
               <span>
-                By <span className="text-[#9ec9ad]">ShilajitPrice.com</span>
+                By{" "}
+                <Link
+                  href="/methodology"
+                  className="text-[#9ec9ad] hover:text-emerald-400 transition-colors underline underline-offset-2 decoration-[#2a4535]"
+                >
+                  ShilajitPrice Research Team
+                </Link>
               </span>
               <span>·</span>
               <span>

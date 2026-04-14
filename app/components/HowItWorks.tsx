@@ -1,33 +1,38 @@
-const howToSchema = {
+const methodologyFaqSchema = {
   "@context": "https://schema.org",
-  "@type": "HowTo",
-  name: "How We Compare and Rank Shilajit Supplements",
-  description:
-    "Our 4-step process to independently evaluate and rank shilajit products by purity score, fulvic acid content, COA quality, lab testing, sourcing transparency, and price per gram.",
-  step: [
+  "@type": "FAQPage",
+  mainEntity: [
     {
-      "@type": "HowToStep",
-      position: 1,
-      name: "Collect Purity & Lab Data",
-      text: "We gather COAs, third-party lab reports, fulvic acid percentages, heavy metals test results, and sourcing details for every product. We track 25+ data points per product so you can compare what actually matters.",
+      "@type": "Question",
+      name: "How do you compare and rank shilajit supplements?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We rank shilajit using a weighted scoring system: COA & lab verification (30%), purity score (25%), heavy metals testing (20%), sourcing transparency (15%), and price per gram (10%). Every product receives a 1–10 Purity Score and an S–D tier rating based on verified lab data.",
+      },
     },
     {
-      "@type": "HowToStep",
-      position: 2,
-      name: "Calculate Price & Value",
-      text: "Every product is broken down to price-per-gram and cost-per-serving for an apples-to-apples comparison regardless of container size or form factor.",
+      "@type": "Question",
+      name: "What data points do you collect for each shilajit product?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We track 25+ data points per product including: COA availability, third-party lab reports, fulvic acid percentage, humic acid content, heavy metals test results (lead, arsenic, mercury, cadmium), sourcing location and altitude, GMP certification, and price per gram and per serving.",
+      },
     },
     {
-      "@type": "HowToStep",
-      position: 3,
-      name: "Score & Assign Tiers",
-      text: "Products receive a 1–10 Purity Score based on COA availability, third-party testing, fulvic acid content, heavy metals testing, sourcing transparency, and GMP certification. Then S–D tier ratings are assigned based on the combined purity and value analysis.",
+      "@type": "Question",
+      name: "How do you calculate price per gram for shilajit?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Price per gram = product price ÷ net weight in grams. For example, a 30g jar at $36.99 costs $1.23/g. This standardizes comparison across different container sizes and form factors (resin, capsules, powder, gummies, tinctures).",
+      },
     },
     {
-      "@type": "HowToStep",
-      position: 4,
-      name: "You Shop with Confidence",
-      text: "Filter by tier, purity score, COA status, source location, and budget. Click through to the best deal for your needs — no guesswork, no fake reviews, just verified data.",
+      "@type": "Question",
+      name: "Do affiliate relationships affect your shilajit rankings?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Tier ratings and purity scores are assigned based solely on objective criteria: COA quality, lab data, fulvic acid content, heavy metals results, sourcing transparency, and price. Our affiliate partners (Black Lotus Shilajit and Pure Himalayan Shilajit) are ranked by the same criteria as every other brand.",
+      },
     },
   ],
 };
@@ -68,7 +73,7 @@ export default function HowItWorks() {
     <section className="py-16 sm:py-20 bg-[#0d1f14]" id="how-it-works">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(methodologyFaqSchema) }}
       />
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}

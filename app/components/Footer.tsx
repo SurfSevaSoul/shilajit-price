@@ -8,7 +8,17 @@ const organizationSchema = {
   url: "https://shilajitprice.com",
   description:
     "Independent shilajit price comparison site. We research, test, and rank shilajit supplements so you can buy with confidence.",
-  sameAs: ["https://shilajitprice.com"],
+  logo: {
+    "@type": "ImageObject",
+    url: "https://shilajitprice.com/icon",
+    width: 32,
+    height: 32,
+  },
+  sameAs: [
+    "https://shilajitprice.com",
+    "https://shilajitprice.com/about",
+    "https://shilajitprice.com/methodology",
+  ],
   foundingDate: "2026",
   areaServed: "Worldwide",
   knowsAbout: [
@@ -17,7 +27,14 @@ const organizationSchema = {
     "Supplement price comparison",
     "Certificate of Analysis (COA)",
     "Himalayan shilajit",
+    "Heavy metals testing",
+    "Third-party lab testing",
   ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "hello@shilajitprice.com",
+    contactType: "customer support",
+  },
 };
 
 export default function Footer() {
