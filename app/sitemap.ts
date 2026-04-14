@@ -49,5 +49,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.85,
     },
+    {
+      url: `${BASE_URL}/lab-data`,
+      lastModified: new Date("2026-04-14"),
+      changeFrequency: "weekly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/reviews`,
+      lastModified: new Date("2026-04-14"),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/methodology`,
+      lastModified: new Date("2026-04-14"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
   ];
 }

@@ -425,8 +425,27 @@ export default function Home() {
         {/* ── 1. HERO ──────────────────────────────────────────────────────── */}
         <HeroSection />
 
+        {/* ── TRUST BANNER ─────────────────────────────────────────────────── */}
+        <div className="bg-[#071009] border-b border-[#1e3527]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-[#5d8c6e]">
+              {[
+                { icon: "🧪", text: "Lab data from 3rd-party COA reports", href: "/lab-data" },
+                { icon: "✓", text: "COA status verified per product", href: "/lab-data" },
+                { icon: "⭐", text: "Reviews aggregated from Amazon & brand sites", href: "/reviews" },
+                { icon: "📊", text: "Transparent scoring methodology", href: "/methodology" },
+              ].map(({ icon, text, href }) => (
+                <Link key={text} href={href} className="flex items-center gap-1.5 hover:text-emerald-400 transition-colors group">
+                  <span>{icon}</span>
+                  <span className="group-hover:underline underline-offset-2">{text}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* ── 2. STATS BAR ─────────────────────────────────────────────────── */}
-        <div className="bg-[#071009] border-y border-[#1e3527]">
+        <div className="bg-[#0d1f14] border-b border-[#1e3527]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               {[
