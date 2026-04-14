@@ -24,12 +24,29 @@ export const metadata: Metadata = {
     siteName: "ShilajitPrice.com",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "ShilajitPrice.com — Compare Shilajit Prices, Purity & Lab Data",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ShilajitPrice — Compare Shilajit Prices, Purity & Lab Data",
     description:
       "55+ products, 20+ brands. Compare fulvic acid content, COA availability, purity scores, and prices. Find the best shilajit for your budget.",
+    images: ["/opengraph-image"],
+  },
+  icons: {
+    icon: [
+      { url: "/icon", sizes: "32x32", type: "image/png" },
+    ],
+    apple: [
+      { url: "/apple-icon", sizes: "180x180", type: "image/png" },
+    ],
   },
   metadataBase: new URL("https://shilajitprice.com"),
   alternates: {
