@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { BLOG_POSTS } from "../data/blog";
-import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Shilajit Blog — Guides, Reviews & Price Comparisons | ShilajitPrice.com",
@@ -62,34 +61,11 @@ export default function BlogIndex() {
   const rest = BLOG_POSTS.slice(1);
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0d1f14]">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogListSchema) }}
       />
-
-      {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-1">
-            <span className="text-lg font-black text-emerald-400">ShilajitPrice</span>
-            <span className="text-lg font-black text-[#e8f4ec]">.com</span>
-          </Link>
-          <div className="hidden sm:flex items-center gap-5 text-sm">
-            <Link href="/#deals" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Compare</Link>
-            <Link href="/compare" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Full Table</Link>
-            <Link href="/blog" className="text-emerald-400 font-medium">Blog</Link>
-          </div>
-          <a
-            href="https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="shrink-0 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors"
-          >
-            🏆 Our #1 Pick
-          </a>
-        </div>
-      </nav>
 
       <main className="flex-1">
         {/* Header */}
@@ -172,7 +148,6 @@ export default function BlogIndex() {
                   href={`/blog/${post.slug}`}
                   className="group flex flex-col bg-[#182b1f] border border-[#2a4535] hover:border-emerald-600/50 rounded-xl overflow-hidden transition-all duration-200 hover:shadow-md hover:shadow-emerald-900/20"
                 >
-                  {/* Card header with emoji */}
                   <div className="flex items-center gap-3 px-5 pt-5 pb-3">
                     <div className="w-10 h-10 rounded-xl bg-emerald-900/40 border border-emerald-800/40 flex items-center justify-center text-xl shrink-0 group-hover:border-emerald-600/50 transition-colors">
                       {post.coverEmoji}
@@ -190,7 +165,6 @@ export default function BlogIndex() {
                       {post.description}
                     </p>
 
-                    {/* Tags */}
                     <div className="flex flex-wrap gap-1 mb-3">
                       {post.tags.slice(0, 2).map((tag) => (
                         <span
@@ -202,7 +176,6 @@ export default function BlogIndex() {
                       ))}
                     </div>
 
-                    {/* Footer */}
                     <div className="flex items-center justify-between text-[10px] text-[#5d8c6e] pt-3 border-t border-[#1e3527]">
                       <span>{formatDate(post.publishedAt)}</span>
                       <div className="flex items-center gap-1 text-emerald-400 group-hover:gap-1.5 transition-all">
@@ -247,8 +220,6 @@ export default function BlogIndex() {
           </div>
         </section>
       </main>
-
-      <Footer />
-    </div>
+    </>
   );
 }
