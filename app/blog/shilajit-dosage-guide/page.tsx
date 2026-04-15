@@ -63,29 +63,44 @@ const articleSchema = {
 
 const faqItems: FaqItem[] = [
   {
-    question: "How much shilajit should I take per day?",
-    answer:
-      "Most clinical research has used 200–500 mg/day of standardized shilajit extract. A common starting point is 200–300 mg/day, increasing to 400–500 mg/day after assessing tolerance. The exact amount depends on the form (resin, capsules, powder) and the concentration of active compounds like fulvic acid. Follow the serving size on your specific product as a baseline.",
+    "@type": "Question",
+    name: "How much shilajit should I take per day?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Most clinical research has used 200–500 mg/day of standardized shilajit extract. A common starting point is 200–300 mg/day, increasing to 400–500 mg/day after assessing tolerance. The exact amount depends on the form (resin, capsules, powder) and the concentration of active compounds like fulvic acid. Follow the serving size on your specific product as a baseline.",
+    },
   },
   {
-    question: "When should I take shilajit?",
-    answer:
-      "Most published research uses morning or afternoon dosing protocols. Taking shilajit on an empty stomach may support absorption. Many users avoid evening doses because shilajit's energizing properties can interfere with sleep in some individuals. Consistent daily timing tends to matter more than a precise window.",
+    "@type": "Question",
+    name: "When should I take shilajit?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Most published research uses morning or afternoon dosing protocols. Taking shilajit on an empty stomach may support absorption. Many users avoid evening doses because shilajit's energizing properties can interfere with sleep in some individuals. Consistent daily timing tends to matter more than a precise window.",
+    },
   },
   {
-    question: "Can you take too much shilajit?",
-    answer:
-      "Research has not established a defined toxicity threshold at standard supplemental doses. However, very high doses beyond the studied ranges may be associated with digestive discomfort, elevated uric acid levels, or dizziness. These effects appear dose-dependent and generally reversible. Starting low and increasing gradually is the safest approach.",
+    "@type": "Question",
+    name: "Can you take too much shilajit?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Research has not established a defined toxicity threshold at standard supplemental doses. However, very high doses beyond the studied ranges may be associated with digestive discomfort, elevated uric acid levels, or dizziness. These effects appear dose-dependent and generally reversible. Starting low and increasing gradually is the safest approach.",
+    },
   },
   {
-    question: "How long until shilajit works?",
-    answer:
-      "Most users in clinical studies reported noticeable effects after 2–4 weeks of consistent daily use. Some subjective effects (like improved energy) may be noticed sooner, while others (like changes in physical performance markers) tend to emerge over longer periods of consistent supplementation.",
+    "@type": "Question",
+    name: "How long until shilajit works?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Most users in clinical studies reported noticeable effects after 2–4 weeks of consistent daily use. Some subjective effects (like improved energy) may be noticed sooner, while others (like changes in physical performance markers) tend to emerge over longer periods of consistent supplementation.",
+    },
   },
   {
-    question: "Should I cycle shilajit?",
-    answer:
-      "Some traditional practitioners recommend cycling patterns such as 8 weeks on followed by 2 weeks off. There is no strong clinical evidence that mandates cycling for safety reasons. Cycling is often recommended as a precautionary practice to prevent potential tolerance, though the evidence supporting this is limited. It remains a personal choice rather than a documented requirement.",
+    "@type": "Question",
+    name: "Should I cycle shilajit?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Some traditional practitioners recommend cycling patterns such as 8 weeks on followed by 2 weeks off. There is no strong clinical evidence that mandates cycling for safety reasons. Cycling is often recommended as a precautionary practice to prevent potential tolerance, though the evidence supporting this is limited. It remains a personal choice rather than a documented requirement.",
+    },
   },
 ];
 

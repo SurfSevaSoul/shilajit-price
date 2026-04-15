@@ -68,29 +68,44 @@ const articleSchema = {
 
 const faqItems: FaqItem[] = [
   {
-    question: "Does shilajit contain heavy metals?",
-    answer:
-      "Shilajit forms in mineral-rich rock layers and can naturally concentrate minerals, including potentially hazardous ones like lead, mercury, arsenic, and cadmium. Whether a finished shilajit product contains problematic levels depends entirely on the geological source, purification process, and whether independent lab testing has verified the final product. High-quality brands with published COAs can confirm their specific heavy metal content.",
+    "@type": "Question",
+    name: "Does shilajit contain heavy metals?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Shilajit forms in mineral-rich rock layers and can naturally concentrate minerals, including potentially hazardous ones like lead, mercury, arsenic, and cadmium. Whether a finished shilajit product contains problematic levels depends entirely on the geological source, purification process, and whether independent lab testing has verified the final product. High-quality brands with published COAs can confirm their specific heavy metal content.",
+    },
   },
   {
-    question: "Is shilajit safe to take?",
-    answer:
-      "Shilajit from reputable brands with independent third-party testing and published COAs showing heavy metals within FDA dietary supplement limits is considered safe for healthy adults at standard doses. The risk comes from products that have not been independently tested or that come from regions with industrial contamination. Always verify that a brand has a current, publicly accessible COA before purchasing.",
+    "@type": "Question",
+    name: "Is shilajit safe to take?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Shilajit from reputable brands with independent third-party testing and published COAs showing heavy metals within FDA dietary supplement limits is considered safe for healthy adults at standard doses. The risk comes from products that have not been independently tested or that come from regions with industrial contamination. Always verify that a brand has a current, publicly accessible COA before purchasing.",
+    },
   },
   {
-    question: "What heavy metals are in shilajit?",
-    answer:
-      "The four heavy metals routinely screened in shilajit are lead (Pb), mercury (Hg), arsenic (As), and cadmium (Cd). These are present in trace amounts in virtually all geological formations and can concentrate in shilajit. The question is not whether they are present in any amount, but whether they are below established safety thresholds. FDA limits are: Lead <10 ppm, Mercury <3 ppm, Arsenic <15 ppm, Cadmium <5 ppm.",
+    "@type": "Question",
+    name: "What heavy metals are in shilajit?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "The four heavy metals routinely screened in shilajit are lead (Pb), mercury (Hg), arsenic (As), and cadmium (Cd). These are present in trace amounts in virtually all geological formations and can concentrate in shilajit. The question is not whether they are present in any amount, but whether they are below established safety thresholds. FDA limits are: Lead <10 ppm, Mercury <3 ppm, Arsenic <15 ppm, Cadmium <5 ppm.",
+    },
   },
   {
-    question: "How do I know if a shilajit brand tests for heavy metals?",
-    answer:
-      "Ask for a Certificate of Analysis (COA) from an independent laboratory. A legitimate heavy metals COA will show: the specific measured value (not just 'PASS'), the analytical method used (ICP-MS is the gold standard), the reference limit for each metal, and results for all four key metals (Lead, Mercury, Arsenic, Cadmium). Brands that can't or won't share a COA should be avoided.",
+    "@type": "Question",
+    name: "How do I know if a shilajit brand tests for heavy metals?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Ask for a Certificate of Analysis (COA) from an independent laboratory. A legitimate heavy metals COA will show: the specific measured value (not just 'PASS'), the analytical method used (ICP-MS is the gold standard), the reference limit for each metal, and results for all four key metals (Lead, Mercury, Arsenic, Cadmium). Brands that can't or won't share a COA should be avoided.",
+    },
   },
   {
-    question: "Which shilajit brands have the cleanest heavy metals testing?",
-    answer:
-      "Among brands in our database, Black Lotus and Pure Himalayan both have the most transparent heavy metals documentation. Black Lotus publishes a full-panel COA from an independent lab. Pure Himalayan uses an ISO/IEC 17025-accredited lab, which represents the highest internationally recognized standard for laboratory competence. Both have shown heavy metals results within safe limits.",
+    "@type": "Question",
+    name: "Which shilajit brands have the cleanest heavy metals testing?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Among brands in our database, Black Lotus and Pure Himalayan both have the most transparent heavy metals documentation. Black Lotus publishes a full-panel COA from an independent lab. Pure Himalayan uses an ISO/IEC 17025-accredited lab, which represents the highest internationally recognized standard for laboratory competence. Both have shown heavy metals results within safe limits.",
+    },
   },
 ];
 
