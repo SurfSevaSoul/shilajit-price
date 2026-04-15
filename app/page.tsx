@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { PRODUCTS, CATEGORIES, Category, Tier, TIER_COLORS, Origin, ORIGINS } from "./data/products";
 import HeroSection from "./components/HeroSection";
@@ -113,16 +112,6 @@ const ACCENT_STYLES: Record<
   },
 };
 
-function getEditorPickImage(vendor: string): { src: string; alt: string } | null {
-  if (vendor.toLowerCase().includes("black lotus")) {
-    return { src: "/images/black-lotus-resin.jpg", alt: "Black Lotus Pure Altai Shilajit Resin" };
-  }
-  if (vendor.toLowerCase().includes("pure himalayan")) {
-    return { src: "/images/pure-himalayan-resin.jpg", alt: "Pure Himalayan Shilajit Resin" };
-  }
-  return null;
-}
-
 function EditorPickCard({
   product,
   label,
@@ -133,25 +122,10 @@ function EditorPickCard({
   accent: AccentVariant;
 }) {
   const s = ACCENT_STYLES[accent];
-  const productImage = getEditorPickImage(product.vendor);
   return (
     <div
-      className={`bg-white border-2 ${s.border} rounded-2xl overflow-hidden flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm`}
+      className={`bg-white border-2 ${s.border} rounded-2xl p-5 flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm`}
     >
-      {/* Product image — Black Lotus & Pure Himalayan only */}
-      {productImage && (
-        <div className="relative w-full aspect-square bg-[#F0FAF4] border-b border-[#D1EDD8]">
-          <Image
-            src={productImage.src}
-            alt={productImage.alt}
-            fill
-            className="object-contain p-4"
-            sizes="(max-width: 640px) 100vw, 33vw"
-          />
-        </div>
-      )}
-
-      <div className="p-5 flex flex-col flex-1">
       {/* Editor's Pick badge */}
       <span
         className={`inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-widest ${s.badge} mb-3`}
@@ -215,7 +189,6 @@ function EditorPickCard({
       <p className="text-center text-[9px] text-[#7BA899] mt-1.5">
         Affiliate link — commission at no extra cost
       </p>
-      </div>
     </div>
   );
 }

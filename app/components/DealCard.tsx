@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import { Product, Tier, TIER_DESCRIPTIONS } from "../data/products";
 import { getLabEntry } from "../data/lab-data";
 import { getAggregateRating } from "../data/reviews";
@@ -104,16 +103,6 @@ function buildProductSchema(product: Product) {
   };
 }
 
-function getProductImage(vendor: string): { src: string; alt: string } | null {
-  if (vendor.toLowerCase().includes("black lotus")) {
-    return { src: "/images/black-lotus-resin.jpg", alt: "Black Lotus Pure Altai Shilajit Resin" };
-  }
-  if (vendor.toLowerCase().includes("pure himalayan")) {
-    return { src: "/images/pure-himalayan-resin.jpg", alt: "Pure Himalayan Shilajit Resin" };
-  }
-  return null;
-}
-
 function PurityBar({ score }: { score: number }) {
   const pct = (score / 10) * 100;
   const color =
@@ -150,7 +139,6 @@ export default function DealCard({ product }: DealCardProps) {
 
   const isAffiliate = affiliateUrl !== "#";
   const productSchema = buildProductSchema(product);
-  const productImage = getProductImage(vendor);
 
   const labEntry = getLabEntry(product.id);
   const reviewAggregate = getAggregateRating(product.id);
@@ -183,19 +171,6 @@ export default function DealCard({ product }: DealCardProps) {
         {featured && (
           <div className="absolute top-0 right-0 bg-[#10B981] text-white text-[9px] font-bold px-2.5 py-0.5 rounded-bl-xl tracking-wide uppercase z-10">
             Featured
-          </div>
-        )}
-
-        {/* Product image — Black Lotus & Pure Himalayan only */}
-        {productImage && (
-          <div className="relative w-full aspect-square overflow-hidden rounded-t-2xl bg-[#F0FAF4] border-b border-[#D1EDD8]">
-            <Image
-              src={productImage.src}
-              alt={productImage.alt}
-              fill
-              className="object-contain p-3"
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-            />
           </div>
         )}
 
