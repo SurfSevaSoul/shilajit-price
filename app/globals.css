@@ -1,24 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --bg-primary: #0d1f14;
-  --bg-secondary: #122019;
-  --bg-card: #182b1f;
-  --bg-card-hover: #1e3527;
-  --border: #2a4535;
-  --text-primary: #e8f4ec;
-  --text-secondary: #9ec9ad;
-  --text-muted: #5d8c6e;
-  --accent-green: #22c55e;
-  --accent-gold: #f59e0b;
-  --accent-emerald: #10b981;
+  /* ── Light design system ─────────────────────────────── */
+  --bg-primary: #E8F5EC;
+  --bg-dark: #0D1F14;
+  --bg-card: #FFFFFF;
+  --bg-card-alt: #F0FAF4;
+  --border: #9EC9AD;
+  --border-subtle: #D1EDD8;
+  --text-primary: #0D1F14;
+  --text-secondary: #4A6358;
+  --text-muted: #7BA899;
+  --accent-emerald: #10B981;
+  --accent-sage: #9EC9AD;
+  --btn-primary: #182B1F;
+  --btn-primary-hover: #10B981;
 }
 
 @theme inline {
   --color-background: var(--bg-primary);
   --color-foreground: var(--text-primary);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+  --font-heading: var(--font-jakarta);
 }
 
 * {
@@ -32,28 +35,23 @@ html {
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-family: var(--font-manrope), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Scrollbar styling */
-::-webkit-scrollbar {
-  width: 6px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-jakarta), system-ui, -apple-system, sans-serif;
 }
-::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-}
-::-webkit-scrollbar-thumb {
-  background: var(--border);
-  border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: var(--text-muted);
-}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-card-alt); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-sage); }
 
 /* Selection */
 ::selection {
-  background: rgba(34, 197, 94, 0.3);
+  background: rgba(16, 185, 129, 0.2);
   color: var(--text-primary);
 }

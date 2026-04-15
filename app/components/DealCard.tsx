@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Product, Tier, TIER_COLORS, TIER_DESCRIPTIONS } from "../data/products";
+import { Product, Tier, TIER_DESCRIPTIONS } from "../data/products";
 import { getLabEntry } from "../data/lab-data";
 import { getAggregateRating } from "../data/reviews";
 import LabDataPanel from "./LabDataPanel";
@@ -14,6 +14,15 @@ interface DealCardProps {
 type ActivePanel = "none" | "details" | "lab" | "reviews";
 
 const TIER_EDITORIAL_SCORE: Record<Tier, number> = { S: 4.9, A: 4.5, B: 4.0, C: 3.5, D: 3.0 };
+
+// Pill-style tier badges for the light design
+const TIER_PILL: Record<Tier, string> = {
+  S: "bg-amber-100 text-amber-800 ring-1 ring-amber-300",
+  A: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300",
+  B: "bg-blue-100 text-blue-800 ring-1 ring-blue-300",
+  C: "bg-slate-100 text-slate-600 ring-1 ring-slate-300",
+  D: "bg-red-100 text-red-700 ring-1 ring-red-300",
+};
 
 function buildProductSchema(product: Product) {
   const url = product.affiliateUrl !== "#" ? product.affiliateUrl : "https://shilajitprice.com";
@@ -57,11 +66,11 @@ function PurityBar({ score }: { score: number }) {
   const label =
     score >= 8 ? "Excellent" : score >= 6 ? "Good" : score >= 4 ? "Average" : "Poor";
   const textColor =
-    score >= 8 ? "text-emerald-400" : score >= 6 ? "text-blue-400" : score >= 4 ? "text-amber-400" : "text-red-400";
+    score >= 8 ? "text-emerald-600" : score >= 6 ? "text-blue-600" : score >= 4 ? "text-amber-600" : "text-red-600";
   return (
     <div className="flex items-center gap-2">
-      <span className="text-[10px] text-[#5d8c6e] font-semibold uppercase tracking-wider w-10 shrink-0">Purity</span>
-      <div className="flex-1 h-1.5 rounded-full bg-[#0d1f14] overflow-hidden">
+      <span className="text-[10px] text-[#7BA899] font-semibold uppercase tracking-wider w-10 shrink-0">Purity</span>
+      <div className="flex-1 h-1.5 rounded-full bg-[#D1EDD8] overflow-hidden">
         <div className={`h-full rounded-full ${color} transition-all`} style={{ width: `${pct}%` }} />
       </div>
       <span className={`text-[10px] font-bold tabular-nums ${textColor}`}>{score}/10</span>
@@ -93,11 +102,11 @@ export default function DealCard({ product }: DealCardProps) {
   const hasNoLab = labEntry.coaStatus === "not-available";
 
   const allBadges = [
-    coaVerified && { label: "COA", cls: "bg-emerald-900/50 border-emerald-700/50 text-emerald-300" },
-    thirdPartyTested && { label: "3rd Party", cls: "bg-purple-900/40 border-purple-700/40 text-purple-300" },
-    heavyMetalsTested && { label: "HM Tested", cls: "bg-blue-900/40 border-blue-700/40 text-blue-300" },
-    gmpCertified && { label: "GMP", cls: "bg-teal-900/40 border-teal-700/40 text-teal-300" },
-    freeShipping && { label: "Free Ship", cls: "bg-amber-900/40 border-amber-700/40 text-amber-300" },
+    coaVerified && { label: "COA", cls: "bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700" },
+    thirdPartyTested && { label: "3rd Party", cls: "bg-purple-50 ring-1 ring-purple-200 text-purple-700" },
+    heavyMetalsTested && { label: "HM Tested", cls: "bg-blue-50 ring-1 ring-blue-200 text-blue-700" },
+    gmpCertified && { label: "GMP", cls: "bg-teal-50 ring-1 ring-teal-200 text-teal-700" },
+    freeShipping && { label: "Free Ship", cls: "bg-amber-50 ring-1 ring-amber-200 text-amber-700" },
   ].filter(Boolean) as { label: string; cls: string }[];
 
   const topBadges = allBadges.slice(0, 2);
@@ -107,46 +116,46 @@ export default function DealCard({ product }: DealCardProps) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }} />
       <div
-        className={`relative flex flex-col rounded-xl border transition-all duration-200 overflow-hidden group
+        className={`relative flex flex-col rounded-2xl border-2 transition-all duration-200 overflow-hidden group shadow-sm
           ${featured
-            ? "border-emerald-500/50 shadow-lg shadow-emerald-900/20"
-            : "border-[#2a4535]"
+            ? "border-[#10B981] shadow-md shadow-emerald-100"
+            : "border-[#D1EDD8] hover:border-[#9EC9AD]"
           }
-          bg-[#182b1f] hover:bg-[#1e3527] hover:border-emerald-600/40 hover:shadow-md hover:shadow-emerald-900/20`}
+          bg-white hover:shadow-md`}
       >
         {/* Featured ribbon */}
         {featured && (
-          <div className="absolute top-0 right-0 bg-emerald-500 text-white text-[9px] font-bold px-2.5 py-0.5 rounded-bl-lg tracking-wide uppercase z-10">
+          <div className="absolute top-0 right-0 bg-[#10B981] text-white text-[9px] font-bold px-2.5 py-0.5 rounded-bl-xl tracking-wide uppercase z-10">
             Featured
           </div>
         )}
 
-        <div className="p-3.5 flex flex-col gap-0 flex-1">
+        <div className="p-4 flex flex-col gap-0 flex-1">
           {/* Row 1: Tier badge + Vendor + Product name */}
-          <div className="flex items-start gap-2.5 mb-2.5">
+          <div className="flex items-start gap-2.5 mb-3">
             <div
-              className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black ${TIER_COLORS[tier]} shadow-sm`}
+              className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-extrabold ${TIER_PILL[tier]}`}
               title={TIER_DESCRIPTIONS[tier]}
             >
               {tier}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest truncate leading-none mb-0.5">
+              <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest truncate leading-none mb-0.5">
                 {vendor}
               </p>
-              <h3 className="text-sm font-semibold text-[#e8f4ec] leading-snug line-clamp-1">
+              <h3 className="text-sm font-semibold text-[#0D1F14] leading-snug line-clamp-1">
                 {productName}
               </h3>
             </div>
           </div>
 
           {/* Row 2: Pricing */}
-          <div className="flex items-baseline gap-2 mb-2.5">
-            <span className="text-xl font-black text-[#e8f4ec] tabular-nums">${priceUsd.toFixed(2)}</span>
-            <span className="text-[10px] text-[#5d8c6e]">/ {weightGrams}g</span>
-            <span className="ml-auto text-sm font-bold text-emerald-400 tabular-nums">
+          <div className="flex items-baseline gap-2 mb-3">
+            <span className="text-xl font-extrabold text-[#0D1F14] tabular-nums" style={{ fontFamily: "var(--font-jakarta)" }}>${priceUsd.toFixed(2)}</span>
+            <span className="text-[10px] text-[#7BA899]">/ {weightGrams}g</span>
+            <span className="ml-auto text-sm font-bold text-[#10B981] tabular-nums">
               ${pricePerGram.toFixed(2)}
-              <span className="text-[10px] text-[#5d8c6e] font-normal">/g</span>
+              <span className="text-[10px] text-[#7BA899] font-normal">/g</span>
             </span>
           </div>
 
@@ -156,20 +165,20 @@ export default function DealCard({ product }: DealCardProps) {
               {topBadges.map((b) => (
                 <span
                   key={b.label}
-                  className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border ${b.cls}`}
+                  className={`inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] font-bold ${b.cls}`}
                 >
                   {b.label}
                 </span>
               ))}
               {badge && (
-                <span className="inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border bg-amber-400/20 border-amber-400/40 text-amber-300">
+                <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-amber-50 ring-1 ring-amber-200 text-amber-700">
                   ★ {badge}
                 </span>
               )}
             </div>
             <button
               onClick={() => toggle("details")}
-              className="shrink-0 text-[10px] text-[#5d8c6e] hover:text-emerald-400 transition-colors whitespace-nowrap"
+              className="shrink-0 text-[10px] text-[#7BA899] hover:text-[#0D1F14] transition-colors whitespace-nowrap font-medium"
             >
               {activePanel === "details" ? "Less ↑" : "Details ↓"}
             </button>
@@ -177,44 +186,44 @@ export default function DealCard({ product }: DealCardProps) {
 
           {/* Details panel */}
           {activePanel === "details" && (
-            <div className="mt-3 pt-3 border-t border-[#1e3527] space-y-2.5">
+            <div className="mt-3 pt-3 border-t border-[#D1EDD8] space-y-2.5">
               <PurityBar score={purityScore} />
               <div className="flex flex-wrap gap-1">
                 {fulvicAcidPct !== undefined && (
-                  <span className="inline-flex items-center px-1.5 py-0.5 rounded bg-emerald-900/50 border border-emerald-700/50 text-emerald-300 text-[10px] font-bold">
+                  <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700 text-[10px] font-bold">
                     ⚗️ {fulvicAcidPct}% FA
                   </span>
                 )}
                 {sourceLocation && (
-                  <span className="inline-flex items-center px-1.5 py-0.5 rounded bg-blue-900/30 border border-blue-700/30 text-blue-300 text-[10px]">
+                  <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-blue-50 ring-1 ring-blue-200 text-blue-700 text-[10px]">
                     🏔️ {sourceLocation}
                   </span>
                 )}
                 {amazonRating !== undefined && (
-                  <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded bg-amber-900/30 border border-amber-700/30 text-amber-300 text-[10px]">
+                  <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full bg-amber-50 ring-1 ring-amber-200 text-amber-700 text-[10px]">
                     ★ {amazonRating.toFixed(1)}
                     {amazonReviewCount !== undefined && (
-                      <span className="text-[#5d8c6e] ml-0.5">
+                      <span className="text-[#7BA899] ml-0.5">
                         ({amazonReviewCount >= 1000 ? `${(amazonReviewCount / 1000).toFixed(1)}k` : amazonReviewCount})
                       </span>
                     )}
                   </span>
                 )}
                 {costPerServing > 0 && (
-                  <span className="inline-flex items-center px-1.5 py-0.5 rounded bg-[#0d1f14] border border-[#2a4535] text-[#9ec9ad] text-[10px]">
+                  <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-[#F0FAF4] ring-1 ring-[#D1EDD8] text-[#4A6358] text-[10px]">
                     💊 ${costPerServing.toFixed(2)}/serving
                   </span>
                 )}
               </div>
               {description && (
-                <p className="text-[11px] text-[#9ec9ad] leading-relaxed line-clamp-2">{description}</p>
+                <p className="text-[11px] text-[#4A6358] leading-relaxed line-clamp-2">{description}</p>
               )}
               {extraBadges.length > 0 && (
                 <div className="flex flex-wrap gap-1">
                   {extraBadges.map((b) => (
                     <span
                       key={b.label}
-                      className={`inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] font-medium border ${b.cls}`}
+                      className={`inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] font-medium ${b.cls}`}
                     >
                       {b.label}
                     </span>
@@ -225,18 +234,18 @@ export default function DealCard({ product }: DealCardProps) {
           )}
 
           {/* ── Trust signal row: Lab Data + Reviews ──────────────────────── */}
-          <div className="flex items-center gap-2 mt-3 pt-2.5 border-t border-[#1e3527]">
+          <div className="flex items-center gap-2 mt-3 pt-2.5 border-t border-[#D1EDD8]">
             {/* Lab data toggle */}
             <button
               onClick={() => toggle("lab")}
-              className={`flex items-center gap-1 px-2 py-1 rounded text-[10px] font-semibold transition-colors flex-1 ${
+              className={`flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-semibold transition-colors flex-1 ${
                 activePanel === "lab"
-                  ? "bg-emerald-900/40 text-emerald-300 border border-emerald-700/50"
+                  ? "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300"
                   : hasNoLab
-                  ? "bg-red-900/20 text-red-400 border border-red-800/30 hover:bg-red-900/30"
+                  ? "bg-red-50 text-red-600 ring-1 ring-red-200 hover:bg-red-100"
                   : hasVerifiedLab
-                  ? "bg-emerald-900/20 text-emerald-400 border border-emerald-800/30 hover:bg-emerald-900/30"
-                  : "bg-amber-900/20 text-amber-400 border border-amber-800/30 hover:bg-amber-900/30"
+                  ? "bg-emerald-50 text-emerald-700 ring-1 ring-emerald-200 hover:bg-emerald-100"
+                  : "bg-amber-50 text-amber-700 ring-1 ring-amber-200 hover:bg-amber-100"
               }`}
             >
               {hasVerifiedLab && (
@@ -252,13 +261,13 @@ export default function DealCard({ product }: DealCardProps) {
             {/* Reviews toggle */}
             <button
               onClick={() => toggle("reviews")}
-              className={`flex items-center gap-1 px-2 py-1 rounded text-[10px] font-semibold transition-colors flex-1 ${
+              className={`flex items-center gap-1 px-2 py-1 rounded-full text-[10px] font-semibold transition-colors flex-1 ${
                 activePanel === "reviews"
-                  ? "bg-amber-900/40 text-amber-300 border border-amber-700/50"
-                  : "bg-[#0d1f14] text-[#5d8c6e] border border-[#1e3527] hover:text-[#9ec9ad] hover:border-[#2a4535]"
+                  ? "bg-amber-100 text-amber-800 ring-1 ring-amber-300"
+                  : "bg-[#F0FAF4] text-[#7BA899] ring-1 ring-[#D1EDD8] hover:text-[#4A6358] hover:ring-[#9EC9AD]"
               }`}
             >
-              <svg className="w-3 h-3 shrink-0 text-amber-400" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-3 h-3 shrink-0 text-amber-500" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
               {reviewAggregate ? `${reviewAggregate.avg} (${reviewAggregate.count})` : "Reviews"}
@@ -276,26 +285,26 @@ export default function DealCard({ product }: DealCardProps) {
         </div>
 
         {/* CTA */}
-        <div className="px-3.5 pb-3.5">
+        <div className="px-4 pb-4">
           {isAffiliate ? (
             <a
               href={affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className={`block w-full text-center py-2 px-3 rounded-lg text-xs font-semibold transition-all duration-200
+              className={`block w-full text-center py-2.5 px-3 rounded-full text-xs font-bold transition-all duration-200
                 ${featured
-                  ? "bg-emerald-500 hover:bg-emerald-400 text-white shadow-md shadow-emerald-900/30"
-                  : "bg-emerald-700/30 hover:bg-emerald-600/40 text-emerald-300 border border-emerald-700/50 hover:border-emerald-500/60"
+                  ? "bg-[#182B1F] hover:bg-[#10B981] text-white shadow-sm"
+                  : "border-2 border-[#182B1F] text-[#182B1F] hover:bg-[#182B1F] hover:text-white"
                 }`}
             >
               {featured ? "View Deal →" : "Check Price →"}
             </a>
           ) : (
-            <span className="block w-full text-center py-2 px-3 rounded-lg text-xs font-medium bg-[#122019] text-[#5d8c6e] border border-[#2a4535] cursor-default">
+            <span className="block w-full text-center py-2.5 px-3 rounded-full text-xs font-medium bg-[#F0FAF4] text-[#7BA899] border border-[#D1EDD8] cursor-default">
               Check Price →
             </span>
           )}
-          <p className="text-[9px] text-[#5d8c6e] text-center mt-1.5">
+          <p className="text-[9px] text-[#7BA899] text-center mt-1.5">
             Price verified April 2026. Confirm at checkout.
           </p>
         </div>

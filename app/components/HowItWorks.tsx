@@ -70,7 +70,7 @@ const STEPS = [
 
 export default function HowItWorks() {
   return (
-    <section className="py-16 sm:py-20 bg-[#0d1f14]" id="how-it-works">
+    <section className="py-16 sm:py-20 bg-white border-t border-[#D1EDD8]" id="how-it-works">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(methodologyFaqSchema) }}
@@ -78,13 +78,13 @@ export default function HowItWorks() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/40 border border-emerald-800/50 text-emerald-400 text-xs font-semibold mb-4 tracking-wide">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F0FAF4] border border-[#9EC9AD] text-[#4A6358] text-xs font-semibold mb-4">
             Our Process
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#e8f4ec] mb-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0D1F14] mb-3" style={{ fontFamily: "var(--font-jakarta)" }}>
             How We Compare Shilajit
           </h2>
-          <p className="text-[#9ec9ad] max-w-lg mx-auto text-sm leading-relaxed">
+          <p className="text-[#7BA899] max-w-lg mx-auto text-sm leading-relaxed">
             We track purity data, lab results, and pricing — so you get the most fulvic acid per dollar and never waste money on unverified products.
           </p>
         </div>
@@ -94,21 +94,21 @@ export default function HowItWorks() {
           {STEPS.map((step, i) => (
             <div
               key={step.number}
-              className="relative bg-[#182b1f] border border-[#2a4535] rounded-xl p-5 hover:border-emerald-700/50 transition-colors duration-200"
+              className="relative bg-[#F0FAF4] border-2 border-[#D1EDD8] rounded-2xl p-5 hover:border-[#9EC9AD] hover:shadow-sm transition-all duration-200"
             >
               {/* Connector line (desktop) */}
               {i < STEPS.length - 1 && (
-                <div className="hidden lg:block absolute top-8 -right-2.5 w-5 h-px bg-gradient-to-r from-emerald-700/50 to-transparent z-10" />
+                <div className="hidden lg:block absolute top-8 -right-2.5 w-5 h-px bg-gradient-to-r from-[#9EC9AD] to-transparent z-10" />
               )}
 
               <div className="text-3xl mb-3">{step.icon}</div>
-              <div className="text-xs font-black text-emerald-500 mb-1 tracking-widest">
+              <div className="text-xs font-extrabold text-[#10B981] mb-1 tracking-widest">
                 {step.number}
               </div>
-              <h3 className="text-sm font-bold text-[#e8f4ec] mb-2">
+              <h3 className="text-sm font-bold text-[#0D1F14] mb-2">
                 {step.title}
               </h3>
-              <p className="text-xs text-[#9ec9ad] leading-relaxed">
+              <p className="text-xs text-[#4A6358] leading-relaxed">
                 {step.description}
               </p>
             </div>
@@ -125,54 +125,34 @@ export default function HowItWorks() {
           ].map(({ icon, label }) => (
             <div
               key={label}
-              className="flex items-center gap-2.5 bg-[#182b1f] border border-[#2a4535] rounded-lg px-3 py-2.5"
+              className="flex items-center gap-2.5 bg-white border-2 border-[#D1EDD8] rounded-xl px-3 py-2.5 shadow-sm"
             >
               <span className="text-base shrink-0">{icon}</span>
-              <span className="text-[11px] text-[#9ec9ad] font-medium leading-snug">{label}</span>
+              <span className="text-[11px] text-[#4A6358] font-medium leading-snug">{label}</span>
             </div>
           ))}
         </div>
 
         {/* Tier explanation */}
-        <div className="mt-5 bg-[#182b1f] border border-[#2a4535] rounded-xl p-6">
-          <h3 className="text-base font-bold text-[#e8f4ec] mb-4 text-center">
+        <div className="mt-5 bg-[#F0FAF4] border-2 border-[#D1EDD8] rounded-2xl p-6">
+          <h3 className="text-base font-bold text-[#0D1F14] mb-4 text-center">
             Understanding Our Tier System
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
             {[
-              {
-                tier: "S",
-                color: "bg-amber-400 text-amber-900",
-                desc: "Elite quality, full COA, best value",
-              },
-              {
-                tier: "A",
-                color: "bg-emerald-500 text-white",
-                desc: "High quality, lab tested, reliable",
-              },
-              {
-                tier: "B",
-                color: "bg-blue-500 text-white",
-                desc: "Average, some testing, acceptable",
-              },
-              {
-                tier: "C",
-                color: "bg-slate-500 text-white",
-                desc: "Below avg, limited transparency",
-              },
-              {
-                tier: "D",
-                color: "bg-red-500 text-white",
-                desc: "Poor quality, questionable source",
-              },
+              { tier: "S", color: "bg-amber-400 text-amber-900", desc: "Elite quality, full COA, best value" },
+              { tier: "A", color: "bg-emerald-500 text-white", desc: "High quality, lab tested, reliable" },
+              { tier: "B", color: "bg-blue-500 text-white", desc: "Average, some testing, acceptable" },
+              { tier: "C", color: "bg-slate-400 text-white", desc: "Below avg, limited transparency" },
+              { tier: "D", color: "bg-red-500 text-white", desc: "Poor quality, questionable source" },
             ].map(({ tier, color, desc }) => (
               <div key={tier} className="flex flex-col items-center text-center gap-2">
                 <div
-                  className={`w-10 h-10 rounded-lg flex items-center justify-center text-base font-black ${color} shadow-sm`}
+                  className={`w-10 h-10 rounded-full flex items-center justify-center text-base font-extrabold ${color} shadow-sm`}
                 >
                   {tier}
                 </div>
-                <p className="text-[10px] text-[#9ec9ad] leading-tight">{desc}</p>
+                <p className="text-[10px] text-[#4A6358] leading-tight">{desc}</p>
               </div>
             ))}
           </div>

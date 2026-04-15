@@ -4,7 +4,7 @@ const AFFILIATE_RESIN =
 function CheckIcon() {
   return (
     <svg
-      className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5"
+      className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5"
       fill="currentColor"
       viewBox="0 0 20 20"
     >
@@ -31,22 +31,22 @@ export default function BlackLotusCTA({
   buttonText = "Shop Black Lotus Resin — $36.99 →",
 }: BlackLotusCTAProps) {
   return (
-    <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl overflow-hidden shadow-lg shadow-emerald-900/10">
+    <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm">
       {/* Header bar */}
-      <div className="bg-emerald-900/30 border-b border-emerald-800/30 px-6 py-3 flex items-center gap-3">
-        <div className="w-8 h-8 rounded-lg bg-amber-400 flex items-center justify-center text-amber-900 font-black text-sm shrink-0">
+      <div className="bg-[#F0FAF4] border-b border-[#D1EDD8] px-6 py-3 flex items-center gap-3">
+        <div className="w-8 h-8 rounded-full bg-amber-100 ring-2 ring-amber-300 flex items-center justify-center text-amber-800 font-extrabold text-sm shrink-0">
           S
         </div>
         <div>
-          <div className="text-[9px] font-bold text-emerald-400 uppercase tracking-widest">
+          <div className="text-[9px] font-bold text-[#10B981] uppercase tracking-widest">
             S-Tier · Highest Verified Potency
           </div>
-          <div className="text-xs font-bold text-[#e8f4ec]">{headline}</div>
+          <div className="text-xs font-bold text-[#0D1F14]">{headline}</div>
         </div>
       </div>
 
       <div className="p-6">
-        <p className="text-xs text-[#9ec9ad] mb-4 leading-relaxed">{subtext}</p>
+        <p className="text-xs text-[#4A6358] mb-4 leading-relaxed">{subtext}</p>
 
         <ul className="space-y-1.5 mb-5">
           {[
@@ -59,7 +59,7 @@ export default function BlackLotusCTA({
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">
               <CheckIcon />
-              <span className="text-xs text-[#9ec9ad]">{item}</span>
+              <span className="text-xs text-[#4A6358]">{item}</span>
             </li>
           ))}
         </ul>
@@ -68,12 +68,12 @@ export default function BlackLotusCTA({
           href={AFFILIATE_RESIN}
           target="_blank"
           rel="noopener noreferrer sponsored"
-          className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm transition-colors shadow-md shadow-emerald-900/30"
+          className="flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-bold text-sm transition-colors shadow-sm"
         >
           <span>{emoji}</span>
           <span>{buttonText}</span>
         </a>
-        <p className="text-center text-[10px] text-[#5d8c6e] mt-2">
+        <p className="text-center text-[10px] text-[#7BA899] mt-2">
           Affiliate link — we earn a small commission at no extra cost to you
         </p>
       </div>

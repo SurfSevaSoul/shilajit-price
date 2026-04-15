@@ -31,11 +31,11 @@ export default function CategoryFilter({
           <button
             key={cat}
             onClick={() => onChange(cat)}
-            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap border
+            className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all duration-200 whitespace-nowrap border-2
               ${
                 active === cat
-                  ? "bg-emerald-500 border-emerald-400 text-white shadow-md shadow-emerald-900/30"
-                  : "bg-[#182b1f] border-[#2a4535] text-[#9ec9ad] hover:border-emerald-600/50 hover:text-emerald-300 hover:bg-[#1e3527]"
+                  ? "bg-[#182B1F] border-[#182B1F] text-white shadow-sm"
+                  : "bg-white border-[#D1EDD8] text-[#4A6358] hover:border-[#9EC9AD] hover:text-[#0D1F14]"
               }`}
           >
             <span className="text-xs">{CATEGORY_ICONS[cat]}</span>
@@ -45,7 +45,7 @@ export default function CategoryFilter({
                 ${
                   active === cat
                     ? "bg-white/20 text-white"
-                    : "bg-[#0d1f14] text-[#5d8c6e]"
+                    : "bg-[#F0FAF4] text-[#7BA899]"
                 }`}
             >
               {counts[cat]}

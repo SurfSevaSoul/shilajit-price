@@ -90,25 +90,25 @@ const ACCENT_STYLES: Record<
   { border: string; badge: string; label: string; btn: string; ppg: string }
 > = {
   emerald: {
-    border: "border-emerald-600/40 hover:border-emerald-500/60",
-    badge: "bg-emerald-900/50 border border-emerald-700/50 text-emerald-400",
-    label: "text-emerald-400",
-    btn: "bg-emerald-500 hover:bg-emerald-400 text-white shadow-emerald-900/30",
-    ppg: "text-emerald-400",
+    border: "border-[#9EC9AD] hover:border-[#10B981]",
+    badge: "bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700",
+    label: "text-[#10B981]",
+    btn: "bg-[#182B1F] hover:bg-[#10B981] text-white",
+    ppg: "text-[#10B981]",
   },
   amber: {
-    border: "border-amber-600/40 hover:border-amber-500/60",
-    badge: "bg-amber-900/30 border border-amber-700/40 text-amber-400",
-    label: "text-amber-400",
-    btn: "bg-amber-500 hover:bg-amber-400 text-white shadow-amber-900/30",
-    ppg: "text-amber-400",
+    border: "border-amber-200 hover:border-amber-400",
+    badge: "bg-amber-50 ring-1 ring-amber-200 text-amber-700",
+    label: "text-amber-600",
+    btn: "bg-[#182B1F] hover:bg-amber-500 text-white",
+    ppg: "text-amber-600",
   },
   blue: {
-    border: "border-blue-700/40 hover:border-blue-500/60",
-    badge: "bg-blue-900/30 border border-blue-700/40 text-blue-400",
-    label: "text-blue-400",
-    btn: "bg-blue-600 hover:bg-blue-500 text-white shadow-blue-900/30",
-    ppg: "text-blue-400",
+    border: "border-blue-200 hover:border-blue-400",
+    badge: "bg-blue-50 ring-1 ring-blue-200 text-blue-700",
+    label: "text-blue-600",
+    btn: "bg-[#182B1F] hover:bg-blue-600 text-white",
+    ppg: "text-blue-600",
   },
 };
 
@@ -124,11 +124,11 @@ function EditorPickCard({
   const s = ACCENT_STYLES[accent];
   return (
     <div
-      className={`bg-[#182b1f] border ${s.border} rounded-xl p-5 flex flex-col transition-all duration-200 hover:bg-[#1e3527] hover:shadow-md`}
+      className={`bg-white border-2 ${s.border} rounded-2xl p-5 flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm`}
     >
       {/* Editor's Pick badge */}
       <span
-        className={`inline-flex items-center self-start px-2 py-0.5 rounded text-[9px] font-bold uppercase tracking-widest ${s.badge} mb-3`}
+        className={`inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-widest ${s.badge} mb-3`}
       >
         Editor&apos;s Pick
       </span>
@@ -141,16 +141,16 @@ function EditorPickCard({
       {/* Tier + name */}
       <div className="flex items-center gap-2.5 mb-3">
         <div
-          className={`shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-sm font-black ${TIER_COLORS[product.tier]} shadow-sm`}
+          className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-extrabold ${TIER_COLORS[product.tier]} shadow-sm`}
           title={`${product.tier}-Tier`}
         >
           {product.tier}
         </div>
         <div className="flex-1 min-w-0">
-          <div className="text-[10px] font-bold text-[#5d8c6e] uppercase truncate leading-none">
+          <div className="text-[10px] font-bold text-[#7BA899] uppercase truncate leading-none">
             {product.vendor}
           </div>
-          <div className="text-sm font-semibold text-[#e8f4ec] truncate leading-snug">
+          <div className="text-sm font-semibold text-[#0D1F14] truncate leading-snug">
             {product.productName}
           </div>
         </div>
@@ -158,7 +158,7 @@ function EditorPickCard({
 
       {/* Price row */}
       <div className="flex items-baseline gap-2 mb-3">
-        <span className="text-2xl font-black text-[#e8f4ec] tabular-nums">
+        <span className="text-2xl font-extrabold text-[#0D1F14] tabular-nums" style={{ fontFamily: "var(--font-jakarta)" }}>
           ${product.priceUsd.toFixed(2)}
         </span>
         <span className={`text-xs font-bold tabular-nums ${s.ppg}`}>
@@ -167,7 +167,7 @@ function EditorPickCard({
       </div>
 
       {/* Key specs */}
-      <ul className="space-y-1 mb-4 flex-1 text-[11px] text-[#9ec9ad]">
+      <ul className="space-y-1 mb-4 flex-1 text-[11px] text-[#4A6358]">
         {product.fulvicAcidPct !== undefined && (
           <li>⚗️ {product.fulvicAcidPct}% fulvic acid</li>
         )}
@@ -182,11 +182,11 @@ function EditorPickCard({
         href={product.affiliateUrl}
         target="_blank"
         rel="noopener noreferrer sponsored"
-        className={`block w-full text-center py-2.5 rounded-lg text-xs font-bold transition-colors shadow-md ${s.btn}`}
+        className={`block w-full text-center py-2.5 rounded-full text-xs font-bold transition-colors shadow-sm ${s.btn}`}
       >
         View Deal →
       </a>
-      <p className="text-center text-[9px] text-[#5d8c6e] mt-1.5">
+      <p className="text-center text-[9px] text-[#7BA899] mt-1.5">
         Affiliate link — commission at no extra cost
       </p>
     </div>
@@ -212,21 +212,21 @@ function BlogGuideCard({
   return (
     <Link
       href={`/blog/${slug}`}
-      className="group bg-[#182b1f] border border-[#2a4535] hover:border-emerald-600/40 rounded-xl p-5 flex flex-col transition-all duration-200 hover:bg-[#1e3527] hover:shadow-md"
+      className="group bg-[#0D1F14] border border-[#182B1F] hover:border-[#10B981] rounded-2xl p-5 flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm"
     >
       <div className="text-3xl mb-3">{emoji}</div>
-      <span className="inline-flex items-center self-start px-2 py-0.5 rounded bg-emerald-900/40 border border-emerald-800/40 text-emerald-400 text-[9px] font-bold uppercase tracking-widest mb-3">
+      <span className="inline-flex items-center self-start px-2.5 py-0.5 rounded-full bg-[#10B981]/15 text-[#10B981] text-[9px] font-bold uppercase tracking-widest mb-3">
         {category}
       </span>
-      <h3 className="text-sm font-bold text-[#e8f4ec] leading-snug mb-2 group-hover:text-emerald-300 transition-colors">
+      <h3 className="text-sm font-bold text-white leading-snug mb-2 group-hover:text-[#10B981] transition-colors">
         {title}
       </h3>
-      <p className="text-[11px] text-[#5d8c6e] leading-relaxed flex-1 mb-4 line-clamp-3">
+      <p className="text-[11px] text-[#9EC9AD] leading-relaxed flex-1 mb-4 line-clamp-3">
         {description}
       </p>
       <div className="flex items-center justify-between">
-        <span className="text-[10px] text-[#5d8c6e]">{readingTimeMin} min read</span>
-        <span className="text-xs font-semibold text-emerald-400 group-hover:text-emerald-300 transition-colors">
+        <span className="text-[10px] text-[#7BA899]">{readingTimeMin} min read</span>
+        <span className="text-xs font-semibold text-[#10B981] group-hover:text-white transition-colors">
           Read Guide →
         </span>
       </div>
@@ -354,26 +354,26 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
 
       {/* ── NAV ─────────────────────────────────────────────────────────────── */}
-      <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#D1EDD8] shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <a href="/" className="flex items-center gap-1 shrink-0">
-            <span className="text-lg font-black text-emerald-400">ShilajitPrice</span>
-            <span className="text-lg font-black text-[#e8f4ec]">.com</span>
+            <span className="text-lg font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>ShilajitPrice</span>
+            <span className="text-lg font-extrabold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>.com</span>
           </a>
 
           {/* Desktop links */}
           <div className="hidden sm:flex items-center gap-5 text-sm">
-            <a href="#deals" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Deals</a>
-            <a href="/compare" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Compare</a>
-            <a href="/blog" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Blog</a>
-            <a href="#how-it-works" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">How It Works</a>
-            <a href="/about" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">About</a>
+            <a href="#deals" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Deals</a>
+            <a href="/compare" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Compare</a>
+            <a href="/blog" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Blog</a>
+            <a href="#how-it-works" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">How It Works</a>
+            <a href="/about" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">About</a>
           </div>
 
           <div className="flex items-center gap-3">
             <a
               href="#top-picks"
-              className="hidden sm:inline-flex shrink-0 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors duration-200"
+              className="hidden sm:inline-flex shrink-0 px-4 py-1.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white text-xs font-semibold transition-colors duration-200"
             >
               Editor&apos;s Picks
             </a>
@@ -381,7 +381,7 @@ export default function Home() {
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileMenuOpen((o) => !o)}
-              className="sm:hidden p-2 rounded-lg text-[#9ec9ad] hover:text-emerald-400 hover:bg-[#182b1f] transition-colors"
+              className="sm:hidden p-2 rounded-lg text-[#4A6358] hover:text-[#0D1F14] hover:bg-[#F0FAF4] transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
@@ -399,7 +399,7 @@ export default function Home() {
 
         {/* Mobile dropdown */}
         {mobileMenuOpen && (
-          <div className="sm:hidden border-t border-[#1e3527] bg-[#0a1a10] px-4 py-3 space-y-1">
+          <div className="sm:hidden border-t border-[#D1EDD8] bg-white px-4 py-3 space-y-1">
             {[
               { label: "Deals", href: "#deals" },
               { label: "Compare", href: "/compare" },
@@ -412,7 +412,7 @@ export default function Home() {
                 key={label}
                 href={href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="block px-3 py-2.5 rounded-lg text-sm text-[#9ec9ad] hover:text-emerald-400 hover:bg-[#182b1f] transition-colors"
+                className="block px-3 py-2.5 rounded-lg text-sm text-[#4A6358] hover:text-[#0D1F14] hover:bg-[#F0FAF4] font-medium transition-colors"
               >
                 {label}
               </a>
@@ -426,16 +426,16 @@ export default function Home() {
         <HeroSection />
 
         {/* ── TRUST BANNER ─────────────────────────────────────────────────── */}
-        <div className="bg-[#071009] border-b border-[#1e3527]">
+        <div className="bg-white border-b border-[#D1EDD8]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-[#5d8c6e]">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-[11px] text-[#7BA899]">
               {[
                 { icon: "🧪", text: "Lab data from 3rd-party COA reports", href: "/lab-data" },
                 { icon: "✓", text: "COA status verified per product", href: "/lab-data" },
                 { icon: "⭐", text: "Reviews aggregated from Amazon & brand sites", href: "/reviews" },
                 { icon: "📊", text: "Transparent scoring methodology", href: "/methodology" },
               ].map(({ icon, text, href }) => (
-                <Link key={text} href={href} className="flex items-center gap-1.5 hover:text-emerald-400 transition-colors group">
+                <Link key={text} href={href} className="flex items-center gap-1.5 hover:text-[#10B981] transition-colors group">
                   <span>{icon}</span>
                   <span className="group-hover:underline underline-offset-2">{text}</span>
                 </Link>
@@ -445,7 +445,7 @@ export default function Home() {
         </div>
 
         {/* ── 2. STATS BAR ─────────────────────────────────────────────────── */}
-        <div className="bg-[#0d1f14] border-b border-[#1e3527]">
+        <div className="bg-[#182B1F]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               {[
@@ -455,8 +455,8 @@ export default function Home() {
                 { value: "Weekly", label: "Price Updates" },
               ].map(({ value, label }) => (
                 <div key={label}>
-                  <div className="text-xl sm:text-2xl font-black text-emerald-400">{value}</div>
-                  <div className="text-xs text-[#5d8c6e] mt-0.5">{label}</div>
+                  <div className="text-xl sm:text-2xl font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>{value}</div>
+                  <div className="text-xs text-[#9EC9AD] mt-0.5">{label}</div>
                 </div>
               ))}
             </div>
@@ -464,20 +464,20 @@ export default function Home() {
         </div>
 
         {/* ── 3–5. DEALS SECTION ───────────────────────────────────────────── */}
-        <section id="deals" className="py-10 bg-[#0d1f14]">
+        <section id="deals" className="py-12 bg-[#E8F5EC]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
             {/* Section heading */}
-            <div className="mb-5 flex items-end justify-between gap-4 flex-wrap">
+            <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
               <div>
-                <h2 className="text-2xl font-black text-[#e8f4ec] mb-1">Shilajit Price Comparison</h2>
-                <p className="text-sm text-[#5d8c6e]">
+                <h2 className="text-3xl font-extrabold text-[#0D1F14] mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>Shilajit Price Comparison</h2>
+                <p className="text-sm text-[#7BA899]">
                   {PRODUCTS.length}+ products ranked by tier, purity &amp; value. Updated weekly.
                 </p>
               </div>
               <a
                 href="/compare"
-                className="text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-700/50 hover:border-emerald-500/60 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap"
+                className="text-xs text-[#182B1F] hover:text-white border-2 border-[#182B1F] hover:bg-[#182B1F] px-4 py-1.5 rounded-full font-semibold transition-colors whitespace-nowrap"
               >
                 View Full Table →
               </a>
@@ -491,9 +491,9 @@ export default function Home() {
             {/* ── 4. EDITOR'S TOP 3 PICKS ─────────────────────────────────── */}
             <div id="top-picks" className="mb-10">
               <div className="flex items-center gap-2 mb-4">
-                <span className="text-[10px] font-bold text-amber-400 uppercase tracking-widest">⭐ Editor&apos;s Picks</span>
-                <div className="flex-1 h-px bg-[#1e3527]" />
-                <span className="text-[10px] text-[#5d8c6e]">Independent editorial rankings</span>
+                <span className="text-[10px] font-bold text-amber-600 uppercase tracking-widest">⭐ Editor&apos;s Picks</span>
+                <div className="flex-1 h-px bg-[#D1EDD8]" />
+                <span className="text-[10px] text-[#7BA899]">Independent editorial rankings</span>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {editorPicks.map((p, i) => (
@@ -509,23 +509,23 @@ export default function Home() {
 
             {/* ── 5. ALL DEALS GRID ────────────────────────────────────────── */}
             <div className="flex items-center gap-2 mb-5">
-              <span className="text-[10px] font-bold text-[#5d8c6e] uppercase tracking-widest">All Products</span>
-              <div className="flex-1 h-px bg-[#1e3527]" />
+              <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest">All Products</span>
+              <div className="flex-1 h-px bg-[#D1EDD8]" />
             </div>
 
             {/* Quick stats bar */}
             {quickStats && (
-              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-5 text-xs text-[#5d8c6e]">
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mb-5 text-xs text-[#7BA899]">
                 <span>
-                  Showing <strong className="text-[#9ec9ad]">{filtered.length}</strong> products
+                  Showing <strong className="text-[#4A6358]">{filtered.length}</strong> products
                 </span>
-                <span className="text-[#2a4535]">·</span>
+                <span className="text-[#9EC9AD]">·</span>
                 <span>
-                  Avg price <strong className="text-[#9ec9ad]">${quickStats.avgPrice.toFixed(2)}</strong>
+                  Avg price <strong className="text-[#4A6358]">${quickStats.avgPrice.toFixed(2)}</strong>
                 </span>
-                <span className="text-[#2a4535]">·</span>
+                <span className="text-[#9EC9AD]">·</span>
                 <span>
-                  Best value <strong className="text-emerald-400">${quickStats.bestPpg.toFixed(2)}/gram</strong>
+                  Best value <strong className="text-[#10B981]">${quickStats.bestPpg.toFixed(2)}/gram</strong>
                 </span>
               </div>
             )}
@@ -538,15 +538,15 @@ export default function Home() {
                 {filtered.length === 0 ? (
                   <div className="flex flex-col items-center justify-center py-20 text-center">
                     <div className="text-4xl mb-3">🔍</div>
-                    <h3 className="text-base font-semibold text-[#e8f4ec] mb-1">
+                    <h3 className="text-base font-semibold text-[#0D1F14] mb-1">
                       No products match your filters
                     </h3>
-                    <p className="text-sm text-[#5d8c6e] mb-4">
+                    <p className="text-sm text-[#7BA899] mb-4">
                       Try adjusting your tier selection or price range.
                     </p>
                     <button
                       onClick={() => { setFilters(DEFAULT_FILTERS); setActiveCategory("All"); }}
-                      className="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-medium transition-colors"
+                      className="px-5 py-2 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white text-sm font-semibold transition-colors"
                     >
                       Reset Filters
                     </button>
@@ -554,15 +554,15 @@ export default function Home() {
                 ) : (
                   <>
                     <div className="flex items-center justify-between mb-3">
-                      <p className="text-xs text-[#5d8c6e]">
+                      <p className="text-xs text-[#7BA899]">
                         Showing{" "}
-                        <span className="text-[#9ec9ad] font-medium">{displayedProducts.length}</span>
+                        <span className="text-[#4A6358] font-medium">{displayedProducts.length}</span>
                         {" "}of{" "}
-                        <span className="text-[#9ec9ad] font-medium">{filtered.length}</span>{" "}products
+                        <span className="text-[#4A6358] font-medium">{filtered.length}</span>{" "}products
                       </p>
                       <div className="flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-                        <span className="text-[10px] text-[#5d8c6e]">Featured = affiliate partner</span>
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
+                        <span className="text-[10px] text-[#7BA899]">Featured = affiliate partner</span>
                       </div>
                     </div>
 
@@ -573,13 +573,13 @@ export default function Home() {
                     </div>
 
                     {hasMore && (
-                      <div className="mt-6 text-center">
+                      <div className="mt-8 text-center">
                         <button
                           onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
-                          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#182b1f] hover:bg-[#1e3527] text-emerald-400 hover:text-emerald-300 font-semibold text-sm border border-[#2a4535] hover:border-emerald-700/50 transition-all duration-200"
+                          className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-semibold text-sm transition-all duration-200 shadow-sm"
                         >
                           Load More
-                          <span className="text-[#5d8c6e] text-xs font-normal">
+                          <span className="text-[#9EC9AD] text-xs font-normal">
                             ({filtered.length - visibleCount} remaining)
                           </span>
                         </button>
@@ -588,9 +588,9 @@ export default function Home() {
 
                     {!hasMore && filtered.length > PAGE_SIZE && (
                       <div className="mt-6 text-center">
-                        <p className="text-xs text-[#5d8c6e]">
+                        <p className="text-xs text-[#7BA899]">
                           All {filtered.length} products shown ·{" "}
-                          <a href="/compare" className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">
+                          <a href="/compare" className="text-[#10B981] hover:text-[#0D1F14] underline underline-offset-2">
                             View full comparison table →
                           </a>
                         </p>
@@ -604,18 +604,18 @@ export default function Home() {
         </section>
 
         {/* ── 6. SHILAJIT BUYING GUIDES ────────────────────────────────────── */}
-        <section className="py-14 bg-[#071009] border-t border-[#1e3527]">
+        <section className="py-16 bg-white border-t border-[#D1EDD8]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="flex items-end justify-between gap-4 flex-wrap mb-8">
               <div>
-                <h2 className="text-2xl font-black text-[#e8f4ec] mb-1">Shilajit Buying Guides</h2>
-                <p className="text-sm text-[#5d8c6e]">
+                <h2 className="text-3xl font-extrabold text-[#0D1F14] mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>Shilajit Buying Guides</h2>
+                <p className="text-sm text-[#7BA899]">
                   Research-backed guides to help you find the best shilajit for your needs
                 </p>
               </div>
               <Link
                 href="/blog"
-                className="text-xs text-emerald-400 hover:text-emerald-300 border border-emerald-700/50 hover:border-emerald-500/60 px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap"
+                className="text-xs text-[#182B1F] hover:text-white border-2 border-[#182B1F] hover:bg-[#182B1F] px-4 py-1.5 rounded-full font-semibold transition-colors whitespace-nowrap"
               >
                 View All Guides →
               </Link>

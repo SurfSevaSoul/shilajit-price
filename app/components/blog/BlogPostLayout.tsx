@@ -126,24 +126,24 @@ export default function BlogPostLayout({
         />
       )}
 
-      <main className="flex-1">
+      <main className="flex-1 bg-[#E8F5EC]">
         {/* Article header */}
-        <header className="border-b border-[#1e3527] py-12">
+        <header className="border-b border-[#D1EDD8] py-12 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             {/* Breadcrumb nav */}
             <nav
               aria-label="breadcrumb"
-              className="flex items-center gap-2 text-xs text-[#5d8c6e] mb-6"
+              className="flex items-center gap-2 text-xs text-[#7BA899] mb-6"
             >
-              <Link href="/" className="hover:text-emerald-400 transition-colors">
+              <Link href="/" className="hover:text-[#10B981] transition-colors">
                 Home
               </Link>
               <span>/</span>
-              <Link href="/blog" className="hover:text-emerald-400 transition-colors">
+              <Link href="/blog" className="hover:text-[#10B981] transition-colors">
                 Blog
               </Link>
               <span>/</span>
-              <span className="text-[#9ec9ad]">{breadcrumbLabel}</span>
+              <span className="text-[#4A6358]">{breadcrumbLabel}</span>
             </nav>
 
             {/* Tags */}
@@ -151,7 +151,7 @@ export default function BlogPostLayout({
               {tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2.5 py-0.5 rounded-full bg-emerald-900/50 border border-emerald-800/40 text-emerald-400 text-[10px] font-bold uppercase tracking-wide"
+                  className="px-2.5 py-0.5 rounded-full bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700 text-[10px] font-bold uppercase tracking-wide"
                 >
                   {tag}
                 </span>
@@ -159,22 +159,22 @@ export default function BlogPostLayout({
             </div>
 
             {/* H1 */}
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#e8f4ec] leading-tight mb-4 max-w-4xl">
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0D1F14] leading-tight mb-4 max-w-4xl" style={{ fontFamily: "var(--font-jakarta)" }}>
               {heading}
             </h1>
 
             {/* Description */}
-            <p className="article-intro text-base text-[#9ec9ad] leading-relaxed mb-6 max-w-2xl">
+            <p className="article-intro text-base text-[#4A6358] leading-relaxed mb-6 max-w-2xl">
               {description}
             </p>
 
             {/* Meta */}
-            <div className="flex flex-wrap items-center gap-4 text-xs text-[#5d8c6e]">
+            <div className="flex flex-wrap items-center gap-4 text-xs text-[#7BA899]">
               <span>
                 By{" "}
                 <Link
                   href="/methodology"
-                  className="text-[#9ec9ad] hover:text-emerald-400 transition-colors underline underline-offset-2 decoration-[#2a4535]"
+                  className="text-[#4A6358] hover:text-[#10B981] transition-colors underline underline-offset-2 decoration-[#D1EDD8]"
                 >
                   ShilajitPrice Research Team
                 </Link>
@@ -182,14 +182,14 @@ export default function BlogPostLayout({
               <span>·</span>
               <span>
                 Published{" "}
-                <span className="text-[#9ec9ad]">{formatDate(publishedAt)}</span>
+                <span className="text-[#4A6358]">{formatDate(publishedAt)}</span>
               </span>
               {updatedAt && updatedAt !== publishedAt && (
                 <>
                   <span>·</span>
                   <span>
                     Updated{" "}
-                    <span className="text-[#9ec9ad]">{formatDate(updatedAt)}</span>
+                    <span className="text-[#4A6358]">{formatDate(updatedAt)}</span>
                   </span>
                 </>
               )}
@@ -212,17 +212,17 @@ export default function BlogPostLayout({
               {/* Auto-injected: FAQ */}
               {faqItems && faqItems.length > 0 && (
                 <section id="faq">
-                  <h2 className="text-2xl font-black text-[#e8f4ec] mb-6">
+                  <h2 className="text-2xl font-extrabold text-[#0D1F14] mb-6" style={{ fontFamily: "var(--font-jakarta)" }}>
                     Frequently asked questions
                   </h2>
-                  <div className="space-y-4">
+                  <div className="space-y-3">
                     {faqItems.map(({ name, acceptedAnswer }) => (
                       <div
                         key={name}
-                        className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-5"
+                        className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm"
                       >
-                        <h3 className="text-sm font-bold text-[#e8f4ec] mb-2">{name}</h3>
-                        <p className="text-sm text-[#9ec9ad] leading-relaxed">
+                        <h3 className="text-sm font-bold text-[#0D1F14] mb-2">{name}</h3>
+                        <p className="text-sm text-[#4A6358] leading-relaxed">
                           {acceptedAnswer.text}
                         </p>
                       </div>
@@ -238,7 +238,7 @@ export default function BlogPostLayout({
               <div className="flex items-center gap-3 pt-2">
                 <Link
                   href="/blog"
-                  className="inline-flex items-center gap-2 text-sm text-[#9ec9ad] hover:text-emerald-400 transition-colors"
+                  className="inline-flex items-center gap-2 text-sm text-[#4A6358] hover:text-[#10B981] transition-colors"
                 >
                   <svg
                     className="w-4 h-4"
@@ -255,10 +255,10 @@ export default function BlogPostLayout({
                   </svg>
                   Back to Blog
                 </Link>
-                <span className="text-[#2a4535]">·</span>
+                <span className="text-[#D1EDD8]">·</span>
                 <Link
                   href="/"
-                  className="text-sm text-[#9ec9ad] hover:text-emerald-400 transition-colors"
+                  className="text-sm text-[#4A6358] hover:text-[#10B981] transition-colors"
                 >
                   Compare All Prices →
                 </Link>

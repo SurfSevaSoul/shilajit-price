@@ -51,7 +51,7 @@ export default function FAQ() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <section className="py-16 sm:py-20 bg-[#122019]" id="faq">
+    <section className="py-16 sm:py-20 bg-[#E8F5EC]" id="faq">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -59,13 +59,13 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/40 border border-emerald-800/50 text-emerald-400 text-xs font-semibold mb-4 tracking-wide">
-            Questions & Answers
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#9EC9AD] text-[#4A6358] text-xs font-semibold mb-4 shadow-sm">
+            Questions &amp; Answers
           </div>
-          <h2 className="text-3xl sm:text-4xl font-black text-[#e8f4ec] mb-3">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#0D1F14] mb-3" style={{ fontFamily: "var(--font-jakarta)" }}>
             Frequently Asked Questions
           </h2>
-          <p className="text-[#9ec9ad] text-sm">
+          <p className="text-[#7BA899] text-sm">
             Everything you need to know about shilajit pricing, quality, and safety.
           </p>
         </div>
@@ -75,25 +75,25 @@ export default function FAQ() {
           {FAQS.map((faq, i) => (
             <div
               key={i}
-              className={`bg-[#182b1f] border rounded-xl overflow-hidden transition-colors duration-200
-                ${open === i ? "border-emerald-700/50" : "border-[#2a4535] hover:border-emerald-800/50"}`}
+              className={`bg-white border-2 rounded-2xl overflow-hidden transition-all duration-200
+                ${open === i ? "border-[#10B981] shadow-sm" : "border-[#D1EDD8] hover:border-[#9EC9AD]"}`}
             >
               <button
                 className="w-full flex items-start justify-between gap-4 px-5 py-4 text-left"
                 onClick={() => setOpen(open === i ? null : i)}
               >
-                <span className="text-sm font-semibold text-[#e8f4ec] leading-snug">
+                <span className="text-sm font-semibold text-[#0D1F14] leading-snug">
                   {faq.q}
                 </span>
                 <span
-                  className={`shrink-0 w-5 h-5 rounded-full border flex items-center justify-center transition-all duration-200 mt-0.5
+                  className={`shrink-0 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-all duration-200 mt-0.5
                     ${open === i
-                      ? "border-emerald-500 bg-emerald-500/20 text-emerald-400 rotate-180"
-                      : "border-[#2a4535] text-[#5d8c6e]"
+                      ? "border-[#10B981] bg-[#10B981] text-white"
+                      : "border-[#D1EDD8] text-[#7BA899]"
                     }`}
                 >
                   <svg
-                    className="w-3 h-3 transition-transform duration-200"
+                    className={`w-3 h-3 transition-transform duration-200 ${open === i ? "rotate-180" : ""}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -110,8 +110,8 @@ export default function FAQ() {
 
               {open === i && (
                 <div className="px-5 pb-5">
-                  <div className="h-px bg-[#2a4535] mb-4" />
-                  <p className="text-sm text-[#9ec9ad] leading-relaxed">
+                  <div className="h-px bg-[#D1EDD8] mb-4" />
+                  <p className="text-sm text-[#4A6358] leading-relaxed">
                     {faq.a}
                   </p>
                 </div>
