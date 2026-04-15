@@ -114,7 +114,7 @@ const COMPARISON_TABLE = [
   {
     rank: 1,
     brand: "Black Lotus Shilajit",
-    product: "Pure Himalayan Resin",
+    product: "Pure Altai Resin",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
     price: "$39.99",
@@ -245,7 +245,7 @@ export default function BestShilajitResin2026() {
             <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
             <div className="flex-1 min-w-0">
               <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Our #1 Pick — Best Shilajit Resin 2026</div>
-              <h3 className="text-base font-black text-[#0D1F14] mb-1">Black Lotus Shilajit — Pure Himalayan Resin</h3>
+              <h3 className="text-base font-black text-[#0D1F14] mb-1">Black Lotus Shilajit — Pure Altai Resin</h3>
               <p className="text-xs text-[#0D1F14] mb-3">85%+ fulvic acid · Full panel COA · Cold processed · Free shipping · $1.33/gram</p>
               <a
                 href={AFFILIATE_RESIN}

@@ -5,7 +5,7 @@ import { BLOG_POSTS } from "../data/blog";
 export const metadata: Metadata = {
   title: "Shilajit Blog — Guides, Reviews & Price Comparisons | ShilajitPrice.com",
   description:
-    "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 16 expert articles to help you find the best shilajit supplement.",
+    "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 26 expert articles to help you find the best shilajit supplement.",
   alternates: { canonical: "https://shilajitprice.com/blog" },
   openGraph: {
     title: "Shilajit Blog — Guides, Reviews & Price Comparisons",
@@ -57,6 +57,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   "Health Benefits": "bg-rose-50 border-rose-200 text-rose-700",
   "Price Comparison": "bg-cyan-50 border-cyan-200 text-cyan-700",
   "Brand Reviews": "bg-violet-50 border-violet-200 text-violet-700",
+  "Origins": "bg-orange-50 border-orange-200 text-orange-700",
 };
 
 export default function BlogIndex() {
