@@ -70,7 +70,7 @@ export default function HeroSection() {
 
               <div className="mb-4">
                 <p className="text-[11px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Black Lotus</p>
-                <h3 className="text-base font-bold text-[#0D1F14]">Pure Himalayan Shilajit Resin</h3>
+                <h3 className="text-base font-bold text-[#0D1F14]">Pure Altai Shilajit Resin</h3>
               </div>
 
               {/* Two-column data */}
