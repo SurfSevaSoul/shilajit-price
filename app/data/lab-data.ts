@@ -101,7 +101,7 @@ export const LAB_DATA: Record<string, LabEntry> = {
   "ph-resin-30g": {
     productId: "ph-resin-30g",
     coaStatus: "verified",
-    coaUrl: "https://www.purehimalayanshilajit.com",
+    coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
     testingLab: "ISO/IEC 17025 Accredited Laboratory",
     testingLabAccreditation: "ISO/IEC 17025",
     purityPct: "Up to 99.9%",
@@ -114,7 +114,7 @@ export const LAB_DATA: Record<string, LabEntry> = {
   "ph-drops-50ml": {
     productId: "ph-drops-50ml",
     coaStatus: "verified",
-    coaUrl: "https://www.purehimalayanshilajit.com",
+    coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
     testingLab: "ISO/IEC 17025 Accredited Laboratory",
     testingLabAccreditation: "ISO/IEC 17025",
     purityPct: "Up to 99.9%",
@@ -124,7 +124,7 @@ export const LAB_DATA: Record<string, LabEntry> = {
   "ph-tablets-90ct": {
     productId: "ph-tablets-90ct",
     coaStatus: "verified",
-    coaUrl: "https://www.purehimalayanshilajit.com",
+    coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
     testingLab: "ISO/IEC 17025 Accredited Laboratory",
     testingLabAccreditation: "ISO/IEC 17025",
     purityPct: "Up to 99.9%",

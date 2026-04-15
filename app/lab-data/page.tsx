@@ -213,7 +213,7 @@ export default function LabDataPage() {
                 </div>
               </div>
               <a
-                href="https://www.purehimalayanshilajit.com"
+                href="https://www.purehimalayanshilajit.com/?ref=4792"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-900/30 hover:bg-amber-900/50 border border-amber-700/40 text-amber-300 text-xs font-semibold transition-colors"
