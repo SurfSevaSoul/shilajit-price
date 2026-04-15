@@ -105,7 +105,7 @@ const faqItems: FaqItem[] = [
 
 function CheckIcon() {
   return (
-    <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-3.5 h-3.5 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -215,27 +215,27 @@ export default function BestShilajitUnder50() {
         ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. Rankings are based entirely on data — not commission rates.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. Rankings are based entirely on data — not commission rates.
         </div>
 
         {/* What to expect under $50 */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">What you can realistically get for under $50</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What you can realistically get for under $50</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The $50 price ceiling is actually quite generous for shilajit. The best products in the entire market cluster in the $30–$55 range — premium shilajit does not need to cost $80–$100 unless the brand is charging a vanity premium. Knowing what quality markers are achievable at different price points is the key to not overpaying or underpaying.
             </p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
-                { range: "Under $20", label: "High Risk", desc: "Almost no legitimate high-quality resin products. Likely diluted, adulterated, or untested. COA availability is rare. Avoid for resin; capsules with lower doses may be OK.", color: "border-red-800/40 text-red-400" },
-                { range: "$20–$35", label: "Mixed Quality", desc: "Good budget options exist (Sayan, small Natural Shilajit sizes) but quality varies widely. COA availability improves. Look carefully at $/gram before committing.", color: "border-amber-700/40 text-amber-400" },
-                { range: "$35–$50", label: "Best Value Zone", desc: "This is where the highest-value products live. Black Lotus at $36.99–$39.99 is the market leader here. Full COA, 85%+ FA, free shipping — all under $50.", color: "border-emerald-700/40 text-emerald-400" },
+                { range: "Under $20", label: "High Risk", desc: "Almost no legitimate high-quality resin products. Likely diluted, adulterated, or untested. COA availability is rare. Avoid for resin; capsules with lower doses may be OK.", color: "border-red-200 text-red-600" },
+                { range: "$20–$35", label: "Mixed Quality", desc: "Good budget options exist (Sayan, small Natural Shilajit sizes) but quality varies widely. COA availability improves. Look carefully at $/gram before committing.", color: "border-amber-200 text-amber-600" },
+                { range: "$35–$50", label: "Best Value Zone", desc: "This is where the highest-value products live. Black Lotus at $36.99–$39.99 is the market leader here. Full COA, 85%+ FA, free shipping — all under $50.", color: "border-[#D1EDD8] text-[#10B981]" },
               ].map(({ range, label, desc, color }) => (
-                <div key={range} className={`bg-[#182b1f] border ${color.split(" ")[0]} rounded-xl p-4`}>
+                <div key={range} className={`bg-white border ${color.split(" ")[0]} rounded-xl p-4`}>
                   <div className={`text-xs font-black mb-1 ${color.split(" ")[1]}`}>{range}</div>
-                  <div className="text-xs font-bold text-[#e8f4ec] mb-1.5">{label}</div>
-                  <p className="text-[11px] text-[#9ec9ad] leading-relaxed">{desc}</p>
+                  <div className="text-xs font-bold text-[#0D1F14] mb-1.5">{label}</div>
+                  <p className="text-[11px] text-[#0D1F14] leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
@@ -247,7 +247,7 @@ export default function BestShilajitUnder50() {
 
         {/* Red flags */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Red flags to avoid at any price point</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Red flags to avoid at any price point</h2>
           <div className="space-y-3">
             {[
               { flag: "No COA or only 'tested for purity' claims", detail: "A legitimate shilajit brand will link to an actual Certificate of Analysis showing specific measured values. Vague testing language with no document is not acceptable." },
@@ -255,15 +255,15 @@ export default function BestShilajitUnder50() {
               { flag: "No brand identity or website", detail: "White-label Amazon listings that rotate product photos, have no linked brand website, and no customer service contact represent the highest-risk category in this market." },
               { flag: "Shilajit in a multi-ingredient 'testosterone blend'", detail: "When shilajit is listed alongside 15 other herbs inside a proprietary blend, you have no idea how much shilajit — or how much fulvic acid — you're actually getting." },
             ].map(({ flag, detail }) => (
-              <div key={flag} className="bg-[#182b1f] border border-red-900/30 rounded-xl p-4">
-                <div className="text-xs font-bold text-red-400 mb-1.5">⚠ {flag}</div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{detail}</p>
+              <div key={flag} className="bg-white border border-red-200 rounded-xl p-4">
+                <div className="text-xs font-bold text-red-600 mb-1.5">⚠ {flag}</div>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{detail}</p>
               </div>
             ))}
           </div>
-          <p className="text-xs text-[#9ec9ad] mt-4 leading-relaxed">
+          <p className="text-xs text-[#0D1F14] mt-4 leading-relaxed">
             For a complete guide to avoiding fake products, see:{" "}
-            <Link href="/blog/cheap-vs-high-quality-shilajit" className="text-emerald-400 hover:underline">
+            <Link href="/blog/cheap-vs-high-quality-shilajit" className="text-[#10B981] hover:underline">
               Cheap vs High Quality Shilajit — What's Actually Different?
             </Link>
           </p>
@@ -271,47 +271,47 @@ export default function BestShilajitUnder50() {
 
         {/* Comparison table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Top 5 shilajit products under $50</h2>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top 5 shilajit products under $50</h2>
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">#</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Product</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Price</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">$/gram</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Fulvic %</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Tier</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">3rd Party</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">#</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Product</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Price</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">$/gram</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Fulvic %</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Tier</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">3rd Party</th>
                 </tr>
               </thead>
               <tbody>
                 {UNDER_50_PICKS.map((p, i) => (
-                  <tr key={p.rank} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"}`}>
-                    <td className="px-4 py-3 font-black text-emerald-400">#{p.rank}</td>
+                  <tr key={p.rank} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
+                    <td className="px-4 py-3 font-black text-[#10B981]">#{p.rank}</td>
                     <td className="px-4 py-3">
-                      <div className="font-semibold text-[#e8f4ec]">{p.name}</div>
-                      <div className="text-[10px] text-emerald-400 font-bold mt-0.5">{p.badge}</div>
+                      <div className="font-semibold text-[#0D1F14]">{p.name}</div>
+                      <div className="text-[10px] text-[#10B981] font-bold mt-0.5">{p.badge}</div>
                     </td>
-                    <td className="px-4 py-3 font-bold text-emerald-400 tabular-nums whitespace-nowrap">{p.price}</td>
-                    <td className="px-4 py-3 text-[#9ec9ad] tabular-nums">{p.pricePerGram}</td>
-                    <td className="px-4 py-3 font-semibold text-[#9ec9ad]">{p.fulvic}</td>
+                    <td className="px-4 py-3 font-bold text-[#10B981] tabular-nums whitespace-nowrap">{p.price}</td>
+                    <td className="px-4 py-3 text-[#0D1F14] tabular-nums">{p.pricePerGram}</td>
+                    <td className="px-4 py-3 font-semibold text-[#0D1F14]">{p.fulvic}</td>
                     <td className="px-4 py-3">
                       <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${p.tierColor}`}>{p.tier}</span>
                     </td>
-                    <td className="px-4 py-3 text-center">{p.thirdParty ? <span className="text-emerald-400">✓</span> : <span className="text-[#5d8c6e]">—</span>}</td>
+                    <td className="px-4 py-3 text-center">{p.thirdParty ? <span className="text-[#10B981]">✓</span> : <span className="text-[#7BA899]">—</span>}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#5d8c6e] mt-2">Full 55+ product comparison at <Link href="/compare" className="text-emerald-400 hover:underline">ShilajitPrice.com/compare</Link> · <Link href="/blog/shilajit-price-per-gram" className="text-emerald-400 hover:underline">Price per gram analysis →</Link></p>
+          <p className="text-[10px] text-[#7BA899] mt-2">Full 55+ product comparison at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link> · <Link href="/blog/shilajit-price-per-gram" className="text-[#10B981] hover:underline">Price per gram analysis →</Link></p>
         </section>
 
         {/* #1 detailed */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">#1 Best Under $50: Black Lotus Shilajit Resin</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Best Under $50: Black Lotus Shilajit Resin</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Black Lotus Shilajit Resin sits at $36.99–$39.99 for 30g — firmly under $50 and, by any objective measure, the best-documented quality product available at this price point anywhere in the market.
             </p>
@@ -323,13 +323,13 @@ export default function BestShilajitUnder50() {
             </p>
           </div>
 
-          <div className="mt-6 bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+          <div className="mt-6 bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
             <div className="flex items-start gap-4 mb-4">
               <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
               <div>
-                <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">#1 Under $50 — S-Tier</div>
-                <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit Resin</h3>
-                <p className="text-xs text-[#9ec9ad] mt-1">$39.99 / 30g · Free shipping · 85%+ fulvic acid</p>
+                <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">#1 Under $50 — S-Tier</div>
+                <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
+                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · Free shipping · 85%+ fulvic acid</p>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
@@ -343,7 +343,7 @@ export default function BestShilajitUnder50() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <CheckIcon />
-                  <span className="text-xs text-[#9ec9ad]">{item}</span>
+                  <span className="text-xs text-[#0D1F14]">{item}</span>
                 </div>
               ))}
             </div>
@@ -353,29 +353,29 @@ export default function BestShilajitUnder50() {
                 Shop Resin — $39.99 →
               </a>
               <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
-                className="flex-1 block text-center py-2.5 rounded-xl bg-[#0d1f14] hover:bg-[#122019] text-emerald-300 font-semibold text-sm border border-emerald-700/50 transition-colors">
+                className="flex-1 block text-center py-2.5 rounded-xl bg-[#F0FAF4] hover:bg-[#F0FAF4] text-[#10B981] font-semibold text-sm border border-[#D1EDD8] transition-colors">
                 Shop Capsules — $34.99
               </a>
             </div>
-            <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+            <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
           </div>
         </section>
 
         {/* #2–5 */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">#2–5: Other strong picks under $50</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#2–5: Other strong picks under $50</h2>
           <div className="space-y-4">
             {UNDER_50_PICKS.slice(2).map((p) => (
-              <div key={p.rank} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-5">
+              <div key={p.rank} className="bg-white border border-[#D1EDD8] rounded-xl p-5">
                 <div className="flex items-center gap-3 mb-2">
                   <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${p.tierColor}`}>{p.tier}</span>
-                  <span className="text-sm font-black text-emerald-400">#{p.rank}</span>
-                  <h3 className="text-sm font-bold text-[#e8f4ec]">{p.name}</h3>
-                  <span className="ml-auto text-xs font-bold text-emerald-400">{p.price}</span>
+                  <span className="text-sm font-black text-[#10B981]">#{p.rank}</span>
+                  <h3 className="text-sm font-bold text-[#0D1F14]">{p.name}</h3>
+                  <span className="ml-auto text-xs font-bold text-[#10B981]">{p.price}</span>
                 </div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed mb-3">{p.verdict}</p>
+                <p className="text-xs text-[#0D1F14] leading-relaxed mb-3">{p.verdict}</p>
                 <a href={p.affiliate} target="_blank" rel="noopener noreferrer sponsored"
-                  className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#0d1f14] border border-[#2a4535] hover:border-emerald-700/50 text-emerald-400 font-semibold text-xs transition-colors">
+                  className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#F0FAF4] border border-[#D1EDD8] hover:border-[#D1EDD8] text-[#10B981] font-semibold text-xs transition-colors">
                   Check Price →
                 </a>
               </div>
@@ -385,19 +385,19 @@ export default function BestShilajitUnder50() {
 
         {/* Internal links */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Related guides</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Related guides</h2>
           <div className="space-y-3">
             {[
               { href: "/blog/cheap-vs-high-quality-shilajit", title: "Cheap vs High Quality Shilajit", desc: "What's actually different between a $15 and $70 shilajit product" },
               { href: "/blog/best-affordable-shilajit", title: "Best Affordable Shilajit Brands", desc: "Value without compromise — the best brands ranked by cost-per-serving" },
               { href: "/blog/shilajit-price-per-gram", title: "Shilajit Price Per Gram Comparison", desc: "Full 20+ product comparison table sorted by $/gram" },
             ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="group flex items-center gap-4 bg-[#182b1f] border border-[#2a4535] hover:border-emerald-700/50 rounded-xl px-5 py-3.5 transition-all">
+              <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-bold text-[#e8f4ec] group-hover:text-emerald-300 transition-colors">{title}</div>
-                  <div className="text-xs text-[#5d8c6e] mt-0.5">{desc}</div>
+                  <div className="text-sm font-bold text-[#0D1F14] group-hover:text-[#10B981] transition-colors">{title}</div>
+                  <div className="text-xs text-[#7BA899] mt-0.5">{desc}</div>
                 </div>
-                <svg className="w-4 h-4 text-[#5d8c6e] group-hover:text-emerald-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#7BA899] group-hover:text-[#10B981] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>

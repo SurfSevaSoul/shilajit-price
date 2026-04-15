@@ -102,7 +102,7 @@ const faqItems: FaqItem[] = [
 
 function CheckIcon() {
   return (
-    <svg className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -159,14 +159,14 @@ export default function WhatIsFulvicAcid() {
         ctaVariant="pure-himalayan"
       >
         {/* Affiliate disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you.
         </div>
 
         {/* ── Intro ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The compound nobody talks about — but everyone should</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The compound nobody talks about — but everyone should</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Walk into any supplement store and you&apos;ll see shilajit marketed with vague claims: &quot;ancient superfood,&quot; &quot;Himalayan mineral pitch,&quot; &quot;nature&apos;s most powerful adaptogen.&quot; What you won&apos;t see, on most labels, is a specific fulvic acid percentage.
             </p>
@@ -181,21 +181,21 @@ export default function WhatIsFulvicAcid() {
 
         {/* ── What is fulvic acid ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">What is fulvic acid, exactly?</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What is fulvic acid, exactly?</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Fulvic acid is a naturally occurring organic acid produced over millions of years as organic plant material decomposes in the presence of microorganisms in mineral-rich mountain rock. It belongs to a class of compounds called humic substances — the same family that gives rich soil its dark color and extraordinary fertility.
             </p>
             <p>
-              What makes fulvic acid unique among organic compounds is its molecular structure. It has an <strong className="text-[#e8f4ec]">exceptionally low molecular weight</strong> — small enough to pass through cell membranes with ease. This makes it one of the most bioavailable compounds in nature, capable of delivering minerals and nutrients directly into cells rather than simply passing through the digestive system.
+              What makes fulvic acid unique among organic compounds is its molecular structure. It has an <strong className="text-[#0D1F14]">exceptionally low molecular weight</strong> — small enough to pass through cell membranes with ease. This makes it one of the most bioavailable compounds in nature, capable of delivering minerals and nutrients directly into cells rather than simply passing through the digestive system.
             </p>
             <p>
               Shilajit is the most concentrated natural source of fulvic acid on earth. Formed over centuries where organic matter becomes compressed beneath Himalayan and Altai mountain rock formations, it seeps out as a dark, tar-like resin that can contain anywhere from 15% to 85%+ fulvic acid depending on source quality and processing method.
             </p>
 
-            <div className="bg-[#122019] border border-emerald-800/40 rounded-xl p-5 my-2">
-              <div className="text-xs font-bold text-emerald-400 uppercase tracking-widest mb-2">Key distinction</div>
-              <p className="text-xs text-[#9ec9ad] leading-relaxed">
+            <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-5 my-2">
+              <div className="text-xs font-bold text-[#10B981] uppercase tracking-widest mb-2">Key distinction</div>
+              <p className="text-xs text-[#0D1F14] leading-relaxed">
                 Fulvic acid and humic acid both occur in shilajit and share the same origin, but they&apos;re distinct compounds. Humic acid has a higher molecular weight and is less bioavailable. Fulvic acid&apos;s lower molecular weight is what allows it to cross cell membranes — which is why fulvic acid percentage, not total humic substance content, is the number that matters.
               </p>
             </div>
@@ -204,8 +204,8 @@ export default function WhatIsFulvicAcid() {
 
         {/* ── Why it matters ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Why fulvic acid makes shilajit special</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed mb-5">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Why fulvic acid makes shilajit special</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed mb-5">
             <p>
               Shilajit without meaningful fulvic acid content is essentially inert — a dark-colored paste that looks like the real thing but delivers little of value. The research-backed benefits attributed to shilajit are primarily driven by its fulvic acid content. Here&apos;s what the science shows:
             </p>
@@ -244,10 +244,10 @@ export default function WhatIsFulvicAcid() {
                 body: "Fulvic acid inhibits NF-κB, a key signaling pathway involved in inflammatory response. Chronic inflammation is implicated in virtually every major disease state.",
               },
             ].map(({ icon, title, body }) => (
-              <div key={title} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 hover:border-emerald-800/50 transition-colors">
+              <div key={title} className="bg-white border border-[#D1EDD8] rounded-xl p-4 hover:border-[#9EC9AD] transition-colors">
                 <div className="text-xl mb-2">{icon}</div>
-                <h3 className="text-xs font-bold text-[#e8f4ec] mb-1.5">{title}</h3>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{body}</p>
+                <h3 className="text-xs font-bold text-[#0D1F14] mb-1.5">{title}</h3>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{body}</p>
               </div>
             ))}
           </div>
@@ -255,8 +255,8 @@ export default function WhatIsFulvicAcid() {
 
         {/* ── What % ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">What fulvic acid percentage should you look for?</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What fulvic acid percentage should you look for?</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The supplement industry doesn&apos;t have a universal standard for shilajit potency, which is exactly how low-quality brands get away with selling weak products at premium prices. Based on independent lab analysis of products across the market, here&apos;s how we grade fulvic acid content:
             </p>
@@ -271,29 +271,29 @@ export default function WhatIsFulvicAcid() {
               ].map(({ range, label, color, width, desc }) => (
                 <div key={range}>
                   <div className="flex items-center justify-between text-xs mb-1">
-                    <span className="font-semibold text-[#e8f4ec]">{label}</span>
-                    <span className="text-[#5d8c6e] font-mono">{range}</span>
+                    <span className="font-semibold text-[#0D1F14]">{label}</span>
+                    <span className="text-[#7BA899] font-mono">{range}</span>
                   </div>
-                  <div className="w-full bg-[#0d1f14] rounded-full h-2 mb-1">
+                  <div className="w-full bg-[#F0FAF4] rounded-full h-2 mb-1">
                     <div className={`${color} ${width} h-2 rounded-full opacity-80`} />
                   </div>
-                  <p className="text-[10px] text-[#5d8c6e]">{desc}</p>
+                  <p className="text-[10px] text-[#7BA899]">{desc}</p>
                 </div>
               ))}
             </div>
 
             <p>
-              Black Lotus Shilajit Resin consistently tests at <strong className="text-emerald-400">85%+ fulvic acid</strong> — placing it firmly in the elite tier. That translates to approximately <strong className="text-[#e8f4ec]">150mg of fulvic acid per 175mg serving</strong>, one of the highest per-serving doses we&apos;ve found in a purified resin.
+              Black Lotus Shilajit Resin consistently tests at <strong className="text-[#10B981]">85%+ fulvic acid</strong> — placing it firmly in the elite tier. That translates to approximately <strong className="text-[#0D1F14]">150mg of fulvic acid per 175mg serving</strong>, one of the highest per-serving doses we&apos;ve found in a purified resin.
             </p>
           </div>
         </section>
 
         {/* ── How to verify ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">How to verify fulvic acid content before buying</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">How to verify fulvic acid content before buying</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Any brand can print &quot;85% fulvic acid&quot; on a label. Without third-party verification, that number means nothing. Here&apos;s the standard we apply to every product on this site. If you want to go deeper, our full guide on <Link href="/blog/how-to-spot-fake-shilajit" className="text-emerald-400 hover:underline">how to spot fake shilajit</Link> covers 5 at-home tests plus a complete red flags checklist.
+              Any brand can print &quot;85% fulvic acid&quot; on a label. Without third-party verification, that number means nothing. Here&apos;s the standard we apply to every product on this site. If you want to go deeper, our full guide on <Link href="/blog/how-to-spot-fake-shilajit" className="text-[#10B981] hover:underline">how to spot fake shilajit</Link> covers 5 at-home tests plus a complete red flags checklist.
             </p>
 
             <div className="space-y-3">
@@ -324,11 +324,11 @@ export default function WhatIsFulvicAcid() {
                   body: "A COA that only shows fulvic acid percentage without a heavy metals panel (lead, arsenic, mercury, cadmium) is incomplete. Safety testing is just as important as potency verification.",
                 },
               ].map(({ num, title, body }) => (
-                <div key={num} className="flex gap-4 bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 hover:border-emerald-800/50 transition-colors">
+                <div key={num} className="flex gap-4 bg-white border border-[#D1EDD8] rounded-xl p-4 hover:border-[#9EC9AD] transition-colors">
                   <div className="text-xs font-black text-emerald-500 w-6 shrink-0 mt-0.5">{num}</div>
                   <div>
-                    <h3 className="text-xs font-bold text-[#e8f4ec] mb-1.5">{title}</h3>
-                    <p className="text-xs text-[#9ec9ad] leading-relaxed">{body}</p>
+                    <h3 className="text-xs font-bold text-[#0D1F14] mb-1.5">{title}</h3>
+                    <p className="text-xs text-[#0D1F14] leading-relaxed">{body}</p>
                   </div>
                 </div>
               ))}
@@ -337,13 +337,13 @@ export default function WhatIsFulvicAcid() {
         </section>
 
         {/* ── Black Lotus callout (mid-article, contextual) ── */}
-        <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+        <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
             <div>
-              <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">Highest Verified Fulvic Acid — S-Tier</div>
-              <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit Resin</h3>
-              <p className="text-xs text-[#9ec9ad] mt-1">85%+ fulvic acid · ~150mg per serving · Full panel COA · Cold processed · Free shipping</p>
+              <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Highest Verified Fulvic Acid — S-Tier</div>
+              <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
+              <p className="text-xs text-[#0D1F14] mt-1">85%+ fulvic acid · ~150mg per serving · Full panel COA · Cold processed · Free shipping</p>
             </div>
           </div>
           <ul className="space-y-1.5 mb-5">
@@ -357,7 +357,7 @@ export default function WhatIsFulvicAcid() {
             ].map((item) => (
               <li key={item} className="flex items-start gap-2">
                 <CheckIcon />
-                <span className="text-xs text-[#9ec9ad]">{item}</span>
+                <span className="text-xs text-[#0D1F14]">{item}</span>
               </li>
             ))}
           </ul>
@@ -365,13 +365,13 @@ export default function WhatIsFulvicAcid() {
             className="block w-full text-center py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-sm transition-colors shadow-md shadow-emerald-900/30">
             Shop Black Lotus Resin — $39.99 →
           </a>
-          <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
 
         {/* ── Getting the most out of fulvic acid ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Getting the most out of fulvic acid in shilajit</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Getting the most out of fulvic acid in shilajit</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Even with a high-quality product, how you take shilajit affects how much fulvic acid your body actually absorbs. A few evidence-informed tips:
             </p>
@@ -386,8 +386,8 @@ export default function WhatIsFulvicAcid() {
                 <li key={title} className="flex items-start gap-3">
                   <CheckIcon />
                   <div>
-                    <span className="text-xs font-bold text-[#e8f4ec]">{title}: </span>
-                    <span className="text-xs text-[#9ec9ad]">{body}</span>
+                    <span className="text-xs font-bold text-[#0D1F14]">{title}: </span>
+                    <span className="text-xs text-[#0D1F14]">{body}</span>
                   </div>
                 </li>
               ))}
@@ -397,8 +397,8 @@ export default function WhatIsFulvicAcid() {
 
         {/* ── Summary ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The bottom line on fulvic acid</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The bottom line on fulvic acid</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Fulvic acid isn&apos;t a marketing buzzword — it&apos;s the biochemical mechanism that makes shilajit genuinely valuable. The research is real, the cellular transport effects are documented, and the benefits from mitochondrial support to testosterone production have been replicated in controlled human trials.
             </p>
@@ -406,7 +406,7 @@ export default function WhatIsFulvicAcid() {
               But none of that matters if your product contains 20% fulvic acid in a glorified mud paste. The difference between a 30% and an 85% product isn&apos;t incremental — it&apos;s the difference between taking an active supplement and paying premium prices for essentially nothing.
             </p>
             <p>
-              Our recommendation: only buy shilajit products with a publicly available, third-party COA showing a specific fulvic acid percentage. <strong className="text-emerald-400">Black Lotus Shilajit Resin</strong> is the only product at its price point that meets this standard with 85%+ verified content.
+              Our recommendation: only buy shilajit products with a publicly available, third-party COA showing a specific fulvic acid percentage. <strong className="text-[#10B981]">Black Lotus Shilajit Resin</strong> is the only product at its price point that meets this standard with 85%+ verified content.
             </p>
           </div>
         </section>

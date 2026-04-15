@@ -107,7 +107,7 @@ const faqItems: FaqItem[] = [
 
 function CheckIcon() {
   return (
-    <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-3.5 h-3.5 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -227,14 +227,14 @@ export default function WhereToBuyShilajitOnlineUSA() {
         ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. Rankings are based on COA quality and accountability — not commission rates.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. Rankings are based on COA quality and accountability — not commission rates.
         </div>
 
         {/* Why source matters */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Why where you buy shilajit matters more than you think</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Why where you buy shilajit matters more than you think</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Shilajit is one of the most frequently adulterated supplements on the market. A 2021 consumer analysis found that a significant percentage of shilajit products available online in the US either had no verifiable fulvic acid content, contained heavy metals above safe thresholds, or were outright counterfeit — composed of humic shale, mineral filler, or other substances with no shilajit at all.
             </p>
@@ -249,42 +249,42 @@ export default function WhereToBuyShilajitOnlineUSA() {
 
         {/* Amazon vs direct */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Amazon vs direct brands — an honest comparison</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Amazon vs direct brands — an honest comparison</h2>
           <div className="grid sm:grid-cols-2 gap-4">
-            <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4">
-              <div className="text-xs font-black text-amber-400 mb-3">Amazon — Pros &amp; Cons</div>
+            <div className="bg-white border border-[#D1EDD8] rounded-xl p-4">
+              <div className="text-xs font-black text-amber-600 mb-3">Amazon — Pros &amp; Cons</div>
               <div className="space-y-2">
-                <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-wide">Pros</div>
+                <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-wide">Pros</div>
                 {["Prime shipping (fast delivery)", "Easy returns policy", "Large review base for popular brands", "Competitive pricing on established brands"].map((item) => (
                   <div key={item} className="flex items-start gap-2">
                     <CheckIcon />
-                    <span className="text-xs text-[#9ec9ad]">{item}</span>
+                    <span className="text-xs text-[#0D1F14]">{item}</span>
                   </div>
                 ))}
-                <div className="text-[10px] font-bold text-red-400 uppercase tracking-wide mt-3">Cons</div>
+                <div className="text-[10px] font-bold text-red-600 uppercase tracking-wide mt-3">Cons</div>
                 {["White-label counterfeits are common", "Hard to verify seller identity", "COA may not be linked to specific lots", "Race-to-bottom pricing incentivizes quality cuts"].map((item) => (
                   <div key={item} className="flex items-start gap-2">
-                    <svg className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
-                    <span className="text-xs text-[#9ec9ad]">{item}</span>
+                    <svg className="w-3.5 h-3.5 text-red-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                    <span className="text-xs text-[#0D1F14]">{item}</span>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="bg-[#182b1f] border border-emerald-700/40 rounded-xl p-4">
-              <div className="text-xs font-black text-emerald-400 mb-3">Direct-to-Consumer — Pros &amp; Cons</div>
+            <div className="bg-white border border-[#D1EDD8] rounded-xl p-4">
+              <div className="text-xs font-black text-[#10B981] mb-3">Direct-to-Consumer — Pros &amp; Cons</div>
               <div className="space-y-2">
-                <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-wide">Pros</div>
+                <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-wide">Pros</div>
                 {["Direct brand accountability", "COA accessibility easier to verify", "No Amazon seller fees = better value", "Direct customer service relationship", "Often free shipping competitive with Prime"].map((item) => (
                   <div key={item} className="flex items-start gap-2">
                     <CheckIcon />
-                    <span className="text-xs text-[#9ec9ad]">{item}</span>
+                    <span className="text-xs text-[#0D1F14]">{item}</span>
                   </div>
                 ))}
-                <div className="text-[10px] font-bold text-red-400 uppercase tracking-wide mt-3">Cons</div>
+                <div className="text-[10px] font-bold text-red-600 uppercase tracking-wide mt-3">Cons</div>
                 {["Fewer brands available", "Shipping may take longer without Prime", "Less familiar checkout for some buyers"].map((item) => (
                   <div key={item} className="flex items-start gap-2">
-                    <svg className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
-                    <span className="text-xs text-[#9ec9ad]">{item}</span>
+                    <svg className="w-3.5 h-3.5 text-red-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                    <span className="text-xs text-[#0D1F14]">{item}</span>
                   </div>
                 ))}
               </div>
@@ -294,34 +294,34 @@ export default function WhereToBuyShilajitOnlineUSA() {
 
         {/* Vendor comparison table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Vendor comparison table</h2>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Vendor comparison table</h2>
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Vendor</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Channel</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Tier</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">COA</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Fulvic %</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">GMP</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">$/gram</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Shipping</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Vendor</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Channel</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Tier</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">COA</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Fulvic %</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">GMP</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">$/gram</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Shipping</th>
                 </tr>
               </thead>
               <tbody>
                 {VENDOR_COMPARISON.map((v, i) => (
-                  <tr key={v.name} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"}`}>
-                    <td className="px-3 py-3 font-semibold text-[#e8f4ec] whitespace-nowrap">{v.name}</td>
-                    <td className="px-3 py-3 text-[#5d8c6e]">{v.channel}</td>
+                  <tr key={v.name} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
+                    <td className="px-3 py-3 font-semibold text-[#0D1F14] whitespace-nowrap">{v.name}</td>
+                    <td className="px-3 py-3 text-[#7BA899]">{v.channel}</td>
                     <td className="px-3 py-3">
                       <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${v.tierColor}`}>{v.tier}</span>
                     </td>
-                    <td className="px-3 py-3 text-[#9ec9ad]">{v.coaScore}</td>
-                    <td className="px-3 py-3 font-semibold text-[#9ec9ad]">{v.fulvic}</td>
-                    <td className="px-3 py-3 text-center">{v.gmp ? <span className="text-emerald-400">✓</span> : <span className="text-red-400">✗</span>}</td>
-                    <td className="px-3 py-3 text-emerald-400 font-semibold tabular-nums">{v.priceGram}</td>
-                    <td className="px-3 py-3 text-[#5d8c6e]">{v.ship}</td>
+                    <td className="px-3 py-3 text-[#0D1F14]">{v.coaScore}</td>
+                    <td className="px-3 py-3 font-semibold text-[#0D1F14]">{v.fulvic}</td>
+                    <td className="px-3 py-3 text-center">{v.gmp ? <span className="text-[#10B981]">✓</span> : <span className="text-red-600">✗</span>}</td>
+                    <td className="px-3 py-3 text-[#10B981] font-semibold tabular-nums">{v.priceGram}</td>
+                    <td className="px-3 py-3 text-[#7BA899]">{v.ship}</td>
                   </tr>
                 ))}
               </tbody>
@@ -331,22 +331,22 @@ export default function WhereToBuyShilajitOnlineUSA() {
 
         {/* Top 5 sources */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Top 5 trusted US sources for shilajit (2026)</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top 5 trusted US sources for shilajit (2026)</h2>
           <div className="space-y-5">
             {TOP_SOURCES.map((s) => (
-              <div key={s.rank} className={`bg-[#182b1f] border rounded-2xl p-5 ${s.rank === 1 ? "border-emerald-500/40 shadow-lg shadow-emerald-900/10" : "border-[#2a4535]"}`}>
+              <div key={s.rank} className={`bg-white border rounded-2xl p-5 ${s.rank === 1 ? "border-[#9EC9AD] shadow-lg shadow-emerald-900/10" : "border-[#D1EDD8]"}`}>
                 <div className="flex items-start justify-between gap-3 mb-3">
                   <div className="flex items-center gap-3">
                     <span className={`inline-flex items-center justify-center w-7 h-7 rounded-lg text-xs font-black ${s.tierColor}`}>{s.tier}</span>
                     <div>
-                      <div className="text-xs font-black text-emerald-400">#{s.rank} Trusted US Source</div>
-                      <h3 className="text-sm font-black text-[#e8f4ec]">{s.name}</h3>
-                      <div className="text-[10px] text-[#5d8c6e]">{s.channel}</div>
+                      <div className="text-xs font-black text-[#10B981]">#{s.rank} Trusted US Source</div>
+                      <h3 className="text-sm font-black text-[#0D1F14]">{s.name}</h3>
+                      <div className="text-[10px] text-[#7BA899]">{s.channel}</div>
                     </div>
                   </div>
                   <div className="text-right shrink-0">
-                    <div className="text-sm font-black text-emerald-400">{s.priceGram}</div>
-                    <div className="text-[10px] text-[#5d8c6e]">per gram</div>
+                    <div className="text-sm font-black text-[#10B981]">{s.priceGram}</div>
+                    <div className="text-[10px] text-[#7BA899]">per gram</div>
                   </div>
                 </div>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-3">
@@ -356,13 +356,13 @@ export default function WhereToBuyShilajitOnlineUSA() {
                     { label: "GMP", value: s.gmp ? "Certified" : "No" },
                     { label: "Shipping", value: s.shipping },
                   ].map(({ label, value }) => (
-                    <div key={label} className="bg-[#0d1f14] rounded-lg px-2.5 py-2">
-                      <div className="text-[9px] font-bold text-[#5d8c6e] uppercase tracking-wide">{label}</div>
-                      <div className="text-[11px] font-semibold text-[#9ec9ad] mt-0.5">{value}</div>
+                    <div key={label} className="bg-[#F0FAF4] rounded-lg px-2.5 py-2">
+                      <div className="text-[9px] font-bold text-[#7BA899] uppercase tracking-wide">{label}</div>
+                      <div className="text-[11px] font-semibold text-[#0D1F14] mt-0.5">{value}</div>
                     </div>
                   ))}
                 </div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed mb-3">{s.verdict}</p>
+                <p className="text-xs text-[#0D1F14] leading-relaxed mb-3">{s.verdict}</p>
                 {s.showBoth ? (
                   <div className="flex flex-col sm:flex-row gap-2">
                     <a href={s.resinHref} target="_blank" rel="noopener noreferrer sponsored"
@@ -370,18 +370,18 @@ export default function WhereToBuyShilajitOnlineUSA() {
                       Shop Resin — $39.99 →
                     </a>
                     <a href={s.capsHref} target="_blank" rel="noopener noreferrer sponsored"
-                      className="flex-1 block text-center py-2 rounded-xl bg-[#0d1f14] hover:bg-[#122019] text-emerald-300 font-semibold text-xs border border-emerald-700/50 transition-colors">
+                      className="flex-1 block text-center py-2 rounded-xl bg-[#F0FAF4] hover:bg-[#F0FAF4] text-[#10B981] font-semibold text-xs border border-[#D1EDD8] transition-colors">
                       Shop Capsules — $34.99
                     </a>
                   </div>
                 ) : (
                   <a href={s.affiliate} target="_blank" rel="noopener noreferrer sponsored"
-                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#0d1f14] border border-[#2a4535] hover:border-emerald-700/50 text-emerald-400 font-semibold text-xs transition-colors">
+                    className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-lg bg-[#F0FAF4] border border-[#D1EDD8] hover:border-[#D1EDD8] text-[#10B981] font-semibold text-xs transition-colors">
                     Check Price →
                   </a>
                 )}
                 {s.rank === 1 && (
-                  <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+                  <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
                 )}
               </div>
             ))}
@@ -390,7 +390,7 @@ export default function WhereToBuyShilajitOnlineUSA() {
 
         {/* Red flags */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Red flags in online US shilajit sellers</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Red flags in online US shilajit sellers</h2>
           <div className="space-y-3">
             {[
               { flag: "No US business address or contact information", detail: "A legitimate shilajit brand selling in the US should have a traceable US business entity. No phone number, no address, and no customer service email on the website is a serious accountability red flag." },
@@ -398,15 +398,15 @@ export default function WhereToBuyShilajitOnlineUSA() {
               { flag: "FDA disclaimer used to avoid accountability", detail: "All supplement brands are required to display 'These statements have not been evaluated by the FDA.' But some low-quality sellers abuse this language as a shield to avoid accountability for false claims. Look for brands that make verifiable claims backed by actual data." },
               { flag: "Amazon listings with no verified brand presence", detail: "Listings with generic product photos, brand name consisting of initials or single words (e.g., 'MNT Shilajit Premium'), no linked website, and no reviewable company history are the highest-risk category in the US market." },
             ].map(({ flag, detail }) => (
-              <div key={flag} className="bg-[#182b1f] border border-red-900/30 rounded-xl p-4">
-                <div className="text-xs font-bold text-red-400 mb-1.5">⚠ {flag}</div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{detail}</p>
+              <div key={flag} className="bg-white border border-red-200 rounded-xl p-4">
+                <div className="text-xs font-bold text-red-600 mb-1.5">⚠ {flag}</div>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{detail}</p>
               </div>
             ))}
           </div>
-          <p className="text-xs text-[#9ec9ad] mt-4">
+          <p className="text-xs text-[#0D1F14] mt-4">
             See also:{" "}
-            <Link href="/blog/is-shilajit-a-scam" className="text-emerald-400 hover:underline">
+            <Link href="/blog/is-shilajit-a-scam" className="text-[#10B981] hover:underline">
               Is Shilajit a Scam? We Analyzed 55+ Products to Find Out
             </Link>
           </p>
@@ -414,19 +414,19 @@ export default function WhereToBuyShilajitOnlineUSA() {
 
         {/* Internal links */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Related guides</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Related guides</h2>
           <div className="space-y-3">
             {[
               { href: "/blog/where-to-buy-real-shilajit", title: "Where to Buy Real Shilajit in 2026", desc: "Full vendor channel comparison — Amazon, direct, retail, and specialty stores" },
               { href: "/blog/is-shilajit-a-scam", title: "Is Shilajit a Scam? We Analyzed 55+ Products", desc: "COA data and lab reports across 55+ products — what the data shows" },
               { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "Top 10 brands compared by COA quality, FA%, and pricing" },
             ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="group flex items-center gap-4 bg-[#182b1f] border border-[#2a4535] hover:border-emerald-700/50 rounded-xl px-5 py-3.5 transition-all">
+              <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-bold text-[#e8f4ec] group-hover:text-emerald-300 transition-colors">{title}</div>
-                  <div className="text-xs text-[#5d8c6e] mt-0.5">{desc}</div>
+                  <div className="text-sm font-bold text-[#0D1F14] group-hover:text-[#10B981] transition-colors">{title}</div>
+                  <div className="text-xs text-[#7BA899] mt-0.5">{desc}</div>
                 </div>
-                <svg className="w-4 h-4 text-[#5d8c6e] group-hover:text-emerald-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#7BA899] group-hover:text-[#10B981] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>

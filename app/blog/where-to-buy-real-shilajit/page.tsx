@@ -109,8 +109,8 @@ const CHANNELS = [
     priceValue: "Good",
     verdict: "Best channel overall. Direct brands control supply chain, respond to COA questions, and stand behind their product.",
     redFlags: "No published COA, no physical address, no return policy",
-    color: "border-emerald-700/40",
-    labelColor: "text-emerald-400",
+    color: "border-[#D1EDD8]",
+    labelColor: "text-[#10B981]",
   },
   {
     channel: "Amazon (name brand)",
@@ -121,7 +121,7 @@ const CHANNELS = [
     verdict: "Acceptable for established brands with documented COA history. Always verify the COA exists before purchase.",
     redFlags: "Generic listing, no brand website, suspiciously low price, few detailed reviews",
     color: "border-blue-700/40",
-    labelColor: "text-blue-400",
+    labelColor: "text-blue-700",
   },
   {
     channel: "Amazon (generic / white-label)",
@@ -132,7 +132,7 @@ const CHANNELS = [
     verdict: "Avoid. The highest concentration of fake shilajit in the market is in this category. No brand accountability.",
     redFlags: "Rotating product photos, no brand identity, price below $20/30g, all 5-star reviews",
     color: "border-red-700/40",
-    labelColor: "text-red-400",
+    labelColor: "text-red-600",
   },
   {
     channel: "Health Food Store / Retail",
@@ -142,8 +142,8 @@ const CHANNELS = [
     priceValue: "Often high retail markup",
     verdict: "Safe for established retail brands (Jarrow PrimaVie, Himalaya). Limited selection, COA not visible in-store.",
     redFlags: "Unknown brands on shelf, expired stock, no brand website listed",
-    color: "border-amber-700/40",
-    labelColor: "text-amber-400",
+    color: "border-amber-200",
+    labelColor: "text-amber-600",
   },
   {
     channel: "eBay / Wish / Temu",
@@ -153,7 +153,7 @@ const CHANNELS = [
     priceValue: "Worthless",
     verdict: "Do not buy. Supplement-grade products from these channels have no meaningful quality controls or documentation.",
     redFlags: "Everything",
-    color: "border-red-900/50",
+    color: "border-red-200",
     labelColor: "text-red-500",
   },
 ];
@@ -215,7 +215,7 @@ const TOP_VENDORS = [
 
 function CheckIcon() {
   return (
-    <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-3.5 h-3.5 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -246,14 +246,14 @@ export default function WhereToBuyRealShilajit() {
         faqItems={faqItems}
         ctaVariant="pure-himalayan"
       >
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Vendor rankings are based on documented quality and transparency — not commission rates.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Vendor rankings are based on documented quality and transparency — not commission rates.
         </div>
 
         {/* Why it matters */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Why where you buy matters as much as what you buy</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Why where you buy matters as much as what you buy</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The same brand name can mean very different things depending on where you buy. Counterfeit products, gray market resellers, and expired stock are all real risks in the shilajit market. A legitimate brand selling through their own website has full control over product quality, storage, and documentation. A third-party Amazon reseller listing the same brand&apos;s product has none of that.
             </p>
@@ -268,25 +268,25 @@ export default function WhereToBuyRealShilajit() {
 
         {/* Channel comparison */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Purchasing channel rankings</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Purchasing channel rankings</h2>
           <div className="space-y-4">
             {CHANNELS.map((ch) => (
-              <div key={ch.channel} className={`bg-[#182b1f] border ${ch.color} rounded-xl p-5`}>
+              <div key={ch.channel} className={`bg-white border ${ch.color} rounded-xl p-5`}>
                 <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
                   <div>
-                    <div className="text-sm font-bold text-[#e8f4ec]">{ch.channel}</div>
+                    <div className="text-sm font-bold text-[#0D1F14]">{ch.channel}</div>
                     <div className="text-sm mt-0.5">{ch.rating}</div>
                   </div>
                   <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-[10px]">
-                    <span className="text-[#5d8c6e]">COA access: <strong className={ch.labelColor}>{ch.coaAccess}</strong></span>
-                    <span className="text-[#5d8c6e]">Fake risk: <strong className={ch.labelColor}>{ch.fakeRisk}</strong></span>
-                    <span className="text-[#5d8c6e]">Price value: <strong className="text-[#9ec9ad]">{ch.priceValue}</strong></span>
+                    <span className="text-[#7BA899]">COA access: <strong className={ch.labelColor}>{ch.coaAccess}</strong></span>
+                    <span className="text-[#7BA899]">Fake risk: <strong className={ch.labelColor}>{ch.fakeRisk}</strong></span>
+                    <span className="text-[#7BA899]">Price value: <strong className="text-[#0D1F14]">{ch.priceValue}</strong></span>
                   </div>
                 </div>
-                <div className="bg-[#0d1f14] rounded-lg px-3 py-2 border border-[#2a4535] mb-2">
-                  <p className="text-[11px] text-[#9ec9ad] leading-relaxed"><span className={`font-bold ${ch.labelColor}`}>Verdict: </span>{ch.verdict}</p>
+                <div className="bg-[#F0FAF4] rounded-lg px-3 py-2 border border-[#D1EDD8] mb-2">
+                  <p className="text-[11px] text-[#0D1F14] leading-relaxed"><span className={`font-bold ${ch.labelColor}`}>Verdict: </span>{ch.verdict}</p>
                 </div>
-                <p className="text-[10px] text-red-400/80"><span className="font-bold">Red flags: </span>{ch.redFlags}</p>
+                <p className="text-[10px] text-red-600/80"><span className="font-bold">Red flags: </span>{ch.redFlags}</p>
               </div>
             ))}
           </div>
@@ -294,35 +294,35 @@ export default function WhereToBuyRealShilajit() {
 
         {/* Top vendors table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Top 4 trusted vendors in 2026</h2>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top 4 trusted vendors in 2026</h2>
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">#</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Vendor</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Tier</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">COA</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Shipping</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Price</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Guarantee</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">#</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Vendor</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Tier</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">COA</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Shipping</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Price</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Guarantee</th>
                 </tr>
               </thead>
               <tbody>
                 {TOP_VENDORS.map((v, i) => (
-                  <tr key={v.rank} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"} ${v.highlight ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}>
-                    <td className="px-4 py-3 font-black text-emerald-400">#{v.rank}</td>
-                    <td className="px-4 py-3 font-semibold text-[#e8f4ec] whitespace-nowrap">
+                  <tr key={v.rank} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"} ${v.highlight ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}>
+                    <td className="px-4 py-3 font-black text-[#10B981]">#{v.rank}</td>
+                    <td className="px-4 py-3 font-semibold text-[#0D1F14] whitespace-nowrap">
                       {v.name}
-                      {v.highlight && <span className="ml-1.5 text-[9px] text-emerald-400">★ TOP PICK</span>}
+                      {v.highlight && <span className="ml-1.5 text-[9px] text-[#10B981]">★ TOP PICK</span>}
                     </td>
                     <td className="px-4 py-3">
                       <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${v.tierColor}`}>{v.tier}</span>
                     </td>
-                    <td className="px-4 py-3 text-[#9ec9ad]">{v.coa}</td>
-                    <td className="px-4 py-3 text-[#9ec9ad] whitespace-nowrap">{v.shipping}</td>
-                    <td className="px-4 py-3 text-emerald-400 font-semibold">{v.price}</td>
-                    <td className="px-4 py-3 text-[#9ec9ad]">{v.guarantee}</td>
+                    <td className="px-4 py-3 text-[#0D1F14]">{v.coa}</td>
+                    <td className="px-4 py-3 text-[#0D1F14] whitespace-nowrap">{v.shipping}</td>
+                    <td className="px-4 py-3 text-[#10B981] font-semibold">{v.price}</td>
+                    <td className="px-4 py-3 text-[#0D1F14]">{v.guarantee}</td>
                   </tr>
                 ))}
               </tbody>
@@ -332,8 +332,8 @@ export default function WhereToBuyRealShilajit() {
 
         {/* #1 Black Lotus detail */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">#1 Most Trusted Source: Black Lotus Shilajit</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Most Trusted Source: Black Lotus Shilajit</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Black Lotus is our top-ranked vendor for one simple reason: they make it impossible to buy their product without full documentation available. Their Certificate of Analysis is publicly accessible, linked to specific lot numbers, from an independent ISO-accredited lab, and shows measured values — not just pass/fail checkboxes.
             </p>
@@ -346,13 +346,13 @@ export default function WhereToBuyRealShilajit() {
           </div>
         </section>
 
-        <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+        <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
             <div>
-              <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">#1 Trusted Vendor — S-Tier</div>
-              <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit</h3>
-              <p className="text-xs text-[#9ec9ad] mt-1">Direct-to-consumer · Third-party COA · Free shipping</p>
+              <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">#1 Trusted Vendor — S-Tier</div>
+              <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit</h3>
+              <p className="text-xs text-[#0D1F14] mt-1">Direct-to-consumer · Third-party COA · Free shipping</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
@@ -366,7 +366,7 @@ export default function WhereToBuyRealShilajit() {
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <CheckIcon />
-                <span className="text-xs text-[#9ec9ad]">{item}</span>
+                <span className="text-xs text-[#0D1F14]">{item}</span>
               </div>
             ))}
           </div>
@@ -376,17 +376,17 @@ export default function WhereToBuyRealShilajit() {
               Shop Resin — $39.99 →
             </a>
             <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
-              className="flex-1 block text-center py-2.5 rounded-xl bg-[#0d1f14] hover:bg-[#122019] text-emerald-300 font-semibold text-sm border border-emerald-700/50 transition-colors">
+              className="flex-1 block text-center py-2.5 rounded-xl bg-[#F0FAF4] hover:bg-[#F0FAF4] text-[#10B981] font-semibold text-sm border border-[#D1EDD8] transition-colors">
               Shop Capsules — $34.99
             </a>
           </div>
-          <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
 
         {/* Amazon section */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Buying shilajit on Amazon: what to look for</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Buying shilajit on Amazon: what to look for</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Amazon is not inherently unsafe for shilajit — but it requires more diligence than buying direct. Here&apos;s a checklist for evaluating any Amazon shilajit listing:
             </p>
@@ -402,19 +402,19 @@ export default function WhereToBuyRealShilajit() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <CheckIcon />
-                  <span className="text-xs text-[#9ec9ad]">{item}</span>
+                  <span className="text-xs text-[#0D1F14]">{item}</span>
                 </div>
               ))}
             </div>
             <p>
-              Use our <Link href="/" className="text-emerald-400 hover:underline">comparison database</Link> to quickly identify which Amazon-listed products in our tracked database have verified COA status, sourcing information, and real purity scores.
+              Use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link> to quickly identify which Amazon-listed products in our tracked database have verified COA status, sourcing information, and real purity scores.
             </p>
           </div>
         </section>
 
         {/* Red flags */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Universal red flags: walk away from any vendor showing these</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Universal red flags: walk away from any vendor showing these</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               "COA only available 'on request' — transparency means publishing it, not gating it",
@@ -426,9 +426,9 @@ export default function WhereToBuyRealShilajit() {
               "Claims of '80–90%+ fulvic acid' without extraordinary evidence",
               "No return policy or 'all sales final' for a supplement",
             ].map((flag) => (
-              <div key={flag} className="flex items-start gap-2.5 bg-[#182b1f] border border-red-900/30 rounded-xl p-3.5">
-                <span className="text-red-400 text-sm shrink-0">⚠</span>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{flag}</p>
+              <div key={flag} className="flex items-start gap-2.5 bg-white border border-red-200 rounded-xl p-3.5">
+                <span className="text-red-600 text-sm shrink-0">⚠</span>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{flag}</p>
               </div>
             ))}
           </div>
@@ -436,13 +436,13 @@ export default function WhereToBuyRealShilajit() {
 
         {/* Conclusion */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The safest way to buy shilajit in 2026</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The safest way to buy shilajit in 2026</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The safest approach: buy direct from a brand that publishes a third-party COA on their website before you even look at the product. This single requirement filters out the overwhelming majority of questionable products in the market.
             </p>
             <p>
-              If you want to buy on Amazon, restrict your search to brands with their own website, published COA documentation, and a price that makes sense for real quality. Use our <Link href="/" className="text-emerald-400 hover:underline">comparison database</Link> as a pre-filter — we&apos;ve already done the research on 55+ products.
+              If you want to buy on Amazon, restrict your search to brands with their own website, published COA documentation, and a price that makes sense for real quality. Use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link> as a pre-filter — we&apos;ve already done the research on 55+ products.
             </p>
             <p>
               Never buy from eBay, Wish, Temu, or unknown marketplace resellers. The risk of receiving a counterfeit or harmful product is too high, and there&apos;s no documentation or accountability to fall back on.

@@ -108,8 +108,8 @@ const PRICE_TIERS = [
     source: "Unknown / unspecified",
     heavyMetals: "Rarely tested",
     verdict: "High risk. Most products in this tier are adulterated or fake. Avoid unless strong COA available.",
-    color: "border-red-900/40",
-    label: "text-red-400",
+    color: "border-red-200",
+    label: "text-red-600",
     examples: "Generic Amazon listings, white-label products",
   },
   {
@@ -122,7 +122,7 @@ const PRICE_TIERS = [
     heavyMetals: "Occasional",
     verdict: "Acceptable range for budget-conscious buyers. Stick to COA-available products. Sayan, Natural Shilajit.",
     color: "border-amber-900/40",
-    label: "text-amber-400",
+    label: "text-amber-600",
     examples: "Sayan, Natural Shilajit, Himalayan Healing",
   },
   {
@@ -135,7 +135,7 @@ const PRICE_TIERS = [
     heavyMetals: "Usually tested",
     verdict: "Best value for quality buyers. Black Lotus, Essencraft, Natural Shilajit RS. Full transparency expected.",
     color: "border-emerald-900/40",
-    label: "text-emerald-400",
+    label: "text-[#10B981]",
     examples: "Black Lotus, Essencraft, Natural Shilajit RS",
   },
   {
@@ -148,7 +148,7 @@ const PRICE_TIERS = [
     heavyMetals: "Usually tested",
     verdict: "Diminishing returns. Some brands at this tier are genuinely elite. Others are just expensive. Verify COA.",
     color: "border-purple-900/40",
-    label: "text-purple-400",
+    label: "text-purple-700",
     examples: "PurBlack, specialized small-batch brands",
   },
 ];
@@ -178,14 +178,14 @@ export default function CheapVsHighQualityShilajit() {
         faqItems={faqItems}
         ctaVariant="pure-himalayan"
       >
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Price analysis is based on our database of 55+ products — not on which brands pay us more.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Price analysis is based on our database of 55+ products — not on which brands pay us more.
         </div>
 
         {/* What drives price */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">The 5 factors that drive shilajit prices</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">The 5 factors that drive shilajit prices</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Shilajit price isn&apos;t arbitrary. Each dollar in the price reflects a real production decision. Understanding these factors tells you exactly what a cheap brand is cutting corners on.
             </p>
@@ -223,19 +223,19 @@ export default function CheapVsHighQualityShilajit() {
                 icon: "🧪",
               },
             ].map(({ factor, expensive, cheap, icon }) => (
-              <div key={factor} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4">
+              <div key={factor} className="bg-white border border-[#D1EDD8] rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-base">{icon}</span>
-                  <span className="text-xs font-bold text-[#e8f4ec]">{factor}</span>
+                  <span className="text-xs font-bold text-[#0D1F14]">{factor}</span>
                 </div>
                 <div className="grid sm:grid-cols-2 gap-3">
-                  <div className="bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-2.5">
-                    <div className="text-[9px] font-bold text-emerald-400 uppercase mb-1">Premium does this</div>
-                    <p className="text-[11px] text-[#9ec9ad] leading-relaxed">{expensive}</p>
+                  <div className="bg-emerald-50 border border-[#D1EDD8] rounded-lg p-2.5">
+                    <div className="text-[9px] font-bold text-[#10B981] uppercase mb-1">Premium does this</div>
+                    <p className="text-[11px] text-[#0D1F14] leading-relaxed">{expensive}</p>
                   </div>
-                  <div className="bg-red-900/10 border border-red-700/20 rounded-lg p-2.5">
-                    <div className="text-[9px] font-bold text-red-400 uppercase mb-1">Cheap cuts this</div>
-                    <p className="text-[11px] text-[#9ec9ad] leading-relaxed">{cheap}</p>
+                  <div className="bg-red-50 border border-red-700/20 rounded-lg p-2.5">
+                    <div className="text-[9px] font-bold text-red-600 uppercase mb-1">Cheap cuts this</div>
+                    <p className="text-[11px] text-[#0D1F14] leading-relaxed">{cheap}</p>
                   </div>
                 </div>
               </div>
@@ -245,27 +245,27 @@ export default function CheapVsHighQualityShilajit() {
 
         {/* Price tier table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Price tier breakdown — what each range actually gets you</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Price tier breakdown — what each range actually gets you</h2>
           <div className="space-y-4">
             {PRICE_TIERS.map((t) => (
-              <div key={t.tier} className={`bg-[#182b1f] border ${t.color} rounded-xl p-5`}>
+              <div key={t.tier} className={`bg-white border ${t.color} rounded-xl p-5`}>
                 <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
                   <div>
                     <span className={`text-xs font-black ${t.label} uppercase tracking-wider`}>{t.tier}</span>
-                    <div className="text-sm font-bold text-[#e8f4ec] mt-0.5">{t.range}</div>
-                    <div className="text-[10px] text-[#5d8c6e]">{t.typical} for 30g resin</div>
+                    <div className="text-sm font-bold text-[#0D1F14] mt-0.5">{t.range}</div>
+                    <div className="text-[10px] text-[#7BA899]">{t.typical} for 30g resin</div>
                   </div>
                   <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-[10px]">
-                    <span className="text-[#5d8c6e]">COA rate: <strong className="text-[#9ec9ad]">{t.coaRate}</strong></span>
-                    <span className="text-[#5d8c6e]">FA verified: <strong className="text-[#9ec9ad]">{t.faVerified}</strong></span>
-                    <span className="text-[#5d8c6e]">Source: <strong className="text-[#9ec9ad]">{t.source}</strong></span>
-                    <span className="text-[#5d8c6e]">Heavy metals: <strong className="text-[#9ec9ad]">{t.heavyMetals}</strong></span>
+                    <span className="text-[#7BA899]">COA rate: <strong className="text-[#0D1F14]">{t.coaRate}</strong></span>
+                    <span className="text-[#7BA899]">FA verified: <strong className="text-[#0D1F14]">{t.faVerified}</strong></span>
+                    <span className="text-[#7BA899]">Source: <strong className="text-[#0D1F14]">{t.source}</strong></span>
+                    <span className="text-[#7BA899]">Heavy metals: <strong className="text-[#0D1F14]">{t.heavyMetals}</strong></span>
                   </div>
                 </div>
-                <div className="bg-[#0d1f14] rounded-lg px-3 py-2 border border-[#2a4535] mb-2">
-                  <p className="text-[11px] text-[#9ec9ad] leading-relaxed"><span className={`font-bold ${t.label}`}>Verdict: </span>{t.verdict}</p>
+                <div className="bg-[#F0FAF4] rounded-lg px-3 py-2 border border-[#D1EDD8] mb-2">
+                  <p className="text-[11px] text-[#0D1F14] leading-relaxed"><span className={`font-bold ${t.label}`}>Verdict: </span>{t.verdict}</p>
                 </div>
-                <p className="text-[10px] text-[#5d8c6e]">Example brands: {t.examples}</p>
+                <p className="text-[10px] text-[#7BA899]">Example brands: {t.examples}</p>
               </div>
             ))}
           </div>
@@ -273,8 +273,8 @@ export default function CheapVsHighQualityShilajit() {
 
         {/* Hidden costs of cheap */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The hidden costs of buying cheap shilajit</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The hidden costs of buying cheap shilajit</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The true cost of cheap shilajit isn&apos;t just the price on the label. When you buy a $15 product that contains no meaningful active compound, you&apos;ve spent $15 for zero benefit. When you buy a $15 product with heavy metals above safe limits, you&apos;ve paid to damage your health.
             </p>
@@ -286,9 +286,9 @@ export default function CheapVsHighQualityShilajit() {
               { cost: "Heavy metals exposure", detail: "Unprocessed or poorly purified shilajit can contain elevated arsenic, lead, or mercury. Without a panel, you have no idea." },
               { cost: "Repeat purchases", detail: "Chasing results from a non-working product means spending more over time than a single quality purchase would have cost." },
             ].map(({ cost, detail }) => (
-              <div key={cost} className="bg-[#182b1f] border border-red-900/30 rounded-xl p-4">
-                <div className="text-xs font-bold text-red-400 mb-1.5">⚠ {cost}</div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{detail}</p>
+              <div key={cost} className="bg-white border border-red-200 rounded-xl p-4">
+                <div className="text-xs font-bold text-red-600 mb-1.5">⚠ {cost}</div>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{detail}</p>
               </div>
             ))}
           </div>
@@ -296,21 +296,21 @@ export default function CheapVsHighQualityShilajit() {
 
         {/* Best value analysis */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Best value shilajit: quality per dollar analysis</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value shilajit: quality per dollar analysis</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               True value in the shilajit market is active compound (fulvic acid) per dollar — not just price per gram. A $1.33/gram product with 85% verified fulvic acid delivers more bioactive compound per dollar than a $0.80/gram product with only 30% fulvic acid.
             </p>
-            <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+            <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
               <table className="w-full text-xs">
                 <thead>
-                  <tr className="bg-[#122019] border-b border-[#2a4535]">
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Product</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">$/gram</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">FA %</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">FA mg/$1</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">COA</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Verdict</th>
+                  <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Product</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">$/gram</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">FA %</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">FA mg/$1</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">COA</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Verdict</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -321,29 +321,29 @@ export default function CheapVsHighQualityShilajit() {
                     { name: "Essencraft", ppg: "$1.43", fa: "75%+", famg: "~524mg", coa: true, verdict: "Premium transparency" },
                     { name: "Ultra-Premium Brand", ppg: "$2.50", fa: "80%", famg: "~320mg", coa: true, verdict: "Diminishing returns" },
                   ].map((row, i) => (
-                    <tr key={row.name} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"} ${row.name === "Black Lotus Resin" ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}>
-                      <td className="px-4 py-3 font-semibold text-[#e8f4ec]">
+                    <tr key={row.name} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"} ${row.name === "Black Lotus Resin" ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}>
+                      <td className="px-4 py-3 font-semibold text-[#0D1F14]">
                         {row.name}
-                        {row.name === "Black Lotus Resin" && <span className="ml-1 text-[9px] text-emerald-400">★</span>}
+                        {row.name === "Black Lotus Resin" && <span className="ml-1 text-[9px] text-[#10B981]">★</span>}
                       </td>
-                      <td className="px-4 py-3 text-emerald-400 font-semibold tabular-nums">{row.ppg}</td>
-                      <td className="px-4 py-3 text-[#9ec9ad] font-semibold">{row.fa}</td>
-                      <td className="px-4 py-3 text-[#9ec9ad] tabular-nums">{row.famg}</td>
-                      <td className="px-4 py-3 text-center">{row.coa ? <span className="text-emerald-400">✓</span> : <span className="text-red-400">✗</span>}</td>
-                      <td className="px-4 py-3 text-[#5d8c6e]">{row.verdict}</td>
+                      <td className="px-4 py-3 text-[#10B981] font-semibold tabular-nums">{row.ppg}</td>
+                      <td className="px-4 py-3 text-[#0D1F14] font-semibold">{row.fa}</td>
+                      <td className="px-4 py-3 text-[#0D1F14] tabular-nums">{row.famg}</td>
+                      <td className="px-4 py-3 text-center">{row.coa ? <span className="text-[#10B981]">✓</span> : <span className="text-red-600">✗</span>}</td>
+                      <td className="px-4 py-3 text-[#7BA899]">{row.verdict}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
-            <p className="text-[10px] text-[#5d8c6e]">FA mg/$ = (fulvic acid % × 1000mg/gram) ÷ price per gram. Higher = more active compound per dollar.</p>
+            <p className="text-[10px] text-[#7BA899]">FA mg/$ = (fulvic acid % × 1000mg/gram) ÷ price per gram. Higher = more active compound per dollar.</p>
           </div>
         </section>
 
         {/* Black Lotus as best value premium */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Best value premium pick: Black Lotus</h2>
-          <div className="space-y-3 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value premium pick: Black Lotus</h2>
+          <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Black Lotus sits at the intersection of quality and value in the premium tier. At $1.33/gram with 85%+ third-party-verified fulvic acid, their effective active compound per dollar is actually competitive with mid-range products that have lower FA content — while offering dramatically better documentation and transparency.
             </p>
@@ -353,26 +353,26 @@ export default function CheapVsHighQualityShilajit() {
           </div>
         </section>
 
-        <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+        <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
             <div>
-              <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">Best Value Premium — S-Tier</div>
-              <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit Resin</h3>
-              <p className="text-xs text-[#9ec9ad] mt-1">$1.33/gram · 85%+ FA · Third-party COA · Free shipping</p>
+              <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Best Value Premium — S-Tier</div>
+              <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
+              <p className="text-xs text-[#0D1F14] mt-1">$1.33/gram · 85%+ FA · Third-party COA · Free shipping</p>
             </div>
           </div>
           <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"
             className="block w-full text-center py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-sm transition-colors shadow-md shadow-emerald-900/30">
             Shop Black Lotus Resin — $39.99 →
           </a>
-          <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
 
         {/* Conclusion */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The verdict: buy for value, not just price</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The verdict: buy for value, not just price</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               There is a floor below which shilajit simply cannot be both genuine and cheap. That floor is approximately $0.75–$1.00/gram for a documented, COA-verified product. Below that, you&apos;re not getting shilajit — you&apos;re getting something labeled as shilajit.
             </p>
@@ -380,7 +380,7 @@ export default function CheapVsHighQualityShilajit() {
               Above that floor, you&apos;re paying for real quality signals: verified fulvic acid concentration, third-party testing, known sourcing, and the brand accountability that comes with a traceable product. These things cost money because they represent real costs in the supply chain.
             </p>
             <p>
-              The smartest way to shop is to use our <Link href="/" className="text-emerald-400 hover:underline">comparison database</Link>, filter by COA-verified products, sort by price per gram, and focus on the sweet spot between verified quality and competitive pricing. That sweet spot is currently the $1.00–$1.50/gram tier — and Black Lotus sits squarely in the middle of it.
+              The smartest way to shop is to use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link>, filter by COA-verified products, sort by price per gram, and focus on the sweet spot between verified quality and competitive pricing. That sweet spot is currently the $1.00–$1.50/gram tier — and Black Lotus sits squarely in the middle of it.
             </p>
           </div>
         </section>

@@ -102,7 +102,7 @@ const faqItems: FaqItem[] = [
 
 function CheckIcon() {
   return (
-    <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-3.5 h-3.5 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -202,19 +202,19 @@ export default function BestShilajitBrandsRanked() {
         ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. Our rankings are independent of affiliate relationships — brands are ranked on data, not compensation.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. Our rankings are independent of affiliate relationships — brands are ranked on data, not compensation.
         </div>
 
         {/* Intro */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Why most shilajit brand rankings are wrong</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Why most shilajit brand rankings are wrong</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Most &quot;best shilajit brands&quot; lists are affiliate-driven content where the #1 pick is whoever pays the highest commission rate. You&apos;ll see the same 3–5 brands recycled across dozens of sites with no actual data behind the rankings — no COA comparisons, no fulvic acid percentages, no price-per-gram analysis.
             </p>
             <p>
-              We built <Link href="/" className="text-emerald-400 hover:underline">ShilajitPrice.com</Link> specifically because this kind of data-free ranking dominates the market. We&apos;ve collected and analyzed 25+ data points per product across 55+ products from 20+ brands. This ranking reflects that research — not who pays us the most.
+              We built <Link href="/" className="text-[#10B981] hover:underline">ShilajitPrice.com</Link> specifically because this kind of data-free ranking dominates the market. We&apos;ve collected and analyzed 25+ data points per product across 55+ products from 20+ brands. This ranking reflects that research — not who pays us the most.
             </p>
             <p>
               Our ranking methodology weights five factors: COA quality and accessibility (30%), verified fulvic acid percentage (25%), sourcing and altitude transparency (20%), price-per-gram competitiveness (15%), and customer satisfaction signals (10%). A brand that scores well commercially but has opaque testing gets penalized hard.
@@ -224,7 +224,7 @@ export default function BestShilajitBrandsRanked() {
 
         {/* Ranking methodology */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Our ranking methodology</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Our ranking methodology</h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {[
               { factor: "COA Quality", weight: "30%", desc: "Third-party ISO lab, publicly linked to lot numbers, specific values not just 'pass/fail'" },
@@ -233,12 +233,12 @@ export default function BestShilajitBrandsRanked() {
               { factor: "Price Per Gram", weight: "15%", desc: "Total cost divided by usable product weight. Normalized across all form factors." },
               { factor: "Customer Signals", weight: "10%", desc: "Amazon rating, review count, return rate indicators, and verified buyer feedback" },
             ].map(({ factor, weight, desc }) => (
-              <div key={factor} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4">
+              <div key={factor} className="bg-white border border-[#D1EDD8] rounded-xl p-4">
                 <div className="flex items-center justify-between mb-1.5">
-                  <span className="text-xs font-bold text-[#e8f4ec]">{factor}</span>
-                  <span className="text-xs font-black text-emerald-400">{weight}</span>
+                  <span className="text-xs font-bold text-[#0D1F14]">{factor}</span>
+                  <span className="text-xs font-black text-[#10B981]">{weight}</span>
                 </div>
-                <p className="text-[11px] text-[#9ec9ad] leading-relaxed">{desc}</p>
+                <p className="text-[11px] text-[#0D1F14] leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -246,46 +246,46 @@ export default function BestShilajitBrandsRanked() {
 
         {/* Quick comparison table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Top 5 shilajit brands at a glance</h2>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top 5 shilajit brands at a glance</h2>
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">#</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Brand</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Tier</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">$/gram</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Fulvic %</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">COA</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">3rd Party</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Source</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">#</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Brand</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Tier</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">$/gram</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Fulvic %</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">COA</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">3rd Party</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Source</th>
                 </tr>
               </thead>
               <tbody>
                 {TOP_BRANDS.map((b, i) => (
-                  <tr key={b.rank} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"}`}>
-                    <td className="px-4 py-3 font-black text-emerald-400">#{b.rank}</td>
-                    <td className="px-4 py-3 font-semibold text-[#e8f4ec] whitespace-nowrap">{b.name}</td>
+                  <tr key={b.rank} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
+                    <td className="px-4 py-3 font-black text-[#10B981]">#{b.rank}</td>
+                    <td className="px-4 py-3 font-semibold text-[#0D1F14] whitespace-nowrap">{b.name}</td>
                     <td className="px-4 py-3">
                       <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${b.tierColor}`}>{b.tier}</span>
                     </td>
-                    <td className="px-4 py-3 text-emerald-400 font-semibold tabular-nums">{b.pricePerGram}</td>
-                    <td className="px-4 py-3 font-semibold text-[#9ec9ad]">{b.fulvic}</td>
-                    <td className="px-4 py-3 text-center">{b.coa ? <span className="text-emerald-400">✓</span> : <span className="text-red-400">✗</span>}</td>
-                    <td className="px-4 py-3 text-center">{b.thirdParty ? <span className="text-emerald-400">✓</span> : <span className="text-[#5d8c6e]">—</span>}</td>
-                    <td className="px-4 py-3 text-[#5d8c6e] whitespace-nowrap">{b.source}</td>
+                    <td className="px-4 py-3 text-[#10B981] font-semibold tabular-nums">{b.pricePerGram}</td>
+                    <td className="px-4 py-3 font-semibold text-[#0D1F14]">{b.fulvic}</td>
+                    <td className="px-4 py-3 text-center">{b.coa ? <span className="text-[#10B981]">✓</span> : <span className="text-red-600">✗</span>}</td>
+                    <td className="px-4 py-3 text-center">{b.thirdParty ? <span className="text-[#10B981]">✓</span> : <span className="text-[#7BA899]">—</span>}</td>
+                    <td className="px-4 py-3 text-[#7BA899] whitespace-nowrap">{b.source}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#5d8c6e] mt-2">Full comparison of 55+ products available at <Link href="/compare" className="text-emerald-400 hover:underline">ShilajitPrice.com/compare</Link></p>
+          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 55+ products available at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link></p>
         </section>
 
         {/* #1 Black Lotus */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">#1 Best Overall: Black Lotus Shilajit</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Best Overall: Black Lotus Shilajit</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Black Lotus earns the top spot because they do something remarkably rare in this market: they publish everything. Their Certificate of Analysis is linked directly to specific product lot numbers, tested by an independent ISO-accredited laboratory, and shows specific measured values — not just &quot;pass.&quot;
             </p>
@@ -299,13 +299,13 @@ export default function BestShilajitBrandsRanked() {
         </section>
 
         {/* Black Lotus CTA */}
-        <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+        <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
             <div>
-              <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">#1 Ranked — S-Tier</div>
-              <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit</h3>
-              <p className="text-xs text-[#9ec9ad] mt-1">Resin from $39.99 · Capsules from $34.99 · Free shipping</p>
+              <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">#1 Ranked — S-Tier</div>
+              <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit</h3>
+              <p className="text-xs text-[#0D1F14] mt-1">Resin from $39.99 · Capsules from $34.99 · Free shipping</p>
             </div>
           </div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
@@ -319,7 +319,7 @@ export default function BestShilajitBrandsRanked() {
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <CheckIcon />
-                <span className="text-xs text-[#9ec9ad]">{item}</span>
+                <span className="text-xs text-[#0D1F14]">{item}</span>
               </div>
             ))}
           </div>
@@ -329,17 +329,17 @@ export default function BestShilajitBrandsRanked() {
               Shop Resin — $39.99 →
             </a>
             <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
-              className="flex-1 block text-center py-2.5 rounded-xl bg-[#0d1f14] hover:bg-[#122019] text-emerald-300 font-semibold text-sm border border-emerald-700/50 transition-colors">
+              className="flex-1 block text-center py-2.5 rounded-xl bg-[#F0FAF4] hover:bg-[#F0FAF4] text-[#10B981] font-semibold text-sm border border-[#D1EDD8] transition-colors">
               Shop Capsules — $34.99
             </a>
           </div>
-          <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
 
         {/* #2 Sayan */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">#2 Best Budget Pick: Sayan Shilajit</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#2 Best Budget Pick: Sayan Shilajit</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Sayan is a Siberian-sourced shilajit brand with a genuine COA and a strong Amazon track record. At under $1/gram across their larger sizes, they offer genuine value for cost-conscious buyers who still want documentation. Their fulvic acid content (~60%) is lower than Black Lotus but still in a legitimate therapeutic range.
             </p>
@@ -351,13 +351,13 @@ export default function BestShilajitBrandsRanked() {
 
         {/* #3–5 briefer */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">#3–5: The best of the rest</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#3–5: The best of the rest</h2>
           <div className="space-y-4">
             {[
               {
                 rank: "#3",
                 name: "Natural Shilajit",
-                color: "border-emerald-700/40",
+                color: "border-[#D1EDD8]",
                 verdict: "One of the stronger third-party-tested brands on Amazon. Himalayan sourced, 70%+ fulvic acid, and a transparent COA make this a reliable A-tier pick at roughly $1.08/gram for their resin. Multiple size options and positive long-term customer reviews add confidence.",
               },
               {
@@ -369,16 +369,16 @@ export default function BestShilajitBrandsRanked() {
               {
                 rank: "#5",
                 name: "PrimaVie / Jarrow Formulas",
-                color: "border-amber-700/40",
+                color: "border-amber-200",
                 verdict: "PrimaVie is the most research-backed shilajit extract in capsule form, with multiple human clinical trials. It's a standardized extract rather than raw resin, so bioavailability may differ. GMP certified, broadly available, and the safest choice for those who prefer a capsule with clinical validation.",
               },
             ].map(({ rank, name, color, verdict }) => (
-              <div key={rank} className={`bg-[#182b1f] border ${color} rounded-xl p-5`}>
+              <div key={rank} className={`bg-white border ${color} rounded-xl p-5`}>
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-sm font-black text-emerald-400">{rank}</span>
-                  <h3 className="text-sm font-bold text-[#e8f4ec]">{name}</h3>
+                  <span className="text-sm font-black text-[#10B981]">{rank}</span>
+                  <h3 className="text-sm font-bold text-[#0D1F14]">{name}</h3>
                 </div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{verdict}</p>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{verdict}</p>
               </div>
             ))}
           </div>
@@ -386,8 +386,8 @@ export default function BestShilajitBrandsRanked() {
 
         {/* Brands to avoid */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Brands to avoid in 2026</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Brands to avoid in 2026</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Without naming specific brands, here are the profiles of products that routinely score poorly in our database:
             </p>
@@ -398,9 +398,9 @@ export default function BestShilajitBrandsRanked() {
                 { flag: "Price below $25 for 30g resin", detail: "The economics of authentic, high-altitude sourced shilajit make it impossible to produce at this price point with real quality. Deep discounts on resin are almost always a quality signal." },
                 { flag: "Generic Amazon listings with no brand identity", detail: "White-label shilajit with no traceable brand, no website, and rotating product photos is the highest-risk category in this market." },
               ].map(({ flag, detail }) => (
-                <div key={flag} className="bg-[#182b1f] border border-red-900/30 rounded-xl p-4">
-                  <div className="text-xs font-bold text-red-400 mb-1.5">⚠ {flag}</div>
-                  <p className="text-xs text-[#9ec9ad] leading-relaxed">{detail}</p>
+                <div key={flag} className="bg-white border border-red-200 rounded-xl p-4">
+                  <div className="text-xs font-bold text-red-600 mb-1.5">⚠ {flag}</div>
+                  <p className="text-xs text-[#0D1F14] leading-relaxed">{detail}</p>
                 </div>
               ))}
             </div>
@@ -409,7 +409,7 @@ export default function BestShilajitBrandsRanked() {
 
         {/* Final verdict */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The verdict: who should buy what</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The verdict: who should buy what</h2>
           <div className="space-y-3">
             {[
               { type: "Best overall / highest quality", pick: "Black Lotus Shilajit Resin", reason: "S-tier, 85%+ FA, third-party COA, $1.33/g" },
@@ -418,10 +418,10 @@ export default function BestShilajitBrandsRanked() {
               { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 75%+ FA, heavy metals tested" },
               { type: "Best for high review count + Amazon Prime", pick: "Natural Shilajit RS", reason: "A-tier, third-party tested, 4.4★ on Amazon" },
             ].map(({ type, pick, reason }) => (
-              <div key={type} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 bg-[#182b1f] border border-[#2a4535] rounded-xl px-4 py-3">
-                <span className="text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider sm:w-44 shrink-0">{type}</span>
-                <span className="text-xs font-bold text-[#e8f4ec]">{pick}</span>
-                <span className="text-[10px] text-emerald-400 sm:ml-auto whitespace-nowrap">{reason}</span>
+              <div key={type} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 bg-white border border-[#D1EDD8] rounded-xl px-4 py-3">
+                <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-wider sm:w-44 shrink-0">{type}</span>
+                <span className="text-xs font-bold text-[#0D1F14]">{pick}</span>
+                <span className="text-[10px] text-[#10B981] sm:ml-auto whitespace-nowrap">{reason}</span>
               </div>
             ))}
           </div>

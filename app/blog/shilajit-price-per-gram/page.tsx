@@ -145,48 +145,48 @@ export default function ShilajitPricePerGram() {
         ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected in April 2026 — prices may vary.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected in April 2026 — prices may vary.
         </div>
 
         {/* Why $/gram matters */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Why price per gram is the only comparison that matters</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Why price per gram is the only comparison that matters</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Shilajit is sold in packages ranging from 10g to 500g, at prices from $12 to $150+. Without normalizing to a per-gram cost, you have no basis for comparison. A $150 jar sounds expensive — but at 200g, it&apos;s $0.75/gram. A $35 jar sounds cheap — but at 15g, it&apos;s $2.33/gram. The sticker price tells you almost nothing about value.
             </p>
             <p>
               Price per gram is the first normalization. The second is adjusting for fulvic acid concentration — the bioactive compound that actually drives shilajit&apos;s effects. A product at $1.50/gram with 85% FA delivers more active compound per dollar than a product at $1.00/gram with 40% FA. The true value metric is cost per gram of verified fulvic acid.
             </p>
-            <div className="bg-[#182b1f] border border-emerald-800/40 rounded-xl p-4">
-              <div className="text-xs font-bold text-emerald-400 mb-3">How to calculate true value</div>
+            <div className="bg-white border border-[#D1EDD8] rounded-xl p-4">
+              <div className="text-xs font-bold text-[#10B981] mb-3">How to calculate true value</div>
               <div className="space-y-2 font-mono text-xs">
                 <div className="flex items-start gap-3">
-                  <span className="text-[#5d8c6e] w-32 shrink-0">Step 1:</span>
-                  <span className="text-[#9ec9ad]">Price per gram = (price + shipping) ÷ weight in grams</span>
+                  <span className="text-[#7BA899] w-32 shrink-0">Step 1:</span>
+                  <span className="text-[#0D1F14]">Price per gram = (price + shipping) ÷ weight in grams</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-[#5d8c6e] w-32 shrink-0">Step 2:</span>
-                  <span className="text-[#9ec9ad]">FA per gram = price per gram ÷ fulvic acid decimal (85% = 0.85)</span>
+                  <span className="text-[#7BA899] w-32 shrink-0">Step 2:</span>
+                  <span className="text-[#0D1F14]">FA per gram = price per gram ÷ fulvic acid decimal (85% = 0.85)</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-[#5d8c6e] w-32 shrink-0">Example A:</span>
-                  <span className="text-[#9ec9ad]">Black Lotus: $39.99 ÷ 30g = $1.33/g · $1.33 ÷ 0.85 = $1.57/g FA</span>
+                  <span className="text-[#7BA899] w-32 shrink-0">Example A:</span>
+                  <span className="text-[#0D1F14]">Black Lotus: $39.99 ÷ 30g = $1.33/g · $1.33 ÷ 0.85 = $1.57/g FA</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-[#5d8c6e] w-32 shrink-0">Example B:</span>
-                  <span className="text-[#9ec9ad]">Budget brand: $25 ÷ 30g = $0.83/g · $0.83 ÷ 0.40 = $2.08/g FA</span>
+                  <span className="text-[#7BA899] w-32 shrink-0">Example B:</span>
+                  <span className="text-[#0D1F14]">Budget brand: $25 ÷ 30g = $0.83/g · $0.83 ÷ 0.40 = $2.08/g FA</span>
                 </div>
               </div>
-              <p className="text-[11px] text-[#5d8c6e] mt-3">Example B is 33% more expensive per gram of actual fulvic acid — despite the lower sticker price.</p>
+              <p className="text-[11px] text-[#7BA899] mt-3">Example B is 33% more expensive per gram of actual fulvic acid — despite the lower sticker price.</p>
             </div>
           </div>
         </section>
 
         {/* What a fair price looks like */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">What a fair price per gram looks like by tier</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">What a fair price per gram looks like by tier</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {[
               { tier: "S", color: "bg-amber-400 text-amber-900", range: "$1.20–$1.60/gram", desc: "85%+ FA, ISO COA, third-party tested, full heavy metals panel" },
@@ -194,13 +194,13 @@ export default function ShilajitPricePerGram() {
               { tier: "B", color: "bg-blue-500 text-white", range: "$0.80–$2.50/gram", desc: "Standardized extracts or lower-documentation brands with basic testing" },
               { tier: "C/D", color: "bg-red-600 text-white", range: "Any price", desc: "No COA, unverified claims, unknown source — avoid regardless of price" },
             ].map(({ tier, color, range, desc }) => (
-              <div key={tier} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4">
+              <div key={tier} className="bg-white border border-[#D1EDD8] rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${color}`}>{tier}</span>
-                  <span className="text-xs font-bold text-[#e8f4ec]">Tier {tier}</span>
+                  <span className="text-xs font-bold text-[#0D1F14]">Tier {tier}</span>
                 </div>
-                <div className="text-xs font-bold text-emerald-400 mb-1">{range}</div>
-                <p className="text-[11px] text-[#9ec9ad] leading-relaxed">{desc}</p>
+                <div className="text-xs font-bold text-[#10B981] mb-1">{range}</div>
+                <p className="text-[11px] text-[#0D1F14] leading-relaxed">{desc}</p>
               </div>
             ))}
           </div>
@@ -208,62 +208,62 @@ export default function ShilajitPricePerGram() {
 
         {/* Large comparison table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-3">Full price per gram comparison — 20+ products</h2>
-          <p className="text-sm text-[#9ec9ad] mb-4 leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-3">Full price per gram comparison — 20+ products</h2>
+          <p className="text-sm text-[#0D1F14] mb-4 leading-relaxed">
             Sorted by tier, then price per gram. Pricing collected April 2026. Includes free shipping where applicable.
             &quot;N/A&quot; for capsule products where $/gram is not directly comparable to raw resin.
           </p>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Product</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Tier</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">$/gram</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Fulvic %</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">COA</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">3rd Party</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Source</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Product</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Tier</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">$/gram</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Fulvic %</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">COA</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">3rd Party</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Source</th>
                 </tr>
               </thead>
               <tbody>
                 {PRODUCTS.map((p, i) => (
-                  <tr key={p.name} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"}`}>
+                  <tr key={p.name} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
                     <td className="px-3 py-3">
                       {p.affiliate !== "#" ? (
-                        <a href={p.affiliate} target="_blank" rel="noopener noreferrer sponsored" className="font-semibold text-[#e8f4ec] hover:text-emerald-300 transition-colors">
+                        <a href={p.affiliate} target="_blank" rel="noopener noreferrer sponsored" className="font-semibold text-[#0D1F14] hover:text-[#10B981] transition-colors">
                           {p.name}
                         </a>
                       ) : (
-                        <span className="font-semibold text-[#9ec9ad]">{p.name}</span>
+                        <span className="font-semibold text-[#0D1F14]">{p.name}</span>
                       )}
                     </td>
                     <td className="px-3 py-3">
                       <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${p.tierColor}`}>{p.tier}</span>
                     </td>
-                    <td className="px-3 py-3 font-bold text-emerald-400 tabular-nums">
+                    <td className="px-3 py-3 font-bold text-[#10B981] tabular-nums">
                       {typeof p.priceGram === "number" ? `$${p.priceGram.toFixed(2)}` : p.priceGram}
                     </td>
-                    <td className="px-3 py-3 font-semibold text-[#9ec9ad]">{p.fulvic}</td>
-                    <td className="px-3 py-3 text-center">{p.coa ? <span className="text-emerald-400">✓</span> : <span className="text-red-400">✗</span>}</td>
-                    <td className="px-3 py-3 text-center">{p.tp ? <span className="text-emerald-400">✓</span> : <span className="text-[#5d8c6e]">—</span>}</td>
-                    <td className="px-3 py-3 text-[#5d8c6e] text-[10px] whitespace-nowrap">{p.source}</td>
+                    <td className="px-3 py-3 font-semibold text-[#0D1F14]">{p.fulvic}</td>
+                    <td className="px-3 py-3 text-center">{p.coa ? <span className="text-[#10B981]">✓</span> : <span className="text-red-600">✗</span>}</td>
+                    <td className="px-3 py-3 text-center">{p.tp ? <span className="text-[#10B981]">✓</span> : <span className="text-[#7BA899]">—</span>}</td>
+                    <td className="px-3 py-3 text-[#7BA899] text-[10px] whitespace-nowrap">{p.source}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#5d8c6e] mt-2">
+          <p className="text-[10px] text-[#7BA899] mt-2">
             Full 55+ product database at{" "}
-            <Link href="/compare" className="text-emerald-400 hover:underline">ShilajitPrice.com/compare</Link>{" "}
+            <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link>{" "}
             with sortable columns and advanced filters.
           </p>
         </section>
 
         {/* Black Lotus best value */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Best value at $1.33/gram: Black Lotus Shilajit Resin</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value at $1.33/gram: Black Lotus Shilajit Resin</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               At $1.33/gram with 85%+ verified fulvic acid, Black Lotus delivers the highest quality-to-price ratio in the resin category. The closest competitor with comparable documentation (Essencraft at 75%+ FA) charges $1.43/gram — and delivers less fulvic acid per gram. Natural Shilajit at $1.08/gram has a lower sticker price but 70% FA instead of 85%, making the effective FA cost $1.54/gram versus Black Lotus at $1.57/gram — essentially equal, with Black Lotus having the stronger COA and higher verified concentration.
             </p>
@@ -272,32 +272,32 @@ export default function ShilajitPricePerGram() {
             </p>
           </div>
 
-          <div className="mt-6 bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-5 shadow-lg shadow-emerald-900/10">
+          <div className="mt-6 bg-white border border-[#9EC9AD] rounded-2xl p-5 shadow-lg shadow-emerald-900/10">
             <div className="flex items-center justify-between mb-3">
               <div className="flex items-center gap-3">
                 <div className="w-8 h-8 rounded-lg bg-amber-400 flex items-center justify-center text-amber-900 font-black text-sm">S</div>
                 <div>
-                  <div className="text-xs font-black text-[#e8f4ec]">Black Lotus Shilajit Resin</div>
-                  <div className="text-[10px] text-emerald-400">$1.33/gram · 85%+ FA · Free shipping</div>
+                  <div className="text-xs font-black text-[#0D1F14]">Black Lotus Shilajit Resin</div>
+                  <div className="text-[10px] text-[#10B981]">$1.33/gram · 85%+ FA · Free shipping</div>
                 </div>
               </div>
               <div className="text-right">
-                <div className="text-lg font-black text-emerald-400">$1.33</div>
-                <div className="text-[10px] text-[#5d8c6e]">per gram</div>
+                <div className="text-lg font-black text-[#10B981]">$1.33</div>
+                <div className="text-[10px] text-[#7BA899]">per gram</div>
               </div>
             </div>
             <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"
               className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm transition-colors">
               Shop Now — $39.99 / 30g →
             </a>
-            <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+            <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
           </div>
         </section>
 
         {/* Who is overcharging */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Who is overcharging — and why</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Who is overcharging — and why</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Products charging $2.50–$3.50/gram typically do so for one of three reasons: luxury branding and packaging (Sun Potion, Pürblack), unusual sourcing claims (rare Himalayan sub-regions, special collection methods), or direct retail markups from selling through specialty supplement retailers at 40–50% margins.
             </p>
@@ -312,19 +312,19 @@ export default function ShilajitPricePerGram() {
 
         {/* Internal links */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Related guides</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Related guides</h2>
           <div className="space-y-3">
             {[
               { href: "/blog/best-shilajit-under-50", title: "Best Shilajit Under $50", desc: "Top 5 picks under $50 ranked by purity data and total value" },
               { href: "/blog/cheap-vs-high-quality-shilajit", title: "Cheap vs High Quality Shilajit", desc: "What's actually different between a $15 and $70 product" },
               { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "Full brand rankings by COA quality, FA%, sourcing, and price" },
             ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="group flex items-center gap-4 bg-[#182b1f] border border-[#2a4535] hover:border-emerald-700/50 rounded-xl px-5 py-3.5 transition-all">
+              <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-bold text-[#e8f4ec] group-hover:text-emerald-300 transition-colors">{title}</div>
-                  <div className="text-xs text-[#5d8c6e] mt-0.5">{desc}</div>
+                  <div className="text-sm font-bold text-[#0D1F14] group-hover:text-[#10B981] transition-colors">{title}</div>
+                  <div className="text-xs text-[#7BA899] mt-0.5">{desc}</div>
                 </div>
-                <svg className="w-4 h-4 text-[#5d8c6e] group-hover:text-emerald-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#7BA899] group-hover:text-[#10B981] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>

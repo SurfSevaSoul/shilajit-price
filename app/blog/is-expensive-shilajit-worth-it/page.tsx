@@ -103,7 +103,7 @@ const faqItems: FaqItem[] = [
 
 function CheckIcon() {
   return (
-    <svg className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-3.5 h-3.5 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -216,14 +216,14 @@ export default function IsExpensiveShilajitWorthIt() {
         ctaVariant="pure-himalayan"
       >
         {/* Disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected April 2026.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected April 2026.
         </div>
 
         {/* What drives price up */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">What actually drives shilajit prices up</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What actually drives shilajit prices up</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Before comparing price points, it&apos;s worth understanding what inputs legitimately cost more — and which are pure markup. The shilajit market contains both: some premium pricing is justified by verifiable quality differences, and some is pure brand theater.
             </p>
@@ -260,14 +260,14 @@ export default function IsExpensiveShilajitWorthIt() {
                   detail: "'Rare Himalayan region' or 'ancient deposits' language without specific documentation of altitude, region, or collection method is marketing fiction that inflates perceived value without verifiable quality difference.",
                 },
               ].map(({ driver, justified, detail }) => (
-                <div key={driver} className={`bg-[#182b1f] border ${justified ? "border-emerald-800/40" : "border-red-900/30"} rounded-xl p-4`}>
+                <div key={driver} className={`bg-white border ${justified ? "border-[#D1EDD8]" : "border-red-200"} rounded-xl p-4`}>
                   <div className="flex items-center gap-2 mb-1.5">
-                    <span className={`text-[10px] font-bold uppercase tracking-wide ${justified ? "text-emerald-400" : "text-red-400"}`}>
+                    <span className={`text-[10px] font-bold uppercase tracking-wide ${justified ? "text-[#10B981]" : "text-red-600"}`}>
                       {justified ? "✓ Justified" : "✗ Not Justified"}
                     </span>
-                    <span className="text-xs font-bold text-[#e8f4ec] ml-1">{driver.replace("Legitimate: ", "").replace("Unjustified: ", "")}</span>
+                    <span className="text-xs font-bold text-[#0D1F14] ml-1">{driver.replace("Legitimate: ", "").replace("Unjustified: ", "")}</span>
                   </div>
-                  <p className="text-xs text-[#9ec9ad] leading-relaxed">{detail}</p>
+                  <p className="text-xs text-[#0D1F14] leading-relaxed">{detail}</p>
                 </div>
               ))}
             </div>
@@ -276,37 +276,37 @@ export default function IsExpensiveShilajitWorthIt() {
 
         {/* Head-to-head comparison */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">$20 vs $80: Head-to-head purity data comparison</h2>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">$20 vs $80: Head-to-head purity data comparison</h2>
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Price Range</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Example</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Tier</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">$/gram</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Fulvic %</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">COA</th>
-                  <th className="text-left px-3 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">3rd Party</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Price Range</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Example</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Tier</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">$/gram</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Fulvic %</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">COA</th>
+                  <th className="text-left px-3 py-3 font-bold text-[#7BA899] uppercase tracking-wider">3rd Party</th>
                 </tr>
               </thead>
               <tbody>
                 {COMPARISON.map((c, i) => (
-                  <tr key={c.label} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"} ${c.label.includes("Sweet Spot") ? "ring-1 ring-inset ring-emerald-500/30" : ""}`}>
+                  <tr key={c.label} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"} ${c.label.includes("Sweet Spot") ? "ring-1 ring-inset ring-emerald-500/30" : ""}`}>
                     <td className="px-3 py-3">
-                      <div className="font-bold text-[#e8f4ec] whitespace-nowrap">{c.label}</div>
+                      <div className="font-bold text-[#0D1F14] whitespace-nowrap">{c.label}</div>
                       {c.label.includes("Sweet Spot") && (
-                        <div className="text-[9px] font-bold text-emerald-400 uppercase tracking-wide">← Best Value</div>
+                        <div className="text-[9px] font-bold text-[#10B981] uppercase tracking-wide">← Best Value</div>
                       )}
                     </td>
-                    <td className="px-3 py-3 text-[#9ec9ad] whitespace-nowrap">{c.exampleProduct}</td>
+                    <td className="px-3 py-3 text-[#0D1F14] whitespace-nowrap">{c.exampleProduct}</td>
                     <td className="px-3 py-3">
                       <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[11px] font-black ${c.tierColor}`}>{c.tier}</span>
                     </td>
-                    <td className="px-3 py-3 font-bold text-emerald-400 tabular-nums">{c.priceGram}</td>
-                    <td className="px-3 py-3 font-semibold text-[#9ec9ad]">{c.fulvic}</td>
-                    <td className="px-3 py-3 text-center">{c.coaVerified ? <span className="text-emerald-400">✓</span> : <span className="text-red-400">✗</span>}</td>
-                    <td className="px-3 py-3 text-center">{c.thirdParty ? <span className="text-emerald-400">✓</span> : <span className="text-[#5d8c6e]">—</span>}</td>
+                    <td className="px-3 py-3 font-bold text-[#10B981] tabular-nums">{c.priceGram}</td>
+                    <td className="px-3 py-3 font-semibold text-[#0D1F14]">{c.fulvic}</td>
+                    <td className="px-3 py-3 text-center">{c.coaVerified ? <span className="text-[#10B981]">✓</span> : <span className="text-red-600">✗</span>}</td>
+                    <td className="px-3 py-3 text-center">{c.thirdParty ? <span className="text-[#10B981]">✓</span> : <span className="text-[#7BA899]">—</span>}</td>
                   </tr>
                 ))}
               </tbody>
@@ -315,8 +315,8 @@ export default function IsExpensiveShilajitWorthIt() {
           <div className="space-y-2 mt-4">
             {COMPARISON.map((c) => (
               <div key={c.label} className="flex items-start gap-3">
-                <span className="text-[10px] font-bold text-[#5d8c6e] w-24 shrink-0 mt-0.5">{c.label}</span>
-                <p className="text-[11px] text-[#9ec9ad] leading-relaxed">{c.verdict}</p>
+                <span className="text-[10px] font-bold text-[#7BA899] w-24 shrink-0 mt-0.5">{c.label}</span>
+                <p className="text-[11px] text-[#0D1F14] leading-relaxed">{c.verdict}</p>
               </div>
             ))}
           </div>
@@ -324,8 +324,8 @@ export default function IsExpensiveShilajitWorthIt() {
 
         {/* The verdict */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The verdict: where the quality sweet spot is</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The verdict: where the quality sweet spot is</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The data tells a clear story. Quality improves meaningfully from $20 to approximately $40 — you get better sourcing documentation, higher verified fulvic acid content, and third-party COA verification. Above $40–$50, the correlation between price and quality largely breaks down. Products charging $60–$100 are not delivering 2–3× the active compound or documentation quality of a well-chosen $40 product.
             </p>
@@ -333,10 +333,10 @@ export default function IsExpensiveShilajitWorthIt() {
               Black Lotus at $39.99 represents the inflection point — where premium quality documentation meets mid-range pricing. They achieve S-tier specifications (85%+ FA, ISO COA, full heavy metals panel, high-altitude Himalayan source) at a price where most competitors deliver A-tier results at best.
             </p>
             <p>
-              The answer to &quot;is expensive shilajit worth it&quot; is: <strong className="text-[#e8f4ec]">yes up to approximately $45–$50/30g, no above it.</strong> There are legitimate quality differences between $20 and $40 products. There are no consistent quality differences between $40 and $80 products. The premium above $50 is almost entirely brand equity.
+              The answer to &quot;is expensive shilajit worth it&quot; is: <strong className="text-[#0D1F14]">yes up to approximately $45–$50/30g, no above it.</strong> There are legitimate quality differences between $20 and $40 products. There are no consistent quality differences between $40 and $80 products. The premium above $50 is almost entirely brand equity.
             </p>
-            <div className="bg-[#182b1f] border border-emerald-800/40 rounded-xl p-4">
-              <div className="text-xs font-bold text-emerald-400 mb-2">Summary: Is the price worth it?</div>
+            <div className="bg-white border border-[#D1EDD8] rounded-xl p-4">
+              <div className="text-xs font-bold text-[#10B981] mb-2">Summary: Is the price worth it?</div>
               <div className="space-y-1.5">
                 {[
                   { range: "Under $25", verdict: "⚠ Risky — limited documentation, quality uncertain" },
@@ -346,8 +346,8 @@ export default function IsExpensiveShilajitWorthIt() {
                   { range: "Over $70", verdict: "✗ Not worth it — paying for branding, not quality" },
                 ].map(({ range, verdict }) => (
                   <div key={range} className="flex items-center gap-3">
-                    <span className="text-[10px] font-bold text-[#5d8c6e] w-20 shrink-0">{range}</span>
-                    <span className="text-xs text-[#9ec9ad]">{verdict}</span>
+                    <span className="text-[10px] font-bold text-[#7BA899] w-20 shrink-0">{range}</span>
+                    <span className="text-xs text-[#0D1F14]">{verdict}</span>
                   </div>
                 ))}
               </div>
@@ -357,14 +357,14 @@ export default function IsExpensiveShilajitWorthIt() {
 
         {/* Black Lotus CTA */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The sweet spot: Black Lotus at $39.99</h2>
-          <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The sweet spot: Black Lotus at $39.99</h2>
+          <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
             <div className="flex items-start gap-4 mb-4">
               <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
               <div>
-                <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">Quality Sweet Spot — S-Tier at Mid-Range Price</div>
-                <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit Resin</h3>
-                <p className="text-xs text-[#9ec9ad] mt-1">$39.99 / 30g · $1.33/gram · 85%+ FA · Free shipping</p>
+                <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Quality Sweet Spot — S-Tier at Mid-Range Price</div>
+                <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
+                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · $1.33/gram · 85%+ FA · Free shipping</p>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
@@ -378,7 +378,7 @@ export default function IsExpensiveShilajitWorthIt() {
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <CheckIcon />
-                  <span className="text-xs text-[#9ec9ad]">{item}</span>
+                  <span className="text-xs text-[#0D1F14]">{item}</span>
                 </div>
               ))}
             </div>
@@ -386,25 +386,25 @@ export default function IsExpensiveShilajitWorthIt() {
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold text-sm transition-colors shadow-md shadow-emerald-900/30">
               Shop Black Lotus Resin — $39.99 →
             </a>
-            <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+            <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
           </div>
         </section>
 
         {/* Internal links */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Related guides</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Related guides</h2>
           <div className="space-y-3">
             {[
               { href: "/blog/cheap-vs-high-quality-shilajit", title: "Cheap vs High Quality Shilajit", desc: "Detailed breakdown of what's different between a $15 and a $70 product" },
               { href: "/blog/shilajit-price-per-gram", title: "Shilajit Price Per Gram Comparison", desc: "Full 20+ product comparison table sorted by $/gram" },
               { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "Top 10 brands ranked by COA quality, FA%, and price data" },
             ].map(({ href, title, desc }) => (
-              <Link key={href} href={href} className="group flex items-center gap-4 bg-[#182b1f] border border-[#2a4535] hover:border-emerald-700/50 rounded-xl px-5 py-3.5 transition-all">
+              <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">
-                  <div className="text-sm font-bold text-[#e8f4ec] group-hover:text-emerald-300 transition-colors">{title}</div>
-                  <div className="text-xs text-[#5d8c6e] mt-0.5">{desc}</div>
+                  <div className="text-sm font-bold text-[#0D1F14] group-hover:text-[#10B981] transition-colors">{title}</div>
+                  <div className="text-xs text-[#7BA899] mt-0.5">{desc}</div>
                 </div>
-                <svg className="w-4 h-4 text-[#5d8c6e] group-hover:text-emerald-400 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-[#7BA899] group-hover:text-[#10B981] transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </Link>

@@ -133,50 +133,50 @@ export default function ShilajitResinVsCapsules() {
         faqItems={faqItems}
       >
         {/* Disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Form rankings are based on data — not which form generates higher commissions.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links are affiliate links. We earn a commission at no extra cost to you. Form rankings are based on data — not which form generates higher commissions.
         </div>
 
         {/* Intro */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Why form factor matters more than most buyers realize</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Why form factor matters more than most buyers realize</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Most shilajit buyers focus on brand and price — but form factor is one of the most important variables in how much benefit you actually get. The same shilajit content delivered differently can result in meaningfully different absorption rates, authenticity risks, and value for money.
             </p>
             <p>
-              The form also affects something equally important: how easy it is to fake. Resin is the hardest form to adulterate convincingly. Capsules and powder are the easiest. This is why our <Link href="/" className="text-emerald-400 hover:underline">database</Link> shows that COA coverage drops significantly as you move from resin into processed form factors.
+              The form also affects something equally important: how easy it is to fake. Resin is the hardest form to adulterate convincingly. Capsules and powder are the easiest. This is why our <Link href="/" className="text-[#10B981] hover:underline">database</Link> shows that COA coverage drops significantly as you move from resin into processed form factors.
             </p>
           </div>
         </section>
 
         {/* Comparison table */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Form factor comparison at a glance</h2>
-          <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Form factor comparison at a glance</h2>
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
-                <tr className="bg-[#122019] border-b border-[#2a4535]">
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Form</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Bioavail.</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Convenience</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Fake Risk</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Price/gram</th>
-                  <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Best For</th>
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Form</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Bioavail.</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Convenience</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Fake Risk</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Price/gram</th>
+                  <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Best For</th>
                 </tr>
               </thead>
               <tbody>
                 {FORM_COMPARISON.map((row, i) => (
-                  <tr key={row.form} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"} ${row.form === "Resin" ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}>
-                    <td className="px-4 py-3 font-bold text-[#e8f4ec]">
+                  <tr key={row.form} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"} ${row.form === "Resin" ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}>
+                    <td className="px-4 py-3 font-bold text-[#0D1F14]">
                       {row.form}
-                      {row.form === "Resin" && <span className="ml-1.5 text-[9px] text-emerald-400 font-bold">★ BEST</span>}
+                      {row.form === "Resin" && <span className="ml-1.5 text-[9px] text-[#10B981] font-bold">★ BEST</span>}
                     </td>
                     <td className="px-4 py-3 text-[11px]">{row.bioavail}</td>
                     <td className="px-4 py-3 text-[11px]">{row.convenience}</td>
-                    <td className={`px-4 py-3 text-[11px] font-semibold ${row.fakeRisk === "Low" ? "text-emerald-400" : row.fakeRisk === "Medium" ? "text-amber-400" : "text-red-400"}`}>{row.fakeRisk}</td>
-                    <td className="px-4 py-3 text-emerald-300 font-semibold tabular-nums">{row.pricePerG}</td>
-                    <td className="px-4 py-3 text-[#9ec9ad]">{row.bestFor}</td>
+                    <td className={`px-4 py-3 text-[11px] font-semibold ${row.fakeRisk === "Low" ? "text-[#10B981]" : row.fakeRisk === "Medium" ? "text-amber-600" : "text-red-600"}`}>{row.fakeRisk}</td>
+                    <td className="px-4 py-3 text-[#10B981] font-semibold tabular-nums">{row.pricePerG}</td>
+                    <td className="px-4 py-3 text-[#0D1F14]">{row.bestFor}</td>
                   </tr>
                 ))}
               </tbody>
@@ -186,8 +186,8 @@ export default function ShilajitResinVsCapsules() {
 
         {/* Resin deep dive */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Shilajit resin — the gold standard form</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Shilajit resin — the gold standard form</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Resin is shilajit in its most natural state after purification. It&apos;s a semi-solid, tar-like substance that dissolves readily in warm water or can be placed directly under the tongue for sublingual absorption. Both delivery methods bypass first-pass metabolism to varying degrees and deliver fulvic acid and minerals quickly to the bloodstream.
             </p>
@@ -197,9 +197,9 @@ export default function ShilajitResinVsCapsules() {
             <p>
               The main downsides: the taste is strong and earthy — it&apos;s an acquired taste. Measuring requires a scale or the included spoon. It&apos;s slightly messier to travel with. These are convenience issues, not efficacy issues.
             </p>
-            <div className="bg-[#182b1f] border border-emerald-700/30 rounded-xl p-4 mt-2">
-              <div className="text-xs font-bold text-emerald-400 mb-2">Best resin pick: Black Lotus Pure Himalayan Resin</div>
-              <p className="text-xs text-[#9ec9ad] leading-relaxed mb-3">85%+ verified fulvic acid, third-party COA, $39.99/30g ($1.33/gram). The benchmark for quality resin at a reasonable price.</p>
+            <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 mt-2">
+              <div className="text-xs font-bold text-[#10B981] mb-2">Best resin pick: Black Lotus Pure Himalayan Resin</div>
+              <p className="text-xs text-[#0D1F14] leading-relaxed mb-3">85%+ verified fulvic acid, third-party COA, $39.99/30g ($1.33/gram). The benchmark for quality resin at a reasonable price.</p>
               <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"
                 className="inline-block px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors">
                 Shop Resin — $39.99 →
@@ -210,8 +210,8 @@ export default function ShilajitResinVsCapsules() {
 
         {/* Capsules deep dive */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Shilajit capsules — best for daily convenience</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Shilajit capsules — best for daily convenience</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Capsules are the most popular form for good reason: they&apos;re easy, tasteless, and portable. The trade-off is slightly lower bioavailability compared to resin dissolved sublingually — the capsule needs to dissolve in the stomach first, adding 15–30 minutes to absorption time and potentially reducing total uptake by a small margin.
             </p>
@@ -221,9 +221,9 @@ export default function ShilajitResinVsCapsules() {
             <p>
               For standardized extract capsules — particularly PrimaVie — the picture is different. PrimaVie is a patented, clinically studied extract with multiple published human trials. It&apos;s more pharmaceutical in nature, which sacrifices full-spectrum profile for reproducibility and clinical validation.
             </p>
-            <div className="bg-[#182b1f] border border-blue-700/30 rounded-xl p-4 mt-2">
-              <div className="text-xs font-bold text-blue-400 mb-2">Best capsule pick: Black Lotus Shilajit Capsules</div>
-              <p className="text-xs text-[#9ec9ad] leading-relaxed mb-3">Same verified shilajit as their resin, in convenient capsule form. $34.99 for 60 capsules. Third-party COA, identical sourcing to their resin.</p>
+            <div className="bg-white border border-blue-700/30 rounded-xl p-4 mt-2">
+              <div className="text-xs font-bold text-blue-700 mb-2">Best capsule pick: Black Lotus Shilajit Capsules</div>
+              <p className="text-xs text-[#0D1F14] leading-relaxed mb-3">Same verified shilajit as their resin, in convenient capsule form. $34.99 for 60 capsules. Third-party COA, identical sourcing to their resin.</p>
               <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
                 className="inline-block px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-colors">
                 Shop Capsules — $34.99 →
@@ -234,8 +234,8 @@ export default function ShilajitResinVsCapsules() {
 
         {/* Powder */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Shilajit powder — highest fake risk, best value when legitimate</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Shilajit powder — highest fake risk, best value when legitimate</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Powder is the most economical form per gram and the most convenient for mixing into smoothies, coffee, or warm water. It&apos;s also the highest-risk form for adulteration. Powdered shilajit lacks any physical authentication markers — it&apos;s brown powder, which could be almost anything.
             </p>
@@ -250,33 +250,33 @@ export default function ShilajitResinVsCapsules() {
 
         {/* Gummies and tinctures */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Gummies and tinctures — niche picks</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Gummies and tinctures — niche picks</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              <strong className="text-[#e8f4ec]">Gummies</strong> are the worst value form for shilajit in terms of active compound per dollar. The manufacturing process requires heat and additional ingredients that can degrade fulvic acid content, and the final shilajit concentration per serving is typically much lower. They&apos;re primarily for taste-sensitive consumers who want to take shilajit as a daily habit without thinking about it. Quality gummy brands like Black Lotus use resin extract — but you pay a significant convenience premium.
+              <strong className="text-[#0D1F14]">Gummies</strong> are the worst value form for shilajit in terms of active compound per dollar. The manufacturing process requires heat and additional ingredients that can degrade fulvic acid content, and the final shilajit concentration per serving is typically much lower. They&apos;re primarily for taste-sensitive consumers who want to take shilajit as a daily habit without thinking about it. Quality gummy brands like Black Lotus use resin extract — but you pay a significant convenience premium.
             </p>
             <p>
-              <strong className="text-[#e8f4ec]">Tinctures</strong> (liquid extracts) are a sleeper pick for bioavailability. A sublingual tincture — applied under the tongue — can offer absorption rates comparable to dissolved resin, with the convenience of a liquid dropper. Black Lotus&apos;s tincture is one of the few in the market with a verified COA. Tinctures are also the easiest form to add to drinks without the texture challenges of resin.
+              <strong className="text-[#0D1F14]">Tinctures</strong> (liquid extracts) are a sleeper pick for bioavailability. A sublingual tincture — applied under the tongue — can offer absorption rates comparable to dissolved resin, with the convenience of a liquid dropper. Black Lotus&apos;s tincture is one of the few in the market with a verified COA. Tinctures are also the easiest form to add to drinks without the texture challenges of resin.
             </p>
           </div>
         </section>
 
         {/* Who should choose what */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Who should choose which form</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Who should choose which form</h2>
           <div className="space-y-3">
             {[
-              { profile: "I want maximum potency and I don't mind the taste", pick: "Resin", reason: "Black Lotus 30g Resin — $39.99", color: "border-emerald-700/40" },
+              { profile: "I want maximum potency and I don't mind the taste", pick: "Resin", reason: "Black Lotus 30g Resin — $39.99", color: "border-[#D1EDD8]" },
               { profile: "I want something I can take daily without thinking about it", pick: "Capsules", reason: "Black Lotus Capsules — $34.99/60ct", color: "border-blue-700/40" },
-              { profile: "I'm on a budget and want the most mg per dollar", pick: "Powder (COA-verified)", reason: "Sayan or Lost Empire bulk powder", color: "border-amber-700/40" },
+              { profile: "I'm on a budget and want the most mg per dollar", pick: "Powder (COA-verified)", reason: "Sayan or Lost Empire bulk powder", color: "border-amber-200" },
               { profile: "I want clinical trial evidence and GMP certification", pick: "Standardized Capsules", reason: "Jarrow PrimaVie — clinically studied extract", color: "border-purple-700/40" },
               { profile: "I want the easiest possible daily supplement with no taste", pick: "Gummies", reason: "Black Lotus Gummies — highest quality gummy option", color: "border-teal-700/40" },
             ].map(({ profile, pick, reason, color }) => (
-              <div key={profile} className={`bg-[#182b1f] border ${color} rounded-xl p-4`}>
-                <div className="text-[10px] text-[#5d8c6e] mb-1.5 italic">&quot;{profile}&quot;</div>
+              <div key={profile} className={`bg-white border ${color} rounded-xl p-4`}>
+                <div className="text-[10px] text-[#7BA899] mb-1.5 italic">&quot;{profile}&quot;</div>
                 <div className="flex items-center justify-between gap-3 flex-wrap">
-                  <span className="text-sm font-bold text-[#e8f4ec]">→ {pick}</span>
-                  <span className="text-[10px] text-emerald-400">{reason}</span>
+                  <span className="text-sm font-bold text-[#0D1F14]">→ {pick}</span>
+                  <span className="text-[10px] text-[#10B981]">{reason}</span>
                 </div>
               </div>
             ))}
@@ -284,10 +284,10 @@ export default function ShilajitResinVsCapsules() {
         </section>
 
         {/* Mid-article dual CTA */}
-        <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6">
+        <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6">
           <div className="text-2xl mb-3 text-center">⬡ + ◉</div>
-          <h3 className="text-xl font-black text-[#e8f4ec] mb-2 text-center">Shop Both Top Form Picks</h3>
-          <p className="text-sm text-[#9ec9ad] mb-5 text-center max-w-md mx-auto">
+          <h3 className="text-xl font-black text-[#0D1F14] mb-2 text-center">Shop Both Top Form Picks</h3>
+          <p className="text-sm text-[#0D1F14] mb-5 text-center max-w-md mx-auto">
             Black Lotus offers both resin and capsules with the same verified COA and sourcing standards — so you can choose based on lifestyle, not quality compromise.
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -296,11 +296,11 @@ export default function ShilajitResinVsCapsules() {
               Shop Resin — $39.99 →
             </a>
             <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
-              className="flex-1 block text-center py-3 rounded-xl bg-[#0d1f14] hover:bg-[#122019] text-emerald-300 font-semibold text-sm border border-emerald-700/50 transition-colors">
+              className="flex-1 block text-center py-3 rounded-xl bg-[#F0FAF4] hover:bg-[#F0FAF4] text-[#10B981] font-semibold text-sm border border-[#D1EDD8] transition-colors">
               Shop Capsules — $34.99
             </a>
           </div>
-          <p className="text-center text-[10px] text-[#5d8c6e] mt-3">Affiliate links — we earn a commission at no extra cost to you</p>
+          <p className="text-center text-[10px] text-[#7BA899] mt-3">Affiliate links — we earn a commission at no extra cost to you</p>
         </div>
       </BlogPostLayout>
     </>

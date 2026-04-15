@@ -104,7 +104,7 @@ const faqItems: FaqItem[] = [
 
 function WarningIcon() {
   return (
-    <svg className="w-4 h-4 text-red-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-4 h-4 text-red-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
     </svg>
   );
@@ -112,7 +112,7 @@ function WarningIcon() {
 
 function CheckIcon() {
   return (
-    <svg className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+    <svg className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
     </svg>
   );
@@ -144,16 +144,16 @@ export default function HowToSpotFakeShilajit() {
         ctaVariant="pure-himalayan"
       >
         {/* Affiliate disclosure */}
-        <div className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4 text-xs text-[#5d8c6e] leading-relaxed">
-          <span className="font-semibold text-[#9ec9ad]">Disclosure:</span> Some links on this page are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you.
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you.
         </div>
 
         {/* ── Intro ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The fake shilajit problem is bigger than you think</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The fake shilajit problem is bigger than you think</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              In 2023, independent lab testing of popular shilajit products sold on major e-commerce platforms found that a significant portion contained little to no detectable <Link href="/blog/what-is-fulvic-acid" className="text-emerald-400 hover:underline">fulvic acid</Link> — the primary bioactive compound that defines authentic shilajit. Some contained heavy metals at levels above safe limits. Others were nothing more than leonardite (a coal derivative) ground into powder and dyed dark brown.
+              In 2023, independent lab testing of popular shilajit products sold on major e-commerce platforms found that a significant portion contained little to no detectable <Link href="/blog/what-is-fulvic-acid" className="text-[#10B981] hover:underline">fulvic acid</Link> — the primary bioactive compound that defines authentic shilajit. Some contained heavy metals at levels above safe limits. Others were nothing more than leonardite (a coal derivative) ground into powder and dyed dark brown.
             </p>
             <p>
               Authentic, high-grade shilajit is expensive to source and purify correctly. A legitimate 30g jar of resin costs real money to produce. A fake that mimics its appearance can be made for cents. Without meaningful regulatory oversight or third-party verification requirements on supplement marketplaces, the economics strongly favor adulteration.
@@ -166,8 +166,8 @@ export default function HowToSpotFakeShilajit() {
 
         {/* ── What real shilajit looks like ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">What real shilajit looks, feels, and smells like</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed mb-5">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">What real shilajit looks, feels, and smells like</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed mb-5">
             <p>Before testing, you need a baseline. Here&apos;s what authentic purified shilajit resin looks and behaves like:</p>
           </div>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -179,10 +179,10 @@ export default function HowToSpotFakeShilajit() {
               { attr: "Dissolved in warm water", real: "Dissolves fully, no residue. Water turns rich golden-amber.", emoji: "💧" },
               { attr: "Smell", real: "Earthy, slightly bituminous, similar to rich soil or tar. Never sweet or chemical.", emoji: "👃" },
             ].map(({ attr, real, emoji }) => (
-              <div key={attr} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4">
+              <div key={attr} className="bg-white border border-[#D1EDD8] rounded-xl p-4">
                 <div className="text-lg mb-1">{emoji}</div>
-                <div className="text-xs font-bold text-emerald-400 mb-1">{attr}</div>
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{real}</p>
+                <div className="text-xs font-bold text-[#10B981] mb-1">{attr}</div>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{real}</p>
               </div>
             ))}
           </div>
@@ -190,8 +190,8 @@ export default function HowToSpotFakeShilajit() {
 
         {/* ── 5 tests ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-2">5 tests to verify shilajit authenticity</h2>
-          <p className="text-sm text-[#9ec9ad] leading-relaxed mb-6">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-2">5 tests to verify shilajit authenticity</h2>
+          <p className="text-sm text-[#0D1F14] leading-relaxed mb-6">
             Apply as many of these as possible. No single test is definitive in isolation — the COA is the only absolute verification, but the physical tests provide strong supporting evidence.
           </p>
 
@@ -204,8 +204,8 @@ export default function HowToSpotFakeShilajit() {
                 pass: "Dissolves fully in warm water (40–60°C) within 2–3 minutes, leaving no residue. Water turns golden-brown or amber.",
                 fail: "Leaves gritty sediment, clumps, or floats. Water stays clear or turns murky grey. These indicate chalk, clay, soil, or undissolved fillers.",
                 tip: "Use a clear glass so you can see the color. Authentic shilajit produces a distinctly colored, translucent solution — not murky or opaque.",
-                color: "border-emerald-700/40",
-                numColor: "text-emerald-400",
+                color: "border-[#D1EDD8]",
+                numColor: "text-[#10B981]",
               },
               {
                 num: "Test 2",
@@ -215,7 +215,7 @@ export default function HowToSpotFakeShilajit() {
                 fail: "Does not soften with body heat, remains uniformly hard (likely wax or resin filler). Or stays soft/liquid at room temperature regardless of warming (over-diluted or gel-based fake).",
                 tip: "This temperature sensitivity is a direct result of shilajit's natural resin chemistry. Synthetic or adulterated products don't replicate it accurately.",
                 color: "border-blue-700/40",
-                numColor: "text-blue-400",
+                numColor: "text-blue-700",
               },
               {
                 num: "Test 3",
@@ -224,8 +224,8 @@ export default function HowToSpotFakeShilajit() {
                 pass: "Does not dissolve in alcohol (rubbing alcohol or ethanol). Real shilajit is water-soluble but largely insoluble in alcohol.",
                 fail: "Dissolves readily or disperses easily in alcohol. Many synthetic resins and wax-based fakes are alcohol-soluble while being poorly water-soluble — the exact opposite of authentic shilajit.",
                 tip: "Drop a small amount into isopropyl alcohol and observe for 5 minutes. Authentic shilajit will soften but not fully dissolve. A fake often disintegrates or turns the alcohol uniformly dark.",
-                color: "border-amber-700/40",
-                numColor: "text-amber-400",
+                color: "border-amber-200",
+                numColor: "text-amber-600",
               },
               {
                 num: "Test 4",
@@ -234,8 +234,8 @@ export default function HowToSpotFakeShilajit() {
                 pass: "Brand provides a third-party COA from an ISO 17025-accredited lab showing: specific fulvic acid % (not just 'present'), heavy metals below FDA action levels with actual measured values, and microbial testing results. Document has lab name, accreditation number, test date, and lot number.",
                 fail: "No COA available. COA is from an in-house lab. COA shows 'pass/fail' without measured values. COA is undated, has no lab name, or can't be linked to a specific product lot.",
                 tip: "This is the only test that cannot be faked by a skilled counterfeiter. Physical properties can be mimicked; a legitimate ISO lab report cannot.",
-                color: "border-emerald-700/40",
-                numColor: "text-emerald-400",
+                color: "border-[#D1EDD8]",
+                numColor: "text-[#10B981]",
               },
               {
                 num: "Test 5",
@@ -245,35 +245,35 @@ export default function HowToSpotFakeShilajit() {
                 fail: "Vague sourcing claims like 'mountain region' or 'Himalayan area' without specifics. No information about processing method. Processed via high-heat extraction (degrades fulvic acid). Or the brand cannot clarify sourcing when contacted.",
                 tip: "High-altitude sources above 14,000 feet produce denser, more mineral-rich shilajit with higher fulvic acid content. Low-altitude or unspecified sources are often lower grade.",
                 color: "border-blue-700/40",
-                numColor: "text-blue-400",
+                numColor: "text-blue-700",
               },
             ].map(({ num, title, difficulty, pass, fail, tip, color, numColor }) => (
-              <div key={num} className={`bg-[#182b1f] border ${color} rounded-xl p-5`}>
+              <div key={num} className={`bg-white border ${color} rounded-xl p-5`}>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className={`text-xs font-black ${numColor} bg-[#0d1f14] px-2.5 py-1 rounded-lg border border-current/20`}>{num}</span>
+                  <span className={`text-xs font-black ${numColor} bg-[#F0FAF4] px-2.5 py-1 rounded-lg border border-current/20`}>{num}</span>
                   <div>
-                    <h3 className="text-sm font-bold text-[#e8f4ec]">{title}</h3>
-                    <p className="text-[10px] text-[#5d8c6e]">{difficulty}</p>
+                    <h3 className="text-sm font-bold text-[#0D1F14]">{title}</h3>
+                    <p className="text-[10px] text-[#7BA899]">{difficulty}</p>
                   </div>
                 </div>
                 <div className="space-y-2.5 mb-3">
                   <div className="flex items-start gap-2">
                     <CheckIcon />
                     <div>
-                      <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider block mb-0.5">Pass</span>
-                      <p className="text-xs text-[#9ec9ad] leading-relaxed">{pass}</p>
+                      <span className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider block mb-0.5">Pass</span>
+                      <p className="text-xs text-[#0D1F14] leading-relaxed">{pass}</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-2">
                     <WarningIcon />
                     <div>
-                      <span className="text-[10px] font-bold text-red-400 uppercase tracking-wider block mb-0.5">Fail</span>
-                      <p className="text-xs text-[#9ec9ad] leading-relaxed">{fail}</p>
+                      <span className="text-[10px] font-bold text-red-600 uppercase tracking-wider block mb-0.5">Fail</span>
+                      <p className="text-xs text-[#0D1F14] leading-relaxed">{fail}</p>
                     </div>
                   </div>
                 </div>
-                <div className="bg-[#0d1f14] rounded-lg px-3 py-2 border border-[#2a4535]">
-                  <p className="text-[10px] text-[#5d8c6e]"><span className="font-bold text-[#9ec9ad]">Pro tip:</span> {tip}</p>
+                <div className="bg-[#F0FAF4] rounded-lg px-3 py-2 border border-[#D1EDD8]">
+                  <p className="text-[10px] text-[#7BA899]"><span className="font-bold text-[#0D1F14]">Pro tip:</span> {tip}</p>
                 </div>
               </div>
             ))}
@@ -282,8 +282,8 @@ export default function HowToSpotFakeShilajit() {
 
         {/* ── Red flags ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-5">Red flags to avoid before you buy</h2>
-          <p className="text-sm text-[#9ec9ad] leading-relaxed mb-5">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Red flags to avoid before you buy</h2>
+          <p className="text-sm text-[#0D1F14] leading-relaxed mb-5">
             These are the warning signs that should stop you before you click &apos;Add to Cart.&apos; Any one of these is cause for concern. Multiple red flags mean walk away.
           </p>
           <div className="grid sm:grid-cols-2 gap-3">
@@ -299,9 +299,9 @@ export default function HowToSpotFakeShilajit() {
               "No information about purification method (authentic products specify this)",
               "Packaging looks identical to a known brand with slightly altered name — counterfeit copies are common",
             ].map((flag) => (
-              <div key={flag} className="flex items-start gap-2.5 bg-[#182b1f] border border-red-900/30 rounded-xl p-3.5">
+              <div key={flag} className="flex items-start gap-2.5 bg-white border border-red-200 rounded-xl p-3.5">
                 <WarningIcon />
-                <p className="text-xs text-[#9ec9ad] leading-relaxed">{flag}</p>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{flag}</p>
               </div>
             ))}
           </div>
@@ -309,18 +309,18 @@ export default function HowToSpotFakeShilajit() {
 
         {/* ── Common fake ingredients ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">Common fake shilajit ingredients to know</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Common fake shilajit ingredients to know</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Understanding what counterfeit shilajit is actually made of helps you recognize what you&apos;re dealing with when tests produce mixed results.
             </p>
-            <div className="overflow-x-auto rounded-xl border border-[#2a4535]">
+            <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
               <table className="w-full text-xs">
                 <thead>
-                  <tr className="bg-[#122019] border-b border-[#2a4535]">
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">Adulterant</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">How it mimics shilajit</th>
-                    <th className="text-left px-4 py-3 font-bold text-[#5d8c6e] uppercase tracking-wider">How to detect it</th>
+                  <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">Adulterant</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">How it mimics shilajit</th>
+                    <th className="text-left px-4 py-3 font-bold text-[#7BA899] uppercase tracking-wider">How to detect it</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -331,10 +331,10 @@ export default function HowToSpotFakeShilajit() {
                     { adulterant: "Fulvic acid isolate in filler", mimics: "May pass basic COA if fulvic acid isolate is used", detect: "Lacks full mineral spectrum; COA shows only fulvic acid without trace minerals; no resin characteristics" },
                     { adulterant: "Maltodextrin or starch filler", mimics: "Adds bulk to diluted product", detect: "Turns water opaque/milky; iodine test turns blue-black (starch indicator)" },
                   ].map((row, i) => (
-                    <tr key={row.adulterant} className={`border-b border-[#2a4535] last:border-0 ${i % 2 === 0 ? "bg-[#182b1f]" : "bg-[#0d1f14]"}`}>
-                      <td className="px-4 py-3 font-semibold text-[#e8f4ec]">{row.adulterant}</td>
-                      <td className="px-4 py-3 text-[#9ec9ad]">{row.mimics}</td>
-                      <td className="px-4 py-3 text-[#9ec9ad]">{row.detect}</td>
+                    <tr key={row.adulterant} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
+                      <td className="px-4 py-3 font-semibold text-[#0D1F14]">{row.adulterant}</td>
+                      <td className="px-4 py-3 text-[#0D1F14]">{row.mimics}</td>
+                      <td className="px-4 py-3 text-[#0D1F14]">{row.detect}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -345,8 +345,8 @@ export default function HowToSpotFakeShilajit() {
 
         {/* ── Black Lotus as gold standard ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">What the gold standard looks like: Black Lotus</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What the gold standard looks like: Black Lotus</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Given how prevalent adulteration is, we hold every brand we review to a strict documentation standard. Black Lotus Shilajit is the only brand at the $39.99 price point that meets every criterion we apply.
             </p>
@@ -354,13 +354,13 @@ export default function HowToSpotFakeShilajit() {
         </section>
 
         {/* Mid-article Black Lotus callout */}
-        <div className="bg-[#182b1f] border border-emerald-500/40 rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
+        <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="flex items-start gap-4 mb-4">
             <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
             <div>
-              <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest mb-0.5">Gold Standard — S-Tier</div>
-              <h3 className="text-base font-black text-[#e8f4ec]">Black Lotus Shilajit</h3>
-              <p className="text-xs text-[#9ec9ad] mt-1">Passes all 5 authenticity tests — including full panel third-party COA</p>
+              <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Gold Standard — S-Tier</div>
+              <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit</h3>
+              <p className="text-xs text-[#0D1F14] mt-1">Passes all 5 authenticity tests — including full panel third-party COA</p>
             </div>
           </div>
 
@@ -377,7 +377,7 @@ export default function HowToSpotFakeShilajit() {
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <CheckIcon />
-                <span className="text-xs text-[#9ec9ad]">{item}</span>
+                <span className="text-xs text-[#0D1F14]">{item}</span>
               </div>
             ))}
           </div>
@@ -385,13 +385,13 @@ export default function HowToSpotFakeShilajit() {
             className="block w-full text-center py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-sm transition-colors shadow-md shadow-emerald-900/30">
             Shop Black Lotus — Verified Authentic →
           </a>
-          <p className="text-center text-[10px] text-[#5d8c6e] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
 
         {/* ── Verdict ── */}
         <section>
-          <h2 className="text-2xl font-black text-[#e8f4ec] mb-4">The verdict: don&apos;t buy shilajit without a COA</h2>
-          <div className="space-y-4 text-sm text-[#9ec9ad] leading-relaxed">
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The verdict: don&apos;t buy shilajit without a COA</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               The home tests described above are useful for evaluating products you&apos;ve already received. But the most powerful protection is front-loading your diligence before purchase. If a brand can&apos;t show you a dated, third-party COA from an ISO-accredited lab with specific fulvic acid percentages and a heavy metals panel — don&apos;t buy it. Full stop.
             </p>
