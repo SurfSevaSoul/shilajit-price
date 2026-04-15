@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
     id: "bl-resin",
     origin: "Altai",
     vendor: "Black Lotus Shilajit",
-    productName: "Pure Himalayan Resin 30g",
+    productName: "Pure Altai Resin 30g",
     tier: "S",
     category: "Resin",
     priceUsd: 36.99,

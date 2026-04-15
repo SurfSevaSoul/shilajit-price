@@ -102,7 +102,7 @@ export default function DealCard({ product }: DealCardProps) {
   const hasNoLab = labEntry.coaStatus === "not-available";
 
   const allBadges = [
-    { label: coaVerified ? "✓ COA" : "No COA", cls: coaVerified ? "bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700" : "bg-slate-100 ring-1 ring-slate-300 text-slate-500" },
+    { label: hasVerifiedLab ? "✓ COA" : "No COA", cls: hasVerifiedLab ? "bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700" : "bg-slate-100 ring-1 ring-slate-300 text-slate-500" },
     thirdPartyTested && { label: "3rd Party", cls: "bg-purple-50 ring-1 ring-purple-200 text-purple-700" },
     heavyMetalsTested && { label: "HM Tested", cls: "bg-blue-50 ring-1 ring-blue-200 text-blue-700" },
     gmpCertified && { label: "GMP", cls: "bg-teal-50 ring-1 ring-teal-200 text-teal-700" },
