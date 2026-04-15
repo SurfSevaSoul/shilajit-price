@@ -1,42 +1,3 @@
-const methodologyFaqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "How do you compare and rank shilajit supplements?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We rank shilajit using a weighted scoring system: COA & lab verification (30%), purity score (25%), heavy metals testing (20%), sourcing transparency (15%), and price per gram (10%). Every product receives a 1–10 Purity Score and an S–D tier rating based on verified lab data.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What data points do you collect for each shilajit product?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "We track 25+ data points per product including: COA availability, third-party lab reports, fulvic acid percentage, humic acid content, heavy metals test results (lead, arsenic, mercury, cadmium), sourcing location and altitude, GMP certification, and price per gram and per serving.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How do you calculate price per gram for shilajit?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Price per gram = product price ÷ net weight in grams. For example, a 30g jar at $36.99 costs $1.23/g. This standardizes comparison across different container sizes and form factors (resin, capsules, powder, gummies, tinctures).",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do affiliate relationships affect your shilajit rankings?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Tier ratings and purity scores are assigned based solely on objective criteria: COA quality, lab data, fulvic acid content, heavy metals results, sourcing transparency, and price. Our affiliate partners (Black Lotus Shilajit and Pure Himalayan Shilajit) are ranked by the same criteria as every other brand.",
-      },
-    },
-  ],
-};
-
 const STEPS = [
   {
     number: "01",
@@ -71,10 +32,6 @@ const STEPS = [
 export default function HowItWorks() {
   return (
     <section className="py-16 sm:py-20 bg-white border-t border-[#D1EDD8]" id="how-it-works">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(methodologyFaqSchema) }}
-      />
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section header */}
         <div className="text-center mb-12">

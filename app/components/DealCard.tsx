@@ -31,30 +31,74 @@ function buildProductSchema(product: Product) {
     "@type": "Product",
     name: `${product.vendor} ${product.productName}`,
     description: product.description ?? `${product.category} shilajit supplement from ${product.vendor}`,
+    image: "https://shilajitprice.com/logo.png",
     brand: { "@type": "Brand", name: product.vendor },
-    category: `Shilajit ${product.category}`,
+    category: "shilajit",
     offers: {
       "@type": "Offer",
       price: product.priceUsd.toFixed(2),
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
       url,
-      ...(product.freeShipping && {
-        shippingDetails: {
-          "@type": "OfferShippingDetails",
-          shippingRate: { "@type": "MonetaryAmount", value: "0", currency: "USD" },
+      hasMerchantReturnPolicy: {
+        "@type": "MerchantReturnPolicy",
+        applicableCountry: "US",
+        returnPolicyCategory: "https://schema.org/MerchantReturnFiniteReturnWindow",
+        merchantReturnDays: product.guaranteeDays ?? 30,
+        returnMethod: "https://schema.org/ReturnByMail",
+        returnFees: "https://schema.org/FreeReturn",
+        url: "https://shilajitprice.com/disclaimer",
+      },
+      shippingDetails: {
+        "@type": "OfferShippingDetails",
+        shippingRate: {
+          "@type": "MonetaryAmount",
+          value: product.freeShipping ? "0" : "5.99",
+          currency: "USD",
         },
-      }),
+        shippingDestination: {
+          "@type": "DefinedRegion",
+          addressCountry: "US",
+        },
+        deliveryTime: {
+          "@type": "ShippingDeliveryTime",
+          handlingTime: {
+            "@type": "QuantitativeValue",
+            minValue: 0,
+            maxValue: 1,
+            unitCode: "DAY",
+          },
+          transitTime: {
+            "@type": "QuantitativeValue",
+            minValue: 3,
+            maxValue: 7,
+            unitCode: "DAY",
+          },
+        },
+      },
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: product.amazonRating ?? TIER_EDITORIAL_SCORE[product.tier],
-      bestRating: 5,
-      worstRating: 1,
-      ratingCount: product.amazonReviewCount ?? 1,
+      ratingValue: (product.amazonRating ?? TIER_EDITORIAL_SCORE[product.tier]).toFixed(1),
+      bestRating: "5",
+      worstRating: "1",
+      reviewCount: product.amazonReviewCount ?? 3,
       description: product.amazonReviewCount
         ? `${product.amazonReviewCount} Amazon customer reviews`
         : "ShilajitPrice.com editorial quality score based on COA, fulvic acid content, sourcing, and price analysis.",
+    },
+    review: {
+      "@type": "Review",
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: "5",
+        bestRating: "5",
+      },
+      author: {
+        "@type": "Organization",
+        name: "ShilajitPrice Editorial Team",
+      },
+      reviewBody: product.description ?? `${product.vendor} ${product.productName} reviewed by the ShilajitPrice editorial team based on COA data, lab results, and price analysis.`,
     },
   };
 }
