@@ -20,6 +20,14 @@ const BASE_URL = "https://shilajitprice.com";
 
 const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3, D: 4 };
 
+const TIER_PILL: Record<Tier, string> = {
+  S: "bg-amber-100 text-amber-800 ring-1 ring-amber-300",
+  A: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300",
+  B: "bg-blue-100 text-blue-800 ring-1 ring-blue-300",
+  C: "bg-slate-100 text-slate-600 ring-1 ring-slate-300",
+  D: "bg-red-100 text-red-700 ring-1 ring-red-300",
+};
+
 const compareSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
@@ -37,13 +45,13 @@ const compareSchema = {
 };
 
 function SortIcon({ active, dir }: { active: boolean; dir: "asc" | "desc" }) {
-  if (!active) return <span className="text-[#2a4535] ml-1">↕</span>;
-  return <span className="text-emerald-400 ml-1">{dir === "asc" ? "↑" : "↓"}</span>;
+  if (!active) return <span className="text-[#D1EDD8] ml-1">↕</span>;
+  return <span className="text-[#10B981] ml-1">{dir === "asc" ? "↑" : "↓"}</span>;
 }
 
 function TierBadge({ tier }: { tier: Tier }) {
   return (
-    <span className={`inline-flex items-center justify-center w-7 h-7 rounded text-xs font-black ${TIER_COLORS[tier]}`}>
+    <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full text-xs font-extrabold ${TIER_PILL[tier]}`}>
       {tier}
     </span>
   );
@@ -51,9 +59,9 @@ function TierBadge({ tier }: { tier: Tier }) {
 
 function Check({ val }: { val: boolean }) {
   return val ? (
-    <span className="text-emerald-400 text-sm">✓</span>
+    <span className="text-[#10B981] text-sm font-bold">✓</span>
   ) : (
-    <span className="text-[#2a4535] text-sm">—</span>
+    <span className="text-[#D1EDD8] text-sm">—</span>
   );
 }
 
@@ -108,7 +116,7 @@ export default function ComparePage() {
 
   const Th = ({ label, k }: { label: string; k: SortKey }) => (
     <th
-      className="px-3 py-2.5 text-left text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider cursor-pointer whitespace-nowrap hover:text-emerald-400 transition-colors select-none"
+      className="px-3 py-2.5 text-left text-[10px] font-bold text-[#7BA899] uppercase tracking-wider cursor-pointer whitespace-nowrap hover:text-[#10B981] transition-colors select-none"
       onClick={() => handleSort(k)}
     >
       {label}
@@ -117,29 +125,29 @@ export default function ComparePage() {
   );
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0a1a10]">
+    <div className="min-h-screen flex flex-col bg-[#E8F5EC]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(compareSchema) }}
       />
 
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#D1EDD8] shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <a href="/" className="flex items-center gap-1 shrink-0">
-            <span className="text-lg font-black text-emerald-400">ShilajitPrice</span>
-            <span className="text-lg font-black text-[#e8f4ec]">.com</span>
+            <span className="text-lg font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>ShilajitPrice</span>
+            <span className="text-lg font-extrabold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>.com</span>
           </a>
           <div className="hidden sm:flex items-center gap-5 text-sm">
-            <a href="/#deals" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Cards</a>
-            <a href="/compare" className="text-emerald-400 font-semibold">Full Table</a>
-            <a href="/blog" className="text-[#9ec9ad] hover:text-emerald-400 transition-colors">Blog</a>
+            <a href="/#deals" className="text-[#4A6358] hover:text-[#10B981] transition-colors">Cards</a>
+            <a href="/compare" className="text-[#10B981] font-semibold">Full Table</a>
+            <a href="/blog" className="text-[#4A6358] hover:text-[#10B981] transition-colors">Blog</a>
           </div>
           <a
             href="https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE"
             target="_blank"
             rel="noopener noreferrer sponsored"
-            className="shrink-0 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors"
+            className="shrink-0 px-4 py-1.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white text-xs font-semibold transition-colors duration-200"
           >
             🏆 Our #1 Pick
           </a>
@@ -149,15 +157,15 @@ export default function ComparePage() {
       <main className="flex-1 max-w-7xl mx-auto w-full px-4 sm:px-6 py-8">
         {/* Header */}
         <div className="mb-6">
-          <nav className="text-[11px] text-[#5d8c6e] mb-2">
-            <a href="/" className="hover:text-emerald-400">Home</a>
+          <nav className="text-[11px] text-[#7BA899] mb-2">
+            <a href="/" className="hover:text-[#10B981] transition-colors">Home</a>
             <span className="mx-1.5">›</span>
-            <span className="text-[#9ec9ad]">Comparison Table</span>
+            <span className="text-[#4A6358]">Comparison Table</span>
           </nav>
-          <h1 className="text-2xl sm:text-3xl font-black text-[#e8f4ec] mb-2">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-[#0D1F14] mb-2" style={{ fontFamily: "var(--font-jakarta)" }}>
             Shilajit Comparison Table
           </h1>
-          <p className="text-sm text-[#5d8c6e] max-w-2xl">
+          <p className="text-sm text-[#7BA899] max-w-2xl">
             {PRODUCTS.length} products compared side by side. Click any column header to sort. Filter by category, COA, and 3rd-party testing.
           </p>
         </div>
@@ -170,7 +178,7 @@ export default function ComparePage() {
             placeholder="Search brand or product…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="bg-[#182b1f] border border-[#2a4535] text-[#e8f4ec] text-sm rounded-lg px-3 py-2 focus:outline-none focus:border-emerald-500 w-full sm:w-56 placeholder-[#3a6048]"
+            className="bg-white border-2 border-[#D1EDD8] text-[#0D1F14] text-sm rounded-xl px-3 py-2 focus:outline-none focus:border-[#10B981] w-full sm:w-56 placeholder-[#7BA899] transition-colors"
           />
 
           {/* Category pills */}
@@ -179,10 +187,10 @@ export default function ComparePage() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all duration-150
+                className={`px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all duration-150
                   ${activeCategory === cat
-                    ? "bg-emerald-500 border-emerald-500 text-white"
-                    : "bg-[#182b1f] border-[#2a4535] text-[#5d8c6e] hover:border-emerald-700 hover:text-[#9ec9ad]"
+                    ? "bg-[#182B1F] border-[#182B1F] text-white"
+                    : "bg-white border-[#D1EDD8] text-[#4A6358] hover:border-[#9EC9AD] hover:text-[#0D1F14]"
                   }`}
               >
                 {cat}
@@ -194,15 +202,15 @@ export default function ComparePage() {
           <div className="flex gap-2 ml-auto">
             <button
               onClick={() => setCoaOnly((v) => !v)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all duration-150
-                ${coaOnly ? "bg-emerald-500 border-emerald-500 text-white" : "bg-[#182b1f] border-[#2a4535] text-[#5d8c6e] hover:border-emerald-700"}`}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all duration-150
+                ${coaOnly ? "bg-[#182B1F] border-[#182B1F] text-white" : "bg-white border-[#D1EDD8] text-[#4A6358] hover:border-[#9EC9AD]"}`}
             >
               📋 COA Only
             </button>
             <button
               onClick={() => setThirdPartyOnly((v) => !v)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all duration-150
-                ${thirdPartyOnly ? "bg-purple-600 border-purple-600 text-white" : "bg-[#182b1f] border-[#2a4535] text-[#5d8c6e] hover:border-purple-700"}`}
+              className={`px-3 py-1.5 rounded-full text-xs font-semibold border-2 transition-all duration-150
+                ${thirdPartyOnly ? "bg-purple-600 border-purple-600 text-white" : "bg-white border-[#D1EDD8] text-[#4A6358] hover:border-purple-300"}`}
             >
               🔬 3rd Party Only
             </button>
@@ -210,18 +218,18 @@ export default function ComparePage() {
         </div>
 
         {/* Results count */}
-        <div className="text-xs text-[#5d8c6e] mb-3">
-          Showing <span className="text-[#9ec9ad] font-semibold">{filtered.length}</span> of {PRODUCTS.length} products
+        <div className="text-xs text-[#7BA899] mb-3">
+          Showing <span className="text-[#0D1F14] font-semibold">{filtered.length}</span> of {PRODUCTS.length} products
         </div>
 
         {/* Table */}
-        <div className="rounded-xl border border-[#2a4535] overflow-hidden">
+        <div className="rounded-2xl border-2 border-[#D1EDD8] overflow-hidden shadow-sm">
           <div className="overflow-x-auto">
             <table className="w-full text-sm border-collapse">
               <thead>
-                <tr className="bg-[#182b1f] border-b border-[#2a4535]">
+                <tr className="bg-[#F0FAF4] border-b border-[#D1EDD8]">
                   <Th label="Brand / Product" k="vendor" />
-                  <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#7BA899] uppercase tracking-wider whitespace-nowrap">
                     Category
                   </th>
                   <Th label="Tier" k="tier" />
@@ -231,27 +239,27 @@ export default function ComparePage() {
                   <Th label="$/serving" k="costPerServing" />
                   <Th label="Size" k="weightGrams" />
                   <Th label="Fulvic %" k="fulvicAcidPct" />
-                  <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#7BA899] uppercase tracking-wider whitespace-nowrap">
                     Source
                   </th>
-                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider">
+                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#7BA899] uppercase tracking-wider">
                     COA
                   </th>
-                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider">
+                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#7BA899] uppercase tracking-wider">
                     3rd Party
                   </th>
-                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#7BA899] uppercase tracking-wider whitespace-nowrap">
                     HM Tested
                   </th>
-                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider">
+                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#7BA899] uppercase tracking-wider">
                     GMP
                   </th>
-                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider whitespace-nowrap">
+                  <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#7BA899] uppercase tracking-wider whitespace-nowrap">
                     Free Ship
                   </th>
                   <Th label="Rating" k="amazonRating" />
                   <Th label="Reviews" k="amazonReviewCount" />
-                  <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#5d8c6e] uppercase tracking-wider">
+                  <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#7BA899] uppercase tracking-wider">
                     Link
                   </th>
                 </tr>
@@ -260,26 +268,26 @@ export default function ComparePage() {
                 {filtered.map((p, i) => (
                   <tr
                     key={p.id}
-                    className={`border-b border-[#1e3527] transition-colors hover:bg-[#182b1f]
-                      ${i % 2 === 0 ? "bg-[#0d1f14]" : "bg-[#0f2316]"}
-                      ${p.featured ? "ring-1 ring-inset ring-emerald-700/30" : ""}`}
+                    className={`border-b border-[#D1EDD8] transition-colors hover:bg-[#F0FAF4]
+                      ${i % 2 === 0 ? "bg-white" : "bg-[#F8FCF9]"}
+                      ${p.featured ? "ring-1 ring-inset ring-[#9EC9AD]" : ""}`}
                   >
                     {/* Brand + product */}
                     <td className="px-3 py-2.5 min-w-[200px]">
                       <div className="flex items-start gap-1.5">
                         {p.featured && (
-                          <span className="shrink-0 mt-0.5 w-1.5 h-1.5 rounded-full bg-emerald-400" title="Featured" />
+                          <span className="shrink-0 mt-0.5 w-1.5 h-1.5 rounded-full bg-[#10B981]" title="Featured" />
                         )}
                         <div>
-                          <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">{p.vendor}</div>
-                          <div className="text-xs text-[#e8f4ec] leading-snug">{p.productName}</div>
+                          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider">{p.vendor}</div>
+                          <div className="text-xs text-[#0D1F14] leading-snug">{p.productName}</div>
                         </div>
                       </div>
                     </td>
 
                     {/* Category */}
                     <td className="px-3 py-2.5">
-                      <span className="text-[10px] text-[#5d8c6e] bg-[#0a1a10] border border-[#2a4535] px-1.5 py-0.5 rounded">
+                      <span className="text-[10px] text-[#7BA899] bg-[#F0FAF4] border border-[#D1EDD8] px-1.5 py-0.5 rounded-full">
                         {p.category}
                       </span>
                     </td>
@@ -292,49 +300,49 @@ export default function ComparePage() {
                     {/* Purity score */}
                     <td className="px-3 py-2.5">
                       <div className="flex items-center gap-1.5">
-                        <div className="w-12 h-1.5 rounded-full bg-[#0a1a10] overflow-hidden">
+                        <div className="w-12 h-1.5 rounded-full bg-[#E8F5EC] overflow-hidden">
                           <div
-                            className={`h-full rounded-full ${p.purityScore >= 8 ? "bg-emerald-500" : p.purityScore >= 6 ? "bg-blue-500" : p.purityScore >= 4 ? "bg-amber-500" : "bg-red-500"}`}
+                            className={`h-full rounded-full ${p.purityScore >= 8 ? "bg-[#10B981]" : p.purityScore >= 6 ? "bg-blue-500" : p.purityScore >= 4 ? "bg-amber-500" : "bg-red-500"}`}
                             style={{ width: `${(p.purityScore / 10) * 100}%` }}
                           />
                         </div>
-                        <span className={`text-[11px] font-bold tabular-nums ${p.purityScore >= 8 ? "text-emerald-400" : p.purityScore >= 6 ? "text-blue-400" : p.purityScore >= 4 ? "text-amber-400" : "text-red-400"}`}>
+                        <span className={`text-[11px] font-bold tabular-nums ${p.purityScore >= 8 ? "text-[#10B981]" : p.purityScore >= 6 ? "text-blue-600" : p.purityScore >= 4 ? "text-amber-600" : "text-red-600"}`}>
                           {p.purityScore}/10
                         </span>
                       </div>
                     </td>
 
                     {/* Price */}
-                    <td className="px-3 py-2.5 font-semibold text-[#e8f4ec] tabular-nums whitespace-nowrap">
+                    <td className="px-3 py-2.5 font-semibold text-[#0D1F14] tabular-nums whitespace-nowrap">
                       ${p.priceUsd.toFixed(2)}
                     </td>
 
                     {/* $/gram */}
-                    <td className="px-3 py-2.5 tabular-nums text-emerald-400 font-semibold whitespace-nowrap">
+                    <td className="px-3 py-2.5 tabular-nums text-[#10B981] font-semibold whitespace-nowrap">
                       ${p.pricePerGram.toFixed(2)}
                     </td>
 
                     {/* $/serving */}
-                    <td className="px-3 py-2.5 tabular-nums text-[#9ec9ad] whitespace-nowrap">
+                    <td className="px-3 py-2.5 tabular-nums text-[#4A6358] whitespace-nowrap">
                       {p.costPerServing > 0 ? `$${p.costPerServing.toFixed(2)}` : "—"}
                     </td>
 
                     {/* Size */}
-                    <td className="px-3 py-2.5 tabular-nums text-[#5d8c6e] whitespace-nowrap">
+                    <td className="px-3 py-2.5 tabular-nums text-[#7BA899] whitespace-nowrap">
                       {p.weightGrams}g
                     </td>
 
                     {/* Fulvic % */}
                     <td className="px-3 py-2.5 tabular-nums whitespace-nowrap">
                       {p.fulvicAcidPct !== undefined ? (
-                        <span className="text-emerald-300 font-bold">{p.fulvicAcidPct}%</span>
+                        <span className="text-[#10B981] font-bold">{p.fulvicAcidPct}%</span>
                       ) : (
-                        <span className="text-[#2a4535]">—</span>
+                        <span className="text-[#D1EDD8]">—</span>
                       )}
                     </td>
 
                     {/* Source */}
-                    <td className="px-3 py-2.5 text-[11px] text-[#5d8c6e] whitespace-nowrap">
+                    <td className="px-3 py-2.5 text-[11px] text-[#7BA899] whitespace-nowrap">
                       {p.sourceLocation ?? "—"}
                     </td>
 
@@ -356,14 +364,14 @@ export default function ComparePage() {
                     {/* Rating */}
                     <td className="px-3 py-2.5 tabular-nums whitespace-nowrap">
                       {p.amazonRating !== undefined ? (
-                        <span className="text-amber-400 font-semibold">★ {p.amazonRating.toFixed(1)}</span>
+                        <span className="text-amber-500 font-semibold">★ {p.amazonRating.toFixed(1)}</span>
                       ) : (
-                        <span className="text-[#2a4535]">—</span>
+                        <span className="text-[#D1EDD8]">—</span>
                       )}
                     </td>
 
                     {/* Reviews */}
-                    <td className="px-3 py-2.5 tabular-nums text-[#5d8c6e] whitespace-nowrap">
+                    <td className="px-3 py-2.5 tabular-nums text-[#7BA899] whitespace-nowrap">
                       {p.amazonReviewCount !== undefined
                         ? p.amazonReviewCount >= 1000
                           ? `${(p.amazonReviewCount / 1000).toFixed(1)}k`
@@ -378,16 +386,16 @@ export default function ComparePage() {
                           href={p.affiliateUrl}
                           target="_blank"
                           rel="noopener noreferrer sponsored"
-                          className={`inline-block px-2.5 py-1 rounded text-[10px] font-semibold transition-colors whitespace-nowrap
+                          className={`inline-block px-2.5 py-1 rounded-full text-[10px] font-semibold transition-colors whitespace-nowrap
                             ${p.featured
-                              ? "bg-emerald-500 hover:bg-emerald-400 text-white"
-                              : "bg-[#182b1f] hover:bg-[#1e3527] text-emerald-400 border border-emerald-700/50 hover:border-emerald-500/60"
+                              ? "bg-[#182B1F] hover:bg-[#10B981] text-white"
+                              : "bg-white border-2 border-[#D1EDD8] hover:border-[#9EC9AD] text-[#4A6358] hover:text-[#0D1F14]"
                             }`}
                         >
                           {p.featured ? "View Deal →" : "Check Price →"}
                         </a>
                       ) : (
-                        <span className="text-[#2a4535] text-[10px]">—</span>
+                        <span className="text-[#D1EDD8] text-[10px]">—</span>
                       )}
                     </td>
                   </tr>
@@ -398,9 +406,9 @@ export default function ComparePage() {
         </div>
 
         {/* Legend */}
-        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[10px] text-[#5d8c6e]">
+        <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 text-[10px] text-[#7BA899]">
           <div className="flex items-center gap-1.5">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]" />
             Featured = affiliate partner
           </div>
           <div>✓ = confirmed   —  = not confirmed / unavailable</div>
@@ -409,17 +417,17 @@ export default function ComparePage() {
         </div>
 
         {/* Methodology note */}
-        <div className="mt-6 p-4 rounded-xl bg-[#182b1f] border border-[#2a4535] text-[11px] text-[#5d8c6e] leading-relaxed">
-          <strong className="text-[#9ec9ad]">How we score:</strong>{" "}
+        <div className="mt-6 p-4 rounded-2xl bg-white border-2 border-[#D1EDD8] text-[11px] text-[#4A6358] leading-relaxed shadow-sm">
+          <strong className="text-[#0D1F14]">How we score:</strong>{" "}
           Tier (S–D) is assigned based on COA availability, fulvic acid content (&gt;60% = higher tier), source disclosure, third-party testing, and price competitiveness.
           Purity Score (1–10) weights COA (+2), third-party lab testing (+2), heavy metals testing (+1.5), known source (+1.5), fulvic acid % (&gt;70%: +2, &gt;50%: +1), and GMP certification (+1).{" "}
-          <a href="/about" className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">Full methodology →</a>
+          <a href="/about" className="text-[#10B981] hover:text-[#0D1F14] underline underline-offset-2">Full methodology →</a>
         </div>
 
         {/* Affiliate disclosure */}
-        <p className="mt-4 text-[10px] text-[#3a6048]">
+        <p className="mt-4 text-[10px] text-[#7BA899]">
           Some links are affiliate links. We may earn a commission if you purchase — at no extra cost to you. Rankings are independent of affiliate relationships.{" "}
-          <a href="/disclaimer" className="hover:text-[#5d8c6e] underline underline-offset-2">Full disclosure →</a>
+          <a href="/disclaimer" className="hover:text-[#4A6358] underline underline-offset-2">Full disclosure →</a>
         </p>
       </main>
 

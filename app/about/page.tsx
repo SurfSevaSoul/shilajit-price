@@ -28,26 +28,26 @@ const breadcrumbSchema = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#0d1f14]">
+    <div className="min-h-screen flex flex-col bg-[#E8F5EC]">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
       {/* Nav */}
-      <nav className="sticky top-0 z-50 bg-[#0a1a10]/95 backdrop-blur-sm border-b border-[#1e3527]">
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#D1EDD8] shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-1 shrink-0">
-            <span className="text-lg font-black text-emerald-400">ShilajitPrice</span>
-            <span className="text-lg font-black text-[#e8f4ec]">.com</span>
+            <span className="text-lg font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>ShilajitPrice</span>
+            <span className="text-lg font-extrabold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>.com</span>
           </Link>
           <div className="flex items-center gap-3">
-            <Link href="/blog" className="text-sm text-[#9ec9ad] hover:text-emerald-400 transition-colors hidden sm:block">
+            <Link href="/blog" className="text-sm text-[#4A6358] hover:text-[#10B981] transition-colors hidden sm:block">
               Blog
             </Link>
             <Link
               href="/#deals"
-              className="shrink-0 px-4 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors"
+              className="shrink-0 px-4 py-1.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white text-xs font-semibold transition-colors duration-200"
             >
               Compare Prices
             </Link>
@@ -59,21 +59,21 @@ export default function AboutPage() {
         <div className="max-w-3xl mx-auto">
 
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 text-xs text-[#5d8c6e] mb-8">
-            <Link href="/" className="hover:text-emerald-400 transition-colors">Home</Link>
+          <nav className="flex items-center gap-2 text-xs text-[#7BA899] mb-8">
+            <Link href="/" className="hover:text-[#10B981] transition-colors">Home</Link>
             <span>/</span>
-            <span className="text-[#9ec9ad]">About</span>
+            <span className="text-[#4A6358]">About</span>
           </nav>
 
           {/* Header */}
           <div className="mb-10">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-900/30 border border-emerald-800/40 text-emerald-400 text-xs font-semibold mb-4 tracking-wide">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700 text-xs font-semibold mb-4 tracking-wide">
               About This Site
             </div>
-            <h1 className="text-3xl sm:text-4xl font-black text-[#e8f4ec] mb-4 leading-tight">
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-[#0D1F14] mb-4 leading-tight" style={{ fontFamily: "var(--font-jakarta)" }}>
               Independent Shilajit Price Comparison
             </h1>
-            <p className="text-base text-[#9ec9ad] leading-relaxed">
+            <p className="text-base text-[#4A6358] leading-relaxed">
               ShilajitPrice.com was built because finding honest, transparent shilajit supplement data is harder than it should be.
               We cut through marketing noise and give you the facts: fulvic acid percentages, third-party lab reports, price-per-gram,
               and sourcing transparency — all in one place.
@@ -81,23 +81,23 @@ export default function AboutPage() {
           </div>
 
           {/* Mission */}
-          <section className="bg-[#182b1f] border border-[#2a4535] rounded-2xl p-6 sm:p-8 mb-8">
-            <h2 className="text-xl font-bold text-[#e8f4ec] mb-4">Our Mission</h2>
-            <p className="text-sm text-[#9ec9ad] leading-relaxed mb-4">
+          <section className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-6 sm:p-8 mb-6 shadow-sm">
+            <h2 className="text-xl font-extrabold text-[#0D1F14] mb-4" style={{ fontFamily: "var(--font-jakarta)" }}>Our Mission</h2>
+            <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
               The shilajit market is flooded with low-quality products making exaggerated claims. Our goal is simple:
               provide a transparent, unbiased comparison that helps you identify genuinely high-quality shilajit and
               avoid wasting money on fakes or inferior products.
             </p>
-            <p className="text-sm text-[#9ec9ad] leading-relaxed">
+            <p className="text-sm text-[#4A6358] leading-relaxed">
               Every product on our list is evaluated on the same criteria. Affiliate relationships with Black Lotus
               Shilajit help keep this site running, but they do not change how products are ranked.
-              See our <Link href="/disclaimer" className="text-emerald-400 hover:underline">affiliate disclosure</Link> for full details.
+              See our <Link href="/disclaimer" className="text-[#10B981] hover:underline">affiliate disclosure</Link> for full details.
             </p>
           </section>
 
           {/* Methodology */}
-          <section className="mb-8">
-            <h2 className="text-xl font-bold text-[#e8f4ec] mb-6">Our Rating Methodology</h2>
+          <section className="mb-6">
+            <h2 className="text-xl font-extrabold text-[#0D1F14] mb-6" style={{ fontFamily: "var(--font-jakarta)" }}>Our Rating Methodology</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 {
@@ -131,36 +131,36 @@ export default function AboutPage() {
                   desc: "We factor in shipping costs, free shipping thresholds, and return policies to give you the true total cost.",
                 },
               ].map(({ emoji, title, desc }) => (
-                <div key={title} className="bg-[#182b1f] border border-[#2a4535] rounded-xl p-4">
+                <div key={title} className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
                   <div className="flex items-center gap-3 mb-2">
                     <span className="text-2xl">{emoji}</span>
-                    <h3 className="text-sm font-bold text-[#e8f4ec]">{title}</h3>
+                    <h3 className="text-sm font-bold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>{title}</h3>
                   </div>
-                  <p className="text-xs text-[#9ec9ad] leading-relaxed">{desc}</p>
+                  <p className="text-xs text-[#4A6358] leading-relaxed">{desc}</p>
                 </div>
               ))}
             </div>
           </section>
 
           {/* Tier System */}
-          <section className="bg-[#182b1f] border border-[#2a4535] rounded-2xl p-6 sm:p-8 mb-8">
-            <h2 className="text-xl font-bold text-[#e8f4ec] mb-4">Tier Rating System</h2>
-            <p className="text-sm text-[#9ec9ad] leading-relaxed mb-5">
+          <section className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-6 sm:p-8 mb-6 shadow-sm">
+            <h2 className="text-xl font-extrabold text-[#0D1F14] mb-4" style={{ fontFamily: "var(--font-jakarta)" }}>Tier Rating System</h2>
+            <p className="text-sm text-[#4A6358] leading-relaxed mb-5">
               All products receive an overall tier rating based on the methodology above:
             </p>
             <div className="space-y-2">
               {[
-                { tier: "S", label: "Elite", color: "text-yellow-400", bg: "bg-yellow-900/20 border-yellow-700/40", desc: "Verified COA, ≥60% fulvic acid, excellent sourcing transparency, fair price/gram" },
-                { tier: "A", label: "Premium", color: "text-emerald-400", bg: "bg-emerald-900/20 border-emerald-700/40", desc: "COA available, high fulvic acid, solid sourcing, competitive pricing" },
-                { tier: "B", label: "Good", color: "text-blue-400", bg: "bg-blue-900/20 border-blue-700/40", desc: "Some lab testing, reasonable quality, average price-per-gram" },
-                { tier: "C", label: "Average", color: "text-orange-400", bg: "bg-orange-900/20 border-orange-700/40", desc: "Limited transparency, unverified claims, or overpriced for the quality" },
-                { tier: "D", label: "Poor", color: "text-red-400", bg: "bg-red-900/20 border-red-700/40", desc: "No COA, misleading claims, poor sourcing, or unacceptably high price/gram" },
-              ].map(({ tier, label, color, bg, desc }) => (
-                <div key={tier} className={`flex items-start gap-3 border rounded-lg p-3 ${bg}`}>
-                  <span className={`text-sm font-black w-6 shrink-0 ${color}`}>{tier}</span>
+                { tier: "S", label: "Elite", pillCls: "bg-amber-100 text-amber-800 ring-1 ring-amber-300", rowCls: "bg-amber-50 border-amber-200", desc: "Verified COA, ≥60% fulvic acid, excellent sourcing transparency, fair price/gram" },
+                { tier: "A", label: "Premium", pillCls: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300", rowCls: "bg-emerald-50 border-emerald-200", desc: "COA available, high fulvic acid, solid sourcing, competitive pricing" },
+                { tier: "B", label: "Good", pillCls: "bg-blue-100 text-blue-800 ring-1 ring-blue-300", rowCls: "bg-blue-50 border-blue-200", desc: "Some lab testing, reasonable quality, average price-per-gram" },
+                { tier: "C", label: "Average", pillCls: "bg-slate-100 text-slate-600 ring-1 ring-slate-300", rowCls: "bg-slate-50 border-slate-200", desc: "Limited transparency, unverified claims, or overpriced for the quality" },
+                { tier: "D", label: "Poor", pillCls: "bg-red-100 text-red-700 ring-1 ring-red-300", rowCls: "bg-red-50 border-red-200", desc: "No COA, misleading claims, poor sourcing, or unacceptably high price/gram" },
+              ].map(({ tier, label, pillCls, rowCls, desc }) => (
+                <div key={tier} className={`flex items-start gap-3 border rounded-xl p-3 ${rowCls}`}>
+                  <span className={`inline-flex items-center justify-center w-7 h-7 rounded-full text-xs font-extrabold shrink-0 ${pillCls}`}>{tier}</span>
                   <div>
-                    <span className={`text-xs font-bold ${color}`}>{label}: </span>
-                    <span className="text-xs text-[#9ec9ad]">{desc}</span>
+                    <span className="text-xs font-bold text-[#0D1F14]">{label}: </span>
+                    <span className="text-xs text-[#4A6358]">{desc}</span>
                   </div>
                 </div>
               ))}
@@ -168,26 +168,26 @@ export default function AboutPage() {
           </section>
 
           {/* Affiliate Disclosure */}
-          <section className="bg-amber-900/10 border border-amber-800/30 rounded-2xl p-6 sm:p-8 mb-8">
-            <h2 className="text-xl font-bold text-[#e8f4ec] mb-3">Affiliate Disclosure</h2>
-            <p className="text-sm text-[#9ec9ad] leading-relaxed mb-3">
+          <section className="bg-amber-50 border-2 border-amber-200 rounded-2xl p-6 sm:p-8 mb-6 shadow-sm">
+            <h2 className="text-xl font-extrabold text-[#0D1F14] mb-3" style={{ fontFamily: "var(--font-jakarta)" }}>Affiliate Disclosure</h2>
+            <p className="text-sm text-[#4A6358] leading-relaxed mb-3">
               ShilajitPrice.com is an affiliate partner of Black Lotus Shilajit. When you purchase through our affiliate
               links, we earn a commission at no extra cost to you. This is how we keep the site free and ad-light.
             </p>
-            <p className="text-sm text-[#9ec9ad] leading-relaxed">
+            <p className="text-sm text-[#4A6358] leading-relaxed">
               Our affiliate relationship does not affect product rankings, tier assignments, or editorial content.
-              Read the full <Link href="/disclaimer" className="text-emerald-400 hover:underline">affiliate disclaimer here</Link>.
+              Read the full <Link href="/disclaimer" className="text-[#10B981] hover:underline">affiliate disclaimer here</Link>.
             </p>
           </section>
 
           {/* Contact / Updates */}
           <section className="mb-8">
-            <h2 className="text-xl font-bold text-[#e8f4ec] mb-3">Data Updates</h2>
-            <p className="text-sm text-[#9ec9ad] leading-relaxed">
+            <h2 className="text-xl font-extrabold text-[#0D1F14] mb-3" style={{ fontFamily: "var(--font-jakarta)" }}>Data Updates</h2>
+            <p className="text-sm text-[#4A6358] leading-relaxed">
               Product pricing and availability change frequently. We update this comparison at least monthly.
               Each product card shows the date pricing was last verified. If you notice outdated information,
               we welcome feedback — contact us at{" "}
-              <a href="mailto:hello@shilajitprice.com" className="text-emerald-400 hover:underline">
+              <a href="mailto:hello@shilajitprice.com" className="text-[#10B981] hover:underline">
                 hello@shilajitprice.com
               </a>.
             </p>
@@ -197,13 +197,13 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center pt-4">
             <Link
               href="/#deals"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-semibold text-sm transition-colors duration-200 shadow-sm"
             >
               Compare Shilajit Prices
             </Link>
             <Link
               href="/blog"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#182b1f] hover:bg-[#1e3527] text-emerald-300 font-semibold border border-emerald-700/50 text-sm transition-colors"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border-2 border-[#182B1F] text-[#182B1F] hover:bg-[#182B1F] hover:text-white font-semibold text-sm transition-colors duration-200"
             >
               Read the Blog
             </Link>
