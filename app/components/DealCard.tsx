@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Product, Tier, TIER_DESCRIPTIONS } from "../data/products";
+import ProductImage from "./ProductImage";
 import { getLabEntry } from "../data/lab-data";
 import { getAggregateRating } from "../data/reviews";
 import LabDataPanel from "./LabDataPanel";
@@ -173,6 +174,9 @@ export default function DealCard({ product }: DealCardProps) {
             Featured
           </div>
         )}
+
+        {/* Product thumbnail — Amazon CDN for affiliate products, local for BL/PH */}
+        <ProductImage vendor={vendor} affiliateUrl={affiliateUrl} />
 
         <div className="p-4 flex flex-col gap-0 flex-1">
           {/* Row 1: Tier badge + Vendor + Product name */}

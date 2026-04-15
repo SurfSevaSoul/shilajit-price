@@ -10,6 +10,7 @@ import DealCard from "./components/DealCard";
 import HowItWorks from "./components/HowItWorks";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import ProductImage from "./components/ProductImage";
 
 const BASE_URL = "https://shilajitprice.com";
 const PAGE_SIZE = 12;
@@ -124,8 +125,16 @@ function EditorPickCard({
   const s = ACCENT_STYLES[accent];
   return (
     <div
-      className={`bg-white border-2 ${s.border} rounded-2xl p-5 flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm`}
+      className={`bg-white border-2 ${s.border} rounded-2xl overflow-hidden flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm`}
     >
+      {/* Product thumbnail */}
+      <ProductImage
+        vendor={product.vendor}
+        affiliateUrl={product.affiliateUrl}
+        sizes="(max-width: 640px) 100vw, 33vw"
+      />
+
+      <div className="p-5 flex flex-col flex-1">
       {/* Editor's Pick badge */}
       <span
         className={`inline-flex items-center self-start px-2.5 py-0.5 rounded-full text-[9px] font-bold uppercase tracking-widest ${s.badge} mb-3`}
@@ -189,6 +198,7 @@ function EditorPickCard({
       <p className="text-center text-[9px] text-[#7BA899] mt-1.5">
         Affiliate link — commission at no extra cost
       </p>
+      </div>
     </div>
   );
 }
