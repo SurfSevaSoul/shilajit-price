@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { PRODUCTS, Category, CATEGORIES, Tier, TIER_COLORS } from "../data/products";
+import { PRODUCTS, Category, CATEGORIES, Tier, TIER_COLORS, Origin } from "../data/products";
 import Footer from "../components/Footer";
 
 type SortKey =
@@ -14,7 +14,8 @@ type SortKey =
   | "weightGrams"
   | "fulvicAcidPct"
   | "amazonRating"
-  | "amazonReviewCount";
+  | "amazonReviewCount"
+  | "origin";
 
 const BASE_URL = "https://shilajitprice.com";
 
@@ -107,6 +108,7 @@ export default function ComparePage() {
         case "fulvicAcidPct": cmp = (a.fulvicAcidPct ?? 0) - (b.fulvicAcidPct ?? 0); break;
         case "amazonRating": cmp = (a.amazonRating ?? 0) - (b.amazonRating ?? 0); break;
         case "amazonReviewCount": cmp = (a.amazonReviewCount ?? 0) - (b.amazonReviewCount ?? 0); break;
+        case "origin": cmp = (a.origin ?? "Unknown").localeCompare(b.origin ?? "Unknown"); break;
       }
       return sortDir === "asc" ? cmp : -cmp;
     });
@@ -242,6 +244,7 @@ export default function ComparePage() {
                   <th className="px-3 py-2.5 text-left text-[10px] font-bold text-[#7BA899] uppercase tracking-wider whitespace-nowrap">
                     Source
                   </th>
+                  <Th label="Origin" k="origin" />
                   <th className="px-3 py-2.5 text-center text-[10px] font-bold text-[#7BA899] uppercase tracking-wider">
                     COA
                   </th>
@@ -346,8 +349,23 @@ export default function ComparePage() {
                       {p.sourceLocation ?? "—"}
                     </td>
 
+                    {/* Origin */}
+                    <td className="px-3 py-2.5 whitespace-nowrap">
+                      {p.origin && p.origin !== "Unknown" ? (
+                        <span className="text-[10px] text-[#7BA899]">📍 {p.origin}</span>
+                      ) : (
+                        <span className="text-[#D1EDD8] text-[10px]">—</span>
+                      )}
+                    </td>
+
                     {/* COA */}
-                    <td className="px-3 py-2.5 text-center"><Check val={p.coaVerified} /></td>
+                    <td className="px-3 py-2.5 text-center">
+                      {p.coaVerified ? (
+                        <span className="text-[9px] font-bold text-emerald-700 bg-emerald-50 ring-1 ring-emerald-200 px-1.5 py-0.5 rounded-full">✓ COA</span>
+                      ) : (
+                        <span className="text-[9px] font-medium text-slate-500 bg-slate-100 ring-1 ring-slate-300 px-1.5 py-0.5 rounded-full">No COA</span>
+                      )}
+                    </td>
 
                     {/* 3rd Party */}
                     <td className="px-3 py-2.5 text-center"><Check val={p.thirdPartyTested} /></td>

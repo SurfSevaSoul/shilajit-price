@@ -1,9 +1,10 @@
 "use client";
 
-import { Tier } from "../data/products";
+import { Tier, Origin, ORIGINS } from "../data/products";
 
 export interface FilterState {
   tiers: Tier[];
+  origins: Origin[];
   maxPrice: number;
   coaOnly: boolean;
   thirdPartyOnly: boolean;
@@ -43,6 +44,7 @@ interface SidebarFiltersProps {
 
 export const DEFAULT_FILTERS: FilterState = {
   tiers: ALL_TIERS,
+  origins: ORIGINS,
   maxPrice: 150,
   coaOnly: false,
   thirdPartyOnly: false,
@@ -72,6 +74,14 @@ export default function SidebarFilters({
 
   const allTiersSelected =
     filters.tiers.length === ALL_TIERS.length || filters.tiers.length === 0;
+
+  const toggleOrigin = (origin: Origin) => {
+    const next = filters.origins.includes(origin)
+      ? filters.origins.filter((o) => o !== origin)
+      : [...filters.origins, origin];
+    toggle("origins", next.length === 0 ? ORIGINS : next);
+  };
+  const allOriginsSelected = filters.origins.length === ORIGINS.length || filters.origins.length === 0;
 
   const MIN_REVIEW_OPTIONS = [
     { label: "Any", value: 0 },
@@ -142,6 +152,52 @@ export default function SidebarFilters({
                   >
                     {tier}
                   </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Origin Filter */}
+          <div>
+            <div className="flex items-center justify-between mb-2">
+              <label className="block text-[11px] font-semibold text-[#7BA899] uppercase tracking-wider">
+                Origin
+              </label>
+              {!allOriginsSelected && (
+                <button
+                  onClick={() => toggle("origins", ORIGINS)}
+                  className="text-[10px] text-[#10B981] hover:text-[#0D1F14] font-semibold"
+                >
+                  Reset
+                </button>
+              )}
+            </div>
+            <div className="space-y-1.5">
+              {ORIGINS.map((origin) => {
+                const active = allOriginsSelected || filters.origins.includes(origin);
+                return (
+                  <label key={origin} className="flex items-center gap-2.5 cursor-pointer group">
+                    <div
+                      className={`w-4 h-4 rounded border-2 flex items-center justify-center transition-all duration-150 shrink-0
+                        ${active
+                          ? "bg-[#182B1F] border-[#182B1F]"
+                          : "bg-white border-[#D1EDD8] group-hover:border-[#9EC9AD]"
+                        }`}
+                      onClick={() => toggleOrigin(origin)}
+                    >
+                      {active && (
+                        <svg className="w-2.5 h-2.5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      )}
+                    </div>
+                    <span
+                      className="text-xs text-[#4A6358] group-hover:text-[#0D1F14] transition-colors select-none"
+                      onClick={() => toggleOrigin(origin)}
+                    >
+                      📍 {origin}
+                    </span>
+                  </label>
                 );
               })}
             </div>

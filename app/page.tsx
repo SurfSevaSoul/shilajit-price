@@ -2,7 +2,7 @@
 
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import { PRODUCTS, CATEGORIES, Category, Tier, TIER_COLORS } from "./data/products";
+import { PRODUCTS, CATEGORIES, Category, Tier, TIER_COLORS, Origin, ORIGINS } from "./data/products";
 import HeroSection from "./components/HeroSection";
 import CategoryFilter from "./components/CategoryFilter";
 import SidebarFilters, { FilterState, DEFAULT_FILTERS } from "./components/SidebarFilters";
@@ -312,6 +312,7 @@ export default function Home() {
       if (filters.gmpOnly && !p.gmpCertified) return false;
       if (filters.minRating > 0 && (p.amazonRating ?? 0) < filters.minRating) return false;
       if (filters.minReviews > 0 && (p.amazonReviewCount ?? 0) < filters.minReviews) return false;
+      if (!filters.origins.includes(p.origin ?? "Unknown")) return false;
       return true;
     });
 

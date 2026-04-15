@@ -9,8 +9,13 @@ export type Category =
   | "Honey"
   | "Bundles";
 
+export type Origin = "Himalayan" | "Altai" | "Ladakh" | "Tibetan Plateau" | "Unknown";
+
+export const ORIGINS: Origin[] = ["Himalayan", "Altai", "Ladakh", "Tibetan Plateau", "Unknown"];
+
 export interface Product {
   id: string;
+  origin: Origin;
   vendor: string;
   productName: string;
   tier: Tier;
@@ -74,6 +79,7 @@ export const PRODUCTS: Product[] = [
   // ── BLACK LOTUS (Featured / S-Tier) ────────────────────────────────────────
   {
     id: "bl-resin",
+    origin: "Altai",
     vendor: "Black Lotus Shilajit",
     productName: "Pure Himalayan Resin 30g",
     tier: "S",
@@ -107,6 +113,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bl-capsules",
+    origin: "Altai",
     vendor: "Black Lotus Shilajit",
     productName: "Extra Strength Capsules 60ct",
     tier: "S",
@@ -140,6 +147,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bl-gummies",
+    origin: "Altai",
     vendor: "Black Lotus Shilajit",
     productName: "Shilajit Gummies 30ct",
     tier: "A",
@@ -171,6 +179,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bl-tincture",
+    origin: "Altai",
     vendor: "Black Lotus Shilajit",
     productName: "Pure Shilajit Tincture 2oz",
     tier: "A",
@@ -202,6 +211,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bl-honey",
+    origin: "Altai",
     vendor: "Black Lotus Shilajit",
     productName: "Shilajit Honey Blend 200g",
     tier: "A",
@@ -230,6 +240,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bl-bundle",
+    origin: "Altai",
     vendor: "Black Lotus Shilajit",
     productName: "Starter Bundle — Resin + Capsules",
     tier: "S",
@@ -264,6 +275,7 @@ export const PRODUCTS: Product[] = [
   // ── PURE HIMALAYAN (Featured / S-Tier) ────────────────────────────────────
   {
     id: "ph-resin-30g",
+    origin: "Himalayan",
     vendor: "Pure Himalayan Shilajit",
     productName: "Authentic Shilajit Resin 30g",
     tier: "S",
@@ -296,6 +308,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "ph-drops-50ml",
+    origin: "Himalayan",
     vendor: "Pure Himalayan Shilajit",
     productName: "Liquid Shilajit Drops 50mL",
     tier: "S",
@@ -325,6 +338,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "ph-tablets-90ct",
+    origin: "Himalayan",
     vendor: "Pure Himalayan Shilajit",
     productName: "Shilajit Tablets 90ct",
     tier: "S",
@@ -358,6 +372,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "sayan-resin-30g",
+    origin: "Altai",
     vendor: "Sayan",
     productName: "Altai Shilajit Resin 30g",
     tier: "A",
@@ -387,6 +402,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sayan-resin-100g",
+    origin: "Altai",
     vendor: "Sayan",
     productName: "Altai Shilajit Resin 100g",
     tier: "A",
@@ -417,6 +433,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sayan-resin-40g",
+    origin: "Altai",
     vendor: "Sayan",
     productName: "Altai Shilajit Resin 40g",
     tier: "A",
@@ -444,6 +461,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sayan-resin-15g",
+    origin: "Altai",
     vendor: "Sayan",
     productName: "Altai Shilajit Resin 15g",
     tier: "A",
@@ -471,6 +489,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "essencraft-resin-60g",
+    origin: "Himalayan",
     vendor: "Essencraft",
     productName: "Himalayan Shilajit Resin 60g",
     tier: "B",
@@ -498,6 +517,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "himalayan-healing-resin-55g",
+    origin: "Himalayan",
     vendor: "Himalayan Healing",
     productName: "Shilajit Resin 55g Gold Grade",
     tier: "A",
@@ -526,6 +546,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "betteralt-resin-30g",
+    origin: "Himalayan",
     vendor: "Better Alt",
     productName: "Pure Himalayan Shilajit Resin 30g",
     tier: "B",
@@ -554,6 +575,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "purblack-resin-30g",
+    origin: "Himalayan",
     vendor: "PurBlack",
     productName: "Live Resin True Gold Shilajit",
     tier: "A",
@@ -584,6 +606,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "natural-shilajit-resin-20g",
+    origin: "Altai",
     vendor: "Natural Shilajit",
     productName: "Altai Shilajit Resin 20g",
     tier: "A",
@@ -612,6 +635,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "natural-shilajit-resin-10g",
+    origin: "Altai",
     vendor: "Natural Shilajit",
     productName: "Altai Shilajit Resin 10g Starter",
     tier: "A",
@@ -640,6 +664,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "lost-empire-resin-10g",
+    origin: "Himalayan",
     vendor: "Lost Empire Herbs",
     productName: "Himalayan Shilajit Resin 10g",
     tier: "B",
@@ -667,6 +692,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "life-pursuits-resin",
+    origin: "Himalayan",
     vendor: "Life & Pursuits",
     productName: "Authentic Himalayan Shilajit Resin",
     tier: "A",
@@ -695,6 +721,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "kapiva-resin-30g",
+    origin: "Himalayan",
     vendor: "Kapiva",
     productName: "Pure Himalayan Shilajit Resin 30g",
     tier: "B",
@@ -722,6 +749,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "hima-shilajatu-resin",
+    origin: "Himalayan",
     vendor: "Hima Shilajatu",
     productName: "Organic Himalayan Shilajit Resin",
     tier: "B",
@@ -749,6 +777,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "betteralt-resin-78fa",
+    origin: "Himalayan",
     vendor: "Better Alt",
     productName: "High Potency Himalayan Resin 78% FA",
     tier: "A",
@@ -777,6 +806,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "natural-shilajit-resin-bundle",
+    origin: "Altai",
     vendor: "Natural Shilajit",
     productName: "Resin Bundle 5.3oz + 0.7oz",
     tier: "A",
@@ -808,6 +838,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "nutricost-caps-120ct",
+    origin: "Unknown",
     vendor: "Nutricost",
     productName: "Shilajit Capsules 1000mg 120ct",
     tier: "B",
@@ -835,6 +866,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "doublewood-caps-120ct",
+    origin: "Unknown",
     vendor: "Double Wood",
     productName: "Himalayan Shilajit Capsules 1000mg",
     tier: "C",
@@ -862,6 +894,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "primavie-caps-90ct",
+    origin: "Himalayan",
     vendor: "PrimaVie / Nootropics Depot",
     productName: "Shilajit PrimaVie Capsules 250mg 90ct",
     tier: "A",
@@ -892,6 +925,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "primavie-caps-30ct",
+    origin: "Himalayan",
     vendor: "PrimaVie / Nootropics Depot",
     productName: "Shilajit PrimaVie Capsules 250mg 30ct",
     tier: "A",
@@ -922,6 +956,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sayan-caps-90ct",
+    origin: "Altai",
     vendor: "Sayan",
     productName: "Organic Shilajit Capsules 440mg 90ct",
     tier: "A",
@@ -949,6 +984,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "jarrow-caps-60ct",
+    origin: "Unknown",
     vendor: "Jarrow Formulas",
     productName: "Shilajit 250mg Capsules 60ct",
     tier: "B",
@@ -975,6 +1011,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "jarrow-caps-120ct",
+    origin: "Unknown",
     vendor: "Jarrow Formulas",
     productName: "Shilajit 250mg Capsules 120ct",
     tier: "B",
@@ -1001,6 +1038,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "himalaya-caps",
+    origin: "Himalayan",
     vendor: "Himalaya",
     productName: "Shilajit Herbal Energy Capsules",
     tier: "B",
@@ -1028,6 +1066,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sunfood-caps",
+    origin: "Unknown",
     vendor: "Sunfood Superfoods",
     productName: "Shilajit Capsules Pure Resin",
     tier: "B",
@@ -1054,6 +1093,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "natural-shilajit-caps-60ct",
+    origin: "Altai",
     vendor: "Natural Shilajit",
     productName: "Altai Shilajit Capsules 60ct",
     tier: "A",
@@ -1082,6 +1122,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "youtheory-primavie-60ct",
+    origin: "Himalayan",
     vendor: "Youtheory",
     productName: "PrimaVie Shilajit Capsules 60ct",
     tier: "A",
@@ -1110,6 +1151,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "mst-primavie-60ct",
+    origin: "Himalayan",
     vendor: "MST / PrimaVie",
     productName: "PrimaVie Shilajit 250mg BSCG 60ct",
     tier: "A",
@@ -1140,6 +1182,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "atlantis-caps-120ct",
+    origin: "Unknown",
     vendor: "Atlantis Nutrition",
     productName: "Himalayan Shilajit Capsules 1000mg 120ct",
     tier: "C",
@@ -1167,6 +1210,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "generic-himalayan-caps-60ct",
+    origin: "Himalayan",
     vendor: "Himalayan Shilajit Co.",
     productName: "Shilajit Capsules 60% FA 60ct",
     tier: "B",
@@ -1195,6 +1239,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "primavie-b0b192rmd8",
+    origin: "Himalayan",
     vendor: "PrimaVie",
     productName: "Purified Shilajit Capsules 60ct",
     tier: "A",
@@ -1226,6 +1271,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "lost-empire-powder-50g",
+    origin: "Himalayan",
     vendor: "Lost Empire Herbs",
     productName: "Himalayan Shilajit Powder 50g",
     tier: "B",
@@ -1253,6 +1299,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "sayan-powder-28g",
+    origin: "Altai",
     vendor: "Sayan",
     productName: "Altai Shilajit Powder 28g",
     tier: "B",
@@ -1281,6 +1328,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "purisure-powder-100g",
+    origin: "Himalayan",
     vendor: "Purisure",
     productName: "Himalayan Shilajit Powder 100g",
     tier: "C",
@@ -1308,6 +1356,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bulksupplements-powder",
+    origin: "Unknown",
     vendor: "BulkSupplements",
     productName: "Shilajit Extract Powder",
     tier: "C",
@@ -1335,6 +1384,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "prescribed-life-4x-powder",
+    origin: "Unknown",
     vendor: "Prescribed For Life",
     productName: "Shilajit 4:1 Extract Powder",
     tier: "C",
@@ -1361,6 +1411,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "prescribed-life-15x-powder",
+    origin: "Unknown",
     vendor: "Prescribed For Life",
     productName: "Shilajit 15:1 Extract Powder",
     tier: "C",
@@ -1387,6 +1438,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "powder-10x-5oz",
+    origin: "Unknown",
     vendor: "Mountain Vitals",
     productName: "Shilajit Powder 10:1 Extract 5oz",
     tier: "C",
@@ -1413,6 +1465,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "himalayan-powder-50fa",
+    origin: "Unknown",
     vendor: "Himalayas Harvest",
     productName: "Pure Shilajit Powder 50% Fulvic Acid",
     tier: "B",
@@ -1440,6 +1493,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "scash-powder-100g",
+    origin: "Unknown",
     vendor: "Scash",
     productName: "Himalayan Shilajit Powder 100g",
     tier: "D",
@@ -1466,6 +1520,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "matcha-outlet-powder",
+    origin: "Unknown",
     vendor: "Matcha Outlet",
     productName: "Shilajit Pure Extract Powder 2oz",
     tier: "D",
@@ -1495,6 +1550,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "purecraft-gummies-60ct",
+    origin: "Himalayan",
     vendor: "Purecraft",
     productName: "Himalayan Shilajit Gummies 800mg 60ct",
     tier: "B",
@@ -1522,6 +1578,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "ohmychewy-gummies-120ct",
+    origin: "Himalayan",
     vendor: "Oh My Chewy",
     productName: "Himalayan Shilajit Gummies 120ct",
     tier: "C",
@@ -1549,6 +1606,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "betteralt-gummies-60ct",
+    origin: "Himalayan",
     vendor: "Better Alt",
     productName: "Pure Himalayan Shilajit Gummies 60ct",
     tier: "B",
@@ -1577,6 +1635,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "effective-nutra-gummies",
+    origin: "Unknown",
     vendor: "Effective Nutra",
     productName: "Shilajit Gummies 1000mg 60ct",
     tier: "C",
@@ -1603,6 +1662,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "handpick-gummies-60ct",
+    origin: "Himalayan",
     vendor: "HANDPICK",
     productName: "Pure Himalayan Shilajit Gummies 60ct",
     tier: "C",
@@ -1630,6 +1690,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "vitadrive-gummies",
+    origin: "Himalayan",
     vendor: "Vitadrive",
     productName: "Himalayan Shilajit Gummies 60ct",
     tier: "C",
@@ -1660,6 +1721,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "purehimalayan-tincture-50ml",
+    origin: "Himalayan",
     vendor: "Pure Himalayan Shilajit",
     productName: "Shilajit Liquid Drops 50ml",
     tier: "B",
@@ -1688,6 +1750,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "pakshilajit-30ml",
+    origin: "Himalayan",
     vendor: "PakShilajit",
     productName: "Sun-Dried Himalayan Shilajit Drops 30ml",
     tier: "B",
@@ -1717,6 +1780,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "golden-dragon-tincture-30ml",
+    origin: "Himalayan",
     vendor: "Golden Dragon",
     productName: "Himalayan Shilajit Liquid Drops 30ml",
     tier: "C",
@@ -1744,6 +1808,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "travel-tincture-30ml",
+    origin: "Unknown",
     vendor: "Himalayan Shilajit Labs",
     productName: "Pure Shilajit Liquid Drops 30ml Travel",
     tier: "C",
@@ -1770,6 +1835,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "clean-nutra-tincture",
+    origin: "Unknown",
     vendor: "Clean Nutraceuticals",
     productName: "Shilajit Liquid Drops Complex 10-in-1",
     tier: "C",
@@ -1799,6 +1865,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "natural-shilajit-honey-30ct",
+    origin: "Altai",
     vendor: "Natural Shilajit",
     productName: "Altai Shilajit Honey Sticks 30ct",
     tier: "B",
@@ -1826,6 +1893,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "betteralt-honey-sticks-30ct",
+    origin: "Himalayan",
     vendor: "Better Alt",
     productName: "Himalayan Shilajit + Organic Honey Sticks 30ct",
     tier: "B",
@@ -1854,6 +1922,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "bloomin-honey-sticks-30ct",
+    origin: "Unknown",
     vendor: "Bloomin",
     productName: "Organic Shilajit Honey Sticks 30ct",
     tier: "C",
@@ -1880,6 +1949,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "botane-honey-sticks",
+    origin: "Unknown",
     vendor: "BOTANE MAN",
     productName: "Bloomin Shilajit Honey Sticks Women 30ct",
     tier: "C",
@@ -1906,6 +1976,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "himalayan-honey-sticks",
+    origin: "Unknown",
     vendor: "Himalayan Shilajit Co.",
     productName: "Pure Himalayan Shilajit Honey Sticks 30ct",
     tier: "C",
@@ -1935,6 +2006,7 @@ export const PRODUCTS: Product[] = [
 
   {
     id: "boysea-bundle",
+    origin: "Unknown",
     vendor: "Boysea",
     productName: "Shilajit + Sea Moss Bundle 90ct",
     tier: "C",
@@ -1961,6 +2033,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "seamoss-shilajit-bundle",
+    origin: "Unknown",
     vendor: "Himalayan Wellness",
     productName: "Sea Moss + Shilajit Vitality Bundle",
     tier: "C",
@@ -1987,6 +2060,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "holistic-hercules-bundle",
+    origin: "Unknown",
     vendor: "Holistic Hercules",
     productName: "Classic Combo Bundle — Sea Moss + Shilajit",
     tier: "C",
@@ -2013,6 +2087,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "uheco-multi-bundle",
+    origin: "Unknown",
     vendor: "Uheco",
     productName: "Shilajit + Sea Moss + Ashwagandha + Tongkat Ali",
     tier: "C",
@@ -2039,6 +2114,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: "parrox-bundle",
+    origin: "Unknown",
     vendor: "Parrox",
     productName: "Shilajit + Sea Moss + Black Seed Bundle",
     tier: "D",
