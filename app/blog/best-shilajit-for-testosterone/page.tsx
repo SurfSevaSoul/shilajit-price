@@ -283,7 +283,7 @@ export default function BestShilajitForTestosterone() {
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 55+ products at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link></p>
+          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 71 products at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link></p>
         </section>
 
         {/* #1 Black Lotus */}
@@ -418,7 +418,7 @@ export default function BestShilajitForTestosterone() {
 
         <BlogCTA
           headline="Compare All Shilajit Products by Fulvic Acid %"
-          subtext="See 55+ products ranked by verified fulvic acid content, price per gram, and COA quality — all in one place."
+          subtext="See 71 products ranked by verified fulvic acid content, price per gram, and COA quality — all in one place."
         />
       </BlogPostLayout>
     </>

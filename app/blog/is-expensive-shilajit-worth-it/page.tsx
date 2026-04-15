@@ -414,7 +414,7 @@ export default function IsExpensiveShilajitWorthIt() {
 
         <BlogCTA
           headline="Compare All Products by Quality and Price"
-          subtext="See 55+ shilajit products ranked by tier, fulvic acid %, and price per gram — find the sweet spot for your budget."
+          subtext="See 71 shilajit products ranked by tier, fulvic acid %, and price per gram — find the sweet spot for your budget."
         />
       </BlogPostLayout>
     </>

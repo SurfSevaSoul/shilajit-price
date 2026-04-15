@@ -179,8 +179,8 @@ export default function OgImage() {
             }}
           >
             {[
-              { value: "55+", label: "Products" },
-              { value: "20+", label: "Brands" },
+              { value: "71", label: "Products" },
+              { value: "46", label: "Brands" },
               { value: "25+", label: "Data Points" },
               { value: "Free", label: "Always" },
             ].map((stat, i) => (

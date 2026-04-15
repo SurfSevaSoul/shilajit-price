@@ -334,7 +334,7 @@ export default function ShilajitPricePerGram() {
 
         <BlogCTA
           headline="Full Sortable Price Per Gram Table"
-          subtext="Filter 55+ products by $/gram, tier, fulvic acid %, and COA status — the most complete shilajit price comparison available."
+          subtext="Filter 71 products by $/gram, tier, fulvic acid %, and COA status — the most complete shilajit price comparison available."
         />
       </BlogPostLayout>
     </>

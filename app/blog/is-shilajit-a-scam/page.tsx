@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Is Shilajit a Scam? We Analyzed 55+ Products to Find Out",
+  headline: "Is Shilajit a Scam? We Analyzed 71 Products to Find Out",
   description: "Data-driven analysis of the shilajit market: what's real, what's fake, and what the research says about its efficacy.",
   datePublished: "2026-04-14",
   dateModified: "2026-04-14",
@@ -119,7 +119,7 @@ export default function IsShilajitAScam() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-300">
               a Scam?
             </span>{" "}
-            We Analyzed 55+ Products to Find Out
+            We Analyzed 71 Products to Find Out
           </>
         }
         description="Short answer: authentic shilajit is real. Most of what's sold online isn't authentic. We analyzed COA data, lab reports, and third-party testing across 55+ products to show you exactly what the data says."

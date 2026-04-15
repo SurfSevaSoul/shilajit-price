@@ -400,7 +400,7 @@ export default function BestAffordableShilajit() {
         </section>
 
         <BlogCTA
-          headline="Compare All 55+ Products by Value"
+          headline="Compare All 71 Products by Value"
           subtext="Sort by price per gram, fulvic acid %, and COA status to find the best value shilajit for your budget."
         />
       </BlogPostLayout>

@@ -413,7 +413,7 @@ export default function BestShilajitForEnergy() {
 
         <BlogCTA
           headline="Compare Shilajit by Fulvic Acid % and Price Per Gram"
-          subtext="Filter 55+ products by COA verification, tier, and form factor to find the best energy-focused shilajit for your budget."
+          subtext="Filter 71 products by COA verification, tier, and form factor to find the best energy-focused shilajit for your budget."
         />
       </BlogPostLayout>
     </>

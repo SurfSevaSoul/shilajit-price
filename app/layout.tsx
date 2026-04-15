@@ -22,13 +22,13 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "ShilajitPrice — Compare Shilajit Prices, Purity & Lab Data (2026)",
   description:
-    "The most comprehensive shilajit comparison database. Compare prices, fulvic acid content, COA availability, and purity scores across 55+ products from 20+ brands. Find the best shilajit for your budget.",
+    "The most comprehensive shilajit comparison database. Compare prices, fulvic acid content, COA availability, and purity scores across 71 products from 46 brands. Find the best shilajit for your budget.",
   keywords:
     "shilajit price, shilajit comparison, best shilajit, shilajit purity score, fulvic acid content, shilajit COA, shilajit lab tested, shilajit resin, shilajit capsules, cheap shilajit, shilajit deals",
   openGraph: {
     title: "ShilajitPrice — Compare Shilajit Prices, Purity & Lab Data (2026)",
     description:
-      "The most comprehensive shilajit comparison database. Compare prices, fulvic acid content, COA availability, and purity scores across 55+ products from 20+ brands.",
+      "The most comprehensive shilajit comparison database. Compare prices, fulvic acid content, COA availability, and purity scores across 71 products from 46 brands.",
     url: "https://shilajitprice.com",
     siteName: "ShilajitPrice.com",
     type: "website",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ShilajitPrice — Compare Shilajit Prices, Purity & Lab Data",
     description:
-      "55+ products, 20+ brands. Compare fulvic acid content, COA availability, purity scores, and prices. Find the best shilajit for your budget.",
+      "71 products, 46 brands. Compare fulvic acid content, COA availability, purity scores, and prices. Find the best shilajit for your budget.",
     images: ["/opengraph-image"],
   },
   icons: {

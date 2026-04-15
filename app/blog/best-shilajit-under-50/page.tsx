@@ -407,7 +407,7 @@ export default function BestShilajitUnder50() {
 
         <BlogCTA
           headline="See Full Price Per Gram Comparison"
-          subtext="Compare 55+ shilajit products by price per gram, fulvic acid %, and COA status — all filterable and sortable."
+          subtext="Compare 71 shilajit products by price per gram, fulvic acid %, and COA status — all filterable and sortable."
         />
       </BlogPostLayout>
     </>

@@ -19,7 +19,7 @@ export default function BlogSidebar({ currentSlug }: BlogSidebarProps) {
           Free Tool
         </div>
         <p className="text-xs font-bold text-[#0D1F14] mb-1.5">
-          Compare All 55+ Shilajit Products
+          Compare All 71 Shilajit Products
         </p>
         <p className="text-[11px] text-[#4A6358] leading-relaxed mb-3">
           Ranked by fulvic acid %, price per gram, and COA quality.

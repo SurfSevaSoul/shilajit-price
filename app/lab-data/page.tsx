@@ -6,7 +6,7 @@ import { LAB_DATA, getLabEntry, LAB_DISCLAIMER, HeavyMetalResult } from "../data
 export const metadata: Metadata = {
   title: "Shilajit Lab Reports & COA Database — ShilajitPrice.com",
   description:
-    "The most complete shilajit lab report database. Compare COA status, fulvic acid content, heavy metals panels, and testing lab accreditation across 55+ products.",
+    "The most complete shilajit lab report database. Compare COA status, fulvic acid content, heavy metals panels, and testing lab accreditation across 71 products.",
   openGraph: {
     title: "Shilajit Lab Reports & COA Database",
     description: "Compare COA status, fulvic acid content, and heavy metals test results across 55+ shilajit products.",

@@ -407,7 +407,7 @@ export default function WhereToBuyShilajitOnlineUSA() {
           <p className="text-xs text-[#0D1F14] mt-4">
             See also:{" "}
             <Link href="/blog/is-shilajit-a-scam" className="text-[#10B981] hover:underline">
-              Is Shilajit a Scam? We Analyzed 55+ Products to Find Out
+              Is Shilajit a Scam? We Analyzed 71 Products to Find Out
             </Link>
           </p>
         </section>
@@ -435,7 +435,7 @@ export default function WhereToBuyShilajitOnlineUSA() {
         </section>
 
         <BlogCTA
-          headline="Compare All 55+ US-Available Shilajit Products"
+          headline="Compare All 71 US-Available Shilajit Products"
           subtext="Sort by COA quality, fulvic acid %, price per gram, and tier — find the best shilajit available to US buyers."
         />
       </BlogPostLayout>

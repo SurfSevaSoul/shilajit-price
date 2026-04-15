@@ -34,7 +34,7 @@ const compareSchema = {
   "@type": "WebPage",
   name: "Shilajit Comparison Table — All Products Side by Side",
   description:
-    "Full sortable comparison table of 55+ shilajit products. Compare price per gram, fulvic acid %, purity score, COA, sourcing, and more.",
+    "Full sortable comparison table of 71 shilajit products. Compare price per gram, fulvic acid %, purity score, COA, sourcing, and more.",
   url: `${BASE_URL}/compare`,
   breadcrumb: {
     "@type": "BreadcrumbList",
