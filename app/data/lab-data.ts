@@ -157,18 +157,6 @@ export const LAB_DATA: Record<string, LabEntry> = {
       "DBP-verified Altai Mountains source",
     ],
   },
-  "natural-shilajit-resin-bundle": {
-    productId: "natural-shilajit-resin-bundle",
-    coaStatus: "verified",
-    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
-    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
-    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: [
-      "COA publicly available on brand website",
-      "Testing methods: ICP-MS, LC-MS, FTIR",
-      "Same DBP-verified Altai resin as standalone jars",
-    ],
-  },
   "natural-shilajit-caps-60ct": {
     productId: "natural-shilajit-caps-60ct",
     coaStatus: "verified",
