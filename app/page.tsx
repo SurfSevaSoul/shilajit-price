@@ -523,12 +523,13 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 {editorPicks.map((p, i) => (
-                  <EditorPickCard
-                    key={p.id}
-                    product={p}
-                    label={editorPickMeta[i]?.label ?? "Top Pick"}
-                    accent={editorPickMeta[i]?.accent ?? "emerald"}
-                  />
+                  <div key={p.id} className={i >= 3 ? "hidden md:block" : undefined}>
+                    <EditorPickCard
+                      product={p}
+                      label={editorPickMeta[i]?.label ?? "Top Pick"}
+                      accent={editorPickMeta[i]?.accent ?? "emerald"}
+                    />
+                  </div>
                 ))}
               </div>
             </div>
