@@ -12,6 +12,7 @@ export interface FilterState {
   knownSourceOnly: boolean;
   gmpOnly: boolean;
   freeShippingOnly: boolean;
+  dbpVerifiedOnly: boolean;
   minRating: number;
   minReviews: number;
   sortBy:
@@ -52,6 +53,7 @@ export const DEFAULT_FILTERS: FilterState = {
   knownSourceOnly: false,
   gmpOnly: false,
   freeShippingOnly: false,
+  dbpVerifiedOnly: false,
   minRating: 0,
   minReviews: 0,
   sortBy: "bestValue",
@@ -288,6 +290,7 @@ export default function SidebarFilters({
                 { key: "knownSourceOnly" as const, label: "Known Source Location", icon: "🏔️" },
                 { key: "gmpOnly" as const, label: "GMP Certified", icon: "✅" },
                 { key: "freeShippingOnly" as const, label: "Free Shipping", icon: "📦" },
+                { key: "dbpVerifiedOnly" as const, label: "DBP Verified", icon: "🛡️" },
               ].map(({ key, label, icon }) => (
                 <label key={key} className="flex items-center gap-2.5 cursor-pointer group">
                   <div

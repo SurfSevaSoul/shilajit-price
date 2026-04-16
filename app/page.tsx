@@ -64,7 +64,7 @@ function bestValueScore(p: (typeof PRODUCTS)[0]) {
   return tierScore * 0.4 + p.purityScore * 3 * 0.3 + ppgScore * 0.3;
 }
 
-// Interleave BL and PH featured products so neither brand dominates the top
+// Interleave BL, PH, and NS featured products so no brand dominates the top
 function interleaveProducts(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][] {
   const blFeatured = list.filter(
     (p) => p.featured && p.vendor.toLowerCase().includes("black lotus")
@@ -72,18 +72,22 @@ function interleaveProducts(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][
   const phFeatured = list.filter(
     (p) => p.featured && p.vendor.toLowerCase().includes("pure himalayan")
   );
+  const nsFeatured = list.filter(
+    (p) => p.featured && p.vendor.toLowerCase().includes("natural shilajit")
+  );
   const others = list.filter((p) => !p.featured);
   const result: (typeof PRODUCTS)[0][] = [];
-  const max = Math.max(blFeatured.length, phFeatured.length);
+  const max = Math.max(blFeatured.length, phFeatured.length, nsFeatured.length);
   for (let i = 0; i < max; i++) {
     if (blFeatured[i]) result.push(blFeatured[i]);
     if (phFeatured[i]) result.push(phFeatured[i]);
+    if (nsFeatured[i]) result.push(nsFeatured[i]);
   }
   return [...result, ...others];
 }
 
 // ── Editor's Pick card (equal-weight, vertical layout) ──────────────────────
-type AccentVariant = "emerald" | "amber" | "blue";
+type AccentVariant = "emerald" | "amber" | "blue" | "teal" | "violet";
 
 const ACCENT_STYLES: Record<
   AccentVariant,
@@ -109,6 +113,20 @@ const ACCENT_STYLES: Record<
     label: "text-blue-600",
     btn: "bg-[#182B1F] hover:bg-blue-600 text-white",
     ppg: "text-blue-600",
+  },
+  teal: {
+    border: "border-teal-200 hover:border-teal-400",
+    badge: "bg-teal-50 ring-1 ring-teal-200 text-teal-700",
+    label: "text-teal-600",
+    btn: "bg-[#182B1F] hover:bg-teal-600 text-white",
+    ppg: "text-teal-600",
+  },
+  violet: {
+    border: "border-violet-200 hover:border-violet-400",
+    badge: "bg-violet-50 ring-1 ring-violet-200 text-violet-700",
+    label: "text-violet-600",
+    btn: "bg-[#182B1F] hover:bg-violet-600 text-white",
+    ppg: "text-violet-600",
   },
 };
 
@@ -283,20 +301,24 @@ export default function Home() {
     return counts;
   }, []);
 
-  // Editor's Picks: BL Best Overall, PH Best Purity, Best Amazon Value
+  // Editor's Picks: BL Best Overall, PH Best Purity, NS Resin 20g, NS Resin 150g, Best Amazon Value
   const editorPicks = useMemo(() => {
     const blPick = PRODUCTS.find((p) => p.id === "bl-resin");
     const phPick = PRODUCTS.find((p) => p.id === "ph-resin-30g");
+    const nsPick20g = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-20g");
+    const nsPick150g = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-150g");
     const bestAmazon = [...PRODUCTS]
       .filter((p) => !p.featured && p.affiliateUrl.includes("amazon.com"))
       .sort((a, b) => bestValueScore(b) - bestValueScore(a))[0];
-    return [blPick, phPick, bestAmazon].filter(Boolean) as (typeof PRODUCTS)[0][];
+    return [blPick, phPick, nsPick20g, nsPick150g, bestAmazon].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
   const editorPickMeta: { label: string; accent: AccentVariant }[] = [
     { label: "Best Overall", accent: "emerald" },
     { label: "Best Purity", accent: "amber" },
-    { label: "Best Value", accent: "blue" },
+    { label: "Best Direct — 20g", accent: "teal" },
+    { label: "Best Bulk Direct", accent: "violet" },
+    { label: "Best Amazon Value", accent: "blue" },
   ];
 
   const filtered = useMemo(() => {
@@ -310,6 +332,7 @@ export default function Home() {
       if (filters.heavyMetalsOnly && !p.heavyMetalsTested) return false;
       if (filters.knownSourceOnly && !p.sourceLocation) return false;
       if (filters.gmpOnly && !p.gmpCertified) return false;
+      if (filters.dbpVerifiedOnly && !p.dbpVerified) return false;
       if (filters.minRating > 0 && (p.amazonRating ?? 0) < filters.minRating) return false;
       if (filters.minReviews > 0 && (p.amazonReviewCount ?? 0) < filters.minReviews) return false;
       if (!filters.origins.includes(p.origin ?? "Unknown")) return false;
@@ -450,7 +473,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               {[
-                { value: "71", label: "Products Tracked" },
+                { value: "74", label: "Products Tracked" },
                 { value: "46", label: "Brands Compared" },
                 { value: "25+", label: "Data Points Per Product" },
                 { value: "Weekly", label: "Price Updates" },
@@ -496,7 +519,7 @@ export default function Home() {
                 <div className="flex-1 h-px bg-[#D1EDD8]" />
                 <span className="text-[10px] text-[#7BA899]">Independent editorial rankings</span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
                 {editorPicks.map((p, i) => (
                   <EditorPickCard
                     key={p.id}

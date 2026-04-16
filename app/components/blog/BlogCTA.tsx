@@ -7,7 +7,7 @@ interface BlogCTAProps {
 
 export default function BlogCTA({
   headline = "Compare All Shilajit Prices",
-  subtext = "See 71 products ranked by fulvic acid %, price per gram, and COA quality — all in one place.",
+  subtext = "See 74 products ranked by fulvic acid %, price per gram, and COA quality — all in one place.",
 }: BlogCTAProps) {
   return (
     <div className="bg-[#122019] border border-emerald-700/40 rounded-2xl p-6 flex flex-col sm:flex-row sm:items-center gap-4">

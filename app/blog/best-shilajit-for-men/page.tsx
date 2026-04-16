@@ -456,7 +456,7 @@ export default function BestShilajitForMen() {
 
         <BlogCTA
           headline="Compare All Shilajit Products Side-by-Side"
-          subtext="See 71 products ranked by fulvic acid %, COA quality, and price per gram — filter by form factor, tier, and source."
+          subtext="See 74 products ranked by fulvic acid %, COA quality, and price per gram — filter by form factor, tier, and source."
         />
       </BlogPostLayout>
     </>

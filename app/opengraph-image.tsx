@@ -179,7 +179,7 @@ export default function OgImage() {
             }}
           >
             {[
-              { value: "71", label: "Products" },
+              { value: "74", label: "Products" },
               { value: "46", label: "Brands" },
               { value: "25+", label: "Data Points" },
               { value: "Free", label: "Always" },

@@ -279,7 +279,7 @@ export default function BestShilajitBrandsRanked() {
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 71 products available at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link></p>
+          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 74 products available at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link></p>
         </section>
 
         {/* #1 Black Lotus */}

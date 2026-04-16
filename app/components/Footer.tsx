@@ -1,4 +1,4 @@
-import { AFFILIATE_LINKS, PURE_HIMALAYAN_LINKS } from "../data/products";
+import { AFFILIATE_LINKS, PURE_HIMALAYAN_LINKS, NATURAL_SHILAJIT_LINKS } from "../data/products";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -7,7 +7,7 @@ const organizationSchema = {
   alternateName: "ShilajitPrice.com",
   url: "https://shilajitprice.com",
   description:
-    "Independent shilajit price comparison site. We research, test, and rank shilajit supplements so you can buy with confidence.",
+    "Independent shilajit price comparison site. We research, test, and rank shilajit supplements from top brands including Black Lotus Shilajit, Pure Himalayan Shilajit, and Natural Shilajit so you can buy with confidence.",
   logo: {
     "@type": "ImageObject",
     url: "https://shilajitprice.com/icon",
@@ -48,7 +48,7 @@ export default function Footer() {
       />
       {/* Main footer */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-1 mb-3">
@@ -172,7 +172,11 @@ export default function Footer() {
               ))}
             </ul>
 
-            <h3 className="text-xs font-bold text-[#9EC9AD]/50 uppercase tracking-widest mb-4 mt-6">
+          </div>
+
+          {/* Pure Himalayan */}
+          <div>
+            <h3 className="text-xs font-bold text-[#9EC9AD]/50 uppercase tracking-widest mb-4">
               Shop Pure Himalayan
             </h3>
             <ul className="space-y-2">
@@ -204,6 +208,40 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Natural Shilajit */}
+            <h3 className="text-xs font-bold text-[#9EC9AD]/50 uppercase tracking-widest mb-4 mt-6">
+              Shop Natural Shilajit
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Resin (20g)", href: NATURAL_SHILAJIT_LINKS.resin20g },
+                { label: "Resin (150g Bulk)", href: NATURAL_SHILAJIT_LINKS.resin150g },
+                { label: "VegTabs (60ct)", href: NATURAL_SHILAJIT_LINKS.vegtabs },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="text-sm text-[#9EC9AD]/70 hover:text-teal-400 transition-colors duration-150 flex items-center gap-1.5"
+                  >
+                    <svg
+                      className="w-2.5 h-2.5 text-teal-500 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
@@ -219,14 +257,14 @@ export default function Footer() {
               ShilajitPrice.com participates in affiliate advertising programs.
               When you click affiliate links on this site and make a purchase,
               we may receive a commission at no additional cost to you. Our
-              featured partners are Black Lotus Shilajit and Pure Himalayan
-              Shilajit. Affiliate relationships do not influence product rankings
-              or tier assignments — all ratings are based on independent
-              evaluation of lab reports, COAs, pricing, and sourcing
-              transparency. We only recommend products we genuinely believe
-              provide value to consumers. Prices are updated regularly; always
-              confirm the final price on the retailer&apos;s website before
-              purchasing.
+              featured partners are Black Lotus Shilajit, Pure Himalayan
+              Shilajit, and Natural Shilajit. Affiliate relationships do not
+              influence product rankings or tier assignments — all ratings are
+              based on independent evaluation of lab reports, COAs, pricing, and
+              sourcing transparency. We only recommend products we genuinely
+              believe provide value to consumers. Prices are updated regularly;
+              always confirm the final price on the retailer&apos;s website
+              before purchasing.
             </p>
           </div>
 

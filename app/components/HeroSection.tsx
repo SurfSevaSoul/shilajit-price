@@ -47,7 +47,7 @@ export default function HeroSection() {
 
           <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-xl mx-auto">
             Compare prices, purity scores, fulvic acid content, and COA
-            availability across 71 products — so you never overpay or buy
+            availability across 74 products — so you never overpay or buy
             fake shilajit again.
           </p>
 

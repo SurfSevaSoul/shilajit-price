@@ -201,7 +201,7 @@ export default function BlogIndex() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="grid sm:grid-cols-3 gap-4">
               {[
-                { label: "Compare all 71 products", href: "/", icon: "⬡", desc: "Side-by-side price and purity comparison" },
+                { label: "Compare all 74 products", href: "/", icon: "⬡", desc: "Side-by-side price and purity comparison" },
                 { label: "Full comparison table", href: "/compare", icon: "📊", desc: "Sortable table with all 25+ data points" },
                 { label: "Our methodology", href: "/about", icon: "📋", desc: "How we score and rank each product" },
               ].map(({ label, href, icon, desc }) => (
