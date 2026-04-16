@@ -131,6 +131,104 @@ export const LAB_DATA: Record<string, LabEntry> = {
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: ["Tablet formulation; ISO/IEC 17025 lab certified"],
   },
+
+  // ── NATURAL SHILAJIT (source: naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests) ──
+  "natural-shilajit-resin-20g": {
+    productId: "natural-shilajit-resin-20g",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "DBP-verified Altai Mountains source",
+    ],
+  },
+  "natural-shilajit-resin-10g": {
+    productId: "natural-shilajit-resin-10g",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "DBP-verified Altai Mountains source",
+    ],
+  },
+  "natural-shilajit-resin-bundle": {
+    productId: "natural-shilajit-resin-bundle",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "Same DBP-verified Altai resin as standalone jars",
+    ],
+  },
+  "natural-shilajit-caps-60ct": {
+    productId: "natural-shilajit-caps-60ct",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "DBP-verified Altai shilajit encapsulated",
+    ],
+  },
+  "natural-shilajit-honey-30ct": {
+    productId: "natural-shilajit-honey-30ct",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website (NutriHoney product)",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "DBP-verified Altai shilajit blended with raw honey",
+    ],
+  },
+  "natural-shilajit-resin-150g": {
+    productId: "natural-shilajit-resin-150g",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "Same DBP-verified Altai resin — bulk 150g format",
+    ],
+  },
+  "natural-shilajit-vegtabs-60": {
+    productId: "natural-shilajit-vegtabs-60",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "DBP-verified Altai shilajit in vegan tablet form",
+    ],
+  },
+  "natural-shilajit-sun-dried-120": {
+    productId: "natural-shilajit-sun-dried-120",
+    coaStatus: "verified",
+    coaUrl: "https://naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests",
+    testingLab: "3rd Party Laboratory (ICP-MS, LC-MS, FTIR)",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "COA publicly available on brand website",
+      "Testing methods: ICP-MS, LC-MS, FTIR",
+      "Sun-dried DBP-verified Altai shilajit tablets",
+    ],
+  },
 };
 
 // For products not in LAB_DATA, returns a "not-available" fallback
