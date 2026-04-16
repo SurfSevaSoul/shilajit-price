@@ -166,6 +166,7 @@ export default function ShilajitBeginnersGuide() {
         updatedAt="2026-04-15"
         readingTimeMin={9}
         currentSlug="shilajit-beginners-guide"
+        quizCta="card"
         breadcrumbLabel="Shilajit Beginner's Guide"
         faqItems={faqItems}
       >

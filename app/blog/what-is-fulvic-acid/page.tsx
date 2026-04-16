@@ -154,6 +154,7 @@ export default function WhatIsFulvicAcid() {
         updatedAt="2026-04-13"
         readingTimeMin={6}
         currentSlug="what-is-fulvic-acid"
+        quizCta="line"
         breadcrumbLabel="What is Fulvic Acid"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

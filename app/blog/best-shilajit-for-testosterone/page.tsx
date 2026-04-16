@@ -200,6 +200,7 @@ export default function BestShilajitForTestosterone() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="best-shilajit-for-testosterone"
+        quizCta="card"
         breadcrumbLabel="Best Shilajit for Testosterone"
         faqItems={faqItems}
       >

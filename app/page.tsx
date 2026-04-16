@@ -390,6 +390,7 @@ export default function Home() {
             <a href="#deals" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Deals</a>
             <a href="/compare" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Compare</a>
             <a href="/blog" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Blog</a>
+            <a href="/quiz" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">Quiz</a>
             <a href="#how-it-works" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">How It Works</a>
             <a href="/about" className="text-[#4A6358] hover:text-[#0D1F14] font-medium transition-colors">About</a>
           </div>
@@ -428,6 +429,7 @@ export default function Home() {
               { label: "Deals", href: "#deals" },
               { label: "Compare", href: "/compare" },
               { label: "Blog", href: "/blog" },
+              { label: "Quiz", href: "/quiz" },
               { label: "How It Works", href: "#how-it-works" },
               { label: "About", href: "/about" },
               { label: "Editor's Picks", href: "#top-picks" },
@@ -531,6 +533,29 @@ export default function Home() {
               </div>
             </div>
 
+            {/* ── QUIZ CTA SECTION ─────────────────────────────────────────── */}
+            <div className="my-8 bg-white rounded-2xl border-2 border-[#D1EDD8] p-6 sm:p-8 text-center shadow-sm">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F5EC] border border-[#9EC9AD] text-[#4A6358] text-xs font-semibold mb-4">
+                <span className="text-base">🎯</span> Free · 60 seconds
+              </div>
+              <h2
+                className="text-2xl sm:text-3xl font-extrabold text-[#0D1F14] mb-2"
+                style={{ fontFamily: "var(--font-jakarta)" }}
+              >
+                Not sure which shilajit is right for you?
+              </h2>
+              <p className="text-sm text-[#7BA899] mb-6 max-w-md mx-auto leading-relaxed">
+                Answer 7 quick questions and we&apos;ll match you to the best brand based on your goals,
+                budget, and purity requirements.
+              </p>
+              <a
+                href="/quiz"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-bold text-sm transition-all duration-200 shadow-md"
+              >
+                Take the Free Quiz →
+              </a>
+            </div>
+
             {/* ── 5. ALL DEALS GRID ────────────────────────────────────────── */}
             <div className="flex items-center gap-2 mb-5">
               <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest">All Products</span>
@@ -553,6 +578,14 @@ export default function Home() {
                 </span>
               </div>
             )}
+
+            {/* Subtle quiz link below filter bar */}
+            <p className="text-xs text-[#7BA899] mb-4 -mt-2">
+              Too many options?{" "}
+              <a href="/quiz" className="text-[#10B981] hover:text-[#182B1F] font-semibold transition-colors underline underline-offset-2 decoration-[#9EC9AD]">
+                Get a personalized pick →
+              </a>
+            </p>
 
             {/* Main content: sidebar + grid */}
             <div className="flex flex-col lg:flex-row gap-6 items-start">

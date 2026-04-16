@@ -190,6 +190,7 @@ export default function BestShilajitForEnergy() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="best-shilajit-for-energy"
+        quizCta="card"
         breadcrumbLabel="Best Shilajit for Energy"
         faqItems={faqItems}
       >

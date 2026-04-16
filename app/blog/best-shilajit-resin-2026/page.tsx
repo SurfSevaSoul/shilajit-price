@@ -212,6 +212,7 @@ export default function BestShilajitResin2026() {
         updatedAt="2026-04-13"
         readingTimeMin={7}
         currentSlug="best-shilajit-resin-2026"
+        quizCta="line"
         breadcrumbLabel="Best Shilajit Resin in 2026"
         faqItems={faqItems}
       >

@@ -197,6 +197,7 @@ export default function BestShilajitBrandsRanked() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="best-shilajit-brands-ranked"
+        quizCta="card"
         breadcrumbLabel="Best Shilajit Brands Ranked"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

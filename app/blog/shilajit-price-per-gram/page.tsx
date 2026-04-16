@@ -140,6 +140,7 @@ export default function ShilajitPricePerGram() {
         updatedAt="2026-04-14"
         readingTimeMin={9}
         currentSlug="shilajit-price-per-gram"
+        quizCta="line"
         breadcrumbLabel="Shilajit Price Per Gram"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

@@ -215,6 +215,7 @@ export default function BlackLotusShilajitReview() {
         updatedAt="2026-04-15"
         readingTimeMin={9}
         currentSlug="black-lotus-shilajit-review"
+        quizCta="card"
         breadcrumbLabel="Black Lotus Review"
         faqItems={faqItems}
       >

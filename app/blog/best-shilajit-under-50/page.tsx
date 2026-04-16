@@ -210,6 +210,7 @@ export default function BestShilajitUnder50() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="best-shilajit-under-50"
+        quizCta="card"
         breadcrumbLabel="Best Shilajit Under $50"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

@@ -126,6 +126,7 @@ export default function ShilajitDosageGuide() {
         updatedAt="2026-04-15"
         readingTimeMin={7}
         currentSlug="shilajit-dosage-guide"
+        quizCta="card"
         breadcrumbLabel="Shilajit Dosage Guide"
         faqItems={faqItems}
       >

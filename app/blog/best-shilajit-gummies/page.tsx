@@ -166,6 +166,7 @@ export default function BestShilajitGummies() {
         updatedAt="2026-04-15"
         readingTimeMin={7}
         currentSlug="best-shilajit-gummies"
+        quizCta="card"
         breadcrumbLabel="Best Shilajit Gummies"
         faqItems={faqItems}
       >

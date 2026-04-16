@@ -128,6 +128,7 @@ export default function PureHimalayanShilajitReview() {
         updatedAt="2026-04-15"
         readingTimeMin={8}
         currentSlug="pure-himalayan-shilajit-review"
+        quizCta="card"
         breadcrumbLabel="Pure Himalayan Review"
         faqItems={faqItems}
       >

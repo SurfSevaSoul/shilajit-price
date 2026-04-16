@@ -131,6 +131,7 @@ export default function ShilajitHeavyMetalsSafety() {
         updatedAt="2026-04-15"
         readingTimeMin={8}
         currentSlug="shilajit-heavy-metals-safety"
+        quizCta="line"
         breadcrumbLabel="Shilajit Heavy Metals Safety"
         faqItems={faqItems}
       >

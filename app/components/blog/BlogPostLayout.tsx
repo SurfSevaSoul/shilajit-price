@@ -4,6 +4,7 @@ import RelatedPosts from "../RelatedPosts";
 import BlackLotusCTA from "./BlackLotusCTA";
 import PureHimalayanCTA from "./PureHimalayanCTA";
 import BlogSidebar from "./BlogSidebar";
+import QuizCTA from "./QuizCTA";
 
 const BASE_URL = "https://shilajitprice.com";
 
@@ -27,6 +28,8 @@ interface BlogPostLayoutProps {
   breadcrumbLabel: string;
   faqItems?: FaqItem[];
   ctaVariant?: "black-lotus" | "pure-himalayan";
+  /** "card" = full quiz CTA card; "line" = single-line text CTA; undefined = none */
+  quizCta?: "card" | "line";
   children: ReactNode;
 }
 
@@ -49,6 +52,7 @@ export default function BlogPostLayout({
   breadcrumbLabel,
   faqItems,
   ctaVariant = "black-lotus",
+  quizCta,
   children,
 }: BlogPostLayoutProps) {
   const postUrl = `${BASE_URL}/blog/${currentSlug}`;
@@ -229,6 +233,17 @@ export default function BlogPostLayout({
                     ))}
                   </div>
                 </section>
+              )}
+
+              {/* Auto-injected: Quiz CTA */}
+              {quizCta === "card" && <QuizCTA />}
+              {quizCta === "line" && (
+                <p className="text-sm text-[#4A6358]">
+                  Not sure which shilajit is right for you?{" "}
+                  <a href="/quiz" className="text-[#10B981] hover:text-[#182B1F] font-semibold transition-colors underline underline-offset-2 decoration-[#9EC9AD]">
+                    Take our free 60-second quiz →
+                  </a>
+                </p>
               )}
 
               {/* Auto-injected: Related posts */}

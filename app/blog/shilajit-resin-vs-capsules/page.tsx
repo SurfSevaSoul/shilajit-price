@@ -129,6 +129,7 @@ export default function ShilajitResinVsCapsules() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="shilajit-resin-vs-capsules"
+        quizCta="line"
         breadcrumbLabel="Shilajit Resin vs Capsules"
         faqItems={faqItems}
       >

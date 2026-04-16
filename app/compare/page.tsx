@@ -219,6 +219,16 @@ export default function ComparePage() {
           </div>
         </div>
 
+        {/* Quiz CTA */}
+        <div className="flex items-center justify-between gap-3 bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl px-4 py-3 mb-4 text-sm">
+          <span className="text-[#4A6358]">
+            Overwhelmed by options?{" "}
+            <a href="/quiz" className="text-[#10B981] hover:text-[#182B1F] font-semibold transition-colors underline underline-offset-2 decoration-[#9EC9AD]">
+              Take our quiz for a personalized recommendation →
+            </a>
+          </span>
+        </div>
+
         {/* Results count */}
         <div className="text-xs text-[#7BA899] mb-3">
           Showing <span className="text-[#0D1F14] font-semibold">{filtered.length}</span> of {PRODUCTS.length} products

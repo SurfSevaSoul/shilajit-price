@@ -143,6 +143,7 @@ export default function AltaiVsHimalayanShilajit() {
         updatedAt="2026-04-15"
         readingTimeMin={8}
         currentSlug="altai-vs-himalayan-shilajit"
+        quizCta="card"
         breadcrumbLabel="Altai vs Himalayan Shilajit"
         faqItems={faqItems}
       >

@@ -242,6 +242,7 @@ export default function WhereToBuyRealShilajit() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="where-to-buy-real-shilajit"
+        quizCta="line"
         breadcrumbLabel="Where to Buy Real Shilajit"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

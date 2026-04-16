@@ -214,6 +214,7 @@ export default function BestAffordableShilajit() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="best-affordable-shilajit"
+        quizCta="line"
         breadcrumbLabel="Best Affordable Shilajit"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

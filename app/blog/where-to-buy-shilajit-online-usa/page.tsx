@@ -222,6 +222,7 @@ export default function WhereToBuyShilajitOnlineUSA() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="where-to-buy-shilajit-online-usa"
+        quizCta="line"
         breadcrumbLabel="Where to Buy Shilajit Online USA"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"
