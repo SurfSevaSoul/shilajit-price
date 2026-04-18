@@ -303,6 +303,15 @@ export default function ShilajitResinVsCapsules() {
           </div>
           <p className="text-center text-[10px] text-[#7BA899] mt-3">Affiliate links — we earn a commission at no extra cost to you</p>
         </div>
+
+        {/* Rankings link */}
+        <p className="text-sm text-[#0D1F14] leading-relaxed">
+          Ready to pick a brand? See{" "}
+          <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-semibold">
+            the top brands across all form factors
+          </Link>{" "}
+          ranked by verified lab data, fulvic acid content, and price per gram.
+        </p>
       </BlogPostLayout>
     </>
   );

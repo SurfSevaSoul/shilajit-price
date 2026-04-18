@@ -118,7 +118,7 @@ const TOP_BRANDS = [
     fulvic: "85%+",
     coa: true,
     thirdParty: true,
-    source: "Himalaya (14,000+ ft)",
+    source: "Altai Mountains, Siberia",
     verdict: "Best overall — full transparency, highest verified fulvic acid, best value at price point",
     affiliate: AFFILIATE_RESIN,
   },
@@ -280,7 +280,7 @@ export default function BestShilajitBrandsRanked() {
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 74 products available at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link></p>
+          <p className="text-[10px] text-[#7BA899] mt-2">Full comparison of 74 products available at <Link href="/compare" className="text-[#10B981] hover:underline">ShilajitPrice.com/compare</Link> · <Link href="/methodology" className="text-[#10B981] hover:underline">Full methodology</Link> · <Link href="/lab-data" className="text-[#10B981] hover:underline">Raw lab data</Link></p>
         </section>
 
         {/* #1 Black Lotus */}
@@ -291,7 +291,7 @@ export default function BestShilajitBrandsRanked() {
               Black Lotus earns the top spot because they do something remarkably rare in this market: they publish everything. Their Certificate of Analysis is linked directly to specific product lot numbers, tested by an independent ISO-accredited laboratory, and shows specific measured values — not just &quot;pass.&quot;
             </p>
             <p>
-              The tested fulvic acid content exceeds 85%, which places them among the highest verified concentrations we&apos;ve encountered. Their source is specified to altitude (above 14,000 feet in the Himalayas), collection method disclosed, and purification is described as cold-process water filtration — the method that best preserves bioactive compounds.
+              The tested fulvic acid content exceeds 85%, which places them among the highest verified concentrations we&apos;ve encountered. Their source is specified to altitude (above 14,000 feet in the Altai Mountains), collection method disclosed, and purification is described as cold-process water filtration — the method that best preserves bioactive compounds.
             </p>
             <p>
               At $39.99 for 30g of resin ($1.33/gram), they&apos;re not the cheapest. But when you account for the fulvic acid concentration, you&apos;re getting more bioactive material per dollar than most products priced similarly. Their capsule option at $34.99 provides cost-per-serving comparable to many B-tier competitors.
@@ -314,7 +314,7 @@ export default function BestShilajitBrandsRanked() {
               "85%+ verified fulvic acid — third-party confirmed",
               "ISO-accredited COA linked to lot numbers",
               "Heavy metals: all values within safe limits",
-              "Himalayan source above 14,000 feet",
+              "Altai Mountain source above 14,000 feet",
               "Cold-process purification — bioactives preserved",
               "Free shipping on all orders",
             ].map((item) => (

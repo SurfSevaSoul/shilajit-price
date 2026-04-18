@@ -326,7 +326,8 @@ export default function IsShilajitAScam() {
               What is a scam is the widespread sale of adulterated, mislabeled, or outright fake shilajit by brands that exploit consumer unfamiliarity and regulatory gaps to profit from the substance&apos;s growing popularity. Brands that can&apos;t show you a COA are, in all likelihood, selling you something that is not what the label says it is.
             </p>
             <p>
-              The solution is simple: only buy from brands that publish third-party lab results. Use our <Link href="/compare" className="text-[#10B981] hover:underline">comparison database</Link> to filter by COA-verified products. Ask for lot-specific documentation before you buy. And treat any brand that is resistant to this scrutiny as your answer about their quality.
+              The solution is simple: only buy from brands that publish third-party lab results. Use our <Link href="/compare" className="text-[#10B981] hover:underline">comparison database</Link> to filter by COA-verified products. Ask for lot-specific documentation before you buy. And treat any brand that is resistant to this scrutiny as your answer about their quality. Or jump to our{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">list of shilajit brands we actually recommend</Link> — the ones that pass every check.
             </p>
           </div>
         </section>

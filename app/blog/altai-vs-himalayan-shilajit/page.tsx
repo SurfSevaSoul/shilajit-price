@@ -431,7 +431,8 @@ export default function AltaiVsHimalayanShilajit() {
               <strong className="text-[#0D1F14]">If budget is the primary constraint:</strong> Sayan Altai Resin at $29.99 for 30g ($1.00/g) is the best-value COA-verified option in either region. Their 100g bulk option at $0.70/g is the best price-per-gram for verified shilajit in our entire database.
             </p>
             <p>
-              Either origin from a verified, COA-publishing brand beats any unverified product regardless of which mountain it claims to come from. For side-by-side comparisons, visit our{" "}
+              Either origin from a verified, COA-publishing brand beats any unverified product regardless of which mountain it claims to come from. See how brands from both regions score in our{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">complete brand rankings</Link>, or dive into the{" "}
               <Link href="/blog/best-shilajit-resin-2026" className="text-[#10B981] hover:underline">best shilajit resin guide</Link>.
             </p>
           </div>

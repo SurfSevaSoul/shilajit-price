@@ -392,6 +392,7 @@ export default function BestShilajitUnder50() {
               { href: "/blog/cheap-vs-high-quality-shilajit", title: "Cheap vs High Quality Shilajit", desc: "What's actually different between a $15 and $70 shilajit product" },
               { href: "/blog/best-affordable-shilajit", title: "Best Affordable Shilajit Brands", desc: "Value without compromise — the best brands ranked by cost-per-serving" },
               { href: "/blog/shilajit-price-per-gram", title: "Shilajit Price Per Gram Comparison", desc: "Full 20+ product comparison table sorted by $/gram" },
+              { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "The top ranked shilajit brands by lab data, purity, and value" },
             ].map(({ href, title, desc }) => (
               <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">

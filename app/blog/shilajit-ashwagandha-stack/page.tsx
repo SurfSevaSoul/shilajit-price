@@ -658,6 +658,11 @@ export default function ShilajitAshwagandhaStack() {
               </Link>
             </li>
             <li>
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+                Best Shilajit Brands Ranked — Find the right shilajit for your stack →
+              </Link>
+            </li>
+            <li>
               <Link href="/compare" className="text-[#10B981] hover:underline">
                 Full Shilajit Price Comparison Table →
               </Link>

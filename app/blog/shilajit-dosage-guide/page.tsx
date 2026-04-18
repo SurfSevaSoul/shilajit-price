@@ -462,7 +462,11 @@ export default function ShilajitDosageGuide() {
             <Link href="/blog/shilajit-beginners-guide" className="text-[#10B981] hover:underline">
               beginner&apos;s guide
             </Link>{" "}
-            covers everything from sourcing to first use.
+            covers everything from sourcing to first use. Before buying, check{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+              which brands we rank highest
+            </Link>{" "}
+            to make sure you&apos;re dosing the right product.
           </p>
         </div>
 

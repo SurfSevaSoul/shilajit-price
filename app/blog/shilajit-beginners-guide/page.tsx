@@ -974,6 +974,11 @@ export default function ShilajitBeginnersGuide() {
                 label: "What Is Fulvic Acid?",
                 desc: "The science behind shilajit's primary active compound",
               },
+              {
+                href: "/blog/best-shilajit-brands-ranked",
+                label: "Best Shilajit Brands Ranked",
+                desc: "Our brand rankings by COA quality, fulvic acid %, and price",
+              },
             ].map((link) => (
               <Link
                 key={link.href}

@@ -443,6 +443,13 @@ export default function PureHimalayanShilajitReview() {
           </div>
         </section>
 
+        {/* Brand comparison link */}
+        <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-sm text-[#0D1F14] leading-relaxed">
+          Wondering how Pure Himalayan stacks up against Black Lotus, Natural Shilajit, and other top brands? Our{" "}
+          <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-semibold">independent brand rankings</Link>{" "}
+          score every major brand across COA quality, fulvic acid content, and price per gram.
+        </div>
+
         {/* Additional CTA */}
         <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
           <h3 className="text-lg font-bold text-[#10B981] mb-2">Want to Verify the COA Yourself?</h3>

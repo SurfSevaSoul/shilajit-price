@@ -608,7 +608,10 @@ export default function ShilajitHeavyMetalsSafety() {
             Both Black Lotus and Pure Himalayan have published independent COAs showing heavy metals
             within safe limits. Black Lotus at $36.99/30g offers the best price-per-gram with 85%+
             fulvic acid. Pure Himalayan at $39.99/30g offers ISO/IEC 17025-accredited testing —
-            the highest international laboratory standard.
+            the highest international laboratory standard. For a full breakdown of which brands pass our heavy metals and COA standards, see our{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+              ranked brand comparison
+            </Link>.
           </p>
           <div className="flex flex-wrap gap-3">
             <a

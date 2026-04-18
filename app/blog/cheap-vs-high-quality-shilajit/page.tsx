@@ -381,7 +381,8 @@ export default function CheapVsHighQualityShilajit() {
               Above that floor, you&apos;re paying for real quality signals: verified fulvic acid concentration, third-party testing, known sourcing, and the brand accountability that comes with a traceable product. These things cost money because they represent real costs in the supply chain.
             </p>
             <p>
-              The smartest way to shop is to use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link>, filter by COA-verified products, sort by price per gram, and focus on the sweet spot between verified quality and competitive pricing. That sweet spot is currently the $1.00–$1.50/gram tier — and Black Lotus sits squarely in the middle of it.
+              The smartest way to shop is to use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link>, filter by COA-verified products, sort by price per gram, and focus on the sweet spot between verified quality and competitive pricing. That sweet spot is currently the $1.00–$1.50/gram tier — and Black Lotus sits squarely in the middle of it. For a ranked breakdown of which brands earn their price premium, see our{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">full brand rankings by lab data and purity</Link>.
             </p>
           </div>
         </section>

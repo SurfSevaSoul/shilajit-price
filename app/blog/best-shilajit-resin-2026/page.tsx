@@ -546,7 +546,8 @@ export default function BestShilajitResin2026() {
               The shilajit resin market in 2026 is better than it was five years ago — more brands publish COAs, more products are independently tested, and consumer awareness around fulvic acid percentages has improved. But the gap between the best and the rest is still significant.
             </p>
             <p>
-              <strong className="text-[#10B981]">Black Lotus Shilajit Resin is the clear winner</strong> for anyone who wants maximum verified potency at the best possible price. 85%+ fulvic acid, a transparent full-panel COA, cold processing, Altai Mountain sourcing, free shipping, and $1.33/gram — it outperforms every competitor we tested.
+              <strong className="text-[#10B981]">Black Lotus Shilajit Resin is the clear winner</strong> for anyone who wants maximum verified potency at the best possible price. 85%+ fulvic acid, a transparent full-panel COA, cold processing, Altai Mountain sourcing, free shipping, and $1.33/gram — it outperforms every competitor we tested. See how the full resin category and other form factors compare in our{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">complete shilajit brand rankings</Link>.
             </p>
             <p>
               If you want to try capsules instead of resin, their{" "}

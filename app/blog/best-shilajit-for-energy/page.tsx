@@ -398,6 +398,7 @@ export default function BestShilajitForEnergy() {
               { href: "/blog/best-shilajit-for-men", title: "Best Shilajit for Men in 2026", desc: "Energy, testosterone, and performance — the complete men's guide" },
               { href: "/blog/best-shilajit-for-testosterone", title: "Best Shilajit for Testosterone", desc: "Clinical research + top 5 picks ranked by fulvic acid content" },
               { href: "/blog/shilajit-resin-vs-capsules", title: "Resin vs Capsules vs Powder", desc: "Which form delivers the best energy benefits?" },
+              { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "Independent brand rankings by lab data and fulvic acid content" },
             ].map(({ href, title, desc }) => (
               <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">

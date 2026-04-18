@@ -559,6 +559,10 @@ export default function BlackLotusShilajitReview() {
             </a>
           </div>
 
+          <p className="text-xs text-[#7BA899] mb-3">
+            Want to see how Black Lotus compares to Pure Himalayan, Natural Shilajit, and other top brands? See our{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-semibold">full brand rankings by lab data and purity</Link>.
+          </p>
           <a
             href={AFFILIATE_BASE}
             target="_blank"

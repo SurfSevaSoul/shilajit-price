@@ -613,6 +613,11 @@ export default function BestShilajitForWomen() {
               </Link>
             </li>
             <li>
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+                Best Shilajit Brands Ranked — See how every brand scores →
+              </Link>
+            </li>
+            <li>
               <Link href="/compare" className="text-[#10B981] hover:underline">
                 Full Shilajit Price Comparison Table →
               </Link>

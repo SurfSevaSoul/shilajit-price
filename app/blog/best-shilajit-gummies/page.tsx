@@ -809,6 +809,11 @@ export default function BestShilajitGummies() {
                 label: "Best Shilajit Resin in 2026",
                 desc: "Our top resin picks with price-per-gram analysis",
               },
+              {
+                href: "/blog/best-shilajit-brands-ranked",
+                label: "All Brands Ranked by Lab Data",
+                desc: "How all shilajit brands compare across every metric",
+              },
             ].map((link) => (
               <Link
                 key={link.href}

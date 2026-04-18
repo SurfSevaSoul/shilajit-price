@@ -400,7 +400,9 @@ export default function HowToSpotFakeShilajit() {
               No legitimate shilajit brand has anything to hide from independent testing. The ones that do hide are the ones selling you something other than what the label claims.
             </p>
             <p>
-              Black Lotus is our recommended starting point precisely because they don&apos;t hide anything. Every lot is independently tested, the COA is published, the numbers are specific, and the product passes every physical authenticity test we can apply.
+              Black Lotus is our recommended starting point precisely because they don&apos;t hide anything. Every lot is independently tested, the COA is published, the numbers are specific, and the product passes every physical authenticity test we can apply. See our{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">ranked list of verified brands</Link>{" "}
+              for a complete picture of which brands earn that trust.
             </p>
           </div>
         </section>

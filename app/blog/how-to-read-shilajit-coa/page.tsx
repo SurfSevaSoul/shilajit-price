@@ -517,6 +517,11 @@ export default function HowToReadShilajitCoa() {
                 Shilajit Heavy Metals Safety — A deeper dive into the data
               </Link>
             </li>
+            <li>
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+                Best Shilajit Brands Ranked — Which brands pass our verification standards
+              </Link>
+            </li>
           </ul>
         </div>
       </BlogPostLayout>

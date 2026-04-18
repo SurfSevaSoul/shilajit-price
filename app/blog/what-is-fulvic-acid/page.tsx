@@ -407,7 +407,9 @@ export default function WhatIsFulvicAcid() {
               But none of that matters if your product contains 20% fulvic acid in a glorified mud paste. The difference between a 30% and an 85% product isn&apos;t incremental — it&apos;s the difference between taking an active supplement and paying premium prices for essentially nothing.
             </p>
             <p>
-              Our recommendation: only buy shilajit products with a publicly available, third-party COA showing a specific fulvic acid percentage. <strong className="text-[#10B981]">Black Lotus Shilajit Resin</strong> is the only product at its price point that meets this standard with 85%+ verified content.
+              Our recommendation: only buy shilajit products with a publicly available, third-party COA showing a specific fulvic acid percentage. <strong className="text-[#10B981]">Black Lotus Shilajit Resin</strong> is the only product at its price point that meets this standard with 85%+ verified content. See exactly{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">how brands score on fulvic acid content</Link>{" "}
+              in our full ranking.
             </p>
           </div>
         </section>

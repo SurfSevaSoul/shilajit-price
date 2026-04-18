@@ -443,7 +443,8 @@ export default function WhereToBuyRealShilajit() {
               The safest approach: buy direct from a brand that publishes a third-party COA on their website before you even look at the product. This single requirement filters out the overwhelming majority of questionable products in the market.
             </p>
             <p>
-              If you want to buy on Amazon, restrict your search to brands with their own website, published COA documentation, and a price that makes sense for real quality. Use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link> as a pre-filter — we&apos;ve already done the research on 55+ products.
+              If you want to buy on Amazon, restrict your search to brands with their own website, published COA documentation, and a price that makes sense for real quality. Use our <Link href="/" className="text-[#10B981] hover:underline">comparison database</Link> as a pre-filter — we&apos;ve already done the research on 55+ products. Or go straight to{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">the best shilajit brands we&apos;ve tested and ranked</Link>.
             </p>
             <p>
               Never buy from eBay, Wish, Temu, or unknown marketplace resellers. The risk of receiving a counterfeit or harmful product is too high, and there&apos;s no documentation or accountability to fall back on.
