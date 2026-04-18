@@ -469,7 +469,7 @@ export default function ComparePage() {
                       {p.fulvicAcidPct !== undefined ? (
                         <span className="text-[#10B981] font-bold">{p.fulvicAcidPct}%</span>
                       ) : (
-                        <span className="text-[#D1EDD8]">—</span>
+                        <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-slate-100 ring-1 ring-slate-200 text-slate-500 text-[9px] font-bold">Not Disclosed</span>
                       )}
                     </td>
 

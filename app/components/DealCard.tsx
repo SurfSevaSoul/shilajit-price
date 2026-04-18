@@ -147,6 +147,9 @@ export default function DealCard({ product }: DealCardProps) {
 
   const allBadges = [
     { label: hasVerifiedLab ? "✓ COA" : "No COA", cls: hasVerifiedLab ? "bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700" : "bg-slate-100 ring-1 ring-slate-300 text-slate-500" },
+    fulvicAcidPct !== undefined
+      ? { label: `⚗️ ${fulvicAcidPct}% FA`, cls: "bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700" }
+      : { label: "FA: Not Disclosed", cls: "bg-slate-100 ring-1 ring-slate-300 text-slate-500" },
     dbpVerified && { label: "DBP ✓", cls: "bg-cyan-50 ring-1 ring-cyan-200 text-cyan-700" },
     thirdPartyTested && { label: "3rd Party", cls: "bg-purple-50 ring-1 ring-purple-200 text-purple-700" },
     heavyMetalsTested && { label: "HM Tested", cls: "bg-blue-50 ring-1 ring-blue-200 text-blue-700" },
@@ -239,9 +242,13 @@ export default function DealCard({ product }: DealCardProps) {
             <div className="mt-3 pt-3 border-t border-[#D1EDD8] space-y-2.5">
               <PurityBar score={purityScore} />
               <div className="flex flex-wrap gap-1">
-                {fulvicAcidPct !== undefined && (
+                {fulvicAcidPct !== undefined ? (
                   <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700 text-[10px] font-bold">
                     ⚗️ {fulvicAcidPct}% FA
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center px-1.5 py-0.5 rounded-full bg-slate-100 ring-1 ring-slate-300 text-slate-500 text-[10px] font-bold">
+                    FA: Not Disclosed
                   </span>
                 )}
                 {sourceLocation && (

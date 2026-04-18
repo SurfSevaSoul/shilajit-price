@@ -534,29 +534,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* ── QUIZ CTA SECTION ─────────────────────────────────────────── */}
-            <div className="my-8 bg-white rounded-2xl border-2 border-[#D1EDD8] p-6 sm:p-8 text-center shadow-sm">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#E8F5EC] border border-[#9EC9AD] text-[#4A6358] text-xs font-semibold mb-4">
-                <span className="text-base">🎯</span> Free · 60 seconds
-              </div>
-              <h2
-                className="text-2xl sm:text-3xl font-extrabold text-[#0D1F14] mb-2"
-                style={{ fontFamily: "var(--font-jakarta)" }}
-              >
-                Not sure which shilajit is right for you?
-              </h2>
-              <p className="text-sm text-[#7BA899] mb-6 max-w-md mx-auto leading-relaxed">
-                Answer 7 quick questions and we&apos;ll match you to the best brand based on your goals,
-                budget, and purity requirements.
-              </p>
-              <a
-                href="/quiz"
-                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-bold text-sm transition-all duration-200 shadow-md"
-              >
-                Take the Free Quiz →
-              </a>
-            </div>
-
             {/* ── POPULAR COMPARISONS ──────────────────────────────────────── */}
             <div className="mb-8">
               <div className="flex items-center gap-2 mb-3">

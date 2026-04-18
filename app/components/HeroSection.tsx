@@ -27,7 +27,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-32">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
         <div className="max-w-3xl mx-auto text-center">
 
           {/* Live badge */}
@@ -51,20 +51,44 @@ export default function HeroSection() {
             fake shilajit again.
           </p>
 
-          {/* CTAs */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          {/* Quiz CTA — embedded in hero below headline/subheadline */}
+          <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-5 sm:p-7 text-center max-w-lg mx-auto">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10B981]/25 border border-[#10B981]/50 text-[#10B981] text-xs font-semibold mb-4">
+              <span className="text-base">🎯</span> Free · 60 seconds
+            </div>
+            <h2
+              className="text-xl sm:text-2xl font-extrabold text-white mb-2 leading-snug"
+              style={{ fontFamily: "var(--font-jakarta)" }}
+            >
+              Not sure which shilajit is right for you?
+            </h2>
+            <p className="text-sm text-white/70 mb-5 max-w-sm mx-auto leading-relaxed">
+              Answer 7 quick questions and we&apos;ll match you to the best brand
+              based on your goals, budget, and purity requirements.
+            </p>
+            <a
+              href="/quiz"
+              className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#10B981] hover:bg-white hover:text-[#182B1F] text-white font-bold text-sm transition-all duration-200 shadow-md"
+            >
+              Take the Free Quiz →
+            </a>
+          </div>
+
+          {/* Secondary navigation links */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-5">
             <a
               href="#deals"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-semibold transition-all duration-200 shadow-md text-sm"
+              className="inline-flex items-center justify-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-colors"
             >
-              Compare All Prices
+              Compare all prices
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </a>
+            <span className="hidden sm:block text-white/30 self-center">·</span>
             <a
               href="#top-picks"
-              className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-[#182B1F] font-semibold transition-all duration-200 text-sm"
+              className="inline-flex items-center justify-center gap-1.5 text-white/60 hover:text-white text-sm font-medium transition-colors"
             >
               View Editor&apos;s Picks ↓
             </a>
