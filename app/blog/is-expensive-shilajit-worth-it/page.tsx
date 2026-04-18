@@ -331,7 +331,7 @@ export default function IsExpensiveShilajitWorthIt() {
               The data tells a clear story. Quality improves meaningfully from $20 to approximately $40 — you get better sourcing documentation, higher verified fulvic acid content, and third-party COA verification. Above $40–$50, the correlation between price and quality largely breaks down. Products charging $60–$100 are not delivering 2–3× the active compound or documentation quality of a well-chosen $40 product.
             </p>
             <p>
-              Black Lotus at $39.99 represents the inflection point — where premium quality documentation meets mid-range pricing. They achieve S-tier specifications (85%+ FA, ISO COA, full heavy metals panel, high-altitude Himalayan source) at a price where most competitors deliver A-tier results at best.
+              Black Lotus at $39.99 represents the inflection point — where premium quality documentation meets mid-range pricing. They achieve S-tier specifications (85%+ FA, ISO COA, full heavy metals panel, high-altitude Altai Mountain source) at a price where most competitors deliver A-tier results at best.
             </p>
             <p>
               The answer to &quot;is expensive shilajit worth it&quot; is: <strong className="text-[#0D1F14]">yes up to approximately $45–$50/30g, no above it.</strong> There are legitimate quality differences between $20 and $40 products. There are no consistent quality differences between $40 and $80 products. The premium above $50 is almost entirely brand equity.

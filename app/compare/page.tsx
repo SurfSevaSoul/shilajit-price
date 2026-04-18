@@ -1,8 +1,36 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import Link from "next/link";
 import { PRODUCTS, Category, CATEGORIES, Tier, TIER_COLORS, Origin } from "../data/products";
 import Footer from "../components/Footer";
+
+// ── Brand selector data ────────────────────────────────────────────────────
+const SELECTOR_BRANDS = [
+  { slug: "black-lotus", name: "Black Lotus Shilajit", tier: "S", fa: "85%+", ppg: "$1.23/g", origin: "Altai Mountains, Siberia", coa: "Full-panel 3rd-party", gmp: true, ship: true },
+  { slug: "pure-himalayan", name: "Pure Himalayan Shilajit", tier: "S", fa: "60%", ppg: "$1.33/g", origin: "Himalayas & Altai", coa: "ISO/IEC 17025 Accredited", gmp: true, ship: true },
+  { slug: "natural-shilajit", name: "Natural Shilajit", tier: "S", fa: "~70%", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "ICP-MS · LC-MS · FTIR", gmp: true, ship: false },
+  { slug: "sayan", name: "Sayan Health", tier: "A", fa: "~32%", ppg: "$1.33/g", origin: "Altai Mountains, Siberia", coa: "ISO-accredited Lab", gmp: false, ship: true },
+  { slug: "primavie", name: "PrimaVie®", tier: "A", fa: "50% (std.)", ppg: "$1.50/g", origin: "Himalayas (India)", coa: "BSCG + ISO/IEC", gmp: true, ship: true },
+];
+
+const VALID_MATCHUPS = new Set([
+  "black-lotus-vs-pure-himalayan",
+  "black-lotus-vs-natural-shilajit",
+  "natural-shilajit-vs-pure-himalayan",
+  "black-lotus-vs-sayan",
+  "natural-shilajit-vs-sayan",
+  "black-lotus-vs-primavie",
+  "pure-himalayan-vs-primavie",
+]);
+
+function getMatchupSlug(a: string, b: string): string | null {
+  const fwd = `${a}-vs-${b}`;
+  const rev = `${b}-vs-${a}`;
+  if (VALID_MATCHUPS.has(fwd)) return fwd;
+  if (VALID_MATCHUPS.has(rev)) return rev;
+  return null;
+}
 
 type SortKey =
   | "vendor"
@@ -73,6 +101,14 @@ export default function ComparePage() {
   const [coaOnly, setCoaOnly] = useState(false);
   const [thirdPartyOnly, setThirdPartyOnly] = useState(false);
   const [search, setSearch] = useState("");
+  const [selectorA, setSelectorA] = useState("");
+  const [selectorB, setSelectorB] = useState("");
+
+  const selectorBrandA = SELECTOR_BRANDS.find((b) => b.slug === selectorA) ?? null;
+  const selectorBrandB = SELECTOR_BRANDS.find((b) => b.slug === selectorB) ?? null;
+  const matchupSlug = selectorA && selectorB && selectorA !== selectorB
+    ? getMatchupSlug(selectorA, selectorB)
+    : null;
 
   const handleSort = (key: SortKey) => {
     if (sortKey === key) {
@@ -227,6 +263,89 @@ export default function ComparePage() {
               Take our quiz for a personalized recommendation →
             </a>
           </span>
+        </div>
+
+        {/* Brand Selector */}
+        <div className="mb-6 bg-white rounded-2xl border-2 border-[#D1EDD8] p-5">
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="font-black text-[#0D1F14] text-sm">Quick brand comparison</h2>
+            {(selectorA || selectorB) && (
+              <button
+                onClick={() => { setSelectorA(""); setSelectorB(""); }}
+                className="text-xs text-[#4A6358] hover:text-[#0D1F14] underline underline-offset-2 transition-colors"
+              >
+                Clear
+              </button>
+            )}
+          </div>
+          <div className="grid sm:grid-cols-2 gap-3 mb-4">
+            {/* Brand A */}
+            <div>
+              <label className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest block mb-1.5">Brand A</label>
+              <select
+                value={selectorA}
+                onChange={(e) => setSelectorA(e.target.value)}
+                className="w-full bg-[#F5F9F6] border-2 border-[#D1EDD8] text-[#0D1F14] text-sm rounded-xl px-3 py-2 focus:outline-none focus:border-[#10B981] transition-colors"
+              >
+                <option value="">Select a brand…</option>
+                {SELECTOR_BRANDS.filter((b) => b.slug !== selectorB).map((b) => (
+                  <option key={b.slug} value={b.slug}>{b.name}</option>
+                ))}
+              </select>
+            </div>
+            {/* Brand B */}
+            <div>
+              <label className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest block mb-1.5">Brand B</label>
+              <select
+                value={selectorB}
+                onChange={(e) => setSelectorB(e.target.value)}
+                className="w-full bg-[#F5F9F6] border-2 border-[#D1EDD8] text-[#0D1F14] text-sm rounded-xl px-3 py-2 focus:outline-none focus:border-[#10B981] transition-colors"
+              >
+                <option value="">Select a brand…</option>
+                {SELECTOR_BRANDS.filter((b) => b.slug !== selectorA).map((b) => (
+                  <option key={b.slug} value={b.slug}>{b.name}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {/* Comparison card — shown when both selected */}
+          {selectorBrandA && selectorBrandB && (
+            <div>
+              <div className="grid sm:grid-cols-2 gap-3 mb-3">
+                {[selectorBrandA, selectorBrandB].map((brand) => (
+                  <div key={brand.slug} className="bg-[#F5F9F6] rounded-xl border border-[#D1EDD8] p-3 space-y-1.5">
+                    <div className="flex items-center gap-2">
+                      <span className={`w-6 h-6 rounded text-[10px] font-black flex items-center justify-center ${brand.tier === "S" ? "bg-amber-400 text-amber-900" : "bg-emerald-500 text-white"}`}>
+                        {brand.tier}
+                      </span>
+                      <span className="font-bold text-[#0D1F14] text-xs">{brand.name}</span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-[11px]">
+                      <div><span className="text-[#7BA899]">Fulvic Acid</span> <strong className="text-[#0D1F14]">{brand.fa}</strong></div>
+                      <div><span className="text-[#7BA899]">Price/gram</span> <strong className="text-[#10B981]">{brand.ppg}</strong></div>
+                      <div><span className="text-[#7BA899]">COA</span> <strong className="text-[#0D1F14]">{brand.coa}</strong></div>
+                      <div><span className="text-[#7BA899]">Origin</span> <span className="text-[#4A6358]">{brand.origin}</span></div>
+                      <div><span className="text-[#7BA899]">GMP</span> <span className={brand.gmp ? "text-[#10B981] font-bold" : "text-red-500"}>{brand.gmp ? "✓" : "✗"}</span></div>
+                      <div><span className="text-[#7BA899]">Free Ship</span> <span className={brand.ship ? "text-[#10B981] font-bold" : "text-red-500"}>{brand.ship ? "✓" : "✗"}</span></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              {matchupSlug ? (
+                <Link
+                  href={`/compare/${matchupSlug}`}
+                  className="block w-full text-center text-sm font-bold py-2.5 rounded-xl bg-[#182B1F] text-white hover:bg-[#10B981] transition-colors"
+                >
+                  View Full Comparison: {selectorBrandA.name} vs {selectorBrandB.name} →
+                </Link>
+              ) : (
+                <div className="text-center text-xs text-[#7BA899] py-2">
+                  Full detailed comparison not available for this pairing yet.
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         {/* Results count */}
@@ -442,6 +561,33 @@ export default function ComparePage() {
           <div>✓ = confirmed   —  = not confirmed / unavailable</div>
           <div>Purity Score = 1–10 based on COA, testing, fulvic acid %, and sourcing transparency</div>
           <div>Prices may vary — click "Check Price" for current listing</div>
+        </div>
+
+        {/* Brand Comparisons section */}
+        <div className="mt-8 bg-white rounded-2xl border-2 border-[#D1EDD8] p-5">
+          <h2 className="font-black text-[#0D1F14] text-base mb-1">Brand comparisons</h2>
+          <p className="text-xs text-[#7BA899] mb-4">Deep-dive head-to-head analysis with verdict, side-by-side tables, and FAQs.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            {[
+              { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan" },
+              { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit" },
+              { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan" },
+              { slug: "black-lotus-vs-sayan", label: "Black Lotus vs Sayan" },
+              { slug: "natural-shilajit-vs-sayan", label: "Natural Shilajit vs Sayan" },
+              { slug: "black-lotus-vs-primavie", label: "Black Lotus vs PrimaVie®" },
+              { slug: "pure-himalayan-vs-primavie", label: "Pure Himalayan vs PrimaVie®" },
+            ].map(({ slug, label }) => (
+              <Link
+                key={slug}
+                href={`/compare/${slug}`}
+                className="flex items-center gap-2 px-3 py-2.5 rounded-xl border border-[#D1EDD8] bg-[#F5F9F6] hover:border-[#10B981] hover:bg-[#F0FAF4] transition-colors text-xs font-semibold text-[#0D1F14]"
+              >
+                <span className="text-[#10B981] shrink-0">⚡</span>
+                {label}
+                <span className="ml-auto text-[#9EC9AD]">→</span>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Methodology note */}

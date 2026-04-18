@@ -73,7 +73,7 @@ const faqItems: FaqItem[] = [
     name: "What is the best shilajit resin in 2026?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus Shilajit Resin is our top pick for 2026. It offers 85%+ fulvic acid content verified by a third-party COA, is cold-processed from Himalayan sources, and costs $1.33 per gram with free shipping — the best overall value among tested brands.",
+      text: "Black Lotus Shilajit Resin is our top pick for 2026. It offers 85%+ fulvic acid content verified by a third-party COA, is cold-processed from Altai Mountain sources in Siberia, and costs $1.33 per gram with free shipping — the best overall value among tested brands.",
     },
   },
   {
@@ -465,10 +465,10 @@ export default function BestShilajitResin2026() {
             </div>
             <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
               <p>
-                Black Lotus earns the top spot on every metric that matters. Their resin is sourced from high-altitude Himalayan deposits, cold-processed to preserve bioactive compounds, and independently tested with a full-panel COA showing <strong className="text-[#10B981]">85%+ fulvic acid</strong>, clean heavy metals, and zero microbial issues.
+                Black Lotus earns the top spot on every metric that matters. Their resin is sourced from high-altitude Altai Mountain deposits in Siberia, cold-processed to preserve bioactive compounds, and independently tested with a full-panel COA showing <strong className="text-[#10B981]">85%+ fulvic acid</strong>, clean heavy metals, and zero microbial issues.
               </p>
               <p>
-                At $39.99 for 30g, the price-per-gram works out to <strong className="text-[#0D1F14]">$1.33/gram</strong> — the lowest of any COA-verified Himalayan resin we tested. Free shipping makes this an even stronger value proposition.
+                At $39.99 for 30g, the price-per-gram works out to <strong className="text-[#0D1F14]">$1.33/gram</strong> — the lowest of any COA-verified Altai Mountain resin we tested. Free shipping makes this an even stronger value proposition.
               </p>
               <p>
                 The texture and solubility are excellent — it dissolves cleanly in warm water with no gritty residue, which is a good indicator of proper cold processing. The taste is earthy and slightly bitter, as a quality resin should be.
@@ -546,7 +546,7 @@ export default function BestShilajitResin2026() {
               The shilajit resin market in 2026 is better than it was five years ago — more brands publish COAs, more products are independently tested, and consumer awareness around fulvic acid percentages has improved. But the gap between the best and the rest is still significant.
             </p>
             <p>
-              <strong className="text-[#10B981]">Black Lotus Shilajit Resin is the clear winner</strong> for anyone who wants maximum verified potency at the best possible price. 85%+ fulvic acid, a transparent full-panel COA, cold processing, Himalayan sourcing, free shipping, and $1.33/gram — it outperforms every competitor we tested.
+              <strong className="text-[#10B981]">Black Lotus Shilajit Resin is the clear winner</strong> for anyone who wants maximum verified potency at the best possible price. 85%+ fulvic acid, a transparent full-panel COA, cold processing, Altai Mountain sourcing, free shipping, and $1.33/gram — it outperforms every competitor we tested.
             </p>
             <p>
               If you want to try capsules instead of resin, their{" "}

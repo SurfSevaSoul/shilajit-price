@@ -557,6 +557,34 @@ export default function Home() {
               </a>
             </div>
 
+            {/* ── POPULAR COMPARISONS ──────────────────────────────────────── */}
+            <div className="mb-8">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest">Popular Comparisons</span>
+                <div className="flex-1 h-px bg-[#D1EDD8]" />
+                <Link href="/compare" className="text-[10px] text-[#10B981] font-semibold hover:underline shrink-0">View all →</Link>
+              </div>
+              <div className="grid sm:grid-cols-3 gap-3">
+                {[
+                  { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan", badge: "Most Popular" },
+                  { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit", badge: "Altai Showdown" },
+                  { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan", badge: "S-Tier Battle" },
+                ].map(({ slug, label, badge }) => (
+                  <Link
+                    key={slug}
+                    href={`/compare/${slug}`}
+                    className="block bg-white rounded-2xl border-2 border-[#D1EDD8] p-4 hover:border-[#10B981] hover:shadow-sm transition-all group"
+                  >
+                    <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1.5">{badge}</div>
+                    <div className="text-xs font-bold text-[#0D1F14] leading-snug mb-2">{label}</div>
+                    <div className="text-[10px] text-[#7BA899] group-hover:text-[#4A6358] transition-colors">
+                      Full comparison with verdict, table & FAQs →
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+
             {/* ── 5. ALL DEALS GRID ────────────────────────────────────────── */}
             <div className="flex items-center gap-2 mb-5">
               <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest">All Products</span>

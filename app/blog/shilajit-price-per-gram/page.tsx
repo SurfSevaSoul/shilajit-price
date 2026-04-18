@@ -103,7 +103,7 @@ const faqItems: FaqItem[] = [
 
 // 20+ product comparison data
 const PRODUCTS = [
-  { name: "Black Lotus Resin", tier: "S", tierColor: "bg-amber-400 text-amber-900", priceGram: 1.33, fulvic: "85%+", coa: true, tp: true, source: "Himalaya 14k+ ft", affiliate: AFFILIATE_RESIN },
+  { name: "Black Lotus Resin", tier: "S", tierColor: "bg-amber-400 text-amber-900", priceGram: 1.33, fulvic: "85%+", coa: true, tp: true, source: "Altai Mountains, Siberia", affiliate: AFFILIATE_RESIN },
   { name: "Natural Shilajit RS Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.08, fulvic: "~70%", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20" },
   { name: "Essencraft Himalayan Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.43, fulvic: "75%+", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20" },
   { name: "Sayan Shilajit 30g", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 0.90, fulvic: "~60%", coa: true, tp: false, source: "Siberian Altai", affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20" },

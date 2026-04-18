@@ -70,7 +70,7 @@ const HOW_WE_CALCULATE = [
   {
     title: "Purity Score (1–10)",
     formula: "Composite score from: COA data + fulvic acid % + heavy metals + sourcing",
-    example: "Black Lotus: 10/10 — Full COA, 85% FA, all metals pass, Himalayan 16,000ft",
+    example: "Black Lotus: 10/10 — Full COA, 85% FA, all metals pass, Altai Mountains 16,000ft",
     note: "This is an editorial score based on publicly verifiable data. It is not a measure of the product's health effects. We are evaluating transparency and documented quality, not making medical claims.",
   },
 ];

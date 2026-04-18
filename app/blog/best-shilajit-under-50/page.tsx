@@ -90,7 +90,7 @@ const faqItems: FaqItem[] = [
     name: "Is Black Lotus Shilajit actually under $50?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Black Lotus Shilajit Resin (30g) is priced at $36.99–$39.99 with free shipping, making it well under $50 and one of the best values at any price point. Their capsules (30 count) are $34.99 with free shipping. Both products include the full COA, 85%+ verified fulvic acid, and Himalayan sourcing. At $1.23–$1.33 per gram, they're competitive with mid-tier alternatives that have significantly lower documented purity.",
+      text: "Yes. Black Lotus Shilajit Resin (30g) is priced at $36.99–$39.99 with free shipping, making it well under $50 and one of the best values at any price point. Their capsules (30 count) are $34.99 with free shipping. Both products include the full COA, 85%+ verified fulvic acid, and Altai Mountain sourcing. At $1.23–$1.33 per gram, they're competitive with mid-tier alternatives that have significantly lower documented purity.",
     },
   },
   {
