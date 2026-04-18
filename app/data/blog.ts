@@ -1,3 +1,6 @@
+import fs from "fs";
+import path from "path";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -10,7 +13,10 @@ export interface BlogPost {
   category: string;
 }
 
-export const BLOG_POSTS: BlogPost[] = [
+// ─── Hardcoded registry for existing posts ────────────────────────────────────
+// New posts don't need to be added here — just drop a _meta.json file in the
+// post's directory (app/blog/<slug>/_meta.json) and it will auto-appear.
+const REGISTERED_POSTS: BlogPost[] = [
   {
     slug: "best-shilajit-resin-2026",
     title: "Best Shilajit Resin in 2026 — Prices Compared",
@@ -326,3 +332,47 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Buying Guide",
   },
 ];
+
+// ─── Auto-discovery via _meta.json ────────────────────────────────────────────
+// Scans app/blog/ for any directory that contains a _meta.json file and is NOT
+// already in REGISTERED_POSTS. Discovered posts are merged in and sorted by
+// publishedAt descending. Adding a new blog post only requires:
+//   1. Creating app/blog/<slug>/page.tsx
+//   2. Creating app/blog/<slug>/_meta.json  ← that's it
+function discoverDynamicPosts(): BlogPost[] {
+  const blogDir = path.join(process.cwd(), "app", "blog");
+  const registeredSlugs = new Set(REGISTERED_POSTS.map((p) => p.slug));
+  const discovered: BlogPost[] = [];
+
+  let entries: fs.Dirent[];
+  try {
+    entries = fs.readdirSync(blogDir, { withFileTypes: true });
+  } catch {
+    return [];
+  }
+
+  for (const entry of entries) {
+    if (!entry.isDirectory()) continue;
+    const slug = entry.name;
+    if (registeredSlugs.has(slug)) continue; // already in registry
+
+    const metaPath = path.join(blogDir, slug, "_meta.json");
+    if (!fs.existsSync(metaPath)) continue;
+
+    try {
+      const raw = fs.readFileSync(metaPath, "utf-8");
+      const meta = JSON.parse(raw) as BlogPost;
+      discovered.push({ ...meta, slug }); // slug from directory name is authoritative
+    } catch {
+      console.warn(`[blog] Failed to parse _meta.json for slug: ${slug}`);
+    }
+  }
+
+  return discovered;
+}
+
+// Merge registered + discovered, sort newest-first
+export const BLOG_POSTS: BlogPost[] = [
+  ...REGISTERED_POSTS,
+  ...discoverDynamicPosts(),
+].sort((a, b) => (a.publishedAt < b.publishedAt ? 1 : -1));
