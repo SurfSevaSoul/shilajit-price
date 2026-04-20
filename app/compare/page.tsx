@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { PRODUCTS, Category, CATEGORIES, Tier, TIER_COLORS, Origin } from "../data/products";
 import Footer from "../components/Footer";
 
@@ -406,12 +407,28 @@ export default function ComparePage() {
                   >
                     {/* Brand + product */}
                     <td className="px-3 py-2.5 min-w-[200px]">
-                      <div className="flex items-start gap-1.5">
-                        {p.featured && (
-                          <span className="shrink-0 mt-0.5 w-1.5 h-1.5 rounded-full bg-[#10B981]" title="Featured" />
+                      <div className="flex items-center gap-2">
+                        {/* Product image or placeholder */}
+                        {p.imageUrl ? (
+                          <div className="shrink-0 w-10 h-10 rounded-lg border border-[#D1EDD8] bg-[#F8FCF9] overflow-hidden flex items-center justify-center">
+                            <Image
+                              src={p.imageUrl}
+                              alt={`${p.vendor} ${p.productName}`}
+                              width={40}
+                              height={40}
+                              className="object-contain w-full h-full"
+                            />
+                          </div>
+                        ) : (
+                          <div className="shrink-0 w-10 h-10 rounded-lg border border-[#D1EDD8] bg-[#F0FAF4] flex items-center justify-center text-sm font-bold text-[#7BA899]">
+                            {p.vendor.charAt(0)}
+                          </div>
                         )}
-                        <div>
-                          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider">{p.vendor}</div>
+                        <div className="min-w-0">
+                          {p.featured && (
+                            <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#10B981] mr-1 mb-0.5 align-middle" title="Featured" />
+                          )}
+                          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider truncate">{p.vendor}</div>
                           <div className="text-xs text-[#0D1F14] leading-snug">{p.productName}</div>
                         </div>
                       </div>
