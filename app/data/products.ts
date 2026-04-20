@@ -382,6 +382,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: AFFILIATE_LINKS.tablets,
     featured: true,
     description: "200mg per tablet, 60 count. 80% fulvic acid, 10% humic acid. 85 ionic trace minerals. Non-GMO, Vegan, Gluten Free.",
+    imageUrl: "/images/products/black-lotus-tablets.png",
   },
   {
     id: "bl-tablets-120ct",
@@ -416,6 +417,7 @@ export const PRODUCTS: Product[] = [
     featured: true,
     badge: "Best Value",
     description: "200mg per tablet, 120 count. 80% fulvic acid, 10% humic acid. 85 ionic trace minerals. Non-GMO, Vegan, Gluten Free.",
+    imageUrl: "/images/products/black-lotus-tablets.png",
   },
 
   // ── PURE HIMALAYAN (Featured / S-Tier) ────────────────────────────────────
