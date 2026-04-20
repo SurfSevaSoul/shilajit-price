@@ -52,7 +52,7 @@ const WHAT_IT_MEANS = [
   {
     term: "Fulvic Acid",
     definition:
-      "The primary active compound in shilajit responsible for its purported benefits. High-quality shilajit should have fulvic acid content verifiable by lab testing. Black Lotus publishes 150mg per serving (~85% fulvic acid).",
+      "The primary active compound in shilajit responsible for its purported benefits. High-quality shilajit should have fulvic acid content verifiable by lab testing. Black Lotus resin is tested by IAS Laboratories and delivers 161mg fulvic acid per serving (batch #93–94).",
   },
   {
     term: "Humic Acid",
@@ -158,12 +158,16 @@ export default function LabDataPage() {
               </div>
               <div className="space-y-2 mb-4 text-sm">
                 <div className="flex justify-between">
-                  <span className="text-[#5d8c6e]">Fulvic Acid</span>
-                  <span className="text-[#e8f4ec] font-semibold">150mg/serving (~85%)</span>
+                  <span className="text-[#5d8c6e]">Fulvic Acid (Resin)</span>
+                  <span className="text-[#e8f4ec] font-semibold">161mg/serving</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-[#5d8c6e]">Humic Acid</span>
-                  <span className="text-[#e8f4ec] font-semibold">20mg/serving</span>
+                  <span className="text-[#5d8c6e]">Humic Acid (Resin)</span>
+                  <span className="text-[#e8f4ec] font-semibold">22mg/serving</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[#5d8c6e]">Fulvic Acid (Capsules)</span>
+                  <span className="text-[#e8f4ec] font-semibold">445.80mg/serving</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[#5d8c6e]">Trace Minerals</span>
@@ -171,13 +175,24 @@ export default function LabDataPage() {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[#5d8c6e]">Testing Lab</span>
-                  <span className="text-[#e8f4ec] font-semibold">3rd Party US Lab</span>
+                  <span className="text-[#e8f4ec] font-semibold">IAS Laboratories, Phoenix, AZ</span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-[#5d8c6e]">Testing Frequency</span>
+                  <span className="text-emerald-400 font-bold">Every Batch ✓</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[#5d8c6e]">Heavy Metals</span>
                   <span className="text-emerald-400 font-bold">All Pass ✓</span>
                 </div>
+                <div className="flex justify-between">
+                  <span className="text-[#5d8c6e]">Microbiology</span>
+                  <span className="text-emerald-400 font-bold">All Pass ✓</span>
+                </div>
               </div>
+              <p className="text-[10px] text-[#5d8c6e] mb-3 leading-relaxed">
+                Values from batches #93–94 (resin/tablets) and #94 (capsules). Minor variation between batches is normal for a raw natural product.
+              </p>
               <a
                 href="https://blacklotusshilajit.com/pages/lab-analysis"
                 target="_blank"

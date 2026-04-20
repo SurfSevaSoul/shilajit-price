@@ -36,65 +36,173 @@ export interface LabEntry {
 export const LAB_DATA: Record<string, LabEntry> = {
 
   // ── BLACK LOTUS (source: blacklotusshilajit.com/pages/lab-analysis) ──────
+  // Tested every batch by IAS Laboratories, Phoenix, AZ. Values reflect
+  // most recent batches (#93-94 for resin/tablets, #94 for capsules).
+  // Minor variation between batches is normal for a raw natural product.
   "bl-resin": {
     productId: "bl-resin",
     coaStatus: "verified",
     coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
-    testingLab: "3rd Party US Laboratory",
-    fulvicAcidMgPerServing: 150,
-    humicAcidMgPerServing: 20,
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
     traceMinerals: "85 ionic trace minerals",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Lab analysis published on official brand website",
-      "150mg fulvic acid per 175mg serving (~85% fulvic acid content)",
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Batch #93-94: 161mg fulvic acid, 22mg humic acid per serving",
+      "Heavy metals and microbiology: all PASS",
     ],
   },
   "bl-capsules": {
     productId: "bl-capsules",
     coaStatus: "verified",
     coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
-    testingLab: "3rd Party US Laboratory",
-    fulvicAcidMgPerServing: 150,
-    humicAcidMgPerServing: 20,
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 446,
+    humicAcidMgPerServing: 64,
     traceMinerals: "85 ionic trace minerals",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Same resin formulation as Black Lotus Resin; COA on official website"],
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Batch #94: 445.80mg fulvic acid, 64.44mg humic acid per 600mg serving",
+      "Heavy metals and microbiology: all PASS",
+    ],
+  },
+  "bl-tablets-60ct": {
+    productId: "bl-tablets-60ct",
+    coaStatus: "verified",
+    coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 146,
+    humicAcidMgPerServing: 16,
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Batch #93-94: 146mg fulvic acid, 16mg humic acid per 200mg tablet",
+      "Heavy metals and microbiology: all PASS",
+    ],
+  },
+  "bl-tablets-120ct": {
+    productId: "bl-tablets-120ct",
+    coaStatus: "verified",
+    coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 146,
+    humicAcidMgPerServing: 16,
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Batch #93-94: 146mg fulvic acid, 16mg humic acid per 200mg tablet",
+      "Heavy metals and microbiology: all PASS",
+    ],
   },
   "bl-gummies": {
     productId: "bl-gummies",
     coaStatus: "verified",
     coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
-    testingLab: "3rd Party US Laboratory",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Gummy formulation; see COA page for full panel on resin extract used"],
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Heavy metals and microbiology: all PASS",
+    ],
+  },
+  "bl-gummies-60ct": {
+    productId: "bl-gummies-60ct",
+    coaStatus: "verified",
+    coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Heavy metals and microbiology: all PASS",
+    ],
   },
   "bl-tincture": {
     productId: "bl-tincture",
     coaStatus: "verified",
     coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
-    testingLab: "3rd Party US Laboratory",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Liquid tincture; resin extract COA available on official website"],
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "161mg fulvic acid, 22mg humic acid per serving",
+      "Heavy metals and microbiology: all PASS",
+    ],
+  },
+  "bl-tincture-300ml": {
+    productId: "bl-tincture-300ml",
+    coaStatus: "verified",
+    coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "161mg fulvic acid, 22mg humic acid per serving",
+      "Heavy metals and microbiology: all PASS",
+    ],
   },
   "bl-honey": {
     productId: "bl-honey",
     coaStatus: "verified",
     coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
-    testingLab: "3rd Party US Laboratory",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Honey blend; shilajit extract COA on official website"],
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "161mg fulvic acid, 22mg humic acid per serving",
+      "Heavy metals and microbiology: all PASS",
+    ],
+  },
+  "bl-honey-150ml": {
+    productId: "bl-honey-150ml",
+    coaStatus: "verified",
+    coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "161mg fulvic acid, 22mg humic acid per serving",
+      "Heavy metals and microbiology: all PASS",
+    ],
+  },
+  "bl-honey-300ml": {
+    productId: "bl-honey-300ml",
+    coaStatus: "verified",
+    coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "161mg fulvic acid, 22mg humic acid per serving",
+      "Heavy metals and microbiology: all PASS",
+    ],
   },
   "bl-bundle": {
     productId: "bl-bundle",
     coaStatus: "verified",
     coaUrl: "https://blacklotusshilajit.com/pages/lab-analysis",
-    testingLab: "3rd Party US Laboratory",
-    fulvicAcidMgPerServing: 150,
-    humicAcidMgPerServing: 20,
+    testingLab: "IAS Laboratories, Phoenix, AZ",
+    fulvicAcidMgPerServing: 161,
+    humicAcidMgPerServing: 22,
     traceMinerals: "85 ionic trace minerals",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Bundle of resin + capsules; both share the same COA"],
+    notes: [
+      "Tested every batch by IAS Laboratories, Phoenix, AZ",
+      "Bundle of resin + capsules; both tested independently",
+      "Heavy metals and microbiology: all PASS",
+    ],
   },
 
   // ── PURE HIMALAYAN (source: purehimalayanshilajit.com) ────────────────────
@@ -236,4 +344,4 @@ export function getLabEntry(productId: string): LabEntry {
 }
 
 export const LAB_DISCLAIMER =
-  "Lab data sourced directly from brand's official COA pages. ShilajitPrice.com does not independently test products. Always verify current lab reports on the brand's website before purchasing.";
+  "Lab data sourced directly from brands' official COA pages. ShilajitPrice.com does not independently test products. Black Lotus products are third-party tested by IAS Laboratories (Phoenix, AZ) every single batch — all recent batches pass heavy metals, microbiology, and physical properties testing. Results may vary slightly between batches, which is normal for a raw natural product. Always verify current lab reports on the brand's official website before purchasing.";
