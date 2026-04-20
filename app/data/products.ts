@@ -155,8 +155,9 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: AFFILIATE_LINKS.capsules,
     featured: true,
     badge: "Top Pick",
-    description: "500mg per capsule, 60 count. Full-spectrum resin powder with 85%+ fulvic acid.",
+    description: "600mg per capsule, 60 count. 100% raw shilajit — no binders, fillers, or preservatives. 85+ ionic trace minerals, fulvic & humic acid. Non-GMO, Vegan, Gluten Free. Third-party tested.",
     amazonRating: 4.9,
+    imageUrl: "/images/products/black-lotus-capsules-extra-strength.png",
   },
   {
     id: "bl-gummies",
