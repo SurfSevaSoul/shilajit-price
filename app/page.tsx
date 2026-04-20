@@ -493,22 +493,6 @@ export default function Home() {
         <section id="deals" className="py-12 bg-[#E8F5EC]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-            {/* Section heading */}
-            <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
-              <div>
-                <h2 className="text-3xl font-extrabold text-[#0D1F14] mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>Shilajit Price Comparison</h2>
-                <p className="text-sm text-[#7BA899]">
-                  {PRODUCTS.length}+ products ranked by tier, purity &amp; value. Updated weekly.
-                </p>
-              </div>
-              <a
-                href="/compare"
-                className="text-xs text-[#182B1F] hover:text-white border-2 border-[#182B1F] hover:bg-[#182B1F] px-4 py-1.5 rounded-full font-semibold transition-colors whitespace-nowrap"
-              >
-                View Full Table →
-              </a>
-            </div>
-
             {/* ── 3. CATEGORY FILTER ──────────────────────────────────────── */}
             <div className="mb-8">
               <CategoryFilter active={activeCategory} onChange={setActiveCategory} counts={categoryCounts} />
@@ -521,15 +505,14 @@ export default function Home() {
                 <div className="flex-1 h-px bg-[#D1EDD8]" />
                 <span className="text-[10px] text-[#7BA899]">Independent editorial rankings</span>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-                {editorPicks.map((p, i) => (
-                  <div key={p.id} className={i >= 3 ? "hidden md:block" : undefined}>
-                    <EditorPickCard
-                      product={p}
-                      label={editorPickMeta[i]?.label ?? "Top Pick"}
-                      accent={editorPickMeta[i]?.accent ?? "emerald"}
-                    />
-                  </div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                {editorPicks.slice(0, 4).map((p, i) => (
+                  <EditorPickCard
+                    key={p.id}
+                    product={p}
+                    label={editorPickMeta[i]?.label ?? "Top Pick"}
+                    accent={editorPickMeta[i]?.accent ?? "emerald"}
+                  />
                 ))}
               </div>
             </div>
@@ -560,6 +543,22 @@ export default function Home() {
                   </Link>
                 ))}
               </div>
+            </div>
+
+            {/* Section heading */}
+            <div className="mb-6 flex items-end justify-between gap-4 flex-wrap">
+              <div>
+                <h2 className="text-3xl font-extrabold text-[#0D1F14] mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>Shilajit Price Comparison</h2>
+                <p className="text-sm text-[#7BA899]">
+                  {PRODUCTS.length}+ products ranked by tier, purity &amp; value. Updated weekly.
+                </p>
+              </div>
+              <a
+                href="/compare"
+                className="text-xs text-[#182B1F] hover:text-white border-2 border-[#182B1F] hover:bg-[#182B1F] px-4 py-1.5 rounded-full font-semibold transition-colors whitespace-nowrap"
+              >
+                View Full Table →
+              </a>
             </div>
 
             {/* ── 5. ALL DEALS GRID ────────────────────────────────────────── */}
