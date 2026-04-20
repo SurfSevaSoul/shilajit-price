@@ -179,34 +179,40 @@ export default function DealCard({ product }: DealCardProps) {
           </div>
         )}
 
+        {/* Product image / placeholder — always shown, centered at top of card */}
+        <div className="flex justify-center items-center p-2">
+          {imageUrl ? (
+            <div className="w-[120px] h-[120px] rounded-xl border border-[#D1EDD8] bg-[#F8FCF9] overflow-hidden flex items-center justify-center">
+              <Image
+                src={imageUrl}
+                alt={`${vendor} ${productName}`}
+                width={120}
+                height={120}
+                quality={90}
+                sizes="120px"
+                className="object-contain w-full h-full"
+              />
+            </div>
+          ) : (
+            <div className="w-[120px] h-[120px] rounded-xl bg-[#182B1F] flex items-center justify-center">
+              <span className="text-4xl font-extrabold text-[#10B981]">{vendor.charAt(0)}</span>
+            </div>
+          )}
+        </div>
+
         <div className="p-4 flex flex-col gap-0 flex-1">
-          {/* Row 1: Product image (if any) + Tier badge + Vendor + Product name */}
+          {/* Row 1: Tier badge + Vendor + Product name */}
           <div className="flex items-start gap-2.5 mb-3">
-            {/* Product image or placeholder */}
-            {imageUrl ? (
-              <div className="shrink-0 w-[80px] h-[80px] rounded-xl border border-[#D1EDD8] bg-[#F8FCF9] overflow-hidden flex items-center justify-center">
-                <Image
-                  src={imageUrl}
-                  alt={`${vendor} ${productName}`}
-                  width={80}
-                  height={80}
-                  className="object-contain w-full h-full"
-                />
-              </div>
-            ) : null}
+            <div
+              className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-extrabold ${TIER_PILL[tier]}`}
+              title={TIER_DESCRIPTIONS[tier]}
+            >
+              {tier}
+            </div>
             <div className="flex-1 min-w-0">
-              {/* Tier badge + vendor on same line */}
-              <div className="flex items-center gap-1.5 mb-0.5">
-                <div
-                  className={`shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-[10px] font-extrabold ${TIER_PILL[tier]}`}
-                  title={TIER_DESCRIPTIONS[tier]}
-                >
-                  {tier}
-                </div>
-                <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest truncate leading-none">
-                  {vendor}
-                </p>
-              </div>
+              <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest truncate leading-none mb-0.5">
+                {vendor}
+              </p>
               <h3 className="text-sm font-semibold text-[#0D1F14] leading-snug line-clamp-1">
                 {productName}
               </h3>
