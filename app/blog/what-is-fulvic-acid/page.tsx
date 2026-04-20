@@ -284,7 +284,7 @@ export default function WhatIsFulvicAcid() {
             </div>
 
             <p>
-              Black Lotus Shilajit Resin consistently tests at <strong className="text-[#10B981]">85%+ fulvic acid</strong> — placing it firmly in the elite tier. That translates to approximately <strong className="text-[#0D1F14]">150mg of fulvic acid per 175mg serving</strong>, one of the highest per-serving doses we&apos;ve found in a purified resin.
+              Black Lotus Shilajit Resin consistently tests at <strong className="text-[#10B981]">85%+ fulvic acid</strong> — placing it firmly in the elite tier. Independent batch testing by IAS Laboratories (Phoenix, AZ) confirms <strong className="text-[#0D1F14]">161mg of fulvic acid per serving</strong> (batch #93-94), one of the highest per-serving doses we&apos;ve found in a purified resin.
             </p>
           </div>
         </section>
@@ -344,14 +344,14 @@ export default function WhatIsFulvicAcid() {
             <div>
               <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Highest Verified Fulvic Acid — S-Tier</div>
               <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
-              <p className="text-xs text-[#0D1F14] mt-1">85%+ fulvic acid · ~150mg per serving · Full panel COA · Cold processed · Free shipping</p>
+              <p className="text-xs text-[#0D1F14] mt-1">161mg fulvic acid per serving · IAS Laboratories verified · Full panel COA · Cold processed · Free shipping</p>
             </div>
           </div>
           <ul className="space-y-1.5 mb-5">
             {[
-              "Third-party ISO-accredited lab testing — COA publicly available",
-              "85%+ fulvic acid verified by titration method",
-              "~150mg fulvic acid per 175mg serving — among highest on market",
+              "Tested every batch by IAS Laboratories, Phoenix, AZ — full batch COAs publicly available",
+              "85%+ fulvic acid verified — 161mg per serving (batch #93-94)",
+              "161mg fulvic acid per serving — among highest on market",
               "Heavy metals panel: all below FDA action levels",
               "Cold-process purification preserves heat-sensitive bioactive compounds",
               "Himalayan source above 14,000 feet elevation",

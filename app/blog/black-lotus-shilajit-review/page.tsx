@@ -82,7 +82,7 @@ const faqItems: FaqItem[] = [
     name: "What is the fulvic acid content in Black Lotus Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus verifies 85%+ fulvic acid in their Pure Altai Resin and Extra Strength Capsules via third-party COA. The Tincture verifies 80%+ and the Gummies verify 70%. These are among the highest verified fulvic acid percentages in our database.",
+      text: "Black Lotus products are tested every batch by IAS Laboratories in Phoenix, Arizona. Their Pure Altai Resin delivers 161mg of fulvic acid per serving and 22mg of humic acid (batch #93-94). Their Extra Strength Capsules deliver 445.80mg of fulvic acid and 64.44mg of humic acid per 600mg serving (batch #94). Full batch COAs are publicly available at blacklotusshilajit.com/pages/lab-analysis — customers can verify any batch by the number printed on their product label.",
     },
   },
   {
@@ -255,7 +255,7 @@ export default function BlackLotusShilajitReview() {
               Black Lotus holds S-tier status across four products in our database — the only brand to do so. That distinction isn&apos;t based on marketing claims or brand recognition. It&apos;s based on three criteria we apply to every product we evaluate: COA completeness, verified fulvic acid percentage, and price-per-gram relative to quality tier.
             </p>
             <p>
-              On every one of those metrics, Black Lotus either leads the field or ties for the top position. Their 85%+ fulvic acid is the highest verified figure in our database. Their COA covers the full panel — heavy metals with specific values (not just &quot;pass/fail&quot;), microbial testing, and fulvic acid quantification from a named third-party lab. And at $1.23/gram for the core resin, they undercut most competitors offering a fraction of the verification.
+              On every one of those metrics, Black Lotus either leads the field or ties for the top position. Their 85%+ fulvic acid is the highest verified figure in our database. Their COA covers the full panel — heavy metals with specific values (not just &quot;pass/fail&quot;), microbial testing, moisture, and fulvic acid quantification by IAS Laboratories, Phoenix, Arizona, every single batch. And at $1.23/gram for the core resin, they undercut most competitors offering a fraction of the verification.
             </p>
             <p>
               This review covers every product in their lineup, the lab data in detail, who this brand is the right fit for, and where you might look elsewhere.
@@ -314,8 +314,8 @@ export default function BlackLotusShilajitReview() {
                   { item: "Fulvic acid quantification", detail: "85%+ verified — not estimated, not approximated" },
                   { item: "Heavy metals — specific values", detail: "Lead, arsenic, mercury, cadmium — individual ppb numbers, all within FDA limits" },
                   { item: "Microbial panel", detail: "Total plate count, yeast, mold, E. coli, Salmonella" },
-                  { item: "Third-party lab name & accreditation", detail: "Named independent lab — verifiable externally" },
-                  { item: "Batch-specific documentation", detail: "Not a single evergreen COA — batch-tied testing" },
+                  { item: "Third-party lab", detail: "IAS Laboratories, Phoenix, Arizona — verifiable externally" },
+                  { item: "Batch-specific documentation", detail: "Full COA per batch — verify any batch by the number on your label at blacklotusshilajit.com/pages/lab-analysis" },
                 ].map((row) => (
                   <div key={row.item} className="flex items-start gap-3 text-xs border-b border-[#D1EDD8] pb-2 last:border-0 last:pb-0">
                     <Check />

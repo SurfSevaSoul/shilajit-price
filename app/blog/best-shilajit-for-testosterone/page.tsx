@@ -314,8 +314,8 @@ export default function BestShilajitForTestosterone() {
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
                 "85%+ verified fulvic acid — matches clinical study range",
-                "ISO-accredited third-party COA",
-                "~150mg fulvic acid per 175mg serving",
+                "Tested every batch by IAS Laboratories, Phoenix, AZ",
+                "161mg fulvic acid per serving (batch #93-94)",
                 "Full heavy metals panel within FDA action levels",
                 "Himalayan source above 14,000 feet",
                 "Free shipping on all orders",

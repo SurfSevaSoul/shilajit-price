@@ -193,13 +193,16 @@ export default function LabDataPage() {
               <p className="text-[10px] text-[#5d8c6e] mb-3 leading-relaxed">
                 Values from batches #93–94 (resin/tablets) and #94 (capsules). Minor variation between batches is normal for a raw natural product.
               </p>
+              <p className="text-[10px] text-emerald-400/80 mb-3 leading-relaxed">
+                Black Lotus publishes their full batch COAs publicly — customers can verify any batch by the batch number printed on their product label.
+              </p>
               <a
                 href="https://blacklotusshilajit.com/pages/lab-analysis"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-900/40 hover:bg-emerald-900/60 border border-emerald-700/50 text-emerald-300 text-xs font-semibold transition-colors"
               >
-                View Official COA →
+                View All Batch COAs →
               </a>
             </div>
 

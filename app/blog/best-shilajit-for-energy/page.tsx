@@ -296,7 +296,7 @@ export default function BestShilajitForEnergy() {
               For energy specifically, the most important number is fulvic acid percentage — and Black Lotus leads the market at 85%+, independently verified by an ISO-accredited laboratory. This is the highest consistently achieved and documented concentration we've found across our database of 55+ products.
             </p>
             <p>
-              Higher FA concentration means more active compound per dose. At 175mg of resin twice daily, you're delivering approximately 148mg of actual fulvic acid — well above the threshold needed to meaningfully impact mitochondrial Complex I activity. At this concentration, users typically report energy improvements within 2–3 weeks, faster than lower-concentration alternatives.
+              Higher FA concentration means more active compound per dose. IAS Laboratories confirms 161mg of fulvic acid per serving in recent batches — well above the threshold needed to meaningfully impact mitochondrial Complex I activity. At this concentration, users typically report energy improvements within 2–3 weeks, faster than lower-concentration alternatives.
             </p>
             <p>
               The capsule option is particularly popular for energy users because the pre-measured 200mg doses take the guesswork out of consistent daily use — critical for a supplement where consistency drives results. At $34.99 for 30 capsules, it's both the most convenient and the most potent capsule option we've evaluated.
@@ -315,8 +315,8 @@ export default function BestShilajitForEnergy() {
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
                 "85%+ fulvic acid — maximum mitochondrial support",
-                "~150mg fulvic acid per 175mg serving",
-                "ISO-accredited third-party COA",
+                "161mg fulvic acid per serving (IAS Laboratories, batch #93-94)",
+                "Tested every batch — full COAs publicly available",
                 "Full heavy metals panel — all within FDA limits",
                 "No stimulants, fillers, or proprietary blends",
                 "Free shipping on all orders",
