@@ -122,7 +122,7 @@ export const PRODUCTS: Product[] = [
     badge: "Best Value",
     description: "Full-panel COA verified. 85%+ fulvic acid. Cold-processed from 16,000+ ft Altai Mountain deposits.",
     amazonRating: 4.9,
-    imageUrl: "/images/products/black-lotus-resin-30g.webp",
+    imageUrl: "/images/products/black-lotus-resin-30g.png",
   },
   {
     id: "bl-capsules",
