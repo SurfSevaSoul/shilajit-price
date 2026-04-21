@@ -921,6 +921,11 @@ export default function BestShilajitResinBrands() {
               Full Shilajit Comparison Table — All 71 Products →
             </Link>
           </li>
+          <li>
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+              Best Shilajit Brands Ranked — All Categories Compared →
+            </Link>
+          </li>
         </ul>
       </section>
     </BlogPostLayout>

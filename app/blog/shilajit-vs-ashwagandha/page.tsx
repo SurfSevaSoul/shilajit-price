@@ -606,6 +606,12 @@ export default function ShilajitVsAshwagandha() {
               Shilajit and Ashwagandha Stack — Does It Actually Work? →
             </Link>
           </p>
+          <p>
+            Not sure which shilajit brand to use?{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+              See our full rankings of top-rated shilajit brands →
+            </Link>
+          </p>
         </div>
       </section>
     </BlogPostLayout>

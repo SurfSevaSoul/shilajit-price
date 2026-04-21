@@ -653,6 +653,11 @@ export default function ShilajitTestosteroneStudy() {
               Full Shilajit Comparison Table — Compare Fulvic Acid % Across 71 Products →
             </Link>
           </li>
+          <li>
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+              Highest-Rated Shilajit Brands — Full Tier Rankings →
+            </Link>
+          </li>
         </ul>
       </section>
     </BlogPostLayout>

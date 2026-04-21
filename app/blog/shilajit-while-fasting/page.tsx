@@ -620,6 +620,11 @@ export default function ShilajitWhileFasting() {
               Full Shilajit Comparison Table — All Products Ranked →
             </Link>
           </li>
+          <li>
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">
+              Shilajit Brands Worth Buying — Ranked by Purity and Testing →
+            </Link>
+          </li>
         </ul>
       </section>
     </BlogPostLayout>
