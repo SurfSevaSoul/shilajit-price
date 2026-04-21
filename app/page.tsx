@@ -493,11 +493,6 @@ export default function Home() {
         <section id="deals" className="py-12 bg-[#E8F5EC]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-            {/* ── 3. CATEGORY FILTER ──────────────────────────────────────── */}
-            <div className="mb-8">
-              <CategoryFilter active={activeCategory} onChange={setActiveCategory} counts={categoryCounts} />
-            </div>
-
             {/* ── 4. EDITOR'S TOP 3 PICKS ─────────────────────────────────── */}
             <div id="top-picks" className="mb-10">
               <div className="flex items-center gap-2 mb-4">
@@ -562,6 +557,11 @@ export default function Home() {
             </div>
 
             {/* ── 5. ALL DEALS GRID ────────────────────────────────────────── */}
+            {/* ── CATEGORY FILTER ─────────────────────────────────────────── */}
+            <div className="mb-6">
+              <CategoryFilter active={activeCategory} onChange={setActiveCategory} counts={categoryCounts} />
+            </div>
+
             <div className="flex items-center gap-2 mb-5">
               <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest">All Products</span>
               <div className="flex-1 h-px bg-[#D1EDD8]" />
