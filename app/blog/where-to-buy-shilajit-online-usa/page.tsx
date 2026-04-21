@@ -31,37 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Where to Buy Shilajit Online in the USA (2026) — Trusted Sources Only",
-  description:
-    "Top 5 trusted US sources for shilajit ranked by COA quality, GMP certification, and accountability.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit vendors", "US supplement market", "COA verification", "GMP certification"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "where to buy shilajit online USA, buy shilajit online, best place to buy shilajit USA",
-  articleSection: "Buying Guide",
-  wordCount: 1900,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -203,8 +172,6 @@ const VENDOR_COMPARISON = [
 
 export default function WhereToBuyShilajitOnlineUSA() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -440,6 +407,5 @@ export default function WhereToBuyShilajitOnlineUSA() {
           subtext="Sort by COA quality, fulvic acid %, price per gram, and tier — find the best shilajit available to US buyers."
         />
       </BlogPostLayout>
-    </>
   );
 }

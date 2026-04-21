@@ -31,43 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: title,
-  description,
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: [
-        "shilajit certificate of analysis",
-        "fulvic acid analysis",
-        "heavy metals testing",
-        "supplement lab accreditation",
-        "ISO/IEC 17025",
-      ],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "shilajit COA guide, certificate of analysis shilajit, fulvic acid percentage shilajit, heavy metals shilajit, shilajit lab testing",
-  articleSection: "Science",
-  wordCount: 1750,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -113,11 +76,6 @@ const faqItems: FaqItem[] = [
 
 export default function HowToReadShilajitCoa() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <BlogPostLayout
         heading={
           <>
@@ -525,6 +483,5 @@ export default function HowToReadShilajitCoa() {
           </ul>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

@@ -35,38 +35,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Natural Shilajit Review (2026) — Altai Resin, DBP Verified, Worth the Price?",
-  description:
-    "Full Natural Shilajit review: UNESCO-protected Altai sourcing, DBP verification explained, all 5 products compared, lab testing breakdown, and honest verdict on who should buy it.",
-  datePublished: "2026-04-18",
-  dateModified: "2026-04-18",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Natural Shilajit", "DBP verification", "Altai shilajit", "COA analysis"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "natural shilajit review, DBP verified shilajit, altai shilajit resin, natural shilajit 2026",
-  articleSection: "Brand Reviews",
-  wordCount: 1800,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -167,11 +135,6 @@ function Check() {
 
 export default function NaturalShilajitReview() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -526,6 +489,5 @@ export default function NaturalShilajitReview() {
           </div>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

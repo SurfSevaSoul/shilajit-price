@@ -30,37 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Does Shilajit Actually Work? What the Science Says in 2026",
-  description:
-    "Honest breakdown of what clinical research says shilajit can and cannot do, why most products on the market are ineffective, and how to tell real shilajit from fakes.",
-  datePublished: "2026-04-18",
-  dateModified: "2026-04-18",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit science", "Fulvic acid research", "COA verification", "Supplement analysis"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "does shilajit work, shilajit research 2026, shilajit science, real vs fake shilajit",
-  articleSection: "Science & Research",
-  wordCount: 2000,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -106,11 +75,6 @@ const faqItems: FaqItem[] = [
 
 export default function DoesShilajitWork() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -369,6 +333,5 @@ export default function DoesShilajitWork() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

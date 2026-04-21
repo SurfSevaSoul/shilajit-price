@@ -29,36 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Affordable Shilajit Brands in 2026 — Value Without Compromise",
-  description: "Top affordable shilajit brands ranked by cost per serving and COA quality.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit pricing", "Supplement value analysis", "COA quality", "Cost per serving"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "affordable shilajit, best value shilajit, shilajit good quality low price",
-  articleSection: "Price Comparison",
-  wordCount: 1800,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -195,8 +165,6 @@ const VALUE_PICKS = [
 
 export default function BestAffordableShilajit() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -406,6 +374,5 @@ export default function BestAffordableShilajit() {
           subtext="Sort by price per gram, fulvic acid %, and COA status to find the best value shilajit for your budget."
         />
       </BlogPostLayout>
-    </>
   );
 }

@@ -28,45 +28,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit Resin in 2026 — Prices Compared",
-  description:
-    "We compared 6 top shilajit resins on fulvic acid %, COA quality, and price per gram. Here's the definitive ranking for 2026.",
-  datePublished: "2026-04-01",
-  dateModified: "2026-04-13",
-  url: "https://shilajitprice.com/blog/best-shilajit-resin-2026",
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": "https://shilajitprice.com/blog/best-shilajit-resin-2026",
-  },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: "https://shilajitprice.com" },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: "https://shilajitprice.com" },
-      knowsAbout: ["Shilajit resin", "Fulvic acid potency", "Supplement price comparison", "COA analysis"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: "https://shilajitprice.com",
-    logo: {
-      "@type": "ImageObject",
-      url: "https://shilajitprice.com/logo.png",
-      width: 200,
-      height: 60,
-    },
-  },
-  keywords: "best shilajit resin 2026, shilajit resin price comparison, pure shilajit resin",
-  articleSection: "Buying Guide",
-  wordCount: 1350,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -191,11 +152,6 @@ function Cross() {
 
 export default function BestShilajitResin2026() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -561,6 +517,5 @@ export default function BestShilajitResin2026() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

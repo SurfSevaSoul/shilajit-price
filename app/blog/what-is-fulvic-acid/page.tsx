@@ -26,37 +26,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "What is Fulvic Acid and Why It Matters When Buying Shilajit",
-  description:
-    "Fulvic acid is the key compound that makes shilajit worth taking. Learn what it is, what percentage to look for, and how to verify it on a COA.",
-  datePublished: "2026-04-06",
-  dateModified: "2026-04-13",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit", "Fulvic acid", "Supplement COA analysis", "Himalayan minerals"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "fulvic acid shilajit, what is fulvic acid, fulvic acid benefits",
-  articleSection: "Education",
-  wordCount: 1260,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -133,7 +102,6 @@ const definedTermSchemas = [
 export default function WhatIsFulvicAcid() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       {definedTermSchemas.map((schema, i) => (
         <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       ))}

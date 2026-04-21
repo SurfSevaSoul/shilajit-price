@@ -28,37 +28,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "How to Spot Fake Shilajit — and Where to Find the Real Thing",
-  description:
-    "5 tests to verify shilajit authenticity: solubility, COA, sourcing, color, smell. Red flags that expose counterfeit shilajit.",
-  datePublished: "2026-04-10",
-  dateModified: "2026-04-13",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit authenticity", "Supplement adulteration", "COA verification", "Lab testing"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "fake shilajit, how to tell if shilajit is real, pure shilajit test",
-  articleSection: "Safety",
-  wordCount: 1310,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -120,8 +89,6 @@ function CheckIcon() {
 
 export default function HowToSpotFakeShilajit() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -407,6 +374,5 @@ export default function HowToSpotFakeShilajit() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

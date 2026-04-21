@@ -32,38 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit for Women in 2026 — What the Research Actually Says",
-  description:
-    "What does the research actually say about shilajit for women? We cover hormonal health, iron levels, energy, and rank the top 5 products by verified purity data and value.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["shilajit", "women's health", "fulvic acid", "mineral absorption", "supplement research"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "best shilajit for women, shilajit women's health, shilajit iron absorption, fulvic acid women, shilajit 2026",
-  articleSection: "Health Benefits",
-  wordCount: 1700,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -109,11 +77,6 @@ const faqItems: FaqItem[] = [
 
 export default function BestShilajitForWomen() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <BlogPostLayout
         heading={
           <>
@@ -625,6 +588,5 @@ export default function BestShilajitForWomen() {
           </ul>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

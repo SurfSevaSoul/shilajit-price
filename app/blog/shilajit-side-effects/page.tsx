@@ -30,37 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Shilajit Side Effects — What You Need to Know Before Buying (2026)",
-  description:
-    "Honest guide to shilajit side effects, who should not take it, the real heavy metals risk, safe dosage guidelines, and how to verify your product is safe.",
-  datePublished: "2026-04-18",
-  dateModified: "2026-04-18",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit safety", "Heavy metals testing", "COA analysis", "Supplement quality"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "shilajit side effects, shilajit safety, shilajit heavy metals 2026, is shilajit safe",
-  articleSection: "Safety & Health",
-  wordCount: 1800,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -106,11 +75,6 @@ const faqItems: FaqItem[] = [
 
 export default function ShilajitSideEffects() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -396,6 +360,5 @@ export default function ShilajitSideEffects() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

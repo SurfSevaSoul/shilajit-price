@@ -27,36 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit Brands Ranked in 2026 — Lab Data, Prices & Honest Reviews",
-  description: "Top 10 shilajit brands ranked by COA quality, fulvic acid content, sourcing transparency, and price per gram.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit brands", "COA analysis", "Supplement pricing", "Lab testing"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "best shilajit brands, shilajit brands ranked, top shilajit brands 2026",
-  articleSection: "Reviews",
-  wordCount: 1600,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -178,8 +148,6 @@ const TOP_BRANDS = [
 
 export default function BestShilajitBrandsRanked() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -428,6 +396,5 @@ export default function BestShilajitBrandsRanked() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

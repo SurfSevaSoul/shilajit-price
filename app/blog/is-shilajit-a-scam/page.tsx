@@ -26,36 +26,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Is Shilajit a Scam? We Analyzed 71 Products to Find Out",
-  description: "Data-driven analysis of the shilajit market: what's real, what's fake, and what the research says about its efficacy.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit research", "Supplement adulteration", "COA verification", "Clinical studies"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "is shilajit a scam, shilajit scam, does shilajit work, shilajit fake",
-  articleSection: "Research",
-  wordCount: 1650,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -109,8 +79,6 @@ function CheckIcon() {
 
 export default function IsShilajitAScam() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -332,6 +300,5 @@ export default function IsShilajitAScam() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

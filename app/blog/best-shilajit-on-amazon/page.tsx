@@ -32,37 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit on Amazon (2026) — What's Actually Worth Buying vs What to Avoid",
-  description:
-    "Amazon is flooded with fake and low-quality shilajit. Here's how to spot the red flags, which brands actually pass lab testing, and when direct purchase beats Amazon.",
-  datePublished: "2026-04-18",
-  dateModified: "2026-04-18",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Amazon supplement market", "Shilajit COA analysis", "Supplement quality verification"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "best shilajit amazon 2026, real shilajit amazon, fake shilajit amazon, shilajit COA amazon",
-  articleSection: "Buying Guides",
-  wordCount: 1800,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -145,11 +114,6 @@ function CheckIcon() {
 
 export default function BestShilajitOnAmazon() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -409,6 +373,5 @@ export default function BestShilajitOnAmazon() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

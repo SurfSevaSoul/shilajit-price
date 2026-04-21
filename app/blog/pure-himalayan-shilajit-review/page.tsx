@@ -31,37 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: title,
-  description,
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["shilajit quality testing", "fulvic acid analysis", "ISO/IEC 17025 certification", "supplement COA review"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "pure himalayan shilajit review, ISO/IEC 17025 shilajit, himalayan shilajit fulvic acid, shilajit COA analysis",
-  articleSection: "Brand Reviews",
-  wordCount: 1700,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -107,11 +76,6 @@ const faqItems: FaqItem[] = [
 
 export default function PureHimalayanShilajitReview() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <BlogPostLayout
         heading={
           <>
@@ -461,6 +425,5 @@ export default function PureHimalayanShilajitReview() {
           </Link>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

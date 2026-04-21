@@ -31,51 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit Gummies in 2026 — Are They Actually Worth It?",
-  description:
-    "We compare shilajit gummies vs resin on bioavailability, fulvic acid content, and value per dollar. Plus the top gummy picks from our database ranked by COA quality and actual value.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": POST_URL,
-  },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: [
-        "Shilajit gummies",
-        "Fulvic acid bioavailability",
-        "Supplement form factors",
-        "COA analysis",
-      ],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${BASE_URL}/logo.png`,
-      width: 200,
-      height: 60,
-    },
-  },
-  keywords:
-    "best shilajit gummies, shilajit gummies review, shilajit gummies vs resin, shilajit gummy bioavailability",
-  articleSection: "Buying Guide",
-  wordCount: 1700,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -145,11 +100,6 @@ function Cross() {
 
 export default function BestShilajitGummies() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -827,6 +777,5 @@ export default function BestShilajitGummies() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

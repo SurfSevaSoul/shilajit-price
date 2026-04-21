@@ -29,37 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit for Energy and Fatigue in 2026 — What Actually Works",
-  description:
-    "Cellular energy mechanisms, what to look for, and the top 5 shilajit products for energy and fatigue.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit", "Energy metabolism", "Mitochondria", "Fatigue"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "best shilajit for energy, shilajit for fatigue, shilajit energy supplement",
-  articleSection: "Health Benefits",
-  wordCount: 1700,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -171,8 +140,6 @@ const TOP_PICKS = [
 
 export default function BestShilajitForEnergy() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -418,6 +385,5 @@ export default function BestShilajitForEnergy() {
           subtext="Filter 74 products by COA verification, tier, and form factor to find the best energy-focused shilajit for your budget."
         />
       </BlogPostLayout>
-    </>
   );
 }

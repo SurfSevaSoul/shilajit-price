@@ -27,37 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Is Expensive Shilajit Worth It? We Compared $20 vs $80 Products",
-  description:
-    "Head-to-head purity data comparison of budget vs premium shilajit — and where the actual quality sweet spot is.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit pricing", "Purity analysis", "COA quality", "Value optimization"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "is expensive shilajit worth it, expensive shilajit vs cheap, shilajit price quality",
-  articleSection: "Price Comparison",
-  wordCount: 1850,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -192,8 +161,6 @@ const COMPARISON = [
 
 export default function IsExpensiveShilajitWorthIt() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -418,6 +385,5 @@ export default function IsExpensiveShilajitWorthIt() {
           subtext="See 71 shilajit products ranked by tier, fulvic acid %, and price per gram — find the sweet spot for your budget."
         />
       </BlogPostLayout>
-    </>
   );
 }

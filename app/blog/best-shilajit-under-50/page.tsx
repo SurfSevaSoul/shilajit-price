@@ -29,37 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit Under $50 in 2026 — Quality Picks That Won't Break the Bank",
-  description:
-    "Top 5 shilajit products under $50 ranked by purity data, COA quality, and price per gram.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit pricing", "Budget supplements", "COA analysis", "Value optimization"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "best shilajit under 50, affordable shilajit, cheap shilajit that works",
-  articleSection: "Price Comparison",
-  wordCount: 1750,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -191,8 +160,6 @@ const UNDER_50_PICKS = [
 
 export default function BestShilajitUnder50() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -412,6 +379,5 @@ export default function BestShilajitUnder50() {
           subtext="Compare 71 shilajit products by price per gram, fulvic acid %, and COA status — all filterable and sortable."
         />
       </BlogPostLayout>
-    </>
   );
 }

@@ -31,37 +31,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit for Athletes (2026) — Ranked for Recovery, Endurance & Performance",
-  description:
-    "The top shilajit products for athletes in 2026, ranked by fulvic acid %, DBP content, purity, and performance-relevant criteria.",
-  datePublished: "2026-04-18",
-  dateModified: "2026-04-18",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit", "Athletic performance", "Supplement analysis", "COA verification"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "best shilajit for athletes, shilajit athletic performance, shilajit endurance 2026",
-  articleSection: "Performance & Recovery",
-  wordCount: 1800,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -167,11 +136,6 @@ function XIcon() {
 
 export default function BestShilajitForAthletes() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -429,6 +393,5 @@ export default function BestShilajitForAthletes() {
           </div>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

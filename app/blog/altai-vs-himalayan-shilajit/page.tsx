@@ -33,38 +33,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Altai vs Himalayan Shilajit — What's Actually Different?",
-  description:
-    "We break down the real differences between Altai and Himalayan shilajit — geology, mineral profiles, fulvic acid concentration, climate, and which products in our database come from each source.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit origins", "Altai Mountain geology", "Himalayan shilajit", "Fulvic acid analysis"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "altai vs himalayan shilajit, shilajit origin comparison, altai shilajit fulvic acid, himalayan shilajit quality",
-  articleSection: "Origins",
-  wordCount: 1700,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -122,11 +90,6 @@ function Check() {
 
 export default function AltaiVsHimalayanShilajit() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -485,6 +448,5 @@ export default function AltaiVsHimalayanShilajit() {
           </p>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

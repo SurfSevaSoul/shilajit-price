@@ -30,52 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Shilajit for Beginners — Complete First-Time Buyer's Guide",
-  description:
-    "Everything a first-time buyer needs to know: what shilajit is, what to expect, which form to start with, how to spot fakes, red flags to avoid, and our recommended starter products.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: {
-    "@type": "WebPage",
-    "@id": POST_URL,
-  },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: [
-        "Shilajit supplementation",
-        "Fulvic acid",
-        "Supplement quality and COA analysis",
-        "Ayurvedic adaptogens",
-        "Supplement buying guides",
-      ],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: {
-      "@type": "ImageObject",
-      url: `${BASE_URL}/logo.png`,
-      width: 200,
-      height: 60,
-    },
-  },
-  keywords:
-    "shilajit beginners guide, what is shilajit, how to take shilajit, shilajit first time buyer",
-  articleSection: "Buying Guide",
-  wordCount: 1900,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -145,11 +99,6 @@ function CheckIcon() {
 
 export default function ShilajitBeginnersGuide() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -992,6 +941,5 @@ export default function ShilajitBeginnersGuide() {
           </div>
         </section>
       </BlogPostLayout>
-    </>
   );
 }

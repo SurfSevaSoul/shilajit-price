@@ -27,37 +27,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Shilajit Price Per Gram Comparison — Don't Overpay in 2026",
-  description:
-    "Full comparison of 20+ shilajit products sorted by price per gram and tier score.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit pricing", "Price per gram analysis", "Supplement value", "COA analysis"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "shilajit price per gram, shilajit cost per gram, shilajit price comparison",
-  articleSection: "Price Comparison",
-  wordCount: 1900,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -121,8 +90,6 @@ const PRODUCTS = [
 
 export default function ShilajitPricePerGram() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -338,6 +305,5 @@ export default function ShilajitPricePerGram() {
           subtext="Filter 74 products by $/gram, tier, fulvic acid %, and COA status — the most complete shilajit price comparison available."
         />
       </BlogPostLayout>
-    </>
   );
 }

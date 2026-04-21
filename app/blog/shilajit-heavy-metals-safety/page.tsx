@@ -29,43 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Shilajit Heavy Metals — What's Safe and What's Not",
-  description:
-    "Why heavy metals are a real risk in shilajit, what Lead/Mercury/Arsenic/Cadmium safety limits are, how to read a heavy metals panel on a COA, and which brands in our database actually pass.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: [
-        "heavy metals testing",
-        "supplement safety",
-        "COA analysis",
-        "shilajit purity",
-      ],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "shilajit heavy metals, shilajit safety, shilajit COA, shilajit lead mercury arsenic testing",
-  articleSection: "Safety",
-  wordCount: 1750,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -111,11 +74,6 @@ const faqItems: FaqItem[] = [
 
 export default function ShilajitHeavyMetalsSafety() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <BlogPostLayout
         heading={
           <>
@@ -639,6 +597,5 @@ export default function ShilajitHeavyMetalsSafety() {
           </div>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

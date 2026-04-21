@@ -36,38 +36,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Black Lotus Shilajit Review 2026 — COA, Lab Data & Honest Verdict",
-  description:
-    "Full Black Lotus Shilajit review: 85%+ verified fulvic acid, Altai sourcing, complete product lineup analysis, lab data breakdown, and honest verdict on who it's best for.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Black Lotus Shilajit", "COA analysis", "Fulvic acid verification", "Altai shilajit sourcing"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "black lotus shilajit review, black lotus shilajit COA, black lotus fulvic acid, altai shilajit 2026",
-  articleSection: "Brand Reviews",
-  wordCount: 1750,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -194,11 +162,6 @@ function Check() {
 
 export default function BlackLotusShilajitReview() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
 
       <BlogPostLayout
         heading={
@@ -573,6 +536,5 @@ export default function BlackLotusShilajitReview() {
           </a>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

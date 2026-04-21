@@ -29,37 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Best Shilajit for Men in 2026 — Energy, Testosterone & Performance",
-  description:
-    "Top 5 shilajit products for men ranked by purity data, testosterone research, and price per gram.",
-  datePublished: "2026-04-14",
-  dateModified: "2026-04-14",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["Shilajit", "Men's health", "Testosterone", "Supplement pricing"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords: "best shilajit for men, shilajit for men, mens shilajit supplement",
-  articleSection: "Health Benefits",
-  wordCount: 1750,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -166,8 +135,6 @@ const TOP_PICKS = [
 
 export default function BestShilajitForMen() {
   return (
-    <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
       <BlogPostLayout
         heading={
@@ -461,6 +428,5 @@ export default function BestShilajitForMen() {
           subtext="See 74 products ranked by fulvic acid %, COA quality, and price per gram — filter by form factor, tier, and source."
         />
       </BlogPostLayout>
-    </>
   );
 }

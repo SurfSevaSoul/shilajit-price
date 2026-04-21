@@ -29,38 +29,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "How Much Shilajit Should You Take? Complete Dosage Guide 2026",
-  description:
-    "Research-backed shilajit dosage guide: recommended amounts by form factor, timing, cycling, what happens with too much, and how to start safely as a new user.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: ["shilajit dosage", "supplement research", "fulvic acid", "adaptogenic herbs"],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "shilajit dosage, how much shilajit to take, shilajit serving size, shilajit resin dosage, shilajit cycling",
-  articleSection: "Buying Guide",
-  wordCount: 1700,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -106,11 +74,6 @@ const faqItems: FaqItem[] = [
 
 export default function ShilajitDosageGuide() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <BlogPostLayout
         heading={
           <>
@@ -507,6 +470,5 @@ export default function ShilajitDosageGuide() {
           </div>
         </div>
       </BlogPostLayout>
-    </>
   );
 }

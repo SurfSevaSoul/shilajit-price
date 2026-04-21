@@ -30,45 +30,6 @@ export const metadata: Metadata = {
   },
 };
 
-const articleSchema = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  headline: "Shilajit and Ashwagandha Stack — Does It Actually Work?",
-  description:
-    "We review the research on combining shilajit and ashwagandha: synergy between fulvic acid and withanolides, what studies show, optimal dosing, and which products to use for this stack.",
-  datePublished: "2026-04-15",
-  dateModified: "2026-04-15",
-  url: POST_URL,
-  mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-  author: [
-    { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-    {
-      "@type": "Person",
-      name: "ShilajitPrice Research Team",
-      jobTitle: "Supplement Research & Price Analysis",
-      worksFor: { "@type": "Organization", name: "ShilajitPrice.com", url: BASE_URL },
-      knowsAbout: [
-        "shilajit",
-        "ashwagandha",
-        "adaptogens",
-        "fulvic acid",
-        "withanolides",
-        "supplement stacking",
-      ],
-    },
-  ],
-  publisher: {
-    "@type": "Organization",
-    name: "ShilajitPrice.com",
-    url: BASE_URL,
-    logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png`, width: 200, height: 60 },
-  },
-  keywords:
-    "shilajit ashwagandha stack, adaptogen stack, fulvic acid withanolides, shilajit and ashwagandha together, supplement stack 2026",
-  articleSection: "Science",
-  wordCount: 1750,
-};
-
 const faqItems: FaqItem[] = [
   {
     "@type": "Question",
@@ -114,11 +75,6 @@ const faqItems: FaqItem[] = [
 
 export default function ShilajitAshwagandhaStack() {
   return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
       <BlogPostLayout
         heading={
           <>
@@ -670,6 +626,5 @@ export default function ShilajitAshwagandhaStack() {
           </ul>
         </section>
       </BlogPostLayout>
-    </>
   );
 }
