@@ -526,6 +526,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://www.purehimalayanshilajit.com/liquid/?ref=4792",
     featured: true,
     description: "High-potency liquid shilajit drops. 50mL, 50 servings. ISO/IEC 17025 lab verified.",
+    imageUrl: "/images/products/pure-himalayan-liquid-drops.png",
   },
   {
     id: "ph-tablets",
