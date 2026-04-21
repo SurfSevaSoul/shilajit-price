@@ -423,6 +423,7 @@ export const PRODUCTS: Product[] = [
     badge: "Best Deal",
     description: "Resin + Capsules bundle. Save 15% vs buying separately.",
     amazonRating: 4.9,
+    imageUrl: "/images/products/black-lotus-bundle.png",
   },
   {
     id: "bl-tablets-60ct",
