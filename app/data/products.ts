@@ -51,6 +51,8 @@ export interface Product {
   freeShipping: boolean;
   labTested: boolean;
   affiliateUrl: string;
+  originalPriceUsd?: number;
+  sizeLabel?: string;
   featured?: boolean;
   badge?: string;
   description?: string;
@@ -394,10 +396,12 @@ export const PRODUCTS: Product[] = [
     id: "bl-bundle",
     origin: "Altai",
     vendor: "Black Lotus Shilajit",
-    productName: "Starter Bundle — Resin + Capsules",
+    productName: "Black Lotus Shilajit Variety Bundle",
     tier: "S",
     category: "Bundles",
-    priceUsd: 64.99,
+    priceUsd: 144.99,
+    originalPriceUsd: 161.96,
+    sizeLabel: "10g Resin + 50mL Tincture + 60ct Tablets + 150mL Honey",
     weightGrams: 90,
     pricePerGram: 0.72,
     fulvicAcidPct: 85,
@@ -418,7 +422,7 @@ export const PRODUCTS: Product[] = [
     freeShipping: true,
     labTested: true,
     testingLab: "IAS Laboratories, Phoenix, AZ",
-    affiliateUrl: AFFILIATE_LINKS.base,
+    affiliateUrl: "https://black-lotus-shilajit-shop.myshopify.com/products/holiday-bundle-limited-edition?sca_ref=5188496.BbHTin3axE",
     featured: true,
     badge: "Best Deal",
     description: "Resin + Capsules bundle. Save 15% vs buying separately.",
