@@ -436,6 +436,10 @@ export default function BlackLotusShilajitReview() {
               <strong className="text-[#0D1F14]">Himalayan origin preference.</strong> Black Lotus is Altai-sourced. If you have a specific reason to prefer Himalayan or Ladakh origin — whether Ayurvedic tradition, mineral profile preference, or other factors — read our{" "}
               <Link href="/blog/altai-vs-himalayan-shilajit" className="text-[#10B981] hover:underline">Altai vs Himalayan shilajit comparison</Link> and consider Pure Himalayan Shilajit as the alternative.
             </p>
+            <p>
+              <strong className="text-[#0D1F14]">Patent-protection and US manufacturing priority.</strong> If your purchase criteria include US pharmaceutical-grade processing and patent-documented purification, Pürblack is the only brand in our database that meets that bar. Their 5 US patents and domestic facility come at a significantly higher price per gram ($3.11–$5.00/g), but the documentation rigor is unmatched. Read our full{" "}
+              <Link href="/blog/purblack-shilajit-review" className="text-[#10B981] hover:underline">Pürblack shilajit review</Link> to decide if that trade-off is right for you.
+            </p>
           </div>
         </section>
 

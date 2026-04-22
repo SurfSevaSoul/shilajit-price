@@ -386,6 +386,7 @@ export default function BestShilajitBrandsRanked() {
               { type: "Best capsule (standardized extract)", pick: "Jarrow PrimaVie", reason: "B-tier, clinically studied, GMP certified" },
               { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 75%+ FA, heavy metals tested" },
               { type: "Best for high review count + Amazon Prime", pick: "Natural Shilajit RS", reason: "A-tier, third-party tested, 4.4★ on Amazon" },
+              { type: "Best for US patents + pharma-grade manufacturing", pick: "Pürblack True Gold", reason: "A-tier, 5 US patents, US pharmaceutical facility" },
             ].map(({ type, pick, reason }) => (
               <div key={type} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 bg-white border border-[#D1EDD8] rounded-xl px-4 py-3">
                 <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-wider sm:w-44 shrink-0">{type}</span>
@@ -394,6 +395,10 @@ export default function BestShilajitBrandsRanked() {
               </div>
             ))}
           </div>
+          <p className="text-xs text-[#7BA899] mt-4 leading-relaxed">
+            New to Pürblack? Read our in-depth{" "}
+            <a href="/blog/purblack-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Pürblack shilajit review — 5 patents, True Gold, and who it&apos;s worth it for</a>.
+          </p>
         </section>
       </BlogPostLayout>
   );
