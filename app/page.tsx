@@ -134,12 +134,17 @@ function EditorPickCard({
   product,
   label,
   accent,
+  customBullets,
+  customTier,
 }: {
   product: (typeof PRODUCTS)[0];
   label: string;
   accent: AccentVariant;
+  customBullets?: string[];
+  customTier?: string;
 }) {
   const s = ACCENT_STYLES[accent];
+  const displayTier = (customTier ?? product.tier) as keyof typeof TIER_COLORS;
   return (
     <div
       className={`bg-white border-2 ${s.border} rounded-2xl p-5 flex flex-col transition-all duration-200 hover:shadow-lg shadow-sm`}
@@ -159,10 +164,10 @@ function EditorPickCard({
       {/* Tier + name */}
       <div className="flex items-center gap-2.5 mb-3">
         <div
-          className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-extrabold ${TIER_COLORS[product.tier]} shadow-sm`}
-          title={`${product.tier}-Tier`}
+          className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-extrabold ${TIER_COLORS[displayTier]} shadow-sm`}
+          title={`${displayTier}-Tier`}
         >
-          {product.tier}
+          {displayTier}
         </div>
         <div className="flex-1 min-w-0">
           <div className="text-[10px] font-bold text-[#7BA899] uppercase truncate leading-none">
@@ -186,13 +191,19 @@ function EditorPickCard({
 
       {/* Key specs */}
       <ul className="space-y-1 mb-4 flex-1 text-[11px] text-[#4A6358]">
-        {product.fulvicAcidPct !== undefined && (
-          <li>⚗️ {product.fulvicAcidPct}% fulvic acid</li>
+        {customBullets ? (
+          customBullets.map((b, i) => <li key={i}>{b}</li>)
+        ) : (
+          <>
+            {product.fulvicAcidPct !== undefined && (
+              <li>⚗️ {product.fulvicAcidPct}% fulvic acid</li>
+            )}
+            {product.coaVerified && <li>✓ COA verified</li>}
+            {product.thirdPartyTested && <li>✓ Third-party tested</li>}
+            {product.heavyMetalsTested && <li>✓ Heavy metals panel</li>}
+            {product.freeShipping && <li>✓ Free shipping</li>}
+          </>
         )}
-        {product.coaVerified && <li>✓ COA verified</li>}
-        {product.thirdPartyTested && <li>✓ Third-party tested</li>}
-        {product.heavyMetalsTested && <li>✓ Heavy metals panel</li>}
-        {product.freeShipping && <li>✓ Free shipping</li>}
       </ul>
 
       {/* CTA */}
@@ -301,24 +312,31 @@ export default function Home() {
     return counts;
   }, []);
 
-  // Editor's Picks: BL Best Overall, PH Best Purity, NS Resin 20g, NS Resin 150g, Best Amazon Value
+  // Editor's Picks: one card per featured affiliate partner
   const editorPicks = useMemo(() => {
     const blPick = PRODUCTS.find((p) => p.id === "bl-resin");
-    const phPick = PRODUCTS.find((p) => p.id === "ph-resin-30g");
-    const nsPick20g = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-20g");
-    const nsPick150g = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-150g");
-    const bestAmazon = [...PRODUCTS]
-      .filter((p) => !p.featured && p.affiliateUrl.includes("amazon.com"))
-      .sort((a, b) => bestValueScore(b) - bestValueScore(a))[0];
-    return [blPick, phPick, nsPick20g, nsPick150g, bestAmazon].filter(Boolean) as (typeof PRODUCTS)[0][];
+    const phPick = PRODUCTS.find((p) => p.id === "ph-soft-resin");
+    const nsPick = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-20g");
+    const purblackPick = PRODUCTS.find((p) => p.id === "purblack-true-gold-30g");
+    return [blPick, phPick, nsPick, purblackPick].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
-  const editorPickMeta: { label: string; accent: AccentVariant }[] = [
+  const editorPickMeta: { label: string; accent: AccentVariant; customBullets?: string[]; customTier?: string }[] = [
     { label: "Best Overall", accent: "emerald" },
     { label: "Best Purity", accent: "amber" },
-    { label: "Best Direct — 20g", accent: "teal" },
-    { label: "Best Bulk Direct", accent: "violet" },
-    { label: "Best Amazon Value", accent: "blue" },
+    { label: "Best Value", accent: "teal" },
+    {
+      label: "Best Premium",
+      accent: "violet",
+      customTier: "S",
+      customBullets: [
+        "✓ COA verified",
+        "✓ US Patents (x5)",
+        "✓ Third-party tested",
+        "✓ Made in USA",
+        "✓ Gold-infused (555 PPM)",
+      ],
+    },
   ];
 
   const filtered = useMemo(() => {
@@ -507,6 +525,8 @@ export default function Home() {
                     product={p}
                     label={editorPickMeta[i]?.label ?? "Top Pick"}
                     accent={editorPickMeta[i]?.accent ?? "emerald"}
+                    customBullets={editorPickMeta[i]?.customBullets}
+                    customTier={editorPickMeta[i]?.customTier}
                   />
                 ))}
               </div>
