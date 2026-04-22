@@ -58,6 +58,9 @@ export const metadata: Metadata = {
     ],
   },
   metadataBase: new URL("https://shilajitprice.com"),
+  other: {
+    "impact-site-verification": "46b47028-7dd7-4cfe-806a-ff361f1351ed",
+  },
   alternates: {
     canonical: "https://shilajitprice.com",
   },
