@@ -293,7 +293,7 @@ export default function Footer() {
               When you click affiliate links on this site and make a purchase,
               we may receive a commission at no additional cost to you. Our
               featured partners are Black Lotus Shilajit, Pure Himalayan
-              Shilajit, and Natural Shilajit. Affiliate relationships do not
+              Shilajit, Natural Shilajit, and Pürblack. Affiliate relationships do not
               influence product rankings or tier assignments — all ratings are
               based on independent evaluation of lab reports, COAs, pricing, and
               sourcing transparency. We only recommend products we genuinely
