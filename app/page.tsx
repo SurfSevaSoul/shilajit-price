@@ -493,8 +493,8 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-5">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
               {[
-                { value: "74", label: "Products Tracked" },
-                { value: "46", label: "Brands Compared" },
+                { value: `${PRODUCTS.length}`, label: "Products Tracked" },
+                { value: `${new Set(PRODUCTS.map((p) => p.vendor)).size}`, label: "Brands Compared" },
                 { value: "25+", label: "Data Points Per Product" },
                 { value: "Weekly", label: "Price Updates" },
               ].map(({ value, label }) => (

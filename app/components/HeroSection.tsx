@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { PRODUCTS } from "../data/products";
 
 export default function HeroSection() {
+  const productCount = PRODUCTS.length;
+  const brandCount = new Set(PRODUCTS.map((p) => p.vendor)).size;
   return (
     <section className="relative overflow-hidden bg-[#1a2e1f]">
       {/* Mountain background image */}
@@ -37,7 +40,7 @@ export default function HeroSection() {
             {/* Live badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[#9EC9AD] text-[#4A6358] text-xs font-semibold mb-5 shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
-              Updated April 2026 — 71 Products, 46 Brands
+              Updated April 2026 — {productCount} Products, {brandCount} Brands
             </div>
 
             <h1
@@ -51,7 +54,7 @@ export default function HeroSection() {
 
             <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-6 max-w-xl lg:max-w-none mx-auto lg:mx-0">
               Compare prices, purity scores, fulvic acid content, and COA
-              availability across 74 products — so you never overpay or buy
+              availability across {productCount} products — so you never overpay or buy
               fake shilajit again.
             </p>
 
