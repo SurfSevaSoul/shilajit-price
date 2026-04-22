@@ -26,6 +26,7 @@ const VALID_MATCHUPS = new Set([
   "pure-himalayan-vs-primavie",
   "purblack-vs-black-lotus",
   "purblack-vs-natural-shilajit",
+  "purblack-vs-pure-himalayan",
 ]);
 
 function getMatchupSlug(a: string, b: string): string | null {
@@ -596,6 +597,7 @@ export default function ComparePage() {
               { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan" },
               { slug: "purblack-vs-black-lotus", label: "Pürblack vs Black Lotus" },
               { slug: "purblack-vs-natural-shilajit", label: "Pürblack vs Natural Shilajit" },
+              { slug: "purblack-vs-pure-himalayan", label: "Pürblack vs Pure Himalayan" },
               { slug: "black-lotus-vs-sayan", label: "Black Lotus vs Sayan" },
               { slug: "natural-shilajit-vs-sayan", label: "Natural Shilajit vs Sayan" },
               { slug: "black-lotus-vs-primavie", label: "Black Lotus vs PrimaVie®" },
