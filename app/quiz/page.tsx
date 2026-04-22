@@ -44,7 +44,7 @@ const quizSchema = {
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type Step = "intro" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | "result";
-type OutcomeKey = "bl" | "ph" | "ns" | "mst" | "blConv";
+type OutcomeKey = "bl" | "ph" | "ns" | "mst" | "blConv" | "pb";
 
 // ── Questions ─────────────────────────────────────────────────────────────────
 const QUESTIONS: {
@@ -296,22 +296,45 @@ const OUTCOME_DATA: Record<
     tip: "💡 Pro tip: Black Lotus gummies and honey blends use the same S-tier Altai resin as their flagship product. For maximum potency, consider alternating with the resin on days when you have more time.",
     gaName: "black_lotus_convenience",
   },
+  pb: {
+    name: "Pürblack Live Resin",
+    headline: "Your best match is Pürblack Live Resin",
+    subhead:
+      "5 US patents and pharmaceutical-grade US processing — built for the research-focused buyer",
+    tier: "A",
+    fulvicAcid: "Verified",
+    pricePerGram: "$3.11/g",
+    form: "Live Resin",
+    origin: "Multi-region",
+    badges: ["✓ COA Verified", "✓ US Patents (x5)", "✓ Made in USA"],
+    primaryCta: {
+      label: "View Current Deal →",
+      url: "https://purblack.pxf.io/c/7221460/3041684/36963",
+    },
+    runnerUp: {
+      name: "Natural Shilajit Resin 20g",
+      url: "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa",
+      label: "Runner-up pick →",
+    },
+    tip: "💡 Pro tip: Pürblack's 5th-generation live resin uses a patented US pharmaceutical-grade process that removes heavy metals while preserving the full bioactive spectrum. Dissolve a pea-sized amount in warm water — the True Gold variant adds 555 PPM colloidal gold for an added premium edge.",
+    gaName: "purblack_premium",
+  },
 };
 
 // ── Scoring ───────────────────────────────────────────────────────────────────
 function computeScores(answers: Record<number, string>): Record<OutcomeKey, number> {
-  const s: Record<OutcomeKey, number> = { bl: 0, ph: 0, ns: 0, mst: 0, blConv: 0 };
+  const s: Record<OutcomeKey, number> = { bl: 0, ph: 0, ns: 0, mst: 0, blConv: 0, pb: 0 };
 
   switch (answers[1]) {
     case "energy":       s.bl += 3; s.ph += 1; s.ns += 1; s.mst += 1; s.blConv += 1; break;
     case "testosterone": s.bl += 4; s.ph += 1; s.ns += 1; s.mst += 1; break;
-    case "cognitive":    s.bl += 1; s.ph += 2; s.ns += 3; break;
-    case "longevity":    s.bl += 1; s.ph += 1; s.ns += 4; break;
+    case "cognitive":    s.bl += 1; s.ph += 2; s.ns += 3; s.pb += 4; break;
+    case "longevity":    s.bl += 1; s.ph += 1; s.ns += 4; s.pb += 2; break;
     case "general":      s.bl += 1; s.ph += 3; s.ns += 1; s.mst += 2; break;
   }
 
   switch (answers[2]) {
-    case "resin":        s.bl += 3; s.ns += 3; break;
+    case "resin":        s.bl += 3; s.ns += 3; s.pb += 2; break;
     case "capsules":     s.bl += 2; s.ph += 2; s.mst += 3; break;
     case "convenience":  s.blConv += 5; s.ph += 1; break;
     case "value":        s.mst += 3; s.bl += 1; s.ns += 1; break;
@@ -320,18 +343,18 @@ function computeScores(answers: Record<number, string>): Record<OutcomeKey, numb
   switch (answers[3]) {
     case "budget":  s.mst += 5; break;
     case "mid":     s.bl += 2; s.ph += 2; s.ns += 1; break;
-    case "premium": s.bl += 2; s.ns += 3; break;
+    case "premium": s.bl += 2; s.ns += 3; s.pb += 5; break;
     case "any":     s.ph += 2; s.mst += 1; s.bl += 1; break;
   }
 
   switch (answers[4]) {
-    case "resin":       s.bl += 2; s.ns += 2; break;
+    case "resin":       s.bl += 2; s.ns += 2; s.pb += 2; break;
     case "capsules":    s.bl += 1; s.ph += 2; s.mst += 3; break;
     case "convenience": s.blConv += 4; s.ph += 1; break;
   }
 
   switch (answers[5]) {
-    case "strict":   s.bl += 3; s.ns += 4; break;
+    case "strict":   s.bl += 3; s.ns += 4; s.pb += 3; break;
     case "moderate": s.mst += 2; s.ph += 2; s.bl += 1; break;
     case "relaxed":  s.mst += 3; s.blConv += 1; break;
   }
@@ -339,13 +362,13 @@ function computeScores(answers: Record<number, string>): Record<OutcomeKey, numb
   switch (answers[6]) {
     case "vegan": s.ph += 1; s.ns += 1; break;
     case "none":  s.bl += 1; break;
-    case "clean": s.ns += 2; s.bl += 1; break;
+    case "clean": s.ns += 2; s.bl += 1; s.pb += 2; break;
   }
 
   switch (answers[7]) {
     case "beginner":     s.ph += 4; break;
-    case "intermediate": s.bl += 2; s.mst += 1; break;
-    case "experienced":  s.ns += 3; s.bl += 1; break;
+    case "intermediate": s.bl += 2; s.mst += 1; s.pb += 1; break;
+    case "experienced":  s.ns += 3; s.bl += 1; s.pb += 3; break;
   }
 
   return s;
@@ -400,6 +423,16 @@ function getReasonBullets(
         `S-tier Black Lotus quality in convenient formats — perfect for ${goal} on the go`,
         "Same Altai resin source as the #1-ranked Black Lotus Resin — zero quality compromise",
         "Three formats available — gummies, tincture, and honey blend — choose what fits your lifestyle",
+      ];
+    case "pb":
+      return [
+        `5 US patents and pharmaceutical-grade US manufacturing — the most scientifically documented shilajit for ${goal}`,
+        answers[5] === "strict"
+          ? "COA verified at a US pharmaceutical-grade third-party lab — meets the strictest purity standard in our database"
+          : "Third-party tested with full heavy metals panel and COA — fully verified purity at a premium tier",
+        answers[3] === "premium"
+          ? "Premium pricing reflects patented processing, US manufacturing, and unmatched research-grade documentation"
+          : "Gold-infused True Gold variant (555 PPM colloidal gold) and 5 US patents set Pürblack apart from every competitor",
       ];
   }
 }
