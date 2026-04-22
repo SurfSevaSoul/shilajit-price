@@ -242,6 +242,41 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
+
+            {/* Pürblack */}
+            <h3 className="text-xs font-bold text-[#9EC9AD]/50 uppercase tracking-widest mb-4 mt-6">
+              Shop Pürblack
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Research Grade (15g)", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
+                { label: "True Gold (15g)", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
+                { label: "True Gold (30g)", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
+                { label: "Immunity Max (30g)", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="text-sm text-[#9EC9AD]/70 hover:text-violet-400 transition-colors duration-150 flex items-center gap-1.5"
+                  >
+                    <svg
+                      className="w-2.5 h-2.5 text-violet-500 shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
