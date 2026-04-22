@@ -11,6 +11,7 @@ const SELECTOR_BRANDS = [
   { slug: "black-lotus", name: "Black Lotus Shilajit", tier: "S", fa: "85%+", ppg: "$1.23/g", origin: "Altai Mountains, Siberia", coa: "Full-panel 3rd-party", gmp: true, ship: true },
   { slug: "pure-himalayan", name: "Pure Himalayan Shilajit", tier: "S", fa: "60%", ppg: "$1.33/g", origin: "Himalayas & Altai", coa: "ISO/IEC 17025 Accredited", gmp: true, ship: true },
   { slug: "natural-shilajit", name: "Natural Shilajit", tier: "S", fa: "~70%", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "ICP-MS · LC-MS · FTIR", gmp: true, ship: false },
+  { slug: "purblack", name: "Pürblack", tier: "A", fa: "Verified", ppg: "$3.11/g", origin: "Caucasus, Siberia, Himalayas", coa: "US pharma-grade 3rd-party", gmp: true, ship: false },
   { slug: "sayan", name: "Sayan Health", tier: "A", fa: "~32%", ppg: "$1.33/g", origin: "Altai Mountains, Siberia", coa: "ISO-accredited Lab", gmp: false, ship: true },
   { slug: "primavie", name: "PrimaVie®", tier: "A", fa: "50% (std.)", ppg: "$1.50/g", origin: "Himalayas (India)", coa: "BSCG + ISO/IEC", gmp: true, ship: true },
 ];
@@ -23,6 +24,8 @@ const VALID_MATCHUPS = new Set([
   "natural-shilajit-vs-sayan",
   "black-lotus-vs-primavie",
   "pure-himalayan-vs-primavie",
+  "purblack-vs-black-lotus",
+  "purblack-vs-natural-shilajit",
 ]);
 
 function getMatchupSlug(a: string, b: string): string | null {
@@ -591,6 +594,8 @@ export default function ComparePage() {
               { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan" },
               { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit" },
               { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan" },
+              { slug: "purblack-vs-black-lotus", label: "Pürblack vs Black Lotus" },
+              { slug: "purblack-vs-natural-shilajit", label: "Pürblack vs Natural Shilajit" },
               { slug: "black-lotus-vs-sayan", label: "Black Lotus vs Sayan" },
               { slug: "natural-shilajit-vs-sayan", label: "Natural Shilajit vs Sayan" },
               { slug: "black-lotus-vs-primavie", label: "Black Lotus vs PrimaVie®" },
