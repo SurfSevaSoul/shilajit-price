@@ -325,6 +325,95 @@ export const LAB_DATA: Record<string, LabEntry> = {
       "Sun-dried DBP-verified Altai shilajit tablets",
     ],
   },
+  // ── PÜRBLACK (source: purblack.com — US patent-backed, 3rd-party tested) ──
+  "purblack-research-grade-15g": {
+    productId: "purblack-research-grade-15g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "5 US patents covering purification process",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-true-gold-15g": {
+    productId: "purblack-true-gold-15g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "5 US patents covering purification process",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-true-gold-30g": {
+    productId: "purblack-true-gold-30g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "5 US patents covering purification process",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-immunity-max-30g": {
+    productId: "purblack-immunity-max-30g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "5 US patents covering purification process",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-true-gold-x7-210g": {
+    productId: "purblack-true-gold-x7-210g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "5 US patents covering purification process",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-white-rabbit-vive-15g": {
+    productId: "purblack-white-rabbit-vive-15g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "Precious metal infusion formula — 5 US patents",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-white-rabbit-slim-15g": {
+    productId: "purblack-white-rabbit-slim-15g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "Precious metal infusion formula — 5 US patents",
+      "COA available on purblack.com",
+    ],
+  },
+  "purblack-white-rabbit-serene-15g": {
+    productId: "purblack-white-rabbit-serene-15g",
+    coaStatus: "verified",
+    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Third-party tested at US pharmaceutical-grade facility",
+      "Precious metal infusion formula — 5 US patents",
+      "COA available on purblack.com",
+    ],
+  },
 };
 
 // For products not in LAB_DATA, returns a "not-available" fallback
