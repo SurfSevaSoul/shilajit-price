@@ -412,8 +412,8 @@ export default function Home() {
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#D1EDD8] shadow-sm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <a href="/" className="flex items-center gap-1 shrink-0">
-            <span className="text-lg font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>ShilajitPrice</span>
-            <span className="text-lg font-extrabold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>.com</span>
+            <span className="text-lg font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>Shilajit</span>
+            <span className="text-lg font-extrabold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>Price</span>
           </a>
 
           {/* Desktop links */}
