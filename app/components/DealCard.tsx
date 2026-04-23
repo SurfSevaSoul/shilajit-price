@@ -26,13 +26,13 @@ const TIER_PILL: Record<Tier, string> = {
 };
 
 function buildProductSchema(product: Product) {
-  const url = product.affiliateUrl !== "#" ? product.affiliateUrl : "https://shilajitprice.com";
+  const url = product.affiliateUrl !== "#" ? product.affiliateUrl : "https://www.shilajitprice.com";
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${product.vendor} ${product.productName}`,
     description: product.description ?? `${product.category} shilajit supplement from ${product.vendor}`,
-    image: "https://shilajitprice.com/logo.png",
+    image: "https://www.shilajitprice.com/logo.png",
     brand: { "@type": "Brand", name: product.vendor },
     category: "shilajit",
     offers: {
@@ -48,7 +48,7 @@ function buildProductSchema(product: Product) {
         merchantReturnDays: product.guaranteeDays ?? 30,
         returnMethod: "https://schema.org/ReturnByMail",
         returnFees: "https://schema.org/FreeReturn",
-        url: "https://shilajitprice.com/disclaimer",
+        url: "https://www.shilajitprice.com/disclaimer",
       },
       shippingDetails: {
         "@type": "OfferShippingDetails",

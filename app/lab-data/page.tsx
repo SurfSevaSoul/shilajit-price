@@ -10,9 +10,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Shilajit Lab Reports & COA Database",
     description: "Compare COA status, fulvic acid content, and heavy metals test results across 55+ shilajit products.",
-    url: "https://shilajitprice.com/lab-data",
+    url: "https://www.shilajitprice.com/lab-data",
   },
-  alternates: { canonical: "https://shilajitprice.com/lab-data" },
+  alternates: { canonical: "https://www.shilajitprice.com/lab-data" },
 };
 
 function HMBadge({ result }: { result: HeavyMetalResult }) {

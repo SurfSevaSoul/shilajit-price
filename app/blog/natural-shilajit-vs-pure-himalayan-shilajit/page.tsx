@@ -4,7 +4,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 import BlackLotusCTA from "../../components/blog/BlackLotusCTA";
 import PureHimalayanCTA from "../../components/blog/PureHimalayanCTA";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "natural-shilajit-vs-pure-himalayan-shilajit";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 

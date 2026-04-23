@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ShilajitPrice Scoring Methodology",
     description: "How we rank shilajit products — tier scoring, price-per-gram, COA verification, and review attribution explained.",
-    url: "https://shilajitprice.com/methodology",
+    url: "https://www.shilajitprice.com/methodology",
   },
-  alternates: { canonical: "https://shilajitprice.com/methodology" },
+  alternates: { canonical: "https://www.shilajitprice.com/methodology" },
 };
 
 const TIER_DEFINITIONS = [

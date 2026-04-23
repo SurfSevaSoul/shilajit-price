@@ -9,7 +9,7 @@ const AFFILIATE_CAPS =
 const AFFILIATE_GUMMIES =
   "https://black-lotus-shilajit-shop.myshopify.com/products/shilajit-gummies?sca_ref=5188496.BbHTin3axE";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-gummies`;
 
 export const metadata: Metadata = {

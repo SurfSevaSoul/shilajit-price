@@ -8,7 +8,7 @@ const AFFILIATE_PH_RESIN =
   "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
 const AFFILIATE_NS_RESIN =
   "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "best-shilajit-resin-brands";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 

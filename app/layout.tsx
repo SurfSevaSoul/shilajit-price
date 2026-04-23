@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "ShilajitPrice — Compare Shilajit Prices, Purity & Lab Data (2026)",
     description:
       "The most comprehensive shilajit comparison database. Compare prices, fulvic acid content, COA availability, and purity scores across 74 products from 46 brands.",
-    url: "https://shilajitprice.com",
+    url: "https://www.shilajitprice.com",
     siteName: "ShilajitPrice.com",
     type: "website",
     locale: "en_US",
@@ -57,12 +57,12 @@ export const metadata: Metadata = {
       { url: "/apple-icon", sizes: "180x180", type: "image/png" },
     ],
   },
-  metadataBase: new URL("https://shilajitprice.com"),
+  metadataBase: new URL("https://www.shilajitprice.com"),
   other: {
     "impact-site-verification": "46b47028-7dd7-4cfe-806a-ff361f1351ed",
   },
   alternates: {
-    canonical: "https://shilajitprice.com",
+    canonical: "https://www.shilajitprice.com",
   },
   robots: {
     index: true,

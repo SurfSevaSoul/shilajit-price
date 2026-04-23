@@ -5,7 +5,7 @@ import BlogCTA from "../../components/blog/BlogCTA";
 
 const AFFILIATE_RESIN =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-price-per-gram`;
 
 export const metadata: Metadata = {

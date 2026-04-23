@@ -5,7 +5,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 // Affiliate constant
 const AFFILIATE = "https://purblack.pxf.io/c/7221460/3041684/36963";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/purblack-shilajit-review`;
 
 export const metadata: Metadata = {

@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Shilajit Blog — Guides, Reviews & Price Comparisons | ShilajitPrice.com",
   description:
     "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 26 expert articles to help you find the best shilajit supplement.",
-  alternates: { canonical: "https://shilajitprice.com/blog" },
+  alternates: { canonical: "https://www.shilajitprice.com/blog" },
   openGraph: {
     title: "Shilajit Blog — Guides, Reviews & Price Comparisons",
     description:
       "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews.",
-    url: "https://shilajitprice.com/blog",
+    url: "https://www.shilajitprice.com/blog",
     siteName: "ShilajitPrice.com",
     type: "website",
   },
@@ -22,11 +22,11 @@ const blogListSchema = {
   "@type": "Blog",
   name: "ShilajitPrice.com Blog",
   description: "Expert guides on buying shilajit — brand rankings, price analysis, lab data, health benefits, and authenticity verification.",
-  url: "https://shilajitprice.com/blog",
+  url: "https://www.shilajitprice.com/blog",
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
-    url: "https://shilajitprice.com",
+    url: "https://www.shilajitprice.com",
   },
   blogPost: BLOG_POSTS.map((p) => ({
     "@type": "BlogPosting",
@@ -34,7 +34,7 @@ const blogListSchema = {
     description: p.description,
     datePublished: p.publishedAt,
     dateModified: p.updatedAt,
-    url: `https://shilajitprice.com/blog/${p.slug}`,
+    url: `https://www.shilajitprice.com/blog/${p.slug}`,
   })),
 };
 

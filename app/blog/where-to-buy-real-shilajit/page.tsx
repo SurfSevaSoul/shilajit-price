@@ -5,7 +5,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 const AFFILIATE_BASE = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_RESIN = "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_CAPS = "https://black-lotus-shilajit-shop.myshopify.com/products/shilajit-resin-powder-capsules-extra-strength?sca_ref=5188496.BbHTin3axE";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/where-to-buy-real-shilajit`;
 
 export const metadata: Metadata = {

@@ -6,7 +6,7 @@ import PureHimalayanCTA from "./PureHimalayanCTA";
 import BlogSidebar from "./BlogSidebar";
 import QuizCTA from "./QuizCTA";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 
 export interface FaqItem {
   "@type": "Question";

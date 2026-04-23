@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Privacy Policy | ShilajitPrice.com",
   description:
     "Privacy policy for ShilajitPrice.com. Learn how we collect, use, and protect your data. We use minimal tracking and never sell your personal information.",
-  alternates: { canonical: "https://shilajitprice.com/privacy" },
+  alternates: { canonical: "https://www.shilajitprice.com/privacy" },
   openGraph: {
     title: "Privacy Policy | ShilajitPrice.com",
     description: "How ShilajitPrice.com collects, uses, and protects your data.",
-    url: "https://shilajitprice.com/privacy",
+    url: "https://www.shilajitprice.com/privacy",
     siteName: "ShilajitPrice.com",
     type: "website",
   },
@@ -20,8 +20,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://shilajitprice.com" },
-    { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://shilajitprice.com/privacy" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shilajitprice.com" },
+    { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://www.shilajitprice.com/privacy" },
   ],
 };
 

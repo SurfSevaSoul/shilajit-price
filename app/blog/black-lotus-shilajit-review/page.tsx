@@ -14,7 +14,7 @@ const AFFILIATE_TINCTURE =
 const AFFILIATE_BASE =
   "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const PURE_HIMALAYAN_BASE = "https://www.purehimalayanshilajit.com/?ref=4792";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/black-lotus-shilajit-review`;
 
 export const metadata: Metadata = {

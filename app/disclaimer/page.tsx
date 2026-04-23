@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Affiliate Disclaimer & Disclosure | ShilajitPrice.com",
   description:
     "Full affiliate disclosure for ShilajitPrice.com. We participate in affiliate programs including Black Lotus Shilajit. Commissions help us keep this independent comparison site free.",
-  alternates: { canonical: "https://shilajitprice.com/disclaimer" },
+  alternates: { canonical: "https://www.shilajitprice.com/disclaimer" },
   openGraph: {
     title: "Affiliate Disclaimer | ShilajitPrice.com",
     description:
       "Full disclosure of affiliate relationships and how they do (and don't) affect our product rankings.",
-    url: "https://shilajitprice.com/disclaimer",
+    url: "https://www.shilajitprice.com/disclaimer",
     siteName: "ShilajitPrice.com",
     type: "website",
   },
@@ -21,8 +21,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://shilajitprice.com" },
-    { "@type": "ListItem", position: 2, name: "Disclaimer", item: "https://shilajitprice.com/disclaimer" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shilajitprice.com" },
+    { "@type": "ListItem", position: 2, name: "Disclaimer", item: "https://www.shilajitprice.com/disclaimer" },
   ],
 };
 

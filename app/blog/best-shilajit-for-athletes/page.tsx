@@ -9,7 +9,7 @@ const NS_RESIN =
   "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa";
 const NS_NUTRIHONEY =
   "https://naturalshilajit.com/products/nutrihoney-natural-shilajit-resin-mixed-with-raw-honey-30-sticks?rfsn=9069392.c841fa";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-for-athletes`;
 
 export const metadata: Metadata = {

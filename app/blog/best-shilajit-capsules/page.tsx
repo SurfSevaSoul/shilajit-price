@@ -3,7 +3,7 @@ import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 import BlackLotusCTA from "../../components/blog/BlackLotusCTA";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "best-shilajit-capsules";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 

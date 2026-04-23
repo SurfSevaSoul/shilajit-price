@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Pürblack vs Pure Himalayan Shilajit — Full Comparison (2026)",
   description:
     "Pürblack vs Pure Himalayan Shilajit: head-to-head comparison of US patents vs ISO/IEC 17025 lab accreditation, sourcing, COA depth, price per gram, and which brand is worth it. Full 2026 review.",
-  alternates: { canonical: "https://shilajitprice.com/compare/purblack-vs-pure-himalayan" },
+  alternates: { canonical: "https://www.shilajitprice.com/compare/purblack-vs-pure-himalayan" },
   openGraph: {
     title: "Pürblack vs Pure Himalayan Shilajit — Full Comparison (2026)",
     description:
       "Pürblack vs Pure Himalayan: patent-backed US live resin vs ISO/IEC 17025-accredited Himalayan resin. Compare sourcing, COA standards, price per gram, and overall value.",
-    url: "https://shilajitprice.com/compare/purblack-vs-pure-himalayan",
+    url: "https://www.shilajitprice.com/compare/purblack-vs-pure-himalayan",
     type: "article",
   },
 };
@@ -24,14 +24,14 @@ const articleSchema = {
   headline: "Pürblack vs Pure Himalayan Shilajit — Full Comparison (2026)",
   description:
     "Pürblack vs Pure Himalayan Shilajit: head-to-head comparison of US patents vs ISO/IEC 17025 lab accreditation, sourcing, COA depth, price per gram, and which brand is worth it.",
-  url: "https://shilajitprice.com/compare/purblack-vs-pure-himalayan",
+  url: "https://www.shilajitprice.com/compare/purblack-vs-pure-himalayan",
   datePublished: "2026-04-22",
   dateModified: "2026-04-22",
   author: { "@type": "Organization", name: "ShilajitPrice.com" },
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
-    url: "https://shilajitprice.com",
+    url: "https://www.shilajitprice.com",
   },
 };
 
@@ -39,13 +39,13 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://shilajitprice.com/" },
-    { "@type": "ListItem", position: 2, name: "Compare", item: "https://shilajitprice.com/compare" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shilajitprice.com/" },
+    { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.shilajitprice.com/compare" },
     {
       "@type": "ListItem",
       position: 3,
       name: "Pürblack vs Pure Himalayan",
-      item: "https://shilajitprice.com/compare/purblack-vs-pure-himalayan",
+      item: "https://www.shilajitprice.com/compare/purblack-vs-pure-himalayan",
     },
   ],
 };

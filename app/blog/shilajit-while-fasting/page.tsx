@@ -4,7 +4,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 
 const AFFILIATE_BL = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "shilajit-while-fasting";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 

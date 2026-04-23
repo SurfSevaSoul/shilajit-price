@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "About ShilajitPrice.com | Independent Shilajit Price Comparison",
   description:
     "Learn how ShilajitPrice.com researches, tests, and ranks shilajit supplements. Our independent methodology covers COA verification, fulvic acid content, sourcing transparency, and price-per-gram analysis.",
-  alternates: { canonical: "https://shilajitprice.com/about" },
+  alternates: { canonical: "https://www.shilajitprice.com/about" },
   openGraph: {
     title: "About ShilajitPrice.com",
     description:
       "Independent shilajit price comparison. We verify lab reports, COAs, and sourcing so you can buy with confidence.",
-    url: "https://shilajitprice.com/about",
+    url: "https://www.shilajitprice.com/about",
     siteName: "ShilajitPrice.com",
     type: "website",
   },
@@ -21,8 +21,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://shilajitprice.com" },
-    { "@type": "ListItem", position: 2, name: "About", item: "https://shilajitprice.com/about" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shilajitprice.com" },
+    { "@type": "ListItem", position: 2, name: "About", item: "https://www.shilajitprice.com/about" },
   ],
 };
 

@@ -14,13 +14,13 @@ export const metadata: Metadata = {
   keywords:
     "best shilajit resin 2026, shilajit resin price comparison, pure shilajit resin, shilajit resin review, shilajit resin COA",
   alternates: {
-    canonical: "https://shilajitprice.com/blog/best-shilajit-resin-2026",
+    canonical: "https://www.shilajitprice.com/blog/best-shilajit-resin-2026",
   },
   openGraph: {
     title: "Best Shilajit Resin in 2026 — Prices Compared",
     description:
       "We compared 6 top shilajit resins on fulvic acid %, COA quality, and price per gram. Here's the definitive ranking for 2026.",
-    url: "https://shilajitprice.com/blog/best-shilajit-resin-2026",
+    url: "https://www.shilajitprice.com/blog/best-shilajit-resin-2026",
     siteName: "ShilajitPrice.com",
     type: "article",
     publishedTime: "2026-04-01",

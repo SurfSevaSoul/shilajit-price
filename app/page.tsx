@@ -11,7 +11,7 @@ import HowItWorks from "./components/HowItWorks";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const PAGE_SIZE = 12;
 
 const websiteSchema = {

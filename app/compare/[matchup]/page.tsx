@@ -442,11 +442,11 @@ export async function generateMetadata({
   return {
     title: content.title,
     description: content.metaDescription,
-    alternates: { canonical: `https://shilajitprice.com/compare/${matchup}` },
+    alternates: { canonical: `https://www.shilajitprice.com/compare/${matchup}` },
     openGraph: {
       title: content.title,
       description: content.metaDescription,
-      url: `https://shilajitprice.com/compare/${matchup}`,
+      url: `https://www.shilajitprice.com/compare/${matchup}`,
       type: "article",
     },
   };
@@ -495,14 +495,14 @@ export default async function ComparisonPage({
     "@type": "Article",
     headline: content.title,
     description: content.metaDescription,
-    url: `https://shilajitprice.com/compare/${matchup}`,
+    url: `https://www.shilajitprice.com/compare/${matchup}`,
     datePublished: "2026-04-17",
     dateModified: "2026-04-17",
     author: { "@type": "Organization", name: "ShilajitPrice.com" },
     publisher: {
       "@type": "Organization",
       name: "ShilajitPrice.com",
-      url: "https://shilajitprice.com",
+      url: "https://www.shilajitprice.com",
     },
   };
 
@@ -510,13 +510,13 @@ export default async function ComparisonPage({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: "https://shilajitprice.com/" },
-      { "@type": "ListItem", position: 2, name: "Compare", item: "https://shilajitprice.com/compare" },
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shilajitprice.com/" },
+      { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.shilajitprice.com/compare" },
       {
         "@type": "ListItem",
         position: 3,
         name: content.title,
-        item: `https://shilajitprice.com/compare/${matchup}`,
+        item: `https://www.shilajitprice.com/compare/${matchup}`,
       },
     ],
   };

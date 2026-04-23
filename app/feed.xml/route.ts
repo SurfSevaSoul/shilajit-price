@@ -1,6 +1,6 @@
 import { BLOG_POSTS } from "../data/blog";
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 
 function escapeXml(str: string): string {
   return str

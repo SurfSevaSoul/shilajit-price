@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   title: "Pürblack vs Black Lotus Shilajit — Full Comparison (2026)",
   description:
     "Pürblack vs Black Lotus shilajit: head-to-head comparison of US patents, sourcing, fulvic acid %, COA lab standards, price per gram, and which brand is worth it. Full 2026 review.",
-  alternates: { canonical: "https://shilajitprice.com/compare/purblack-vs-black-lotus" },
+  alternates: { canonical: "https://www.shilajitprice.com/compare/purblack-vs-black-lotus" },
   openGraph: {
     title: "Pürblack vs Black Lotus Shilajit — Full Comparison (2026)",
     description:
       "Pürblack vs Black Lotus shilajit: US patents vs high-FA Altai resin. Compare sourcing, COA depth, price per gram, and overall value.",
-    url: "https://shilajitprice.com/compare/purblack-vs-black-lotus",
+    url: "https://www.shilajitprice.com/compare/purblack-vs-black-lotus",
     type: "article",
   },
 };
@@ -24,14 +24,14 @@ const articleSchema = {
   headline: "Pürblack vs Black Lotus Shilajit — Full Comparison (2026)",
   description:
     "Pürblack vs Black Lotus shilajit: head-to-head comparison of US patents, sourcing, fulvic acid %, COA lab standards, price per gram, and which brand is worth it.",
-  url: "https://shilajitprice.com/compare/purblack-vs-black-lotus",
+  url: "https://www.shilajitprice.com/compare/purblack-vs-black-lotus",
   datePublished: "2026-04-22",
   dateModified: "2026-04-22",
   author: { "@type": "Organization", name: "ShilajitPrice.com" },
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice.com",
-    url: "https://shilajitprice.com",
+    url: "https://www.shilajitprice.com",
   },
 };
 
@@ -39,13 +39,13 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Home", item: "https://shilajitprice.com/" },
-    { "@type": "ListItem", position: 2, name: "Compare", item: "https://shilajitprice.com/compare" },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.shilajitprice.com/" },
+    { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.shilajitprice.com/compare" },
     {
       "@type": "ListItem",
       position: 3,
       name: "Pürblack vs Black Lotus",
-      item: "https://shilajitprice.com/compare/purblack-vs-black-lotus",
+      item: "https://www.shilajitprice.com/compare/purblack-vs-black-lotus",
     },
   ],
 };

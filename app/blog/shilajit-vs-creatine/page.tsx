@@ -5,7 +5,7 @@ import BlackLotusCTA from "../../components/blog/BlackLotusCTA";
 
 const AFFILIATE_BL =
   "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "shilajit-vs-creatine";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 

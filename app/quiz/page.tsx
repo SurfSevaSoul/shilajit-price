@@ -25,16 +25,16 @@ const quizSchema = {
   headline: "Find Your Perfect Shilajit — Personalized 7-Question Quiz",
   description:
     "Answer 7 questions about your goals, budget, and purity preferences to get matched with the best shilajit brand for you.",
-  url: "https://shilajitprice.com/quiz",
+  url: "https://www.shilajitprice.com/quiz",
   author: {
     "@type": "Organization",
     name: "ShilajitPrice Research Team",
-    url: "https://shilajitprice.com/methodology",
+    url: "https://www.shilajitprice.com/methodology",
   },
   publisher: {
     "@type": "Organization",
     name: "ShilajitPrice",
-    url: "https://shilajitprice.com",
+    url: "https://www.shilajitprice.com",
   },
   datePublished: "2026-04-01",
   dateModified: "2026-04-16",

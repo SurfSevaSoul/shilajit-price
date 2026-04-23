@@ -13,7 +13,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Googlebot-Extended", allow: "/" },
       { userAgent: "cohere-ai", allow: "/" },
     ],
-    sitemap: "https://shilajitprice.com/sitemap.xml",
-    host: "https://shilajitprice.com",
+    sitemap: "https://www.shilajitprice.com/sitemap.xml",
+    host: "https://www.shilajitprice.com",
   };
 }

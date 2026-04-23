@@ -7,7 +7,7 @@ const AFFILIATE_CAPS = "https://black-lotus-shilajit-shop.myshopify.com/products
 const AFFILIATE_BASE = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const PURE_HIMALAYAN_BASE = "https://www.purehimalayanshilajit.com/?ref=4792";
 const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-heavy-metals-safety`;
 
 export const metadata: Metadata = {

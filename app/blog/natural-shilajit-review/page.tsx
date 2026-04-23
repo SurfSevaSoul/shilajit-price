@@ -13,7 +13,7 @@ const NS_VEGTABS =
   "https://naturalshilajit.com/products/vegtabs?rfsn=9069392.c841fa";
 const NS_SUNDRIED =
   "https://naturalshilajit.com/products/natural-shilajit-sun-dried-tablets-120-pcs?rfsn=9069392.c841fa";
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/natural-shilajit-review`;
 
 export const metadata: Metadata = {
