@@ -361,12 +361,25 @@ export default function Home() {
       switch (filters.sortBy) {
         case "pricePerGram": return a.pricePerGram - b.pricePerGram;
         case "price": return a.priceUsd - b.priceUsd;
-        case "tier": return TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
         case "purityScore": return b.purityScore - a.purityScore;
         case "mostReviews": return (b.amazonReviewCount ?? 0) - (a.amazonReviewCount ?? 0);
         case "highestRated": return (b.amazonRating ?? 0) - (a.amazonRating ?? 0);
         case "costPerServing": return a.costPerServing - b.costPerServing;
-        case "bestValue": return bestValueScore(b) - bestValueScore(a);
+        case "tier":
+        case "bestValue": {
+          // 1. Tier (S → A → B → C → D)
+          const tierDiff = TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
+          if (tierDiff !== 0) return tierDiff;
+          // 2. sortOrder descending (higher = earlier; Pürblack = 100, default = 0)
+          const orderDiff = (b.sortOrder ?? 0) - (a.sortOrder ?? 0);
+          if (orderDiff !== 0) return orderDiff;
+          // 3. Products with a real image before placeholder-only products
+          const aHasImg = a.imageUrl ? 1 : 0;
+          const bHasImg = b.imageUrl ? 1 : 0;
+          if (bHasImg !== aHasImg) return bHasImg - aHasImg;
+          // 4. Best-value score within remaining group
+          return bestValueScore(b) - bestValueScore(a);
+        }
         default: return 0;
       }
     });

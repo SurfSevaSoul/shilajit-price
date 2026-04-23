@@ -58,6 +58,8 @@ export interface Product {
   description?: string;
   dbpVerified?: boolean;
   imageUrl?: string;
+  /** Higher value = displayed earlier within the same tier. Default 0. */
+  sortOrder?: number;
 }
 
 export const AFFILIATE_LINKS: Record<string, string> = {
@@ -2389,6 +2391,7 @@ export const PRODUCTS: Product[] = [
     testingLab: "US pharmaceutical-grade facility",
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     featured: false,
+    sortOrder: 100,
     description: "Entry-level Pürblack live resin. US patent-backed purification. Multi-source: Caucasus, Siberia, Himalayas. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-research-grade-15g.png",
   },
@@ -2421,6 +2424,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     sizeLabel: "15g",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack True Gold live resin 15g. 5th/6th generation formula. US patent-backed purification. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-true-gold-15g.png",
   },
@@ -2453,6 +2457,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     sizeLabel: "30g",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack True Gold live resin 30g. Better value per gram than 15g. 5 US patents. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-true-gold-30g.png",
   },
@@ -2485,6 +2490,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     sizeLabel: "30g",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack Immunity Max 30g. Formulated for immune support. US patent-backed purification. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-immunity-max-30g.png",
   },
@@ -2518,6 +2524,7 @@ export const PRODUCTS: Product[] = [
     sizeLabel: "210g",
     badge: "Best Bulk",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack True Gold X7 bulk 210g. Best price-per-gram in the Pürblack lineup. 700 servings. US patent-backed, COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-true-gold-x7-210g.png",
   },
@@ -2550,6 +2557,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     sizeLabel: "15g",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack White Rabbit Vive 15g. Premium precious-metal-infused live resin formulation. US patent-backed purification. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-white-rabbit-vive-15g.png",
   },
@@ -2582,6 +2590,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     sizeLabel: "15g",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack White Rabbit Slim 15g. Premium precious-metal-infused live resin formulation. US patent-backed purification. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-white-rabbit-slim-15g.png",
   },
@@ -2614,6 +2623,7 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
     sizeLabel: "15g",
     featured: false,
+    sortOrder: 100,
     description: "Pürblack White Rabbit Serene 15g. Premium precious-metal-infused live resin formulation. US patent-backed purification. COA verified, third-party tested. Made in USA.",
     imageUrl: "/images/products/purblack-white-rabbit-serene-15g.png",
   },
