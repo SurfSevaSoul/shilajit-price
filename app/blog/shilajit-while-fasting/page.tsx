@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "ShilajitPrice.com",
     type: "article",
     publishedTime: "2026-04-19",
-    modifiedTime: "2026-04-19",
+    modifiedTime: "2026-04-23",
   },
 };
 
@@ -46,10 +46,10 @@ const faqItems: FaqItem[] = [
   },
   {
     "@type": "Question",
-    name: "Does shilajit affect autophagy?",
+    name: "Does shilajit break autophagy?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "The direct interaction between shilajit and autophagy has not been studied in human clinical research. Autophagy is primarily stimulated by caloric restriction, low insulin, and low mTOR signaling. Because shilajit contains no significant macronutrients, it is unlikely to meaningfully suppress autophagy in the same way that food, protein, or carbohydrates would. Some preclinical research suggests fulvic acid may have independent pro-autophagic properties at the cellular level, but this has not been confirmed in human trials.",
+      text: "No — pure shilajit resin is unlikely to break autophagy. Autophagy is primarily regulated by mTOR suppression, which is triggered by protein (amino acids) and caloric intake. Shilajit contains no protein and negligible calories, so it does not activate the mTOR pathway that switches autophagy off. More notably, preclinical research suggests that fulvic acid — shilajit's primary bioactive — may activate AMPK, the same energy-sensing enzyme that promotes autophagy during caloric restriction. This has not been confirmed in human trials, but the directional evidence suggests shilajit is not merely autophagy-neutral; it may support the process. The exception: shilajit products containing protein additives, sweeteners, or fillers could disrupt autophagy — which is why COA-verified pure resin matters specifically for fasting users.",
     },
   },
   {
@@ -84,7 +84,7 @@ export default function ShilajitWhileFasting() {
       description="Does shilajit break a fast? How does it interact with autophagy? What's the best timing during a fasting window, and what else can you safely stack during the fast? Here's a practical, research-grounded guide for intermittent fasters."
       tags={["Fasting", "Timing", "Science", "Stacking"]}
       publishedAt="2026-04-19"
-      updatedAt="2026-04-19"
+      updatedAt="2026-04-23"
       readingTimeMin={8}
       currentSlug={SLUG}
       breadcrumbLabel="Shilajit While Fasting"
@@ -125,6 +125,129 @@ export default function ShilajitWhileFasting() {
             addresses each scenario specifically, then covers timing, stacking, and the products
             best suited for fasting use.
           </p>
+        </div>
+      </section>
+
+      {/* ── DEDICATED ANSWER: Does shilajit break a fast ─────────────── */}
+      <section id="does-shilajit-break-a-fast">
+        <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
+          Does Shilajit Break a Fast?
+        </h2>
+        <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+          <p>
+            <strong>No — pure shilajit resin does not break a fast.</strong> A standard
+            300–500 mg serving of COA-verified shilajit resin contains 0–2 calories, zero
+            grams of protein, and less than 0.5 g of carbohydrates — none of which is
+            sufficient to trigger an insulin response or disrupt the metabolic state that
+            fasting produces.
+          </p>
+          <p>
+            The three factors that determine whether something breaks a fast are calories,
+            insulin response, and mTOR activation. Shilajit fails to meaningfully clear any
+            of these bars:
+          </p>
+          <ul className="space-y-2 ml-2">
+            <li className="flex gap-3">
+              <span className="text-emerald-500 font-bold shrink-0">✓</span>
+              <span>
+                <strong>Calories:</strong> 0–2 kcal per serving. The threshold that most
+                fasting researchers use is roughly 50 kcal; shilajit is well below this at
+                any standard dose.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-emerald-500 font-bold shrink-0">✓</span>
+              <span>
+                <strong>Insulin response:</strong> Insulin is primarily triggered by
+                carbohydrates and protein. Shilajit has neither in meaningful amounts. It
+                does not stimulate insulin secretion and will not interrupt fat oxidation
+                or ketosis.
+              </span>
+            </li>
+            <li className="flex gap-3">
+              <span className="text-emerald-500 font-bold shrink-0">✓</span>
+              <span>
+                <strong>Fulvic acid:</strong> The primary bioactive in shilajit is fulvic
+                acid — a humic compound, not a macronutrient. Fulvic acid has no caloric
+                value and no known insulin-stimulating activity. At the cellular level, it
+                appears to work through AMPK activation, which is aligned with — not
+                opposed to — fasting&apos;s metabolic goals.
+              </span>
+            </li>
+          </ul>
+          <p>
+            The one caveat: this applies to <em>pure</em> shilajit resin. Flavored products,
+            honey blends, and gummies all contain added sugars that do break a fast. Always
+            verify the COA and ingredient list before using any shilajit product during a
+            fasting window.
+          </p>
+        </div>
+      </section>
+
+      {/* ── DEDICATED ANSWER: Does shilajit break autophagy ──────────── */}
+      <section id="does-shilajit-break-autophagy">
+        <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
+          Does Shilajit Break Autophagy?
+        </h2>
+        <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+          <p>
+            <strong>No — pure shilajit resin is unlikely to break autophagy,</strong> and
+            available preclinical evidence suggests it may actually support it. Here is what
+            the research shows.
+          </p>
+          <p>
+            Autophagy is regulated primarily by two opposing signaling proteins: mTOR
+            (mechanistic target of rapamycin), which suppresses autophagy when activated by
+            amino acids and caloric intake, and AMPK (AMP-activated protein kinase), which
+            promotes autophagy when activated by low energy status. Fasting keeps mTOR
+            suppressed and AMPK elevated — which is what allows autophagy to proceed.
+          </p>
+          <p>
+            Shilajit&apos;s interaction with these pathways works as follows:
+          </p>
+          <div className="grid sm:grid-cols-2 gap-4 my-2">
+            <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
+              <h3 className="text-sm font-bold text-[#10B981] mb-2">mTOR — Not Activated</h3>
+              <p className="text-xs text-[#0D1F14] leading-relaxed">
+                mTOR is activated by amino acids (protein) and growth factors. Shilajit
+                contains no protein and no amino acids in quantities that would activate
+                mTOR signaling. It therefore does not suppress autophagy through this
+                pathway. This is the primary way that food, BCAAs, and protein shakes break
+                autophagy — and shilajit does none of it.
+              </p>
+            </div>
+            <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
+              <h3 className="text-sm font-bold text-[#10B981] mb-2">AMPK — Potentially Activated</h3>
+              <p className="text-xs text-[#0D1F14] leading-relaxed">
+                A 2020 review in <em>Phytomedicine</em> examined fulvic acid&apos;s cellular
+                mechanisms and identified AMPK activation as a candidate pathway. AMPK
+                activation is the same mechanism through which caloric restriction and
+                exercise promote autophagy. If fulvic acid activates AMPK at supplemental
+                doses in humans — which has not yet been confirmed in clinical trials — it
+                would directionally support rather than suppress autophagic activity.
+              </p>
+            </div>
+          </div>
+          <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
+            <h3 className="text-sm font-bold text-[#10B981] mb-2">Mitophagy — Overlapping Pathways</h3>
+            <p className="text-xs text-[#0D1F14] leading-relaxed">
+              Mitophagy is the selective autophagic clearance of damaged mitochondria — a
+              subset of autophagy that is particularly relevant to longevity and metabolic
+              health. Preclinical studies on fulvic acid&apos;s mitochondrial effects show
+              improvements in mitochondrial membrane potential and reductions in
+              mitochondrial damage markers. These effects overlap with what mitophagy
+              accomplishes at the cellular level, though direct measurement of mitophagy
+              markers (PINK1, Parkin, LC3-II) with shilajit in humans has not been done.
+            </p>
+          </div>
+          <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800 leading-relaxed">
+            <strong>Research caveat:</strong> No human clinical trial has directly measured
+            autophagy markers (LC3-II, p62/SQSTM1, beclin-1) in subjects taking shilajit
+            during a fasting protocol. The above is mechanistic and preclinical evidence.
+            The practical conclusion for fasting users: shilajit is not a compound that
+            triggers autophagy suppression, and it may have adjunct pro-autophagic effects
+            — but that claim cannot yet be made with human trial certainty.
+          </div>
         </div>
       </section>
 
