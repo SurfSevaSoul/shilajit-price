@@ -414,7 +414,7 @@ export default function ComparePage() {
                       <div className="flex items-center gap-2">
                         {/* Product image or placeholder */}
                         {p.imageUrl ? (
-                          <div className="shrink-0 w-14 h-14 rounded-lg bg-[#E8F5EC] overflow-hidden flex items-center justify-center p-1.5">
+                          <div className="shrink-0 w-14 h-14 rounded-lg bg-[#E8F5EC] overflow-hidden">
                             <Image
                               src={p.imageUrl}
                               alt={`${p.vendor} ${p.productName}`}
@@ -422,7 +422,7 @@ export default function ComparePage() {
                               height={56}
                               quality={90}
                               sizes="56px"
-                              className="object-contain w-full h-full"
+                              className="object-cover w-full h-full"
                             />
                           </div>
                         ) : (

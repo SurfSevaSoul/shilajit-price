@@ -191,7 +191,7 @@ function EditorPickCard({
           <img
             src={product.imageUrl}
             alt={product.productName}
-            className="absolute inset-0 w-full h-full object-contain p-4"
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
       )}
