@@ -64,26 +64,31 @@ function bestValueScore(p: (typeof PRODUCTS)[0]) {
   return tierScore * 0.4 + p.purityScore * 3 * 0.3 + ppgScore * 0.3;
 }
 
-// Interleave BL, PH, and NS featured products so no brand dominates the top
-function interleaveProducts(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][] {
-  const blFeatured = list.filter(
-    (p) => p.featured && p.vendor.toLowerCase().includes("black lotus")
-  );
-  const phFeatured = list.filter(
-    (p) => p.featured && p.vendor.toLowerCase().includes("pure himalayan")
-  );
-  const nsFeatured = list.filter(
-    (p) => p.featured && p.vendor.toLowerCase().includes("natural shilajit")
-  );
-  const others = list.filter((p) => !p.featured);
-  const result: (typeof PRODUCTS)[0][] = [];
-  const max = Math.max(blFeatured.length, phFeatured.length, nsFeatured.length);
-  for (let i = 0; i < max; i++) {
-    if (blFeatured[i]) result.push(blFeatured[i]);
-    if (phFeatured[i]) result.push(phFeatured[i]);
-    if (nsFeatured[i]) result.push(nsFeatured[i]);
+// Pin one flagship product per featured partner to positions 1-4, then
+// continue with the remaining products in the existing sort order.
+// Order: Black Lotus → Pure Himalayan → Natural Shilajit → Pürblack
+// If a pinned product is absent from `list` (e.g. filtered out) it is
+// simply skipped — the rest of the order is unaffected.
+const PINNED_PARTNER_IDS = [
+  "bl-resin",                    // Black Lotus — Pure Altai Resin 30g
+  "ph-soft-resin",               // Pure Himalayan — Soft Resin Shilajit
+  "natural-shilajit-resin-20g",  // Natural Shilajit — Resin 20g
+  "purblack-true-gold-30g",      // Pürblack — True Gold Live Resin
+];
+
+function pinFeaturedPartners(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][] {
+  const pinned: (typeof PRODUCTS)[0][] = [];
+  const rest = list.slice(); // copy so we can splice safely
+
+  for (const id of PINNED_PARTNER_IDS) {
+    const idx = rest.findIndex((p) => p.id === id);
+    if (idx !== -1) {
+      pinned.push(rest[idx]);
+      rest.splice(idx, 1);
+    }
   }
-  return [...result, ...others];
+
+  return [...pinned, ...rest];
 }
 
 // ── Editor's Pick card (equal-weight, vertical layout) ──────────────────────
@@ -418,9 +423,9 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
       }
     });
 
-    // Interleave BL and PH featured products for balanced presentation
+    // Pin one flagship per partner to positions 1-4 for default sort views
     if (filters.sortBy === "bestValue" || filters.sortBy === "tier") {
-      list = interleaveProducts(list);
+      list = pinFeaturedPartners(list);
     }
 
     return list;
