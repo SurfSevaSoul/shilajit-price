@@ -64,31 +64,47 @@ function bestValueScore(p: (typeof PRODUCTS)[0]) {
   return tierScore * 0.4 + p.purityScore * 3 * 0.3 + ppgScore * 0.3;
 }
 
-// Pin one flagship product per featured partner to positions 1-4, then
-// continue with the remaining products in the existing sort order.
-// Order: Black Lotus → Pure Himalayan → Natural Shilajit → Pürblack
-// If a pinned product is absent from `list` (e.g. filtered out) it is
-// simply skipped — the rest of the order is unaffected.
+// Pin one flagship product per featured partner to the front of their
+// respective tier group — tier integrity is always preserved.
+// S-tier pins: Black Lotus → Natural Shilajit (in that order within S)
+// A-tier pins: Pure Himalayan → Pürblack (in that order within A)
+// If a pinned product is absent (filtered out) it is silently skipped.
 const PINNED_PARTNER_IDS = [
-  "bl-resin",                    // Black Lotus — Pure Altai Resin 30g
-  "ph-soft-resin",               // Pure Himalayan — Soft Resin Shilajit
-  "natural-shilajit-resin-20g",  // Natural Shilajit — Resin 20g
-  "purblack-true-gold-30g",      // Pürblack — True Gold Live Resin
+  "bl-resin",                    // S — Black Lotus Pure Altai Resin 30g
+  "natural-shilajit-resin-20g",  // S — Natural Shilajit Resin 20g
+  "ph-soft-resin",               // A — Pure Himalayan Soft Resin
+  "purblack-true-gold-30g",      // A — Pürblack True Gold Live Resin
 ];
 
-function pinFeaturedPartners(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][] {
-  const pinned: (typeof PRODUCTS)[0][] = [];
-  const rest = list.slice(); // copy so we can splice safely
+const TIER_SEQUENCE = ["S", "A", "B", "C", "D"] as const;
 
-  for (const id of PINNED_PARTNER_IDS) {
-    const idx = rest.findIndex((p) => p.id === id);
-    if (idx !== -1) {
-      pinned.push(rest[idx]);
-      rest.splice(idx, 1);
+function pinFeaturedPartners(list: (typeof PRODUCTS)[0][]): (typeof PRODUCTS)[0][] {
+  // Bucket products by tier, preserving existing intra-tier order
+  const byTier = new Map<string, (typeof PRODUCTS)[0][]>();
+  for (const tier of TIER_SEQUENCE) byTier.set(tier, []);
+  for (const p of list) byTier.get(p.tier)?.push(p);
+
+  const result: (typeof PRODUCTS)[0][] = [];
+
+  for (const tier of TIER_SEQUENCE) {
+    const bucket = byTier.get(tier)!;
+    if (bucket.length === 0) continue;
+
+    // Extract pinned products that belong to this tier, in PINNED order
+    const pinned: (typeof PRODUCTS)[0][] = [];
+    const rest = bucket.slice();
+    for (const id of PINNED_PARTNER_IDS) {
+      const idx = rest.findIndex((p) => p.id === id);
+      if (idx !== -1) {
+        pinned.push(rest[idx]);
+        rest.splice(idx, 1);
+      }
     }
+
+    result.push(...pinned, ...rest);
   }
 
-  return [...pinned, ...rest];
+  return result;
 }
 
 // ── Editor's Pick card (equal-weight, vertical layout) ──────────────────────
