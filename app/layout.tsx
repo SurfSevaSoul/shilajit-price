@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/opengraph-image",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "ShilajitPrice.com — Compare Shilajit Prices, Purity & Lab Data",
@@ -47,13 +47,17 @@ export const metadata: Metadata = {
     title: "ShilajitPrice — Compare Shilajit Prices, Purity & Lab Data",
     description:
       "74 products, 46 brands. Compare fulvic acid content, COA availability, purity scores, and prices. Find the best shilajit for your budget.",
-    images: ["/opengraph-image"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: [
-      { url: "/icon", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-64x64.png", sizes: "64x64", type: "image/png" },
     ],
+    shortcut: "/favicon-32x32.png",
     apple: [
+      { url: "/favicon-64x64.png", sizes: "64x64", type: "image/png" },
       { url: "/apple-icon", sizes: "180x180", type: "image/png" },
     ],
   },
