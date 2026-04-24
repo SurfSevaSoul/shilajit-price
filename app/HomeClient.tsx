@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { PRODUCTS, CATEGORIES, Category, Tier, TIER_COLORS, Origin, ORIGINS } from "./data/products";
+import { getAggregateRating } from "./data/reviews";
 import HeroSection from "./components/HeroSection";
 import CategoryFilter from "./components/CategoryFilter";
 import SidebarFilters, { FilterState, DEFAULT_FILTERS } from "./components/SidebarFilters";
@@ -192,6 +193,30 @@ function EditorPickCard({
           </div>
         </div>
       </div>
+
+      {/* Star rating — amazonRating first, fall back to aggregate from reviews.ts */}
+      {(() => {
+        const rating = product.amazonRating;
+        const reviewCount = product.amazonReviewCount;
+        const aggregate = rating === undefined ? getAggregateRating(product.id) : null;
+        const displayRating = rating ?? aggregate?.avg;
+        const displayCount = reviewCount ?? aggregate?.count;
+        if (displayRating === undefined) return null;
+        return (
+          <div className="flex items-center gap-1.5 mb-2">
+            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-amber-50 ring-1 ring-amber-200 text-amber-700 text-[10px] font-semibold">
+              ★ {displayRating.toFixed(1)}
+            </span>
+            {displayCount !== undefined && (
+              <span className="text-[10px] text-[#7BA899]">
+                ({displayCount >= 1000
+                  ? `${(displayCount / 1000).toFixed(1)}k`
+                  : displayCount} reviews)
+              </span>
+            )}
+          </div>
+        );
+      })()}
 
       {/* Editorial reason */}
       {reason && (
