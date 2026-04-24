@@ -190,7 +190,7 @@ export default function DealCard({ product }: DealCardProps) {
                 height={120}
                 quality={90}
                 sizes="120px"
-                className="object-contain w-full h-full"
+                className="object-cover w-full h-full"
               />
             </div>
           ) : (

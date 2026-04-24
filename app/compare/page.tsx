@@ -422,7 +422,7 @@ export default function ComparePage() {
                               height={56}
                               quality={90}
                               sizes="56px"
-                              className="object-contain w-full h-full"
+                              className="object-cover w-full h-full"
                             />
                           </div>
                         ) : (

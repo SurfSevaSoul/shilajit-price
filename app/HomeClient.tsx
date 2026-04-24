@@ -186,12 +186,12 @@ function EditorPickCard({
 
       {/* Product image */}
       {product.imageUrl && (
-        <div className="w-full h-28 flex items-center justify-center mb-3 rounded-xl bg-[#F4FAF6] overflow-hidden">
+        <div className="w-full h-28 mb-3 rounded-xl bg-[#F4FAF6] overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={product.imageUrl}
             alt={product.productName}
-            className="max-h-full max-w-full object-contain p-1"
+            className="w-full h-full object-cover"
           />
         </div>
       )}
