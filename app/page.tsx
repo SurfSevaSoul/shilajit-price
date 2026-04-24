@@ -134,12 +134,14 @@ function EditorPickCard({
   product,
   label,
   accent,
+  reason,
   customBullets,
   customTier,
 }: {
   product: (typeof PRODUCTS)[0];
   label: string;
   accent: AccentVariant;
+  reason?: string;
   customBullets?: string[];
   customTier?: string;
 }) {
@@ -161,8 +163,20 @@ function EditorPickCard({
         {label}
       </div>
 
+      {/* Product image */}
+      {product.imageUrl && (
+        <div className="w-full h-28 flex items-center justify-center mb-3 rounded-xl bg-[#F4FAF6] overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={product.imageUrl}
+            alt={product.productName}
+            className="max-h-full max-w-full object-contain p-1"
+          />
+        </div>
+      )}
+
       {/* Tier + name */}
-      <div className="flex items-center gap-2.5 mb-3">
+      <div className="flex items-center gap-2.5 mb-2">
         <div
           className={`shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-extrabold ${TIER_COLORS[displayTier]} shadow-sm`}
           title={`${displayTier}-Tier`}
@@ -178,6 +192,13 @@ function EditorPickCard({
           </div>
         </div>
       </div>
+
+      {/* Editorial reason */}
+      {reason && (
+        <p className="text-[10px] italic text-[#7BA899] leading-snug mb-3">
+          {reason}
+        </p>
+      )}
 
       {/* Price row */}
       <div className="flex items-baseline gap-2 mb-3">
@@ -321,13 +342,26 @@ export default function Home() {
     return [blPick, phPick, nsPick, purblackPick].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
-  const editorPickMeta: { label: string; accent: AccentVariant; customBullets?: string[]; customTier?: string }[] = [
-    { label: "Best Overall", accent: "emerald" },
-    { label: "Best Purity", accent: "amber" },
-    { label: "Best Value", accent: "teal" },
+  const editorPickMeta: { label: string; accent: AccentVariant; reason?: string; customBullets?: string[]; customTier?: string }[] = [
+    {
+      label: "Best Overall",
+      accent: "emerald",
+      reason: "Highest fulvic acid per dollar with a fully public COA — the best starting point for most buyers.",
+    },
+    {
+      label: "Best Purity",
+      accent: "amber",
+      reason: "Consistently clean lab results and the most rigorous third-party testing process we've found.",
+    },
+    {
+      label: "Best Value",
+      accent: "teal",
+      reason: "DBP-verified and batch-tested — best choice for buyers who want maximum sourcing transparency.",
+    },
     {
       label: "Best Premium",
       accent: "violet",
+      reason: "Five US patents and pharmaceutical-grade processing for serious biohackers who want the premium tier.",
       customTier: "S",
       customBullets: [
         "✓ COA verified",
@@ -538,6 +572,7 @@ export default function Home() {
                     product={p}
                     label={editorPickMeta[i]?.label ?? "Top Pick"}
                     accent={editorPickMeta[i]?.accent ?? "emerald"}
+                    reason={editorPickMeta[i]?.reason}
                     customBullets={editorPickMeta[i]?.customBullets}
                     customTier={editorPickMeta[i]?.customTier}
                   />
