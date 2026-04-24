@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "ShilajitPrice.com",
     type: "article",
     publishedTime: "2026-04-18",
-    modifiedTime: "2026-04-18",
+    modifiedTime: "2026-04-24",
   },
 };
 
@@ -65,6 +65,14 @@ const faqItems: FaqItem[] = [
   },
   {
     "@type": "Question",
+    name: "Can shilajit worsen iron overload or hemochromatosis?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Shilajit naturally contains iron, and fulvic acid — its primary bioactive compound — enhances mineral absorption across the gut lining. For the general population this is not a concern, but for people with hereditary hemochromatosis or other diagnosed iron overload disorders, adding a bioavailable iron source could contribute to further iron accumulation. Anyone with a diagnosed iron metabolism condition should consult their physician before using shilajit or any iron-containing supplement. This is a precaution for a specific at-risk group, not a risk that applies to most users.",
+    },
+  },
+  {
+    "@type": "Question",
     name: "How do I know if my shilajit is safe?",
     acceptedAnswer: {
       "@type": "Answer",
@@ -88,7 +96,7 @@ export default function ShilajitSideEffects() {
         description="Shilajit is safe for most healthy adults — but there are real things to know before you start. This guide covers common side effects, who should avoid it entirely, the heavy metals risk, and how to confirm your product is actually safe."
         tags={["Safety", "Side Effects", "Heavy Metals", "Buying Guide"]}
         publishedAt="2026-04-18"
-        updatedAt="2026-04-18"
+        updatedAt="2026-04-24"
         readingTimeMin={9}
         currentSlug="shilajit-side-effects"
         quizCta="line"
@@ -303,6 +311,68 @@ export default function ShilajitSideEffects() {
             </div>
             <p>
               For resin products, 300mg typically corresponds to a pea-sized portion. For capsule products, check the stated mg per capsule. Exceeding 600mg/day provides no additional benefit and increases the likelihood of digestive reactions. If you experience any persistent side effects beyond the first week, discontinue use.
+            </p>
+          </div>
+        </section>
+
+        {/* Iron overload */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
+            Shilajit and Iron Overload: Who Should Avoid It
+          </h2>
+          <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+            <p>
+              Shilajit naturally contains iron, and its high fulvic acid content actively enhances the absorption of minerals — including iron — across the gut lining. For the vast majority of healthy adults, this is a benefit rather than a risk. But for a specific group it warrants real caution.
+            </p>
+
+            {/* What is hemochromatosis callout */}
+            <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5">
+              <h3 className="text-base font-bold text-[#0D1F14] mb-3">What is hereditary hemochromatosis?</h3>
+              <div className="space-y-3 text-xs text-[#4A6358] leading-relaxed">
+                <p>
+                  Hemochromatosis is a hereditary iron overload disorder in which the body absorbs too much iron from food and stores it in organs — particularly the liver, heart, and joints. It is the most common genetic disorder in populations of Northern European descent, affecting roughly 1 in 200 people.
+                </p>
+                <p>
+                  Unlike most mineral imbalances, excess iron cannot be easily excreted. It accumulates over time and, if left unmanaged, can lead to organ damage. Common signs include:
+                </p>
+                <ul className="list-disc list-inside space-y-1 ml-1">
+                  <li>Persistent fatigue and low energy despite adequate sleep</li>
+                  <li>Joint pain, particularly in the knuckles and larger joints</li>
+                  <li>Liver tenderness or elevated liver enzymes on blood tests</li>
+                  <li>Skin bronzing or darkening in some cases</li>
+                  <li>Abdominal discomfort</li>
+                </ul>
+                <p className="italic text-[#7BA899]">
+                  Note: these symptoms overlap with many common conditions and are not diagnostic on their own. Only a physician and appropriate blood tests (serum ferritin, transferrin saturation) can confirm hemochromatosis.
+                </p>
+              </div>
+            </div>
+
+            {/* Risk cards */}
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="bg-red-50 border border-red-200 rounded-xl p-4">
+                <h3 className="text-xs font-bold text-red-700 mb-1">⚠ Diagnosed iron overload — avoid</h3>
+                <p className="text-xs text-red-600 leading-relaxed">
+                  People with confirmed hereditary hemochromatosis or secondary iron overload conditions should avoid shilajit unless cleared by their managing physician. Fulvic acid&apos;s mineral-enhancing absorption effect may accelerate iron accumulation in those already prone to it.
+                </p>
+              </div>
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+                <h3 className="text-xs font-bold text-amber-800 mb-1">⚡ Iron-related conditions — consult first</h3>
+                <p className="text-xs text-amber-700 leading-relaxed">
+                  People with elevated serum ferritin, high transferrin saturation, or a family history of hemochromatosis should discuss shilajit use with their physician before starting. A simple blood panel can clarify whether iron status is a concern.
+                </p>
+              </div>
+            </div>
+
+            {/* Context callout */}
+            <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4">
+              <p className="text-xs text-[#4A6358] leading-relaxed">
+                <strong className="text-[#0D1F14]">Important context:</strong> Iron overload is a precaution for a specific at-risk group — not a risk for most users. Healthy adults without iron metabolism disorders absorb and regulate minerals normally, and the iron content in a typical daily shilajit dose (300–500mg) is not a meaningful concern for this population. If you have no history of iron disorders, no family history of hemochromatosis, and normal ferritin levels on routine bloodwork, this section does not apply to you.
+              </p>
+            </div>
+
+            <p>
+              Anyone with a diagnosed iron metabolism condition — or who is uncertain about their iron status — should consult their physician before starting shilajit or any mineral-containing supplement. This is standard guidance for any supplement with relevant mineral content, not a warning unique to shilajit.
             </p>
           </div>
         </section>
