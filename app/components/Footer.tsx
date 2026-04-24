@@ -86,49 +86,50 @@ export default function Footer() {
                 { label: "About", href: "/about" },
                 { label: "Disclaimer", href: "/disclaimer" },
                 { label: "Privacy Policy", href: "/privacy" },
-                {
-                  label: "Black Lotus Shilajit",
-                  href: AFFILIATE_LINKS.base,
-                  external: true,
-                },
-                {
-                  label: "Black Lotus Resin",
-                  href: AFFILIATE_LINKS.resin,
-                  external: true,
-                },
-                {
-                  label: "Black Lotus Capsules",
-                  href: AFFILIATE_LINKS.capsules,
-                  external: true,
-                },
-              ].map(({ label, href, external }) => (
+              ].map(({ label, href }) => (
                 <li key={label}>
                   <a
                     href={href}
-                    {...(external
-                      ? {
-                          target: "_blank",
-                          rel: "noopener noreferrer sponsored",
-                        }
-                      : {})}
+                    className="text-sm text-[#9EC9AD]/70 hover:text-[#10B981] transition-colors duration-150"
+                  >
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Featured Brands */}
+            <h3 className="text-xs font-bold text-[#9EC9AD]/50 uppercase tracking-widest mt-6 mb-4">
+              Our Featured Brands
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Black Lotus Shilajit", href: "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE" },
+                { label: "Pure Himalayan Shilajit", href: "https://www.purehimalayanshilajit.com/?ref=4792" },
+                { label: "Natural Shilajit", href: "https://naturalshilajit.com/?rfsn=9069392.c841fa" },
+                { label: "Pürblack", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
                     className="text-sm text-[#9EC9AD]/70 hover:text-[#10B981] transition-colors duration-150 flex items-center gap-1.5"
                   >
                     {label}
-                    {external && (
-                      <svg
-                        className="w-2.5 h-2.5 opacity-40"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                        />
-                      </svg>
-                    )}
+                    <svg
+                      className="w-2.5 h-2.5 opacity-40"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
                   </a>
                 </li>
               ))}
