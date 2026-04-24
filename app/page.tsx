@@ -589,17 +589,18 @@ export default function Home() {
               </div>
               <div className="grid sm:grid-cols-3 gap-3">
                 {[
-                  { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan", badge: "Most Popular" },
-                  { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit", badge: "Altai Showdown" },
-                  { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan", badge: "S-Tier Battle" },
-                ].map(({ slug, label, badge }) => (
+                  { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan", badge: "Most Popular", outcome: "Black Lotus wins on value, Pure Himalayan wins on sourcing rigor." },
+                  { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit", badge: "Altai Showdown", outcome: "Both Altai-sourced — Black Lotus leads on fulvic acid, Natural Shilajit on transparency." },
+                  { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan", badge: "S-Tier Battle", outcome: "DBP verification vs Himalayan purity — depends on what you trust more." },
+                ].map(({ slug, label, badge, outcome }) => (
                   <Link
                     key={slug}
                     href={`/compare/${slug}`}
                     className="block bg-white rounded-2xl border-2 border-[#D1EDD8] p-4 hover:border-[#10B981] hover:shadow-sm transition-all group"
                   >
                     <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1.5">{badge}</div>
-                    <div className="text-xs font-bold text-[#0D1F14] leading-snug mb-2">{label}</div>
+                    <div className="text-xs font-bold text-[#0D1F14] leading-snug mb-1.5">{label}</div>
+                    <p className="text-[10px] italic text-[#7BA899] leading-snug mb-2">{outcome}</p>
                     <div className="text-[10px] text-[#7BA899] group-hover:text-[#4A6358] transition-colors">
                       Full comparison with verdict, table & FAQs →
                     </div>
