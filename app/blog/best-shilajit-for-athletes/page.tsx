@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: "ShilajitPrice.com",
     type: "article",
     publishedTime: "2026-04-18",
-    modifiedTime: "2026-04-18",
+    modifiedTime: "2026-04-24",
   },
 };
 
@@ -62,6 +62,14 @@ const faqItems: FaqItem[] = [
     acceptedAnswer: {
       "@type": "Answer",
       text: "Most research protocols and practitioner guidance suggest taking shilajit in the morning with food or 30–60 minutes before training. Morning use aligns with the body's natural cortisol rhythm and allows fulvic acid to be absorbed during active metabolic periods. Pre-workout timing leverages the mitochondrial support and oxygen utilization effects during the training session itself. Avoid taking shilajit within 2 hours of sleep — while not stimulating in the traditional sense, some users report increased alertness that can interfere with sleep onset.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Will shilajit show up on a drug test?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "No. Shilajit is a natural mineral resin and does not contain any substance that would register as a controlled drug on standard athletic drug tests. It contains no synthetic hormones, stimulants, or scheduled compounds. Its testosterone-supporting effects work through natural hormonal optimization — supporting the body's own endocrine function — not through the introduction of exogenous hormones. Standard urine or blood panels used in sports drug testing will not flag shilajit. Athletes competing under WADA-governed anti-doping rules can use shilajit without concern about a positive test result.",
     },
   },
   {
@@ -149,7 +157,7 @@ export default function BestShilajitForAthletes() {
         description="Shilajit is gaining serious traction in athletic and fitness communities — but most products on the market won't deliver the bioactive concentrations shown in clinical research. Here are the three verified options that actually will."
         tags={["Performance", "Recovery", "Ranked List", "COA Verified"]}
         publishedAt="2026-04-18"
-        updatedAt="2026-04-18"
+        updatedAt="2026-04-24"
         readingTimeMin={9}
         currentSlug="best-shilajit-for-athletes"
         quizCta="card"
@@ -333,24 +341,6 @@ export default function BestShilajitForAthletes() {
           </div>
         </section>
 
-        {/* Is it banned? */}
-        <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
-            Is shilajit banned in sport? The direct answer
-          </h2>
-          <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
-            <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4">
-              <p className="text-sm font-bold text-[#0D1F14] mb-1">Short answer: No. Shilajit is not prohibited.</p>
-              <p className="text-xs text-[#4A6358]">
-                Shilajit does not appear on the WADA prohibited substances list. It contains no synthetic hormones, no scheduled stimulants, and no growth hormone secretagogues. It is a naturally occurring mineral pitch. It is permitted in Olympic competition, NFL, NBA, MLB, NCAA, and all major professional sporting organizations.
-              </p>
-            </div>
-            <p>
-              The only relevant caveat: general supplement manufacturing can introduce contamination risks. If you compete at a tested level and want absolute certainty, look for BSCG (Banned Substance Control Group) certification — which certifies the specific batch against the WADA list. PrimaVie® shilajit products hold this certification and are available if batch-specific WADA clearance matters to your situation.
-            </p>
-          </div>
-        </section>
-
         {/* Resin vs capsules for athletes */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
@@ -363,6 +353,93 @@ export default function BestShilajitForAthletes() {
             <p>
               For pre-workout use where timing precision matters, resin has a genuine edge. For consistent daily supplementation where timing is flexible, high-quality capsules (85%+ FA, resin powder) work equally well over time. The format matters less than the bioactive concentration — a 500mg capsule of 85% FA resin delivers the same fulvic acid as the equivalent resin portion, just slightly delayed.
             </p>
+          </div>
+        </section>
+
+        {/* Doping rules */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
+            Is Shilajit Banned in Sports? Doping Rules Explained
+          </h2>
+          <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+
+            {/* Verdict callout */}
+            <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4">
+              <p className="text-sm font-bold text-[#0D1F14] mb-1">Verdict: shilajit doping concerns are not founded in current rules.</p>
+              <p className="text-xs text-[#4A6358]">
+                As of 2026, shilajit is not listed on the WADA (World Anti-Doping Agency) prohibited substances list and is not classified as a banned substance in Olympic, NCAA, NFL, NBA, MLB, or any major professional sporting organization. &quot;Is shilajit banned in sports&quot; is a common athlete search — the factual answer is no.
+              </p>
+            </div>
+
+            {/* Status table */}
+            <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5">
+              <h3 className="text-sm font-bold text-[#0D1F14] mb-3">Governing body status at a glance</h3>
+              <div className="overflow-x-auto">
+                <table className="w-full text-xs">
+                  <thead>
+                    <tr className="border-b border-[#D1EDD8]">
+                      <th className="text-left py-2 pr-6 font-bold text-[#7BA899] uppercase tracking-wide">Organization</th>
+                      <th className="text-left py-2 pr-6 font-bold text-[#7BA899] uppercase tracking-wide">Shilajit status</th>
+                      <th className="text-left py-2 font-bold text-[#7BA899] uppercase tracking-wide">Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {[
+                      { org: "WADA", status: "Not prohibited", note: "Absent from 2026 Prohibited List — all categories" },
+                      { org: "Olympic sport (IFs)", status: "Not prohibited", note: "Defers to WADA; no sport federation has added it independently" },
+                      { org: "NCAA", status: "Not prohibited", note: "Not listed under any NCAA banned substance category" },
+                      { org: "NFL / NBA / MLB", status: "Not prohibited", note: "Natural mineral substance; no schedule classification" },
+                      { org: "IPF (Powerlifting)", status: "Not prohibited", note: "Does not appear on WADA or IPF supplemental lists" },
+                    ].map((row, i) => (
+                      <tr key={row.org} className={`border-b border-[#D1EDD8] last:border-0 ${i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
+                        <td className="py-2.5 pr-6 font-semibold text-[#0D1F14]">{row.org}</td>
+                        <td className="py-2.5 pr-6">
+                          <span className="inline-flex items-center gap-1 text-[#10B981] font-bold">
+                            <CheckIcon /> {row.status}
+                          </span>
+                        </td>
+                        <td className="py-2.5 text-[#7BA899]">{row.note}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Why it isn't banned */}
+            <div className="space-y-3">
+              {[
+                {
+                  title: "It's a natural mineral resin, not a synthetic compound",
+                  body: "Shilajit is a naturally occurring exudate formed from the compression of organic matter over millennia. It contains no synthetic hormones, no growth hormone secretagogues, no scheduled stimulants, and no anabolic steroids. The WADA list targets specific pharmacological classes — shilajit does not fit any of them.",
+                },
+                {
+                  title: "Testosterone support ≠ exogenous testosterone",
+                  body: "Shilajit&apos;s testosterone-supporting effects work through natural hormonal optimization — specifically by supporting the body&apos;s own LH signaling and testicular Leydig cell function. This is fundamentally different from exogenous testosterone administration or synthetic testosterone precursors. Supporting your own endocrine system is not prohibited — introducing hormones from outside the body is.",
+                },
+                {
+                  title: "It does not appear on standard drug test panels",
+                  body: "Standard athletic drug tests screen for specific compounds and their metabolites. Shilajit&apos;s bioactive components — fulvic acid, humic acid, DBPs, and trace minerals — are not controlled substances and do not produce metabolites that match any screened compound. A clean shilajit product will not cause a positive result on a WADA-standard urine or blood panel.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="flex gap-3 bg-white border border-[#D1EDD8] rounded-xl p-4">
+                  <CheckIcon />
+                  <div>
+                    <div className="text-xs font-bold text-[#0D1F14] mb-0.5">{item.title}</div>
+                    <p className="text-xs text-[#7BA899] leading-relaxed">{item.body}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Caveat for elite tested athletes */}
+            <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
+              <h3 className="text-xs font-bold text-amber-800 mb-1">⚡ Note for elite tested athletes</h3>
+              <p className="text-xs text-amber-700 leading-relaxed">
+                Rules can and do change. While shilajit is currently not prohibited by any major governing body, athletes competing under strict anti-doping programs should always verify with their sport&apos;s specific governing body before adding any supplement. For absolute batch-level certainty, look for BSCG (Banned Substance Control Group) certification — which tests a specific production lot against the current WADA list. PrimaVie® is one shilajit ingredient brand that has pursued this certification.
+              </p>
+            </div>
+
           </div>
         </section>
 
