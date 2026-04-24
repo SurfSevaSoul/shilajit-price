@@ -179,24 +179,19 @@ export default function DealCard({ product }: DealCardProps) {
           </div>
         )}
 
-        {/* Product image / placeholder — always shown, centered at top of card */}
-        <div className="flex justify-center items-center p-2">
+        {/* Product image — full-bleed, tall, contain with generous padding */}
+        <div className="relative w-full h-56 bg-[#E8F5EC] flex items-center justify-center p-5 overflow-hidden">
           {imageUrl ? (
-            <div className="w-[120px] h-[120px] rounded-xl border border-[#D1EDD8] bg-[#F8FCF9] overflow-hidden flex items-center justify-center">
-              <Image
-                src={imageUrl}
-                alt={`${vendor} ${productName}`}
-                width={120}
-                height={120}
-                quality={90}
-                sizes="120px"
-                className="object-cover w-full h-full"
-              />
-            </div>
+            <Image
+              src={imageUrl}
+              alt={`${vendor} ${productName}`}
+              fill
+              quality={90}
+              sizes="(max-width: 640px) 100vw, 280px"
+              className="object-contain p-5"
+            />
           ) : (
-            <div className="w-[120px] h-[120px] rounded-xl bg-[#182B1F] flex items-center justify-center">
-              <span className="text-4xl font-extrabold text-[#10B981]">{vendor.charAt(0)}</span>
-            </div>
+            <span className="text-6xl font-extrabold text-[#10B981]/30">{vendor.charAt(0)}</span>
           )}
         </div>
 

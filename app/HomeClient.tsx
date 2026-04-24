@@ -184,14 +184,14 @@ function EditorPickCard({
         {label}
       </div>
 
-      {/* Product image */}
+      {/* Product image — full-bleed, contain with generous padding */}
       {product.imageUrl && (
-        <div className="w-full h-28 mb-3 rounded-xl bg-[#F4FAF6] overflow-hidden">
+        <div className="relative w-full h-44 mb-3 rounded-xl bg-[#E8F5EC] overflow-hidden">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={product.imageUrl}
             alt={product.productName}
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-contain p-4"
           />
         </div>
       )}
