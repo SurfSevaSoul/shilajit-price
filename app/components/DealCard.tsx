@@ -180,7 +180,7 @@ export default function DealCard({ product }: DealCardProps) {
         )}
 
         {/* Product image — full-bleed, tall, contain with generous padding */}
-        <div className="relative w-full h-56 bg-[#E8F5EC] overflow-hidden">
+        <div className="relative w-full aspect-square bg-[#E8F5EC] overflow-hidden">
           {imageUrl ? (
             <Image
               src={imageUrl}
@@ -188,7 +188,7 @@ export default function DealCard({ product }: DealCardProps) {
               fill
               quality={90}
               sizes="(max-width: 640px) 100vw, 280px"
-              className="object-cover"
+              className="object-contain"
             />
           ) : (
             <div className="w-full h-full flex items-center justify-center">
