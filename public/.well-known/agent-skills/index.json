@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agentskills.io/schema/v0.2.0/index.json",
+  "skills": [
+    {
+      "name": "shilajit-price-comparison",
+      "type": "content",
+      "description": "Independent shilajit supplement price comparison tool. Covers 80+ products across 40+ brands with lab-verified COA data, fulvic acid percentages, tier rankings (S/A/B/C/D), and price-per-gram calculations. All featured products have third-party certificates of analysis.",
+      "url": "https://www.shilajitprice.com/",
+      "sha256": ""
+    },
+    {
+      "name": "shilajit-lab-data",
+      "type": "content",
+      "description": "Lab test data and certificate of analysis information for shilajit supplement brands including fulvic acid content, heavy metals testing, and COA verification status.",
+      "url": "https://www.shilajitprice.com/lab-data",
+      "sha256": ""
+    },
+    {
+      "name": "shilajit-brand-comparison",
+      "type": "content",
+      "description": "Side-by-side brand comparison tool for shilajit supplements. Compare sourcing, lab testing, fulvic acid content, price, and certifications across multiple brands.",
+      "url": "https://www.shilajitprice.com/compare",
+      "sha256": ""
+    }
+  ]
+}

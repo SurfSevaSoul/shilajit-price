@@ -61,7 +61,18 @@ const nextConfig: NextConfig = {
       {
         // Apply security headers to all routes
         source: "/(.*)",
-        headers: securityHeaders,
+        headers: [
+          ...securityHeaders,
+          // Point agents at key resources (sitemap, llms.txt, robots)
+          {
+            key: "Link",
+            value: [
+              '</sitemap.xml>; rel="sitemap"',
+              '</llms.txt>; rel="describedby"',
+              '</robots.txt>; rel="robots"',
+            ].join(", "),
+          },
+        ],
       },
     ];
   },
