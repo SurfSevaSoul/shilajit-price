@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Footer from "../components/Footer";
+import { getAffiliateName } from "../lib/trackAffiliate";
 
 // ── GA4 helper ────────────────────────────────────────────────────────────────
 function ga(event: string, params?: Record<string, string>) {
@@ -776,8 +777,9 @@ export default function QuizPage() {
                           rel="noopener noreferrer sponsored"
                           onClick={() =>
                             ga("quiz_affiliate_click", {
-                              affiliate_name: "black_lotus",
-                              outcome_name: outcome.gaName,
+                              affiliate_brand: getAffiliateName(opt.url) ?? "Black Lotus",
+                              quiz_outcome: outcome.gaName,
+                              click_location: "quiz_results",
                             })
                           }
                           className="flex flex-col items-center gap-1.5 py-3 px-2 rounded-xl border-2 border-[#D1EDD8] hover:border-[#10B981] bg-[#F0FAF4] hover:bg-white transition-all text-center"
@@ -798,8 +800,9 @@ export default function QuizPage() {
                       rel="noopener noreferrer sponsored"
                       onClick={() =>
                         ga("quiz_affiliate_click", {
-                          affiliate_name: outcome.gaName,
-                          outcome_name: outcome.gaName,
+                          affiliate_brand: getAffiliateName(outcome.primaryCta.url) ?? outcome.gaName,
+                          quiz_outcome: outcome.gaName,
+                          click_location: "quiz_results",
                         })
                       }
                       className="flex-1 flex items-center justify-center py-3.5 px-5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-bold text-sm transition-all duration-200 shadow-sm min-h-[48px]"
@@ -813,8 +816,9 @@ export default function QuizPage() {
                         rel="noopener noreferrer sponsored"
                         onClick={() =>
                           ga("quiz_affiliate_click", {
-                            affiliate_name: outcome.gaName,
-                            outcome_name: outcome.gaName,
+                            affiliate_brand: getAffiliateName(outcome.secondaryCta!.url) ?? outcome.gaName,
+                            quiz_outcome: outcome.gaName,
+                            click_location: "quiz_results",
                           })
                         }
                         className="flex-1 flex items-center justify-center py-3.5 px-5 rounded-full border-2 border-[#182B1F] text-[#182B1F] hover:bg-[#182B1F] hover:text-white font-bold text-sm transition-all duration-200 min-h-[48px]"
@@ -856,8 +860,9 @@ export default function QuizPage() {
                       rel="noopener noreferrer sponsored"
                       onClick={() =>
                         ga("quiz_affiliate_click", {
-                          affiliate_name: "runner_up",
-                          outcome_name: outcome.gaName,
+                          affiliate_brand: getAffiliateName(outcome.runnerUp.url) ?? "unknown",
+                          quiz_outcome: outcome.gaName,
+                          click_location: "quiz_results",
                         })
                       }
                       className="text-xs font-semibold text-[#10B981] hover:text-[#182B1F] transition-colors whitespace-nowrap"

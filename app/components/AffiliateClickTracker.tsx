@@ -22,7 +22,9 @@ export default function AffiliateClickTracker() {
       if (!anchor) return;
 
       const href = anchor.getAttribute("href") ?? "";
-      trackAffiliateClick(href);
+      const product_name = anchor.getAttribute("data-product-name") ?? undefined;
+      const click_location = anchor.getAttribute("data-click-location") ?? undefined;
+      trackAffiliateClick(href, { product_name, click_location });
     }
 
     document.addEventListener("click", handleClick);

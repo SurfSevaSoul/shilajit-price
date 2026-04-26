@@ -190,6 +190,8 @@ export default function ComparePage() {
             href="https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE"
             target="_blank"
             rel="noopener noreferrer sponsored"
+            data-click-location="compare_page"
+            data-product-name="Black Lotus Resin"
             className="shrink-0 px-4 py-1.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white text-xs font-semibold transition-colors duration-200"
           >
             🏆 Our #1 Pick
@@ -556,6 +558,8 @@ export default function ComparePage() {
                           href={p.affiliateUrl}
                           target="_blank"
                           rel="noopener noreferrer sponsored"
+                          data-click-location="compare_page"
+                          data-product-name={`${p.vendor} ${p.productName}`}
                           className={`inline-block px-2.5 py-1 rounded-full text-[10px] font-semibold transition-colors whitespace-nowrap
                             ${p.featured
                               ? "bg-[#182B1F] hover:bg-[#10B981] text-white"

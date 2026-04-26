@@ -367,6 +367,8 @@ export default function DealCard({ product }: DealCardProps) {
               href={affiliateUrl}
               target="_blank"
               rel="noopener noreferrer sponsored"
+              data-click-location="product_grid"
+              data-product-name={`${vendor} ${productName}`}
               className={`block w-full text-center py-2.5 px-3 rounded-full text-xs font-bold transition-all duration-200
                 ${featured
                   ? "bg-[#182B1F] hover:bg-[#10B981] text-white shadow-sm"

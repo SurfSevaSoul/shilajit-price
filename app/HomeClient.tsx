@@ -253,6 +253,8 @@ function EditorPickCard({
         href={product.affiliateUrl}
         target="_blank"
         rel="noopener noreferrer sponsored"
+        data-click-location="editors_picks"
+        data-product-name={`${product.vendor} ${product.productName}`}
         className={`block w-full text-center py-2.5 rounded-full text-xs font-bold transition-colors shadow-sm ${s.btn}`}
       >
         View Deal →

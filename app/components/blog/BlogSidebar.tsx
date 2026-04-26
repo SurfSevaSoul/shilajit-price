@@ -55,6 +55,8 @@ export default function BlogSidebar({ currentSlug }: BlogSidebarProps) {
           href={AFFILIATE_BASE}
           target="_blank"
           rel="noopener noreferrer sponsored"
+          data-click-location="blog_cta"
+          data-product-name="Black Lotus Resin"
           className="flex items-center justify-center gap-1.5 w-full py-2 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-bold text-[11px] transition-colors"
         >
           Shop Now →

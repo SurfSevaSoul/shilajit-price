@@ -68,6 +68,8 @@ export default function PureHimalayanCTA({
           href={AFFILIATE_PH_RESIN}
           target="_blank"
           rel="noopener noreferrer sponsored"
+          data-click-location="blog_cta"
+          data-product-name="Pure Himalayan Resin"
           className="flex items-center justify-center gap-2 w-full py-3.5 rounded-full bg-[#182B1F] hover:bg-amber-500 text-white font-bold text-sm transition-colors shadow-sm"
         >
           <span>{emoji}</span>

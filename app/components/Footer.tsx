@@ -114,6 +114,8 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
+                    data-click-location="footer"
+                    data-product-name={label}
                     className="text-sm text-[#9EC9AD]/70 hover:text-[#10B981] transition-colors duration-150 flex items-center gap-1.5"
                   >
                     {label}
@@ -154,6 +156,8 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
+                    data-click-location="footer"
+                    data-product-name={`Black Lotus ${label}`}
                     className="text-sm text-[#9EC9AD]/70 hover:text-[#10B981] transition-colors duration-150 flex items-center gap-1.5"
                   >
                     <svg
@@ -191,6 +195,8 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
+                    data-click-location="footer"
+                    data-product-name={`Pure Himalayan ${label}`}
                     className="text-sm text-[#9EC9AD]/70 hover:text-amber-400 transition-colors duration-150 flex items-center gap-1.5"
                   >
                     <svg
@@ -225,6 +231,8 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
+                    data-click-location="footer"
+                    data-product-name={`Natural Shilajit ${label}`}
                     className="text-sm text-[#9EC9AD]/70 hover:text-teal-400 transition-colors duration-150 flex items-center gap-1.5"
                   >
                     <svg
@@ -260,6 +268,8 @@ export default function Footer() {
                     href={href}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
+                    data-click-location="footer"
+                    data-product-name={`Purblack ${label}`}
                     className="text-sm text-[#9EC9AD]/70 hover:text-violet-400 transition-colors duration-150 flex items-center gap-1.5"
                   >
                     <svg
