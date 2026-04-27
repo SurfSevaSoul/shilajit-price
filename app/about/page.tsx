@@ -80,6 +80,32 @@ export default function AboutPage() {
             </p>
           </div>
 
+          {/* Founder bio */}
+          <section className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-6 sm:p-8 mb-6 shadow-sm">
+            <h2 className="text-xl font-extrabold text-[#0D1F14] mb-5" style={{ fontFamily: "var(--font-jakarta)" }}>About the Founder</h2>
+            <div className="flex items-start gap-5">
+              <div className="shrink-0 w-14 h-14 rounded-full bg-[#E8F5EC] ring-2 ring-[#9EC9AD] flex items-center justify-center">
+                <span className="text-xl font-extrabold text-[#10B981]" style={{ fontFamily: "var(--font-jakarta)" }}>AV</span>
+              </div>
+              <div className="flex-1">
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <span className="text-sm font-extrabold text-[#0D1F14]" style={{ fontFamily: "var(--font-jakarta)" }}>Adrian Voss</span>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700 text-[9px] font-bold uppercase tracking-wide">Founder &amp; Author</span>
+                </div>
+                <p className="text-sm text-[#4A6358] leading-relaxed">
+                  Adrian Voss is the founder of ShilajitPrice.com and a trained anthropologist with a focus on
+                  Cultural Anthropology and traditional medicine practices across the Carribbean, Central Asia and
+                  the Himalayas. He first encountered shilajit through his research studying traditional healing
+                  systems and Eastern Religion and has used it personally for over six years. Frustrated by the
+                  lack of transparent, data-driven information in the Western supplement market, he built
+                  ShilajitPrice.com to bring the same rigorous standards of research he applies in academic work
+                  to consumer supplement buying — starting with verified lab data, honest sourcing claims, and
+                  real price transparency.
+                </p>
+              </div>
+            </div>
+          </section>
+
           {/* Mission */}
           <section className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-6 sm:p-8 mb-6 shadow-sm">
             <h2 className="text-xl font-extrabold text-[#0D1F14] mb-4" style={{ fontFamily: "var(--font-jakarta)" }}>Our Mission</h2>

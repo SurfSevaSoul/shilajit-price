@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AuthorBio from "../components/AuthorBio";
 
 export const metadata: Metadata = {
   title: "Scoring Methodology — How We Rank Shilajit Products | ShilajitPrice.com",
@@ -111,9 +112,14 @@ export default function MethodologyPage() {
 
         {/* Header */}
         <h1 className="text-3xl sm:text-4xl font-black text-[#0D1F14] mb-3" style={{ fontFamily: "var(--font-jakarta)" }}>Our Scoring Methodology</h1>
-        <p className="text-[#4A6358] leading-relaxed mb-10 max-w-2xl">
+        <p className="text-[#4A6358] leading-relaxed mb-6 max-w-2xl">
           Every tier score, price metric, and data point on ShilajitPrice.com is calculated using a transparent, reproducible methodology. Here&apos;s exactly how it works.
         </p>
+
+        {/* Methodology author */}
+        <div className="mb-10">
+          <AuthorBio />
+        </div>
 
         {/* Tier system */}
         <section className="mb-12">

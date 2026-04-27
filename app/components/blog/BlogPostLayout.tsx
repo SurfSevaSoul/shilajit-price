@@ -5,6 +5,7 @@ import BlackLotusCTA from "./BlackLotusCTA";
 import PureHimalayanCTA from "./PureHimalayanCTA";
 import BlogSidebar from "./BlogSidebar";
 import QuizCTA from "./QuizCTA";
+import AuthorBio from "../AuthorBio";
 
 const BASE_URL = "https://www.shilajitprice.com";
 
@@ -66,9 +67,10 @@ export default function BlogPostLayout({
     datePublished: publishedAt,
     dateModified: updatedAt ?? publishedAt,
     author: {
-      "@type": "Organization",
-      name: "ShilajitPrice Research Team",
-      url: `${BASE_URL}/methodology`,
+      "@type": "Person",
+      name: "Adrian Voss",
+      description: "Anthropologist and founder of ShilajitPrice.com",
+      url: `${BASE_URL}/about`,
     },
     publisher: {
       "@type": "Organization",
@@ -177,10 +179,10 @@ export default function BlogPostLayout({
               <span>
                 By{" "}
                 <Link
-                  href="/methodology"
+                  href="/about"
                   className="text-[#4A6358] hover:text-[#10B981] transition-colors underline underline-offset-2 decoration-[#D1EDD8]"
                 >
-                  ShilajitPrice Research Team
+                  Adrian Voss
                 </Link>
               </span>
               <span>·</span>
@@ -245,6 +247,9 @@ export default function BlogPostLayout({
                   </a>
                 </p>
               )}
+
+              {/* Auto-injected: Author bio */}
+              <AuthorBio />
 
               {/* Auto-injected: Related posts */}
               <RelatedPosts currentSlug={currentSlug} />
