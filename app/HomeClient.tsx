@@ -757,6 +757,34 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
           </div>
         </section>
 
+        {/* ── QUIZ CTA BANNER ──────────────────────────────────────────────── */}
+        <section className="py-10 bg-[#182B1F]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 sm:p-8 text-center max-w-2xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#10B981]/25 border border-[#10B981]/50 text-[#10B981] text-xs font-semibold mb-4">
+                <span className="text-base">🎯</span> Free · 60 seconds
+              </div>
+              <h2
+                className="text-xl sm:text-2xl font-extrabold text-white mb-2 leading-snug"
+                style={{ fontFamily: "var(--font-jakarta)" }}
+              >
+                Not sure which shilajit is right for you?
+              </h2>
+              <p className="text-sm text-white/70 mb-5 leading-relaxed">
+                Answer 7 quick questions and we&apos;ll match you to the best brand
+                for your goals, budget, and lifestyle.
+              </p>
+              <a
+                href="/quiz"
+                className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-full bg-[#10B981] hover:bg-white hover:text-[#182B1F] text-white font-bold text-sm transition-all duration-200 shadow-md"
+              >
+                Take the Free Quiz →
+              </a>
+              <p className="text-xs text-white/40 mt-3">Free · Takes 60 seconds</p>
+            </div>
+          </div>
+        </section>
+
         {/* ── 6. SHILAJIT BUYING GUIDES ────────────────────────────────────── */}
         <section className="py-16 bg-white border-t border-[#D1EDD8]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
