@@ -342,8 +342,12 @@ export default function ShilajitSafetyGuide() {
           <p>
             Memorial Sloan Kettering Cancer Center maintains an Integrative Medicine database of
             herbs and supplements, written for clinicians and patients. Their assessment of
-            shilajit is regularly cited in safety discussions, so it is worth addressing
-            directly and accurately.
+            shilajit is regularly cited in safety discussions — for the complete breakdown, see
+            our guide on{" "}
+            <Link href="/blog/memorial-sloan-kettering-shilajit" className="text-[#10B981] hover:underline font-medium">
+              what Memorial Sloan Kettering says about shilajit safety
+            </Link>{" "}
+            — so it is worth addressing the key points directly here.
           </p>
 
           <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-sm">

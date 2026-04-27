@@ -228,7 +228,11 @@ export default function ShilajitSideEffects() {
           </h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              This is not a theoretical concern. There are documented cases of heavy metal poisoning from contaminated shilajit products — primarily involving products without verifiable purification processes or third-party testing. Shilajit is collected from rock formations where geological processes concentrate minerals — including toxic ones. The purification step is what separates safe shilajit from dangerous shilajit.
+              This is not a theoretical concern. There are documented cases of heavy metal poisoning from contaminated shilajit products — primarily involving products without verifiable purification processes or third-party testing. Shilajit is collected from rock formations where geological processes concentrate minerals — including toxic ones. The purification step is what separates safe shilajit from dangerous shilajit — and it is the concern{" "}
+              <Link href="/blog/memorial-sloan-kettering-shilajit" className="text-[#10B981] hover:underline font-medium">
+                Memorial Sloan Kettering&apos;s safety assessment of shilajit
+              </Link>{" "}
+              flags most prominently.
             </p>
             <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5">
               <h3 className="text-base font-bold text-[#0D1F14] mb-3">FDA action levels for heavy metals in supplements</h3>
