@@ -45,7 +45,7 @@ const faqItems: FaqItem[] = [
     name: "What fulvic acid percentage is good in shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "We use four tiers: below 20% is low quality; 40–60% is acceptable; 60–80% is good; 80%+ is premium. Pure Himalayan Shilajit reports 60% fulvic acid; Black Lotus reports 64.51% (resin) / 74.30% (capsules) per Batch 93 COA, IAS Laboratories 2025. Both clear our recommended minimum of 40%. Anything below 20% from an unverified source should be treated with skepticism, especially if no COA is published.",
+      text: "We use four tiers: below 20% is low quality; 40–60% is acceptable; 60–80% is good; 80%+ is premium. Pure Himalayan Shilajit reports ~58% fulvic acid (Batch RE18, 2021 COA — UV method, non-A2LA result); Black Lotus reports 64.51% (resin) / 74.30% (capsules) per Batch 93 COA, IAS Laboratories 2025. Both clear our recommended minimum of 40%. Anything below 20% from an unverified source should be treated with skepticism, especially if no COA is published.",
     },
   },
   {
@@ -182,7 +182,7 @@ export default function HowToReadShilajitCoa() {
                   { range: "Below 20%", tier: "Low", note: "Sub-standard; likely diluted, adulterated, or poor sourcing", alt: false },
                   { range: "20–40%", tier: "Marginal", note: "Below our recommended minimum for premium purchases", alt: true },
                   { range: "40–60%", tier: "Acceptable", note: "Meets basic quality threshold; adequate for most buyers", alt: false },
-                  { range: "60–80%", tier: "Good", note: "Solidly above average; Pure Himalayan reports 60% at the lower edge of this band", alt: true },
+                  { range: "60–80%", tier: "Good", note: "Solidly above average; Pure Himalayan reports ~58% (Batch RE18, 2021 COA) — just below this band by most recent COA", alt: true },
                   { range: "80%+", tier: "Premium", note: "Top tier; Black Lotus capsules report 74.30% with Batch 93 COA verification (resin: 64.51%)", alt: false },
                 ].map((row) => (
                   <tr key={row.range} className={row.alt ? "bg-[#F0FAF4]" : "bg-white"}>

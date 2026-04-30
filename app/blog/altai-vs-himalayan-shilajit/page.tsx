@@ -354,7 +354,7 @@ export default function AltaiVsHimalayanShilajit() {
               <h3 className="text-lg font-bold text-[#10B981] mb-3">Himalayan / Ladakh-sourced</h3>
               <div className="space-y-3">
                 {[
-                  { name: "Pure Himalayan Shilajit Resin 30g", tier: "S", price: "$39.99", perG: "$1.33/g", fulvic: "60%", coa: true },
+                  { name: "Pure Himalayan Shilajit Resin 30g", tier: "S", price: "$39.99", perG: "$1.33/g", fulvic: "~58% (2021)", coa: true },
                   { name: "Pure Himalayan Shilajit Tablets 90ct", tier: "S", price: "$34.99", perG: "—", fulvic: "ISO verified", coa: true },
                   { name: "Himalayan Healing Resin 55g Gold Grade", tier: "A", price: "$44.99", perG: "$0.82/g", fulvic: "Verified", coa: true },
                   { name: "Essencraft Himalayan Resin 60g", tier: "B", price: "$86.97", perG: "$1.45/g", fulvic: "Unverified", coa: false },

@@ -489,7 +489,7 @@ export default function ShilajitVsAshwagandha() {
             </p>
             <h3 className="text-base font-bold text-[#0D1F14] mb-1">Pure Himalayan Shilajit</h3>
             <p className="text-xs text-[#4A6358] mb-3 leading-relaxed">
-              60% fulvic acid · ISO/IEC 17025 accredited lab testing · Himalayan and Altai
+              ~58% fulvic acid (Batch RE18, 2021 COA) · ISO/IEC 17025 accredited lab testing · Himalayan and Altai
               sourced · Strong COA transparency
             </p>
             <a

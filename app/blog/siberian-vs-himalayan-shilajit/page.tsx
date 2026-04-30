@@ -69,7 +69,7 @@ const faqItems: FaqItem[] = [
     name: "Which brand is best for Himalayan shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Pure Himalayan Shilajit is our top verified pick for Himalayan-sourced shilajit. They source from Himalayan Mountains at 16,000+ ft and test under ISO/IEC 17025 accredited laboratory conditions — the most rigorous internationally recognized testing standard. Their resin shows 60% fulvic acid by COA at $39.99 for 30g ($1.33/g). It is the only Himalayan-origin brand in our database with this level of third-party verification.",
+      text: "Pure Himalayan Shilajit is our top verified pick for Himalayan-sourced shilajit. They source from Himalayan Mountains at 16,000+ ft and test under ISO/IEC 17025 accredited laboratory conditions — the most rigorous internationally recognized testing standard. Their resin shows ~58% fulvic acid by COA (Batch RE18, 2021 COA — UV method, non-A2LA result) at $39.99 for 30g ($1.33/g). It is the only Himalayan-origin brand in our database with this level of third-party verification.",
     },
   },
 ];
@@ -335,11 +335,12 @@ export default function SiberianVsHimalayanShilajit() {
           </h3>
           <p>
             Among Himalayan-sourced brands in our database, verified fulvic acid content
-            typically falls in the 60–70% range. Pure Himalayan Shilajit reports 60% fulvic
-            acid on their COA from an ISO/IEC 17025 accredited laboratory — the most rigorous
-            internationally recognized testing standard available. Altai brands like Black Lotus
-            report 64–74% depending on product form (Batch 93 COA), and 60% remains meaningfully
-            above the 50% threshold below which efficacy data becomes thinner.
+            typically falls in the 58–74% range. Pure Himalayan Shilajit reports ~58% fulvic
+            acid by COA (Batch RE18, 2021 COA — UV method, non-A2LA result) from an ISO/IEC 17025
+            accredited laboratory — the most rigorous internationally recognized testing standard
+            available. Altai brands like Black Lotus report 64–74% depending on product form
+            (Batch 93 COA), and ~58% remains meaningfully above the 50% threshold below which
+            efficacy data becomes thinner.
           </p>
 
           <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">

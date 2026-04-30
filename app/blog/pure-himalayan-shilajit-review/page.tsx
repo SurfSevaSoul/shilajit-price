@@ -12,7 +12,7 @@ const POST_URL = `${BASE_URL}/blog/pure-himalayan-shilajit-review`;
 
 const title = "Pure Himalayan Shilajit Review 2026 — Is It Worth It?";
 const description =
-  "Full Pure Himalayan Shilajit review: ISO/IEC 17025 accredited lab testing, 60% fulvic acid COA data, complete product lineup, pricing analysis, and honest verdict.";
+  "Full Pure Himalayan Shilajit review: A2LA ISO/IEC 17025 accredited lab testing, ~58% fulvic acid reference (Batch RE18, 2021 COA), complete product lineup with verified heavy metals, and honest verdict.";
 
 export const metadata: Metadata = {
   title,
@@ -37,7 +37,7 @@ const faqItems: FaqItem[] = [
     name: "Is Pure Himalayan Shilajit a legitimate brand?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Pure Himalayan Shilajit is one of our S-tier rated brands. They publish Certificates of Analysis from an ISO/IEC 17025 accredited laboratory, disclose 60% fulvic acid content, and test for heavy metals. These are meaningful transparency markers that most brands do not provide.",
+      text: "Yes. Pure Himalayan Shilajit is one of our S-tier rated brands. They publish Certificates of Analysis from A2LA ISO/IEC 17025 accredited laboratories (Certified Laboratories and Micro Quality Labs, Burbank CA — Cert 3034.01). Their FA reference is ~58% (Batch RE18, 2021 COA, UV method — noted as non-A2LA result). Most recent heavy metals COA: September 2024, showing exceptionally clean results across all product forms. These are meaningful transparency markers that most brands do not provide.",
     },
   },
   {
@@ -53,7 +53,7 @@ const faqItems: FaqItem[] = [
     name: "Is 60% fulvic acid good for shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "60% fulvic acid is solid — it falls in the 'good' range. We generally recommend at least 40% as a quality threshold. Pure Himalayan's 60% clears that bar comfortably. Black Lotus Resin has been independently verified at 64.51% fulvic acid (Batch 93, IAS Laboratories), which is higher, but Pure Himalayan's 60% is still well above the industry average for published COA data.",
+      text: "Pure Himalayan's only available FA COA shows ~58% (Batch RE18, 2021, UV method — noted as non-A2LA result). 58% falls in the 'good' range and clears our recommended 40% quality threshold comfortably. Black Lotus Resin has been independently verified at 64.51% fulvic acid (Batch 93, IAS Laboratories, 2025), which is higher and from a more recent COA. Pure Himalayan's ~58% reference is still well above the industry average for published COA data.",
     },
   },
   {
@@ -61,7 +61,7 @@ const faqItems: FaqItem[] = [
     name: "How does Pure Himalayan compare to Black Lotus Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus Resin leads on fulvic acid (64.51% vs 60%, per independent lab testing) and is our #1 overall pick. Pure Himalayan counters with ISO/IEC 17025 lab accreditation and genuine Himalayan sourcing. Both are S-tier. If fulvic acid potency is the priority, Black Lotus wins. If you specifically want Himalayan-origin shilajit with formal ISO certification, Pure Himalayan is the top choice in that category.",
+      text: "Black Lotus Resin leads on fulvic acid (64.51% resin, Batch 93 COA, 2025 vs Pure Himalayan's ~58% from Batch RE18, 2021 COA) and is our #1 overall pick. Pure Himalayan counters with A2LA ISO/IEC 17025 lab accreditation (Certified Laboratories and Micro Quality Labs, Burbank CA) and genuine Himalayan sourcing. Both are S-tier. If fulvic acid potency is the priority, Black Lotus wins. If you specifically want Himalayan-origin shilajit with the most rigorous independent lab accreditation, Pure Himalayan is the top choice in that category.",
     },
   },
   {
@@ -86,7 +86,7 @@ export default function PureHimalayanShilajitReview() {
             — Is It Worth It?
           </>
         }
-        description="Full review of Pure Himalayan Shilajit: ISO/IEC 17025 accredited lab testing, 60% fulvic acid COA data, complete product lineup, pricing analysis, and honest verdict."
+        description="Full review of Pure Himalayan Shilajit: A2LA ISO/IEC 17025 accredited lab testing, ~58% fulvic acid reference (Batch RE18, 2021 COA), complete product lineup with verified heavy metals, and honest verdict."
         tags={["Brand Reviews", "COA Verified", "ISO Certified"]}
         publishedAt="2026-04-15"
         updatedAt="2026-04-15"
@@ -172,10 +172,10 @@ export default function PureHimalayanShilajitReview() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Lab Data Breakdown</h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              Pure Himalayan's COA reports <strong>60% fulvic acid</strong>. To contextualize that number: fulvic acid is the primary bioactive compound in shilajit, responsible for its mineral transport and antioxidant properties. A 2016 study published in the <em>Journal of Alzheimer's Disease</em> identified fulvic acid as shilajit's key active component. Below 20% is considered low quality; 40–60% is solid; 60–80% is good; 80%+ is premium.
+              Pure Himalayan&apos;s only available fulvic acid COA shows <strong>~58%</strong> (Batch RE18, April 2021 — Micro Quality Labs, Burbank CA, UV method). Important context: this result is noted as <em>not covered under A2LA accreditation</em> — it should not be presented as a current batch-verified figure. Their most recent COA (September 2024, Certified Laboratories, Burbank CA — A2LA ISO/IEC 17025) covers heavy metals only. 58% falls in the "solid" range; below 20% is low quality; 40–60% is solid; 60–80% is good; 80%+ is premium.
             </p>
             <p>
-              Pure Himalayan sits at the upper edge of the "good" category. It is slightly lower than Black Lotus Resin's independently verified 64.51% (Batch 93, IAS Laboratories), but it clears the threshold we recommend (40%) with significant margin and is well above the average for brands that publish COA data at all.
+              Pure Himalayan&apos;s 2021 FA reference is slightly lower than Black Lotus Resin&apos;s independently verified 64.51% (Batch 93, IAS Laboratories, 2025). However, Pure Himalayan distinguishes itself with one of the most comprehensive mineral panels of any shilajit brand in our database — 20+ minerals documented by ICP-MS and ICP-OES, including potassium (91,850 ppm), calcium (24,525 ppm), magnesium (9,841 ppm), and 10+ trace minerals. Pure Himalayan&apos;s 2024 heavy metals data is also exceptionally clean — tablets show Lead 0.095 mcg per 200mg serving, the cleanest of any PH product tested.
             </p>
             <p>
               Their COA also covers heavy metals — lead, mercury, arsenic, and cadmium — which passed within safe limits. The brand claims up to 99.9% purity. It's worth noting that "purity" in supplement labeling typically refers to absence of contaminants (fillers, adulterants, pathogens) rather than fulvic acid concentration specifically. These are two distinct measurements on a COA, and both matter.
@@ -379,7 +379,7 @@ export default function PureHimalayanShilajitReview() {
             </div>
             <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
               <p>
-                Pure Himalayan Shilajit earns an S-tier rating and a 9/10 score. Their ISO/IEC 17025 accredited lab certification is the strongest specific accreditation claim in our verified database. The 60% fulvic acid is solid — not the highest available, but a credible, COA-backed figure from a competent lab.
+                Pure Himalayan Shilajit earns an S-tier rating and a 9/10 score. Their A2LA ISO/IEC 17025 accredited lab certification (Certified Laboratories and Micro Quality Labs, Burbank CA — Cert 3034.01) is the strongest specific lab accreditation claim in our verified database. Their FA reference is ~58% (Batch RE18, 2021 COA, UV method — non-A2LA result); their 2024 heavy metals data is exceptionally clean across all product forms. They also have one of the most comprehensive mineral panels of any shilajit brand — 20+ minerals documented by ICP-MS and ICP-OES.
               </p>
               <p>
                 The resin at $39.99 ($1.33/g) is a reasonable price for the quality level. If you prioritize ISO certification as your trust signal, or you specifically want Himalayan-origin shilajit, this is the clearest recommendation in that category.

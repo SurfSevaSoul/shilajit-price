@@ -183,7 +183,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     faqs: [
       {
         q: "Which has higher fulvic acid — Black Lotus or Pure Himalayan?",
-        a: "Black Lotus's Batch 93 COA (IAS Labs, June 2025) reports 64.51% for resin and 74.30% for capsules. Pure Himalayan reports 60%. Both are verified by third-party labs; Black Lotus capsules have the higher documented FA%, and both brands comfortably exceed the 60% threshold we recommend.",
+        a: "Black Lotus's Batch 93 COA (IAS Labs, June 2025) reports 64.51% for resin and 74.30% for capsules. Pure Himalayan's only available FA COA shows ~58% (Batch RE18, 2021, UV method — noted as non-A2LA result). Black Lotus has the higher documented FA%, and both brands exceed the 40% threshold we recommend as a quality minimum.",
       },
       {
         q: "Is Pure Himalayan's ISO/IEC 17025 certification worth paying more for?",
@@ -241,7 +241,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       "Natural Shilajit and Pure Himalayan Shilajit represent two different philosophies of verification excellence: Natural Shilajit leads on biomarker depth (DBP testing, triple-method COA), while Pure Himalayan leads on lab accreditation standard (ISO/IEC 17025). Both are S-tier brands with strong documentation. The sourcing differs too — Altai vs Himalayan.",
     winnerSlug: "natural-shilajit",
     verdict:
-      "Natural Shilajit edges ahead on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Pure Himalayan counters with ISO/IEC 17025 lab accreditation and a lower price per gram ($1.33 vs $2.45). Note: Natural Shilajit does not disclose fulvic acid percentage; Pure Himalayan reports 60% FA. Both earn S-tier; the right pick depends on whether verification depth or price matters more.",
+      "Natural Shilajit edges ahead on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Pure Himalayan counters with A2LA ISO/IEC 17025 lab accreditation (Certified Laboratories, Burbank CA) and a lower price per gram ($1.33 vs $2.45). Note: Natural Shilajit does not disclose fulvic acid percentage; Pure Himalayan's FA reference is ~58% (Batch RE18, 2021 COA — UV method, non-A2LA result). Both earn S-tier; the right pick depends on whether verification depth or price matters more.",
     whyAWins: [
       "DBP (Dibenzo-α-pyrones) verified — confirms the presence of shilajit's secondary biomarkers",
       "COA testing by DaaneLabs + Harken Research — microbiology, heavy metals, minerals, and adulterant panels",
@@ -390,13 +390,13 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     metaDescription:
       "Pure Himalayan vs PrimaVie® shilajit: ISO/IEC 17025 vs BSCG certification, resin vs capsules, fulvic acid %, price per gram, and which brand is right for you.",
     intro:
-      "Pure Himalayan Shilajit (ISO/IEC 17025 accredited lab, 60% FA resin) and PrimaVie® (BSCG-certified standardized extract, 50% FA capsules) are both highly credentialed but appeal to different buyer profiles. This comparison covers their verification approaches, form factors, pricing, and who should choose which.",
+      "Pure Himalayan Shilajit (A2LA ISO/IEC 17025 accredited lab, ~58% FA reference resin) and PrimaVie® (BSCG-certified standardized extract, 50% FA capsules) are both highly credentialed but appeal to different buyer profiles. This comparison covers their verification approaches, form factors, pricing, and who should choose which.",
     winnerSlug: "pure-himalayan",
     verdict:
-      "Pure Himalayan wins on fulvic acid percentage (60% vs 50%), lab accreditation standard (ISO/IEC 17025 vs ISO/IEC accredited — similar tier), and price-per-gram ($1.33 vs $1.50). PrimaVie® wins on form-factor convenience, BSCG sports certification, and extensive clinical study backing. For general supplementation, Pure Himalayan has the edge; for drug-tested athletes or capsule-preferred users, PrimaVie® is the choice.",
+      "Pure Himalayan wins on fulvic acid percentage (~58% vs 50% — though note the PH figure is from a 2021 COA, UV method, non-A2LA), lab accreditation standard (A2LA ISO/IEC 17025 from Certified Labs, Burbank CA), and price-per-gram ($1.33 vs $1.50). PrimaVie® wins on form-factor convenience, BSCG sports certification, and extensive clinical study backing. For general supplementation, Pure Himalayan has the edge; for drug-tested athletes or capsule-preferred users, PrimaVie® is the choice.",
     whyAWins: [
-      "ISO/IEC 17025 accredited lab — gold standard for laboratory testing competence",
-      "60% vs 50% fulvic acid — higher documented FA in a full-spectrum resin",
+      "A2LA ISO/IEC 17025 accredited lab (Certified Laboratories, Burbank CA) — gold standard for laboratory testing competence",
+      "~58% vs 50% fulvic acid reference — higher documented FA in a full-spectrum resin (2021 COA)",
       "$1.33/g vs $1.50/g — lower price per gram with comparable or better quality documentation",
     ],
     whyBWins: [
@@ -405,7 +405,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       "Capsule convenience — no measuring, no mess, consistent dosing anywhere",
     ],
     buyA:
-      "Choose Pure Himalayan for the better-documented resin at a lower price per gram. ISO/IEC 17025 accreditation + 60% FA + free shipping makes this a strong all-around choice for everyday supplementation.",
+      "Choose Pure Himalayan for the better-documented resin at a lower price per gram. A2LA ISO/IEC 17025 accreditation + ~58% FA reference (2021 COA) + free shipping makes this a strong all-around choice for everyday supplementation.",
     buyB:
       "Choose PrimaVie® if you're a competitive athlete who needs BSCG certification, or if you strongly prefer capsule form for convenience. Also a reasonable choice if you want a clinically-studied standardized extract over a full-spectrum raw resin.",
     faqs: [

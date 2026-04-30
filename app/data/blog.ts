@@ -239,7 +239,7 @@ const REGISTERED_POSTS: BlogPost[] = [
     slug: "pure-himalayan-shilajit-review",
     title: "Pure Himalayan Shilajit Review 2026 — Is It Worth It?",
     description:
-      "Full Pure Himalayan Shilajit review: ISO/IEC 17025 accredited lab testing, 60% fulvic acid COA data, complete product lineup, pricing analysis, and honest verdict.",
+      "Full Pure Himalayan Shilajit review: ISO/IEC 17025 accredited lab testing, ~58% fulvic acid COA data (Batch RE18, 2021), complete product lineup, pricing analysis, and honest verdict.",
     publishedAt: "2026-04-15",
     updatedAt: "2026-04-15",
     readingTimeMin: 8,

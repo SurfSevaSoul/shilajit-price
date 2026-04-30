@@ -787,7 +787,7 @@ export default function BestShilajitResinBrands() {
               {[
                 { name: "Black Lotus Resin", ppg: "$1.23", fa: "64.51%", famg: "194mg", costFA: "$0.19", highlight: true },
                 { name: "Natural Shilajit Resin", ppg: "$2.45", fa: "Not Disclosed", famg: "—", costFA: "—" },
-                { name: "Pure Himalayan Resin", ppg: "$1.33", fa: "60%", famg: "180mg", costFA: "$0.22" },
+                { name: "Pure Himalayan Resin", ppg: "$1.33", fa: "58% (2021)", famg: "116mg", costFA: "$0.23" },
                 { name: "Sayan Resin 100g", ppg: "$0.56", fa: "32.6%", famg: "98mg", costFA: "$0.17" },
                 { name: "PurBlack Resin", ppg: "$3.11", fa: "Not Reported — DBP verified", famg: "—", costFA: "—" },
               ].map((row) => (

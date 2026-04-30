@@ -66,7 +66,7 @@ const faqItems: FaqItem[] = [
     name: "How does Black Lotus compare to Pure Himalayan Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus and Pure Himalayan are the two strongest verified brands in our database. Black Lotus leads on fulvic acid percentage (64–74% by form vs 60%) and price per gram ($1.23 vs $1.33). Pure Himalayan leads on testing standard — their ISO/IEC 17025 accreditation is the most rigorous lab certification available. Both are S-tier picks; choose Black Lotus for highest fulvic acid, Pure Himalayan for maximum ISO certification rigor.",
+      text: "Black Lotus and Pure Himalayan are the two strongest verified brands in our database. Black Lotus leads on fulvic acid percentage (64–74% by form, Batch 93, 2025 COA vs Pure Himalayan's ~58% from Batch RE18, 2021 COA) and price per gram ($1.23 vs $1.33). Pure Himalayan leads on testing lab accreditation — their A2LA ISO/IEC 17025 certification (Certified Laboratories, Burbank CA, Cert 3034.01) is the most rigorous in our database, and their 2024 heavy metals data is exceptionally clean. Both are S-tier picks; choose Black Lotus for highest current FA disclosure, Pure Himalayan for maximum lab accreditation rigor.",
     },
   },
   {

@@ -75,7 +75,7 @@ const faqSchema = {
       name: "Is Pürblack's gold infusion (True Gold, 555 PPM) worth the extra cost over Pure Himalayan?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pürblack True Gold 30g costs $93.33 vs Pure Himalayan's 30g resin at approximately $39.99 — a $53 premium for the same jar size. The primary differentiators for that premium are: Pürblack's 5-patent purification process, multi-region sourcing, and 555 PPM colloidal gold infusion. The scientific literature on oral colloidal gold remains limited compared to the established research base on fulvic acid and shilajit bioactive compounds. Pure Himalayan's 60% fulvic acid, ISO/IEC 17025-accredited COA, and 16,000+ ft Himalayan sourcing represent well-documented quality at a fraction of the price. The gold infusion is a premium positioning feature rather than a clinically validated potency advantage — buyers should evaluate it accordingly.",
+        text: "Pürblack True Gold 30g costs $93.33 vs Pure Himalayan's 30g resin at approximately $39.99 — a $53 premium for the same jar size. The primary differentiators for that premium are: Pürblack's 5-patent purification process, multi-region sourcing, and 555 PPM colloidal gold infusion. The scientific literature on oral colloidal gold remains limited compared to the established research base on fulvic acid and shilajit bioactive compounds. Pure Himalayan's ~58% fulvic acid (Batch RE18, 2021 COA), A2LA ISO/IEC 17025-accredited COA from Certified Laboratories and Micro Quality Labs (Burbank CA), and 16,000+ ft Himalayan sourcing represent well-documented quality at a fraction of the price. The gold infusion is a premium positioning feature rather than a clinically validated potency advantage — buyers should evaluate it accordingly.",
       },
     },
     {
@@ -83,7 +83,7 @@ const faqSchema = {
       name: "Which brand is better for someone new to shilajit?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pure Himalayan Shilajit is the stronger starting point for new buyers. At approximately $39.99 for 30g ($1.33/g), it offers 60% verified fulvic acid, an ISO/IEC 17025-accredited third-party COA, heavy metals testing (all pass), free shipping, GMP certification, and a money-back guarantee — giving you a comprehensive quality baseline at a reasonable entry price. Pürblack's True Gold at $93.33 for 30g is a significant financial commitment for a first experience, and the premium features (patents, gold infusion) are best appreciated by buyers who already understand the shilajit quality spectrum. Start with Pure Himalayan to establish your response to high-quality shilajit; explore Pürblack if you later want to compare a patent-backed live resin approach.",
+        text: "Pure Himalayan Shilajit is the stronger starting point for new buyers. At approximately $39.99 for 30g ($1.33/g), it offers ~58% fulvic acid (Batch RE18, 2021 COA), an A2LA ISO/IEC 17025-accredited third-party COA from Certified Laboratories (Burbank CA), heavy metals testing all pass (most recent Sep 2024), free shipping, GMP certification, and a money-back guarantee — giving you a comprehensive quality baseline at a reasonable entry price. Pürblack's True Gold at $93.33 for 30g is a significant financial commitment for a first experience, and the premium features (patents, gold infusion) are best appreciated by buyers who already understand the shilajit quality spectrum. Start with Pure Himalayan to establish your response to high-quality shilajit; explore Pürblack if you later want to compare a patent-backed live resin approach.",
       },
     },
   ],
@@ -134,11 +134,11 @@ const PURE_HIMALAYAN = {
   shortName: "Pure Himalayan",
   tier: "S",
   tierColor: "bg-amber-400 text-amber-900",
-  fulvicAcid: "60%",
+  fulvicAcid: "58% (2021)",
   pricePerGram: "$1.33/g",
   origin: "Himalayan Mountains, 16,000+ ft",
   coa: true,
-  coaDetail: "ISO/IEC 17025 Accredited US Lab",
+  coaDetail: "A2LA ISO/IEC 17025 — Certified Labs, Burbank CA",
   dbpVerified: false,
   heavyMetals: "pass" as const,
   gmpCertified: true,
@@ -349,7 +349,7 @@ export default function PurblackVsPureHimalayanPage() {
               Pure Himalayan Shilajit sources exclusively from the Himalayan Mountains at <strong>16,000+ feet altitude</strong> — one of the highest confirmed sourcing elevations among the brands we track. At that altitude, the mineral concentration and bioactive compound profile of naturally exuded shilajit is typically at its most concentrated. Their purification process uses traditional water filtration technology with no intensive heat, no solvents, and <strong>no fillers or additives</strong> — 100% pure shilajit, nothing added.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              The defining quality credential Pure Himalayan holds is their <strong>ISO/IEC 17025-accredited US laboratory</strong> COA. ISO/IEC 17025 is the international gold standard for testing laboratory competence — it means the lab conducting the analysis has been independently audited for accuracy, equipment calibration, methodology consistency, and staff qualifications. This is the most rigorous lab credential in our database, and it directly validates the reliability of their published COA results: 60% fulvic acid, heavy metals all pass, purity up to 99.9%.
+              The defining quality credential Pure Himalayan holds is their <strong>A2LA ISO/IEC 17025-accredited US laboratory</strong> COA — specifically Certified Laboratories and Micro Quality Labs, both in Burbank CA (Cert 3034.01). A2LA ISO/IEC 17025 is the international gold standard for testing laboratory competence — it means the lab conducting the analysis has been independently audited for accuracy, equipment calibration, methodology consistency, and staff qualifications. This is the most rigorous lab credential in our database. Their September 2024 COA shows exceptionally clean heavy metals (tablets: Lead 0.095 mcg/serving, Mercury ND), and they hold one of the most comprehensive publicly documented mineral panels of any shilajit brand (20+ minerals, ICP-MS / ICP-OES). FA reference: ~58% (Batch RE18, 2021 COA, UV method — noted as non-A2LA result). Purity: up to 99.9%.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
               Pure Himalayan is S-tier in our database, holds GMP certification, and offers the broadest product range among Himalayan-sourced brands: resin, liquid drops, tablets, soft resin, and solid shilajit. They offer <strong>free shipping</strong> on all orders and a <strong>money-back guarantee</strong> — reducing the financial risk for first-time buyers significantly. At $1.33/g for the 30g resin, they deliver ISO-accredited quality at a price that supports daily long-term supplementation without strain.
@@ -395,7 +395,7 @@ export default function PurblackVsPureHimalayanPage() {
           <section className="bg-white rounded-2xl border border-[#D1EDD8] p-6">
             <h2 className="text-xl font-black text-[#0D1F14] mb-3">The verdict</h2>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Pure Himalayan Shilajit wins this comparison on value, lab accreditation, and practical buyer experience. ISO/IEC 17025 is the strongest lab credential in our database — it validates that the COA numbers you are reading were produced by a lab held to the highest internationally audited standard. At $1.33/g with free shipping, a money-back guarantee, 60% verified fulvic acid, GMP certification, and 16,000+ ft Himalayan sourcing, Pure Himalayan delivers S-tier quality at a price point that makes long-term supplementation straightforward. Pürblack wins on process differentiation: 5 US patents, multi-region sourcing, and pharmaceutical-grade domestic manufacturing are genuine differentiators for buyers who want to explore a technologically distinct product. The True Gold gold infusion (555 PPM) is a further premium for buyers drawn to precious metal formulations. For most buyers — especially those evaluating these two brands side by side — Pure Himalayan represents the clearer, more cost-efficient choice for documented quality.
+              Pure Himalayan Shilajit wins this comparison on value, lab accreditation, and practical buyer experience. A2LA ISO/IEC 17025 is the strongest lab credential in our database — it validates that the COA numbers you are reading were produced by a lab held to the highest internationally audited standard. At $1.33/g with free shipping, a money-back guarantee, ~58% fulvic acid (Batch RE18, 2021 COA), GMP certification, and 16,000+ ft Himalayan sourcing, Pure Himalayan delivers S-tier quality at a price point that makes long-term supplementation straightforward. Pürblack wins on process differentiation: 5 US patents, multi-region sourcing, and pharmaceutical-grade domestic manufacturing are genuine differentiators for buyers who want to explore a technologically distinct product. The True Gold gold infusion (555 PPM) is a further premium for buyers drawn to precious metal formulations. For most buyers — especially those evaluating these two brands side by side — Pure Himalayan represents the clearer, more cost-efficient choice for documented quality.
             </p>
           </section>
 
@@ -428,7 +428,7 @@ export default function PurblackVsPureHimalayanPage() {
                   "ISO/IEC 17025-accredited US lab — the gold standard for testing lab competence; strongest credential in our database",
                   "$1.33/g vs $3.11/g — more than half the price per gram at S-tier quality with free shipping included",
                   "Money-back guarantee — risk-free first purchase that Pürblack does not offer",
-                  "16,000+ ft Himalayan altitude sourcing, no fillers or additives, 60% fulvic acid, GMP certified",
+                  "16,000+ ft Himalayan altitude sourcing, no fillers or additives, ~58% fulvic acid (2021 COA), GMP certified",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-2 text-xs text-[#0D1F14] leading-relaxed">
                     <span className="text-[#10B981] mt-0.5 shrink-0">✓</span>
@@ -464,7 +464,7 @@ export default function PurblackVsPureHimalayanPage() {
                   Buy Pure Himalayan if…
                 </div>
                 <p className="text-xs text-[#0D1F14] leading-relaxed">
-                  You want the highest lab accreditation standard (ISO/IEC 17025) at a price that makes daily use genuinely practical. Pure Himalayan's S-tier resin at $1.33/g with free shipping, a money-back guarantee, 60% verified fulvic acid, and no fillers is the most defensible choice for buyers comparing these two brands. Whether you are new to shilajit or looking for a well-documented premium Himalayan resin, Pure Himalayan offers the stronger practical value proposition.
+                  You want the highest lab accreditation standard (A2LA ISO/IEC 17025) at a price that makes daily use genuinely practical. Pure Himalayan's S-tier resin at $1.33/g with free shipping, a money-back guarantee, ~58% fulvic acid (2021 COA), and no fillers is the most defensible choice for buyers comparing these two brands. Whether you are new to shilajit or looking for a well-documented premium Himalayan resin, Pure Himalayan offers the stronger practical value proposition.
                 </p>
                 <a
                   href={PURE_HIMALAYAN.affiliateUrl}

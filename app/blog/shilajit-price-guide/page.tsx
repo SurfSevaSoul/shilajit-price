@@ -734,7 +734,7 @@ export default function ShilajitPriceGuide() {
                 <span className="shrink-0 w-6 h-6 rounded bg-emerald-500 text-white flex items-center justify-center text-[10px] font-black">A</span>
                 <div>
                   <div className="font-bold">Pure Himalayan Soft Resin 30g — $39.99 ($1.33/g)</div>
-                  <div className="text-[#7BA899] mt-0.5">ISO/IEC 17025 accredited testing, 60% fulvic acid, Himalayan Mountains 16,000+ ft. Best Himalayan-origin pick.</div>
+                  <div className="text-[#7BA899] mt-0.5">ISO/IEC 17025 accredited testing, ~58% fulvic acid (Batch RE18, 2021 COA), Himalayan Mountains 16,000+ ft. Best Himalayan-origin pick.</div>
                 </div>
               </div>
               <div className="flex gap-3">

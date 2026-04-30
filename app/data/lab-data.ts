@@ -26,6 +26,8 @@ export interface LabEntry {
   // Microbiology / certification flags
   microbiologyClean?: boolean;  // All micro markers pass (E. coli, Salmonella, Staph neg; plate count acceptable)
   amazonCertPassed?: boolean;   // Amazon marketplace certification passed (e.g. Eurofins)
+  // Comprehensive mineral panel (ICP-MS / ICP-OES results)
+  mineralPanel?: Record<string, string>; // mineral name → value with units
   heavyMetals: {
     lead: HeavyMetalResult;
     mercury: HeavyMetalResult;
@@ -246,39 +248,120 @@ export const LAB_DATA: Record<string, LabEntry> = {
     ],
   },
 
-  // ── PURE HIMALAYAN (source: purehimalayanshilajit.com) ────────────────────
+  // ── PURE HIMALAYAN ───────────────────────────────────────────────────────────
+  // Testing labs: Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)
+  //   and Micro Quality Labs, Burbank CA (A2LA ISO 17025, Cert 3034.01).
+  // Heavy metals reported per 200mg serving (mcg). All results PASS.
+  // FA: Only COA available is Batch RE18, Apr 2021 (Micro Quality Labs), 58% UV method,
+  //   noted as NOT covered under A2LA accreditation.
+  // Most recent heavy metals COA: September 2024.
   "ph-resin-30g": {
     productId: "ph-resin-30g",
     coaStatus: "verified",
     coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
-    testingLab: "ISO/IEC 17025 Accredited Laboratory",
-    testingLabAccreditation: "ISO/IEC 17025",
+    testingLab: "Micro Quality Labs, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    testingLabAccreditation: "A2LA ISO/IEC 17025",
+    testDate: "April 2021",
+    batchNumber: "RE18",
+    fulvicAcidPct: 58,
     purityPct: "Up to 99.9%",
+    microbiologyClean: true,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    mineralPanel: {
+      "Potassium":    "91,850 ppm",
+      "Calcium":      "24,525 ppm",
+      "Magnesium":    "9,841 ppm",
+      "Sodium":       "6,200 ppm",
+      "Phosphorus":   "2,348 ppm",
+      "Iron":         "1,040 ppm",
+      "Silicon":      "796 ppm",
+      "Zinc":         "490 ppm",
+      "Boron":        "293 ppm",
+      "Manganese":    "86 ppm",
+      "Copper":       "6.5 ppm",
+      "Cobalt":       "0.8 ppm",
+      "Selenium":     "0.1 ppm",
+    },
     notes: [
-      "ISO/IEC 17025 is the international standard for testing laboratory competence",
-      "Lab certificates available on brand website",
+      "Batch RE18 — Micro Quality Labs, Burbank CA — April 2021",
+      "Heavy metals (ppm): Mercury 0.0 · Lead 0.9 · Arsenic 0.6 · Cadmium 0.1",
+      "Fulvic Acid: 58% (UV method — Batch RE18, 2021 COA; result NOT covered under A2LA accreditation)",
+      "Do not present 58% as a current batch-verified figure",
+      "Full mineral panel available — one of the most comprehensive of any brand in our database",
+      "Purity: Up to 99.9% — no artificial additives or fillers",
     ],
   },
   "ph-drops-50ml": {
     productId: "ph-drops-50ml",
     coaStatus: "verified",
     coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
-    testingLab: "ISO/IEC 17025 Accredited Laboratory",
-    testingLabAccreditation: "ISO/IEC 17025",
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    testingLabAccreditation: "A2LA ISO/IEC 17025",
+    testDate: "January 2024",
+    batchNumber: "LX889",
     purityPct: "Up to 99.9%",
-    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Liquid drops formulation; lab certification on brand website"],
+    microbiologyClean: true,
+    heavyMetals: { lead: "not-tested", mercury: "not-tested", arsenic: "not-tested", cadmium: "not-tested" },
+    notes: [
+      "Batch LX889 — Certified Laboratories, Burbank CA — January 2024",
+      "Microbiology COA only — no heavy metals data for 50mL size; see 15mL batch (LM445) for reference heavy metals",
+      "TPC: <10 cfu/gm · Yeast/Mold: <10 cfu/gm — exceptional results",
+      "E. coli: Absent · Pseudomonas: Absent · S. aureus: Absent · Salmonella/Shigella: Absent · C. albicans: Absent",
+      "Fulvic acid % not covered by this COA — see Batch RE18 2021 COA for ~58% reference figure (UV method, non-A2LA)",
+    ],
   },
   "ph-tablets-90ct": {
     productId: "ph-tablets-90ct",
     coaStatus: "verified",
     coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
-    testingLab: "ISO/IEC 17025 Accredited Laboratory",
-    testingLabAccreditation: "ISO/IEC 17025",
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    testingLabAccreditation: "A2LA ISO/IEC 17025",
+    testDate: "September 2024",
+    batchNumber: "STH11",
     purityPct: "Up to 99.9%",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
-    notes: ["Tablet formulation; ISO/IEC 17025 lab certified"],
+    notes: [
+      "Batch STH11 — Certified Laboratories, Burbank CA — September 2024",
+      "Heavy metals per 200mg serving (mcg): Lead 0.095 · Arsenic 0.192 · Cadmium 0.066 · Mercury Not Detected",
+      "Cleanest heavy metals of all Pure Himalayan products tested — exceptionally low lead (0.095 mcg/serving)",
+      "Fulvic acid % not covered by this COA — see Batch RE18 2021 COA for ~58% reference figure (UV method, non-A2LA)",
+    ],
+  },
+  "ph-soft-resin": {
+    productId: "ph-soft-resin",
+    coaStatus: "verified",
+    coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    testingLabAccreditation: "A2LA ISO/IEC 17025",
+    testDate: "January 2024",
+    batchNumber: "LM445",
+    purityPct: "Up to 99.9%",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Batch LM445 — Certified Laboratories, Burbank CA — January 2024",
+      "Heavy metals per 200mg serving (mcg): Lead 0.208 · Arsenic 0.304 · Cadmium 0.025 · Mercury Not Detected",
+      "Reference heavy metals for 50mL liquid drops (same product line, Batch LX889 tested for microbiology only)",
+      "Fulvic acid % not covered by this COA — see Batch RE18 2021 COA for ~58% reference figure (UV method, non-A2LA)",
+    ],
+  },
+  "ph-solid": {
+    productId: "ph-solid",
+    coaStatus: "verified",
+    coaUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    testingLabAccreditation: "A2LA ISO/IEC 17025",
+    testDate: "September 2024",
+    batchNumber: "SD22",
+    purityPct: "Up to 99.9%",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Batch SD22 — Certified Laboratories, Burbank CA — September 2024",
+      "Covers both 8g and 36g sizes — same batch, consistent results confirmed",
+      "8g size — heavy metals per 200mg serving (mcg): Lead 0.138 · Arsenic 0.622 · Cadmium 0.014 · Mercury 0.001",
+      "36g size — heavy metals per 200mg serving (mcg): Lead 0.070 · Arsenic 0.607 · Cadmium 0.006 · Mercury 0.001",
+      "36g shows lowest lead (0.070 mcg/serving) and lowest cadmium (0.006 mcg/serving) of all PH products",
+      "Fulvic acid % not covered by this COA — see Batch RE18 2021 COA for ~58% reference figure (UV method, non-A2LA)",
+    ],
   },
 
   // ── NATURAL SHILAJIT ─────────────────────────────────────────────────────────
