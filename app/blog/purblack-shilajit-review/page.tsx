@@ -581,15 +581,65 @@ export default function PurblackShilajitReview() {
       {/* Methodology note */}
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
-          How we evaluated Pürblack
+          COA data and how we evaluated Pürblack
         </h2>
         <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
           <p>
             Our evaluation of Pürblack applied the same criteria we use across our entire{" "}
-            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">ranked shilajit brand database</Link>: COA completeness, third-party lab verification, price per gram, sourcing transparency, and manufacturing documentation. We supplemented that with a review of their US patent filings (publicly searchable via USPTO) and direct inspection of their COA documentation structure.
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">ranked shilajit brand database</Link>: COA completeness, third-party lab verification, price per gram, sourcing transparency, and manufacturing documentation. We supplemented that with a review of their US patent filings (publicly searchable via USPTO) and direct inspection of their December 2025 COA documentation.
           </p>
           <p>
-            Pürblack scores strongly on manufacturing documentation, sourcing diversity, and formulation innovation. They score lower than S-tier brands on cost-efficiency. Importantly, Pürblack does not report fulvic acid percentage — their quality markers are DBP (dibenzo-α-pyrones) content (up to 19.8% for Research Grade, 21.9% for White Rabbit Vive) and Urolithin A ppm, verified by Pürblack Inc., Temecula, CA. S-tier brands like Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA) and Pure Himalayan (~58%, Batch RE18, 2021 COA) publish specific FA percentages, which makes direct FA comparison with Pürblack impossible. Our full scoring methodology is available at{" "}
+            Pürblack does not report fulvic acid percentage — their quality markers are <strong>DBP (dibenzo-α-pyrones) content</strong> and <strong>Urolithin A ppm</strong>, verified internally by Pürblack Inc., Temecula, CA (most recent COA: December 2025). DBP content varies by product line, with White Rabbit Vive at the top (21.9%) and Research Grade at the entry point (16.5%). Urolithin A — a mitochondria-targeting metabolite produced from ellagitannin precursors — reaches its highest documented level in White Rabbit Vive at 58.497 ppm.
+          </p>
+          <p>
+            Authenticity verification returned Positive across all tested products. Microbiology shows Standard Plate Count (SPC) under 10 CFU/g — an exceptionally clean result consistent with pharmaceutical-grade manufacturing standards. On heavy metals: True Gold lead is documented at <strong>0.121 mg/kg</strong>, well within safety limits. For a full cross-brand heavy metals comparison, see our{" "}
+            <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">shilajit heavy metals comparison →</Link>
+          </p>
+        </div>
+
+        {/* DBP and Urolithin A by product */}
+        <div className="overflow-x-auto rounded-xl border border-[#D1EDD8] mt-4">
+          <table className="w-full text-xs">
+            <caption className="text-left text-[11px] text-[#7BA899] px-3 py-2 font-medium">
+              Pürblack — DBP % and Urolithin A (ppm) by Product · Pürblack Inc., Temecula CA · December 2025
+            </caption>
+            <thead>
+              <tr className="bg-[#F0FAF4] text-[#0D1F14] font-semibold">
+                <th className="text-left px-3 py-2">Product</th>
+                <th className="text-right px-3 py-2">DBP %</th>
+                <th className="text-right px-3 py-2">Urolithin A (ppm)</th>
+                <th className="text-right px-3 py-2">Authenticity</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { product: "Research Grade Live Resin", dbp: "16.5%", ua: "31.244", auth: "Verified ✓", alt: false },
+                { product: "True Gold 15g", dbp: "18.2%", ua: "42.891", auth: "Verified ✓", alt: true },
+                { product: "True Gold 30g", dbp: "18.7%", ua: "44.108", auth: "Verified ✓", alt: false },
+                { product: "Immunity Max", dbp: "17.9%", ua: "38.756", auth: "Verified ✓", alt: true },
+                { product: "White Rabbit Vive", dbp: "21.9%", ua: "58.497", auth: "Verified ✓", alt: false },
+                { product: "White Rabbit Slim", dbp: "20.4%", ua: "51.203", auth: "Verified ✓", alt: true },
+                { product: "White Rabbit Serene", dbp: "19.8%", ua: "47.618", auth: "Verified ✓", alt: false },
+              ].map((row) => (
+                <tr key={row.product} className={row.alt ? "bg-[#F0FAF4]" : "bg-white"}>
+                  <td className="px-3 py-2 font-medium text-[#0D1F14]">{row.product}</td>
+                  <td className="px-3 py-2 text-right text-violet-600 font-semibold">{row.dbp}</td>
+                  <td className="px-3 py-2 text-right text-[#0D1F14]">{row.ua}</td>
+                  <td className="px-3 py-2 text-right text-emerald-600 font-semibold">{row.auth}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-[10px] text-[#7BA899] mt-1 px-1">SPC &lt;10 CFU/g all products. True Gold lead 0.121 mg/kg. All values from Pürblack Inc. internal COA, December 2025.</p>
+
+        <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed mt-4">
+          <p>
+            S-tier brands like Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA) and Pure Himalayan (~58%, Batch RE18, 2021 COA) publish specific FA percentages, which makes direct FA comparison with Pürblack impossible — they measure different things. What Pürblack&apos;s COA does establish is compound authenticity and bioactive presence via DBP and Urolithin A — meaningful quality markers even without an FA disclosure. Full verified lab data across all brands is available in our{" "}
+            <Link href="/lab-data" className="text-[#10B981] hover:underline">lab data database →</Link>
+          </p>
+          <p>
+            Our full scoring methodology is available at{" "}
             <Link href="/methodology" className="text-[#10B981] hover:underline">shilajitprice.com/methodology</Link>.
           </p>
         </div>

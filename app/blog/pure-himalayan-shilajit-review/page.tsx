@@ -128,7 +128,7 @@ export default function PureHimalayanShilajitReview() {
           <div className="grid grid-cols-2 gap-3 mt-5 sm:grid-cols-4">
             {[
               { label: "Altitude", value: "14,000+ ft" },
-              { label: "Fulvic Acid", value: "60%" },
+              { label: "Fulvic Acid", value: "~58%*" },
               { label: "Lab Cert", value: "ISO/IEC 17025" },
               { label: "Overall Rating", value: "S-Tier" },
             ].map((item) => (
@@ -172,37 +172,76 @@ export default function PureHimalayanShilajitReview() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Lab Data Breakdown</h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              Pure Himalayan&apos;s only available fulvic acid COA shows <strong>~58%</strong> (Batch RE18, April 2021 — Micro Quality Labs, Burbank CA, UV method). Important context: this result is noted as <em>not covered under A2LA accreditation</em> — it should not be presented as a current batch-verified figure. Their most recent COA (September 2024, Certified Laboratories, Burbank CA — A2LA ISO/IEC 17025) covers heavy metals only. 58% falls in the "solid" range; below 20% is low quality; 40–60% is solid; 60–80% is good; 80%+ is premium.
+              Pure Himalayan uses two A2LA ISO/IEC 17025 accredited labs for independent testing: <strong>Certified Laboratories</strong> (heavy metals, minerals) and <strong>Micro Quality Labs, Burbank CA</strong> (Cert 3034.01). Their most recent heavy metals COA was issued in <strong>September 2024</strong>. Fulvic acid data comes from an earlier panel — Batch RE18, April 2021, UV method, Micro Quality Labs — which is noted as <em>not covered under A2LA accreditation</em>. That result shows <strong>~58%</strong> fulvic acid and represents the only publicly available FA figure for this brand. It sits comfortably above our 40% quality threshold, though it is below Black Lotus Resin&apos;s independently verified 64.51% (Batch 93, IAS Laboratories, 2025).
             </p>
             <p>
-              Pure Himalayan&apos;s 2021 FA reference is slightly lower than Black Lotus Resin&apos;s independently verified 64.51% (Batch 93, IAS Laboratories, 2025). However, Pure Himalayan distinguishes itself with one of the most comprehensive mineral panels of any shilajit brand in our database — 20+ minerals documented by ICP-MS and ICP-OES, including potassium (91,850 ppm), calcium (24,525 ppm), magnesium (9,841 ppm), and 10+ trace minerals. Pure Himalayan&apos;s 2024 heavy metals data is also exceptionally clean — tablets show Lead 0.095 mcg per 200mg serving, the cleanest of any PH product tested.
-            </p>
-            <p>
-              Their COA also covers heavy metals — lead, mercury, arsenic, and cadmium — which passed within safe limits. The brand claims up to 99.9% purity. It's worth noting that "purity" in supplement labeling typically refers to absence of contaminants (fillers, adulterants, pathogens) rather than fulvic acid concentration specifically. These are two distinct measurements on a COA, and both matter.
+              Where Pure Himalayan genuinely distinguishes itself is on heavy metals safety and mineral documentation. Their September 2024 heavy metals panel is exceptionally clean — the Shilajit Tablets (batch STH11) show lead at just <strong>0.095 mcg per 200mg serving</strong>, the lowest lead reading of any Pure Himalayan product on record. Mercury is Not Detected (ND) on the tablet batch. The brand also has one of the most comprehensive mineral panels in our database — 20+ minerals documented by ICP-MS and ICP-OES, including potassium at 91,850 ppm, calcium at 24,525 ppm, and magnesium at 9,841 ppm. See the full breakdown in our{" "}
+              <Link href="/blog/shilajit-mineral-content" className="text-[#10B981] hover:underline">shilajit mineral content analysis →</Link>
             </p>
           </div>
+
+          {/* Heavy metals table — September 2024 */}
+          <div className="overflow-x-auto rounded-xl border border-[#D1EDD8] mt-4">
+            <table className="w-full text-xs">
+              <caption className="text-left text-[11px] text-[#7BA899] px-3 py-2 font-medium">
+                Pure Himalayan — Heavy Metals (mcg / 200mg serving) · Certified Laboratories, Burbank CA · September 2024 · A2LA ISO/IEC 17025
+              </caption>
+              <thead>
+                <tr className="bg-[#F0FAF4] text-[#0D1F14] font-semibold">
+                  <th className="text-left px-3 py-2">Product / Batch</th>
+                  <th className="text-right px-3 py-2">Lead (Pb)</th>
+                  <th className="text-right px-3 py-2">Arsenic (As)</th>
+                  <th className="text-right px-3 py-2">Mercury (Hg)</th>
+                  <th className="text-right px-3 py-2">Cadmium (Cd)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { product: "Shilajit Tablets STH11", pb: "0.095", as: "0.156", hg: "ND ✓", cd: "0.002", alt: false },
+                  { product: "Authentic Resin (ref)", pb: "0.138", as: "0.201", hg: "0.003", cd: "0.005", alt: true },
+                  { product: "FDA Daily Limit (ref)", pb: "10.0", as: "15.0", hg: "10.0", cd: "5.0", alt: false },
+                ].map((row) => (
+                  <tr key={row.product} className={row.alt ? "bg-[#F0FAF4]" : "bg-white"}>
+                    <td className="px-3 py-2 font-medium text-[#0D1F14]">{row.product}</td>
+                    <td className="px-3 py-2 text-right text-[#0D1F14]">{row.pb}</td>
+                    <td className="px-3 py-2 text-right text-[#0D1F14]">{row.as}</td>
+                    <td className={`px-3 py-2 text-right font-semibold ${row.hg.includes("ND") ? "text-emerald-600" : "text-[#0D1F14]"}`}>{row.hg}</td>
+                    <td className="px-3 py-2 text-right text-[#0D1F14]">{row.cd}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-[10px] text-[#7BA899] mt-1 px-1">*Tablet batch STH11 values are per 200mg serving dose. Resin reference figures are from a separate batch panel. All values well under FDA daily reference limits shown above.</p>
 
           <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm mt-5">
             <h3 className="text-lg font-bold text-[#10B981] mb-2">What the Numbers Mean at a Glance</h3>
             <div className="space-y-2 text-xs text-[#0D1F14]">
               <div className="flex justify-between border-b border-[#D1EDD8] pb-1">
                 <span className="font-semibold">Fulvic Acid %</span>
-                <span>60% — above our recommended minimum</span>
+                <span>~58% (Batch RE18, 2021, UV method — non-A2LA result)</span>
               </div>
               <div className="flex justify-between border-b border-[#D1EDD8] pb-1">
-                <span className="font-semibold">Heavy Metals</span>
-                <span>Tested — within safe limits</span>
+                <span className="font-semibold">Heavy Metals (Sept 2024)</span>
+                <span>All products within limits · Tablets STH11: Hg ND, Pb 0.095 mcg/200mg</span>
               </div>
               <div className="flex justify-between border-b border-[#D1EDD8] pb-1">
-                <span className="font-semibold">Purity Claim</span>
-                <span>Up to 99.9% — refers to contaminant absence</span>
+                <span className="font-semibold">Mineral Panel</span>
+                <span>20+ minerals (ICP-MS + ICP-OES) — most documented in our database</span>
               </div>
               <div className="flex justify-between">
                 <span className="font-semibold">Lab Accreditation</span>
-                <span>ISO/IEC 17025 — formally verified lab</span>
+                <span>A2LA ISO/IEC 17025 · Certified Laboratories + Micro Quality Labs, Burbank CA</span>
               </div>
             </div>
           </div>
+
+          <p className="text-sm text-[#0D1F14] leading-relaxed mt-4">
+            For a full side-by-side heavy metals comparison across all four brands we track, see our{" "}
+            <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">shilajit heavy metals comparison →</Link>{" "}
+            Full verified COA data is also available in our{" "}
+            <Link href="/lab-data" className="text-[#10B981] hover:underline">lab data database →</Link>
+          </p>
         </section>
 
         {/* Product Table */}
@@ -228,7 +267,7 @@ export default function PureHimalayanShilajitReview() {
                     size: "30g",
                     price: "$39.99",
                     perG: "$1.33/g",
-                    fulvic: "60%",
+                    fulvic: "~58%*",
                     cert: "ISO/IEC 17025",
                     tier: "S",
                     alt: false,
@@ -339,7 +378,7 @@ export default function PureHimalayanShilajitReview() {
               </thead>
               <tbody>
                 {[
-                  { metric: "Fulvic Acid %", ph: "60%", bl: "64.51% (resin)", winner: "Black Lotus", alt: false },
+                  { metric: "Fulvic Acid %", ph: "~58% (Batch RE18, 2021)", bl: "64.51% (resin, Batch 93)", winner: "Black Lotus", alt: false },
                   { metric: "Lab Accreditation", ph: "ISO/IEC 17025", bl: "COA Verified", winner: "Pure Himalayan", alt: true },
                   { metric: "Resin Price (30g)", ph: "$39.99", bl: "$36.99", winner: "Black Lotus", alt: false },
                   { metric: "Source Origin", ph: "Himalayan", bl: "Altai", winner: "Depends on preference", alt: true },

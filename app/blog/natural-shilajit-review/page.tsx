@@ -267,6 +267,48 @@ export default function NaturalShilajitReview() {
           </div>
         </section>
 
+        {/* Heavy metals and safety data */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
+            Heavy metals, safety data, and Amazon certification
+          </h2>
+          <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+            <p>
+              Natural Shilajit&apos;s heavy metals testing is conducted by <strong>Harken Research (Los Angeles, CA)</strong> using ICP-MS — the same method used in pharmaceutical-grade metal analysis. Microbiology panels are completed by <strong>DaaneLabs (Naples, FL)</strong>. The most recent batch data is from <strong>October–November 2024</strong>. Fulvic acid percentage is not disclosed by brand policy; Natural Shilajit measures and reports quality through DBP content and compound profile instead.
+            </p>
+            <p>
+              Their resin product, as expected for an unprocessed form, shows slightly higher heavy metal readings than processed tablet formats — this is consistent across every brand we track and does not indicate a safety issue. All values across all Natural Shilajit products tested fall well within FDA dietary supplement limits. Microbiology is clean on all tested batches.
+            </p>
+            <p>
+              One differentiator worth flagging specifically: their capsule line carries an <strong>Amazon Certification from Eurofins (June 2024)</strong> — a testing standard Amazon requires for marketplace supplements that tests for heavy metals, microbial contamination, and a panel of <strong>sexual enhancement adulterants</strong>, all of which returned <strong>Not Detected (ND)</strong>. This adulterant panel is a meaningful safety signal because undisclosed sexual health additives (PDE5 inhibitors, stimulants) are a documented issue in the broader supplement market, and ND results confirm that Natural Shilajit capsules contain none. For a full cross-brand heavy metals data comparison, see our{" "}
+              <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">shilajit heavy metals comparison →</Link>
+            </p>
+          </div>
+
+          {/* COA summary card */}
+          <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm mt-4">
+            <h3 className="text-lg font-bold text-[#10B981] mb-3">Natural Shilajit COA summary — Oct–Nov 2024</h3>
+            <div className="space-y-2">
+              {[
+                { item: "Heavy metals lab", detail: "Harken Research, Los Angeles, CA · ICP-MS · November 2024" },
+                { item: "Microbiology lab", detail: "DaaneLabs, Naples, FL · October 2024 · Clean on all batches" },
+                { item: "Amazon cert (capsules)", detail: "Eurofins · June 2024 · Heavy metals + adulterants ND ✓" },
+                { item: "Fulvic acid disclosure", detail: "Not disclosed per brand policy — quality marked by DBP and FTIR compound profile" },
+                { item: "DBP verification", detail: "Confirmed via LC-MS and FTIR — genuine shilajit biomarker present" },
+                { item: "Resin vs processed forms", detail: "Resin shows slightly higher HM than tablets/capsules — consistent with industry norms, all within limits" },
+              ].map((row) => (
+                <div key={row.item} className="flex items-start gap-3 text-xs border-b border-[#D1EDD8] pb-2 last:border-0 last:pb-0">
+                  <svg className="w-4 h-4 text-[#10B981] shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" /></svg>
+                  <div>
+                    <div className="font-semibold text-[#0D1F14]">{row.item}</div>
+                    <div className="text-[#7BA899] mt-0.5">{row.detail}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Product lineup */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">
@@ -418,7 +460,7 @@ export default function NaturalShilajitReview() {
                 {[
                   "$2.45/g for the flagship 20g jar — premium price vs other S-tier brands",
                   "No free shipping on all orders (unlike Black Lotus)",
-                  "~70% fulvic acid vs 64.51%/74.30% for Black Lotus (resin/capsules, Batch 93 COA) — lower documented FA%",
+                  "Fulvic acid % not disclosed — brand reports quality via DBP instead; Black Lotus publishes 64.51%/74.30% (resin/capsules, Batch 93 COA)",
                   "No ISO/IEC 17025 lab accreditation (Pure Himalayan has this)",
                   "Smaller brand presence — fewer reviews than Amazon-listed competitors",
                 ].map((item) => (

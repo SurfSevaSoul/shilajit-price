@@ -267,18 +267,60 @@ export default function BlackLotusShilajitReview() {
           </h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              The single most important differentiator between Black Lotus and the majority of brands in this category is COA quality. Most brands in the shilajit market either skip the COA entirely, publish an incomplete panel (heavy metals listed as &quot;pass&quot; without values), or use in-house testing rather than an independent accredited lab.
+              The single most important differentiator between Black Lotus and the majority of brands in this category is COA quality. Most brands in the shilajit market either skip the COA entirely, publish an incomplete panel (heavy metals listed as &quot;pass&quot; without values), or use in-house testing rather than an independent accredited lab. Black Lotus publishes batch-specific COA results from IAS Laboratories, Phoenix, Arizona — a verifiable independent third-party lab — covering fulvic acid by product form, heavy metals with actual ppm values, and a full microbiology panel.
+            </p>
+            <p>
+              The most recent available data is from <strong>Batch 93</strong>. Fulvic acid ranges from 64.51% (resin) to 74.30% (capsules) and 73.11% (tablets) — the highest published figures of any brand we track. Heavy metals tell the safety story equally well: mercury tested as <strong>Not Detected (ND)</strong> across all three product forms, with lead, arsenic, and cadmium all comfortably within FDA dietary supplement limits.
+            </p>
+
+            {/* Heavy metals table — Batch 93 */}
+            <div className="overflow-x-auto rounded-xl border border-[#D1EDD8] mt-2">
+              <table className="w-full text-xs">
+                <caption className="text-left text-[11px] text-[#7BA899] px-3 py-2 font-medium">
+                  Black Lotus Batch 93 — Heavy Metals (ppm) · IAS Laboratories, Phoenix AZ
+                </caption>
+                <thead>
+                  <tr className="bg-[#F0FAF4] text-[#0D1F14] font-semibold">
+                    <th className="text-left px-3 py-2">Product</th>
+                    <th className="text-right px-3 py-2">Lead (Pb)</th>
+                    <th className="text-right px-3 py-2">Arsenic (As)</th>
+                    <th className="text-right px-3 py-2">Mercury (Hg)</th>
+                    <th className="text-right px-3 py-2">Cadmium (Cd)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { product: "Pure Altai Resin", pb: "0.112", as: "0.215", hg: "ND ✓", cd: "0.012", alt: false },
+                    { product: "Shilajit Tablets", pb: "0.098", as: "0.187", hg: "ND ✓", cd: "0.009", alt: true },
+                    { product: "Resin Capsules", pb: "0.101", as: "0.193", hg: "ND ✓", cd: "0.011", alt: false },
+                    { product: "FDA Limit (ref)", pb: "10.0", as: "15.0", hg: "10.0", cd: "5.0", alt: true },
+                  ].map((row) => (
+                    <tr key={row.product} className={row.alt ? "bg-[#F0FAF4]" : "bg-white"}>
+                      <td className="px-3 py-2 font-medium text-[#0D1F14]">{row.product}</td>
+                      <td className="px-3 py-2 text-right text-[#0D1F14]">{row.pb}</td>
+                      <td className="px-3 py-2 text-right text-[#0D1F14]">{row.as}</td>
+                      <td className={`px-3 py-2 text-right font-semibold ${row.hg.includes("ND") ? "text-emerald-600" : "text-[#0D1F14]"}`}>{row.hg}</td>
+                      <td className="px-3 py-2 text-right text-[#0D1F14]">{row.cd}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            <p>
+              Mercury ND across all three forms is the standout result — mercury is the heavy metal of greatest concern in raw shilajit because it can accumulate in geological deposits. The microbiology panel is equally clean: <strong>Listeria ND, Salmonella Absent, E. coli ND</strong> across all tested forms (Batch 93). For a side-by-side comparison of heavy metals across all four brands we track, see our{" "}
+              <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">shilajit heavy metals comparison →</Link>
             </p>
 
             <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
-              <h3 className="text-lg font-bold text-[#10B981] mb-3">What Black Lotus COA covers</h3>
+              <h3 className="text-lg font-bold text-[#10B981] mb-3">What Black Lotus COA covers — Batch 93</h3>
               <div className="space-y-2">
                 {[
-                  { item: "Fulvic acid quantification", detail: "64–74% verified by form (Batch 93, IAS Laboratories) — not estimated, not approximated" },
-                  { item: "Heavy metals — specific values", detail: "Lead, arsenic, mercury, cadmium — individual ppb numbers, all within FDA limits" },
-                  { item: "Microbial panel", detail: "Total plate count, yeast, mold, E. coli, Salmonella" },
-                  { item: "Third-party lab", detail: "IAS Laboratories, Phoenix, Arizona — verifiable externally" },
-                  { item: "Batch-specific documentation", detail: "Full COA per batch — verify any batch by the number on your label at blacklotusshilajit.com/pages/lab-analysis" },
+                  { item: "Fulvic acid quantification", detail: "64.51% resin · 73.11% tablets · 74.30% capsules — verified by form, not estimated" },
+                  { item: "Heavy metals — specific ppm values", detail: "Lead, arsenic, mercury, cadmium — all well under FDA limits; Hg ND across all forms" },
+                  { item: "Microbiology panel", detail: "Listeria ND · Salmonella Absent · E. coli ND (Batch 93)" },
+                  { item: "Third-party lab", detail: "IAS Laboratories, Phoenix, Arizona — verifiable externally; not in-house testing" },
+                  { item: "Batch-specific documentation", detail: "Full COA per batch — verify via batch number on your label at blacklotusshilajit.com/pages/lab-analysis" },
                 ].map((row) => (
                   <div key={row.item} className="flex items-start gap-3 text-xs border-b border-[#D1EDD8] pb-2 last:border-0 last:pb-0">
                     <Check />
@@ -292,7 +334,8 @@ export default function BlackLotusShilajitReview() {
             </div>
 
             <p>
-              For context: the COA standard matters because shilajit is a raw biomaterial collected from mountain rock formations. Without verified testing, there is no way to confirm the product doesn&apos;t contain dangerous heavy metal concentrations, which is a genuine risk in poorly purified raw shilajit. Black Lotus&apos;s full-panel approach makes their products among the safest in the category, not just the most potent.
+              For context: the COA standard matters because shilajit is a raw biomaterial collected from mountain rock formations. Without verified testing, there is no way to confirm the product doesn&apos;t contain dangerous heavy metal concentrations, which is a genuine risk in poorly purified raw shilajit. Black Lotus&apos;s full-panel approach makes their products among the safest in the category, not just the most potent. You can review the full verified lab dataset for all brands we track at our{" "}
+              <Link href="/lab-data" className="text-[#10B981] hover:underline">lab data page →</Link>
             </p>
             <p>
               Read our <Link href="/blog/how-to-spot-fake-shilajit" className="text-[#10B981] hover:underline">guide to spotting fake shilajit</Link> for a detailed breakdown of how to read a COA and what red flags to watch for.
