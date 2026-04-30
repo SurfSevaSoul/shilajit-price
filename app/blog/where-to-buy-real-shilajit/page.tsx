@@ -328,7 +328,7 @@ export default function WhereToBuyRealShilajit() {
             {[
               "Sells direct — no third-party resellers",
               "ISO-accredited COA, lot-linked, publicly accessible",
-              "85%+ verified fulvic acid by titration",
+              "64.51% verified fulvic acid by titration (resin, Batch 93 COA, IAS Labs)",
               "Heavy metals: all values published and within limits",
               "Free shipping on all orders worldwide",
               "Satisfaction guarantee — full accountability",

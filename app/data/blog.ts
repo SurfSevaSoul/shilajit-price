@@ -227,7 +227,7 @@ const REGISTERED_POSTS: BlogPost[] = [
     slug: "black-lotus-shilajit-review",
     title: "Black Lotus Shilajit Review 2026 — COA, Lab Data & Honest Verdict",
     description:
-      "Full Black Lotus Shilajit review: 85%+ verified fulvic acid, Altai sourcing, complete product lineup analysis, lab data breakdown, and honest verdict on who it's best for.",
+      "Full Black Lotus Shilajit review: 64.51% verified fulvic acid (resin, Batch 93 COA), Altai sourcing, complete product lineup analysis, lab data breakdown, and honest verdict on who it's best for.",
     publishedAt: "2026-04-15",
     updatedAt: "2026-04-15",
     readingTimeMin: 9,

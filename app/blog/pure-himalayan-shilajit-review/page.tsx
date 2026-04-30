@@ -53,7 +53,7 @@ const faqItems: FaqItem[] = [
     name: "Is 60% fulvic acid good for shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "60% fulvic acid is solid — it falls in the 'good' range. We generally recommend at least 40% as a quality threshold. Pure Himalayan's 60% clears that bar comfortably. Black Lotus reports 85%+, which is higher, but Pure Himalayan's 60% is still well above the industry average for published COA data.",
+      text: "60% fulvic acid is solid — it falls in the 'good' range. We generally recommend at least 40% as a quality threshold. Pure Himalayan's 60% clears that bar comfortably. Black Lotus Resin has been independently verified at 64.51% fulvic acid (Batch 93, IAS Laboratories), which is higher, but Pure Himalayan's 60% is still well above the industry average for published COA data.",
     },
   },
   {
@@ -61,7 +61,7 @@ const faqItems: FaqItem[] = [
     name: "How does Pure Himalayan compare to Black Lotus Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus leads on fulvic acid (85%+ vs 60%) and is our #1 overall pick. Pure Himalayan counters with ISO/IEC 17025 lab accreditation and genuine Himalayan sourcing. Both are S-tier. If fulvic acid potency is the priority, Black Lotus wins. If you specifically want Himalayan-origin shilajit with formal ISO certification, Pure Himalayan is the top choice in that category.",
+      text: "Black Lotus Resin leads on fulvic acid (64.51% vs 60%, per independent lab testing) and is our #1 overall pick. Pure Himalayan counters with ISO/IEC 17025 lab accreditation and genuine Himalayan sourcing. Both are S-tier. If fulvic acid potency is the priority, Black Lotus wins. If you specifically want Himalayan-origin shilajit with formal ISO certification, Pure Himalayan is the top choice in that category.",
     },
   },
   {
@@ -175,7 +175,7 @@ export default function PureHimalayanShilajitReview() {
               Pure Himalayan's COA reports <strong>60% fulvic acid</strong>. To contextualize that number: fulvic acid is the primary bioactive compound in shilajit, responsible for its mineral transport and antioxidant properties. A 2016 study published in the <em>Journal of Alzheimer's Disease</em> identified fulvic acid as shilajit's key active component. Below 20% is considered low quality; 40–60% is solid; 60–80% is good; 80%+ is premium.
             </p>
             <p>
-              Pure Himalayan sits at the upper edge of the "good" category. It is lower than Black Lotus's reported 85%+, but it clears the threshold we recommend (40%) with significant margin and is well above the average for brands that publish COA data at all.
+              Pure Himalayan sits at the upper edge of the "good" category. It is slightly lower than Black Lotus Resin's independently verified 64.51% (Batch 93, IAS Laboratories), but it clears the threshold we recommend (40%) with significant margin and is well above the average for brands that publish COA data at all.
             </p>
             <p>
               Their COA also covers heavy metals — lead, mercury, arsenic, and cadmium — which passed within safe limits. The brand claims up to 99.9% purity. It's worth noting that "purity" in supplement labeling typically refers to absence of contaminants (fillers, adulterants, pathogens) rather than fulvic acid concentration specifically. These are two distinct measurements on a COA, and both matter.
@@ -339,7 +339,7 @@ export default function PureHimalayanShilajitReview() {
               </thead>
               <tbody>
                 {[
-                  { metric: "Fulvic Acid %", ph: "60%", bl: "85%+", winner: "Black Lotus", alt: false },
+                  { metric: "Fulvic Acid %", ph: "60%", bl: "64.51% (resin)", winner: "Black Lotus", alt: false },
                   { metric: "Lab Accreditation", ph: "ISO/IEC 17025", bl: "COA Verified", winner: "Pure Himalayan", alt: true },
                   { metric: "Resin Price (30g)", ph: "$39.99", bl: "$36.99", winner: "Black Lotus", alt: false },
                   { metric: "Source Origin", ph: "Himalayan", bl: "Altai", winner: "Depends on preference", alt: true },
@@ -385,7 +385,7 @@ export default function PureHimalayanShilajitReview() {
                 The resin at $39.99 ($1.33/g) is a reasonable price for the quality level. If you prioritize ISO certification as your trust signal, or you specifically want Himalayan-origin shilajit, this is the clearest recommendation in that category.
               </p>
               <p>
-                If maximum fulvic acid potency is the primary criterion, Black Lotus at $36.99 and 85%+ fulvic acid remains our #1 overall pick. But Pure Himalayan is not a consolation prize — it is a genuinely strong product that leads its own defined segment.
+                If maximum fulvic acid potency is the primary criterion, Black Lotus at $36.99 and 64.51% independently verified fulvic acid (resin, Batch 93 COA) remains our #1 overall pick. But Pure Himalayan is not a consolation prize — it is a genuinely strong product that leads its own defined segment.
               </p>
             </div>
             <div className="mt-5 flex flex-wrap gap-3">

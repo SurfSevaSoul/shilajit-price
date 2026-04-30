@@ -86,7 +86,7 @@ const TOP_PICKS = [
     name: "Black Lotus Shilajit Resin",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     pricePerGram: "$1.33",
     coaVerified: true,
     verdict: "Highest verified FA for maximum mitochondrial support — the clear #1 for energy and fatigue",
@@ -97,7 +97,7 @@ const TOP_PICKS = [
     name: "Black Lotus Extra Strength Capsules",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
-    fulvic: "85%+",
+    fulvic: "74.30%",
     pricePerGram: "~$1.17",
     coaVerified: true,
     verdict: "Same potency as resin in convenient daily capsule — best for those who want energy benefits without measuring",
@@ -260,7 +260,7 @@ export default function BestShilajitForEnergy() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Best for Energy: Black Lotus Shilajit Resin</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              For energy specifically, the most important number is fulvic acid percentage — and Black Lotus leads the market at 85%+, independently verified by an ISO-accredited laboratory. This is the highest consistently achieved and documented concentration we've found across our database of 55+ products.
+              For energy specifically, the most important number is fulvic acid percentage — and Black Lotus publishes batch-specific COA data every time (Batch 93: 64.51% for resin, 74.30% for capsules), independently verified by IAS Laboratories. This level of per-batch COA transparency is unmatched in our database of 55+ products.
             </p>
             <p>
               Higher FA concentration means more active compound per dose. IAS Laboratories confirms 161mg of fulvic acid per serving in recent batches — well above the threshold needed to meaningfully impact mitochondrial Complex I activity. At this concentration, users typically report energy improvements within 2–3 weeks, faster than lower-concentration alternatives.
@@ -281,8 +281,8 @@ export default function BestShilajitForEnergy() {
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
-                "85%+ fulvic acid — maximum mitochondrial support",
-                "161mg fulvic acid per serving (IAS Laboratories, batch #93-94)",
+                "64.51% FA (resin) / 74.30% FA (capsules) — Batch 93 COA, IAS Labs",
+                "161mg fulvic acid per serving — June 2025 COA verified",
                 "Tested every batch — full COAs publicly available",
                 "Full heavy metals panel — all within FDA limits",
                 "No stimulants, fillers, or proprietary blends",

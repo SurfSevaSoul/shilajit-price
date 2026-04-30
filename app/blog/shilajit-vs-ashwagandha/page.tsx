@@ -471,7 +471,7 @@ export default function ShilajitVsAshwagandha() {
             </p>
             <h3 className="text-base font-bold text-[#0D1F14] mb-1">Black Lotus Shilajit</h3>
             <p className="text-xs text-[#4A6358] mb-3 leading-relaxed">
-              85%+ fulvic acid verified by third-party COA · Sourced from Altai Mountains,
+              64.51% fulvic acid (resin, Batch 93 COA, IAS Labs) · Sourced from Altai Mountains,
               Siberia · Heavy metals tested · Free shipping
             </p>
             <a

@@ -33,7 +33,7 @@ const faqItems: FaqItem[] = [
     name: "What is a fair price per gram for shilajit resin?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Based on our analysis of 55+ products, a fair price per gram for shilajit resin ranges from $0.70–$1.50/gram depending on quality tier. S-tier products with 85%+ verified fulvic acid and ISO-accredited COAs typically land at $1.20–$1.50/gram. A-tier products with third-party testing and 60–75% FA range from $0.87–$1.43/gram. Anything below $0.60/gram for a 30g jar should raise quality concerns — authentic high-altitude shilajit cannot realistically be produced below this threshold with proper testing.",
+      text: "Based on our analysis of 55+ products, a fair price per gram for shilajit resin ranges from $0.70–$1.50/gram depending on quality tier. S-tier products with COA-verified fulvic acid (64–74% by form for Black Lotus) and ISO-accredited COAs typically land at $1.20–$1.50/gram. A-tier products with third-party testing and 60–75% FA range from $0.87–$1.43/gram. Anything below $0.60/gram for a 30g jar should raise quality concerns — authentic high-altitude shilajit cannot realistically be produced below this threshold with proper testing.",
     },
   },
   {
@@ -57,7 +57,7 @@ const faqItems: FaqItem[] = [
     name: "Is Black Lotus really only $1.23/gram?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus Shilajit Resin ranges from $1.23–$1.33 per gram depending on current pricing and any active promotions. At standard pricing of $39.99 for 30g with free shipping: $39.99 ÷ 30g = $1.33/gram. At promotional pricing of $36.99: $36.99 ÷ 30g = $1.23/gram. Both represent exceptional value for S-tier quality — most comparable products (85%+ verified FA, ISO-accredited COA) charge $1.70–$2.50/gram or more.",
+      text: "Black Lotus Shilajit Resin ranges from $1.23–$1.33 per gram depending on current pricing and any active promotions. At standard pricing of $39.99 for 30g with free shipping: $39.99 ÷ 30g = $1.33/gram. At promotional pricing of $36.99: $36.99 ÷ 30g = $1.23/gram. Both represent exceptional value for S-tier quality — most comparable products (COA-verified FA ≥60%, ISO-accredited COA) charge $1.70–$2.50/gram or more.",
     },
   },
   {
@@ -72,7 +72,7 @@ const faqItems: FaqItem[] = [
 
 // 20+ product comparison data
 const PRODUCTS = [
-  { name: "Black Lotus Resin", tier: "S", tierColor: "bg-amber-400 text-amber-900", priceGram: 1.33, fulvic: "85%+", coa: true, tp: true, source: "Altai Mountains, Siberia", affiliate: AFFILIATE_RESIN },
+  { name: "Black Lotus Resin", tier: "S", tierColor: "bg-amber-400 text-amber-900", priceGram: 1.33, fulvic: "64.51%", coa: true, tp: true, source: "Altai Mountains, Siberia", affiliate: AFFILIATE_RESIN },
   { name: "Natural Shilajit RS Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.08, fulvic: "~70%", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20" },
   { name: "Essencraft Himalayan Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.43, fulvic: "75%+", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20" },
   { name: "Sayan Shilajit 30g", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 0.90, fulvic: "~60%", coa: true, tp: false, source: "Siberian Altai", affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20" },
@@ -157,7 +157,7 @@ export default function ShilajitPricePerGram() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">What a fair price per gram looks like by tier</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
             {[
-              { tier: "S", color: "bg-amber-400 text-amber-900", range: "$1.20–$1.60/gram", desc: "85%+ FA, ISO COA, third-party tested, full heavy metals panel" },
+              { tier: "S", color: "bg-amber-400 text-amber-900", range: "$1.20–$1.60/gram", desc: "COA-verified FA (64–74% by form), ISO COA, third-party tested, full heavy metals panel" },
               { tier: "A", color: "bg-emerald-500 text-white", range: "$0.70–$1.50/gram", desc: "60–80% FA, COA available, some third-party testing, documented source" },
               { tier: "B", color: "bg-blue-500 text-white", range: "$0.80–$2.50/gram", desc: "Standardized extracts or lower-documentation brands with basic testing" },
               { tier: "C/D", color: "bg-red-600 text-white", range: "Any price", desc: "No COA, unverified claims, unknown source — avoid regardless of price" },
@@ -233,7 +233,7 @@ export default function ShilajitPricePerGram() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value at $1.33/gram: Black Lotus Shilajit Resin</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              At $1.33/gram with 85%+ verified fulvic acid, Black Lotus delivers the highest quality-to-price ratio in the resin category. The closest competitor with comparable documentation (Essencraft at 75%+ FA) charges $1.43/gram — and delivers less fulvic acid per gram. Natural Shilajit at $1.08/gram has a lower sticker price but 70% FA instead of 85%, making the effective FA cost $1.54/gram versus Black Lotus at $1.57/gram — essentially equal, with Black Lotus having the stronger COA and higher verified concentration.
+              At $1.33/gram with 64.51% verified fulvic acid (Batch 93, IAS Laboratories, June 2025), Black Lotus delivers the highest quality-to-price ratio in the resin category. The closest competitor with comparable documentation (Essencraft at 75%+ FA) charges $1.43/gram. Natural Shilajit at $1.08/gram has a lower sticker price but ~70% FA, making the effective FA cost $1.54/gram versus Black Lotus at $2.06/gram of pure FA — with Black Lotus carrying the stronger full-panel COA from an accredited independent lab.
             </p>
             <p>
               For buyers doing the math seriously, Black Lotus is the sweet spot. You&apos;re paying approximately what the market charges for A-tier quality but receiving S-tier documentation and potency. The lack of retail markup (direct-to-consumer model) and free shipping keep the true $/gram competitive with products that technically cost less on the sticker.
@@ -246,7 +246,7 @@ export default function ShilajitPricePerGram() {
                 <div className="w-8 h-8 rounded-lg bg-amber-400 flex items-center justify-center text-amber-900 font-black text-sm">S</div>
                 <div>
                   <div className="text-xs font-black text-[#0D1F14]">Black Lotus Shilajit Resin</div>
-                  <div className="text-[10px] text-[#10B981]">$1.33/gram · 85%+ FA · Free shipping</div>
+                  <div className="text-[10px] text-[#10B981]">$1.33/gram · 64.51% FA (resin, Batch 93 COA) · Free shipping</div>
                 </div>
               </div>
               <div className="text-right">
@@ -270,7 +270,7 @@ export default function ShilajitPricePerGram() {
               Products charging $2.50–$3.50/gram typically do so for one of three reasons: luxury branding and packaging (Sun Potion, Pürblack), unusual sourcing claims (rare Himalayan sub-regions, special collection methods), or direct retail markups from selling through specialty supplement retailers at 40–50% margins.
             </p>
             <p>
-              The question to ask: does the higher price correspond to higher verified fulvic acid content or better COA quality? In most cases, the answer is no. Pürblack charges ~$3.00/gram but delivers ~72% FA — lower than Black Lotus at $1.33/gram with 85%+ FA. The premium is mostly packaging and brand positioning, not verifiable quality difference.
+              The question to ask: does the higher price correspond to higher verified fulvic acid content or better COA quality? In most cases, the answer is no. Pürblack charges ~$3.00/gram but delivers ~72% FA — lower than Black Lotus capsules (74.30% FA) and comparable to resin (64.51% FA, Batch 93 COA) at $1.33/gram. The premium is mostly packaging and brand positioning, not verifiable quality difference.
             </p>
             <p>
               The C and D-tier products at $0.50–$0.67/gram are not bargains — they&apos;re unknown-quality products with no COA that may or may not contain meaningful amounts of shilajit. The floor for legitimate quality is approximately $0.70/gram, and even that requires careful COA verification.

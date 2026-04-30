@@ -20,14 +20,14 @@ const POST_URL = `${BASE_URL}/blog/black-lotus-shilajit-review`;
 export const metadata: Metadata = {
   title: "Black Lotus Shilajit Review 2026 — COA, Lab Data & Honest Verdict | ShilajitPrice.com",
   description:
-    "Full Black Lotus Shilajit review: 85%+ verified fulvic acid, Altai sourcing, complete product lineup analysis, lab data breakdown, and honest verdict on who it's best for.",
+    "Full Black Lotus Shilajit review: 64–74% verified fulvic acid (by form, Batch 93 COA), Altai sourcing, complete product lineup analysis, lab data breakdown, and honest verdict on who it's best for.",
   keywords:
     "black lotus shilajit review, black lotus shilajit COA, black lotus fulvic acid, black lotus shilajit resin review, black lotus vs pure himalayan shilajit",
   alternates: { canonical: POST_URL },
   openGraph: {
     title: "Black Lotus Shilajit Review 2026 — COA, Lab Data & Honest Verdict",
     description:
-      "Full Black Lotus Shilajit review: 85%+ verified fulvic acid, Altai sourcing, complete product lineup, lab data breakdown, and honest verdict.",
+      "Full Black Lotus Shilajit review: 64–74% verified fulvic acid (by form, Batch 93 COA), Altai sourcing, complete product lineup, lab data breakdown, and honest verdict.",
     url: POST_URL,
     siteName: "ShilajitPrice.com",
     type: "article",
@@ -42,7 +42,7 @@ const faqItems: FaqItem[] = [
     name: "Is Black Lotus Shilajit legit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Black Lotus is one of the most transparent shilajit brands in the market. They publish a full-panel COA verifying 85%+ fulvic acid, a clean heavy metals panel, and microbial safety. They are GMP certified, source from Siberian Altai, and use cold-processing to preserve bioactive compounds. We rate them S-tier across their core product lineup.",
+      text: "Yes. Black Lotus is one of the most transparent shilajit brands in the market. They publish a full-panel COA verifying 64–74% fulvic acid (by product form, per Batch 93 — IAS Laboratories, June 2025), a clean heavy metals panel, and microbial safety. They are GMP certified, source from Siberian Altai, and use cold-processing to preserve bioactive compounds. We rate them S-tier across their core product lineup.",
     },
   },
   {
@@ -66,7 +66,7 @@ const faqItems: FaqItem[] = [
     name: "How does Black Lotus compare to Pure Himalayan Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus and Pure Himalayan are the two strongest verified brands in our database. Black Lotus leads on fulvic acid percentage (85%+ vs 60%) and price per gram ($1.23 vs $1.33). Pure Himalayan leads on testing standard — their ISO/IEC 17025 accreditation is the most rigorous lab certification available. Both are S-tier picks; choose Black Lotus for highest fulvic acid, Pure Himalayan for maximum ISO certification rigor.",
+      text: "Black Lotus and Pure Himalayan are the two strongest verified brands in our database. Black Lotus leads on fulvic acid percentage (64–74% by form vs 60%) and price per gram ($1.23 vs $1.33). Pure Himalayan leads on testing standard — their ISO/IEC 17025 accreditation is the most rigorous lab certification available. Both are S-tier picks; choose Black Lotus for highest fulvic acid, Pure Himalayan for maximum ISO certification rigor.",
     },
   },
   {
@@ -85,7 +85,7 @@ const PRODUCT_TABLE = [
     size: "30g",
     price: "$36.99",
     perGram: "$1.23/g",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     coa: true,
     tier: "S",
     highlight: true,
@@ -96,7 +96,7 @@ const PRODUCT_TABLE = [
     size: "60ct",
     price: "$43.99",
     perGram: "$1.47/g eq.",
-    fulvic: "85%+",
+    fulvic: "74.30%",
     coa: true,
     tier: "S",
     highlight: true,
@@ -118,7 +118,7 @@ const PRODUCT_TABLE = [
     size: "2 oz",
     price: "$36.99",
     perGram: "$0.62/g eq.",
-    fulvic: "80%+",
+    fulvic: "64.51%",
     coa: true,
     tier: "A",
     highlight: false,
@@ -140,7 +140,7 @@ const PRODUCT_TABLE = [
     size: "30g + 60ct",
     price: "$64.99",
     perGram: "$0.72/g eq.",
-    fulvic: "85%+",
+    fulvic: "64–74% (by form)",
     coa: true,
     tier: "S",
     highlight: true,
@@ -218,7 +218,7 @@ export default function BlackLotusShilajitReview() {
               Black Lotus holds S-tier status across four products in our database — the only brand to do so. That distinction isn&apos;t based on marketing claims or brand recognition. It&apos;s based on three criteria we apply to every product we evaluate: COA completeness, verified fulvic acid percentage, and price-per-gram relative to quality tier.
             </p>
             <p>
-              On every one of those metrics, Black Lotus either leads the field or ties for the top position. Their 85%+ fulvic acid is the highest verified figure in our database. Their COA covers the full panel — heavy metals with specific values (not just &quot;pass/fail&quot;), microbial testing, moisture, and fulvic acid quantification by IAS Laboratories, Phoenix, Arizona, every single batch. And at $1.23/gram for the core resin, they undercut most competitors offering a fraction of the verification.
+              On every one of those metrics, Black Lotus either leads the field or ties for the top position. Their fulvic acid content — 64.51% for the resin and tincture, 74.30% for capsules (Batch 93, IAS Laboratories, Phoenix, AZ) — represents some of the highest COA-confirmed figures in our database. Their COA covers the full panel — heavy metals with specific values (not just &quot;pass/fail&quot;), microbial testing, moisture, and fulvic acid quantification by IAS Laboratories, Phoenix, Arizona, every single batch. And at $1.23/gram for the core resin, they undercut most competitors offering a fraction of the verification.
             </p>
             <p>
               This review covers every product in their lineup, the lab data in detail, who this brand is the right fit for, and where you might look elsewhere.
@@ -274,7 +274,7 @@ export default function BlackLotusShilajitReview() {
               <h3 className="text-lg font-bold text-[#10B981] mb-3">What Black Lotus COA covers</h3>
               <div className="space-y-2">
                 {[
-                  { item: "Fulvic acid quantification", detail: "85%+ verified — not estimated, not approximated" },
+                  { item: "Fulvic acid quantification", detail: "64–74% verified by form (Batch 93, IAS Laboratories) — not estimated, not approximated" },
                   { item: "Heavy metals — specific values", detail: "Lead, arsenic, mercury, cadmium — individual ppb numbers, all within FDA limits" },
                   { item: "Microbial panel", detail: "Total plate count, yeast, mold, E. coli, Salmonella" },
                   { item: "Third-party lab", detail: "IAS Laboratories, Phoenix, Arizona — verifiable externally" },
@@ -404,7 +404,7 @@ export default function BlackLotusShilajitReview() {
                 },
                 {
                   title: "Maximum potency seekers",
-                  body: "At 85%+ fulvic acid, Black Lotus Resin and Capsules deliver the highest verified bioactive concentration in our database. For anyone prioritizing maximum fulvic acid delivery per dose, this is the answer.",
+                  body: "At 64.51% fulvic acid (resin) and 74.30% (capsules) — verified by IAS Laboratories — Black Lotus delivers among the highest COA-confirmed bioactive concentrations in our database. For anyone prioritizing maximum fulvic acid delivery per dose, this is the answer.",
                 },
                 {
                   title: "Form variety users",
@@ -453,7 +453,7 @@ export default function BlackLotusShilajitReview() {
               At $1.23/g, Black Lotus Resin is not the cheapest option in our database — but that framing misses the point. The relevant question is not &quot;what is the cheapest shilajit?&quot; but &quot;what is the best verified value per dollar?&quot;
             </p>
             <p>
-              Consider the comparison: Essencraft sells a Himalayan resin at approximately $1.45/g with no COA. You pay more per gram for zero verification. A completely unverified budget product at $0.50/g might contain 20% fulvic acid, or it might contain adulterants — you have no way to know. In that context, Black Lotus at $1.23/g for 85%+ verified fulvic acid is not expensive; it is the most cost-efficient path to confirmed potency in the category.
+              Consider the comparison: Essencraft sells a Himalayan resin at approximately $1.45/g with no COA. You pay more per gram for zero verification. A completely unverified budget product at $0.50/g might contain 20% fulvic acid, or it might contain adulterants — you have no way to know. In that context, Black Lotus at $1.23/g for 64.51% COA-verified fulvic acid (resin, Batch 93) is not expensive; it is the most cost-efficient path to confirmed potency in the category.
             </p>
             <p>
               The Starter Bundle at $64.99 (Resin + Capsules) is the best entry point for new Black Lotus customers. At $0.72/g effective cost across both products, it drops the per-gram price meaningfully while maintaining S-tier quality across both formats.

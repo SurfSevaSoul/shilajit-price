@@ -243,7 +243,7 @@ export default function IsShilajitAScam() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What a legitimate brand looks like: Black Lotus</h2>
           <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Black Lotus Shilajit is our benchmark for what a legitimate brand looks like. Not because they pay us the most — but because they make it impossible for us to criticize their documentation. Their COA is from an independent ISO-accredited lab, linked to specific lot numbers, showing 85%+ fulvic acid by titration and a complete heavy metals panel with every measured value published.
+              Black Lotus Shilajit is our benchmark for what a legitimate brand looks like. Not because they pay us the most — but because they make it impossible for us to criticize their documentation. Their COA is from an independent ISO-accredited lab, linked to specific lot numbers, showing 64.51% fulvic acid by titration (resin, Batch 93, IAS Laboratories) and a complete heavy metals panel with every measured value published.
             </p>
             <p>
               That&apos;s the standard the entire market should meet. Most don&apos;t. That&apos;s the actual scam in the shilajit industry.
@@ -264,7 +264,7 @@ export default function IsShilajitAScam() {
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
             {[
               "ISO-accredited third-party COA — lot-linked",
-              "85%+ fulvic acid by titration method",
+              "64.51% fulvic acid by titration (resin, Batch 93 COA, IAS Labs)",
               "Heavy metals panel: all values published",
               "Himalayan source, 14,000+ ft altitude",
               "Cold-process purification — no heat degradation",

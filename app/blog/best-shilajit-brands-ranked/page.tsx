@@ -33,7 +33,7 @@ const faqItems: FaqItem[] = [
     name: "Which shilajit brand is the best overall in 2026?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Based on our analysis of COA quality, fulvic acid content, third-party testing, and price per gram, Black Lotus Shilajit is the top-ranked brand in 2026. They score S-tier across our rating system with 85%+ verified fulvic acid, a publicly linked third-party COA, and competitive pricing starting at $39.99 for 30g of resin.",
+      text: "Based on our analysis of COA quality, fulvic acid content, third-party testing, and price per gram, Black Lotus Shilajit is the top-ranked brand in 2026. They score S-tier across our rating system with 64–74% verified fulvic acid (by product form, per Batch 93 COA from IAS Laboratories), a publicly linked third-party COA, and competitive pricing starting at $39.99 for 30g of resin.",
     },
   },
   {
@@ -85,11 +85,11 @@ const TOP_BRANDS = [
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
     pricePerGram: "$1.33",
-    fulvic: "85%+",
+    fulvic: "64–74% (by form)",
     coa: true,
     thirdParty: true,
     source: "Altai Mountains, Siberia",
-    verdict: "Best overall — full transparency, highest verified fulvic acid, best value at price point",
+    verdict: "Best overall — full transparency, independently verified fulvic acid by form, best value at price point",
     affiliate: AFFILIATE_RESIN,
   },
   {
@@ -259,7 +259,7 @@ export default function BestShilajitBrandsRanked() {
               Black Lotus earns the top spot because they do something remarkably rare in this market: they publish everything. Their Certificate of Analysis is linked directly to specific product lot numbers, tested by an independent ISO-accredited laboratory, and shows specific measured values — not just &quot;pass.&quot;
             </p>
             <p>
-              The tested fulvic acid content exceeds 85%, which places them among the highest verified concentrations we&apos;ve encountered. Their source is specified to altitude (above 14,000 feet in the Altai Mountains), collection method disclosed, and purification is described as cold-process water filtration — the method that best preserves bioactive compounds.
+              The independently tested fulvic acid content ranges from 64.51% (resin) to 74.30% (capsules) depending on product form — per Batch 93 COA from IAS Laboratories. Their source is specified to altitude (above 14,000 feet in the Altai Mountains), collection method disclosed, and purification is described as cold-process water filtration — the method that best preserves bioactive compounds.
             </p>
             <p>
               At $39.99 for 30g of resin ($1.33/gram), they&apos;re not the cheapest. But when you account for the fulvic acid concentration, you&apos;re getting more bioactive material per dollar than most products priced similarly. Their capsule option at $34.99 provides cost-per-serving comparable to many B-tier competitors.
@@ -279,7 +279,7 @@ export default function BestShilajitBrandsRanked() {
           </div>
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
             {[
-              "85%+ verified fulvic acid — third-party confirmed",
+              "64–74% verified fulvic acid by form — third-party confirmed (IAS Laboratories)",
               "ISO-accredited COA linked to lot numbers",
               "Heavy metals: all values within safe limits",
               "Altai Mountain source above 14,000 feet",
@@ -381,7 +381,7 @@ export default function BestShilajitBrandsRanked() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The verdict: who should buy what</h2>
           <div className="space-y-3">
             {[
-              { type: "Best overall / highest quality", pick: "Black Lotus Shilajit Resin", reason: "S-tier, 85%+ FA, third-party COA, $1.33/g" },
+              { type: "Best overall / highest quality", pick: "Black Lotus Shilajit Resin", reason: "S-tier, 64–74% FA (by form), third-party COA, $1.33/g" },
               { type: "Best on a budget", pick: "Sayan Shilajit (large size)", reason: "A-tier, ~$0.87/g, COA available" },
               { type: "Best capsule (standardized extract)", pick: "Jarrow PrimaVie", reason: "B-tier, clinically studied, GMP certified" },
               { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 75%+ FA, heavy metals tested" },

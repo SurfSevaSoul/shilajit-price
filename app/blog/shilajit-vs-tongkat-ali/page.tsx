@@ -549,7 +549,7 @@ export default function ShilajitVsTongkatAli() {
       {/* BlackLotusCTA */}
       <BlackLotusCTA
         headline="Our #1 Pick for Testosterone Support: Black Lotus Shilajit"
-        subtext="85%+ fulvic acid verified by IAS Laboratories · Sourced from Altai Mountains at 16,000+ ft · Full heavy metals COA · Free shipping. The highest-purity resin we've tested — and the one with the strongest clinical profile for hormonal support."
+        subtext="64.51% fulvic acid (resin, Batch 93, IAS Laboratories) · Sourced from Altai Mountains at 16,000+ ft · Full heavy metals COA · Free shipping. The highest-purity resin we've tested — and the one with the strongest clinical profile for hormonal support."
         buttonText="Shop Black Lotus Shilajit →"
       />
 

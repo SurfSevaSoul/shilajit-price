@@ -431,7 +431,7 @@ export default function MemorialSloanKetteringShilajit() {
               tier: "S",
               tierColor: "bg-amber-100 text-amber-800 ring-amber-300",
               tagline: "Highest verified fulvic acid · Altai Mountains, Siberia",
-              bullets: ["IAS Laboratories, Phoenix AZ — full panel COA", "85%+ fulvic acid · DBP verified", "$1.23/g · Free shipping"],
+              bullets: ["IAS Laboratories, Phoenix AZ — full panel COA", "64.51% FA (resin) / 74.30% FA (caps) · Batch 93 COA · DBP verified", "$1.23/g · Free shipping"],
               href: AFFILIATE_BL,
               btnColor: "bg-[#182B1F] hover:bg-[#10B981]",
               productName: "Black Lotus Shilajit",

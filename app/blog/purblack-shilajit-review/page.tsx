@@ -57,7 +57,7 @@ const faqItems: FaqItem[] = [
     name: "How does Pürblack compare to Black Lotus Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus leads on verified fulvic acid percentage (85%+ vs Pürblack's verified but undisclosed percentage) and price per gram ($1.23/g vs $3.11/g for Pürblack True Gold 30g). Pürblack leads on patented processing (5 US patents vs none for Black Lotus), US pharmaceutical-grade manufacturing, precious metal infusion options, and sourcing diversity. Black Lotus is the better pick for maximum fulvic acid at lower cost; Pürblack is the better pick for research-grade documentation and advanced formulations. See our full comparison at /compare/purblack-vs-black-lotus.",
+      text: "Black Lotus leads on verified fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA, vs Pürblack's verified but undisclosed percentage) and price per gram ($1.23/g vs $3.11/g for Pürblack True Gold 30g). Pürblack leads on patented processing (5 US patents vs none for Black Lotus), US pharmaceutical-grade manufacturing, precious metal infusion options, and sourcing diversity. Black Lotus is the better pick for maximum fulvic acid at lower cost; Pürblack is the better pick for research-grade documentation and advanced formulations. See our full comparison at /compare/purblack-vs-black-lotus.",
     },
   },
   {
@@ -589,7 +589,7 @@ export default function PurblackShilajitReview() {
             <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">ranked shilajit brand database</Link>: COA completeness, third-party lab verification, price per gram, sourcing transparency, and manufacturing documentation. We supplemented that with a review of their US patent filings (publicly searchable via USPTO) and direct inspection of their COA documentation structure.
           </p>
           <p>
-            Pürblack scores strongly on manufacturing documentation, sourcing diversity, and formulation innovation. They score lower than S-tier brands on cost-efficiency and on the transparency of their fulvic acid quantification — their COA confirms verification but does not publish a specific percentage, unlike Black Lotus (85%+) or Pure Himalayan (60%). Our full scoring methodology is available at{" "}
+            Pürblack scores strongly on manufacturing documentation, sourcing diversity, and formulation innovation. They score lower than S-tier brands on cost-efficiency and on the transparency of their fulvic acid quantification — their COA confirms verification but does not publish a specific percentage, unlike Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA) or Pure Himalayan (60%). Our full scoring methodology is available at{" "}
             <Link href="/methodology" className="text-[#10B981] hover:underline">shilajitprice.com/methodology</Link>.
           </p>
         </div>

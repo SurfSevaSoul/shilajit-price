@@ -45,7 +45,7 @@ const faqItems: FaqItem[] = [
     name: "How do shilajit gummies compare to resin?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Resin is the least-processed, most potent form of shilajit. A quality resin at 85%+ fulvic acid will deliver more active compound per dollar than any gummy at the same price point. Gummies typically contain 70-80% of the fulvic acid you'd get from equivalent resin, and at a higher cost per serving. The trade-off is convenience and compliance — gummies taste good and are easy to take every day, which matters for long-term supplementation.",
+      text: "Resin is the least-processed, most potent form of shilajit. A quality resin with 60–74% COA-verified fulvic acid will deliver more active compound per dollar than any gummy at the same price point. Gummies typically contain 70-80% of the fulvic acid you'd get from equivalent resin, and at a higher cost per serving. The trade-off is convenience and compliance — gummies taste good and are easy to take every day, which matters for long-term supplementation.",
     },
   },
   {
@@ -513,8 +513,8 @@ export default function BestShilajitGummies() {
                 Extra Strength Capsules
               </Link>{" "}
               at $43.99 for 60 servings work out to{" "}
-              <strong className="text-[#0D1F14]">$0.73 per serving</strong> at 85%+ fulvic acid
-              per capsule.
+              <strong className="text-[#0D1F14]">$0.73 per serving</strong> at 74.30% fulvic acid
+              per capsule (Batch 93 COA, IAS Labs).
             </p>
             <p>
               That means gummies cost <strong className="text-[#0D1F14]">2x more per serving</strong>{" "}
@@ -560,7 +560,7 @@ export default function BestShilajitGummies() {
                 Black Lotus Resin
               </Link>{" "}
               at $36.99 for 30g provides approximately 100 servings at a pea-sized dose — roughly
-              $0.37/serving at 85%+ fulvic acid. Gummies at $1.47/serving with 70% fulvic acid are
+              $0.37/serving at 64.51% fulvic acid (Batch 93 COA). Gummies at $1.47/serving with 70% fulvic acid are
               a dramatically worse value by any financial metric.
             </p>
             <p>
@@ -572,7 +572,7 @@ export default function BestShilajitGummies() {
             <p>
               If gummies mean you&apos;ll actually take shilajit every day vs resin sitting unused
               in your cabinet — the gummies win for your outcomes. Consistent 70% is better than
-              occasional 85%.
+              occasional 64.51% (resin) or 74.30% (capsules).
             </p>
           </div>
         </section>

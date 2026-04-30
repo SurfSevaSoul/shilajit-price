@@ -40,11 +40,11 @@ const BRANDS: Record<string, BrandData> = {
     shortName: "Black Lotus",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
-    fulvicAcid: "85%+",
+    fulvicAcid: "64–74% (by form)",
     pricePerGram: "$1.23/g",
     origin: "Altai Mountains, Siberia",
     coa: true,
-    coaDetail: "Full-panel 3rd-party COA",
+    coaDetail: "Batch 93 COA — IAS Labs, June 2025",
     dbpVerified: false,
     heavyMetals: "pass",
     gmpCertified: true,
@@ -165,9 +165,9 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       "Black Lotus and Pure Himalayan Shilajit are the two highest-rated brands in our database — both hold S-tier rankings, both publish verified third-party COAs, and both come with free shipping. The differences are real but nuanced: fulvic acid percentage, lab accreditation type, and sourcing philosophy. This comparison breaks down every metric to help you choose.",
     winnerSlug: "black-lotus",
     verdict:
-      "Black Lotus wins on fulvic acid potency (85%+ vs 60%) and price-per-gram ($1.23 vs $1.33). Pure Himalayan wins on lab accreditation specificity — their ISO/IEC 17025-accredited testing is the most rigorous internationally recognized standard available. Both are genuinely excellent; the right pick depends on what you prioritize.",
+      "Black Lotus wins on price-per-gram ($1.23 vs $1.33) and publishes product-specific fulvic acid figures (64.51% resin, 74.30% capsules per Batch 93 COA). Pure Himalayan wins on lab accreditation specificity — their ISO/IEC 17025-accredited testing is the most rigorous internationally recognized standard available. Both are genuinely excellent; the right pick depends on what you prioritize.",
     whyAWins: [
-      "85%+ verified fulvic acid vs 60% — meaningfully higher bioactive compound concentration",
+      "Up to 74.30% verified fulvic acid (capsules, Batch 93 COA) vs 60% — higher documented bioactive concentration",
       "$1.23/g vs $1.33/g — lower price per gram for higher documented purity",
       "30-day money-back guarantee with no-hassle return policy",
     ],
@@ -183,7 +183,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     faqs: [
       {
         q: "Which has higher fulvic acid — Black Lotus or Pure Himalayan?",
-        a: "Black Lotus reports 85%+ fulvic acid on their COA. Pure Himalayan reports 60%. Both are verified by third-party labs, but Black Lotus has a 25+ percentage point lead on this key quality metric.",
+        a: "Black Lotus's Batch 93 COA (IAS Labs, June 2025) reports 64.51% for resin and 74.30% for capsules. Pure Himalayan reports 60%. Both are verified by third-party labs; Black Lotus capsules have the higher documented FA%, and both brands comfortably exceed the 60% threshold we recommend.",
       },
       {
         q: "Is Pure Himalayan's ISO/IEC 17025 certification worth paying more for?",
@@ -203,10 +203,10 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       "Both Black Lotus and Natural Shilajit are S-tier Altai-sourced brands with verified COAs. The key differentiators: Natural Shilajit holds DBP (Dibenzo-α-pyrones) verification and uses a triple-method COA (ICP-MS, LC-MS, FTIR), while Black Lotus leads on fulvic acid percentage and price-per-gram. This comparison covers every metric to help you choose.",
     winnerSlug: "black-lotus",
     verdict:
-      "Black Lotus wins on value — $1.23/g vs $2.45/g is a significant gap for a product that reports higher fulvic acid (85%+ vs ~70%). Natural Shilajit wins on verification depth: DBP testing and a triple-method COA represent the most comprehensive analysis in our database. If budget matters, Black Lotus is the stronger value. If you want the most thoroughly verified product available, Natural Shilajit earns that distinction.",
+      "Black Lotus wins on value — $1.23/g vs $2.45/g is a significant gap. Natural Shilajit wins on verification depth: DBP testing and a triple-method COA represent the most comprehensive analysis in our database. Both publish batch-specific COA data for fulvic acid. If budget matters, Black Lotus is the stronger value. If verification depth is the priority, Natural Shilajit earns that distinction.",
     whyAWins: [
-      "85%+ fulvic acid vs ~70% — higher documented potency of the primary bioactive compound",
-      "$1.23/g vs $2.45/g — nearly half the price per gram with higher FA documentation",
+      "64–74% COA-verified fulvic acid (Batch 93) vs ~70% — comparable FA% at nearly half the price per gram",
+      "$1.23/g vs $2.45/g — nearly half the price per gram for comparable verified FA documentation",
       "Free shipping included — Natural Shilajit charges for shipping on the flagship 20g product",
     ],
     whyBWins: [
@@ -215,7 +215,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       "UNESCO-protected Altai source region — legally protected origin documentation",
     ],
     buyA:
-      "Choose Black Lotus for the best verified potency-to-price ratio: 85%+ fulvic acid at $1.23/g with free shipping. If you're optimizing for cost-effectiveness and high documented FA%, this is the stronger everyday choice.",
+      "Choose Black Lotus for the best verified potency-to-price ratio: COA-verified fulvic acid (64.51% resin / 74.30% capsules) at $1.23/g with free shipping. If you're optimizing for cost-effectiveness and documented FA%, this is the stronger everyday choice.",
     buyB:
       "Choose Natural Shilajit if you want the most thoroughly verified product available. DBP verification, a triple-method COA, and UNESCO-protected sourcing represent the deepest documentation stack in our database — worth the premium if verification depth is your priority.",
     faqs: [
@@ -276,12 +276,12 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     metaDescription:
       "Black Lotus vs Sayan Shilajit: both are Altai-sourced with COAs, but they differ significantly on fulvic acid %, GMP certification, and purity score. Full comparison inside.",
     intro:
-      "Black Lotus and Sayan are both Altai-sourced with third-party COAs — but they occupy meaningfully different positions in our database. Black Lotus is S-tier with 85%+ fulvic acid; Sayan is A-tier with ~32% fulvic acid. Sayan competes strongly on price-per-gram for bulk options. This comparison breaks down where each brand earns its place.",
+      "Black Lotus and Sayan are both Altai-sourced with third-party COAs — but they occupy meaningfully different positions in our database. Black Lotus is S-tier with 64–74% fulvic acid (by form, Batch 93 COA); Sayan is A-tier with ~32% fulvic acid. Sayan competes strongly on price-per-gram for bulk options. This comparison breaks down where each brand earns its place.",
     winnerSlug: "black-lotus",
     verdict:
-      "Black Lotus wins decisively on fulvic acid percentage (85%+ vs ~32%) and purity score (10 vs 7). Sayan's COA is published and ISO-lab-accredited, which puts them well above unverified budget brands — but the 53-point gap in fulvic acid means Black Lotus delivers substantially more of the primary bioactive compound per gram. Sayan is best for budget-conscious buyers who still want a documented Altai product.",
+      "Black Lotus wins decisively on fulvic acid percentage (64–74% vs ~32%) and purity score (10 vs 7). Sayan's COA is published and ISO-lab-accredited, which puts them well above unverified budget brands — but the gap in fulvic acid means Black Lotus delivers substantially more of the primary bioactive compound per gram. Sayan is best for budget-conscious buyers who still want a documented Altai product.",
     whyAWins: [
-      "85%+ vs ~32% fulvic acid — more than double the documented bioactive compound concentration",
+      "64–74% vs ~32% fulvic acid — significantly higher documented bioactive compound concentration",
       "Purity score 10/10 vs 7/10 — composite COA + sourcing + FA% assessment",
       "GMP certified facility vs no GMP certification for Sayan",
     ],
@@ -291,13 +291,13 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       "Large Amazon review base (2,800+ reviews, 4.4★) — extensive real-world user validation",
     ],
     buyA:
-      "Choose Black Lotus for the highest verified potency at a fair price. At $1.23/g with 85%+ documented fulvic acid, it outperforms Sayan on every quality metric while remaining competitively priced.",
+      "Choose Black Lotus for the highest verified potency at a fair price. At $1.23/g with COA-verified 64–74% fulvic acid (Batch 93), it outperforms Sayan on every quality metric while remaining competitively priced.",
     buyB:
       "Choose Sayan if you're buying in bulk and budget is a primary constraint. Their 100g jar at $0.56/g is the best price-per-gram of any COA-documented Altai product in our database. Acceptable for those who want a basic verified product without S-tier specifications.",
     faqs: [
       {
         q: "Is Sayan's 32% fulvic acid enough to be effective?",
-        a: "32% falls below what we consider premium grade (60%+) but is above the threshold where documented effects tend to drop off significantly. Most high-quality Ayurvedic preparations work with 40–60% FA. Sayan is adequate for general supplementation but delivers substantially less of the primary bioactive compound compared to Black Lotus's 85%+. If potency is the goal, Black Lotus is the clear upgrade.",
+        a: "32% falls below what we consider premium grade (60%+) but is above the threshold where documented effects tend to drop off significantly. Most high-quality Ayurvedic preparations work with 40–60% FA. Sayan is adequate for general supplementation but delivers substantially less of the primary bioactive compound compared to Black Lotus's 64–74% (by form, Batch 93 COA). If potency is the goal, Black Lotus is the clear upgrade.",
       },
       {
         q: "Does Sayan have GMP certification?",
@@ -305,7 +305,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
       },
       {
         q: "Why do both Black Lotus and Sayan cost $1.33/g for the 30g jar?",
-        a: "Sayan's 30g jar is priced at $39.99 which works out to $1.33/g — the same per-gram price as Black Lotus's 30g option (though Black Lotus's flagship is the slightly smaller 30g at $36.99 = $1.23/g). At the same price point, Black Lotus's 85%+ fulvic acid vs Sayan's 32% represents a major quality gap. The price parity makes Sayan's 30g option difficult to recommend against Black Lotus.",
+        a: "Sayan's 30g jar is priced at $39.99 which works out to $1.33/g — the same per-gram price as Black Lotus's 30g option (though Black Lotus's flagship is $36.99 = $1.23/g). At the same price point, Black Lotus's 64–74% fulvic acid vs Sayan's 32% represents a major quality gap. The price parity makes Sayan's 30g option difficult to recommend against Black Lotus.",
       },
     ],
   },
@@ -352,12 +352,12 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     metaDescription:
       "Black Lotus vs PrimaVie® shilajit: resin vs standardized capsule extract, fulvic acid %, BSCG certification, price, and which form factor is right for you. Full comparison.",
     intro:
-      "Black Lotus (pure resin, 85%+ FA) and PrimaVie® (standardized capsule extract, 50% FA, BSCG certified) represent fundamentally different approaches to shilajit supplementation. Black Lotus is a raw verified resin; PrimaVie® is a patented, clinically-researched standardized extract used in multiple brands. Understanding the difference between these formats is key to choosing correctly.",
+      "Black Lotus (pure resin, 64.51% FA per Batch 93 COA) and PrimaVie® (standardized capsule extract, 50% FA, BSCG certified) represent fundamentally different approaches to shilajit supplementation. Black Lotus is a raw verified resin; PrimaVie® is a patented, clinically-researched standardized extract used in multiple brands. Understanding the difference between these formats is key to choosing correctly.",
     winnerSlug: "black-lotus",
     verdict:
-      "Black Lotus wins on fulvic acid concentration (85%+ vs 50%), sourcing transparency, and price-per-gram ($1.23 vs $1.50). PrimaVie® wins on clinical research citation count and BSCG (Banned Substance Control Group) certification — a credential relevant for athletes subject to drug testing. Both have legitimate third-party verification, but they serve different use cases.",
+      "Black Lotus wins on sourcing transparency and price-per-gram ($1.23 vs $1.50), with 64.51% fulvic acid (resin, Batch 93 COA) vs PrimaVie®'s standardized 50%. PrimaVie® wins on clinical research citation count and BSCG (Banned Substance Control Group) certification — a credential relevant for athletes subject to drug testing. Both have legitimate third-party verification, but they serve different use cases.",
     whyAWins: [
-      "85%+ vs 50% fulvic acid — 35 percentage points higher documented bioactive concentration",
+      "64.51% (resin) to 74.30% (capsules) vs 50% standardized — higher natural fulvic acid concentration",
       "$1.23/g vs $1.50/g — lower price per gram with higher documented purity",
       "Full-spectrum resin vs standardized extract — broader bioactive compound profile retained",
     ],

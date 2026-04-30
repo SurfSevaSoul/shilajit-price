@@ -328,7 +328,7 @@ export default function BestShilajitOnAmazon() {
                   name: "Black Lotus Resin (Direct)",
                   tier: "S",
                   badge: "bg-amber-400 text-amber-900",
-                  note: "85%+ FA · $1.23/g · Full COA · Best value S-tier",
+                  note: "64.51% FA (resin, Batch 93 COA) · $1.23/g · Best value S-tier",
                   channel: "Direct only",
                   href: BL_DIRECT,
                 },

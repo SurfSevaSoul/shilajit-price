@@ -61,7 +61,7 @@ const faqItems: FaqItem[] = [
     name: "What fulvic acid percentage should I look for in shilajit resin?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Look for a minimum of 60% verified fulvic acid, ideally above 80%. The key word is 'verified' — the percentage needs to be confirmed by a published, third-party COA from an accredited lab, not a label claim. Products with 85%+ verified fulvic acid (like Black Lotus and Natural Shilajit) represent the highest available grade. The 2010 Andrologia testosterone study used processed shilajit — higher fulvic acid content is more likely to replicate the study findings. Below 40% verified fulvic acid is generally considered low-quality for supplementation purposes.",
+      text: "Look for a minimum of 60% verified fulvic acid, ideally above 70%. The key word is 'verified' — the percentage needs to be confirmed by a published, third-party COA from an accredited lab, not a label claim. Black Lotus resin, for example, has 64.51% fulvic acid verified by IAS Laboratories (Batch 93, June 2025), while their capsules test at 74.30%. The 2010 Andrologia testosterone study used processed shilajit — higher fulvic acid content is more likely to replicate the study findings. Below 40% verified fulvic acid is generally considered low-quality for supplementation purposes.",
     },
   },
   {
@@ -69,7 +69,7 @@ const faqItems: FaqItem[] = [
     name: "Is shilajit resin from the Altai Mountains better than Himalayan?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both sources produce high-quality shilajit when properly collected and processed. Altai Mountains shilajit (particularly from the UNESCO-protected Altai region of Siberia) tends to have higher fulvic acid concentrations in the top-tier products — Black Lotus (85%+) and Natural Shilajit (~70%) are both Altai-sourced. Himalayan shilajit, sourced from higher altitudes in Nepal, India, and Tibet, also produces excellent quality products — Pure Himalayan's ISO/IEC 17025-verified resin is Himalayan-sourced. The source region matters less than the COA verification of actual fulvic acid content and heavy metal safety.",
+      text: "Both sources produce high-quality shilajit when properly collected and processed. Altai Mountains shilajit (particularly from the UNESCO-protected Altai region of Siberia) tends to have higher fulvic acid concentrations in the top-tier products — Black Lotus resin checks in at 64.51% and Natural Shilajit at approximately 70%, both Altai-sourced. Himalayan shilajit, sourced from higher altitudes in Nepal, India, and Tibet, also produces excellent quality products — Pure Himalayan's ISO/IEC 17025-verified resin is Himalayan-sourced. The source region matters less than the COA verification of actual fulvic acid content and heavy metal safety.",
     },
   },
 ];
@@ -220,7 +220,7 @@ export default function BestShilajitResinBrands() {
         <div className="bg-white border-2 border-[#10B981] rounded-2xl overflow-hidden shadow-md">
           <div className="bg-emerald-50 border-b border-[#D1EDD8] px-5 py-3 flex flex-wrap gap-2">
             {[
-              "85%+ Fulvic Acid",
+              "64.51% Fulvic Acid",
               "S-Tier",
               "COA Verified",
               "Heavy Metals Tested",
@@ -241,8 +241,8 @@ export default function BestShilajitResinBrands() {
               </div>
               <div className="bg-[#F0FAF4] rounded-lg p-3">
                 <p className="text-[#7BA899] font-semibold mb-0.5">Fulvic Acid</p>
-                <p className="text-[#0D1F14] font-bold text-base">85%+</p>
-                <p className="text-[#10B981] font-semibold">3rd-party verified</p>
+                <p className="text-[#0D1F14] font-bold text-base">64.51%</p>
+                <p className="text-[#10B981] font-semibold">IAS Lab · Batch 93</p>
               </div>
               <div className="bg-[#F0FAF4] rounded-lg p-3">
                 <p className="text-[#7BA899] font-semibold mb-0.5">Source</p>
@@ -252,12 +252,12 @@ export default function BestShilajitResinBrands() {
             </div>
             <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
               <p>
-                Black Lotus holds the top spot for one primary reason: 85%+ fulvic acid
-                verified by an independent third-party COA — the highest confirmed fulvic acid
-                percentage of any resin product in our database. Combined with a purity score
-                of 10/10, full heavy metals panel, and the lowest price-per-gram among
-                top-tier resin options ($1.23/g), it represents the best overall value in the
-                premium resin category.
+                Black Lotus holds the top spot for one primary reason: 64.51% fulvic acid
+                verified by IAS Laboratories, Phoenix, AZ (Batch 93, June 2025) — among the
+                highest confirmed fulvic acid percentages of any resin product in our database.
+                Combined with a purity score of 10/10, full heavy metals panel, and the lowest
+                price-per-gram among top-tier resin options ($1.23/g), it represents the best
+                overall value in the premium resin category.
               </p>
               <p>
                 The resin is cold-processed from Altai Mountains deposits at 16,000+ feet
@@ -423,7 +423,7 @@ export default function BestShilajitResinBrands() {
                 and verifiable.
               </p>
               <p>
-                At 60% verified fulvic acid, it sits below Black Lotus (85%+) and Natural
+                At 60% verified fulvic acid, it sits below Black Lotus resin (64.51%) and Natural
                 Shilajit (~70%), but the laboratory accreditation gives additional confidence
                 that the 60% figure is accurate — which matters when comparing brands with
                 higher but potentially unverified claims.
@@ -517,7 +517,7 @@ export default function BestShilajitResinBrands() {
                   with a patented 5th-generation refining process and multi-source high-altitude
                   shilajit blending. The ISO-certified facility and strong community reputation
                   (1,547+ Amazon reviews) give it credibility, but at $3.11/g it's significantly
-                  more expensive than Black Lotus (85%+ FA at $1.23/g). Appropriate for
+                  more expensive than Black Lotus (64.51% FA at $1.23/g). Appropriate for
                   buyers willing to pay for the proprietary processing methodology.
                 </p>
               </div>
@@ -555,7 +555,7 @@ export default function BestShilajitResinBrands() {
                   weight: "30g",
                   price: "$36.99",
                   ppg: "$1.23",
-                  fa: "85%+",
+                  fa: "64.51%",
                   purity: "10/10",
                   coa: true,
                   hm: true,
@@ -765,7 +765,7 @@ export default function BestShilajitResinBrands() {
             Price per gram is the most useful metric for comparing shilajit resin across brands
             and sizes — but it needs to be read alongside fulvic acid content to mean anything.
             A lower $/gram figure means nothing if the product has 30% verified fulvic acid
-            versus a competitor's 85%.
+            versus a competitor's 64%+.
           </p>
           <p>
             The most useful comparison is <strong>cost per milligram of verified fulvic acid</strong>
@@ -785,7 +785,7 @@ export default function BestShilajitResinBrands() {
             </thead>
             <tbody className="divide-y divide-[#D1EDD8]">
               {[
-                { name: "Black Lotus Resin", ppg: "$1.23", fa: "85%", famg: "255mg", costFA: "$0.14", highlight: true },
+                { name: "Black Lotus Resin", ppg: "$1.23", fa: "64.51%", famg: "194mg", costFA: "$0.19", highlight: true },
                 { name: "Natural Shilajit Resin", ppg: "$2.45", fa: "~70%", famg: "210mg", costFA: "$0.35" },
                 { name: "Pure Himalayan Resin", ppg: "$1.33", fa: "60%", famg: "180mg", costFA: "$0.22" },
                 { name: "Sayan Resin 100g", ppg: "$0.56", fa: "32.6%", famg: "98mg", costFA: "$0.17" },
@@ -859,7 +859,7 @@ export default function BestShilajitResinBrands() {
             <a href={AFFILIATE_BL_RESIN} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-semibold">
               Black Lotus Pure Altai Resin
             </a>{" "}
-            — 85%+ FA at $1.23/g. The lowest effective cost per unit of verified fulvic acid
+            — 64.51% FA (resin, Batch 93 COA) at $1.23/g. The lowest effective cost per unit of verified fulvic acid
             in the premium category.
           </p>
           <p>

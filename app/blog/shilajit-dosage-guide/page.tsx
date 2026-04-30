@@ -440,7 +440,7 @@ export default function ShilajitDosageGuide() {
           </h3>
           <p className="text-sm text-[#0D1F14] mb-4">
             Black Lotus includes a 300 mg measuring scoop with their Pure Altai Resin, making
-            accurate dosing straightforward from day one. At $36.99 for 30g with 85%+ fulvic acid
+            accurate dosing straightforward from day one. At $36.99 for 30g with 64.51% fulvic acid (resin, Batch 93 COA)
             and a verified COA, it&apos;s the highest-value option in our database for users who want to
             stay within research-studied ranges.
           </p>

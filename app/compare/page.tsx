@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 
 // ── Brand selector data ────────────────────────────────────────────────────
 const SELECTOR_BRANDS = [
-  { slug: "black-lotus", name: "Black Lotus Shilajit", tier: "S", fa: "85%+", ppg: "$1.23/g", origin: "Altai Mountains, Siberia", coa: "Full-panel 3rd-party", gmp: true, ship: true },
+  { slug: "black-lotus", name: "Black Lotus Shilajit", tier: "S", fa: "64–74% (by form)", ppg: "$1.23/g", origin: "Altai Mountains, Siberia", coa: "Full-panel 3rd-party (IAS Labs)", gmp: true, ship: true },
   { slug: "pure-himalayan", name: "Pure Himalayan Shilajit", tier: "S", fa: "60%", ppg: "$1.33/g", origin: "Himalayas & Altai", coa: "ISO/IEC 17025 Accredited", gmp: true, ship: true },
   { slug: "natural-shilajit", name: "Natural Shilajit", tier: "S", fa: "~70%", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "ICP-MS · LC-MS · FTIR", gmp: true, ship: false },
   { slug: "purblack", name: "Pürblack", tier: "A", fa: "Verified", ppg: "$3.11/g", origin: "Caucasus, Siberia, Himalayas", coa: "US pharma-grade 3rd-party", gmp: true, ship: false },

@@ -35,7 +35,7 @@ const faqItems: FaqItem[] = [
     name: "What does affordable shilajit actually mean?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Affordable shilajit means getting the best possible fulvic acid content and documentation quality for the lowest cost per serving — not simply buying the cheapest product. A $25 product with 40% fulvic acid may actually cost more per unit of active compound than a $40 product with 85% fulvic acid. True affordability in shilajit is measured by cost per milligram of verified fulvic acid delivered, not sticker price.",
+      text: "Affordable shilajit means getting the best possible fulvic acid content and documentation quality for the lowest cost per serving — not simply buying the cheapest product. A $25 product with 40% fulvic acid may actually cost more per unit of active compound than a $40 product with 64–74% fulvic acid (COA-verified). True affordability in shilajit is measured by cost per milligram of verified fulvic acid delivered, not sticker price.",
     },
   },
   {
@@ -90,7 +90,7 @@ const VALUE_PICKS = [
     weight: "30g",
     pricePerGram: "$1.33",
     costPerServing: "~$0.23",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     coa: true,
     thirdParty: true,
     badge: "Best Value Premium",
@@ -122,7 +122,7 @@ const VALUE_PICKS = [
     weight: "30 caps",
     pricePerGram: "~$1.17",
     costPerServing: "$1.17",
-    fulvic: "85%+",
+    fulvic: "74.30%",
     coa: true,
     thirdParty: true,
     badge: "Best Value Capsule",
@@ -200,7 +200,7 @@ export default function BestAffordableShilajit() {
               &quot;Affordable&quot; in the supplement world usually means &quot;cheap.&quot; In the shilajit market, cheap almost always means compromised. But affordable — as in genuinely good quality for a fair price — absolutely exists if you know where to look and how to compare.
             </p>
             <p>
-              The fundamental mistake most buyers make is comparing package prices instead of the meaningful metrics. A $25 jar of shilajit that contains 40% fulvic acid in 20g of product gives you 8g of actual fulvic acid for $25, or $3.13 per gram of active compound. A $40 jar with 85% fulvic acid in 30g gives you 25.5g of fulvic acid for $40, or $1.57 per gram of active compound. The &quot;cheaper&quot; product is actually 2× more expensive per unit of what matters.
+              The fundamental mistake most buyers make is comparing package prices instead of the meaningful metrics. A $25 jar of shilajit that contains 40% fulvic acid in 20g of product gives you 8g of actual fulvic acid for $25, or $3.13 per gram of active compound. A $40 jar with 64.51% fulvic acid in 30g (e.g., Black Lotus resin, Batch 93 COA) gives you 19.35g of fulvic acid for $40, or $2.07 per gram of active compound. The &quot;cheaper&quot; product is still more expensive per unit of what matters.
             </p>
             <p>
               True affordability metrics in shilajit are: (1) cost per gram of verified fulvic acid, (2) cost per day at the recommended dose, and (3) whether the COA is accessible and from a legitimate lab. All three must be evaluated together — not just the sticker price.
@@ -276,13 +276,13 @@ export default function BestAffordableShilajit() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Best Value: Black Lotus Shilajit Resin</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Black Lotus holds the top value position because when you run the actual math, their cost per milligram of verified fulvic acid is lower than nearly any product with comparable quality documentation. At $39.99 for 30g of 85%+ FA resin, you're getting 25.5g of actual fulvic acid for $40 — approximately $1.57/gram of active compound.
+              Black Lotus holds the top value position because when you run the actual math, their cost per milligram of verified fulvic acid is lower than nearly any product with comparable quality documentation. At $39.99 for 30g of 64.51% FA resin (Batch 93, IAS Laboratories), you're getting 19.35g of actual fulvic acid for $40 — approximately $2.07/gram of active compound.
             </p>
             <p>
               Compare this to a typical A-tier Amazon competitor at $35 for 30g with 60% FA: 18g of fulvic acid for $35 = $1.94/gram of active compound. Black Lotus wins on value despite the higher sticker price. This is what value analysis — rather than sticker-price comparison — reveals.
             </p>
             <p>
-              Their capsule option at $34.99 for 30 caps is similarly competitive. At $1.17 per cap (200mg with 85%+ FA), you're getting approximately 170mg of fulvic acid per capsule. Comparable quality capsules from other brands that break $50–$60 for the same serving count offer significantly worse value.
+              Their capsule option at $34.99 for 30 caps is similarly competitive. At $1.17 per cap (200mg with 74.30% FA, Batch 93 COA), you're getting approximately 149mg of fulvic acid per capsule. Comparable quality capsules from other brands that break $50–$60 for the same serving count offer significantly worse value.
             </p>
           </div>
 
@@ -292,13 +292,13 @@ export default function BestAffordableShilajit() {
               <div>
                 <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Best Value Premium — S-Tier</div>
                 <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
-                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · $1.33/gram · 85%+ FA · Free shipping</p>
+                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · $1.33/gram · 64.51% FA (Batch 93 COA) · Free shipping</p>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
-                "85%+ verified FA = best value per mg of active compound",
-                "~$1.57 per gram of actual fulvic acid",
+                "64.51% verified FA (resin, Batch 93 COA) — top value per mg",
+                "~$2.07 per gram of actual fulvic acid",
                 "~$0.23 per serving at standard dose",
                 "ISO-accredited third-party COA included",
                 "Full heavy metals panel — no hidden safety risks",

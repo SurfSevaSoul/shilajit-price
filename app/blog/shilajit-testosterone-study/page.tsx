@@ -546,7 +546,7 @@ export default function ShilajitTestosteroneStudy() {
             </p>
             <h3 className="text-base font-bold text-[#0D1F14] mb-1">Black Lotus Shilajit</h3>
             <p className="text-xs text-[#4A6358] mb-3 leading-relaxed">
-              85%+ fulvic acid · Third-party COA with heavy metals panel · Altai Mountains
+              64.51% fulvic acid (resin, Batch 93 COA, IAS Labs) · Third-party COA with heavy metals panel · Altai Mountains
               origin · Full-panel 3rd-party testing
             </p>
             <a

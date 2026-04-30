@@ -25,7 +25,7 @@ const FAQS = [
   },
   {
     q: "Why is Black Lotus rated #1?",
-    a: "Black Lotus Shilajit earns our S-tier rating because they publish full panel COAs showing 85%+ fulvic acid, test for heavy metals and microbials, use a cold-processing method that preserves bioactive compounds, offer free shipping, and provide excellent value per gram compared to competitors. We are an affiliate partner but tier ratings are assigned independently based on objective criteria.",
+    a: "Black Lotus Shilajit earns our S-tier rating because they publish full-panel COAs tested every batch by IAS Laboratories (Phoenix, AZ). Batch 93 (June 2025) shows 64.51% fulvic acid for the resin, 74.30% for capsules, and 73.11% for tablets — all with clean heavy metals panels and microbiology. They use cold-processing, offer free shipping, and provide excellent value per gram compared to competitors. Tier ratings are assigned independently based on objective criteria.",
   },
   {
     q: "How do you calculate price per gram?",

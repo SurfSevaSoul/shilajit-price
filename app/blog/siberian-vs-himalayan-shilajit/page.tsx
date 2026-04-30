@@ -53,7 +53,7 @@ const faqItems: FaqItem[] = [
     name: "Which shilajit brands are genuinely Siberian (Altai) sourced?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "In our database, Black Lotus Shilajit and Natural Shilajit are the primary verified Altai/Siberian-sourced brands. Black Lotus sources from the Altai Mountains, Siberia and publishes a full-panel COA with 85%+ fulvic acid. Natural Shilajit sources from the UNESCO-protected Golden Mountains of Altai in Siberia and verifies both fulvic acid and DBP content. Neither brand sources from the Himalayas.",
+      text: "In our database, Black Lotus Shilajit and Natural Shilajit are the primary verified Altai/Siberian-sourced brands. Black Lotus sources from the Altai Mountains, Siberia and publishes a full-panel COA with 64.51% fulvic acid for their resin (Batch 93, IAS Laboratories). Natural Shilajit sources from the UNESCO-protected Golden Mountains of Altai in Siberia and verifies both fulvic acid and DBP content. Neither brand sources from the Himalayas.",
     },
   },
   {
@@ -207,10 +207,11 @@ export default function SiberianVsHimalayanShilajit() {
             The prevailing hypothesis — supported by comparative analysis of Altai vs.
             Himalayan source material — is that the prolonged cold slows microbial
             decomposition, allowing organic compounds to accumulate more densely over time
-            before they are transformed. This may contribute to the consistently high fulvic
+            before they are transformed. This may contribute to the consistently strong fulvic
             acid concentrations seen in verified Altai products. Black Lotus, sourced from the
-            Altai Mountains in Siberia, reports 85%+ fulvic acid on their COA — the highest
-            verified concentration in our database across any origin.
+            Altai Mountains in Siberia, reports 64.51% fulvic acid for their resin on their COA
+            (Batch 93, IAS Laboratories, June 2025) — among the highest verified concentrations
+            in our database for Altai-sourced resin.
           </p>
 
           <h3 className="text-lg font-bold text-[#0D1F14] mt-6 mb-2">
@@ -336,9 +337,9 @@ export default function SiberianVsHimalayanShilajit() {
             Among Himalayan-sourced brands in our database, verified fulvic acid content
             typically falls in the 60–70% range. Pure Himalayan Shilajit reports 60% fulvic
             acid on their COA from an ISO/IEC 17025 accredited laboratory — the most rigorous
-            internationally recognized testing standard available. This is lower than the 85%+
-            seen in the best Altai products, though 60% remains meaningfully above the 50%
-            threshold below which efficacy data becomes thinner.
+            internationally recognized testing standard available. Altai brands like Black Lotus
+            report 64–74% depending on product form (Batch 93 COA), and 60% remains meaningfully
+            above the 50% threshold below which efficacy data becomes thinner.
           </p>
 
           <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
@@ -539,7 +540,7 @@ export default function SiberianVsHimalayanShilajit() {
             <h3 className="text-base font-extrabold text-[#0D1F14] mb-2">Black Lotus Shilajit</h3>
             <ul className="space-y-1.5 text-xs text-[#0D1F14] mb-4 flex-1">
               <li className="flex gap-2"><span className="text-emerald-500">✓</span> Altai Mountains, Siberia — not Himalayan</li>
-              <li className="flex gap-2"><span className="text-emerald-500">✓</span> 85%+ fulvic acid (third-party COA)</li>
+              <li className="flex gap-2"><span className="text-emerald-500">✓</span> 64.51% fulvic acid, resin (third-party COA, IAS Laboratories)</li>
               <li className="flex gap-2"><span className="text-emerald-500">✓</span> Full heavy metals panel within FDA limits</li>
               <li className="flex gap-2"><span className="text-emerald-500">✓</span> Cold-process purification, GMP certified</li>
               <li className="flex gap-2"><span className="text-emerald-500">✓</span> $1.23/g — S-tier value for verified potency</li>
@@ -624,7 +625,7 @@ export default function SiberianVsHimalayanShilajit() {
       {/* Inline BlackLotusCTA */}
       <BlackLotusCTA
         headline="Black Lotus — Highest Verified Fulvic Acid in Our Altai Database"
-        subtext="85%+ fulvic acid verified by third-party COA · Altai Mountains, Siberia · Cold-processed · Full heavy metals panel within FDA limits · S-tier rated."
+        subtext="64.51% FA resin / 74.30% FA capsules (Batch 93 COA, IAS Labs) · Altai Mountains, Siberia · Cold-processed · Full heavy metals panel within FDA limits · S-tier rated."
         buttonText="Shop Black Lotus Resin — $36.99 →"
       />
 
@@ -648,9 +649,9 @@ export default function SiberianVsHimalayanShilajit() {
                 <li className="flex gap-2">
                   <span className="text-emerald-500">→</span>
                   <span>
-                    <strong>Maximum verified fulvic acid is the priority.</strong> The 85%+ in
-                    Black Lotus is the highest COA-verified concentration in our entire database,
-                    across both origin types.
+                    <strong>Batch-specific COA data is the priority.</strong> Black Lotus publishes
+                    per-batch lab results (Batch 93: 64.51% resin, 74.30% capsules — IAS Labs),
+                    among the highest verified concentrations in our database.
                   </span>
                 </li>
                 <li className="flex gap-2">
@@ -775,7 +776,7 @@ export default function SiberianVsHimalayanShilajit() {
               </thead>
               <tbody>
                 {[
-                  ["Highest fulvic acid (COA verified)", "Siberian / Altai", "Black Lotus (85%+)"],
+                  ["Highest fulvic acid (COA verified)", "Siberian / Altai", "Black Lotus (64–74% by form)"],
                   ["DBP documentation", "Siberian / Altai", "Natural Shilajit (UNESCO Altai)"],
                   ["ISO/IEC 17025 lab accreditation", "Himalayan", "Pure Himalayan Shilajit"],
                   ["Extreme altitude collection", "Himalayan", "Pure Himalayan Shilajit (16,000+ ft)"],

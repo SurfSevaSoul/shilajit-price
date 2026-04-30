@@ -45,7 +45,7 @@ const faqItems: FaqItem[] = [
     name: "What fulvic acid percentage is good in shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "We use four tiers: below 20% is low quality; 40–60% is acceptable; 60–80% is good; 80%+ is premium. Pure Himalayan Shilajit reports 60% fulvic acid; Black Lotus reports 85%+. Both clear our recommended minimum of 40%. Anything below 20% from an unverified source should be treated with skepticism, especially if no COA is published.",
+      text: "We use four tiers: below 20% is low quality; 40–60% is acceptable; 60–80% is good; 80%+ is premium. Pure Himalayan Shilajit reports 60% fulvic acid; Black Lotus reports 64.51% (resin) / 74.30% (capsules) per Batch 93 COA, IAS Laboratories 2025. Both clear our recommended minimum of 40%. Anything below 20% from an unverified source should be treated with skepticism, especially if no COA is published.",
     },
   },
   {
@@ -183,7 +183,7 @@ export default function HowToReadShilajitCoa() {
                   { range: "20–40%", tier: "Marginal", note: "Below our recommended minimum for premium purchases", alt: true },
                   { range: "40–60%", tier: "Acceptable", note: "Meets basic quality threshold; adequate for most buyers", alt: false },
                   { range: "60–80%", tier: "Good", note: "Solidly above average; Pure Himalayan reports 60% at the lower edge of this band", alt: true },
-                  { range: "80%+", tier: "Premium", note: "Top tier; Black Lotus reports 85%+ with COA verification", alt: false },
+                  { range: "80%+", tier: "Premium", note: "Top tier; Black Lotus capsules report 74.30% with Batch 93 COA verification (resin: 64.51%)", alt: false },
                 ].map((row) => (
                   <tr key={row.range} className={row.alt ? "bg-[#F0FAF4]" : "bg-white"}>
                     <td className="px-3 py-3 font-semibold text-[#0D1F14]">{row.range}</td>
@@ -355,7 +355,7 @@ export default function HowToReadShilajitCoa() {
               <h3 className="text-lg font-bold text-[#10B981] mb-2">Black Lotus Shilajit</h3>
               <div className="space-y-1 text-xs text-[#0D1F14] mb-4">
                 <div className="flex justify-between border-b border-[#D1EDD8] pb-1">
-                  <span>Fulvic Acid</span><span className="font-semibold">85%+</span>
+                  <span>Fulvic Acid</span><span className="font-semibold">64.51% (resin) / 74.30% (caps)</span>
                 </div>
                 <div className="flex justify-between border-b border-[#D1EDD8] pb-1">
                   <span>Heavy Metals</span><span className="font-semibold">Full panel, values shown</span>
@@ -438,7 +438,7 @@ export default function HowToReadShilajitCoa() {
               rel="noopener noreferrer sponsored"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors"
             >
-              Black Lotus — 85%+ Fulvic Acid →
+              Black Lotus — 64.51% FA (Resin, Batch 93 COA) →
             </a>
             <a
               href={PURE_HIMALAYAN_RESIN}

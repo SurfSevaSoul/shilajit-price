@@ -41,7 +41,7 @@ const faqItems: FaqItem[] = [
     name: "What price range is the sweet spot for shilajit quality?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Based on our analysis of 55+ products, the quality sweet spot for shilajit is approximately $35–$50 for a 30g jar (resin). This price range contains the best-documented, highest-purity products on the market, including Black Lotus at $39.99 (85%+ FA, ISO-accredited COA, free shipping). Above $55–$60, you're typically paying for packaging or brand positioning rather than measurably better quality. Below $30, quality documentation begins to deteriorate significantly.",
+      text: "Based on our analysis of 55+ products, the quality sweet spot for shilajit is approximately $35–$50 for a 30g jar (resin). This price range contains the best-documented, highest-purity products on the market, including Black Lotus at $39.99 (64.51% FA verified by COA, ISO-accredited lab, free shipping). Above $55–$60, you're typically paying for packaging or brand positioning rather than measurably better quality. Below $30, quality documentation begins to deteriorate significantly.",
     },
   },
   {
@@ -65,7 +65,7 @@ const faqItems: FaqItem[] = [
     name: "Is Black Lotus considered premium or mid-range priced?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus is mid-range priced at $39.99 for 30g ($1.33/gram). This puts it below the luxury/premium tier ($60–$100+) but above the budget tier ($20–$30). What makes it exceptional is that it delivers premium quality documentation (S-tier, 85%+ FA, ISO COA) at mid-range pricing — the best quality-to-price ratio in our database. It's neither the cheapest nor the most expensive, but it is the most defensible value across all quality metrics.",
+      text: "Black Lotus is mid-range priced at $39.99 for 30g ($1.33/gram). This puts it below the luxury/premium tier ($60–$100+) but above the budget tier ($20–$30). What makes it exceptional is that it delivers premium quality documentation (S-tier, 64.51% verified FA by COA, ISO-accredited lab) at mid-range pricing — the best quality-to-price ratio in our database. It's neither the cheapest nor the most expensive, but it is the most defensible value across all quality metrics.",
     },
   },
 ];
@@ -122,7 +122,7 @@ const COMPARISON = [
     label: "~$40 (Sweet Spot)",
     exampleProduct: "Black Lotus Resin",
     priceGram: "$1.33",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     coaVerified: true,
     thirdParty: true,
     heavyMetals: true,
@@ -142,7 +142,7 @@ const COMPARISON = [
     source: "Multiple",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
-    verdict: "Premium price for A-tier quality — 72% FA at $2.97/gram vs Black Lotus 85%+ at $1.33/gram.",
+    verdict: "Premium price for A-tier quality — 72% FA at $2.97/gram vs Black Lotus 64.51% at $1.33/gram.",
   },
   {
     label: "~$80 (Luxury)",
@@ -298,7 +298,7 @@ export default function IsExpensiveShilajitWorthIt() {
               The data tells a clear story. Quality improves meaningfully from $20 to approximately $40 — you get better sourcing documentation, higher verified fulvic acid content, and third-party COA verification. Above $40–$50, the correlation between price and quality largely breaks down. Products charging $60–$100 are not delivering 2–3× the active compound or documentation quality of a well-chosen $40 product.
             </p>
             <p>
-              Black Lotus at $39.99 represents the inflection point — where premium quality documentation meets mid-range pricing. They achieve S-tier specifications (85%+ FA, ISO COA, full heavy metals panel, high-altitude Altai Mountain source) at a price where most competitors deliver A-tier results at best.
+              Black Lotus at $39.99 represents the inflection point — where premium quality documentation meets mid-range pricing. They achieve S-tier specifications (64.51% FA verified by COA, ISO-accredited lab, full heavy metals panel, high-altitude Altai Mountain source) at a price where most competitors deliver A-tier results at best.
             </p>
             <p>
               The answer to &quot;is expensive shilajit worth it&quot; is: <strong className="text-[#0D1F14]">yes up to approximately $45–$50/30g, no above it.</strong> There are legitimate quality differences between $20 and $40 products. There are no consistent quality differences between $40 and $80 products. The premium above $50 is almost entirely brand equity.
@@ -332,12 +332,12 @@ export default function IsExpensiveShilajitWorthIt() {
               <div>
                 <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Quality Sweet Spot — S-Tier at Mid-Range Price</div>
                 <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
-                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · $1.33/gram · 85%+ FA · Free shipping</p>
+                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · $1.33/gram · 64.51% FA (COA verified) · Free shipping</p>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
-                "85%+ verified FA — beats products charging 2× the price",
+                "64.51% verified FA (Batch 93 COA, IAS Laboratories) — beats products charging 2× the price",
                 "ISO-accredited third-party COA",
                 "Full heavy metals panel within FDA limits",
                 "Himalayan source — documented altitude 14,000+ ft",

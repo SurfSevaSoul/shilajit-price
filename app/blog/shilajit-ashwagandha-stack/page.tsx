@@ -394,11 +394,11 @@ export default function ShilajitAshwagandhaStack() {
                     </a>
                   </td>
                   <td className="px-3 py-3 text-center">Resin</td>
-                  <td className="px-3 py-3 text-center font-semibold">85%+</td>
+                  <td className="px-3 py-3 text-center font-semibold">64.51%</td>
                   <td className="px-3 py-3 text-center">$36.99</td>
                   <td className="px-3 py-3 text-[#0D1F14]">
-                    Highest verified fulvic acid maximizes the carrier-molecule mechanism; COA
-                    verified for heavy metals
+                    Highest verified fulvic acid maximizes the carrier-molecule mechanism; Batch 93 COA
+                    verified for heavy metals (IAS Labs)
                   </td>
                 </tr>
                 <tr className="bg-[#F0FAF4] border-t border-[#D1EDD8]">
@@ -413,10 +413,10 @@ export default function ShilajitAshwagandhaStack() {
                     </a>
                   </td>
                   <td className="px-3 py-3 text-center">Capsule</td>
-                  <td className="px-3 py-3 text-center font-semibold">85%+</td>
+                  <td className="px-3 py-3 text-center font-semibold">74.30%</td>
                   <td className="px-3 py-3 text-center">$43.99</td>
                   <td className="px-3 py-3 text-[#0D1F14]">
-                    Same purity as resin; easiest to add to a multi-supplement morning routine
+                    High-purity capsule form (Batch 93 COA, IAS Labs); easiest to add to a multi-supplement morning routine
                     without measuring
                   </td>
                 </tr>
@@ -542,7 +542,7 @@ export default function ShilajitAshwagandhaStack() {
               </p>
               <p className="font-bold text-[#0D1F14] mb-1">Black Lotus Pure Altai Resin</p>
               <p className="text-xs text-[#0D1F14] mb-3">
-                85%+ fulvic acid · COA verified · $36.99 · Altai origin
+                64.51% fulvic acid · Batch 93 COA · $36.99 · Altai origin
               </p>
               <a
                 href={AFFILIATE_RESIN}
@@ -559,7 +559,7 @@ export default function ShilajitAshwagandhaStack() {
               </p>
               <p className="font-bold text-[#0D1F14] mb-1">Black Lotus Extra Strength Capsules</p>
               <p className="text-xs text-[#0D1F14] mb-3">
-                85%+ fulvic acid · COA verified · $43.99 · 60ct
+                74.30% fulvic acid · Batch 93 COA · $43.99 · 60ct
               </p>
               <a
                 href={AFFILIATE_CAPS}

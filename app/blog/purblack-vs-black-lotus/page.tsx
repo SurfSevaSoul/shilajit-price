@@ -35,7 +35,7 @@ const faqItems: FaqItem[] = [
     name: "Is Pürblack or Black Lotus shilajit better?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "It depends on what you prioritize. Black Lotus is better for buyers who want the highest verified fulvic acid percentage (85%+) at the best price per gram ($1.23/g). Pürblack is better for buyers who prioritize patented purification (5 US patents), US pharmaceutical-grade manufacturing, multi-region sourcing, and advanced formulations like True Gold (555 PPM colloidal gold). Both are elite brands with verified COAs — the right choice comes down to your goals and budget.",
+      text: "It depends on what you prioritize. Black Lotus is better for buyers who want the highest verified fulvic acid percentage (64.51% resin / 74.30% capsules, Batch 93 COA) at the best price per gram ($1.23/g). Pürblack is better for buyers who prioritize patented purification (5 US patents), US pharmaceutical-grade manufacturing, multi-region sourcing, and advanced formulations like True Gold (555 PPM colloidal gold). Both are elite brands with verified COAs — the right choice comes down to your goals and budget.",
     },
   },
   {
@@ -43,7 +43,7 @@ const faqItems: FaqItem[] = [
     name: "What is the fulvic acid content of Pürblack vs Black Lotus?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus discloses a verified 85%+ fulvic acid concentration per dose, confirmed by IAS Laboratories in Phoenix, AZ — the highest published, COA-backed figure in our database. Pürblack verifies fulvic acid content via third-party COA but does not publicly disclose a specific percentage on their marketing materials. Their COA confirms the presence and purity of fulvic acid compounds without publishing a headline percentage.",
+      text: "Black Lotus discloses verified fulvic acid concentrations confirmed by IAS Laboratories in Phoenix, AZ — 64.51% for resin/tincture and 74.30% for capsules (Batch 93, 2025 COA). Pürblack verifies fulvic acid content via third-party COA but does not publicly disclose a specific percentage on their marketing materials. Their COA confirms the presence and purity of fulvic acid compounds without publishing a headline percentage.",
     },
   },
   {
@@ -76,7 +76,7 @@ const faqItems: FaqItem[] = [
 const COMPARISON_ROWS = [
   { factor: "Source",           pb: "Multi-region (Caucasus, Siberia, Himalayas)", bl: "Altai Mountains, Siberia" },
   { factor: "Testing Lab",      pb: "US pharmaceutical-grade facility + 3rd party COA", bl: "IAS Laboratories, Phoenix AZ" },
-  { factor: "Fulvic Acid",      pb: "Verified (% not publicly disclosed)", bl: "85%+ per dose (COA-backed)" },
+  { factor: "Fulvic Acid",      pb: "Verified (% not publicly disclosed)", bl: "64.51% resin / 74.30% caps (Batch 93 COA)" },
   { factor: "Price Per Gram",   pb: "$3.11/g (True Gold 30g) – $5.00/g (White Rabbit)", bl: "$1.23/g (Resin 30g)" },
   { factor: "US Patents",       pb: "5 US Patents on purification process", bl: "None" },
   { factor: "Manufacturing",    pb: "Made in USA — pharmaceutical GMP", bl: "Imported, cold-processed" },
@@ -126,7 +126,7 @@ export default function PurblackVsBlackLotus() {
               <span className="text-sm font-extrabold text-[#0D1F14]">Black Lotus — Best Value S-Tier</span>
             </div>
             <p className="text-xs text-[#4A6358] leading-relaxed mb-3">
-              The highest verified fulvic acid in our database — 85%+ per dose, confirmed by IAS Laboratories in Phoenix, AZ. Altai Mountains source, full heavy metals panel, DBP verified. At $1.23/g it is the benchmark for quality-to-price in the verified shilajit market.
+              64.51% fulvic acid (resin) / 74.30% (capsules) confirmed by IAS Laboratories in Phoenix, AZ — Batch 93, 2025 COA. Altai Mountains source, full heavy metals panel, DBP verified. At $1.23/g it is the benchmark for quality-to-price in the verified shilajit market.
             </p>
             <p className="text-xs font-semibold text-amber-700">→ Best for: Most buyers who want proven potency at a fair price</p>
           </div>
@@ -203,7 +203,7 @@ export default function PurblackVsBlackLotus() {
               <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>Third-party COA published publicly</li>
               <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>IAS Laboratories, Phoenix, AZ (named accredited lab)</li>
               <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>Full heavy metals panel — Lead, Mercury, Arsenic, Cadmium (actual values disclosed)</li>
-              <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>85%+ fulvic acid confirmed on COA</li>
+              <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>64.51% (resin) / 74.30% (capsules) fulvic acid confirmed on COA</li>
               <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>DBP (dibenzo-alpha-pyrone) verified</li>
               <li className="flex items-start gap-2"><span className="text-[#10B981] font-bold shrink-0">✓</span>Microbial testing included</li>
             </ul>
@@ -231,9 +231,9 @@ export default function PurblackVsBlackLotus() {
         <div className="bg-[#F0FAF4] border-2 border-[#D1EDD8] rounded-2xl p-5 mb-5">
           <div className="grid sm:grid-cols-2 gap-6">
             <div className="text-center">
-              <div className="text-4xl font-extrabold text-[#10B981] mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>85%+</div>
+              <div className="text-4xl font-extrabold text-[#10B981] mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>64–74%</div>
               <div className="text-xs font-bold text-[#0D1F14] mb-1">Black Lotus</div>
-              <div className="text-[10px] text-[#7BA899]">Per dose · COA-confirmed · IAS Laboratories</div>
+              <div className="text-[10px] text-[#7BA899]">64.51% resin / 74.30% capsules · Batch 93 COA · IAS Laboratories</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-extrabold text-violet-600 mb-1" style={{ fontFamily: "var(--font-jakarta)" }}>Verified</div>
@@ -243,7 +243,7 @@ export default function PurblackVsBlackLotus() {
           </div>
         </div>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
-          Black Lotus holds the highest publicly disclosed fulvic acid percentage in our database at 85%+ per dose, confirmed by IAS Laboratories. This is a meaningful distinction — most brands either don't test for fulvic acid content or list a range without COA backing. The 85% figure from a named accredited lab gives buyers a concrete, verifiable benchmark.
+          Black Lotus publicly discloses exact fulvic acid percentages confirmed by IAS Laboratories — 64.51% for resin and tincture, 74.30% for capsules (Batch 93, 2025 COA). This is a meaningful distinction — most brands either don't test for fulvic acid content or list a range without COA backing. These specific figures from a named accredited lab give buyers concrete, verifiable benchmarks.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed">
           Pürblack verifies fulvic acid through their COA process but does not publish a headline percentage. Their position is that the quality of their patented purification process — not a single extracted compound percentage — is the most accurate signal of product quality. This is a defensible argument for a brand with 5 US patents and pharmaceutical-grade manufacturing, but buyers who make decisions based on disclosed fulvic acid numbers will find Black Lotus more straightforward to evaluate.
@@ -369,7 +369,7 @@ export default function PurblackVsBlackLotus() {
             <div className="p-5">
               <ul className="space-y-2.5">
                 {[
-                  "You want the highest verified fulvic acid percentage available (85%+)",
+                  "You want the highest verified fulvic acid percentage available (64.51% resin / 74.30% capsules, Batch 93 COA)",
                   "Price per gram matters — you want maximum potency per dollar",
                   "You prefer a single confirmed Altai Mountain source with DBP verification",
                   "You want format flexibility: resin, capsules, gummies, tincture, or honey",
@@ -429,7 +429,7 @@ export default function PurblackVsBlackLotus() {
             </div>
             <div className="p-5">
               <ul className="space-y-1.5 mb-4">
-                {["85%+ fulvic acid · IAS Lab verified", "Altai Mountains, Siberia · DBP verified", "$36.99 / 30g · $1.23/g", "Free shipping on all orders"].map((f) => (
+                {["64.51% FA (resin) · 74.30% FA (capsules) · IAS Lab Batch 93", "Altai Mountains, Siberia · DBP verified", "$36.99 / 30g · $1.23/g", "Free shipping on all orders"].map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs text-[#4A6358]">
                     <span className="text-[#10B981] shrink-0">✓</span>{f}
                   </li>

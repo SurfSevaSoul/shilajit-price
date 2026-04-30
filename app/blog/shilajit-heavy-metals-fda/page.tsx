@@ -652,7 +652,7 @@ export default function ShilajitHeavyMetalsFDA() {
                   <div><span className="font-semibold text-[#7BA899]">Testing lab:</span> IAS Laboratories, Phoenix, Arizona</div>
                   <div><span className="font-semibold text-[#7BA899]">Method:</span> ICP-MS (heavy metals full panel)</div>
                   <div><span className="font-semibold text-[#7BA899]">Accreditation:</span> ISO-accredited analytical laboratory</div>
-                  <div><span className="font-semibold text-[#7BA899]">Fulvic acid:</span> 85%+ (also COA verified)</div>
+                  <div><span className="font-semibold text-[#7BA899]">Fulvic acid:</span> 64.51% resin / 74.30% caps (Batch 93 COA, IAS Labs)</div>
                 </div>
                 <div className="space-y-2">
                   <div><span className="font-semibold text-[#7BA899]">COA accessibility:</span> Available on request / published per batch</div>
@@ -890,7 +890,7 @@ export default function ShilajitHeavyMetalsFDA() {
       {/* Inline BlackLotusCTA */}
       <BlackLotusCTA
         headline="Black Lotus — IAS Labs Phoenix Verified, Full Heavy Metals Panel"
-        subtext="ICP-MS tested at IAS Laboratories, Phoenix AZ · 85%+ fulvic acid COA verified · All heavy metals within FDA limits · Cold-processed Altai resin · S-tier rated in our database."
+        subtext="ICP-MS tested at IAS Laboratories, Phoenix AZ · 64.51% fulvic acid (resin, Batch 93 COA) · All heavy metals within FDA limits · Cold-processed Altai resin · S-tier rated in our database."
         buttonText="Shop Black Lotus Resin — $36.99 →"
       />
 

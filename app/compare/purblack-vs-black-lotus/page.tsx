@@ -59,7 +59,7 @@ const faqSchema = {
       name: "What makes Pürblack different from conventional shilajit resins like Black Lotus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Pürblack holds 5 US patents covering their purification process — a distinction no other shilajit brand in our database can claim. Their 5th and 6th generation live resin formula uses a pharmaceutical-grade purification method developed and refined over more than a decade, and select SKUs include precious metal infusions (True Gold contains 555 PPM gold). Black Lotus, by contrast, is a cold-processed Altai Mountain resin that leads on documented fulvic acid percentage (85%+) and price-per-gram value. They represent different philosophies: Pürblack prioritizes process innovation and US-manufactured quality control; Black Lotus prioritizes raw bioactive potency at a competitive price.",
+        text: "Pürblack holds 5 US patents covering their purification process — a distinction no other shilajit brand in our database can claim. Their 5th and 6th generation live resin formula uses a pharmaceutical-grade purification method developed and refined over more than a decade, and select SKUs include precious metal infusions (True Gold contains 555 PPM gold). Black Lotus, by contrast, is a cold-processed Altai Mountain resin that leads on documented fulvic acid percentage (64.51% resin / 74.30% capsules, Batch 93 COA, IAS Labs) and price-per-gram value. They represent different philosophies: Pürblack prioritizes process innovation and US-manufactured quality control; Black Lotus prioritizes raw bioactive potency at a competitive price.",
       },
     },
     {
@@ -83,7 +83,7 @@ const faqSchema = {
       name: "Which should I choose for a first-time shilajit purchase: Pürblack or Black Lotus?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "For first-time buyers, Black Lotus is the stronger starting point. At $36.99 for 30g ($1.23/g), it delivers 85%+ fulvic acid with a full-panel third-party COA, free shipping, and a 30-day money-back guarantee — giving you a low-risk entry into high-quality, documented shilajit. Pürblack's True Gold 30g at $93.33 ($3.11/g) is a significant premium that makes more sense for buyers already familiar with shilajit who want to explore patent-backed live resin technology or precious metal infusions. Start with Black Lotus to establish your baseline response to quality shilajit, then explore Pürblack if you want to compare a more technologically differentiated product.",
+        text: "For first-time buyers, Black Lotus is the stronger starting point. At $36.99 for 30g ($1.23/g), it delivers 64.51% verified fulvic acid (resin, Batch 93, IAS Laboratories) with a full-panel third-party COA, free shipping, and a 30-day money-back guarantee — giving you a low-risk entry into high-quality, documented shilajit. Pürblack's True Gold 30g at $93.33 ($3.11/g) is a significant premium that makes more sense for buyers already familiar with shilajit who want to explore patent-backed live resin technology or precious metal infusions. Start with Black Lotus to establish your baseline response to quality shilajit, then explore Pürblack if you want to compare a more technologically differentiated product.",
       },
     },
   ],
@@ -134,7 +134,7 @@ const BLACK_LOTUS = {
   shortName: "Black Lotus",
   tier: "S",
   tierColor: "bg-amber-400 text-amber-900",
-  fulvicAcid: "85%+",
+  fulvicAcid: "64–74% (by form)",
   pricePerGram: "$1.23/g",
   origin: "Altai Mountains, Siberia",
   coa: true,
@@ -336,7 +336,7 @@ export default function PurblackVsBlackLotusPage() {
           <section className="bg-white rounded-2xl border border-[#D1EDD8] p-6 space-y-3">
             <h2 className="text-xl font-black text-[#0D1F14]">Black Lotus: Highest Documented FA% at Best Value</h2>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Black Lotus Shilajit sources exclusively from the Altai Mountains of Siberia at 16,000+ feet altitude and cold-processes their resin to preserve the full spectrum of bioactive compounds. Their COA is published by <strong>IAS Laboratories in Phoenix, AZ</strong> — a named, verifiable third-party lab — and covers every batch individually. Batch #93–94 COA data shows 161mg fulvic acid and 22mg humic acid per 300mg serving, equating to <strong>85%+ fulvic acid by content weight</strong> — the highest documented figure in our entire database.
+              Black Lotus Shilajit sources exclusively from the Altai Mountains of Siberia at 16,000+ feet altitude and cold-processes their resin to preserve the full spectrum of bioactive compounds. Their COA is published by <strong>IAS Laboratories in Phoenix, AZ</strong> — a named, verifiable third-party lab — and covers every batch individually. Batch 93 COA data (IAS Laboratories, June 2025) shows <strong>64.51% fulvic acid by weight</strong> — 161mg fulvic acid per 250mg serving — one of the highest documented figures in our database. Capsules test at 74.30% FA on the same batch.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
               Black Lotus is <strong>GMP certified</strong>, non-GMO, vegan, gluten-free, and made in the USA. Heavy metals testing covers lead, mercury, arsenic, and cadmium — all pass. Their product line spans resin, capsules, tinctures, gummies, honey blend, and tablets, making them the most comprehensive single-brand product lineup among our S-tier brands. At <strong>$36.99 for 30g ($1.23/g)</strong> with free shipping and a 30-day money-back guarantee, they offer the best price-to-documented-purity ratio in our database.
@@ -385,7 +385,7 @@ export default function PurblackVsBlackLotusPage() {
           <section className="bg-white rounded-2xl border border-[#D1EDD8] p-6">
             <h2 className="text-xl font-black text-[#0D1F14] mb-3">The verdict</h2>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Black Lotus wins on documented bioactive value: 85%+ fulvic acid at $1.23/g with a full-panel batch-level COA from a named US third-party lab is the strongest potency-to-price combination in our database. For most buyers — especially first-timers — this is the clear choice. Pürblack wins on process differentiation: 5 US patents, multi-region sourcing, pharmaceutical-grade US manufacturing, and precious metal infusions (555 PPM gold in True Gold) represent a level of production innovation no other brand matches. If you are an experienced shilajit user who has already explored high-FA Altai resins and wants to investigate a fundamentally different purification technology, Pürblack is the most credentialed option for that exploration. For everyday high-quality supplementation optimized for documented fulvic acid per dollar, Black Lotus is the pick.
+              Black Lotus wins on documented bioactive value: 64.51% fulvic acid (resin, Batch 93, IAS Labs) at $1.23/g with a full-panel batch-level COA from a named US third-party lab is the strongest potency-to-price combination in our database. For most buyers — especially first-timers — this is the clear choice. Pürblack wins on process differentiation: 5 US patents, multi-region sourcing, pharmaceutical-grade US manufacturing, and precious metal infusions (555 PPM gold in True Gold) represent a level of production innovation no other brand matches. If you are an experienced shilajit user who has already explored high-FA Altai resins and wants to investigate a fundamentally different purification technology, Pürblack is the most credentialed option for that exploration. For everyday high-quality supplementation optimized for documented fulvic acid per dollar, Black Lotus is the pick.
             </p>
           </section>
 
@@ -415,7 +415,7 @@ export default function PurblackVsBlackLotusPage() {
               </h3>
               <ul className="space-y-2">
                 {[
-                  "85%+ fulvic acid — highest documented FA% in our database, verified by IAS Laboratories per batch",
+                  "64.51% fulvic acid (resin) / 74.30% (capsules) — Batch 93, verified by IAS Laboratories per batch",
                   "$1.23/g — best price per gram of any S-tier brand; $93.33 vs $36.99 for a 30g jar",
                   "Full-panel batch-level COA: named lab (IAS Laboratories Phoenix AZ), exact compound measurements, publicly posted",
                   "Free shipping + 30-day money-back guarantee — lowest-risk entry into premium shilajit",

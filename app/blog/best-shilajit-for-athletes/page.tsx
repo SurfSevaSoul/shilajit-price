@@ -77,7 +77,7 @@ const faqItems: FaqItem[] = [
     name: "What is the best shilajit for workout recovery?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "For workout recovery specifically, the highest-fulvic-acid verified resin is optimal — which points to Black Lotus Pure Altai Resin (85%+ FA, $1.23/g) as the top choice by bioactive concentration per dollar. Natural Shilajit Resin is the second choice for athletes who want DBP verification alongside recovery support. For convenience-first athletes, Natural Shilajit NutriHoney delivers the resin in a pre-measured honey format that can be consumed immediately post-workout without any prep.",
+      text: "For workout recovery specifically, the highest-fulvic-acid verified resin is optimal — which points to Black Lotus Pure Altai Resin (64.51% FA, Batch 93 COA, $1.23/g) as the top choice by bioactive concentration per dollar. Natural Shilajit Resin is the second choice for athletes who want DBP verification alongside recovery support. For convenience-first athletes, Natural Shilajit NutriHoney delivers the resin in a pre-measured honey format that can be consumed immediately post-workout without any prep.",
     },
   },
 ];
@@ -91,12 +91,12 @@ const TOP_PICKS = [
     tierColor: "bg-amber-400 text-amber-900",
     price: "$36.99 (30g)",
     perGram: "$1.23/g",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     dbp: false,
     coa: true,
     ship: true,
     href: BL_RESIN,
-    why: "The highest verified fulvic acid in our database (85%+) translates directly to the most bioactive compound per serving. For athletes focused on mitochondrial efficiency and energy output, higher FA concentration means more of the compound linked to ATP production — at the lowest per-gram price among S-tier brands.",
+    why: "High COA-verified fulvic acid (64.51% resin, Batch 93 — IAS Labs) translates directly to bioactive compound per serving. For athletes focused on mitochondrial efficiency and energy output, verified FA concentration means more of the compound linked to ATP production — at the lowest per-gram price among S-tier brands.",
   },
   {
     rank: 2,
@@ -327,7 +327,7 @@ export default function BestShilajitForAthletes() {
               <strong className="text-[#0D1F14]">Timing:</strong> Take shilajit 30–60 minutes before training or first thing in the morning. Pre-training use supports mitochondrial activation during the session. Morning use aligns with natural cortisol rhythms. Avoid within 2 hours of sleep.
             </p>
             <p>
-              <strong className="text-[#0D1F14]">Dosage:</strong> Clinical trials use 250–500mg of purified shilajit per day. For an 85% fulvic acid resin like Black Lotus, a 300mg serving delivers approximately 255mg of fulvic acid. Dissolve in warm (not hot) water — excessive heat degrades fulvic acid. A pea-sized portion of resin is approximately 300–350mg. See our <Link href="/blog/shilajit-dosage-guide" className="text-[#10B981] hover:underline">full dosage guide</Link> for detailed instructions.
+              <strong className="text-[#0D1F14]">Dosage:</strong> Clinical trials use 250–500mg of purified shilajit per day. For a 64.51% fulvic acid resin like Black Lotus (Batch 93 COA), a 300mg serving delivers approximately 194mg of fulvic acid. Dissolve in warm (not hot) water — excessive heat degrades fulvic acid. A pea-sized portion of resin is approximately 300–350mg. See our <Link href="/blog/shilajit-dosage-guide" className="text-[#10B981] hover:underline">full dosage guide</Link> for detailed instructions.
             </p>
             <p>
               <strong className="text-[#0D1F14]">Stacking:</strong> Shilajit pairs well with CoQ10 (both target mitochondrial efficiency, potentially synergistic), magnesium (electrolyte replenishment for athletes), and ashwagandha (for HPA axis support and cortisol management). Avoid stacking with other fulvic acid products — redundant rather than additive.
@@ -351,7 +351,7 @@ export default function BestShilajitForAthletes() {
               Resin dissolved directly in warm water is the fastest-absorbing format — it goes into solution immediately and is absorbed without a digestion step. Capsules require dissolution of the capsule shell and digestion of the powder before absorption begins, adding approximately 15–30 minutes to the absorption timeline.
             </p>
             <p>
-              For pre-workout use where timing precision matters, resin has a genuine edge. For consistent daily supplementation where timing is flexible, high-quality capsules (85%+ FA, resin powder) work equally well over time. The format matters less than the bioactive concentration — a 500mg capsule of 85% FA resin delivers the same fulvic acid as the equivalent resin portion, just slightly delayed.
+              For pre-workout use where timing precision matters, resin has a genuine edge. For consistent daily supplementation where timing is flexible, high-quality capsules (COA-verified FA, resin powder) work equally well over time. The format matters less than the bioactive concentration — a 500mg capsule of 74.30% FA (Black Lotus Capsules, Batch 93) delivers the same verified fulvic acid as the equivalent resin portion, just slightly delayed.
             </p>
           </div>
         </section>
@@ -450,7 +450,7 @@ export default function BestShilajitForAthletes() {
           <p className="text-xs text-[#7BA899] mb-4">All products: COA verified · Heavy metals tested · Performance-relevant bioactive concentrations</p>
           <div className="grid gap-3 sm:grid-cols-3">
             {[
-              { label: "Black Lotus Resin", sub: "$36.99 · 85%+ FA · $1.23/g", href: BL_RESIN, badge: "#1 Pick" },
+              { label: "Black Lotus Resin", sub: "$36.99 · 64.51% FA (Batch 93) · $1.23/g", href: BL_RESIN, badge: "#1 Pick" },
               { label: "NS Resin 20g", sub: "$49.00 · ~70% FA · DBP verified", href: NS_RESIN, badge: "#2 Pick" },
               { label: "NS NutriHoney", sub: "$59.00 · 30 sticks · pre-workout format", href: NS_NUTRIHONEY, badge: "#3 Pick" },
             ].map((item) => (

@@ -51,7 +51,7 @@ const faqItems: FaqItem[] = [
     name: "What dose of shilajit is needed for testosterone benefits?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "The clinically studied dose is 250mg of purified shilajit twice daily (500mg total). For resin products, this typically corresponds to 175–200mg of resin per serving depending on concentration. With an 85% fulvic acid resin like Black Lotus, a 175mg serving delivers approximately 148mg of fulvic acid — well within the therapeutic range used in clinical trials. Lower-concentration products may require larger doses to reach equivalent fulvic acid intake.",
+      text: "The clinically studied dose is 250mg of purified shilajit twice daily (500mg total). For resin products, this typically corresponds to 175–200mg of resin per serving depending on concentration. With a 64.51% fulvic acid resin like Black Lotus, a 175mg serving delivers approximately 113mg of fulvic acid — well within the therapeutic range used in clinical trials. Lower-concentration products may require larger doses to reach equivalent fulvic acid intake.",
     },
   },
   {
@@ -86,7 +86,7 @@ const TOP_PICKS = [
     name: "Black Lotus Shilajit Resin",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     pricePerGram: "$1.33",
     coaVerified: true,
     thirdParty: true,
@@ -259,13 +259,13 @@ export default function BestShilajitForTestosterone() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Best for Testosterone: Black Lotus Shilajit Resin</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Black Lotus earns the top spot for testosterone support because their product most closely mirrors the conditions of the clinical research: high-purity shilajit, verified fulvic acid content above 85%, and a third-party COA from an ISO-accredited lab that shows specific measured values.
+              Black Lotus earns the top spot for testosterone support because their product most closely mirrors the conditions of the clinical research: high-purity shilajit, independently verified fulvic acid at 64.51% for the resin (Batch 93, IAS Laboratories), and a third-party COA from an ISO-accredited lab that shows specific measured values.
             </p>
             <p>
-              When you take 175mg of Black Lotus resin twice daily, you're delivering approximately 148mg of verified fulvic acid per dose — comparable to what was used in the Andrologia study. Most other products on the market either don't disclose their fulvic acid content or make unverified claims that don't hold up to scrutiny.
+              When you take 175mg of Black Lotus resin twice daily, you're delivering approximately 113mg of verified fulvic acid per dose — well within the therapeutic range used in the Andrologia study. Most other products on the market either don't disclose their fulvic acid content or make unverified claims that don't hold up to scrutiny.
             </p>
             <p>
-              At $39.99 for 30g, the resin provides enough product for a full 90-day testosterone protocol when used at the recommended dose. The capsule option at $34.99 contains 85%+ fulvic acid resin in pre-measured 200mg doses, which is slightly more convenient for consistent daily use. Either form works.
+              At $39.99 for 30g, the resin provides enough product for a full 90-day testosterone protocol when used at the recommended dose. The capsule option at $34.99 contains 74.30% verified fulvic acid in pre-measured 200mg doses, which is slightly more convenient for consistent daily use. Either form works.
             </p>
           </div>
 
@@ -275,12 +275,12 @@ export default function BestShilajitForTestosterone() {
               <div>
                 <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">#1 for Testosterone — S-Tier</div>
                 <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
-                <p className="text-xs text-[#0D1F14] mt-1">$39.99 for 30g · 85%+ fulvic acid · Free shipping</p>
+                <p className="text-xs text-[#0D1F14] mt-1">$39.99 for 30g · 64.51% fulvic acid (resin) · Free shipping</p>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
-                "85%+ verified fulvic acid — matches clinical study range",
+                "64.51% verified fulvic acid (resin) — within clinical study range",
                 "Tested every batch by IAS Laboratories, Phoenix, AZ",
                 "161mg fulvic acid per serving (batch #93-94)",
                 "Full heavy metals panel within FDA action levels",
@@ -334,7 +334,7 @@ export default function BestShilajitForTestosterone() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Dosage and timing for testosterone support</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              The clinically studied protocol is 250mg of purified shilajit extract twice daily — once in the morning and once in the evening. For resin-form products, this corresponds to approximately 175–200mg of resin per dose if the product contains 85%+ fulvic acid, or up to 500mg per dose for lower-concentration products.
+              The clinically studied protocol is 250mg of purified shilajit extract twice daily — once in the morning and once in the evening. For resin-form products, this corresponds to approximately 175–200mg of resin per dose if the product contains 64–74% fulvic acid (the verified range for top-tier products), or up to 500mg per dose for lower-concentration products.
             </p>
             <p>
               Taking shilajit with warm water or milk improves absorption. Fulvic acid is water-soluble, so dissolving resin in warm water is both authentic to traditional use and pharmacologically sound. Taking it on an empty stomach in the morning appears to maximize bioavailability based on available evidence.
@@ -346,7 +346,7 @@ export default function BestShilajitForTestosterone() {
               <div className="text-xs font-bold text-amber-600 mb-2">Protocol summary</div>
               <div className="space-y-1.5">
                 {[
-                  "Dose: 175–200mg resin (85%+ FA) or 500mg resin (50% FA) twice daily",
+                  "Dose: 175–200mg resin (64–74% FA) or 500mg resin (50% FA) twice daily",
                   "Timing: Morning on empty stomach + evening with dinner",
                   "Duration: Minimum 90 days for measurable testosterone changes",
                   "Form: Resin dissolved in warm water or milk — or capsules at equivalent dose",

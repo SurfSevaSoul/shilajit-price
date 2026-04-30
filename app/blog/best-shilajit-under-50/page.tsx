@@ -35,7 +35,7 @@ const faqItems: FaqItem[] = [
     name: "Is it possible to get good quality shilajit for under $50?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes — but you need to be selective. The $30–$50 range contains some excellent shilajit products as well as a lot of low-quality garbage. The key is to look for products with a third-party COA showing verified fulvic acid content above 60%, a full heavy metals panel, and disclosed source region. Black Lotus Resin at $36.99 (with current pricing) is the best example of premium quality in this price range — 85%+ verified FA, ISO-accredited COA, and free shipping. Below $30 for 30g of resin, quality becomes very difficult to verify.",
+      text: "Yes — but you need to be selective. The $30–$50 range contains some excellent shilajit products as well as a lot of low-quality garbage. The key is to look for products with a third-party COA showing verified fulvic acid content above 60%, a full heavy metals panel, and disclosed source region. Black Lotus Resin at $36.99 (with current pricing) is the best example of premium quality in this price range — 64.51% verified FA by COA, ISO-accredited lab, and free shipping. Below $30 for 30g of resin, quality becomes very difficult to verify.",
     },
   },
   {
@@ -51,7 +51,7 @@ const faqItems: FaqItem[] = [
     name: "How do I calculate value when comparing shilajit prices?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Don't compare package prices — compare price per gram and effective fulvic acid per dollar. Divide the price by total grams of product to get price per gram. Then adjust for fulvic acid concentration: a $40 product with 85% FA delivers more fulvic acid per gram than a $30 product with 40% FA. You can calculate effective FA cost as: (price) / (grams × FA%) = cost per gram of actual fulvic acid. This is the most meaningful comparison metric. Our full price-per-gram comparison table is available at ShilajitPrice.com.",
+      text: "Don't compare package prices — compare price per gram and effective fulvic acid per dollar. Divide the price by total grams of product to get price per gram. Then adjust for fulvic acid concentration: a $40 product with 64–74% COA-verified FA delivers more fulvic acid per gram than a $30 product with 40% FA. You can calculate effective FA cost as: (price) / (grams × FA%) = cost per gram of actual fulvic acid. This is the most meaningful comparison metric. Our full price-per-gram comparison table is available at ShilajitPrice.com.",
     },
   },
   {
@@ -59,7 +59,7 @@ const faqItems: FaqItem[] = [
     name: "Is Black Lotus Shilajit actually under $50?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Black Lotus Shilajit Resin (30g) is priced at $36.99–$39.99 with free shipping, making it well under $50 and one of the best values at any price point. Their capsules (30 count) are $34.99 with free shipping. Both products include the full COA, 85%+ verified fulvic acid, and Altai Mountain sourcing. At $1.23–$1.33 per gram, they're competitive with mid-tier alternatives that have significantly lower documented purity.",
+      text: "Yes. Black Lotus Shilajit Resin (30g) is priced at $36.99–$39.99 with free shipping, making it well under $50 and one of the best values at any price point. Their capsules (30 count) are $34.99 with free shipping. Both products include the full COA, verified fulvic acid (64–74% depending on product form), and Altai Mountain sourcing. At $1.23–$1.33 per gram, they're competitive with mid-tier alternatives that have significantly lower documented purity.",
     },
   },
   {
@@ -87,12 +87,12 @@ const UNDER_50_PICKS = [
     price: "$39.99",
     weight: "30g",
     pricePerGram: "$1.33",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
     coa: true,
     thirdParty: true,
-    verdict: "Best quality under $50 — 85%+ verified FA, full COA, free shipping. The rare case where premium quality is actually affordable.",
+    verdict: "Best quality under $50 — 64.51% verified FA (COA, IAS Laboratories), full heavy metals panel, free shipping. The rare case where premium quality is actually affordable.",
     affiliate: AFFILIATE_RESIN,
     badge: "Best Overall",
   },
@@ -102,12 +102,12 @@ const UNDER_50_PICKS = [
     price: "$34.99",
     weight: "30 caps",
     pricePerGram: "~$1.17",
-    fulvic: "85%+",
+    fulvic: "74.30%",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
     coa: true,
     thirdParty: true,
-    verdict: "Same S-tier quality in capsule form for under $35 — the most convenient high-purity option under $50.",
+    verdict: "S-tier quality in capsule form for under $35 — 74.30% verified FA (COA), the most convenient high-purity option under $50.",
     affiliate: AFFILIATE_CAPS,
     badge: "Best Capsule",
   },
@@ -198,7 +198,7 @@ export default function BestShilajitUnder50() {
               {[
                 { range: "Under $20", label: "High Risk", desc: "Almost no legitimate high-quality resin products. Likely diluted, adulterated, or untested. COA availability is rare. Avoid for resin; capsules with lower doses may be OK.", color: "border-red-200 text-red-600" },
                 { range: "$20–$35", label: "Mixed Quality", desc: "Good budget options exist (Sayan, small Natural Shilajit sizes) but quality varies widely. COA availability improves. Look carefully at $/gram before committing.", color: "border-amber-200 text-amber-600" },
-                { range: "$35–$50", label: "Best Value Zone", desc: "This is where the highest-value products live. Black Lotus at $36.99–$39.99 is the market leader here. Full COA, 85%+ FA, free shipping — all under $50.", color: "border-[#D1EDD8] text-[#10B981]" },
+                { range: "$35–$50", label: "Best Value Zone", desc: "This is where the highest-value products live. Black Lotus at $36.99–$39.99 is the market leader here. Full COA, 64–74% FA (by form), free shipping — all under $50.", color: "border-[#D1EDD8] text-[#10B981]" },
               ].map(({ range, label, desc, color }) => (
                 <div key={range} className={`bg-white border ${color.split(" ")[0]} rounded-xl p-4`}>
                   <div className={`text-xs font-black mb-1 ${color.split(" ")[1]}`}>{range}</div>
@@ -284,7 +284,7 @@ export default function BestShilajitUnder50() {
               Black Lotus Shilajit Resin sits at $36.99–$39.99 for 30g — firmly under $50 and, by any objective measure, the best-documented quality product available at this price point anywhere in the market.
             </p>
             <p>
-              At $1.33/gram with 85%+ verified fulvic acid, you're paying $1.57 per gram of actual fulvic acid. Compare this to a $25 product with 40% fulvic acid at $0.83/gram: your effective cost per gram of fulvic acid is $2.08 — you'd be paying more for the active compound while getting less. Price transparency in shilajit requires looking past the sticker price.
+              At $1.33/gram with 64.51% verified fulvic acid (Batch 93 COA), you're paying $2.06 per gram of actual fulvic acid. Compare this to a $25 product with 40% fulvic acid at $0.83/gram: your effective cost per gram of fulvic acid is $2.08 — essentially the same per gram of active compound, but with far weaker quality documentation. Price transparency in shilajit requires looking past the sticker price.
             </p>
             <p>
               The COA is publicly linked and issued by an ISO-accredited third-party laboratory. The heavy metals panel shows all values below FDA action levels. Source is Himalayan above 14,000 feet. Free shipping is included. This is what value actually looks like in this market.
@@ -297,12 +297,12 @@ export default function BestShilajitUnder50() {
               <div>
                 <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">#1 Under $50 — S-Tier</div>
                 <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
-                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · Free shipping · 85%+ fulvic acid</p>
+                <p className="text-xs text-[#0D1F14] mt-1">$39.99 / 30g · Free shipping · 64.51% fulvic acid (COA verified)</p>
               </div>
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
-                "85%+ verified fulvic acid — highest in under-$50 range",
+                "64.51% verified fulvic acid (Batch 93, IAS Laboratories) — top-documented resin in under-$50 range",
                 "ISO-accredited third-party COA",
                 "Full heavy metals panel within FDA limits",
                 "Himalayan source above 14,000 feet",

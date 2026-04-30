@@ -40,7 +40,7 @@ const faqItems: FaqItem[] = [
     name: "What percentage of fulvic acid should shilajit have?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "A quality shilajit product should contain at least 60% fulvic acid by weight. Premium-grade shilajit like Black Lotus contains 85% or higher. Anything below 50% is considered low potency. Always verify the percentage on a third-party Certificate of Analysis (COA), not just the product label.",
+      text: "A quality shilajit product should contain at least 60% fulvic acid by weight. Premium-grade shilajit like Black Lotus contains 64–74% depending on product form (resin: 64.51%, capsules: 74.30%, tablets: 73.11% — all Batch 93, IAS Laboratories 2025). Anything below 50% is considered low potency. Always verify the percentage on a third-party Certificate of Analysis (COA), not just the product label.",
     },
   },
   {
@@ -252,7 +252,7 @@ export default function WhatIsFulvicAcid() {
             </div>
 
             <p>
-              Black Lotus Shilajit Resin consistently tests at <strong className="text-[#10B981]">85%+ fulvic acid</strong> — placing it firmly in the elite tier. Independent batch testing by IAS Laboratories (Phoenix, AZ) confirms <strong className="text-[#0D1F14]">161mg of fulvic acid per serving</strong> (batch #93-94), one of the highest per-serving doses we&apos;ve found in a purified resin.
+              Black Lotus Shilajit Resin tests at <strong className="text-[#10B981]">64.51% fulvic acid</strong> (Batch 93, June 2025 COA) — placing it firmly in the elite tier. Independent batch testing by IAS Laboratories (Phoenix, AZ) confirms <strong className="text-[#0D1F14]">161mg of fulvic acid per serving</strong>, one of the highest per-serving doses we&apos;ve found in a purified resin. Capsules test at 74.30% FA on the same batch.
             </p>
           </div>
         </section>
@@ -318,7 +318,7 @@ export default function WhatIsFulvicAcid() {
           <ul className="space-y-1.5 mb-5">
             {[
               "Tested every batch by IAS Laboratories, Phoenix, AZ — full batch COAs publicly available",
-              "85%+ fulvic acid verified — 161mg per serving (batch #93-94)",
+              "64.51% fulvic acid (resin) / 74.30% (capsules) — Batch 93 COA, IAS Laboratories",
               "161mg fulvic acid per serving — among highest on market",
               "Heavy metals panel: all below FDA action levels",
               "Cold-process purification preserves heat-sensitive bioactive compounds",
@@ -372,10 +372,10 @@ export default function WhatIsFulvicAcid() {
               Fulvic acid isn&apos;t a marketing buzzword — it&apos;s the biochemical mechanism that makes shilajit genuinely valuable. The research is real, the cellular transport effects are documented, and the benefits from mitochondrial support to testosterone production have been replicated in controlled human trials.
             </p>
             <p>
-              But none of that matters if your product contains 20% fulvic acid in a glorified mud paste. The difference between a 30% and an 85% product isn&apos;t incremental — it&apos;s the difference between taking an active supplement and paying premium prices for essentially nothing.
+              But none of that matters if your product contains 20% fulvic acid in a glorified mud paste. The difference between a 30% and a 65%+ product isn&apos;t incremental — it&apos;s the difference between taking an active supplement and paying premium prices for essentially nothing.
             </p>
             <p>
-              Our recommendation: only buy shilajit products with a publicly available, third-party COA showing a specific fulvic acid percentage. <strong className="text-[#10B981]">Black Lotus Shilajit Resin</strong> is the only product at its price point that meets this standard with 85%+ verified content. See exactly{" "}
+              Our recommendation: only buy shilajit products with a publicly available, third-party COA showing a specific fulvic acid percentage. <strong className="text-[#10B981]">Black Lotus Shilajit Resin</strong> is the only product at its price point that meets this standard with 64.51% verified FA (resin, Batch 93 COA, IAS Laboratories). See exactly{" "}
               <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">how brands score on fulvic acid content</Link>{" "}
               in our full ranking.
             </p>

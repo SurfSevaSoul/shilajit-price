@@ -583,7 +583,7 @@ export default function ShilajitVsCreatine() {
       {/* BlackLotusCTA */}
       <BlackLotusCTA
         headline="Our #1 Shilajit Pick for Athletes: Black Lotus"
-        subtext="85%+ fulvic acid verified by IAS Laboratories · Altai Mountains sourced at 16,000+ ft · Full heavy metals panel · Free shipping. The highest-purity resin we've found at any price point."
+        subtext="64.51% fulvic acid (resin, Batch 93, IAS Laboratories) · Altai Mountains sourced at 16,000+ ft · Full heavy metals panel · Free shipping. The highest-purity resin we've found at any price point."
         buttonText="Shop Black Lotus Shilajit →"
       />
 

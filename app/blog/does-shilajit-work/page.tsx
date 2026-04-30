@@ -292,7 +292,7 @@ export default function DoesShilajitWork() {
                   name: "Black Lotus Shilajit Resin",
                   tier: "S",
                   color: "bg-amber-400 text-amber-900",
-                  why: "85%+ fulvic acid — the highest verified FA in our database. Full-panel COA with heavy metals values. $1.23/g. Best verified potency per dollar.",
+                  why: "64.51% fulvic acid (resin, Batch 93 COA, IAS Labs) — among the highest verified FA in our database. Full-panel COA with heavy metals values. $1.23/g. Best verified potency per dollar.",
                   href: BL_RESIN,
                 },
                 {

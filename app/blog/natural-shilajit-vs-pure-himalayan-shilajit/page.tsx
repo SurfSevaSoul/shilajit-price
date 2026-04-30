@@ -680,7 +680,7 @@ export default function NaturalShilajitVsPureHimalayan() {
       {/* CTAs — one for each brand */}
       <BlackLotusCTA
         headline="Also Worth Considering: Black Lotus Shilajit"
-        subtext="While Natural Shilajit and Pure Himalayan are both strong choices, Black Lotus is our overall #1 rated brand — 85%+ fulvic acid verified by IAS Laboratories, Altai sourced at 16,000+ ft, full heavy metals COA, and free shipping."
+        subtext="While Natural Shilajit and Pure Himalayan are both strong choices, Black Lotus is our overall #1 rated brand — 64.51% fulvic acid (resin, Batch 93 COA, IAS Laboratories), Altai sourced at 16,000+ ft, full heavy metals COA, and free shipping."
         buttonText="Shop Black Lotus Shilajit →"
       />
 

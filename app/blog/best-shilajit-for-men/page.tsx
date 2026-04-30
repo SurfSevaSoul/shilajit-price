@@ -51,7 +51,7 @@ const faqItems: FaqItem[] = [
     name: "Should men choose resin or capsules for shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both work if the product is high quality. Resin is the most authentic form and allows flexible dosing — you can dissolve it in warm water or coffee. Capsules are more convenient for consistent daily use and travel. The most important variable is not the form but the verified fulvic acid percentage. A 200mg capsule with 85% fulvic acid delivers more active compound than a 400mg resin with 40% fulvic acid. See our full comparison at the link below.",
+      text: "Both work if the product is high quality. Resin is the most authentic form and allows flexible dosing — you can dissolve it in warm water or coffee. Capsules are more convenient for consistent daily use and travel. The most important variable is not the form but the verified fulvic acid percentage. A 200mg capsule with 74% fulvic acid delivers more active compound than a 400mg resin with 40% fulvic acid. See our full comparison at the link below.",
     },
   },
   {
@@ -86,7 +86,7 @@ const TOP_PICKS = [
     name: "Black Lotus Shilajit Resin",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
-    fulvic: "85%+",
+    fulvic: "64.51%",
     pricePerGram: "$1.33",
     verdict: "Best overall for men — highest verified FA, full COA, proven testosterone-range dosing",
     affiliate: AFFILIATE_RESIN,
@@ -96,7 +96,7 @@ const TOP_PICKS = [
     name: "Black Lotus Extra Strength Capsules",
     tier: "S",
     tierColor: "bg-amber-400 text-amber-900",
-    fulvic: "85%+",
+    fulvic: "74.30%",
     pricePerGram: "~$1.17",
     verdict: "Best capsule option — same S-tier resin in convenient 200mg caps, ideal for daily consistency",
     affiliate: AFFILIATE_CAPS,
@@ -315,10 +315,10 @@ export default function BestShilajitForMen() {
               Black Lotus is the top pick for men because it addresses all three of the primary reasons men take shilajit — testosterone support, energy, and recovery — at the highest verified quality level available.
             </p>
             <p>
-              Their resin contains 85%+ fulvic acid, verified by an ISO-accredited independent lab. This is well above the concentration required to replicate the clinical research dosing. At 175mg twice daily, you're delivering approximately 148mg of actual fulvic acid per dose — right in the clinically studied range.
+              Their resin contains 64.51% fulvic acid (Batch 93, IAS Laboratories), verified by an ISO-accredited independent lab. This is well above the concentration required to replicate the clinical research dosing. At 175mg twice daily, you're delivering approximately 113mg of actual fulvic acid per dose — right in the clinically studied range.
             </p>
             <p>
-              For men who prefer capsules for consistency, their Extra Strength capsules use the same 85%+ resin in 200mg doses. Two capsules twice daily gives you 800mg of resin — a slightly higher dose than the clinical protocol, which is appropriate for men with more aggressive performance goals or those over 50 with greater testosterone decline.
+              For men who prefer capsules for consistency, their Extra Strength capsules contain 74.30% fulvic acid in pre-measured 200mg doses. Two capsules twice daily gives you 800mg of resin — a slightly higher dose than the clinical protocol, which is appropriate for men with more aggressive performance goals or those over 50 with greater testosterone decline.
             </p>
           </div>
 
@@ -333,7 +333,7 @@ export default function BestShilajitForMen() {
             </div>
             <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
               {[
-                "85%+ verified fulvic acid — above clinical study threshold",
+                "64–74% verified fulvic acid (by form) — above clinical study threshold",
                 "ISO-accredited COA with specific measured values",
                 "Full heavy metals panel: all within FDA limits",
                 "Himalayan source above 14,000 feet",

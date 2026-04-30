@@ -483,7 +483,7 @@ export default function HowLongShilajitWork() {
             </p>
             <h3 className="text-base font-bold text-[#0D1F14] mb-2">Black Lotus Shilajit</h3>
             <ul className="text-xs text-[#4A6358] space-y-1 mb-4">
-              <li>✓ 85%+ fulvic acid — third-party COA verified</li>
+              <li>✓ 64.51% fulvic acid (resin, Batch 93 COA) — third-party verified</li>
               <li>✓ Full-panel heavy metals testing</li>
               <li>✓ Altai Mountains sourced and documented</li>
               <li>✓ Dosing aligns with JISSN study protocol</li>

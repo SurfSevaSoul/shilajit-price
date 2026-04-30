@@ -55,7 +55,7 @@ const faqItems: FaqItem[] = [
     name: "What fulvic acid percentage should I look for in shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Look for at least 60% fulvic acid verified by a third-party Certificate of Analysis. Premium-grade products from reputable brands like Black Lotus reach 85%+ fulvic acid. Anything below 50% or not backed by a COA is unlikely to deliver meaningful results.",
+      text: "Look for at least 60% fulvic acid verified by a third-party Certificate of Analysis. Premium-grade products from reputable brands like Black Lotus report 64–74% depending on product form (Batch 93 COA, IAS Labs). Anything below 50% or not backed by a COA is unlikely to deliver meaningful results.",
     },
   },
   {
@@ -331,8 +331,8 @@ export default function AltaiVsHimalayanShilajit() {
               <h3 className="text-lg font-bold text-[#10B981] mb-3">Altai-sourced</h3>
               <div className="space-y-3">
                 {[
-                  { name: "Black Lotus Pure Altai Resin 30g", tier: "S", price: "$36.99", perG: "$1.23/g", fulvic: "85%+", coa: true },
-                  { name: "Black Lotus Extra Strength Capsules 60ct", tier: "S", price: "$43.99", perG: "—", fulvic: "85%+", coa: true },
+                  { name: "Black Lotus Pure Altai Resin 30g", tier: "S", price: "$36.99", perG: "$1.23/g", fulvic: "64.51%", coa: true },
+                  { name: "Black Lotus Extra Strength Capsules 60ct", tier: "S", price: "$43.99", perG: "—", fulvic: "74.30%", coa: true },
                   { name: "Sayan Altai Shilajit Resin 30g", tier: "A", price: "$29.99", perG: "$1.00/g", fulvic: "COA verified", coa: true },
                   { name: "Sayan Altai Shilajit Resin 100g", tier: "A", price: "$69.99", perG: "$0.70/g", fulvic: "COA verified", coa: true },
                 ].map((p) => (
@@ -385,7 +385,7 @@ export default function AltaiVsHimalayanShilajit() {
           </h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              <strong className="text-[#0D1F14]">If you prioritize the highest verified fulvic acid content:</strong> Choose Altai. Black Lotus Pure Altai Resin at 85%+ is the highest verified fulvic acid in our database, period. The cold-processing and granite-rich mineral profile appear to support consistently high fulvic acid retention.
+              <strong className="text-[#0D1F14]">If you prioritize the highest verified fulvic acid content:</strong> Choose Altai. Black Lotus publishes batch-specific COA data (Batch 93: 64.51% resin, 74.30% capsules) — among the highest verified concentrations in our database with full IAS Laboratories documentation. The cold-processing and granite-rich mineral profile appear to support consistently high fulvic acid retention.
             </p>
             <p>
               <strong className="text-[#0D1F14]">If you want ISO-certified testing and strong Ayurvedic tradition:</strong> Choose Pure Himalayan Shilajit. Their Ladakh-sourced resin is tested under ISO/IEC 17025 accreditation — the most rigorous third-party standard available. If certification rigor matters to you, they are the Himalayan pick.
@@ -413,7 +413,7 @@ export default function AltaiVsHimalayanShilajit() {
             <div className="border border-[#D1EDD8] rounded-xl p-4">
               <div className="text-xs font-bold text-[#7BA899] uppercase tracking-widest mb-1">Altai Origin · S-Tier</div>
               <div className="font-black text-[#0D1F14] text-sm mb-1">Black Lotus Pure Altai Resin</div>
-              <div className="text-xs text-[#0D1F14] mb-3">85%+ fulvic acid · Full COA · $1.23/g · Cold-processed · GMP certified</div>
+              <div className="text-xs text-[#0D1F14] mb-3">64.51% FA (resin, Batch 93 COA) · IAS Labs · $1.23/g · Cold-processed · GMP certified</div>
               <a
                 href={AFFILIATE_RESIN}
                 target="_blank"

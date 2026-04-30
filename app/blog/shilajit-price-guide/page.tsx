@@ -47,7 +47,7 @@ const faqItems: FaqItem[] = [
     name: "What is a good price for shilajit resin?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "A good price for quality-verified shilajit resin is $1.00–$1.75 per gram, or roughly $30–$55 for a standard 30g jar. The best value in our database is Black Lotus Pure Altai Resin at $1.23/g with 85%+ fulvic acid verified by COA. Anything below $0.70/g in a resin format should be scrutinized carefully — that price point typically cannot support independent third-party testing and proper purification. Anything above $3.50/g is in premium/specialty territory and requires verifying what specifically justifies the markup.",
+      text: "A good price for quality-verified shilajit resin is $1.00–$1.75 per gram, or roughly $30–$55 for a standard 30g jar. The best value in our database is Black Lotus Pure Altai Resin at $1.23/g with 64.51% fulvic acid verified by COA (Batch 93, IAS Laboratories). Anything below $0.70/g in a resin format should be scrutinized carefully — that price point typically cannot support independent third-party testing and proper purification. Anything above $3.50/g is in premium/specialty territory and requires verifying what specifically justifies the markup.",
     },
   },
   {
@@ -316,8 +316,8 @@ export default function ShilajitPriceGuide() {
             <tbody>
               {[
                 // S-tier
-                ["Black Lotus Pure Altai Resin 30g", "S", "$36.99", "$1.23", "Resin", "✓ 85%+ FA"],
-                ["Black Lotus Extra Strength Caps 60ct", "S", "$43.99", "$1.47", "Capsules", "✓ 85%+ FA"],
+                ["Black Lotus Pure Altai Resin 30g", "S", "$36.99", "$1.23", "Resin", "✓ 64.51% FA"],
+                ["Black Lotus Extra Strength Caps 60ct", "S", "$43.99", "$1.47", "Capsules", "✓ 74.30% FA"],
                 ["Natural Shilajit Resin 20g", "S", "$49.00", "$2.45", "Resin", "✓ DBP verified"],
                 ["Pure Himalayan Liquid Drops 50mL", "S", "$99.99", "$2.00", "Liquid", "✓ ISO 17025"],
                 // A-tier — resins, sorted by $/g
@@ -616,10 +616,10 @@ export default function ShilajitPriceGuide() {
           </p>
           <p>
             The meaningful quality ceiling in our database is at around $1.50–$1.75/g. Black
-            Lotus at $1.23/g delivers 85%+ verified fulvic acid, a full-panel COA, and GMP
-            certification. Going from $1.23/g to $3.11/g (Pürblack) does not deliver 2.5× more
-            fulvic acid or 2.5× better safety documentation — it delivers a patented US
-            pharmaceutical process and 5 US patents.
+            Lotus at $1.23/g delivers 64.51% verified fulvic acid (Batch 93 COA, IAS Laboratories),
+            a full-panel COA, and GMP certification. Going from $1.23/g to $3.11/g (Pürblack) does
+            not deliver 2.5× more fulvic acid or 2.5× better safety documentation — it delivers a
+            patented US pharmaceutical process and 5 US patents.
           </p>
           <p>
             Whether that patent premium is worth it depends on whether the specific attributes
@@ -727,7 +727,7 @@ export default function ShilajitPriceGuide() {
                 <span className="shrink-0 w-6 h-6 rounded bg-amber-400 text-amber-900 flex items-center justify-center text-[10px] font-black">S</span>
                 <div>
                   <div className="font-bold">Black Lotus Pure Altai Resin 30g — $36.99 ($1.23/g) ⭐ Best Overall Value</div>
-                  <div className="text-[#7BA899] mt-0.5">85%+ fulvic acid, full COA, cold-processed, GMP certified. The highest verified potency in the database at a competitive price.</div>
+                  <div className="text-[#7BA899] mt-0.5">64.51% fulvic acid (resin, Batch 93 COA, IAS Labs), full COA, cold-processed, GMP certified. Top verified potency at a competitive price.</div>
                 </div>
               </div>
               <div className="flex gap-3">
@@ -810,7 +810,7 @@ export default function ShilajitPriceGuide() {
       {/* Inline BlackLotusCTA */}
       <BlackLotusCTA
         headline="Best Overall Value: Black Lotus Pure Altai Resin"
-        subtext="$1.23/g · 85%+ fulvic acid verified by COA · Full heavy metals panel · Cold-processed Altai resin · GMP certified · Free shipping. The top-ranked product in our database on verified potency per dollar."
+        subtext="$1.23/g · 64.51% fulvic acid (resin, Batch 93 COA, IAS Labs) · Full heavy metals panel · Cold-processed Altai resin · GMP certified · Free shipping. The top-ranked product in our database on verified potency per dollar."
         buttonText="Shop Black Lotus — $36.99 →"
       />
 

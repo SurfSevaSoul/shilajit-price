@@ -44,7 +44,7 @@ export default function BlogSidebar({ currentSlug }: BlogSidebarProps) {
           <span className="text-xs font-bold text-[#0D1F14]">Black Lotus Resin</span>
         </div>
         <ul className="space-y-1 mb-3">
-          {["85%+ fulvic acid", "Third-party COA", "Free shipping", "$36.99"].map((f) => (
+          {["64.51% fulvic acid (Batch 93 COA)", "Third-party COA", "Free shipping", "$36.99"].map((f) => (
             <li key={f} className="flex items-center gap-1.5">
               <span className="text-[#10B981] text-[10px]">✓</span>
               <span className="text-[11px] text-[#4A6358]">{f}</span>

@@ -335,7 +335,7 @@ export default function HowToSpotFakeShilajit() {
           <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
             {[
               "Third-party ISO lab COA — publicly linked to lot numbers",
-              "85%+ fulvic acid by titration method",
+              "64.51% fulvic acid by titration (resin, Batch 93 COA, IAS Laboratories)",
               "Heavy metals panel: all values published, all within limits",
               "Dissolves cleanly — golden-amber water solution, no residue",
               "Softens with body heat, shatters when frozen",

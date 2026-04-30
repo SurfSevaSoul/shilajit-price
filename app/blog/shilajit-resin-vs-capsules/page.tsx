@@ -168,7 +168,7 @@ export default function ShilajitResinVsCapsules() {
             </p>
             <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 mt-2">
               <div className="text-xs font-bold text-[#10B981] mb-2">Best resin pick: Black Lotus Pure Altai Resin</div>
-              <p className="text-xs text-[#0D1F14] leading-relaxed mb-3">85%+ verified fulvic acid, third-party COA, $39.99/30g ($1.33/gram). The benchmark for quality resin at a reasonable price.</p>
+              <p className="text-xs text-[#0D1F14] leading-relaxed mb-3">64.51% verified fulvic acid (Batch 93, IAS Labs), third-party COA, $39.99/30g ($1.33/gram). The benchmark for quality resin at a reasonable price.</p>
               <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"
                 className="inline-block px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors">
                 Shop Resin — $39.99 →

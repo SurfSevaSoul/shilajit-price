@@ -180,9 +180,9 @@ const OUTCOME_DATA: Record<
     name: "Black Lotus Shilajit",
     headline: "Your best match is Black Lotus Shilajit",
     subhead:
-      "Highest fulvic acid in our database — 85% — perfect for your goals",
+      "Highest verified COA-backed potency in our database — 64–74% FA by form — perfect for your goals",
     tier: "S",
-    fulvicAcid: "85%",
+    fulvicAcid: "64–74% (by form)",
     pricePerGram: "$1.23/g",
     form: "Resin",
     origin: "Altai",
@@ -281,7 +281,7 @@ const OUTCOME_DATA: Record<
     headline: "Your best match is Black Lotus — Convenience Format",
     subhead: "S-tier quality in formats made for your lifestyle",
     tier: "S",
-    fulvicAcid: "85%",
+    fulvicAcid: "64–74% (by form)",
     pricePerGram: "Varies by format",
     form: "Gummies / Tincture / Honey",
     origin: "Altai",
@@ -390,7 +390,7 @@ function getReasonBullets(
   switch (outcome) {
     case "bl":
       return [
-        `Highest fulvic acid concentration (85%) in our database — ideal for ${goal}`,
+        `Highest verified COA-backed potency in our database (64–74% FA by form) — ideal for ${goal}`,
         answers[5] === "strict"
           ? "Third-party COA verified with full heavy metals panel — meets your strict purity standard"
           : "Lab-verified purity with Certificate of Analysis available on brand website",

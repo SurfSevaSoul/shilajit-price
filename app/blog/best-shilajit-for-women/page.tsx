@@ -288,7 +288,7 @@ export default function BestShilajitForWomen() {
                   <td className="px-3 py-3 text-center font-bold text-emerald-600">S</td>
                   <td className="px-3 py-3 text-center">$36.99</td>
                   <td className="px-3 py-3 text-center">$1.23/g</td>
-                  <td className="px-3 py-3 text-center font-semibold">85%+</td>
+                  <td className="px-3 py-3 text-center font-semibold">64.51%</td>
                   <td className="px-3 py-3 text-center">✓</td>
                   <td className="px-3 py-3 text-[#0D1F14]">Highest verified fulvic acid for maximum mineral support</td>
                 </tr>
@@ -307,7 +307,7 @@ export default function BestShilajitForWomen() {
                   <td className="px-3 py-3 text-center font-bold text-emerald-600">S</td>
                   <td className="px-3 py-3 text-center">$43.99</td>
                   <td className="px-3 py-3 text-center">$1.47/g</td>
-                  <td className="px-3 py-3 text-center font-semibold">85%+</td>
+                  <td className="px-3 py-3 text-center font-semibold">74.30%</td>
                   <td className="px-3 py-3 text-center">✓</td>
                   <td className="px-3 py-3 text-[#0D1F14]">Most convenient daily use form with same purity as resin</td>
                 </tr>
@@ -385,8 +385,8 @@ export default function BestShilajitForWomen() {
             <p>
               <strong>Capsules and tablets</strong> eliminate that friction. You take one or two
               with water and you're done. The purity is the same as resin when sourced from the
-              same batch — Black Lotus Capsules use the same 85%+ fulvic acid resin as their
-              standalone resin product, for example.
+              same batch — Black Lotus Capsules use the same high-purity resin as their
+              standalone resin product, with 74.30% verified fulvic acid, for example.
             </p>
             <p>
               The best form is whichever one you'll actually take every day. Consistency over weeks
@@ -504,7 +504,7 @@ export default function BestShilajitForWomen() {
               </p>
               <p className="font-bold text-[#0D1F14] mb-1">Black Lotus Pure Altai Resin</p>
               <p className="text-xs text-[#0D1F14] mb-3">
-                85%+ fulvic acid · COA verified · $36.99 · $1.23/g
+                64.51% fulvic acid · COA verified · $36.99 · $1.23/g
               </p>
               <a
                 href={AFFILIATE_RESIN}
@@ -521,7 +521,7 @@ export default function BestShilajitForWomen() {
               </p>
               <p className="font-bold text-[#0D1F14] mb-1">Black Lotus Extra Strength Capsules</p>
               <p className="text-xs text-[#0D1F14] mb-3">
-                85%+ fulvic acid · COA verified · $43.99 · 60ct
+                74.30% fulvic acid · COA verified · $43.99 · 60ct
               </p>
               <a
                 href={AFFILIATE_CAPS}

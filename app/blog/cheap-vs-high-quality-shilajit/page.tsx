@@ -63,7 +63,7 @@ const faqItems: FaqItem[] = [
     name: "What is the best value shilajit (quality per dollar)?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Based on our analysis, Black Lotus Shilajit at $1.33/gram offers the best combination of verified quality (85%+ FA, third-party COA, heavy metals tested) and price competitiveness at its quality tier. For budget buyers who still want documentation, Sayan Shilajit at approximately $0.87/gram in large sizes is the best value with some COA coverage. Use our comparison database to filter by COA status and sort by price per gram.",
+      text: "Based on our analysis, Black Lotus Shilajit at $1.33/gram offers the best combination of verified quality (64.51% FA resin / 74.30% caps, Batch 93 COA, heavy metals tested) and price competitiveness at its quality tier. For budget buyers who still want documentation, Sayan Shilajit at approximately $0.87/gram in large sizes is the best value with some COA coverage. Use our comparison database to filter by COA status and sort by price per gram.",
     },
   },
 ];
@@ -181,7 +181,7 @@ export default function CheapVsHighQualityShilajit() {
               },
               {
                 factor: "4. Active compound concentration",
-                expensive: "High fulvic acid content (60–85%+) means more active compound per gram, so each serving delivers more therapeutic potential.",
+                expensive: "High fulvic acid content (60–75%+, COA-verified) means more active compound per gram, so each serving delivers more therapeutic potential.",
                 cheap: "Low or unverified fulvic acid (often 10–30% in actuality, regardless of label claims) requires larger doses for equivalent effect.",
                 icon: "📊",
               },
@@ -268,7 +268,7 @@ export default function CheapVsHighQualityShilajit() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value shilajit: quality per dollar analysis</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              True value in the shilajit market is active compound (fulvic acid) per dollar — not just price per gram. A $1.33/gram product with 85% verified fulvic acid delivers more bioactive compound per dollar than a $0.80/gram product with only 30% fulvic acid.
+              True value in the shilajit market is active compound (fulvic acid) per dollar — not just price per gram. A $1.33/gram product with 64.51% verified fulvic acid (Black Lotus resin, Batch 93 COA) delivers more bioactive compound per dollar than a $0.80/gram product with only 30% fulvic acid.
             </p>
             <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
               <table className="w-full text-xs">
@@ -286,7 +286,7 @@ export default function CheapVsHighQualityShilajit() {
                   {[
                     { name: "Generic Budget Resin", ppg: "$0.50", fa: "~15%", famg: "~300mg", coa: false, verdict: "Poor value" },
                     { name: "Sayan Shilajit", ppg: "$0.87", fa: "~60%", famg: "~690mg", coa: true, verdict: "Good budget value" },
-                    { name: "Black Lotus Resin", ppg: "$1.33", fa: "85%+", famg: "~639mg", coa: true, verdict: "Best verified value" },
+                    { name: "Black Lotus Resin", ppg: "$1.33", fa: "64.51%", famg: "~485mg", coa: true, verdict: "Best verified value" },
                     { name: "Essencraft", ppg: "$1.43", fa: "75%+", famg: "~524mg", coa: true, verdict: "Premium transparency" },
                     { name: "Ultra-Premium Brand", ppg: "$2.50", fa: "80%", famg: "~320mg", coa: true, verdict: "Diminishing returns" },
                   ].map((row, i) => (
@@ -314,7 +314,7 @@ export default function CheapVsHighQualityShilajit() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value premium pick: Black Lotus</h2>
           <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Black Lotus sits at the intersection of quality and value in the premium tier. At $1.33/gram with 85%+ third-party-verified fulvic acid, their effective active compound per dollar is actually competitive with mid-range products that have lower FA content — while offering dramatically better documentation and transparency.
+              Black Lotus sits at the intersection of quality and value in the premium tier. At $1.33/gram with 64.51% third-party-verified fulvic acid (resin, Batch 93, IAS Laboratories), their effective active compound per dollar is actually competitive with mid-range products that have lower FA content — while offering dramatically better documentation and transparency.
             </p>
             <p>
               This is the &quot;best value premium&quot; — not the cheapest on the market, but the most cost-efficient way to get verified-quality shilajit with full transparency. Compare this to ultra-premium brands charging $2.50+/gram for sometimes lower verified fulvic acid content.
@@ -328,7 +328,7 @@ export default function CheapVsHighQualityShilajit() {
             <div>
               <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Best Value Premium — S-Tier</div>
               <h3 className="text-base font-black text-[#0D1F14]">Black Lotus Shilajit Resin</h3>
-              <p className="text-xs text-[#0D1F14] mt-1">$1.33/gram · 85%+ FA · Third-party COA · Free shipping</p>
+              <p className="text-xs text-[#0D1F14] mt-1">$1.33/gram · 64.51% FA (Batch 93 COA) · Third-party tested · Free shipping</p>
             </div>
           </div>
           <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"

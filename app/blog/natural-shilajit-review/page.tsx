@@ -65,7 +65,7 @@ const faqItems: FaqItem[] = [
     name: "Is Natural Shilajit worth the price?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "At $2.45/g for the flagship 20g jar, Natural Shilajit is priced at a premium relative to other verified brands. Whether that premium is worth it depends on what you're optimizing for. If DBP verification and triple-method COA depth are priorities — and they should be for anyone who wants the deepest available confirmation of product authenticity — then yes, Natural Shilajit is worth the price. If you want the best fulvic acid percentage per dollar, Black Lotus at $1.23/g with 85%+ FA is the stronger value. Natural Shilajit's 150g bulk jar reduces the per-gram cost to $1.66/g, which is more competitive for high-volume users.",
+      text: "At $2.45/g for the flagship 20g jar, Natural Shilajit is priced at a premium relative to other verified brands. Whether that premium is worth it depends on what you're optimizing for. If DBP verification and triple-method COA depth are priorities — and they should be for anyone who wants the deepest available confirmation of product authenticity — then yes, Natural Shilajit is worth the price. If you want the best fulvic acid percentage per dollar, Black Lotus at $1.23/g with 64.51% verified FA (resin, Batch 93 COA) is the stronger value. Natural Shilajit's 150g bulk jar reduces the per-gram cost to $1.66/g, which is more competitive for high-volume users.",
     },
   },
   {
@@ -73,7 +73,7 @@ const faqItems: FaqItem[] = [
     name: "How does Natural Shilajit compare to Black Lotus?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both are S-tier Altai-sourced brands with strong COA documentation. Black Lotus leads on fulvic acid percentage (85%+ vs ~70%) and price-per-gram ($1.23 vs $2.45 for the flagship). Natural Shilajit leads on verification depth — DBP testing and a triple-method COA (ICP-MS + LC-MS + FTIR) represent the most comprehensive analysis in our database. Black Lotus has free shipping; Natural Shilajit does not on all orders. For maximum verified potency at lowest cost: Black Lotus. For the most thoroughly verified product available: Natural Shilajit.",
+      text: "Both are S-tier Altai-sourced brands with strong COA documentation. Black Lotus leads on fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA, vs Natural Shilajit's ~70%) and price-per-gram ($1.23 vs $2.45 for the flagship). Natural Shilajit leads on verification depth — DBP testing and a triple-method COA (ICP-MS + LC-MS + FTIR) represent the most comprehensive analysis in our database. Black Lotus has free shipping; Natural Shilajit does not on all orders. For maximum verified potency at lowest cost: Black Lotus. For the most thoroughly verified product available: Natural Shilajit.",
     },
   },
 ];
@@ -365,7 +365,7 @@ export default function NaturalShilajitReview() {
                   color: "border-[#D1EDD8]",
                   badge: "bg-amber-400 text-amber-900",
                   tier: "S",
-                  who: "Buyers optimizing for highest verified fulvic acid (85%+) at the best price per gram ($1.23/g). Full-panel COA, free shipping, 30-day guarantee. Best overall value in the S-tier.",
+                  who: "Buyers optimizing for highest verified fulvic acid (64.51% resin / 74.30% caps, Batch 93 COA) at the best price per gram ($1.23/g). Full-panel COA, free shipping, 30-day guarantee. Best overall value in the S-tier.",
                 },
                 {
                   brand: "Pure Himalayan",
@@ -418,7 +418,7 @@ export default function NaturalShilajitReview() {
                 {[
                   "$2.45/g for the flagship 20g jar — premium price vs other S-tier brands",
                   "No free shipping on all orders (unlike Black Lotus)",
-                  "~70% fulvic acid vs 85%+ for Black Lotus — lower documented FA%",
+                  "~70% fulvic acid vs 64.51%/74.30% for Black Lotus (resin/capsules, Batch 93 COA) — lower documented FA%",
                   "No ISO/IEC 17025 lab accreditation (Pure Himalayan has this)",
                   "Smaller brand presence — fewer reviews than Amazon-listed competitors",
                 ].map((item) => (
@@ -442,7 +442,7 @@ export default function NaturalShilajitReview() {
               Natural Shilajit earns a 9.2/10 from our team. The verification depth here is genuinely exceptional — DBP testing alone distinguishes them from every other brand in our database, and the triple-method COA approach is the closest thing to definitive authenticity proof available in the consumer market.
             </p>
             <p>
-              The deductions reflect real tradeoffs: the per-gram cost on the flagship jar is the highest of any S-tier product we track, and the fulvic acid percentage (~70%) trails Black Lotus (85%+). For buyers whose primary goal is maximum bioactive concentration per dollar, Black Lotus is the stronger value. For buyers who want the deepest possible assurance that what they&apos;re taking is genuine, fully characterized shilajit, Natural Shilajit is the answer.
+              The deductions reflect real tradeoffs: the per-gram cost on the flagship jar is the highest of any S-tier product we track, and the fulvic acid percentage (~70%) trails Black Lotus (64.51% resin / 74.30% capsules, Batch 93 COA). For buyers whose primary goal is maximum bioactive concentration per dollar, Black Lotus is the stronger value. For buyers who want the deepest possible assurance that what they&apos;re taking is genuine, fully characterized shilajit, Natural Shilajit is the answer.
             </p>
             <p>
               The 150g bulk jar at $249 ($1.66/g) is worth highlighting specifically — it makes Natural Shilajit significantly more competitive for consistent long-term users and is the format we&apos;d recommend for anyone committing to a 6-month supplementation protocol.

@@ -356,7 +356,7 @@ export default function ShilajitWhileFasting() {
               </tr>
               <tr className="bg-white">
                 <td className="px-4 py-3 font-medium text-[#0D1F14]">Fulvic Acid</td>
-                <td className="px-4 py-3 text-center">255–425 mg (at 85%)</td>
+                <td className="px-4 py-3 text-center">193–323 mg (at 64.51%)</td>
                 <td className="px-4 py-3 text-[#10B981]">No metabolic impact on fast</td>
               </tr>
               <tr className="bg-[#F8FCF9]">
@@ -640,7 +640,7 @@ export default function ShilajitWhileFasting() {
             </p>
             <h3 className="text-base font-bold text-[#0D1F14] mb-1">Black Lotus Shilajit</h3>
             <ul className="text-xs text-[#4A6358] space-y-1 mb-4">
-              <li>✓ 85%+ fulvic acid — pure resin, no additives</li>
+              <li>✓ 64.51% fulvic acid (Batch 93 COA) — pure resin, no additives</li>
               <li>✓ Zero sugar, zero protein — fully fasting-compatible</li>
               <li>✓ COA verifies complete ingredient transparency</li>
               <li>✓ Dissolves easily in warm water during fasting window</li>

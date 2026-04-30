@@ -27,7 +27,7 @@ interface BlackLotusCTAProps {
 export default function BlackLotusCTA({
   emoji = "🏆",
   headline = "Our #1 Pick: Black Lotus Shilajit Resin",
-  subtext = "85%+ fulvic acid · Third-party COA · Cold-processed · Free shipping — S-tier resin at $36.99.",
+  subtext = "64.51% fulvic acid (Batch 93, IAS Labs) · Third-party COA · Cold-processed · Free shipping — S-tier resin at $36.99.",
   buttonText = "Shop Black Lotus Resin — $36.99 →",
 }: BlackLotusCTAProps) {
   return (
@@ -50,11 +50,11 @@ export default function BlackLotusCTA({
 
         <ul className="space-y-1.5 mb-5">
           {[
-            "85%+ fulvic acid — verified by ISO-accredited third-party lab",
-            "~150mg fulvic acid per 175mg serving",
-            "Full heavy metals panel: all below FDA action levels",
+            "64.51% fulvic acid — Batch 93 COA, IAS Laboratories Phoenix AZ",
+            "161mg fulvic acid per serving (June 2025 COA)",
+            "Heavy metals (ICP-MS): Lead 1.17 ppm · Mercury ND · all within FDA limits",
+            "Microbiology: Listeria ND · Salmonella Absent · E. coli ND",
             "Cold-process purification preserves bioactive compounds",
-            "Himalayan source above 14,000 feet elevation",
             "Free shipping on all orders",
           ].map((item) => (
             <li key={item} className="flex items-start gap-2">

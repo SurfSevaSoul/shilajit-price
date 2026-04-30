@@ -315,11 +315,11 @@ export default function BestShilajitCapsules() {
             price="$43.99"
             servings="60"
             costPerServing="$0.73"
-            fulvicAcid="85% verified"
+            fulvicAcid="74.30% verified"
             testingLab="IAS Laboratories, Phoenix AZ"
             source="Altai Mountains, 16,000+ ft"
             pros={[
-              "85%+ fulvic acid — highest verified in any capsule product we've tested",
+              "74.30% fulvic acid — highest verified in any capsule product we've tested",
               "IAS Laboratories (ISO accredited) COA with full heavy metals panel",
               "600mg per capsule — no fillers or binders",
               "Cold-processed to preserve bioactive compounds",
@@ -453,11 +453,11 @@ export default function BestShilajitCapsules() {
             price="$43.99"
             servings="60"
             costPerServing="$0.73"
-            fulvicAcid="80% fulvic, 10% humic"
+            fulvicAcid="73.11% fulvic, 10% humic"
             testingLab="IAS Laboratories, Phoenix AZ"
             source="Altai Mountains, 16,000+ ft"
             pros={[
-              "80% fulvic acid + 10% humic acid — dual-verified",
+              "73.11% fulvic acid + 10% humic acid — dual-verified",
               "IAS Laboratories COA with heavy metals panel",
               "85 ionic trace minerals",
               "Non-GMO, vegan, gluten-free",
@@ -477,7 +477,7 @@ export default function BestShilajitCapsules() {
       {/* BlackLotusCTA */}
       <BlackLotusCTA
         headline="Our #1 Capsule Pick: Black Lotus Extra Strength"
-        subtext="85%+ fulvic acid — the highest verified concentration in any capsule product on this list. IAS Laboratories COA, full heavy metals panel, 600mg per capsule with no fillers. Altai Mountains sourced at 16,000+ ft. Free shipping."
+        subtext="74.30% fulvic acid verified by COA — the highest verified concentration in any capsule product on this list. IAS Laboratories COA, full heavy metals panel, 600mg per capsule with no fillers. Altai Mountains sourced at 16,000+ ft. Free shipping."
         buttonText="Shop Black Lotus Capsules →"
       />
 
@@ -577,7 +577,7 @@ export default function BestShilajitCapsules() {
             fulvic acid content, a clean heavy metals COA from an accredited lab, and a dose
             per serving that actually delivers a therapeutic amount of active compound. On
             those criteria, <strong>Black Lotus Extra Strength Capsules</strong> lead the list —
-            85% fulvic acid, 600mg per capsule, IAS Laboratories COA. Nothing else in capsule
+            74.30% fulvic acid (COA verified, Batch 93), 600mg per capsule, IAS Laboratories COA. Nothing else in capsule
             form matches that combination.
           </p>
           <p>

@@ -611,12 +611,12 @@ export default function ShilajitBeginnersGuide() {
                     Black Lotus Extra Strength Capsules
                   </h3>
                   <p className="text-xs text-[#0D1F14] mb-3">
-                    85%+ fulvic acid · Full-panel COA · 60 capsules · $43.99 · $0.73/serving · GMP
+                    74.30% fulvic acid · Full-panel COA · 60 capsules · $43.99 · $0.73/serving · GMP
                     certified · Altai origin
                   </p>
                   <ul className="space-y-1.5 mb-4">
                     {[
-                      "Highest verified fulvic acid (85%+) of any capsule we've tested",
+                      "Highest verified fulvic acid (74.30%, Batch 93 COA) of any capsule we've tested",
                       "No measuring, no taste — just take 2 capsules daily",
                       "Full COA with heavy metals, microbial, and fulvic acid data",
                       "GMP certified manufacturing",
@@ -654,12 +654,12 @@ export default function ShilajitBeginnersGuide() {
                     Black Lotus Pure Altai Resin 30g
                   </h3>
                   <p className="text-xs text-[#0D1F14] mb-3">
-                    85%+ fulvic acid · Full-panel COA · 30g · $36.99 · $1.23/g · Cold-processed
+                    64.51% fulvic acid · Full-panel COA · 30g · $36.99 · $1.23/g · Cold-processed
                     · Altai origin
                   </p>
                   <ul className="space-y-1.5 mb-4">
                     {[
-                      "Highest potency form — 85%+ fulvic acid cold-processed from Altai deposits",
+                      "Highest potency resin form — 64.51% fulvic acid cold-processed from Altai deposits (Batch 93, IAS Labs)",
                       "Best price per gram of any S-tier product in our database",
                       "Full COA publicly available — no request needed",
                       "Approximately 100 pea-sized servings per 30g jar",
@@ -850,7 +850,7 @@ export default function ShilajitBeginnersGuide() {
                 Black Lotus Extra Strength Capsules
               </h3>
               <p className="text-xs text-[#7BA899] mb-4">
-                60 capsules · 85%+ fulvic acid · COA verified · $43.99 · $0.73/serving · S-tier
+                60 capsules · 74.30% fulvic acid · COA verified · $43.99 · $0.73/serving · S-tier
               </p>
               <a
                 href={AFFILIATE_CAPS}
