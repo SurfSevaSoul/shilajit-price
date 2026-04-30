@@ -264,6 +264,8 @@ export default function MemorialSloanKetteringShilajit() {
         <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#4A6358] leading-relaxed">
           Full COA data, lab names, and documented test results for these brands are available on our{" "}
           <Link href="/lab-data" className="text-[#10B981] hover:underline font-semibold">Lab Data &amp; COAs page →</Link>{" "}
+          For a side-by-side breakdown of actual batch-specific numbers,{" "}
+          <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline font-semibold">see our full heavy metals comparison across all four brands →</Link>{" "}
           None of these brands have been evaluated, endorsed, or approved by Memorial Sloan Kettering Cancer Center or any other medical institution. Third-party COA testing is a quality verification tool — it is not a medical safety clearance.
         </div>
       </section>
