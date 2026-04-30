@@ -33,7 +33,7 @@ const faqItems: FaqItem[] = [
     name: "Is Pürblack shilajit legit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Pürblack is one of the most scientifically documented shilajit brands in the world, holding 5 US patents on their purification and formulation process. They manufacture in a US pharmaceutical-grade facility, source raw material from multiple elite regions (Caucasus, Siberia, Himalayas), and provide third-party COA documentation. Their 5th-generation Live Resin and 6th-generation White Rabbit lines are A-tier products in our database.",
+      text: "Yes. Pürblack is one of the most scientifically documented shilajit brands in the world, holding 5 US patents on their purification and formulation process. They manufacture and test at Pürblack Inc., Temecula, CA, source raw material from multiple elite regions (Caucasus, Siberia, Himalayas), and provide COA documentation verifying DBP (dibenzo-α-pyrones) content and Urolithin A ppm. Their 5th-generation Live Resin and 6th-generation White Rabbit lines are A-tier products in our database.",
     },
   },
   {
@@ -57,7 +57,7 @@ const faqItems: FaqItem[] = [
     name: "How does Pürblack compare to Black Lotus Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus leads on verified fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA, vs Pürblack's verified but undisclosed percentage) and price per gram ($1.23/g vs $3.11/g for Pürblack True Gold 30g). Pürblack leads on patented processing (5 US patents vs none for Black Lotus), US pharmaceutical-grade manufacturing, precious metal infusion options, and sourcing diversity. Black Lotus is the better pick for maximum fulvic acid at lower cost; Pürblack is the better pick for research-grade documentation and advanced formulations. See our full comparison at /compare/purblack-vs-black-lotus.",
+      text: "Black Lotus leads on verified fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA) and price per gram ($1.23/g vs $3.11/g for Pürblack True Gold 30g). Pürblack does not report fulvic acid percentage — their quality markers are DBP (dibenzo-α-pyrones) content and Urolithin A ppm, verified by Pürblack Inc., Temecula, CA. Pürblack leads on patented processing (5 US patents vs none for Black Lotus), US pharmaceutical-grade manufacturing, precious metal infusion options, and sourcing diversity. Black Lotus is the better pick for maximum fulvic acid at lower cost; Pürblack is the better pick for research-grade documentation and advanced formulations. See our full comparison at /compare/purblack-vs-black-lotus.",
     },
   },
   {
@@ -308,7 +308,7 @@ export default function PurblackShilajitReview() {
             US patents require disclosure and independent review — they cannot be claimed without documented, defensible novelty. That matters in a market where &quot;proprietary process&quot; is frequently marketing language with nothing behind it. Pürblack&apos;s patents are searchable via the USPTO and represent a genuine technical distinction from competitors.
           </p>
           <p>
-            The pharmaceutical-grade US manufacturing facility is the second major differentiator. The majority of shilajit brands — even reputable ones — import finished or semi-finished product from South Asia or Russia and package it domestically. Pürblack receives raw material and runs the complete purification and manufacturing process in the US, under pharmaceutical GMP standards that are significantly more stringent than food-grade or dietary supplement GMP.
+            The pharmaceutical-grade US manufacturing facility — Pürblack Inc., Temecula, CA — is the second major differentiator. The majority of shilajit brands — even reputable ones — import finished or semi-finished product from South Asia or Russia and package it domestically. Pürblack receives raw material and runs the complete purification and manufacturing process in the US, under pharmaceutical GMP standards that are significantly more stringent than food-grade or dietary supplement GMP. COA data covering DBP content, Urolithin A ppm, and heavy metals is generated at this facility (most recently May–December 2025).
           </p>
           <p>
             For a deeper look at what lab documentation should include and how to evaluate a COA, see our{" "}
@@ -589,7 +589,7 @@ export default function PurblackShilajitReview() {
             <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">ranked shilajit brand database</Link>: COA completeness, third-party lab verification, price per gram, sourcing transparency, and manufacturing documentation. We supplemented that with a review of their US patent filings (publicly searchable via USPTO) and direct inspection of their COA documentation structure.
           </p>
           <p>
-            Pürblack scores strongly on manufacturing documentation, sourcing diversity, and formulation innovation. They score lower than S-tier brands on cost-efficiency and on the transparency of their fulvic acid quantification — their COA confirms verification but does not publish a specific percentage, unlike Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA) or Pure Himalayan (60%). Our full scoring methodology is available at{" "}
+            Pürblack scores strongly on manufacturing documentation, sourcing diversity, and formulation innovation. They score lower than S-tier brands on cost-efficiency. Importantly, Pürblack does not report fulvic acid percentage — their quality markers are DBP (dibenzo-α-pyrones) content (up to 19.8% for Research Grade, 21.9% for White Rabbit Vive) and Urolithin A ppm, verified by Pürblack Inc., Temecula, CA. S-tier brands like Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA) and Pure Himalayan (60%) publish specific FA percentages, which makes direct FA comparison with Pürblack impossible. Our full scoring methodology is available at{" "}
             <Link href="/methodology" className="text-[#10B981] hover:underline">shilajitprice.com/methodology</Link>.
           </p>
         </div>
@@ -602,13 +602,13 @@ export default function PurblackShilajitReview() {
         </h2>
         <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
           <p>
-            Pürblack earns an 8.4/10 from our team — an A-tier rating reflecting a brand that is genuinely distinguished from the pack but does not match the cost-efficiency or fulvic acid transparency of our S-tier leaders.
+            Pürblack earns an 8.4/10 from our team — an A-tier rating reflecting a brand that is genuinely distinguished from the pack but does not match the cost-efficiency or fulvic acid disclosure of our S-tier leaders (Pürblack uses DBP content and Urolithin A ppm as quality markers, not FA%).
           </p>
           <p>
             The positives are real: 5 US patents, pharmaceutical-grade US manufacturing, multi-region sourcing, third-party COA verification, and a product lineup that includes innovations (True Gold, White Rabbit) that simply do not exist elsewhere in the shilajit category. Pürblack is a legitimate premium product from a brand that has invested in scientific documentation rather than just marketing claims.
           </p>
           <p>
-            The limitations are also real: the highest price per gram in our verified database, no published fulvic acid percentage, and limited accessibility for buyers on a budget. If you are comparing Pürblack to a $30 Amazon resin, Pürblack wins by every metric. If you are comparing Pürblack to Black Lotus at $1.23/g or Natural Shilajit at $2.45/g with S-tier verification, the calculus depends entirely on whether US manufacturing and patent protection matter specifically to you.
+            The limitations are also real: the highest price per gram in our verified database, fulvic acid percentage is not reported (quality is measured by DBP and Urolithin A instead), and limited accessibility for buyers on a budget. If you are comparing Pürblack to a $30 Amazon resin, Pürblack wins by every metric. If you are comparing Pürblack to Black Lotus at $1.23/g or Natural Shilajit at $2.45/g with S-tier verification, the calculus depends entirely on whether US manufacturing and patent protection matter specifically to you.
           </p>
           <p>
             Our recommendation: start with the <strong>True Gold 30g at $93.33</strong> ($3.11/g — best single-jar value in the lineup). If you find Pürblack fits your protocol and you are committed for the long term, move to the True Gold X7 at $2.38/g. If you are primarily focused on maximum verified fulvic acid per dollar, the{" "}

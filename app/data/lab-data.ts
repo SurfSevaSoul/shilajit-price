@@ -12,12 +12,17 @@ export interface LabEntry {
   testingLab?: string;
   testingLabAccreditation?: string;
   testDate?: string;
+  batchNumber?: string;
   fulvicAcidMgPerServing?: number;
   fulvicAcidPct?: number;
   humicAcidMgPerServing?: number;
   humicAcidPct?: number;
   purityPct?: string;           // e.g. "up to 99.9%"
   traceMinerals?: string;       // e.g. "85 ionic trace minerals"
+  // Pürblack-specific quality markers (DBP & Urolithin A instead of FA%)
+  dbpPct?: number;              // Dibenzo-α-pyrones content %
+  urolithinAppm?: number;       // Urolithin A concentration in ppm
+  terpeneProfile?: string[];    // White Rabbit proprietary terpene blend
   heavyMetals: {
     lead: HeavyMetalResult;
     mercury: HeavyMetalResult;
@@ -358,93 +363,148 @@ export const LAB_DATA: Record<string, LabEntry> = {
       "Sun-dried DBP-verified Altai shilajit tablets",
     ],
   },
-  // ── PÜRBLACK (source: purblack.com — US patent-backed, 3rd-party tested) ──
+  // ── PÜRBLACK (source: Pürblack Inc., Temecula CA — COAs May–Dec 2025) ──────
+  // Quality markers: DBP (dibenzo-α-pyrones) % and Urolithin A ppm.
+  // Pürblack does NOT report fulvic acid percentage; do not display FA% for these products.
+  // Authenticity: Verified Positive on all tested batches. Microbiology: All clean.
   "purblack-research-grade-15g": {
     productId: "purblack-research-grade-15g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
+    testDate: "December 2025",
+    batchNumber: "11RUARG001",
+    dbpPct: 19.8,
+    urolithinAppm: 39.872,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
+      "Batch 11RUARG001 — Pürblack Inc., Temecula, CA — December 2025",
+      "DBP (ashless humic acids as carriers of dibenzo-α-pyrones): 19.8%",
+      "Urolithin A: 39.872 ppm — highest of standard Pürblack line",
+      "Heavy metals (mg/kg): Lead 0.47 · Arsenic 0.311 · Cadmium 0.032 · Mercury 0.001",
+      "Authenticity: Verified Positive · Microbiology: All clean",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
       "5 US patents covering purification process",
-      "COA available on purblack.com",
     ],
   },
   "purblack-true-gold-15g": {
     productId: "purblack-true-gold-15g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
+    testDate: "May 2025",
+    batchNumber: "11RUATG001",
+    dbpPct: 17.5,
+    urolithinAppm: 11.748,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
+      "Batch 11RUATG001 — Pürblack Inc., Temecula, CA — May 2025",
+      "DBP (ashless humic acids as carriers of dibenzo-α-pyrones): 17.5%",
+      "Urolithin A: 11.748 ppm",
+      "Heavy metals (mg/kg): Lead 0.121 · Arsenic 0.313 · Cadmium 0.031 · Mercury ND",
+      "Authenticity: Verified Positive · Microbiology: All clean",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
       "5 US patents covering purification process",
-      "COA available on purblack.com",
     ],
   },
   "purblack-true-gold-30g": {
     productId: "purblack-true-gold-30g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
+      "COA not provided for this size — refer to True Gold 15g batch (11RUATG001, May 2025) for reference data",
+      "DBP content and Urolithin A data pending COA for 30g size",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
       "5 US patents covering purification process",
-      "COA available on purblack.com",
     ],
   },
   "purblack-immunity-max-30g": {
     productId: "purblack-immunity-max-30g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
+    testDate: "August 2025",
+    batchNumber: "11RUA/IXB",
+    dbpPct: 16.6,
+    urolithinAppm: 14.379,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
+      "Batch 11RUA/IXB — Pürblack Inc., Temecula, CA — August 2025",
+      "DBP (ashless humic acids as carriers of dibenzo-α-pyrones): 16.6%",
+      "Urolithin A: 14.379 ppm",
+      "Heavy metals (mg/kg): Lead 0.71 · Arsenic 0.34 · Cadmium 0.032 · Mercury 0.002",
+      "Authenticity: Verified Positive · Microbiology: All clean",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
       "5 US patents covering purification process",
-      "COA available on purblack.com",
     ],
   },
   "purblack-true-gold-x7-210g": {
     productId: "purblack-true-gold-x7-210g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
+      "COA not provided for this size — bulk format of True Gold line",
+      "DBP content and Urolithin A data pending COA for 210g size",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
       "5 US patents covering purification process",
-      "COA available on purblack.com",
     ],
   },
   "purblack-white-rabbit-vive-15g": {
     productId: "purblack-white-rabbit-vive-15g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
+    testDate: "December 2025",
+    batchNumber: "169RUA/M3",
+    dbpPct: 21.9,
+    urolithinAppm: 58.497,
+    terpeneProfile: ["Limonene", "α-Terpinyl acetate", "Zingiberene", "Linalool", "Camphene"],
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
-      "Precious metal infusion formula — 5 US patents",
-      "COA available on purblack.com",
+      "Batch 169RUA/M3 — Pürblack Inc., Temecula, CA — December 2025",
+      "DBP (ashless humic acids as carriers of dibenzo-α-pyrones): 21.9% — highest of all Pürblack products",
+      "Urolithin A: 58.497 ppm",
+      "Heavy metals (mg/kg): Lead 0.42 · Arsenic 1.14 · Cadmium 0.031 · Mercury 0.001",
+      "Terpenes (proprietary organic essential oil blend): Limonene, α-Terpinyl acetate, Zingiberene, Linalool, Camphene",
+      "Authenticity: Verified Positive · Microbiology: All clean",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
     ],
   },
   "purblack-white-rabbit-slim-15g": {
     productId: "purblack-white-rabbit-slim-15g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
+    testDate: "December 2025",
+    batchNumber: "169RUA/WR2",
+    dbpPct: 16.5,
+    urolithinAppm: 52.391,
+    terpeneProfile: ["Limonene", "Linalyl acetate", "Zingiberene", "Linalool", "α-Curcumene"],
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
-      "Precious metal infusion formula — 5 US patents",
-      "COA available on purblack.com",
+      "Batch 169RUA/WR2 — Pürblack Inc., Temecula, CA — December 2025",
+      "DBP (ashless humic acids as carriers of dibenzo-α-pyrones): 16.5%",
+      "Urolithin A: 52.391 ppm",
+      "Heavy metals (mg/kg): Lead 0.34 · Arsenic 1.15 · Cadmium 0.023 · Mercury 0.001",
+      "Terpenes (proprietary organic essential oil blend): Limonene, Linalyl acetate, Zingiberene, Linalool, α-Curcumene",
+      "Authenticity: Verified Positive · Microbiology: All clean",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
     ],
   },
   "purblack-white-rabbit-serene-15g": {
     productId: "purblack-white-rabbit-serene-15g",
     coaStatus: "verified",
-    testingLab: "US Pharmaceutical-Grade Third-Party Facility",
+    coaUrl: "https://purblack.com",
+    testingLab: "Pürblack Inc., Temecula, CA",
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Third-party tested at US pharmaceutical-grade facility",
-      "Precious metal infusion formula — 5 US patents",
-      "COA available on purblack.com",
+      "COA pending update — current COA data not yet available for this product",
+      "Pürblack does not report fulvic acid percentage — quality marker is DBP content",
+      "5 US patents covering purification process",
     ],
   },
 };

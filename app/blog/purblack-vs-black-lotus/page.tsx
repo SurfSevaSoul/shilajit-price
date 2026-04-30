@@ -43,7 +43,7 @@ const faqItems: FaqItem[] = [
     name: "What is the fulvic acid content of Pürblack vs Black Lotus?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus discloses verified fulvic acid concentrations confirmed by IAS Laboratories in Phoenix, AZ — 64.51% for resin/tincture and 74.30% for capsules (Batch 93, 2025 COA). Pürblack verifies fulvic acid content via third-party COA but does not publicly disclose a specific percentage on their marketing materials. Their COA confirms the presence and purity of fulvic acid compounds without publishing a headline percentage.",
+      text: "Black Lotus discloses verified fulvic acid concentrations confirmed by IAS Laboratories in Phoenix, AZ — 64.51% for resin/tincture and 74.30% for capsules (Batch 93, 2025 COA). Pürblack does not report fulvic acid percentage. Their quality markers are DBP (dibenzo-α-pyrones) content and Urolithin A ppm, verified by Pürblack Inc., Temecula, CA. For example, Research Grade (Batch 11RUARG001, Dec 2025) shows 19.8% DBP and 39.872 ppm Urolithin A; White Rabbit Vive shows 21.9% DBP and 58.497 ppm Urolithin A — but no FA% is reported for any Pürblack product.",
     },
   },
   {
@@ -67,7 +67,7 @@ const faqItems: FaqItem[] = [
     name: "Does Pürblack or Black Lotus have better lab testing?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both brands publish verifiable third-party COAs with heavy metals panels. Black Lotus uses IAS Laboratories in Phoenix, AZ, with disclosed actual values for lead, mercury, arsenic, and cadmium — all below FDA action levels. Pürblack tests through their US pharmaceutical-grade manufacturing facility with third-party COA verification. Black Lotus discloses specific lab values publicly; Pürblack's manufacturing process is covered under 5 US patents, which provides an additional layer of documented quality assurance that goes beyond standard COA testing.",
+      text: "Both brands publish verifiable COAs with heavy metals panels. Black Lotus uses IAS Laboratories in Phoenix, AZ, with disclosed actual values for lead, mercury, arsenic, and cadmium — all below FDA action levels. Pürblack tests at Pürblack Inc., Temecula, CA, with COA data covering DBP content, Urolithin A ppm, heavy metals, authenticity, and microbiology (May–December 2025 batches). Black Lotus discloses fulvic acid % and specific heavy metal values publicly; Pürblack's manufacturing process is covered under 5 US patents, providing documented quality assurance via a different but rigorous methodology.",
     },
   },
 ];
@@ -246,7 +246,7 @@ export default function PurblackVsBlackLotus() {
           Black Lotus publicly discloses exact fulvic acid percentages confirmed by IAS Laboratories — 64.51% for resin and tincture, 74.30% for capsules (Batch 93, 2025 COA). This is a meaningful distinction — most brands either don't test for fulvic acid content or list a range without COA backing. These specific figures from a named accredited lab give buyers concrete, verifiable benchmarks.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed">
-          Pürblack verifies fulvic acid through their COA process but does not publish a headline percentage. Their position is that the quality of their patented purification process — not a single extracted compound percentage — is the most accurate signal of product quality. This is a defensible argument for a brand with 5 US patents and pharmaceutical-grade manufacturing, but buyers who make decisions based on disclosed fulvic acid numbers will find Black Lotus more straightforward to evaluate.
+          Pürblack does not report fulvic acid percentage. Their quality markers are DBP (dibenzo-α-pyrones) content and Urolithin A ppm, verified by Pürblack Inc., Temecula, CA (COA data from May–December 2025 batches). For example: Research Grade shows 19.8% DBP and 39.872 ppm Urolithin A; White Rabbit Vive shows 21.9% DBP and 58.497 ppm Urolithin A. Their position is that DBP content and purification process documentation — backed by 5 US patents — are more accurate quality signals than a single FA% figure. Buyers who evaluate supplements primarily on disclosed fulvic acid numbers will find Black Lotus more directly comparable to industry standards.
         </p>
       </section>
 

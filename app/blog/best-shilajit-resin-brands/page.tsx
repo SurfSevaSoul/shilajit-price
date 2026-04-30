@@ -789,7 +789,7 @@ export default function BestShilajitResinBrands() {
                 { name: "Natural Shilajit Resin", ppg: "$2.45", fa: "~70%", famg: "210mg", costFA: "$0.35" },
                 { name: "Pure Himalayan Resin", ppg: "$1.33", fa: "60%", famg: "180mg", costFA: "$0.22" },
                 { name: "Sayan Resin 100g", ppg: "$0.56", fa: "32.6%", famg: "98mg", costFA: "$0.17" },
-                { name: "PurBlack Resin", ppg: "$3.11", fa: "ND", famg: "—", costFA: "—" },
+                { name: "PurBlack Resin", ppg: "$3.11", fa: "Not Reported — DBP verified", famg: "—", costFA: "—" },
               ].map((row) => (
                 <tr key={row.name} className={row.highlight ? "bg-emerald-50" : "bg-white even:bg-[#F8FCF9]"}>
                   <td className="px-3 py-2.5 font-medium text-[#0D1F14]">{row.name}</td>

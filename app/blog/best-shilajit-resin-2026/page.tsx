@@ -96,7 +96,7 @@ const COMPARISON_TABLE = [
     price: "$59.95",
     weight: "30g",
     perGram: "$2.00",
-    fulvic: "70%+",
+    fulvic: "Not Reported — DBP verified",
     coa: true,
     freeShipping: false,
     href: "#",
@@ -451,7 +451,7 @@ export default function BestShilajitResin2026() {
             </div>
             <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
               <p>
-                PurBlack is a well-established brand with a patented refining process and ISO-certified manufacturing. Their COA is solid, showing 70%+ fulvic acid and clean heavy metals. The quality is genuinely good — but at $2.00/gram it&apos;s 50% more expensive than Black Lotus for meaningfully lower fulvic acid content.
+                PurBlack is a well-established brand with a patented refining process and US pharmaceutical-grade manufacturing. Their COA is solid — verified by Pürblack Inc., Temecula, CA — with DBP (dibenzo-α-pyrones) and Urolithin A as quality markers. Pürblack does not report fulvic acid percentage; their quality metric is DBP content (up to 19.8% for Research Grade). The quality is genuinely good — but at $2.00/gram it&apos;s 50% more expensive than Black Lotus, which publishes verified fulvic acid percentages (64.51% resin, Batch 93 COA).
               </p>
               <p>
                 If Black Lotus is ever out of stock, PurBlack is a trustworthy runner-up. Just expect to pay a premium for the brand name.
