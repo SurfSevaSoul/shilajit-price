@@ -10,8 +10,8 @@ import Footer from "../components/Footer";
 const SELECTOR_BRANDS = [
   { slug: "black-lotus", name: "Black Lotus Shilajit", tier: "S", fa: "64–74% (by form)", ppg: "$1.23/g", origin: "Altai Mountains, Siberia", coa: "Full-panel 3rd-party (IAS Labs)", gmp: true, ship: true },
   { slug: "pure-himalayan", name: "Pure Himalayan Shilajit", tier: "S", fa: "60%", ppg: "$1.33/g", origin: "Himalayas & Altai", coa: "ISO/IEC 17025 Accredited", gmp: true, ship: true },
-  { slug: "natural-shilajit", name: "Natural Shilajit", tier: "S", fa: "~70%", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "ICP-MS · LC-MS · FTIR", gmp: true, ship: false },
-  { slug: "purblack", name: "Pürblack", tier: "A", fa: "Verified", ppg: "$3.11/g", origin: "Caucasus, Siberia, Himalayas", coa: "US pharma-grade 3rd-party", gmp: true, ship: false },
+  { slug: "natural-shilajit", name: "Natural Shilajit", tier: "S", fa: "Not Disclosed", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "DaaneLabs + Harken Research", gmp: true, ship: false },
+  { slug: "purblack", name: "Pürblack", tier: "A", fa: "Not Reported — DBP verified", ppg: "$3.11/g", origin: "Caucasus, Siberia, Himalayas", coa: "Pürblack Inc., Temecula CA", gmp: true, ship: false },
   { slug: "sayan", name: "Sayan Health", tier: "A", fa: "~32%", ppg: "$1.33/g", origin: "Altai Mountains, Siberia", coa: "ISO-accredited Lab", gmp: false, ship: true },
   { slug: "primavie", name: "PrimaVie®", tier: "A", fa: "50% (std.)", ppg: "$1.50/g", origin: "Himalayas (India)", coa: "BSCG + ISO/IEC", gmp: true, ship: true },
 ];

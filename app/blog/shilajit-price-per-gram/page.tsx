@@ -73,7 +73,7 @@ const faqItems: FaqItem[] = [
 // 20+ product comparison data
 const PRODUCTS = [
   { name: "Black Lotus Resin", tier: "S", tierColor: "bg-amber-400 text-amber-900", priceGram: 1.33, fulvic: "64.51%", coa: true, tp: true, source: "Altai Mountains, Siberia", affiliate: AFFILIATE_RESIN },
-  { name: "Natural Shilajit RS Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.08, fulvic: "~70%", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20" },
+  { name: "Natural Shilajit RS Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.08, fulvic: "Not Disclosed", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20" },
   { name: "Essencraft Himalayan Resin", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 1.43, fulvic: "75%+", coa: true, tp: true, source: "Himalaya", affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20" },
   { name: "Sayan Shilajit 30g", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 0.90, fulvic: "~60%", coa: true, tp: false, source: "Siberian Altai", affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20" },
   { name: "Sayan Shilajit 100g Bulk", tier: "A", tierColor: "bg-emerald-500 text-white", priceGram: 0.72, fulvic: "~60%", coa: true, tp: false, source: "Siberian Altai", affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20" },
@@ -233,7 +233,7 @@ export default function ShilajitPricePerGram() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Best value at $1.33/gram: Black Lotus Shilajit Resin</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              At $1.33/gram with 64.51% verified fulvic acid (Batch 93, IAS Laboratories, June 2025), Black Lotus delivers the highest quality-to-price ratio in the resin category. The closest competitor with comparable documentation (Essencraft at 75%+ FA) charges $1.43/gram. Natural Shilajit at $1.08/gram has a lower sticker price but ~70% FA, making the effective FA cost $1.54/gram versus Black Lotus at $2.06/gram of pure FA — with Black Lotus carrying the stronger full-panel COA from an accredited independent lab.
+              At $1.33/gram with 64.51% verified fulvic acid (Batch 93, IAS Laboratories, June 2025), Black Lotus delivers the highest quality-to-price ratio in the resin category. The closest competitor with comparable documentation (Essencraft at 75%+ FA) charges $1.43/gram. Natural Shilajit at $1.08/gram has a lower sticker price but does not disclose fulvic acid percentage — making direct FA per dollar comparison impossible. Natural Shilajit&apos;s COA is tested by Harken Research (heavy metals) and DaaneLabs (microbiology), with DBP verification confirming product authenticity.
             </p>
             <p>
               For buyers doing the math seriously, Black Lotus is the sweet spot. You&apos;re paying approximately what the market charges for A-tier quality but receiving S-tier documentation and potency. The lack of retail markup (direct-to-consumer model) and free shipping keep the true $/gram competitive with products that technically cost less on the sticker.

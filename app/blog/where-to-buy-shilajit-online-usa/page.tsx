@@ -164,7 +164,7 @@ const TOP_SOURCES = [
 
 const VENDOR_COMPARISON = [
   { name: "Black Lotus (Direct)", channel: "D2C", coaScore: "ISO, lot-linked", fulvic: "64.51% (resin)", gmp: true, priceGram: "$1.33", ship: "Free US", tier: "S", tierColor: "bg-amber-400 text-amber-900" },
-  { name: "Natural Shilajit (Amazon)", channel: "Amazon", coaScore: "3rd party", fulvic: "~70%", gmp: true, priceGram: "$1.08", ship: "Prime", tier: "A", tierColor: "bg-emerald-500 text-white" },
+  { name: "Natural Shilajit (Amazon)", channel: "Amazon", coaScore: "3rd party", fulvic: "Not Disclosed", gmp: true, priceGram: "$1.08", ship: "Prime", tier: "A", tierColor: "bg-emerald-500 text-white" },
   { name: "Sayan (Amazon)", channel: "Amazon", coaScore: "In-house", fulvic: "~60%", gmp: true, priceGram: "$0.87", ship: "Prime", tier: "A", tierColor: "bg-emerald-500 text-white" },
   { name: "Essencraft (Amazon)", channel: "Amazon", coaScore: "3rd party", fulvic: "75%+", gmp: true, priceGram: "$1.43", ship: "Prime", tier: "A", tierColor: "bg-emerald-500 text-white" },
   { name: "Generic White Label", channel: "Amazon", coaScore: "None", fulvic: "Unknown", gmp: false, priceGram: "$0.50–$0.67", ship: "Prime", tier: "D", tierColor: "bg-red-600 text-white" },

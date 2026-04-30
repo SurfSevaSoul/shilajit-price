@@ -69,7 +69,7 @@ const faqItems: FaqItem[] = [
     name: "Is shilajit resin from the Altai Mountains better than Himalayan?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both sources produce high-quality shilajit when properly collected and processed. Altai Mountains shilajit (particularly from the UNESCO-protected Altai region of Siberia) tends to have higher fulvic acid concentrations in the top-tier products — Black Lotus resin checks in at 64.51% and Natural Shilajit at approximately 70%, both Altai-sourced. Himalayan shilajit, sourced from higher altitudes in Nepal, India, and Tibet, also produces excellent quality products — Pure Himalayan's ISO/IEC 17025-verified resin is Himalayan-sourced. The source region matters less than the COA verification of actual fulvic acid content and heavy metal safety.",
+      text: "Both sources produce high-quality shilajit when properly collected and processed. Altai Mountains shilajit (particularly from the UNESCO-protected Altai region of Siberia) tends to have strong bioactive profiles in the top-tier products — Black Lotus resin checks in at 64.51% fulvic acid (Batch 93, IAS Labs). Natural Shilajit is also Altai-sourced with DBP verification, but does not disclose fulvic acid percentage. Himalayan shilajit, sourced from higher altitudes in Nepal, India, and Tibet, also produces excellent quality products — Pure Himalayan's ISO/IEC 17025-verified resin is Himalayan-sourced. The source region matters less than the COA verification of actual fulvic acid content and heavy metal safety.",
     },
   },
 ];
@@ -786,7 +786,7 @@ export default function BestShilajitResinBrands() {
             <tbody className="divide-y divide-[#D1EDD8]">
               {[
                 { name: "Black Lotus Resin", ppg: "$1.23", fa: "64.51%", famg: "194mg", costFA: "$0.19", highlight: true },
-                { name: "Natural Shilajit Resin", ppg: "$2.45", fa: "~70%", famg: "210mg", costFA: "$0.35" },
+                { name: "Natural Shilajit Resin", ppg: "$2.45", fa: "Not Disclosed", famg: "—", costFA: "—" },
                 { name: "Pure Himalayan Resin", ppg: "$1.33", fa: "60%", famg: "180mg", costFA: "$0.22" },
                 { name: "Sayan Resin 100g", ppg: "$0.56", fa: "32.6%", famg: "98mg", costFA: "$0.17" },
                 { name: "PurBlack Resin", ppg: "$3.11", fa: "Not Reported — DBP verified", famg: "—", costFA: "—" },

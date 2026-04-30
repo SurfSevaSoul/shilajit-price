@@ -23,4 +23,16 @@ export const BRANDS: Brand[] = [
       "5th and 6th generation shilajit live resin made in the USA. Patent-backed purification process with precious metal infusions. Quality is measured by DBP (dibenzo-α-pyrones) content and Urolithin A ppm — not fulvic acid %. COA data from Pürblack Inc., Temecula, CA (May–December 2025). The most premium and research-backed shilajit brand on the market.",
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
   },
+  {
+    id: "natural-shilajit",
+    name: "Natural Shilajit",
+    slug: "natural-shilajit",
+    origin: "UNESCO-protected Altai Mountains, Siberia",
+    lab: "DaaneLabs (Naples, FL) + Harken Research (Los Angeles, CA)",
+    coa: true,
+    certifications: ["GMP Certified", "FDA Registered", "DBP Verified", "Third-Party Tested"],
+    description:
+      "Altai Mountains shilajit brand established in 2014, serving 180,000+ customers globally. COA testing by DaaneLabs (Naples, FL) for microbiology and Harken Research (Los Angeles, CA) for heavy metals and minerals (October–November 2024). Capsules also carry Eurofins Amazon certification (June 2024). DBP (dibenzo-α-pyrones) verified — the most specific authenticity marker for genuine shilajit. Natural Shilajit does not report fulvic acid percentage. Cold water extraction, no solvents. UNESCO-protected source region.",
+    affiliateUrl: "https://naturalshilajit.com/?rfsn=9069392.c841fa",
+  },
 ];

@@ -70,7 +70,7 @@ const faqItems: FaqItem[] = [
     name: "Which shilajit brands test for heavy metals?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Among brands in our database, four have documented heavy metals testing: Black Lotus (IAS Laboratories, Phoenix AZ — full panel with actual values), Natural Shilajit (ISO-certified US labs, ICP-MS and LC-MS methodology), Pure Himalayan Shilajit (ISO/IEC 17025 accredited US laboratory — the highest internationally recognized testing standard), and Pürblack (US pharmaceutical-grade facility, third-party COA verified). Brands without publicly accessible COAs — including several Amazon-only listings in our database — cannot be verified regardless of label claims.",
+      text: "Among brands in our database, four have documented heavy metals testing: Black Lotus (IAS Laboratories, Phoenix AZ — full panel with actual values), Natural Shilajit (Harken Research, Los Angeles, CA — heavy metals; DaaneLabs, Naples, FL — microbiology; both October–November 2024), Pure Himalayan Shilajit (ISO/IEC 17025 accredited US laboratory — the highest internationally recognized testing standard), and Pürblack (Pürblack Inc., Temecula, CA — COA verified, May–December 2025). Brands without publicly accessible COAs — including several Amazon-only listings in our database — cannot be verified regardless of label claims.",
     },
   },
 ];
@@ -531,8 +531,7 @@ export default function ShilajitHeavyMetalsFDA() {
             When evaluating a COA, look for the method stated as &quot;ICP-MS&quot; or
             &quot;ICP/MS.&quot; Some brands use LC-MS (Liquid Chromatography-Mass Spectrometry)
             for organic compound analysis — this is complementary to ICP-MS for heavy metals,
-            not a replacement. Natural Shilajit uses both ICP-MS and LC-MS, giving the most
-            comprehensive analytical picture in our database.
+            not a replacement. Natural Shilajit&apos;s heavy metals testing is conducted by Harken Research (Los Angeles, CA) using ICP-MS, with microbiology by DaaneLabs (Naples, FL) — covering lead, arsenic, chromium, cadmium, mercury, and a full microbiology panel for each product form.
           </p>
         </div>
       </div>
@@ -934,8 +933,8 @@ export default function ShilajitHeavyMetalsFDA() {
 
           <p>
             The four brands in our database that meet this standard — Black Lotus (IAS Labs,
-            Phoenix), Natural Shilajit (ISO-certified US labs, ICP-MS + LC-MS), Pure Himalayan
-            (ISO/IEC 17025 accredited US lab), and Pürblack (US pharmaceutical-grade facility)
+            Phoenix), Natural Shilajit (Harken Research, Los Angeles + DaaneLabs, Naples, FL — Oct/Nov 2024), Pure Himalayan
+            (ISO/IEC 17025 accredited US lab), and Pürblack (Pürblack Inc., Temecula, CA — May–Dec 2025)
             — have done the verification work. Products without equivalent documentation have not.
           </p>
           <p>

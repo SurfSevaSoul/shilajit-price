@@ -41,7 +41,7 @@ const faqItems: FaqItem[] = [
     name: "Is Natural Shilajit legit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Natural Shilajit is one of the most rigorously verified shilajit brands available. They publish a full COA using three independent testing methods — ICP-MS for heavy metals, LC-MS for biomarker profiling, and FTIR for compound identification — and are one of the only brands to include DBP (Dibenzo-α-pyrones) verification. They source from UNESCO-protected Altai Mountain regions, are GMP certified, and FDA registered. We rate their flagship 20g resin as S-tier.",
+      text: "Yes. Natural Shilajit is one of the most rigorously verified shilajit brands available. Their COA testing is conducted by DaaneLabs (Naples, FL) for microbiology and Harken Research (Los Angeles, CA) for heavy metals and minerals (October–November 2024). Capsules additionally carry Eurofins Amazon certification (June 2024). They include DBP (Dibenzo-α-pyrones) verification — the most specific authenticity test for genuine shilajit. They source from UNESCO-protected Altai Mountain regions, are GMP certified, and FDA registered. We rate their flagship 20g resin as S-tier.",
     },
   },
   {
@@ -73,7 +73,7 @@ const faqItems: FaqItem[] = [
     name: "How does Natural Shilajit compare to Black Lotus?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both are S-tier Altai-sourced brands with strong COA documentation. Black Lotus leads on fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA, vs Natural Shilajit's ~70%) and price-per-gram ($1.23 vs $2.45 for the flagship). Natural Shilajit leads on verification depth — DBP testing and a triple-method COA (ICP-MS + LC-MS + FTIR) represent the most comprehensive analysis in our database. Black Lotus has free shipping; Natural Shilajit does not on all orders. For maximum verified potency at lowest cost: Black Lotus. For the most thoroughly verified product available: Natural Shilajit.",
+      text: "Both are S-tier Altai-sourced brands with strong COA documentation. Black Lotus leads on disclosed fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA — Natural Shilajit does not disclose FA%) and price-per-gram ($1.23 vs $2.45 for the flagship). Natural Shilajit leads on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Black Lotus has free shipping; Natural Shilajit does not on all orders. For maximum verified potency at lowest cost: Black Lotus. For the most thoroughly verified product available: Natural Shilajit.",
     },
   },
 ];
@@ -442,7 +442,7 @@ export default function NaturalShilajitReview() {
               Natural Shilajit earns a 9.2/10 from our team. The verification depth here is genuinely exceptional — DBP testing alone distinguishes them from every other brand in our database, and the triple-method COA approach is the closest thing to definitive authenticity proof available in the consumer market.
             </p>
             <p>
-              The deductions reflect real tradeoffs: the per-gram cost on the flagship jar is the highest of any S-tier product we track, and the fulvic acid percentage (~70%) trails Black Lotus (64.51% resin / 74.30% capsules, Batch 93 COA). For buyers whose primary goal is maximum bioactive concentration per dollar, Black Lotus is the stronger value. For buyers who want the deepest possible assurance that what they&apos;re taking is genuine, fully characterized shilajit, Natural Shilajit is the answer.
+              The deductions reflect real tradeoffs: the per-gram cost on the flagship jar is the highest of any S-tier product we track, and Natural Shilajit does not disclose fulvic acid percentage (Black Lotus publishes 64.51% resin / 74.30% capsules via Batch 93 COA). For buyers whose primary goal is maximum disclosed bioactive concentration per dollar, Black Lotus is the stronger value. For buyers who want the deepest possible assurance that what they&apos;re taking is genuine, fully characterized shilajit, Natural Shilajit is the answer.
             </p>
             <p>
               The 150g bulk jar at $249 ($1.66/g) is worth highlighting specifically — it makes Natural Shilajit significantly more competitive for consistent long-term users and is the format we&apos;d recommend for anyone committing to a 6-month supplementation protocol.
