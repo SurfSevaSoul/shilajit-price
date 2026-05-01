@@ -10,7 +10,7 @@ const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/how-to-read-shilajit-coa`;
 
-const title = "How to Read a Shilajit COA — What the Lab Numbers Actually Mean";
+const title = "How to Read a Shilajit COA: What the Lab Numbers Actually Mean (2026)";
 const description =
   "A plain-English guide to reading shilajit Certificates of Analysis: what fulvic acid %, heavy metals panels, microbial counts, and accreditation logos actually mean for your purchase decision.";
 
