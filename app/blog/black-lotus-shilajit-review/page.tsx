@@ -18,14 +18,14 @@ const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/black-lotus-shilajit-review`;
 
 export const metadata: Metadata = {
-  title: "Black Lotus Shilajit Review 2026 — COA, Lab Data & Honest Verdict | ShilajitPrice.com",
+  title: "Black Lotus Shilajit Review 2026: COA, Fulvic Acid & Honest Results",
   description:
     "Full Black Lotus Shilajit review: 64–74% verified fulvic acid (by form, Batch 93 COA), Altai sourcing, complete product lineup analysis, lab data breakdown, and honest verdict on who it's best for.",
   keywords:
     "black lotus shilajit review, black lotus shilajit COA, black lotus fulvic acid, black lotus shilajit resin review, black lotus vs pure himalayan shilajit",
   alternates: { canonical: POST_URL },
   openGraph: {
-    title: "Black Lotus Shilajit Review 2026 — COA, Lab Data & Honest Verdict",
+    title: "Black Lotus Shilajit Review 2026: COA, Fulvic Acid & Honest Results",
     description:
       "Full Black Lotus Shilajit review: 64–74% verified fulvic acid (by form, Batch 93 COA), Altai sourcing, complete product lineup, lab data breakdown, and honest verdict.",
     url: POST_URL,
