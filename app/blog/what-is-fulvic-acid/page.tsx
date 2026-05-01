@@ -379,6 +379,11 @@ export default function WhatIsFulvicAcid() {
               <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">how brands score on fulvic acid content</Link>{" "}
               in our full ranking.
             </p>
+            <p>
+              If you&apos;re deciding between shilajit and a standalone fulvic acid supplement, the answer depends on what you&apos;re trying to achieve — see our full breakdown of{" "}
+              <Link href="/blog/shilajit-vs-fulvic-acid" className="text-[#10B981] hover:underline">how shilajit compares to standalone fulvic acid supplements</Link>{" "}
+              to figure out which one actually fits your goals.
+            </p>
           </div>
         </section>
       </BlogPostLayout>

@@ -186,7 +186,9 @@ export default function BestShilajitBrandsRanked() {
               We built <Link href="/" className="text-[#10B981] hover:underline">ShilajitPrice.com</Link> specifically because this kind of data-free ranking dominates the market. We&apos;ve collected and analyzed 25+ data points per product across 55+ products from 20+ brands. This ranking reflects that research — not who pays us the most.
             </p>
             <p>
-              Our ranking methodology weights five factors: COA quality and accessibility (30%), verified fulvic acid percentage (25%), sourcing and altitude transparency (20%), price-per-gram competitiveness (15%), and customer satisfaction signals (10%). A brand that scores well commercially but has opaque testing gets penalized hard.
+              Our ranking methodology weights five factors: COA quality and accessibility (30%), verified fulvic acid percentage (25%), sourcing and altitude transparency (20%), price-per-gram competitiveness (15%), and customer satisfaction signals (10%). A brand that scores well commercially but has opaque testing gets penalized hard. If you&apos;re unsure whether shilajit or a standalone fulvic acid supplement is right for you, see our guide on{" "}
+              <Link href="/blog/shilajit-vs-fulvic-acid" className="text-[#10B981] hover:underline">the difference between shilajit and fulvic acid supplements</Link>{" "}
+              before deciding.
             </p>
           </div>
         </section>
