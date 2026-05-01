@@ -307,7 +307,11 @@ export default function ShilajitSafetyGuide() {
                 thalassemia, or other iron storage disorders, increased iron absorption is
                 directly harmful. The same caution applies to anyone receiving iron infusion
                 therapy. People in this category should not take shilajit without explicit medical
-                supervision.
+                supervision. For the full breakdown of iron content data and fulvic acid&apos;s
+                absorption effects, see our dedicated guide on{" "}
+                <Link href="/blog/shilajit-hemochromatosis" className="text-amber-700 hover:underline font-medium">
+                  shilajit and hemochromatosis — a full breakdown →
+                </Link>
               </p>
             </div>
 

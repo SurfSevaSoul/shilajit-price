@@ -376,7 +376,11 @@ export default function ShilajitSideEffects() {
             </div>
 
             <p>
-              Anyone with a diagnosed iron metabolism condition — or who is uncertain about their iron status — should consult their physician before starting shilajit or any mineral-containing supplement. This is standard guidance for any supplement with relevant mineral content, not a warning unique to shilajit.
+              Anyone with a diagnosed iron metabolism condition — or who is uncertain about their iron status — should consult their physician before starting shilajit or any mineral-containing supplement. This is standard guidance for any supplement with relevant mineral content, not a warning unique to shilajit — but it is{" "}
+              <Link href="/blog/shilajit-hemochromatosis" className="text-[#10B981] hover:underline font-medium">
+                especially important for anyone with hemochromatosis or iron overload disorders
+              </Link>
+              , given shilajit&apos;s iron content and fulvic acid&apos;s absorption-enhancing properties.
             </p>
           </div>
         </section>
