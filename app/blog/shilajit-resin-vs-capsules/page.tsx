@@ -222,7 +222,9 @@ export default function ShilajitResinVsCapsules() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Gummies and tinctures — niche picks</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              <strong className="text-[#0D1F14]">Gummies</strong> are the worst value form for shilajit in terms of active compound per dollar. The manufacturing process requires heat and additional ingredients that can degrade fulvic acid content, and the final shilajit concentration per serving is typically much lower. They&apos;re primarily for taste-sensitive consumers who want to take shilajit as a daily habit without thinking about it. Quality gummy brands like Black Lotus use resin extract — but you pay a significant convenience premium.
+              <strong className="text-[#0D1F14]">Gummies</strong> are the worst value form for shilajit in terms of active compound per dollar. The manufacturing process requires heat and additional ingredients that can degrade fulvic acid content, and the final shilajit concentration per serving is typically much lower. They&apos;re primarily for taste-sensitive consumers who want to take shilajit as a daily habit without thinking about it. Quality gummy brands like Black Lotus use resin extract — but you pay a significant convenience premium. For a full brand-by-brand breakdown of{" "}
+              <Link href="/blog/best-shilajit-gummies-2026" className="text-[#10B981] hover:underline">how shilajit gummies compare to both formats</Link>
+              , including what to look for on a gummy COA, see our dedicated gummies guide.
             </p>
             <p>
               <strong className="text-[#0D1F14]">Tinctures</strong> (liquid extracts) are a sleeper pick for bioavailability. A sublingual tincture — applied under the tongue — can offer absorption rates comparable to dissolved resin, with the convenience of a liquid dropper. Black Lotus&apos;s tincture is one of the few in the market with a verified COA. Tinctures are also the easiest form to add to drinks without the texture challenges of resin.
