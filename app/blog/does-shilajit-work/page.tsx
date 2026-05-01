@@ -12,14 +12,14 @@ const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/does-shilajit-work`;
 
 export const metadata: Metadata = {
-  title: "Does Shilajit Actually Work? What the Science Says in 2026 | ShilajitPrice.com",
+  title: "Does Shilajit Actually Work? What the Clinical Trials Say in 2026",
   description:
     "Honest breakdown of what clinical research says shilajit can and cannot do, why most products on the market are ineffective, and how to tell real shilajit from fakes.",
   keywords:
     "does shilajit work, shilajit science, shilajit research, is shilajit effective, does shilajit actually work",
   alternates: { canonical: POST_URL },
   openGraph: {
-    title: "Does Shilajit Actually Work? What the Science Says in 2026",
+    title: "Does Shilajit Actually Work? What the Clinical Trials Say in 2026",
     description:
       "Honest breakdown of shilajit clinical research, what it actually does, why most products are fake or ineffective, and how to find verified shilajit.",
     url: POST_URL,
