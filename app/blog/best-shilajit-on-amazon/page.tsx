@@ -14,14 +14,14 @@ const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-on-amazon`;
 
 export const metadata: Metadata = {
-  title: "Best Shilajit on Amazon (2026) — What's Actually Worth Buying vs What to Avoid | ShilajitPrice.com",
+  title: "Best Shilajit on Amazon 2026: Lab-Tested Picks That Actually Pass",
   description:
     "Amazon is flooded with fake and low-quality shilajit. Here's how to spot the red flags, which brands actually pass lab testing, and when direct purchase beats Amazon.",
   keywords:
     "best shilajit on amazon, amazon shilajit review, shilajit amazon 2026, real shilajit amazon, shilajit amazon fake",
   alternates: { canonical: POST_URL },
   openGraph: {
-    title: "Best Shilajit on Amazon (2026) — What's Actually Worth Buying vs What to Avoid",
+    title: "Best Shilajit on Amazon 2026: Lab-Tested Picks That Actually Pass",
     description:
       "Amazon is flooded with fake shilajit. Here are the red flags, the verified brands, and when direct purchase beats Amazon for value and safety.",
     url: POST_URL,
