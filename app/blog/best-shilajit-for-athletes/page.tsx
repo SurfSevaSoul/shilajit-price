@@ -436,7 +436,9 @@ export default function BestShilajitForAthletes() {
             <div className="bg-amber-50 border border-amber-200 rounded-xl p-4">
               <h3 className="text-xs font-bold text-amber-800 mb-1">⚡ Note for elite tested athletes</h3>
               <p className="text-xs text-amber-700 leading-relaxed">
-                Rules can and do change. While shilajit is currently not prohibited by any major governing body, athletes competing under strict anti-doping programs should always verify with their sport&apos;s specific governing body before adding any supplement. For absolute batch-level certainty, look for BSCG (Banned Substance Control Group) certification — which tests a specific production lot against the current WADA list. PrimaVie® is one shilajit ingredient brand that has pursued this certification.
+                Rules can and do change. While shilajit is currently not prohibited by any major governing body, athletes competing under strict anti-doping programs should always verify with their sport&apos;s specific governing body before adding any supplement. For absolute batch-level certainty, look for BSCG (Banned Substance Control Group) certification — which tests a specific production lot against the current WADA list. PrimaVie® is one shilajit ingredient brand that has pursued this certification.{" "}
+                For a full breakdown of WADA rules, contamination risk, and brand-specific testing — see our dedicated guide on{" "}
+                <Link href="/blog/shilajit-banned-sports" className="text-amber-800 underline font-semibold">whether shilajit is permitted in competitive sport</Link>.
               </p>
             </div>
 
