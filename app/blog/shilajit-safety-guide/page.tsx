@@ -277,7 +277,9 @@ export default function ShilajitSafetyGuide() {
                 in pregnancy. The presence of heavy metals — even at levels considered safe for
                 healthy adults — takes on additional significance during fetal development, where
                 lead in particular crosses the placental barrier. Until adequate safety data
-                exists, pregnant and breastfeeding women should not use shilajit.
+                exists, pregnant and breastfeeding women should not use shilajit.{" "}
+                See our full breakdown of{" "}
+                <Link href="/blog/shilajit-pregnancy-breastfeeding" className="text-[#10B981] hover:underline">shilajit during pregnancy and breastfeeding — what the evidence says</Link>.
               </p>
             </div>
 

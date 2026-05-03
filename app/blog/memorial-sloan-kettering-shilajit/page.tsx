@@ -294,6 +294,8 @@ export default function MemorialSloanKetteringShilajit() {
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed">
           Women who are postpartum, not breastfeeding, and interested in shilajit for energy or wellness support should still consult a physician before starting — particularly if they are on any medications or have underlying health conditions.
+          For a deeper look at the evidence — including what NCCIH says, why heavy metals matter specifically during pregnancy, and what alternatives exist — see{" "}
+          <Link href="/blog/shilajit-pregnancy-breastfeeding" className="text-[#10B981] hover:underline font-semibold">our full guide to shilajit safety during pregnancy and breastfeeding</Link>.
         </p>
       </section>
 
