@@ -47,4 +47,16 @@ export const BRANDS: Brand[] = [
       "Himalayan-sourced shilajit tested by Certified Laboratories and Micro Quality Labs, both in Burbank CA and both A2LA ISO/IEC 17025 accredited (Cert 3034.01) — the most rigorous lab accreditation standard in our database. Most recent heavy metals COA: September 2024. FA reference: ~58% (Batch RE18, 2021 COA, UV method, non-A2LA result). Full mineral panel available — one of the most comprehensive publicly documented mineral profiles of any shilajit brand, including 20+ minerals by ICP-MS and ICP-OES. Up to 99.9% purity, no fillers or artificial additives. Free shipping, money-back guarantee.",
     affiliateUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
   },
+  {
+    id: "lotus-blooming-herbs",
+    name: "Lotus Blooming Herbs",
+    slug: "lotus-blooming-herbs",
+    origin: "Himalayan Mountains, 16,000–18,000ft — near Tibetan border, sacred mountain valley",
+    lab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    coa: true,
+    certifications: ["NAMA Member", "AHPA Member", "Conservation Alliance Member", "Ayurvedic Practitioner-Owned"],
+    description:
+      "The first company to introduce genuine pure resin shilajit to the Western market. Owned and operated by Ayurvedic practitioners. Sourced from Himalayan Mountains at 16,000–18,000ft near the Tibetan border. COA testing by Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01), Batch BHC4429/2024057703, August 2025. Heavy metals (per serving): Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg. Microbiology: Total plate count <10 CFU/g · E. coli Absent · Salmonella Absent · Yeast & Mold <10 CFU/g · C. albicans Absent · S. aureus Absent · Pseudomonas Absent. Fulvic acid not disclosed — brand philosophy holds that fulvic acid measurement lacks universal scientific standards. 15% affiliate commission.",
+    affiliateUrl: "https://lotusbloomingherbs.com/?aff=380",
+  },
 ];

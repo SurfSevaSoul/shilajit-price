@@ -91,6 +91,11 @@ export const NATURAL_SHILAJIT_LINKS: Record<string, string> = {
   sunDriedTabs: "https://naturalshilajit.com/products/natural-shilajit-sun-dried-tablets-120-pcs?rfsn=9069392.c841fa",
 };
 
+export const LOTUS_BLOOMING_HERBS_LINKS: Record<string, string> = {
+  base: "https://lotusbloomingherbs.com/?aff=380",
+  authenticShilajit: "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380",
+};
+
 const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=shilajit0a-20`;
 
 export const PRODUCTS: Product[] = [
@@ -2671,6 +2676,39 @@ export const PRODUCTS: Product[] = [
     affiliateUrl: "https://naturalshilajit.com/products/natural-shilajit-sun-dried-tablets-120-pcs?rfsn=9069392.c841fa",
     description: "Sun-dried Altai shilajit tablets. 120ct, 60-day supply at 1000mg/day. Tested by DaaneLabs + Harken Research (Oct 2024). Exceptional microbiology: <10 cfu/g plate count. Heavy metals: Lead 1.761 ppm, Arsenic 1.719 ppm, Cadmium 0.356 ppm, Mercury <LOQ. FA not disclosed. GMP certified, 30-day guarantee.",
     imageUrl: "/images/products/natural-shilajit-tablets-120ct.png",
+  },
+
+  // ── LOTUS BLOOMING HERBS (Featured / S-Tier) ──────────────────────────────
+  {
+    id: "lotus-blooming-authentic-shilajit",
+    origin: "Himalayan",
+    vendor: "Lotus Blooming Herbs",
+    productName: "Authentic Shilajit™",
+    tier: "S",
+    category: "Resin",
+    priceUsd: 0,
+    weightGrams: 0,
+    pricePerGram: 0,
+    heavyMetalsTested: true,
+    heavyMetalsPass: true,
+    coaVerified: true,
+    thirdPartyTested: true,
+    purityScore: 10,
+    sourceLocation: "Himalayan Mountains, 16,000–18,000ft — near Tibetan border",
+    sourceAltitude: "16,000–18,000 ft",
+    processingDisclosed: true,
+    servingSizeMg: 0,
+    servingsPerContainer: 0,
+    costPerServing: 0,
+    gmpCertified: false,
+    moneyBackGuarantee: false,
+    freeShipping: false,
+    labTested: true,
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    featured: true,
+    affiliateUrl: LOTUS_BLOOMING_HERBS_LINKS.authenticShilajit,
+    description: "Himalayan resin sourced at 16,000–18,000ft near the Tibetan border. COA: Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01), Batch BHC4429/2024057703, August 2025. Heavy metals per serving: Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg. Microbiology: All clean. Fulvic acid not disclosed. First brand to bring pure resin shilajit to the West. Ayurvedic practitioner-owned.",
+    imageUrl: "",
   },
 ];
 
