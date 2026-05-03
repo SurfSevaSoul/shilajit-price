@@ -25,14 +25,21 @@ const TIER_PILL: Record<Tier, string> = {
   D: "bg-red-100 text-red-700 ring-1 ring-red-300",
 };
 
+const SITE_BASE = "https://www.shilajitprice.com";
+
 function buildProductSchema(product: Product) {
-  const url = product.affiliateUrl !== "#" ? product.affiliateUrl : "https://www.shilajitprice.com";
+  const url = product.affiliateUrl !== "#" ? product.affiliateUrl : SITE_BASE;
+  const image = product.imageUrl
+    ? product.imageUrl.startsWith("http")
+      ? product.imageUrl
+      : `${SITE_BASE}${product.imageUrl}`
+    : `${SITE_BASE}/logo.png`;
   return {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `${product.vendor} ${product.productName}`,
     description: product.description ?? `${product.category} shilajit supplement from ${product.vendor}`,
-    image: "https://www.shilajitprice.com/logo.png",
+    image,
     brand: { "@type": "Brand", name: product.vendor },
     category: "shilajit",
     offers: {
@@ -40,7 +47,12 @@ function buildProductSchema(product: Product) {
       price: product.priceUsd.toFixed(2),
       priceCurrency: "USD",
       availability: "https://schema.org/InStock",
+      itemCondition: "https://schema.org/NewCondition",
       url,
+      seller: {
+        "@type": "Organization",
+        name: product.vendor,
+      },
       hasMerchantReturnPolicy: {
         "@type": "MerchantReturnPolicy",
         applicableCountry: "US",

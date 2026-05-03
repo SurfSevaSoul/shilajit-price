@@ -36,24 +36,39 @@ const itemListSchema = {
   description: "Ranked list of top shilajit supplements compared by price per gram, fulvic acid content, and COA transparency.",
   url: BASE_URL,
   numberOfItems: PRODUCTS.length,
-  itemListElement: PRODUCTS.map((p, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: `${p.vendor} — ${p.productName}`,
-    url: p.affiliateUrl !== "#" ? p.affiliateUrl : BASE_URL,
-    item: {
-      "@type": "Product",
-      name: `${p.vendor} ${p.productName}`,
-      description: p.description ?? `${p.category} shilajit supplement`,
-      offers: {
-        "@type": "Offer",
-        price: p.priceUsd.toFixed(2),
-        priceCurrency: "USD",
-        availability: "https://schema.org/InStock",
-        url: p.affiliateUrl !== "#" ? p.affiliateUrl : BASE_URL,
+  itemListElement: PRODUCTS.map((p, i) => {
+    const offerUrl = p.affiliateUrl !== "#" ? p.affiliateUrl : BASE_URL;
+    const productImage = p.imageUrl
+      ? p.imageUrl.startsWith("http")
+        ? p.imageUrl
+        : `${BASE_URL}${p.imageUrl}`
+      : `${BASE_URL}/logo.png`;
+    return {
+      "@type": "ListItem",
+      position: i + 1,
+      name: `${p.vendor} — ${p.productName}`,
+      url: offerUrl,
+      item: {
+        "@type": "Product",
+        name: `${p.vendor} ${p.productName}`,
+        description: p.description ?? `${p.category} shilajit supplement`,
+        image: productImage,
+        url: offerUrl,
+        offers: {
+          "@type": "Offer",
+          price: p.priceUsd.toFixed(2),
+          priceCurrency: "USD",
+          availability: "https://schema.org/InStock",
+          itemCondition: "https://schema.org/NewCondition",
+          url: offerUrl,
+          seller: {
+            "@type": "Organization",
+            name: p.vendor,
+          },
+        },
       },
-    },
-  })),
+    };
+  }),
 };
 
 const TIER_ORDER: Record<Tier, number> = { S: 0, A: 1, B: 2, C: 3, D: 4 };
