@@ -7,6 +7,8 @@ const AFFILIATE_BL =
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
 const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_LBH =
+  "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-for-over-50`;
@@ -135,6 +137,19 @@ const BRANDS = [
     href: AFFILIATE_PB,
     btnClass:
       "bg-[#182B1F] hover:bg-[#10B981] text-white",
+  },
+  {
+    key: "lbh",
+    name: "Lotus Blooming Herbs Authentic Shilajit™",
+    tier: "S",
+    tierColor: "bg-amber-400 text-amber-900",
+    fulvic: "Not disclosed",
+    pricePerGram: "~$2.45",
+    origin: "Himalayan 16,000–18,000ft",
+    bestFor: "Lowest lead per serving in database, GMP Certified, A2LA ISO 17025, Ayurvedic practitioner-owned",
+    href: AFFILIATE_LBH,
+    btnClass:
+      "bg-amber-600 hover:bg-amber-500 text-white shadow-md shadow-amber-900/20",
   },
 ];
 
@@ -604,6 +619,15 @@ export default function ShilajitForOver50() {
               labelColor: "text-purple-700",
               href: AFFILIATE_PB,
             },
+            {
+              goal: "Best for Himalayan provenance & lowest lead",
+              pick: "Lotus Blooming Herbs Authentic Shilajit™",
+              reason:
+                "Sourced at 16,000–18,000ft in the Himalayas, GMP Certified, and tested by A2LA ISO 17025-accredited Certified Laboratories Burbank CA. Lead at 0.040 mcg per serving — the lowest measured across all brands in our database. Ideal for men over 50 prioritizing long-term daily safety with verified Himalayan origin.",
+              color: "border-amber-200 bg-amber-50",
+              labelColor: "text-amber-700",
+              href: AFFILIATE_LBH,
+            },
           ].map(({ goal, pick, reason, color, labelColor, href }) => (
             <div key={goal} className={`border rounded-xl p-5 ${color}`}>
               <div className={`text-[10px] font-black uppercase tracking-widest mb-1 ${labelColor}`}>
@@ -671,12 +695,61 @@ export default function ShilajitForOver50() {
             Affiliate link — commission earned at no extra cost to you
           </p>
         </div>
+
+        {/* LBH Featured Card */}
+        <div className="mt-4 bg-white border-2 border-amber-200 rounded-2xl p-6 shadow-sm hover:border-amber-300 transition-colors">
+          <div className="flex items-start gap-4 mb-4">
+            <div className="w-10 h-10 rounded-xl bg-amber-100 ring-1 ring-amber-300 flex items-center justify-center text-amber-800 font-black text-lg shrink-0">
+              S
+            </div>
+            <div>
+              <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-0.5">
+                Also Recommended · Lowest Lead Per Serving · Himalayan 16,000–18,000ft
+              </div>
+              <h3 className="text-base font-black text-[#0D1F14]">
+                Lotus Blooming Herbs Authentic Shilajit™
+              </h3>
+              <p className="text-xs text-[#0D1F14] mt-1">
+                GMP Certified · A2LA ISO 17025 · Ayurvedic practitioner-owned · ~$2.45/g
+              </p>
+            </div>
+          </div>
+          <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed mb-5">
+            <p>
+              For men over 50 taking shilajit daily for the long term, heavy metal
+              accumulation risk is a legitimate concern. Lotus Blooming Herbs stands
+              out on this dimension: their lead measurement of 0.040 mcg per serving
+              is the lowest in our database across all tested brands — a meaningful
+              distinction for anyone planning a sustained 6–12 month protocol.
+            </p>
+            <p>
+              The brand is owned and operated by NAMA-certified Ayurvedic practitioners,
+              making it one of the few products with genuine traditional provenance
+              alongside modern lab verification. Tested by Certified Laboratories
+              Burbank CA under A2LA ISO 17025 accreditation (Cert 3034.01) and
+              GMP Certified. Fulvic acid is not disclosed on the COA, but the
+              comprehensive heavy metals documentation is the strongest in its
+              Himalayan category.
+            </p>
+          </div>
+          <a
+            href={AFFILIATE_LBH}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm transition-colors shadow-md shadow-amber-900/20"
+          >
+            Shop Lotus Blooming Herbs →
+          </a>
+          <p className="text-[10px] text-[#7BA899] mt-2">
+            Affiliate link — commission earned at no extra cost to you
+          </p>
+        </div>
       </section>
 
       {/* Full brand grid */}
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
-          All four recommended options for men over 50
+          All five recommended options for men over 50
         </h2>
         <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
           <table className="w-full text-xs">
