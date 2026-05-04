@@ -185,7 +185,7 @@ export default function IsExpensiveShilajitWorthIt() {
       >
         {/* Disclosure */}
         <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
-          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected April 2026.
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected May 2026.
         </div>
 
         {/* What drives price up */}

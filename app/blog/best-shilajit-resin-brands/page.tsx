@@ -773,7 +773,7 @@ export default function BestShilajitResinBrands() {
           </table>
         </div>
         <p className="text-xs text-[#7BA899] mt-2">
-          ND = Not Disclosed in published COA. Prices reflect approximate retail as of April 2026.
+          ND = Not Disclosed in published COA. Prices reflect approximate retail as of May 2026.
           Full sortable table:{" "}
           <Link href="/compare" className="text-[#10B981] hover:underline">
             shilajitprice.com/compare →

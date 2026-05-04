@@ -40,7 +40,7 @@ export default function HeroSection() {
             {/* Live badge */}
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-[#9EC9AD] text-[#4A6358] text-xs font-semibold mb-5 shadow-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] animate-pulse" />
-              Updated April 2026 — {productCount} Products, {brandCount} Brands
+              Updated May 2026 — {productCount} Products, {brandCount} Brands
             </div>
 
             <h1

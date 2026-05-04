@@ -400,7 +400,7 @@ export default function BestShilajitResin2026() {
           </div>
 
           <p className="text-[10px] text-[#7BA899] mt-2 text-right">
-            * Prices as of April 2026. Affiliate links marked with sponsored.
+            * Prices as of May 2026. Affiliate links marked with sponsored.
           </p>
         </section>
 

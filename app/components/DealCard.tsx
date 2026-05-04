@@ -401,7 +401,7 @@ export default function DealCard({ product }: DealCardProps) {
             </span>
           )}
           <p className="text-[9px] text-[#7BA899] text-center mt-1.5">
-            Price verified April 2026. Confirm at checkout.
+            Price verified May 2026. Confirm at checkout.
           </p>
         </div>
       </div>

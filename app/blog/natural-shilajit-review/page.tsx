@@ -384,7 +384,7 @@ export default function NaturalShilajitReview() {
               </tbody>
             </table>
           </div>
-          <p className="text-[10px] text-[#7BA899] mt-2 text-right">Prices as of April 2026. All products include DBP verification and full COA.</p>
+          <p className="text-[10px] text-[#7BA899] mt-2 text-right">Prices as of May 2026. All products include DBP verification and full COA.</p>
         </section>
 
         {/* Who should buy */}

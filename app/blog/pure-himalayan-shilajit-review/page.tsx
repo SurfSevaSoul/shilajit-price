@@ -313,7 +313,7 @@ export default function PureHimalayanShilajitReview() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-[#7BA899] mt-2">Prices verified April 2026. Per-gram calculations based on resin weight; tablets calculated on equivalent serving weight.</p>
+          <p className="text-xs text-[#7BA899] mt-2">Prices verified May 2026. Per-gram calculations based on resin weight; tablets calculated on equivalent serving weight.</p>
         </section>
 
         {/* Who It's Best For */}

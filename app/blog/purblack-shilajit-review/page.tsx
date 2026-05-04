@@ -399,7 +399,7 @@ export default function PurblackShilajitReview() {
             </tbody>
           </table>
         </div>
-        <p className="text-[10px] text-[#7BA899] mt-2 text-right">Prices as of April 2026. Verify at checkout.</p>
+        <p className="text-[10px] text-[#7BA899] mt-2 text-right">Prices as of May 2026. Verify at checkout.</p>
 
         {/* Per-product narrative */}
         <div className="space-y-5 mt-6 text-[#0D1F14] text-sm leading-relaxed">

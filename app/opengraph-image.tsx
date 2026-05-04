@@ -108,7 +108,7 @@ export default function OgImage() {
                 textTransform: "uppercase",
               }}
             >
-              Updated April 2026
+              Updated May 2026
             </span>
           </div>
 

@@ -443,7 +443,7 @@ export default function ShilajitAshwagandhaStack() {
             </table>
           </div>
           <p className="text-xs text-[#7BA899] mt-2">
-            Prices reflect approximate retail as of April 2026.
+            Prices reflect approximate retail as of May 2026.
           </p>
         </section>
 

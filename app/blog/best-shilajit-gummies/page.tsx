@@ -487,7 +487,7 @@ export default function BestShilajitGummies() {
           </div>
 
           <p className="text-[10px] text-[#7BA899] mt-2 text-right">
-            N/R = Not Recommended. Prices as of April 2026.
+            N/R = Not Recommended. Prices as of May 2026.
           </p>
 
           <div className="mt-4 bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

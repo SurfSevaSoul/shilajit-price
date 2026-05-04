@@ -383,7 +383,7 @@ export default function BestShilajitForWomen() {
             </table>
           </div>
           <p className="text-xs text-[#7BA899] mt-2">
-            Prices reflect approximate retail as of April 2026. Check current pricing at each retailer.
+            Prices reflect approximate retail as of May 2026. Check current pricing at each retailer.
           </p>
         </section>
 

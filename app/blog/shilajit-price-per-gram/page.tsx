@@ -114,7 +114,7 @@ export default function ShilajitPricePerGram() {
       >
         {/* Disclosure */}
         <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
-          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected in April 2026 — prices may vary.
+          <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. We earn a commission at no extra cost to you. All pricing data collected in May 2026 — prices may vary.
         </div>
 
         {/* Why $/gram matters */}
@@ -178,7 +178,7 @@ export default function ShilajitPricePerGram() {
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-3">Full price per gram comparison — 20+ products</h2>
           <p className="text-sm text-[#0D1F14] mb-4 leading-relaxed">
-            Sorted by tier, then price per gram. Pricing collected April 2026. Includes free shipping where applicable.
+            Sorted by tier, then price per gram. Pricing collected May 2026. Includes free shipping where applicable.
             &quot;N/A&quot; for capsule products where $/gram is not directly comparable to raw resin.
           </p>
           <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
