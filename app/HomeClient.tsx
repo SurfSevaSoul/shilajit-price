@@ -643,7 +643,7 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
                 {[
                   { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan", badge: "Most Popular", outcome: "Black Lotus wins on value, Pure Himalayan wins on sourcing rigor." },
                   { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit", badge: "Altai Showdown", outcome: "Both Altai-sourced — Black Lotus leads on fulvic acid, Natural Shilajit on transparency." },
-                  { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan", badge: "S-Tier Battle", outcome: "DBP verification vs Himalayan purity — depends on what you trust more." },
+                  { slug: "lotus-blooming-vs-pure-himalayan", label: "Lotus Blooming Herbs vs Pure Himalayan", badge: "Himalayan Showdown", outcome: "Lotus Blooming Herbs wins on altitude (18,000ft), lowest lead per serving, and Ayurvedic provenance." },
                 ].map(({ slug, label, badge, outcome }) => (
                   <Link
                     key={slug}
