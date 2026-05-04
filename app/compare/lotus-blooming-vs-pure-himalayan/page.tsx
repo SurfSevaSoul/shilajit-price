@@ -115,9 +115,9 @@ const LBH = {
   coaDetail: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01) — Batch BHC4429/2024057703, Aug 2025",
   dbpVerified: false,
   heavyMetals: "pass" as const,
-  gmpCertified: false,
+  gmpCertified: true,
   freeShipping: false,
-  bestFor: "Ayurvedic practitioner-owned, 16,000–18,000ft Himalayan sourcing, A2LA ISO 17025",
+  bestFor: "Ayurvedic practitioner-owned, GMP Certified, 16,000–18,000ft Himalayan sourcing, A2LA ISO 17025",
   purityScore: 10,
   affiliateUrl: "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380",
   productLabel: "Authentic Shilajit™ 10g — $59.99",
@@ -411,7 +411,7 @@ export default function LotusBloomingVsPureHimalayanPage() {
                   "$1.33/g vs $6.00/g — nearly five times less expensive per gram for the same A2LA ISO 17025 lab accreditation standard",
                   "~58% fulvic acid disclosed (2021 COA, Certified Laboratories) — a concrete bioactive benchmark Lotus Blooming Herbs does not publish",
                   "Free shipping included — Lotus Blooming Herbs does not offer free shipping",
-                  "GMP certified — Lotus Blooming Herbs does not hold GMP certification",
+                  "Free shipping included — Lotus Blooming Herbs does not offer free shipping on all orders",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-2 text-xs text-[#0D1F14] leading-relaxed">
                     <span className="text-[#10B981] mt-0.5 shrink-0">✓</span>

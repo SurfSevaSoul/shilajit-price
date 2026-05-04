@@ -115,9 +115,9 @@ const LBH = {
   coaDetail: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01) — Batch BHC4429/2024057703, Aug 2025",
   dbpVerified: false,
   heavyMetals: "pass" as const,
-  gmpCertified: false,
+  gmpCertified: true,
   freeShipping: false,
-  bestFor: "Ayurvedic practitioner-owned, 16,000–18,000ft Himalayan sourcing, A2LA ISO 17025",
+  bestFor: "Ayurvedic practitioner-owned, GMP Certified, 16,000–18,000ft Himalayan sourcing, A2LA ISO 17025",
   purityScore: 10,
   affiliateUrl: "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380",
   productLabel: "Authentic Shilajit™ 10g — $59.99",
@@ -321,7 +321,7 @@ export default function LotusBloomingVsNaturalShilajitPage() {
               Third-party testing is conducted by <strong>Certified Laboratories in Burbank, CA</strong>, which holds A2LA ISO 17025 accreditation (Certificate 3034.01). Their published COA for Batch BHC4429/2024057703 (August 2025) documents heavy metals at the per-serving microgram level: <strong>Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg</strong>. Compared to Natural Shilajit's ppm-by-weight figures (Lead 4.714 ppm), LBH's per-serving microgram measurements are measured on a more consumer-relevant basis — and at 0.040 mcg/serving, their lead figure is one of the lowest we have documented across all brands.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Lotus Blooming Herbs earns an <strong>S-tier rating</strong> in our scoring system, placing it one tier above Natural Shilajit's A-tier. This gap reflects the combination of Himalayan sourcing altitude, Ayurvedic practitioner ownership, and A2LA ISO 17025 accredited lab verification. The brand does not hold DBP verification, GMP certification, or disclose a fulvic acid percentage — but the specific quality dimensions it does document are among the strongest in our database. At <strong>$59.99 for 10g ($6.00/g)</strong>, it is the most expensive brand in this comparison.
+              Lotus Blooming Herbs earns an <strong>S-tier rating</strong> in our scoring system, placing it one tier above Natural Shilajit's A-tier. This gap reflects the combination of Himalayan sourcing altitude, Ayurvedic practitioner ownership, GMP certification, and A2LA ISO 17025 accredited lab verification. The brand does not hold DBP verification or disclose a fulvic acid percentage — but the specific quality dimensions it does document are among the strongest in our database. At <strong>$59.99 for 10g ($6.00/g)</strong>, it is the most expensive brand in this comparison.
             </p>
           </section>
 
@@ -411,7 +411,7 @@ export default function LotusBloomingVsNaturalShilajitPage() {
                   "DBP (dibenzo-alpha-pyrone) verification — the strongest modern scientific marker for shilajit authenticity, absent from Lotus Blooming Herbs' testing panel",
                   "Triple-method lab testing (ICP-MS + LC-MS + FTIR) — the most comprehensive analytical method combination documented by any brand in our database",
                   "Dual-lab verification (DaaneLabs + Harken Research, LA, Nov 2024) — two independent labs confirming results vs LBH's single-lab approach",
-                  "$2.45/g vs $6.00/g — more than 60% less expensive per gram with GMP certification and a UNESCO-recognized source region",
+                  "$2.45/g vs $6.00/g — more than 60% less expensive per gram, with DBP verification and a UNESCO-recognized source region",
                 ].map((item, i) => (
                   <li key={i} className="flex gap-2 text-xs text-[#0D1F14] leading-relaxed">
                     <span className="text-[#10B981] mt-0.5 shrink-0">✓</span>
@@ -447,7 +447,7 @@ export default function LotusBloomingVsNaturalShilajitPage() {
                   Buy Natural Shilajit if…
                 </div>
                 <p className="text-xs text-[#0D1F14] leading-relaxed">
-                  You want the most scientifically documented shilajit in terms of authenticity verification — specifically DBP verification and triple-method lab testing (ICP-MS + LC-MS + FTIR) confirmed by two independent laboratories. Also the right choice if you want a GMP-certified UNESCO Altai resin at $2.45/g — more than 60% less per gram than Lotus Blooming Herbs — and are comfortable with Altai rather than Himalayan sourcing.
+                  You want the most scientifically documented shilajit in terms of authenticity verification — specifically DBP verification and triple-method lab testing (ICP-MS + LC-MS + FTIR) confirmed by two independent laboratories. Also the right choice if you want a UNESCO Altai resin at $2.45/g — more than 60% less per gram than Lotus Blooming Herbs — and are comfortable with Altai rather than Himalayan sourcing.
                 </p>
                 <a
                   href={NATURAL_SHILAJIT.affiliateUrl}
