@@ -313,6 +313,7 @@ export default function BestShilajitResinBrands() {
                 {b}
               </span>
             ))}
+            <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 ring-1 ring-amber-300 text-amber-800 text-[10px] font-bold">GMP Certified</span>
           </div>
           <div className="px-5 py-5 space-y-4">
             <div className="grid sm:grid-cols-3 gap-3 text-xs">

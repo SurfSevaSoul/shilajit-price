@@ -663,12 +663,14 @@ export const LAB_DATA: Record<string, LabEntry> = {
     microbiologyClean: true,
     heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
     notes: [
-      "Batch BHC4429/2024057703 — Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01) — August 2025",
-      "Heavy metals (per serving): Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg",
-      "Microbiology: Total Plate Count <10 CFU/g · E. coli Absent · Salmonella Absent · Yeast & Mold <10 CFU/g · C. albicans Absent · S. aureus Absent · Pseudomonas Absent",
+      "Batch BHC4429/2024057703 — Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01) — July–August 2025",
+      "Heavy metals (per serving, ICP-MS): Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg",
+      "Microbiology: Total Plate Count <10 CFU/g · E. coli Absent · Salmonella Absent · Yeast <10 CFU/g · Mold <10 CFU/g · C. albicans Absent · S. aureus Absent · Pseudomonas Absent",
       "Fulvic acid not disclosed — brand philosophy holds that fulvic acid measurement lacks universal scientific standards",
       "Source: Himalayan Mountains, 16,000–18,000ft — near Tibetan border, sacred mountain valley",
-      "Certifications: NAMA Member · AHPA Member · Conservation Alliance Member · Ayurvedic Practitioner-Owned",
+      "GMP Certified manufacturing facility",
+      "Certifications: NAMA Member · AHPA Member · Conservation Alliance Member · GMP Certified · Ayurvedic Practitioner-Owned",
+      "Same accredited lab as Pure Himalayan Shilajit — A2LA ISO 17025 Cert 3034.01, Certified Laboratories Burbank CA",
     ],
   },
 };

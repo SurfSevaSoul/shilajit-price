@@ -62,12 +62,12 @@ const WHAT_IT_MEANS = [
   {
     term: "A2LA ISO/IEC 17025 Accreditation",
     definition:
-      "ISO/IEC 17025 is the international standard for testing laboratory competence — labs must demonstrate technical proficiency, calibration traceability, and quality management. A2LA (American Association for Laboratory Accreditation) is the US body that audits and certifies labs against this standard. A2LA ISO/IEC 17025 accreditation is the highest lab credential in the US supplement industry. Certified Laboratories and Micro Quality Labs in Burbank, CA (Cert 3034.01) hold this accreditation for Pure Himalayan's COA testing.",
+      "ISO/IEC 17025 is the international standard for testing laboratory competence — labs must demonstrate technical proficiency, calibration traceability, and quality management. A2LA (American Association for Laboratory Accreditation) is the US body that audits and certifies labs against this standard. A2LA ISO/IEC 17025 accreditation is the highest lab credential in the US supplement industry. Certified Laboratories and Micro Quality Labs in Burbank, CA (Cert 3034.01) hold this accreditation — the same lab is used by both Pure Himalayan Shilajit and Lotus Blooming Herbs for their COA testing.",
   },
   {
     term: "Batch-Specific COA",
     definition:
-      "A COA issued for a specific production batch — identified by a batch or lot number — rather than a generic product-level certification. Batch-specific COAs are far more meaningful than general certifications because they prove the actual product on the shelf was tested. Batches can vary in heavy metals, fulvic acid, and microbiology due to seasonal or source variation. All four featured brands publish batch-identified COA data.",
+      "A COA issued for a specific production batch — identified by a batch or lot number — rather than a generic product-level certification. Batch-specific COAs are far more meaningful than general certifications because they prove the actual product on the shelf was tested. Batches can vary in heavy metals, fulvic acid, and microbiology due to seasonal or source variation. All five featured brands publish batch-identified COA data.",
   },
   {
     term: "Fulvic Acid",
@@ -82,12 +82,12 @@ const WHAT_IT_MEANS = [
   {
     term: "Heavy Metals Panel",
     definition:
-      "Tests for Lead (Pb), Mercury (Hg), Arsenic (As), and Cadmium (Cd). These naturally occur in geological formations and can concentrate in shilajit from its source environment. All four featured brands pass FDA dietary supplement limits: Lead <10 ppm, Mercury <3 ppm, Arsenic <15 ppm, Cadmium <5 ppm.",
+      "Tests for Lead (Pb), Mercury (Hg), Arsenic (As), and Cadmium (Cd). These naturally occur in geological formations and can concentrate in shilajit from its source environment. All five featured brands pass FDA dietary supplement limits: Lead <10 ppm, Mercury <3 ppm, Arsenic <15 ppm, Cadmium <5 ppm.",
   },
   {
     term: "Third-Party Testing",
     definition:
-      "Testing performed by an independent laboratory with no financial relationship to the brand being tested. This is essential for unbiased results — in-house testing can be manipulated. All four featured brands use named independent US laboratories.",
+      "Testing performed by an independent laboratory with no financial relationship to the brand being tested. This is essential for unbiased results — in-house testing can be manipulated. All five featured brands use named independent US laboratories.",
   },
 ];
 
@@ -266,6 +266,115 @@ export default function LabDataPage() {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#F0FAF4] hover:bg-emerald-100 border border-[#D1EDD8] hover:border-[#10B981] text-[#10B981] text-xs font-semibold transition-colors"
               >
                 View All Batch COAs →
+              </a>
+            </div>
+          </div>
+
+          {/* ── LOTUS BLOOMING HERBS ── */}
+          <div className="bg-white border-2 border-amber-200 rounded-2xl shadow-sm overflow-hidden mb-6 border-l-4 border-l-amber-400">
+            <div className="bg-amber-50 border-b border-amber-100 px-5 py-4 flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <div className="flex items-center gap-2 mb-1">
+                  <h3 className="font-black text-[#0D1F14] text-lg" style={{ fontFamily: "var(--font-jakarta)" }}>Lotus Blooming Herbs</h3>
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 ring-1 ring-amber-300 text-[9px] font-black">S-TIER</span>
+                  <CoaBadge status="verified" />
+                </div>
+                <p className="text-xs text-[#7BA899]">Himalayan Mountains, 16,000–18,000ft · <strong className="text-[#4A6358]">Certified Laboratories, Burbank CA</strong></p>
+                <p className="text-xs text-[#7BA899]">A2LA ISO 17025, Cert 3034.01 · <span className="text-amber-700 font-semibold">Same accredited lab as Pure Himalayan Shilajit</span></p>
+              </div>
+              <div className="text-right">
+                <div className="text-[10px] text-[#7BA899] uppercase tracking-widest font-bold">Most Recent COA</div>
+                <div className="text-sm font-bold text-[#0D1F14]">Batch BHC4429 · July–Aug 2025</div>
+              </div>
+            </div>
+
+            <div className="p-5 space-y-5">
+              {/* Fulvic Acid note */}
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-3 text-xs text-[#4A6358] leading-relaxed">
+                <span className="font-bold text-amber-800">Fulvic Acid:</span> Not disclosed. Brand philosophy: <em>fulvic acid measurement lacks universal standardization — different labs produce significantly different results for the same sample.</em> COA focuses on heavy metals panel and microbiology under A2LA ISO 17025 accreditation.
+              </div>
+
+              {/* Heavy Metals */}
+              <div>
+                <p className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest mb-2">Heavy Metals — Batch BHC4429/2024057703 · ICP-MS (mcg per serving)</p>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-xs">
+                    <thead>
+                      <tr className="bg-[#F0FAF4]">
+                        <th className="px-3 py-2 text-left font-bold text-[#0D1F14]">Product</th>
+                        <th className="px-3 py-2 text-center font-bold text-[#0D1F14]">Lead (Pb)</th>
+                        <th className="px-3 py-2 text-center font-bold text-[#0D1F14]">Arsenic (As)</th>
+                        <th className="px-3 py-2 text-center font-bold text-[#0D1F14]">Cadmium (Cd)</th>
+                        <th className="px-3 py-2 text-center font-bold text-[#0D1F14]">Mercury (Hg)</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-[#D1EDD8]">
+                      {[
+                        { p: "Authentic Shilajit™ Resin ⭐", pb: "0.040", as: "0.091", cd: "0.004", hg: "0.001" },
+                        { p: "FDA Limit", pb: "<10", as: "<15", cd: "<5", hg: "<3", limit: true },
+                      ].map(({ p, pb, as: a, cd, hg, limit }) => (
+                        <tr key={p} className={limit ? "bg-[#F0FAF4] text-[#7BA899]" : "bg-white"}>
+                          <td className={`px-3 py-2 font-semibold ${limit ? "text-[10px] text-[#7BA899]" : "text-[#0D1F14]"}`}>{p}</td>
+                          <td className={`px-3 py-2 text-center ${!limit ? "text-emerald-600 font-bold" : ""}`}>{pb}</td>
+                          <td className="px-3 py-2 text-center">{a}</td>
+                          <td className={`px-3 py-2 text-center ${!limit ? "text-emerald-600 font-bold" : ""}`}>{cd}</td>
+                          <td className="px-3 py-2 text-center">{hg}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-[10px] text-[#7BA899] mt-1.5">⭐ Lead 0.040 mcg/serving is the <strong className="text-[#4A6358]">lowest lead per serving</strong> of any brand in our database. Cadmium 0.004 mcg/serving is also the lowest recorded. See our <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">full heavy metals comparison →</Link></p>
+              </div>
+
+              {/* Microbiology */}
+              <div>
+                <p className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest mb-2">Microbiology — Batch BHC4429/2024057703</p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "TPC <10 CFU/g",
+                    "E. coli Absent",
+                    "Salmonella Absent",
+                    "C. albicans Absent",
+                    "S. aureus Absent",
+                    "Pseudomonas Absent",
+                    "Yeast <10 CFU/g",
+                    "Mold <10 CFU/g",
+                  ].map((r) => (
+                    <span key={r} className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 ring-1 ring-emerald-200 text-emerald-700 text-[11px] font-semibold">
+                      ✓ {r}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-[10px] text-[#7BA899] mt-1.5">Microbiology panel covers C. albicans, Bile-Tolerant Gram-Negative bacteria, Pseudomonas, and S. aureus — more comprehensive than most brands in our database.</p>
+              </div>
+
+              {/* Certifications */}
+              <div>
+                <p className="text-[10px] font-bold text-[#7BA899] uppercase tracking-widest mb-2">Certifications &amp; Provenance</p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "GMP Certified",
+                    "NAMA Member",
+                    "AHPA Member",
+                    "Conservation Alliance",
+                    "Ayurvedic Practitioner-Owned",
+                    "First to introduce pure resin shilajit to the West",
+                  ].map((r) => (
+                    <span key={r} className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-50 ring-1 ring-amber-200 text-amber-700 text-[11px] font-semibold">
+                      ✓ {r}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <a
+                href="https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-50 hover:bg-amber-100 border border-amber-200 hover:border-amber-400 text-amber-700 text-xs font-semibold transition-colors"
+              >
+                Shop Lotus Blooming Herbs Authentic Shilajit™ →
               </a>
             </div>
           </div>
@@ -550,7 +659,7 @@ export default function LabDataPage() {
                     </tbody>
                   </table>
                 </div>
-                <p className="text-[10px] text-[#7BA899] mt-1.5">⭐ True Gold has the lowest lead (0.121 mg/kg) of any product across all four brands. See our <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">full heavy metals comparison →</Link></p>
+                <p className="text-[10px] text-[#7BA899] mt-1.5">⭐ True Gold has the lowest lead by concentration (0.121 mg/kg) across all five brands. Note: Lotus Blooming Herbs has the lowest lead <em>per serving</em> (0.040 mcg). See our <Link href="/blog/shilajit-heavy-metals-comparison" className="text-[#10B981] hover:underline">full heavy metals comparison →</Link></p>
               </div>
 
               {/* Authenticity + Microbiology */}
@@ -582,7 +691,7 @@ export default function LabDataPage() {
           {/* Cross-brand heavy metals link */}
           <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4 flex flex-wrap items-center justify-between gap-3">
             <p className="text-sm text-[#4A6358]">
-              <strong className="text-[#0D1F14]">Side-by-side heavy metals comparison</strong> — all four brands, all products, in one table.
+              <strong className="text-[#0D1F14]">Side-by-side heavy metals comparison</strong> — all five brands, all products, in one table.
             </p>
             <Link
               href="/blog/shilajit-heavy-metals-comparison"
@@ -682,7 +791,7 @@ export default function LabDataPage() {
               },
               {
                 q: "What does A2LA ISO/IEC 17025 accreditation mean?",
-                a: "ISO/IEC 17025 is the international standard for testing laboratory competence. Labs must demonstrate technical proficiency, equipment calibration traceability, and quality management. A2LA (American Association for Laboratory Accreditation) is the US body that independently audits and certifies labs against this standard. A2LA ISO/IEC 17025 is the highest lab credential in the US supplement industry — Certified Laboratories and Micro Quality Labs in Burbank (Cert 3034.01) hold this accreditation for Pure Himalayan's COA testing.",
+                a: "ISO/IEC 17025 is the international standard for testing laboratory competence. Labs must demonstrate technical proficiency, equipment calibration traceability, and quality management. A2LA (American Association for Laboratory Accreditation) is the US body that independently audits and certifies labs against this standard. A2LA ISO/IEC 17025 is the highest lab credential in the US supplement industry — Certified Laboratories and Micro Quality Labs in Burbank (Cert 3034.01) hold this accreditation. Both Pure Himalayan Shilajit and Lotus Blooming Herbs use this same accredited lab for their COA testing.",
               },
               {
                 q: "Why does batch-specific matter vs. a generic certification?",

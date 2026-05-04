@@ -438,7 +438,7 @@ export default function AltaiVsHimalayanShilajit() {
             <div className="border border-amber-200 rounded-xl p-4 bg-amber-50/40">
               <div className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-1">Himalayan 16,000–18,000ft · S-Tier</div>
               <div className="font-black text-[#0D1F14] text-sm mb-1">Lotus Blooming Herbs Authentic Shilajit™</div>
-              <div className="text-xs text-[#0D1F14] mb-3">Lowest lead per serving (0.040 mcg) · A2LA ISO 17025 · Ayurvedic practitioner-owned</div>
+              <div className="text-xs text-[#0D1F14] mb-3">Lowest lead per serving (0.040 mcg) · GMP Certified · A2LA ISO 17025 · Ayurvedic practitioner-owned</div>
               <a
                 href={AFFILIATE_LBH}
                 target="_blank"

@@ -767,7 +767,7 @@ export default function ShilajitBeginnersGuide() {
                     Lotus Blooming Herbs Authentic Shilajit™ Resin
                   </h3>
                   <p className="text-xs text-[#0D1F14] mb-3">
-                    S-tier · Himalayan 16,000–18,000ft · A2LA ISO 17025 · Ayurvedic practitioner-owned
+                    S-tier · Himalayan 16,000–18,000ft · GMP Certified · A2LA ISO 17025 · Ayurvedic practitioner-owned
                   </p>
                   <p className="text-xs text-[#4A6358] leading-relaxed mb-3">
                     A strong choice for beginners who want a product rooted in traditional Ayurvedic

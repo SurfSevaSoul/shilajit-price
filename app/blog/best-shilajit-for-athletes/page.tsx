@@ -323,7 +323,7 @@ export default function BestShilajitForAthletes() {
                 <div>
                   <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-0.5">Himalayan Pick — Verified Heavy Metals</div>
                   <h3 className="text-base font-black text-[#0D1F14]">Lotus Blooming Herbs Authentic Shilajit™</h3>
-                  <p className="text-xs text-[#7BA899]">Himalayan Mountains 16,000–18,000ft · A2LA ISO 17025 · Lowest lead per serving</p>
+                  <p className="text-xs text-[#7BA899]">Himalayan Mountains 16,000–18,000ft · GMP Certified · A2LA ISO 17025 · Lowest lead per serving</p>
                 </div>
               </div>
               <p className="text-sm text-[#0D1F14] leading-relaxed mb-4">
