@@ -248,6 +248,14 @@ export default function ShilajitWhileFasting() {
             triggers autophagy suppression, and it may have adjunct pro-autophagic effects
             — but that claim cannot yet be made with human trial certainty.
           </div>
+          <p className="text-sm text-[#0D1F14] leading-relaxed">
+            For a deeper dive into the mTOR/AMPK mechanistic analysis, the DBP–mitophagy
+            connection, and{" "}
+            <Link href="/blog/shilajit-autophagy" className="text-[#10B981] hover:underline font-medium">
+              whether shilajit specifically interferes with autophagy
+            </Link>
+            , see our dedicated post on that question.
+          </p>
         </div>
       </section>
 
