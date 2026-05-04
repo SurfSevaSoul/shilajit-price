@@ -474,6 +474,11 @@ export default function BestShilajitBrandsRanked() {
             <Link href="/blog/best-shilajit-gummies-2026" className="text-[#10B981] hover:underline font-semibold">our full breakdown of the best shilajit gummies</Link>{" "}
             in 2026.
           </p>
+          <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
+            Comparing resin, powder, and capsules? See our{" "}
+            <Link href="/blog/shilajit-powder-vs-resin" className="text-[#10B981] hover:underline font-semibold">full breakdown of every shilajit format including powder</Link>{" "}
+            — with COA data compared across formats and a processing method explainer.
+          </p>
         </section>
       </BlogPostLayout>
   );

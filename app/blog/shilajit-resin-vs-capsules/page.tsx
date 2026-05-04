@@ -282,6 +282,13 @@ export default function ShilajitResinVsCapsules() {
           </Link>{" "}
           ranked by verified lab data, fulvic acid content, and price per gram.
         </p>
+        <p className="text-sm text-[#0D1F14] leading-relaxed">
+          Wondering about powder specifically? Our dedicated post covers{" "}
+          <Link href="/blog/shilajit-powder-vs-resin" className="text-[#10B981] hover:underline font-semibold">
+            how shilajit powder fits into the format comparison
+          </Link>{" "}
+          — including how spray drying vs freeze drying affects compound integrity and what the COA data actually shows by format.
+        </p>
       </BlogPostLayout>
   );
 }
