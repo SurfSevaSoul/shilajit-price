@@ -438,6 +438,7 @@ export default function BestShilajitForMen() {
               { href: "/blog/best-shilajit-for-energy", title: "Best Shilajit for Energy and Fatigue", desc: "How shilajit works at the cellular level + top products for energy" },
               { href: "/blog/shilajit-resin-vs-capsules", title: "Resin vs Capsules vs Powder", desc: "Full form-factor comparison for bioavailability and convenience" },
               { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "See how every brand scores — COA quality, fulvic acid %, and value" },
+              { href: "/blog/shilajit-for-over-50", title: "Shilajit for Men Over 50", desc: "The clinical trials specifically enrolled men aged 45–55 — see our dedicated guide to shilajit for men over 50" },
             ].map(({ href, title, desc }) => (
               <Link key={href} href={href} className="group flex items-center gap-4 bg-white border border-[#D1EDD8] hover:border-[#D1EDD8] rounded-xl px-5 py-3.5 transition-all">
                 <div className="flex-1 min-w-0">

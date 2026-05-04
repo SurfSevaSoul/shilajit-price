@@ -260,6 +260,13 @@ export default function ShilajitTestosteroneStudy() {
                 However, the safety data is valuable — at 500 mg/day for 90 days, processed
                 shilajit was well-tolerated in this population.
               </p>
+              <p className="mt-2 text-xs text-[#4A6358] leading-relaxed">
+                For a focused breakdown of{" "}
+                <Link href="/blog/shilajit-for-over-50" className="text-[#10B981] hover:underline font-medium">
+                  what this means specifically for men over 50
+                </Link>
+                {" "}— including realistic effect size expectations, timing, and the best products for this age group — see our dedicated guide.
+              </p>
             </div>
           </div>
         </div>
