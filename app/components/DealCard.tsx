@@ -234,14 +234,20 @@ export default function DealCard({ product }: DealCardProps) {
           </div>
 
           {/* Row 2: Pricing */}
-          <div className="flex items-baseline gap-2 mb-3">
-            <span className="text-xl font-extrabold text-[#0D1F14] tabular-nums" style={{ fontFamily: "var(--font-jakarta)" }}>${priceUsd.toFixed(2)}</span>
-            <span className="text-[10px] text-[#7BA899]">/ {weightGrams}g</span>
-            <span className="ml-auto text-sm font-bold text-[#10B981] tabular-nums">
-              ${pricePerGram.toFixed(2)}
-              <span className="text-[10px] text-[#7BA899] font-normal">/g</span>
-            </span>
-          </div>
+          {priceUsd > 0 ? (
+            <div className="flex items-baseline gap-2 mb-3">
+              <span className="text-xl font-extrabold text-[#0D1F14] tabular-nums" style={{ fontFamily: "var(--font-jakarta)" }}>${priceUsd.toFixed(2)}</span>
+              <span className="text-[10px] text-[#7BA899]">/ {weightGrams}g</span>
+              <span className="ml-auto text-sm font-bold text-[#10B981] tabular-nums">
+                ${pricePerGram.toFixed(2)}
+                <span className="text-[10px] text-[#7BA899] font-normal">/g</span>
+              </span>
+            </div>
+          ) : (
+            <div className="mb-3">
+              <span className="text-sm font-bold text-[#10B981]">See site for pricing →</span>
+            </div>
+          )}
 
           {/* Row 3: Top badges + details toggle */}
           <div className="flex items-center justify-between gap-2">

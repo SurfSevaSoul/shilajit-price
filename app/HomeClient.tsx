@@ -81,14 +81,15 @@ function bestValueScore(p: (typeof PRODUCTS)[0]) {
 
 // Pin one flagship product per featured partner to the front of their
 // respective tier group — tier integrity is always preserved.
-// S-tier pins: Black Lotus → Natural Shilajit (in that order within S)
+// S-tier pins: Black Lotus → Lotus Blooming Herbs → Natural Shilajit (in that order within S)
 // A-tier pins: Pure Himalayan → Pürblack (in that order within A)
 // If a pinned product is absent (filtered out) it is silently skipped.
 const PINNED_PARTNER_IDS = [
-  "bl-resin",                    // S — Black Lotus Pure Altai Resin 30g
-  "natural-shilajit-resin-20g",  // S — Natural Shilajit Resin 20g
-  "ph-soft-resin",               // A — Pure Himalayan Soft Resin
-  "purblack-true-gold-30g",      // A — Pürblack True Gold Live Resin
+  "bl-resin",                           // S — Black Lotus Pure Altai Resin 30g
+  "lotus-blooming-authentic-shilajit",  // S — Lotus Blooming Herbs Authentic Shilajit™
+  "natural-shilajit-resin-20g",         // S — Natural Shilajit Resin 20g
+  "ph-soft-resin",                      // A — Pure Himalayan Soft Resin
+  "purblack-true-gold-30g",             // A — Pürblack True Gold Live Resin
 ];
 
 const TIER_SEQUENCE = ["S", "A", "B", "C", "D"] as const;

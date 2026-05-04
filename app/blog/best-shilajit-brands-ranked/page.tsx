@@ -5,6 +5,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 const AFFILIATE_BASE = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_RESIN = "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_CAPS = "https://black-lotus-shilajit-shop.myshopify.com/products/shilajit-resin-powder-capsules-extra-strength?sca_ref=5188496.BbHTin3axE";
+const LBH_PRODUCT = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-brands-ranked`;
 
@@ -94,6 +95,19 @@ const TOP_BRANDS = [
   },
   {
     rank: 2,
+    name: "Lotus Blooming Herbs",
+    tier: "S",
+    tierColor: "bg-amber-400 text-amber-900",
+    pricePerGram: "See site",
+    fulvic: "Not disclosed",
+    coa: true,
+    thirdParty: true,
+    source: "Himalayan Mountains, 16,000–18,000ft",
+    verdict: "S-tier — Ayurvedic practitioner-owned, A2LA ISO 17025 verified, first to introduce pure resin shilajit to the West",
+    affiliate: LBH_PRODUCT,
+  },
+  {
+    rank: 3,
     name: "Sayan Shilajit",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
@@ -106,7 +120,7 @@ const TOP_BRANDS = [
     affiliate: `https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20`,
   },
   {
-    rank: 3,
+    rank: 4,
     name: "Natural Shilajit",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
@@ -119,7 +133,7 @@ const TOP_BRANDS = [
     affiliate: `https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20`,
   },
   {
-    rank: 4,
+    rank: 5,
     name: "Essencraft",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
@@ -132,7 +146,7 @@ const TOP_BRANDS = [
     affiliate: `https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20`,
   },
   {
-    rank: 5,
+    rank: 6,
     name: "PrimaVie (Jarrow)",
     tier: "B",
     tierColor: "bg-blue-500 text-white",
@@ -217,7 +231,7 @@ export default function BestShilajitBrandsRanked() {
 
         {/* Quick comparison table */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top 5 shilajit brands at a glance</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top 6 shilajit brands at a glance</h2>
           <div className="overflow-x-auto rounded-xl border border-[#D1EDD8]">
             <table className="w-full text-xs">
               <thead>
@@ -307,9 +321,57 @@ export default function BestShilajitBrandsRanked() {
           <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
 
-        {/* #2 Sayan */}
+        {/* #2 Lotus Blooming Herbs */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#2 Best Budget Pick: Sayan Shilajit</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#2 Most Traditional: Lotus Blooming Herbs</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
+            <p>
+              Lotus Blooming Herbs holds a unique position in this ranking: they are the first company to introduce genuine pure resin shilajit to the Western market. The brand is Ayurvedic practitioner-owned — a member of NAMA (National Ayurvedic Medical Association) and AHPA (American Herbal Products Association) — which places traditional preparation standards above supplement industry norms.
+            </p>
+            <p>
+              Their Authentic Shilajit™ Resin is sourced from Himalayan Mountains at 16,000–18,000ft near the Tibetan border — a specific, verifiable high-altitude collection zone. Lab testing was performed by Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01), one of the most rigorous accreditation standards we see in this market. Heavy metals per serving: Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg — among the cleanest results in our database.
+            </p>
+            <p>
+              They do not disclose a fulvic acid percentage — not because the data is unavailable, but as a principled philosophical stance: they hold that current measurement methodologies for fulvic acid lack universal scientific consensus. This transparency about what they choose not to claim is itself a quality signal. The purification process uses filtered spring water with no solvents.
+            </p>
+          </div>
+          <div className="mt-5 bg-amber-50 border border-amber-200 rounded-2xl p-5">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-lg shrink-0">S</div>
+              <div>
+                <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-0.5">#2 Ranked — S-Tier · Ayurvedic Practitioner-Owned</div>
+                <h3 className="text-base font-black text-[#0D1F14]">Lotus Blooming Herbs — Authentic Shilajit™</h3>
+                <p className="text-xs text-[#4A6358] mt-1">Himalayan Mountains, 16,000–18,000ft · Certified Laboratories Burbank (A2LA ISO 17025)</p>
+              </div>
+            </div>
+            <div className="grid sm:grid-cols-2 gap-x-6 gap-y-1.5 mb-5">
+              {[
+                "Source: Himalayan Mountains, 16,000–18,000ft near Tibetan border",
+                "Lab: Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+                "Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg per serving",
+                "Batch BHC4429/2024057703 — comprehensive microbiology panel (all clean)",
+                "Fulvic acid not disclosed — principled philosophy-based stance",
+                "NAMA Member · AHPA Member · Conservation Alliance Member",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <CheckIcon />
+                  <span className="text-xs text-[#0D1F14]">{item}</span>
+                </div>
+              ))}
+            </div>
+            <a href={LBH_PRODUCT} target="_blank" rel="noopener noreferrer sponsored"
+              data-click-location="brands_ranked_blog"
+              data-product-name="Lotus Blooming Herbs Authentic Shilajit"
+              className="block w-full text-center py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-white font-semibold text-sm transition-colors shadow-md shadow-amber-900/20">
+              View Authentic Shilajit™ →
+            </a>
+            <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          </div>
+        </section>
+
+        {/* #3 Sayan */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#3 Best Budget Pick: Sayan Shilajit</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
               Sayan is a Siberian-sourced shilajit brand with a genuine COA and a strong Amazon track record. At under $1/gram across their larger sizes, they offer genuine value for cost-conscious buyers who still want documentation. Their fulvic acid content (~60%) is lower than Black Lotus but still in a legitimate therapeutic range.
@@ -320,25 +382,25 @@ export default function BestShilajitBrandsRanked() {
           </div>
         </section>
 
-        {/* #3–5 briefer */}
+        {/* #4–6 briefer */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#3–5: The best of the rest</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#4–6: The best of the rest</h2>
           <div className="space-y-4">
             {[
               {
-                rank: "#3",
+                rank: "#4",
                 name: "Natural Shilajit",
                 color: "border-[#D1EDD8]",
                 verdict: "One of the stronger third-party-tested brands on Amazon. Himalayan sourced, 70%+ fulvic acid, and a transparent COA make this a reliable A-tier pick at roughly $1.08/gram for their resin. Multiple size options and positive long-term customer reviews add confidence.",
               },
               {
-                rank: "#4",
+                rank: "#5",
                 name: "Essencraft",
                 color: "border-blue-700/40",
                 verdict: "A premium-priced Himalayan resin with 75%+ fulvic acid and heavy metals testing. Slightly higher $/gram than our top two picks but justifies it with quality documentation. Best for buyers who want maximum transparency and don't mind paying a small premium.",
               },
               {
-                rank: "#5",
+                rank: "#6",
                 name: "PrimaVie / Jarrow Formulas",
                 color: "border-amber-200",
                 verdict: "PrimaVie is the most research-backed shilajit extract in capsule form, with multiple human clinical trials. It's a standardized extract rather than raw resin, so bioavailability may differ. GMP certified, broadly available, and the safest choice for those who prefer a capsule with clinical validation.",
@@ -384,6 +446,7 @@ export default function BestShilajitBrandsRanked() {
           <div className="space-y-3">
             {[
               { type: "Best overall / highest quality", pick: "Black Lotus Shilajit Resin", reason: "S-tier, 64–74% FA (by form), third-party COA, $1.33/g" },
+              { type: "Most traditional / Ayurvedic", pick: "Lotus Blooming Herbs Authentic Shilajit™", reason: "S-tier, Himalayan 16,000–18,000ft, A2LA ISO 17025, practitioner-owned" },
               { type: "Best on a budget", pick: "Sayan Shilajit (large size)", reason: "A-tier, ~$0.87/g, COA available" },
               { type: "Best capsule (standardized extract)", pick: "Jarrow PrimaVie", reason: "B-tier, clinically studied, GMP certified" },
               { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 75%+ FA, heavy metals tested" },
