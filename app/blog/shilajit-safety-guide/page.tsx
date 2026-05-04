@@ -295,7 +295,10 @@ export default function ShilajitSafetyGuide() {
                 kidneys are also the primary elimination route for several heavy metals, and
                 impaired renal function means reduced clearance capacity. People with CKD,
                 kidney stones, or who have had kidney transplants should consult a nephrologist
-                before considering shilajit.
+                before considering shilajit. For the full evidence breakdown, see our dedicated guide on{" "}
+                <Link href="/blog/shilajit-liver-kidneys" className="text-amber-700 hover:underline font-medium">
+                  shilajit and liver and kidney safety — a full breakdown
+                </Link>.
               </p>
             </div>
 

@@ -218,6 +218,13 @@ export default function ShilajitSideEffects() {
             <p className="text-xs text-[#7BA899] italic">
               This list is not exhaustive. Anyone with a pre-existing medical condition or on prescription medications should consult a physician before starting any new supplement, including shilajit.
             </p>
+            <p className="text-xs text-[#4A6358] leading-relaxed">
+              For a dedicated deep-dive on the two most common organ-related questions, see our full breakdown of{" "}
+              <Link href="/blog/shilajit-liver-kidneys" className="text-[#10B981] hover:underline font-medium">
+                what shilajit does to your liver and kidneys
+              </Link>{" "}
+              — including who specifically should be cautious and what the clinical evidence shows.
+            </p>
           </div>
         </section>
 
