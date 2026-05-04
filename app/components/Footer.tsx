@@ -105,10 +105,10 @@ export default function Footer() {
             <ul className="space-y-2">
               {[
                 { label: "Black Lotus Shilajit", href: "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE" },
+                { label: "Lotus Blooming Herbs", href: LOTUS_BLOOMING_HERBS_LINKS.base },
                 { label: "Pure Himalayan Shilajit", href: "https://www.purehimalayanshilajit.com/?ref=4792" },
                 { label: "Natural Shilajit", href: "https://naturalshilajit.com/?rfsn=9069392.c841fa" },
                 { label: "Pürblack", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
-                { label: "Lotus Blooming Herbs", href: LOTUS_BLOOMING_HERBS_LINKS.base },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <a
