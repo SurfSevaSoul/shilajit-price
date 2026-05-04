@@ -181,11 +181,11 @@ export default function ShilajitLiverKidneys() {
                 <span>⚠️</span> High uric acid and gout
               </h3>
               <p className="text-xs text-amber-800 leading-relaxed">
-                Shilajit has been observed to increase urinary uric acid excretion in some studies. For most people this is neutral or even beneficial — it suggests uric acid is being cleared rather than retained. But for people with hyperuricemia (chronically elevated uric acid), gout, or a history of uric acid kidney stones, increased uric acid turnover is a relevant consideration. Uric acid kidney stones are directly correlated with elevated uric acid levels. Proceed with caution and consult your physician if any of these apply. See our post on{" "}
-                <Link href="/blog/shilajit-side-effects" className="text-amber-700 hover:underline font-medium">
-                  shilajit side effects
-                </Link>{" "}
-                for a broader breakdown of who should be cautious.
+                Shilajit has been observed to increase urinary uric acid excretion in some studies. For most people this is neutral or even beneficial — it suggests uric acid is being cleared rather than retained. But for people with hyperuricemia (chronically elevated uric acid), gout, or a history of uric acid kidney stones, increased uric acid turnover is a relevant consideration. Uric acid kidney stones are directly correlated with elevated uric acid levels. Proceed with caution and consult your physician if any of these apply. For a full evidence breakdown specific to this population, see{" "}
+                <Link href="/blog/shilajit-gout-uric-acid" className="text-amber-700 hover:underline font-medium">
+                  shilajit and gout — a dedicated breakdown
+                </Link>
+                .
               </p>
             </div>
 

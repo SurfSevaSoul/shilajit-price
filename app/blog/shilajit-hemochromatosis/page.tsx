@@ -354,6 +354,13 @@ export default function ShilajitHemochromatosis() {
               </div>
             </div>
           ))}
+          <p className="text-xs text-[#4A6358] leading-relaxed">
+            The gout and uric acid contraindication in particular involves a different but equally under-researched risk profile. For a dedicated breakdown of what people with high uric acid need to know before supplementing, see our post on{" "}
+            <Link href="/blog/shilajit-gout-uric-acid" className="text-[#10B981] hover:underline font-medium">
+              shilajit and gout or high uric acid levels
+            </Link>
+            .
+          </p>
         </div>
       </section>
 
