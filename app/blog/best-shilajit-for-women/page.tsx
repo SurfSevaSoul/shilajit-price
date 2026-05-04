@@ -9,6 +9,7 @@ const AFFILIATE_CAPS =
 const AFFILIATE_GUMMIES =
   "https://black-lotus-shilajit-shop.myshopify.com/products/shilajit-gummies?sca_ref=5188496.BbHTin3axE";
 const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
+const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "best-shilajit-for-women";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
@@ -248,7 +249,7 @@ export default function BestShilajitForWomen() {
         {/* Rankings table */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
-            Top 5 Shilajit Products for Women — 2026 Rankings
+            Top Shilajit Products for Women — 2026 Rankings
           </h2>
           <p className="text-sm text-[#0D1F14] leading-relaxed mb-4">
             Ranked by verified purity data, COA availability, value, and suitability for daily
@@ -312,7 +313,26 @@ export default function BestShilajitForWomen() {
                   <td className="px-3 py-3 text-[#0D1F14]">Most convenient daily use form with same purity as resin</td>
                 </tr>
                 <tr className="bg-white border-t border-[#D1EDD8]">
-                  <td className="px-3 py-3 font-bold text-[#10B981]">#3</td>
+                  <td className="px-3 py-3 font-bold text-amber-600">#3</td>
+                  <td className="px-3 py-3 font-semibold text-[#0D1F14]">
+                    <a
+                      href={AFFILIATE_LBH}
+                      target="_blank"
+                      rel="noopener noreferrer sponsored"
+                      className="text-[#10B981] hover:underline"
+                    >
+                      Lotus Blooming Herbs Authentic Shilajit™ Resin
+                    </a>
+                  </td>
+                  <td className="px-3 py-3 text-center font-bold text-amber-600">S</td>
+                  <td className="px-3 py-3 text-center">~$60</td>
+                  <td className="px-3 py-3 text-center">—</td>
+                  <td className="px-3 py-3 text-center font-semibold text-[#7BA899]">N/D</td>
+                  <td className="px-3 py-3 text-center">✓</td>
+                  <td className="px-3 py-3 text-[#0D1F14]">Ayurvedic practitioner-owned, lowest lead/serving (0.040 mcg), traditional Himalayan sourcing</td>
+                </tr>
+                <tr className="bg-[#F0FAF4] border-t border-[#D1EDD8]">
+                  <td className="px-3 py-3 font-bold text-[#10B981]">#4</td>
                   <td className="px-3 py-3 font-semibold text-[#0D1F14]">
                     <a
                       href={PURE_HIMALAYAN_RESIN}
@@ -330,8 +350,8 @@ export default function BestShilajitForWomen() {
                   <td className="px-3 py-3 text-center">✓</td>
                   <td className="px-3 py-3 text-[#0D1F14]">ISO/IEC 17025 certified testing, Himalayan source</td>
                 </tr>
-                <tr className="bg-[#F0FAF4] border-t border-[#D1EDD8]">
-                  <td className="px-3 py-3 font-bold text-[#10B981]">#4</td>
+                <tr className="bg-white border-t border-[#D1EDD8]">
+                  <td className="px-3 py-3 font-bold text-[#10B981]">#5</td>
                   <td className="px-3 py-3 font-semibold text-[#0D1F14]">
                     <a
                       href="https://www.purehimalayanshilajit.com/shilajit-tablets/?ref=4792"
@@ -349,8 +369,8 @@ export default function BestShilajitForWomen() {
                   <td className="px-3 py-3 text-center">✓</td>
                   <td className="px-3 py-3 text-[#0D1F14]">Convenient tablet form with same ISO certification</td>
                 </tr>
-                <tr className="bg-white border-t border-[#D1EDD8]">
-                  <td className="px-3 py-3 font-bold text-[#10B981]">#5</td>
+                <tr className="bg-[#F0FAF4] border-t border-[#D1EDD8]">
+                  <td className="px-3 py-3 font-bold text-[#10B981]">#6</td>
                   <td className="px-3 py-3 font-semibold text-[#0D1F14]">Sayan Altai Resin 30g</td>
                   <td className="px-3 py-3 text-center font-bold text-amber-500">A</td>
                   <td className="px-3 py-3 text-center">$29.99</td>
@@ -494,10 +514,10 @@ export default function BestShilajitForWomen() {
         <section className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <h2 className="text-2xl font-black text-[#0D1F14] mb-2">Our Top Picks</h2>
           <p className="text-sm text-[#0D1F14] leading-relaxed mb-5">
-            Based on verified purity data, COA availability, and overall value, these are the two
-            products we recommend most for women looking for a high-quality daily shilajit:
+            Based on verified purity data, COA availability, and overall value, these are the top
+            products we recommend for women looking for a high-quality daily shilajit:
           </p>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-3">
             <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4">
               <p className="text-xs font-semibold text-[#7BA899] uppercase tracking-wide mb-1">
                 Best Overall
@@ -510,9 +530,26 @@ export default function BestShilajitForWomen() {
                 href={AFFILIATE_RESIN}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors w-full justify-center"
               >
                 View on Black Lotus →
+              </a>
+            </div>
+            <div className="bg-amber-50/40 border border-amber-200 rounded-xl p-4">
+              <p className="text-xs font-semibold text-amber-700 uppercase tracking-wide mb-1">
+                Best Traditional Sourcing
+              </p>
+              <p className="font-bold text-[#0D1F14] mb-1">Lotus Blooming Herbs Authentic Shilajit™</p>
+              <p className="text-xs text-[#0D1F14] mb-3">
+                Ayurvedic practitioner-owned · 16,000–18,000ft Himalayan · A2LA ISO 17025 · Lowest lead/serving
+              </p>
+              <a
+                href={AFFILIATE_LBH}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-colors w-full justify-center"
+              >
+                View on Lotus Blooming Herbs →
               </a>
             </div>
             <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4">
@@ -527,7 +564,7 @@ export default function BestShilajitForWomen() {
                 href={AFFILIATE_CAPS}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors w-full justify-center"
               >
                 View on Black Lotus →
               </a>

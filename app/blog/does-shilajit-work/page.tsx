@@ -8,6 +8,7 @@ const BL_RESIN =
 const NS_RESIN =
   "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa";
 const PH_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
+const LBH_RESIN = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/does-shilajit-work`;
 
@@ -284,21 +285,31 @@ export default function DoesShilajitWork() {
           </h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              Based on our database of 70+ products, three brands consistently meet every verification criterion that correlates with clinical effectiveness. See <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">the top verified brands ranked by lab data</Link> for the full list.
+              Based on our database of 70+ products, four brands consistently meet every verification criterion that correlates with clinical effectiveness. See <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline">the top verified brands ranked by lab data</Link> for the full list.
             </p>
-            <div className="grid gap-4 sm:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2">
               {[
                 {
                   name: "Black Lotus Shilajit Resin",
                   tier: "S",
                   color: "bg-amber-400 text-amber-900",
+                  btnColor: "bg-emerald-500 hover:bg-emerald-400",
                   why: "64.51% fulvic acid (resin, Batch 93 COA, IAS Labs) — among the highest verified FA in our database. Full-panel COA with heavy metals values. $1.23/g. Best verified potency per dollar.",
                   href: BL_RESIN,
+                },
+                {
+                  name: "Lotus Blooming Herbs Authentic Shilajit™",
+                  tier: "S",
+                  color: "bg-amber-100 text-amber-800 ring-1 ring-amber-300",
+                  btnColor: "bg-amber-600 hover:bg-amber-500",
+                  why: "Sourced at 16,000–18,000ft in the Himalayan Mountains. A2LA ISO 17025 accredited lab (Certified Laboratories Burbank CA). Lowest lead per serving (0.040 mcg) in our database. Ayurvedic practitioner-owned.",
+                  href: LBH_RESIN,
                 },
                 {
                   name: "Natural Shilajit Resin",
                   tier: "S",
                   color: "bg-amber-400 text-amber-900",
+                  btnColor: "bg-emerald-500 hover:bg-emerald-400",
                   why: "DBP verified via LC-MS + FTIR. Triple-method COA. UNESCO Altai source. The most thoroughly verified product available — ~70% FA.",
                   href: NS_RESIN,
                 },
@@ -306,11 +317,12 @@ export default function DoesShilajitWork() {
                   name: "Pure Himalayan Resin",
                   tier: "S",
                   color: "bg-amber-400 text-amber-900",
+                  btnColor: "bg-emerald-500 hover:bg-emerald-400",
                   why: "ISO/IEC 17025 accredited lab testing. 60% FA. Himalayan + Altai dual-source. Gold standard lab accreditation at a competitive price.",
                   href: PH_RESIN,
                 },
               ].map((brand) => (
-                <div key={brand.name} className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5">
+                <div key={brand.name} className={`bg-white border-2 rounded-2xl p-5 ${brand.name.includes("Lotus Blooming") ? "border-amber-200 bg-amber-50/30" : "border-[#D1EDD8]"}`}>
                   <div className="flex items-center gap-2 mb-2">
                     <span className={`w-6 h-6 rounded text-[10px] font-black flex items-center justify-center ${brand.color}`}>{brand.tier}</span>
                     <span className="text-xs font-bold text-[#0D1F14]">{brand.name}</span>
@@ -320,7 +332,7 @@ export default function DoesShilajitWork() {
                     href={brand.href}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="block text-center py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold transition-colors"
+                    className={`block text-center py-2 rounded-lg text-white text-xs font-semibold transition-colors ${brand.btnColor}`}
                   >
                     View →
                   </a>

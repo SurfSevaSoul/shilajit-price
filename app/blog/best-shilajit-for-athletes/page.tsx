@@ -9,6 +9,8 @@ const NS_RESIN =
   "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa";
 const NS_NUTRIHONEY =
   "https://naturalshilajit.com/products/nutrihoney-natural-shilajit-resin-mixed-with-raw-honey-30-sticks?rfsn=9069392.c841fa";
+const LBH_RESIN =
+  "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-for-athletes`;
 
@@ -252,7 +254,7 @@ export default function BestShilajitForAthletes() {
         {/* Top 3 picks */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">
-            Top 3 shilajit picks for athletes
+            Top shilajit picks for athletes
           </h2>
 
           {/* Comparison table */}
@@ -314,6 +316,28 @@ export default function BestShilajitForAthletes() {
                 </a>
               </div>
             ))}
+            {/* LBH callout */}
+            <div className="bg-white border-2 border-amber-200 rounded-2xl p-5 shadow-sm hover:border-amber-300 transition-colors">
+              <div className="flex items-start gap-3 mb-3">
+                <span className="w-8 h-8 rounded-lg flex items-center justify-center font-black text-sm shrink-0 bg-amber-100 text-amber-800 ring-1 ring-amber-300">S</span>
+                <div>
+                  <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-0.5">Himalayan Pick — Verified Heavy Metals</div>
+                  <h3 className="text-base font-black text-[#0D1F14]">Lotus Blooming Herbs Authentic Shilajit™</h3>
+                  <p className="text-xs text-[#7BA899]">Himalayan Mountains 16,000–18,000ft · A2LA ISO 17025 · Lowest lead per serving</p>
+                </div>
+              </div>
+              <p className="text-sm text-[#0D1F14] leading-relaxed mb-4">
+                For athletes training daily and supplementing consistently, cumulative heavy metal exposure matters. Lotus Blooming Herbs Authentic Shilajit™ sources from 16,000–18,000ft in the Himalayan Mountains and tests at Certified Laboratories Burbank CA (A2LA ISO 17025, Cert 3034.01). Their lead per serving at 0.040 mcg is the lowest in our database — a relevant consideration for athletes using shilajit as a long-term daily supplement. Owned by NAMA-certified Ayurvedic practitioners with traditional sourcing provenance.
+              </p>
+              <a
+                href={LBH_RESIN}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-xs font-semibold transition-colors"
+              >
+                Shop Lotus Blooming Herbs →
+              </a>
+            </div>
           </div>
         </section>
 
@@ -450,23 +474,24 @@ export default function BestShilajitForAthletes() {
           <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">Top Picks for Athletes — 2026</div>
           <h3 className="text-base font-black text-[#0D1F14] mb-1">Shop our top-rated verified shilajit for athletes</h3>
           <p className="text-xs text-[#7BA899] mb-4">All products: COA verified · Heavy metals tested · Performance-relevant bioactive concentrations</p>
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { label: "Black Lotus Resin", sub: "$36.99 · 64.51% FA (Batch 93) · $1.23/g", href: BL_RESIN, badge: "#1 Pick" },
-              { label: "NS Resin 20g", sub: "$49.00 · ~70% FA · DBP verified", href: NS_RESIN, badge: "#2 Pick" },
-              { label: "NS NutriHoney", sub: "$59.00 · 30 sticks · pre-workout format", href: NS_NUTRIHONEY, badge: "#3 Pick" },
+              { label: "Black Lotus Resin", sub: "$36.99 · 64.51% FA (Batch 93) · $1.23/g", href: BL_RESIN, badge: "#1 Pick", amber: false },
+              { label: "NS Resin 20g", sub: "$49.00 · ~70% FA · DBP verified", href: NS_RESIN, badge: "#2 Pick", amber: false },
+              { label: "NS NutriHoney", sub: "$59.00 · 30 sticks · pre-workout format", href: NS_NUTRIHONEY, badge: "#3 Pick", amber: false },
+              { label: "Lotus Blooming Herbs", sub: "Himalayan 16,000–18,000ft · A2LA ISO 17025 · Lowest lead/serving", href: LBH_RESIN, badge: "Himalayan Pick", amber: true },
             ].map((item) => (
               <a
                 key={item.label}
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="flex flex-col items-center gap-1.5 border border-[#D1EDD8] rounded-xl p-4 hover:border-[#9EC9AD] transition-colors"
+                className={`flex flex-col items-center gap-1.5 border rounded-xl p-4 transition-colors ${item.amber ? "border-amber-200 bg-amber-50/40 hover:border-amber-300" : "border-[#D1EDD8] hover:border-[#9EC9AD]"}`}
               >
-                <span className="text-[10px] font-bold text-[#10B981] uppercase tracking-wide">{item.badge}</span>
+                <span className={`text-[10px] font-bold uppercase tracking-wide ${item.amber ? "text-amber-700" : "text-[#10B981]"}`}>{item.badge}</span>
                 <span className="text-xs font-bold text-[#0D1F14] text-center">{item.label}</span>
                 <span className="text-[10px] text-[#7BA899] text-center">{item.sub}</span>
-                <span className="mt-1 text-[11px] text-[#10B981] font-semibold">Shop now →</span>
+                <span className={`mt-1 text-[11px] font-semibold ${item.amber ? "text-amber-700" : "text-[#10B981]"}`}>Shop now →</span>
               </a>
             ))}
           </div>

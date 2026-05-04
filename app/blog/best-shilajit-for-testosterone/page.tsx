@@ -7,6 +7,8 @@ const AFFILIATE_RESIN =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_CAPS =
   "https://black-lotus-shilajit-shop.myshopify.com/products/shilajit-resin-powder-capsules-extra-strength?sca_ref=5188496.BbHTin3axE";
+const AFFILIATE_LBH =
+  "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-for-testosterone`;
 
@@ -304,6 +306,33 @@ export default function BestShilajitForTestosterone() {
               </a>
             </div>
             <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
+          </div>
+        </section>
+
+        {/* LBH Featured */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Also Recommended: Lotus Blooming Herbs Authentic Shilajit™</h2>
+          <div className="bg-white border-2 border-amber-200 rounded-2xl p-6 shadow-sm hover:border-amber-300 transition-colors">
+            <div className="flex items-start gap-4 mb-4">
+              <div className="w-10 h-10 rounded-xl bg-amber-100 ring-1 ring-amber-300 flex items-center justify-center text-amber-800 font-black text-lg shrink-0">S</div>
+              <div>
+                <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-0.5">S-Tier · Himalayan 16,000–18,000ft</div>
+                <h3 className="text-base font-black text-[#0D1F14]">Lotus Blooming Herbs Authentic Shilajit™</h3>
+                <p className="text-xs text-[#0D1F14] mt-1">Ayurvedic practitioner-owned · A2LA ISO 17025 · Lowest lead per serving (0.040 mcg)</p>
+              </div>
+            </div>
+            <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed mb-5">
+              <p>
+                Lotus Blooming Herbs is sourced at 16,000–18,000ft in the Himalayan Mountains and has been backed by traditional Ayurvedic practitioners (NAMA-certified) since the brand first brought pure resin shilajit to the Western market. For testosterone support specifically, no brand in our database makes shilajit-specific testosterone claims — those benefits are attributed to shilajit's fulvic acid content generally, which applies to any verified shilajit product.
+              </p>
+              <p>
+                LBH's differentiator is heavy metals safety: lead at 0.040 mcg per serving is the lowest in our database, tested under A2LA ISO 17025 accreditation (Certificate 3034.01, Certified Laboratories Burbank CA). For men supplementing daily over months or years, clean heavy metals documentation is a meaningful safety consideration alongside general shilajit quality.
+              </p>
+            </div>
+            <a href={AFFILIATE_LBH} target="_blank" rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm transition-colors shadow-md shadow-amber-900/20">
+              Shop Lotus Blooming Herbs →
+            </a>
           </div>
         </section>
 

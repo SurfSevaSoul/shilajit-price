@@ -7,6 +7,7 @@ const AFFILIATE_CAPS = "https://black-lotus-shilajit-shop.myshopify.com/products
 const AFFILIATE_BASE = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const PURE_HIMALAYAN_BASE = "https://www.purehimalayanshilajit.com/?ref=4792";
 const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
+const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/how-to-read-shilajit-coa`;
 
@@ -199,6 +200,9 @@ export default function HowToReadShilajitCoa() {
             <p>
               On a COA, look for a line labeled "Fulvic Acid," "Fulvic Acid Content," or "Humic/Fulvic Fraction" with a percentage value. The test method (e.g., UV-Vis spectrophotometry or volumetric titration) should also be listed. If no method is cited, the number is unverifiable.
             </p>
+            <p>
+              <strong>A note on non-disclosure:</strong> Some brands — including Lotus Blooming Herbs — do not publish a fulvic acid percentage on their COA. This is not necessarily a red flag. Their position is that fulvic acid measurement lacks universal standardization across labs, and that different testing methodologies can produce significantly different numbers for the same sample. Instead, their lab documentation (A2LA ISO 17025, Certified Laboratories Burbank CA) focuses on heavy metals panels and microbiology. If a verified heavy metals panel is your primary concern, a brand's choice not to publish a fulvic acid number can be a legitimate stance — as long as the rest of their lab documentation is transparent.
+            </p>
           </div>
         </section>
 
@@ -347,10 +351,10 @@ export default function HowToReadShilajitCoa() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The Brands with the Strongest COA Transparency in Our Database</h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              Of the brands we've evaluated, two consistently meet our full COA transparency criteria: published fulvic acid percentages, actual heavy metal values, named and verifiable labs, and current batch documentation.
+              Of the brands we've evaluated, three consistently meet our COA transparency criteria: actual heavy metal values, named and verifiable labs, and current batch documentation. Note that Lotus Blooming Herbs does not publish a fulvic acid percentage — see the section above for their reasoning.
             </p>
           </div>
-          <div className="grid gap-4 sm:grid-cols-2 mt-4">
+          <div className="grid gap-4 sm:grid-cols-3 mt-4">
             <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
               <h3 className="text-lg font-bold text-[#10B981] mb-2">Black Lotus Shilajit</h3>
               <div className="space-y-1 text-xs text-[#0D1F14] mb-4">
@@ -389,7 +393,7 @@ export default function HowToReadShilajitCoa() {
                   <span>Lab Cert</span><span className="font-semibold">ISO/IEC 17025 Accredited</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Overall</span><span className="font-semibold text-[#10B981]">S-Tier / #2 Pick</span>
+                  <span>Overall</span><span className="font-semibold text-[#10B981]">S-Tier</span>
                 </div>
               </div>
               <a
@@ -399,6 +403,31 @@ export default function HowToReadShilajitCoa() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors w-full justify-center"
               >
                 Shop Pure Himalayan →
+              </a>
+            </div>
+            <div className="bg-amber-50/40 border border-amber-200 rounded-2xl p-6 shadow-lg shadow-amber-900/10">
+              <h3 className="text-lg font-bold text-amber-700 mb-2">Lotus Blooming Herbs</h3>
+              <div className="space-y-1 text-xs text-[#0D1F14] mb-4">
+                <div className="flex justify-between border-b border-amber-100 pb-1">
+                  <span>Fulvic Acid</span><span className="font-semibold">Not disclosed</span>
+                </div>
+                <div className="flex justify-between border-b border-amber-100 pb-1">
+                  <span>Heavy Metals</span><span className="font-semibold">Full panel; lowest lead per serving (0.040 mcg)</span>
+                </div>
+                <div className="flex justify-between border-b border-amber-100 pb-1">
+                  <span>Lab Cert</span><span className="font-semibold">A2LA ISO 17025 (Cert 3034.01)</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Overall</span><span className="font-semibold text-amber-700">S-Tier</span>
+                </div>
+              </div>
+              <a
+                href={AFFILIATE_LBH}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-colors w-full justify-center"
+              >
+                Shop Lotus Blooming Herbs →
               </a>
             </div>
           </div>
@@ -429,7 +458,7 @@ export default function HowToReadShilajitCoa() {
         <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <h3 className="text-lg font-bold text-[#10B981] mb-2">Skip the Research — Shop COA-Verified Brands Directly</h3>
           <p className="text-sm text-[#0D1F14] leading-relaxed mb-4">
-            Both brands below publish complete COAs: fulvic acid percentages, actual heavy metal values, and named, verifiable labs. No guesswork required.
+            All three brands below provide verifiable lab documentation with actual heavy metal values and named, accredited labs. No guesswork required.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -439,6 +468,14 @@ export default function HowToReadShilajitCoa() {
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors"
             >
               Black Lotus — 64.51% FA (Resin, Batch 93 COA) →
+            </a>
+            <a
+              href={AFFILIATE_LBH}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-colors"
+            >
+              Lotus Blooming Herbs — A2LA ISO 17025, Lowest Lead/Serving →
             </a>
             <a
               href={PURE_HIMALAYAN_RESIN}

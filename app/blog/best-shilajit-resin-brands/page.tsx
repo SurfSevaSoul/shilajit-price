@@ -8,6 +8,8 @@ const AFFILIATE_PH_RESIN =
   "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
 const AFFILIATE_NS_RESIN =
   "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa";
+const AFFILIATE_LBH =
+  "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "best-shilajit-resin-brands";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
@@ -290,12 +292,91 @@ export default function BestShilajitResinBrands() {
         </div>
       </section>
 
-      {/* #2 Natural Shilajit */}
+      {/* #2 Lotus Blooming Herbs */}
       <section>
         <div className="flex items-center gap-3 mb-4">
           <span className="w-10 h-10 rounded-full bg-amber-400 text-amber-900 flex items-center justify-center text-sm font-black shrink-0">S</span>
           <h2 className="text-2xl font-black text-[#0D1F14]">
-            #2 — Natural Shilajit Altai Resin 20g
+            #2 — Lotus Blooming Herbs Authentic Shilajit™ Resin
+          </h2>
+        </div>
+        <div className="bg-white border-2 border-amber-200 rounded-2xl overflow-hidden shadow-sm hover:border-amber-300 transition-colors">
+          <div className="bg-amber-50 border-b border-amber-100 px-5 py-3 flex flex-wrap gap-2">
+            {[
+              "Himalayan 16,000–18,000ft",
+              "S-Tier",
+              "A2LA ISO 17025",
+              "Lowest Lead Per Serving",
+              "Ayurvedic Practitioner-Owned",
+            ].map((b) => (
+              <span key={b} className="inline-flex items-center px-2 py-0.5 rounded-full bg-amber-100 ring-1 ring-amber-300 text-amber-800 text-[10px] font-bold">
+                {b}
+              </span>
+            ))}
+          </div>
+          <div className="px-5 py-5 space-y-4">
+            <div className="grid sm:grid-cols-3 gap-3 text-xs">
+              <div className="bg-amber-50/60 rounded-lg p-3">
+                <p className="text-amber-700 font-semibold mb-0.5">Fulvic Acid</p>
+                <p className="text-[#0D1F14] font-bold text-base">Not Disclosed</p>
+                <p className="text-amber-700 font-semibold">COA focuses on HM panel</p>
+              </div>
+              <div className="bg-amber-50/60 rounded-lg p-3">
+                <p className="text-amber-700 font-semibold mb-0.5">Lead Per Serving</p>
+                <p className="text-[#0D1F14] font-bold text-base">0.040 mcg</p>
+                <p className="text-amber-700 font-semibold">Lowest in our database</p>
+              </div>
+              <div className="bg-amber-50/60 rounded-lg p-3">
+                <p className="text-amber-700 font-semibold mb-0.5">Source</p>
+                <p className="text-[#0D1F14] font-bold text-base">Himalayan Mountains</p>
+                <p className="text-amber-700 font-semibold">16,000–18,000ft altitude</p>
+              </div>
+            </div>
+            <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
+              <p>
+                Lotus Blooming Herbs was among the first to introduce pure resin shilajit to the
+                Western market and is owned by NAMA-certified Ayurvedic practitioners — a
+                distinction that matters for buyers who prioritize traditional sourcing provenance.
+                Their Authentic Shilajit™ Resin is sourced at 16,000–18,000ft in the Himalayan
+                Mountains, placing it among the highest-altitude sourced products in our database.
+              </p>
+              <p>
+                Testing is performed by Certified Laboratories in Burbank, CA under A2LA ISO 17025
+                accreditation (Certificate 3034.01) — the same rigorous standard used by
+                pharmaceutical manufacturers. The COA covers a comprehensive heavy metals panel
+                (lead, cadmium, mercury, arsenic) plus an extensive microbiology panel including
+                C. albicans, Bile-Tolerant Gram-Negative bacteria, Pseudomonas, and S. aureus.
+              </p>
+              <p>
+                Their lead per serving at 0.040 mcg is the lowest recorded in our heavy metals
+                database. Fulvic acid is not disclosed — their position is that measurement
+                methodologies lack universal standardization — but the A2LA ISO 17025 heavy metals
+                documentation is among the most rigorous available for any shilajit brand.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 pt-1">
+              <a
+                href={AFFILIATE_LBH}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-bold transition-colors"
+              >
+                View Lotus Blooming Herbs →
+              </a>
+              <div className="text-xs text-[#7BA899] self-center">
+                Himalayan · A2LA ISO 17025 · Lowest lead per serving
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* #3 Natural Shilajit */}
+      <section>
+        <div className="flex items-center gap-3 mb-4">
+          <span className="w-10 h-10 rounded-full bg-amber-400 text-amber-900 flex items-center justify-center text-sm font-black shrink-0">S</span>
+          <h2 className="text-2xl font-black text-[#0D1F14]">
+            #3 — Natural Shilajit Altai Resin 20g
           </h2>
         </div>
         <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm hover:border-[#9EC9AD] transition-colors">
@@ -372,12 +453,12 @@ export default function BestShilajitResinBrands() {
         </div>
       </section>
 
-      {/* #3 Pure Himalayan */}
+      {/* #4 Pure Himalayan */}
       <section>
         <div className="flex items-center gap-3 mb-4">
           <span className="w-10 h-10 rounded-full bg-amber-400 text-amber-900 flex items-center justify-center text-sm font-black shrink-0">S</span>
           <h2 className="text-2xl font-black text-[#0D1F14]">
-            #3 — Pure Himalayan Authentic Shilajit Resin 30g
+            #4 — Pure Himalayan Authentic Shilajit Resin 30g
           </h2>
         </div>
         <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm hover:border-[#9EC9AD] transition-colors">
@@ -562,6 +643,19 @@ export default function BestShilajitResinBrands() {
                   origin: "Altai",
                   href: AFFILIATE_BL_RESIN,
                   highlight: true,
+                },
+                {
+                  name: "Lotus Blooming Herbs Authentic Shilajit™",
+                  tier: "S",
+                  weight: "—",
+                  price: "~$60",
+                  ppg: "—",
+                  fa: "ND",
+                  purity: "9/10",
+                  coa: true,
+                  hm: true,
+                  origin: "Himalayan 16,000–18,000ft",
+                  href: AFFILIATE_LBH,
                 },
                 {
                   name: "Natural Shilajit Resin",
@@ -861,6 +955,14 @@ export default function BestShilajitResinBrands() {
             </a>{" "}
             — 64.51% FA (resin, Batch 93 COA) at $1.23/g. The lowest effective cost per unit of verified fulvic acid
             in the premium category.
+          </p>
+          <p>
+            <strong>Best Himalayan sourcing + lowest heavy metals:</strong>{" "}
+            <a href={AFFILIATE_LBH} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-semibold">
+              Lotus Blooming Herbs Authentic Shilajit™
+            </a>{" "}
+            — Sourced at 16,000–18,000ft, tested under A2LA ISO 17025. Lowest lead per
+            serving (0.040 mcg) in our database. Traditional Ayurvedic provenance.
           </p>
           <p>
             <strong>Best for rigorous testing:</strong>{" "}

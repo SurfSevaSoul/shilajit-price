@@ -3,6 +3,7 @@ import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 import PureHimalayanCTA from "../../components/blog/PureHimalayanCTA";
 
+const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-safety-guide`;
 
@@ -629,12 +630,29 @@ export default function ShilajitSafetyGuide() {
         </div>
       </div>
 
-      {/* Section 8: PureHimalayanCTA inline */}
+      {/* Section 8: Verified brands CTAs */}
       <PureHimalayanCTA
         headline="Pure Himalayan Shilajit — ISO/IEC 17025 Accredited Safety Testing"
         subtext="The only brand in our database with ISO/IEC 17025 accredited lab verification — the highest internationally recognized standard for testing competence. Full heavy metals panel, actual measured values, up to 99.9% purity."
         buttonText="Shop Pure Himalayan Resin — $39.99 →"
       />
+
+      {/* LBH Safety CTA */}
+      <div className="bg-amber-50/40 border-2 border-amber-200 rounded-2xl p-6 shadow-sm">
+        <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-1">Himalayan 16,000–18,000ft · A2LA ISO 17025 · S-Tier</div>
+        <h3 className="text-base font-black text-[#0D1F14] mb-2">Lotus Blooming Herbs — Lowest Lead Per Serving, A2LA ISO 17025 Verified</h3>
+        <p className="text-sm text-[#0D1F14] leading-relaxed mb-4">
+          Lotus Blooming Herbs tests their Authentic Shilajit™ Resin through Certified Laboratories in Burbank, CA — an A2LA ISO 17025 accredited laboratory (Certificate 3034.01). Their heavy metals panel shows lead at 0.040 mcg per serving, the lowest measured across all brands in our database. The microbiology panel covers C. albicans, Bile-Tolerant Gram-Negative bacteria, Pseudomonas, and S. aureus — more comprehensive than most competitors. Sourced at 16,000–18,000ft in the Himalayan Mountains by NAMA-certified Ayurvedic practitioners.
+        </p>
+        <a
+          href={AFFILIATE_LBH}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-colors"
+        >
+          Shop Lotus Blooming Herbs Authentic Shilajit™ →
+        </a>
+      </div>
 
       {/* Section 9: Verdict */}
       <div>

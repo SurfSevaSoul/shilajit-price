@@ -7,6 +7,7 @@ const AFFILIATE_RESIN =
 const AFFILIATE_CAPS =
   "https://black-lotus-shilajit-shop.myshopify.com/products/shilajit-resin-powder-capsules-extra-strength?sca_ref=5188496.BbHTin3axE";
 const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
+const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-beginners-guide`;
@@ -747,6 +748,42 @@ export default function ShilajitBeginnersGuide() {
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border-2 border-[#D1EDD8] hover:border-[#10B981] text-[#0D1F14] text-xs font-semibold transition-colors"
                   >
                     View Pure Himalayan →
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Ayurvedic / traditional pick */}
+            <div className="bg-amber-50/40 border-2 border-amber-200 rounded-2xl p-5 shadow-sm">
+              <div className="flex items-start gap-4">
+                <div className="w-9 h-9 rounded-xl bg-amber-100 ring-1 ring-amber-300 flex items-center justify-center text-amber-800 font-black text-base shrink-0">
+                  S
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-[10px] font-bold text-amber-700 uppercase tracking-widest mb-0.5">
+                    Traditional Ayurvedic Pick
+                  </div>
+                  <h3 className="text-base font-bold text-[#0D1F14] mb-1">
+                    Lotus Blooming Herbs Authentic Shilajit™ Resin
+                  </h3>
+                  <p className="text-xs text-[#0D1F14] mb-3">
+                    S-tier · Himalayan 16,000–18,000ft · A2LA ISO 17025 · Ayurvedic practitioner-owned
+                  </p>
+                  <p className="text-xs text-[#4A6358] leading-relaxed mb-3">
+                    A strong choice for beginners who want a product rooted in traditional Ayurvedic
+                    provenance. Lotus Blooming Herbs was among the first brands to bring pure resin
+                    shilajit to the Western market, owned by NAMA-certified Ayurvedic practitioners.
+                    Sourced at 16,000–18,000ft in the Himalayas and tested under A2LA ISO 17025
+                    accreditation — their lead per serving (0.040 mcg) is the lowest in our database.
+                    Fulvic acid is not disclosed, but the heavy metals documentation is comprehensive.
+                  </p>
+                  <a
+                    href={AFFILIATE_LBH}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border-2 border-amber-200 hover:border-amber-400 bg-amber-600 hover:bg-amber-500 text-white text-xs font-semibold transition-colors"
+                  >
+                    View Lotus Blooming Herbs →
                   </a>
                 </div>
               </div>

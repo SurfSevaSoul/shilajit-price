@@ -11,6 +11,7 @@ const AFFILIATE_BASE =
   "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const PURE_HIMALAYAN_BASE = "https://www.purehimalayanshilajit.com/?ref=4792";
 const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
+const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/altai-vs-himalayan-shilajit`;
 
@@ -354,6 +355,7 @@ export default function AltaiVsHimalayanShilajit() {
               <h3 className="text-lg font-bold text-[#10B981] mb-3">Himalayan / Ladakh-sourced</h3>
               <div className="space-y-3">
                 {[
+                  { name: "Lotus Blooming Herbs Authentic Shilajit™ Resin", tier: "S", price: "~$60", perG: "—", fulvic: "Not disclosed", coa: true },
                   { name: "Pure Himalayan Shilajit Resin 30g", tier: "S", price: "$39.99", perG: "$1.33/g", fulvic: "~58% (2021)", coa: true },
                   { name: "Pure Himalayan Shilajit Tablets 90ct", tier: "S", price: "$34.99", perG: "—", fulvic: "ISO verified", coa: true },
                   { name: "Himalayan Healing Resin 55g Gold Grade", tier: "A", price: "$44.99", perG: "$0.82/g", fulvic: "Verified", coa: true },
@@ -393,6 +395,9 @@ export default function AltaiVsHimalayanShilajit() {
               <strong className="text-[#0D1F14]">If you prioritize the highest verified fulvic acid content:</strong> Choose Altai. Black Lotus publishes batch-specific COA data (Batch 93: 64.51% resin, 74.30% capsules) — among the highest verified concentrations in our database with full IAS Laboratories documentation. The cold-processing and granite-rich mineral profile appear to support consistently high fulvic acid retention.
             </p>
             <p>
+              <strong className="text-[#0D1F14]">If Ayurvedic tradition and ultra-high-altitude sourcing matter most:</strong> Consider Lotus Blooming Herbs. Their Authentic Shilajit™ Resin is sourced at 16,000–18,000ft in the Himalayas and was brought to the West by NAMA-certified Ayurvedic practitioners — the first to introduce pure resin shilajit here. Testing is done by Certified Laboratories Burbank CA under A2LA ISO 17025 accreditation, and their lead per serving (0.040 mcg) is the lowest in our heavy metals database.
+            </p>
+            <p>
               <strong className="text-[#0D1F14]">If you want ISO-certified testing and strong Ayurvedic tradition:</strong> Choose Pure Himalayan Shilajit. Their Ladakh-sourced resin is tested under ISO/IEC 17025 accreditation — the most rigorous third-party standard available. If certification rigor matters to you, they are the Himalayan pick.
             </p>
             <p>
@@ -410,10 +415,10 @@ export default function AltaiVsHimalayanShilajit() {
         <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">Verified Options From Both Origins</div>
           <h3 className="text-base font-black text-[#0D1F14] mb-3">
-            Two S-Tier picks — one from each region
+            Three S-Tier picks — verified lab data, both regions
           </h3>
 
-          <div className="grid gap-4 sm:grid-cols-2 mb-4">
+          <div className="grid gap-4 sm:grid-cols-3 mb-4">
             {/* Black Lotus */}
             <div className="border border-[#D1EDD8] rounded-xl p-4">
               <div className="text-xs font-bold text-[#7BA899] uppercase tracking-widest mb-1">Altai Origin · S-Tier</div>
@@ -426,6 +431,21 @@ export default function AltaiVsHimalayanShilajit() {
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors w-full justify-center"
               >
                 Shop Black Lotus →
+              </a>
+            </div>
+
+            {/* Lotus Blooming Herbs */}
+            <div className="border border-amber-200 rounded-xl p-4 bg-amber-50/40">
+              <div className="text-xs font-bold text-amber-700 uppercase tracking-widest mb-1">Himalayan 16,000–18,000ft · S-Tier</div>
+              <div className="font-black text-[#0D1F14] text-sm mb-1">Lotus Blooming Herbs Authentic Shilajit™</div>
+              <div className="text-xs text-[#0D1F14] mb-3">Lowest lead per serving (0.040 mcg) · A2LA ISO 17025 · Ayurvedic practitioner-owned</div>
+              <a
+                href={AFFILIATE_LBH}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold transition-colors w-full justify-center"
+              >
+                Shop Lotus Blooming Herbs →
               </a>
             </div>
 
