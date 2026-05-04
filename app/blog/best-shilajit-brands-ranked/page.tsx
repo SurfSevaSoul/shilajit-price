@@ -402,6 +402,11 @@ export default function BestShilajitBrandsRanked() {
             <a href="/blog/purblack-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Pürblack shilajit review — 5 patents, True Gold, and who it&apos;s worth it for</a>.
           </p>
           <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
+            Looking for a Himalayan option with Ayurvedic practitioner ownership and A2LA ISO 17025 lab verification? See{" "}
+            <Link href="/blog/lotus-blooming-herbs-shilajit-review" className="text-[#10B981] hover:underline font-semibold">our full Lotus Blooming Herbs review</Link>{" "}
+            — the first brand to bring pure resin shilajit to the West.
+          </p>
+          <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
             Shopping for gummies specifically? We reviewed every major shilajit gummy brand and ranked them by lab transparency — see{" "}
             <Link href="/blog/best-shilajit-gummies-2026" className="text-[#10B981] hover:underline font-semibold">our full breakdown of the best shilajit gummies</Link>{" "}
             in 2026.

@@ -376,6 +376,11 @@ export default function AltaiVsHimalayanShilajit() {
           <p className="mt-3 text-xs text-[#7BA899]">
             See the <Link href="/compare" className="text-[#10B981] hover:underline">full comparison table</Link> for all products with side-by-side filtering by origin, tier, price, and COA status.
           </p>
+          <p className="mt-2 text-xs text-[#7BA899]">
+            New to the Himalayan category:{" "}
+            <Link href="/blog/lotus-blooming-herbs-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Lotus Blooming Herbs — an Ayurvedic practitioner-owned Himalayan option with verified COA data</Link>{" "}
+            sourced at 16,000–18,000ft near the Tibetan border, tested at A2LA ISO 17025 accredited Certified Laboratories Burbank.
+          </p>
         </section>
 
         {/* Which origin should you choose */}
