@@ -237,14 +237,20 @@ function EditorPickCard({
       )}
 
       {/* Price row */}
-      <div className="flex items-baseline gap-2 mb-3">
-        <span className="text-2xl font-extrabold text-[#0D1F14] tabular-nums" style={{ fontFamily: "var(--font-jakarta)" }}>
-          ${product.priceUsd.toFixed(2)}
-        </span>
-        <span className={`text-xs font-bold tabular-nums ${s.ppg}`}>
-          ${product.pricePerGram.toFixed(2)}/g
-        </span>
-      </div>
+      {product.priceUsd > 0 ? (
+        <div className="flex items-baseline gap-2 mb-3">
+          <span className="text-2xl font-extrabold text-[#0D1F14] tabular-nums" style={{ fontFamily: "var(--font-jakarta)" }}>
+            ${product.priceUsd.toFixed(2)}
+          </span>
+          <span className={`text-xs font-bold tabular-nums ${s.ppg}`}>
+            ${product.pricePerGram.toFixed(2)}/g
+          </span>
+        </div>
+      ) : (
+        <div className="mb-3">
+          <span className={`text-xs font-bold ${s.ppg}`}>Price available on site →</span>
+        </div>
+      )}
 
       {/* Key specs */}
       <ul className="space-y-1 mb-4 flex-1 text-[11px] text-[#4A6358]">
@@ -374,10 +380,10 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
   // Editor's Picks: one card per featured affiliate partner
   const editorPicks = useMemo(() => {
     const blPick = PRODUCTS.find((p) => p.id === "bl-resin");
-    const phPick = PRODUCTS.find((p) => p.id === "ph-soft-resin");
+    const lbhPick = PRODUCTS.find((p) => p.id === "lotus-blooming-authentic-shilajit");
     const nsPick = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-20g");
     const purblackPick = PRODUCTS.find((p) => p.id === "purblack-true-gold-30g");
-    return [blPick, phPick, nsPick, purblackPick].filter(Boolean) as (typeof PRODUCTS)[0][];
+    return [blPick, lbhPick, nsPick, purblackPick].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
   const editorPickMeta: { label: string; accent: AccentVariant; reason?: string; customBullets?: string[]; customTier?: string }[] = [
@@ -387,9 +393,16 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
       reason: "Highest fulvic acid per dollar with a fully public COA — the best starting point for most buyers.",
     },
     {
-      label: "Best Purity",
+      label: "Most Traditional",
       accent: "amber",
-      reason: "Consistently clean lab results and the most rigorous third-party testing process we've found.",
+      reason: "Ayurvedic practitioner-owned. First to bring pure resin shilajit to the West. Verified at A2LA ISO 17025 accredited lab — the same gold standard as our top pick.",
+      customBullets: [
+        "✓ A2LA ISO 17025 accredited lab",
+        "✓ Lead 0.040 mcg/serving",
+        "✓ Himalayan 16,000–18,000ft",
+        "✓ Ayurvedic practitioner-owned",
+        "✓ NAMA + AHPA member",
+      ],
     },
     {
       label: "Best Value",
