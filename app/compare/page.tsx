@@ -597,6 +597,10 @@ export default function ComparePage() {
           <p className="text-xs text-[#7BA899] mb-4">Deep-dive head-to-head analysis with verdict, side-by-side tables, and FAQs.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
             {[
+              { slug: "lotus-blooming-vs-black-lotus", label: "Lotus Blooming Herbs vs Black Lotus" },
+              { slug: "lotus-blooming-vs-pure-himalayan", label: "Lotus Blooming Herbs vs Pure Himalayan" },
+              { slug: "lotus-blooming-vs-natural-shilajit", label: "Lotus Blooming Herbs vs Natural Shilajit" },
+              { slug: "lotus-blooming-vs-purblack", label: "Lotus Blooming Herbs vs Pürblack" },
               { slug: "black-lotus-vs-pure-himalayan", label: "Black Lotus vs Pure Himalayan" },
               { slug: "black-lotus-vs-natural-shilajit", label: "Black Lotus vs Natural Shilajit" },
               { slug: "natural-shilajit-vs-pure-himalayan", label: "Natural Shilajit vs Pure Himalayan" },
