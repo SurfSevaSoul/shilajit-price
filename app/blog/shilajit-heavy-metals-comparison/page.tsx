@@ -6,22 +6,23 @@ const AFFILIATE_BL = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=51
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
 const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "shilajit-heavy-metals-comparison";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 
 export const metadata: Metadata = {
-  title: "Shilajit Heavy Metals Test Results 2026 — Lab Data Compared Across 4 Brands",
+  title: "Shilajit Heavy Metals Test Results 2026 — Lab Data Compared Across 5 Brands",
   description:
-    "Actual batch-specific heavy metals COA data for Black Lotus, Pure Himalayan, Natural Shilajit, and Pürblack — tested by accredited US labs. See which brand tests cleanest.",
+    "Actual batch-specific heavy metals COA data for Black Lotus, Pure Himalayan, Natural Shilajit, Pürblack, and Lotus Blooming Herbs — tested by accredited US labs. See which brand tests cleanest.",
   keywords:
     "shilajit heavy metals test results, shilajit heavy metals lab data, safest shilajit brand heavy metals, shilajit lead arsenic mercury test, shilajit COA heavy metals, shilajit cadmium test",
   alternates: { canonical: POST_URL },
   openGraph: {
-    title: "Shilajit Heavy Metals Test Results 2026 — Lab Data Compared Across 4 Brands",
+    title: "Shilajit Heavy Metals Test Results 2026 — Lab Data Compared Across 5 Brands",
     description:
-      "Actual batch-specific heavy metals COA data for Black Lotus, Pure Himalayan, Natural Shilajit, and Pürblack — tested by accredited US labs. See which brand tests cleanest.",
+      "Actual batch-specific heavy metals COA data for Black Lotus, Pure Himalayan, Natural Shilajit, Pürblack, and Lotus Blooming Herbs — tested by accredited US labs. See which brand tests cleanest.",
     url: POST_URL,
     siteName: "ShilajitPrice.com",
     type: "article",
@@ -36,7 +37,7 @@ const faqItems: FaqItem[] = [
     name: "Which shilajit brand has the lowest heavy metals?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Among the four brands with published batch-specific COA data in our database, Pürblack True Gold has the lowest lead at 0.121 mg/kg, and Pure Himalayan Shilajit tablets (Batch STH11) have the lowest lead per serving at 0.095 mcg per 200mg serving. All four brands — Black Lotus, Pure Himalayan, Natural Shilajit, and Pürblack — test within FDA safety limits for heavy metals in dietary supplements.",
+      text: "Among the five brands with published batch-specific COA data in our database, Lotus Blooming Herbs has the lowest lead per serving at 0.040 mcg (Batch BHC4429/2024057703, Certified Laboratories Burbank, A2LA ISO 17025) and the lowest cadmium at 0.004 mcg/serving. Pürblack True Gold has the lowest lead by concentration at 0.121 mg/kg. All five brands — Black Lotus, Pure Himalayan, Natural Shilajit, Pürblack, and Lotus Blooming Herbs — test within FDA safety limits for heavy metals in dietary supplements.",
     },
   },
   {
@@ -44,7 +45,7 @@ const faqItems: FaqItem[] = [
     name: "Is shilajit safe from heavy metal contamination?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Shilajit that has been independently tested by an accredited third-party laboratory and shows results below FDA dietary supplement limits is considered safe for healthy adults. The risk comes from products that have not been independently tested. All four brands compared in this article — Black Lotus (IAS Laboratories), Pure Himalayan (Certified Laboratories, A2LA ISO/IEC 17025), Natural Shilajit (DaaneLabs + Harken Research), and Pürblack (Pürblack Inc.) — have published batch-specific COA data confirming results within safe limits.",
+      text: "Shilajit that has been independently tested by an accredited third-party laboratory and shows results below FDA dietary supplement limits is considered safe for healthy adults. The risk comes from products that have not been independently tested. All five brands compared in this article — Black Lotus (IAS Laboratories), Pure Himalayan (Certified Laboratories, A2LA ISO/IEC 17025), Natural Shilajit (DaaneLabs + Harken Research), Pürblack (Pürblack Inc.), and Lotus Blooming Herbs (Certified Laboratories Burbank, A2LA ISO 17025) — have published batch-specific COA data confirming results within safe limits.",
     },
   },
   {
@@ -72,11 +73,11 @@ export default function ShilajitHeavyMetalsComparison() {
         <>
           Shilajit Heavy Metals Test Results 2026 —{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-green-300">
-            Lab Data Compared Across 4 Brands
+            Lab Data Compared Across 5 Brands
           </span>
         </>
       }
-      description="Actual batch-specific COA heavy metals data for Black Lotus, Pure Himalayan, Natural Shilajit, and Pürblack — tested by accredited US labs. Here is what the numbers actually show."
+      description="Actual batch-specific COA heavy metals data for Black Lotus, Pure Himalayan, Natural Shilajit, Pürblack, and Lotus Blooming Herbs — tested by accredited US labs. Here is what the numbers actually show."
       tags={["Heavy Metals", "Lab Testing", "COA Verified", "Safety"]}
       publishedAt="2026-04-30"
       updatedAt="2026-04-30"
@@ -102,7 +103,7 @@ export default function ShilajitHeavyMetalsComparison() {
           The solution is not to avoid shilajit — it is to buy from brands that test and publish the results. A Certificate of Analysis (COA) from an accredited independent laboratory showing actual measured values is the only way to verify what is actually in the product you are taking. Marketing language like &quot;pure&quot; or &quot;clean&quot; means nothing without a COA to back it up.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed">
-          This post presents actual batch-specific heavy metals COA data for four brands in our database: Black Lotus Shilajit, Pure Himalayan Shilajit, Natural Shilajit, and Pürblack. Every number below came directly from a named accredited laboratory&apos;s Certificate of Analysis. We explain what the numbers mean, put them in context against FDA safety limits, and give you an honest read on which products test cleanest.
+          This post presents actual batch-specific heavy metals COA data for five brands in our database: Black Lotus Shilajit, Pure Himalayan Shilajit, Natural Shilajit, Pürblack, and Lotus Blooming Herbs. Every number below came directly from a named accredited laboratory&apos;s Certificate of Analysis. We explain what the numbers mean, put them in context against FDA safety limits, and give you an honest read on which products test cleanest.
         </p>
       </section>
 
@@ -147,6 +148,13 @@ export default function ShilajitHeavyMetalsComparison() {
                 batch: "2025",
                 method: "ICP-MS",
               },
+              {
+                brand: "Lotus Blooming Herbs",
+                lab: "Certified Laboratories, Burbank CA",
+                accreditation: "A2LA ISO 17025, Cert 3034.01",
+                batch: "Batch BHC4429/2024057703 — July–August 2025",
+                method: "BCM-30011 by ICP-MS",
+              },
             ].map(({ brand, lab, accreditation, batch, method }) => (
               <div key={brand} className="flex items-start gap-4 px-5 py-4">
                 <div>
@@ -161,13 +169,13 @@ export default function ShilajitHeavyMetalsComparison() {
         </div>
 
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-[#4A6358] leading-relaxed">
-          <span className="font-semibold text-amber-800">Note on units:</span> Black Lotus and Natural Shilajit report results in <strong>ppm (parts per million, equivalent to mg/kg)</strong> — the concentration in the product itself. Pure Himalayan reports results in <strong>mcg per 200mg serving</strong> — the amount per dose. Pürblack reports in <strong>mg/kg (equivalent to ppm)</strong>. We present each in its original format to preserve accuracy. A conversion guide is in Section 4.
+          <span className="font-semibold text-amber-800">Note on units:</span> Black Lotus and Natural Shilajit report results in <strong>ppm (parts per million, equivalent to mg/kg)</strong> — the concentration in the product itself. Pure Himalayan and Lotus Blooming Herbs report results in <strong>mcg per serving</strong> — the amount per dose. Pürblack reports in <strong>mg/kg (equivalent to ppm)</strong>. We present each in its original format to preserve accuracy. A conversion guide is in Section 4.
         </div>
       </section>
 
       {/* 3. Main Comparison Table */}
       <section>
-        <h2 className="text-2xl font-black text-[#0D1F14] mb-2">Heavy Metals COA Data — All Four Brands</h2>
+        <h2 className="text-2xl font-black text-[#0D1F14] mb-2">Heavy Metals COA Data — All Five Brands</h2>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-5">
           All values are sourced from batch-specific Certificates of Analysis. ND = Not Detected. &lt;LOQ = below the laboratory&apos;s Limit of Quantification (detected at trace level but below the threshold for precise measurement).
         </p>
@@ -349,6 +357,49 @@ export default function ShilajitHeavyMetalsComparison() {
             </table>
           </div>
         </div>
+
+        {/* Lotus Blooming Herbs */}
+        <div className="mb-8">
+          <div className="flex items-center gap-3 mb-3">
+            <span className="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-black bg-amber-100 text-amber-800 ring-1 ring-amber-300">S-TIER</span>
+            <h3 className="text-lg font-extrabold text-[#0D1F14]">Lotus Blooming Herbs</h3>
+            <span className="text-xs text-[#7BA899]">Himalayan Mountains, 16,000–18,000ft</span>
+          </div>
+          <p className="text-xs text-[#7BA899] mb-3">Certified Laboratories, Burbank CA · A2LA ISO 17025 (Cert 3034.01) · Batch BHC4429/2024057703 · July–August 2025 · BCM-30011 by ICP-MS · Values per serving</p>
+          <div className="overflow-x-auto rounded-2xl border-2 border-amber-200 shadow-sm">
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="bg-amber-50 border-b border-amber-200">
+                  <th className="px-4 py-3 text-left font-bold text-[#0D1F14]">Product</th>
+                  <th className="px-4 py-3 text-center font-bold text-[#0D1F14]">Lead (Pb)</th>
+                  <th className="px-4 py-3 text-center font-bold text-[#0D1F14]">Arsenic (As)</th>
+                  <th className="px-4 py-3 text-center font-bold text-[#0D1F14]">Cadmium (Cd)</th>
+                  <th className="px-4 py-3 text-center font-bold text-[#0D1F14]">Mercury (Hg)</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-amber-100">
+                {[
+                  { product: "Authentic Shilajit™ Resin", pb: "0.040 mcg ★", as: "0.091 mcg", cd: "0.004 mcg ★", hg: "0.001 mcg" },
+                ].map(({ product, pb, as: arsenic, cd, hg }) => (
+                  <tr key={product} className="bg-white">
+                    <td className="px-4 py-3 font-semibold text-[#0D1F14]">{product}</td>
+                    <td className="px-4 py-3 text-center font-bold text-emerald-700">{pb}</td>
+                    <td className="px-4 py-3 text-center text-[#4A6358]">{arsenic}</td>
+                    <td className="px-4 py-3 text-center font-bold text-emerald-700">{cd}</td>
+                    <td className="px-4 py-3 text-center text-[#4A6358]">{hg}</td>
+                  </tr>
+                ))}
+                <tr className="bg-amber-50 border-t border-amber-200">
+                  <td className="px-4 py-2 text-[10px] font-bold text-[#7BA899]">Microbiology</td>
+                  <td colSpan={4} className="px-4 py-2 text-[10px] text-[#7BA899]">TPC &lt;10 CFU/g · E. coli Absent · Salmonella Absent · C. albicans Absent · S. aureus Absent · Pseudomonas Absent · Yeast &lt;10 CFU/g · Mold &lt;10 CFU/g</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="mt-2 bg-emerald-50 border border-emerald-200 rounded-xl px-4 py-2.5 text-[11px] text-[#4A6358] leading-relaxed">
+            <span className="font-semibold text-emerald-800">★ Lowest in comparison:</span> Lead 0.040 mcg/serving is the lowest lead per serving of any brand in this comparison. Cadmium 0.004 mcg/serving is exceptionally clean across all brands. Same lab as Pure Himalayan — Certified Laboratories Burbank, A2LA ISO 17025 (Cert 3034.01). Microbiology panel includes C. albicans and Bile-Tolerant Gram-Negative bacteria — more comprehensive than most brands tested.
+          </div>
+        </div>
       </section>
 
       {/* 4. What Do These Numbers Mean */}
@@ -387,12 +438,12 @@ export default function ShilajitHeavyMetalsComparison() {
         </div>
 
         <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#4A6358] leading-relaxed mb-5">
-          <strong className="text-[#0D1F14]">All four brands pass.</strong> Every product in the tables above shows results below FDA dietary supplement limits. This comparison is about <em>relative cleanliness</em> within a safe range — not about safety versus risk.
+          <strong className="text-[#0D1F14]">All five brands pass.</strong> Every product in the tables above shows results below FDA dietary supplement limits. This comparison is about <em>relative cleanliness</em> within a safe range — not about safety versus risk.
         </div>
 
         <h3 className="text-lg font-bold text-[#0D1F14] mb-3">Why Raw Resin Has Higher Heavy Metals Than Processed Forms</h3>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
-          Across all four brands, a consistent pattern emerges: raw resin contains higher heavy metals concentrations than processed forms like tablets and capsules. This is expected and normal. Processing shilajit — washing, filtration, purification, and encapsulation — removes some proportion of heavy metals alongside other mineral content. A tablet or capsule uses a processed shilajit powder extract, which has gone through additional refinement steps compared to raw resin.
+          Across the brands compared here, a consistent pattern emerges: raw resin contains higher heavy metals concentrations than processed forms like tablets and capsules. This is expected and normal. Processing shilajit — washing, filtration, purification, and encapsulation — removes some proportion of heavy metals alongside other mineral content. A tablet or capsule uses a processed shilajit powder extract, which has gone through additional refinement steps compared to raw resin.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-5">
           This does not make raw resin unsafe — all results above are within FDA limits. It means that if minimizing heavy metals exposure is your primary concern, processed forms (tablets, capsules) are the better choice within any given brand.
@@ -416,34 +467,41 @@ export default function ShilajitHeavyMetalsComparison() {
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Which Brand Has the Cleanest Heavy Metals?</h2>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-5">
-          With all four brands passing FDA safety limits, this becomes a question of relative performance rather than safety. Here is an honest read:
+          With all five brands passing FDA safety limits, this becomes a question of relative performance rather than safety. Here is an honest read:
         </p>
 
         <div className="space-y-4 mb-5">
           {[
             {
               rank: "1",
-              brand: "Pürblack True Gold — Lowest Lead Overall",
-              color: "border-violet-200 bg-violet-50",
-              rankColor: "bg-violet-100 text-violet-800 ring-violet-300",
-              detail: "True Gold shows lead at 0.121 mg/kg — the lowest of any single product across all four brands in this comparison. Its cadmium (0.031 mg/kg) and arsenic (0.313 mg/kg) are also among the lowest recorded. Mercury is ND. For buyers who prioritize minimizing lead exposure above all else, True Gold posts the best absolute number in this dataset.",
+              brand: "Lotus Blooming Herbs — Lowest Lead Per Serving",
+              color: "border-amber-200 bg-amber-50",
+              rankColor: "bg-amber-100 text-amber-800 ring-amber-300",
+              detail: "Authentic Shilajit™ Resin shows lead at 0.040 mcg per serving — the lowest lead per serving of any brand in this comparison. Cadmium at 0.004 mcg/serving is also the lowest recorded. Mercury at 0.001 mcg. The A2LA ISO 17025 accreditation (Cert 3034.01) from Certified Laboratories Burbank matches the highest testing standard in our database. The microbiology panel — including C. albicans, Bile-Tolerant Gram-Negative bacteria, Pseudomonas, and S. aureus — is more comprehensive than most brands tested.",
             },
             {
               rank: "2",
-              brand: "Pure Himalayan Tablets — Cleanest Per Serving",
-              color: "border-blue-200 bg-blue-50",
-              rankColor: "bg-blue-100 text-blue-800 ring-blue-300",
-              detail: "Batch STH11 tablets show lead at just 0.095 mcg per 200mg serving — the lowest per-serving lead figure in this comparison. All four metals are at exceptional levels: arsenic 0.192 mcg, cadmium 0.066 mcg, mercury ND. The A2LA ISO/IEC 17025 accreditation (Cert 3034.01) from Certified Laboratories represents the highest testing standard in this comparison.",
+              brand: "Pürblack True Gold — Lowest Lead by Concentration",
+              color: "border-violet-200 bg-violet-50",
+              rankColor: "bg-violet-100 text-violet-800 ring-violet-300",
+              detail: "True Gold shows lead at 0.121 mg/kg — the lowest lead by concentration (ppm) of any product in this comparison. Its cadmium (0.031 mg/kg) and arsenic (0.313 mg/kg) are also among the lowest recorded. Mercury is ND. For buyers who prioritize minimizing lead exposure by concentration, True Gold posts the strongest number on that metric.",
             },
             {
               rank: "3",
-              brand: "Black Lotus — Consistent Across All Three Forms",
-              color: "border-amber-200 bg-amber-50",
-              rankColor: "bg-amber-100 text-amber-800 ring-amber-300",
-              detail: "Black Lotus shows lead between 1.06–1.37 ppm across resin, tablets, and capsules — well below the FDA 10 ppm limit. Mercury is ND across all three forms. Arsenic (0.88–0.94 ppm) and cadmium (0.15–0.26 ppm) are clean. The consistency across all product forms is notable — IAS Laboratories tested all three in the same Batch 93 panel.",
+              brand: "Pure Himalayan Tablets — Cleanest Multi-Batch Record",
+              color: "border-blue-200 bg-blue-50",
+              rankColor: "bg-blue-100 text-blue-800 ring-blue-300",
+              detail: "Batch STH11 tablets show lead at 0.095 mcg per 200mg serving — extremely clean across all four metals: arsenic 0.192 mcg, cadmium 0.066 mcg, mercury ND. Pure Himalayan's multi-batch testing across three product lines at the same A2LA ISO/IEC 17025 lab (Certified Laboratories Burbank, Cert 3034.01) provides the most extensive track record of any brand in our database.",
             },
             {
               rank: "4",
+              brand: "Black Lotus — Consistent Across All Three Forms",
+              color: "border-[#D1EDD8] bg-[#F0FAF4]",
+              rankColor: "bg-[#D1EDD8] text-[#0D1F14] ring-[#7BA899]",
+              detail: "Black Lotus shows lead between 1.06–1.37 ppm across resin, tablets, and capsules — well below the FDA 10 ppm limit. Mercury is ND across all three forms. Arsenic (0.88–0.94 ppm) and cadmium (0.15–0.26 ppm) are clean. The consistency across all product forms is notable — IAS Laboratories tested all three in the same Batch 93 panel.",
+            },
+            {
+              rank: "5",
               brand: "Natural Shilajit — Raw Resin Higher, Processed Forms Clean",
               color: "border-teal-200 bg-teal-50",
               rankColor: "bg-teal-100 text-teal-800 ring-teal-300",
@@ -461,7 +519,7 @@ export default function ShilajitHeavyMetalsComparison() {
         </div>
 
         <div className="bg-[#F0FAF4] border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#4A6358] leading-relaxed">
-          <strong className="text-[#0D1F14]">Key takeaway:</strong> If heavy metals are your primary concern, prioritize processed forms (tablets, capsules) over raw resin across all brands. Tablets consistently show lower heavy metals than resin in every brand tested. All four brands are within safe limits — the difference is about minimizing exposure within an already safe range.
+          <strong className="text-[#0D1F14]">Key takeaway:</strong> If heavy metals are your primary concern, prioritize processed forms (tablets, capsules) over raw resin across all brands. Tablets consistently show lower heavy metals than resin in every brand tested. All five brands are within safe limits — the difference is about minimizing exposure within an already safe range.
         </div>
       </section>
 
@@ -472,10 +530,10 @@ export default function ShilajitHeavyMetalsComparison() {
           Memorial Sloan Kettering Cancer Center flags heavy metal contamination as a documented safety concern with shilajit — and that concern is legitimate. Unverified shilajit products from uncontrolled sources can and do contain heavy metals at dangerous levels. Published case reports of heavy metal toxicity from shilajit products exist in the medical literature.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
-          The data in this article represents exactly the kind of verification MSK recommends consumers look for. MSK&apos;s concern is not that shilajit is inherently dangerous — it is that most products on the market cannot prove they are safe because they have not been independently tested. The four brands compared here have done that testing and published the results.
+          The data in this article represents exactly the kind of verification MSK recommends consumers look for. MSK&apos;s concern is not that shilajit is inherently dangerous — it is that most products on the market cannot prove they are safe because they have not been independently tested. The five brands compared here have done that testing and published the results.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
-          A buyer who chooses any of these four brands and verifies the COA numbers against the batches they receive is doing exactly what responsible supplement use looks like. That does not make these products MSK-approved or medically recommended — it means they have addressed the specific documentation gap that MSK identifies as the root of the heavy metals risk.
+          A buyer who chooses any of these five brands and verifies the COA numbers against the batches they receive is doing exactly what responsible supplement use looks like. That does not make these products MSK-approved or medically recommended — it means they have addressed the specific documentation gap that MSK identifies as the root of the heavy metals risk.
         </p>
 
         <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 flex flex-col sm:flex-row gap-4">
@@ -513,7 +571,7 @@ export default function ShilajitHeavyMetalsComparison() {
 
       {/* 7. Affiliate CTA */}
       <section>
-        <h2 className="text-2xl font-black text-[#0D1F14] mb-3">All Four Brands — With Lab-Verified Heavy Metals Data</h2>
+        <h2 className="text-2xl font-black text-[#0D1F14] mb-3">All Five Brands — With Lab-Verified Heavy Metals Data</h2>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-5">
           Every brand below has published batch-specific COA heavy metals data from a named independent laboratory. Links are affiliate links — commissions at no extra cost to you.
         </p>
@@ -556,9 +614,19 @@ export default function ShilajitHeavyMetalsComparison() {
               tierColor: "bg-emerald-100 text-emerald-800 ring-emerald-300",
               source: "Multi-region (Caucasus, Siberia, Himalayas)",
               lab: "Pürblack Inc., Temecula CA",
-              highlight: "True Gold: Lead 0.121 mg/kg — lowest lead in comparison",
+              highlight: "True Gold: Lead 0.121 mg/kg — lowest lead by concentration",
               href: AFFILIATE_PB,
               btnColor: "bg-[#182B1F] hover:bg-violet-600",
+            },
+            {
+              brand: "Lotus Blooming Herbs",
+              tier: "S",
+              tierColor: "bg-amber-100 text-amber-800 ring-amber-300",
+              source: "Himalayan Mountains, 16,000–18,000ft",
+              lab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+              highlight: "Lead 0.040 mcg/serving — lowest lead per serving in comparison",
+              href: AFFILIATE_LBH,
+              btnColor: "bg-amber-600 hover:bg-amber-500",
             },
           ].map(({ brand, tier, tierColor, source, lab, highlight, href, btnColor }) => (
             <div key={brand} className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm">
