@@ -2686,9 +2686,9 @@ export const PRODUCTS: Product[] = [
     productName: "Authentic Shilajit™",
     tier: "S",
     category: "Resin",
-    priceUsd: 0,
-    weightGrams: 0,
-    pricePerGram: 0,
+    priceUsd: 59.99,
+    weightGrams: 10,
+    pricePerGram: 6.00,
     heavyMetalsTested: true,
     heavyMetalsPass: true,
     coaVerified: true,
@@ -2708,7 +2708,7 @@ export const PRODUCTS: Product[] = [
     featured: true,
     affiliateUrl: LOTUS_BLOOMING_HERBS_LINKS.authenticShilajit,
     description: "Himalayan resin sourced at 16,000–18,000ft near the Tibetan border. COA: Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01), Batch BHC4429/2024057703, August 2025. Heavy metals per serving: Lead 0.040 mcg · Arsenic 0.091 mcg · Cadmium 0.004 mcg · Mercury 0.001 mcg. Microbiology: All clean. Fulvic acid not disclosed. First brand to bring pure resin shilajit to the West. Ayurvedic practitioner-owned.",
-    imageUrl: "",
+    imageUrl: "/images/products/lotus-blooming-authentic-shilajit.png",
   },
 ];
 
