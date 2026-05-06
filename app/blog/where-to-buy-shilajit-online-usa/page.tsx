@@ -162,6 +162,64 @@ const TOP_SOURCES = [
   },
 ];
 
+const CHANNELS = [
+  {
+    channel: "Direct from Brand Website",
+    rating: "⭐⭐⭐⭐⭐",
+    coaAccess: "Usually best",
+    fakeRisk: "Low (if brand is verified)",
+    priceValue: "Good",
+    verdict: "Best channel overall. Direct brands control supply chain, respond to COA questions, and stand behind their product.",
+    redFlags: "No published COA, no physical address, no return policy",
+    color: "border-[#D1EDD8]",
+    labelColor: "text-[#10B981]",
+  },
+  {
+    channel: "Amazon (name brand)",
+    rating: "⭐⭐⭐",
+    coaAccess: "Variable",
+    fakeRisk: "Medium",
+    priceValue: "Moderate",
+    verdict: "Acceptable for established brands with documented COA history. Always verify the COA exists before purchase.",
+    redFlags: "Generic listing, no brand website, suspiciously low price, few detailed reviews",
+    color: "border-blue-700/40",
+    labelColor: "text-blue-700",
+  },
+  {
+    channel: "Amazon (generic / white-label)",
+    rating: "⭐",
+    coaAccess: "Rarely",
+    fakeRisk: "Very High",
+    priceValue: "Deceptively cheap",
+    verdict: "Avoid. The highest concentration of fake shilajit in the market is in this category. No brand accountability.",
+    redFlags: "Rotating product photos, no brand identity, price below $20/30g, all 5-star reviews",
+    color: "border-red-700/40",
+    labelColor: "text-red-600",
+  },
+  {
+    channel: "Health Food Store / Retail",
+    rating: "⭐⭐⭐",
+    coaAccess: "Limited in-store",
+    fakeRisk: "Low-Medium",
+    priceValue: "Often high retail markup",
+    verdict: "Safe for established retail brands (Jarrow PrimaVie, Himalaya). Limited selection, COA not visible in-store.",
+    redFlags: "Unknown brands on shelf, expired stock, no brand website listed",
+    color: "border-amber-200",
+    labelColor: "text-amber-600",
+  },
+  {
+    channel: "eBay / Wish / Temu",
+    rating: "⭐",
+    coaAccess: "Almost never",
+    fakeRisk: "Extreme",
+    priceValue: "Worthless",
+    verdict: "Do not buy. Supplement-grade products from these channels have no meaningful quality controls or documentation.",
+    redFlags: "Everything",
+    color: "border-red-200",
+    labelColor: "text-red-500",
+  },
+];
+
 const VENDOR_COMPARISON = [
   { name: "Black Lotus (Direct)", channel: "D2C", coaScore: "ISO, lot-linked", fulvic: "64.51% (resin)", gmp: true, priceGram: "$1.33", ship: "Free US", tier: "S", tierColor: "bg-amber-400 text-amber-900" },
   { name: "Natural Shilajit (Amazon)", channel: "Amazon", coaScore: "3rd party", fulvic: "Not Disclosed", gmp: true, priceGram: "$1.08", ship: "Prime", tier: "A", tierColor: "bg-emerald-500 text-white" },
@@ -212,6 +270,32 @@ export default function WhereToBuyShilajitOnlineUSA() {
             <p>
               For US buyers specifically, there are additional considerations: FDA oversight applies to US-based manufacturing facilities but not to raw material sourcing abroad. GMP certification from a US-registered facility means the purification and packaging process meets federal quality standards — an important checkpoint even if the raw shilajit was collected in the Himalayas.
             </p>
+          </div>
+        </section>
+
+        {/* Purchasing channel rankings */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Purchasing channel rankings</h2>
+          <div className="space-y-4">
+            {CHANNELS.map((ch) => (
+              <div key={ch.channel} className={`bg-white border ${ch.color} rounded-xl p-5`}>
+                <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
+                  <div>
+                    <div className="text-sm font-bold text-[#0D1F14]">{ch.channel}</div>
+                    <div className="text-sm mt-0.5">{ch.rating}</div>
+                  </div>
+                  <div className="grid grid-cols-2 gap-x-6 gap-y-1 text-[10px]">
+                    <span className="text-[#7BA899]">COA access: <strong className={ch.labelColor}>{ch.coaAccess}</strong></span>
+                    <span className="text-[#7BA899]">Fake risk: <strong className={ch.labelColor}>{ch.fakeRisk}</strong></span>
+                    <span className="text-[#7BA899]">Price value: <strong className="text-[#0D1F14]">{ch.priceValue}</strong></span>
+                  </div>
+                </div>
+                <div className="bg-[#F0FAF4] rounded-lg px-3 py-2 border border-[#D1EDD8] mb-2">
+                  <p className="text-[11px] text-[#0D1F14] leading-relaxed"><span className={`font-bold ${ch.labelColor}`}>Verdict: </span>{ch.verdict}</p>
+                </div>
+                <p className="text-[10px] text-red-600/80"><span className="font-bold">Red flags: </span>{ch.redFlags}</p>
+              </div>
+            ))}
           </div>
         </section>
 
@@ -356,6 +440,33 @@ export default function WhereToBuyShilajitOnlineUSA() {
           </div>
         </section>
 
+        {/* Amazon buying checklist */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Buying shilajit on Amazon: what to look for</h2>
+          <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
+            <p>
+              Amazon is not inherently unsafe for shilajit — but it requires more diligence than buying direct.
+              Here&apos;s a checklist for evaluating any Amazon shilajit listing:
+            </p>
+            <div className="space-y-2">
+              {[
+                "Brand has its own website with a COA publicly accessible (not just 'available on request')",
+                "Price is $0.75+/gram for resin — below this is economically inconsistent with real quality",
+                "Reviews include detailed, verified purchase reviews with specific results — not generic 5-star stacks",
+                "Product listing specifies source region and altitude — not just 'Himalayan' without details",
+                "Brand has been selling for 2+ years with consistent listing history",
+                "Product has 4.0+ average rating with 200+ reviews (lower volume is higher risk)",
+                "Fulfilled by brand, not by obscure third-party reseller with no history",
+              ].map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <CheckIcon />
+                  <span className="text-xs text-[#0D1F14]">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Red flags */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Red flags in online US shilajit sellers</h2>
@@ -369,6 +480,24 @@ export default function WhereToBuyShilajitOnlineUSA() {
               <div key={flag} className="bg-white border border-red-200 rounded-xl p-4">
                 <div className="text-xs font-bold text-red-600 mb-1.5">⚠ {flag}</div>
                 <p className="text-xs text-[#0D1F14] leading-relaxed">{detail}</p>
+              </div>
+            ))}
+          </div>
+          <h3 className="text-lg font-bold text-[#0D1F14] mt-5 mb-3">Universal red flags — walk away from any vendor showing these</h3>
+          <div className="grid sm:grid-cols-2 gap-3">
+            {[
+              "COA only available 'on request' — transparency means publishing it, not gating it",
+              "No physical business address or traceable legal entity",
+              "30g resin priced under $20 — impossible economics for genuine quality",
+              "Fulvic acid percentage on label with no lab document to match",
+              "Reviews that are almost entirely 5-star with no critical feedback",
+              "Product photos that match other brands with slightly different label",
+              "Claims of '80–90%+ fulvic acid' without extraordinary evidence",
+              "No return policy or 'all sales final' for a supplement",
+            ].map((flag) => (
+              <div key={flag} className="flex items-start gap-2.5 bg-white border border-red-200 rounded-xl p-3.5">
+                <span className="text-red-600 text-sm shrink-0">⚠</span>
+                <p className="text-xs text-[#0D1F14] leading-relaxed">{flag}</p>
               </div>
             ))}
           </div>

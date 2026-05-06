@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "We rank the best places to buy authentic shilajit in 2026 — with COA requirements, red flags for each channel, and our top vendor picks. Don't buy until you read this.",
   keywords:
     "where to buy shilajit, buy real shilajit, best place to buy shilajit online, shilajit online, trusted shilajit source",
-  alternates: { canonical: POST_URL },
+  alternates: { canonical: `${BASE_URL}/blog/where-to-buy-shilajit-online-usa` },
   openGraph: {
     title: "Where to Buy Real Shilajit in 2026 — Trusted Sources Only",
     description:

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description,
   keywords:
     "best shilajit gummies, best shilajit gummies 2026, shilajit gummies vs resin, shilajit gummies that actually work, top rated shilajit gummies, shilajit gummies reviews",
-  alternates: { canonical: POST_URL },
+  alternates: { canonical: `${BASE_URL}/blog/best-shilajit-gummies` },
   openGraph: {
     title,
     description,
