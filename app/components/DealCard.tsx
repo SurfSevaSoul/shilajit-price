@@ -198,6 +198,7 @@ export default function DealCard({ product }: DealCardProps) {
               src={imageUrl}
               alt={`${vendor} ${productName}`}
               fill
+              loading="lazy"
               quality={90}
               sizes="(max-width: 640px) 100vw, 280px"
               className="object-contain"

@@ -423,6 +423,7 @@ export default function ComparePage() {
                               alt={`${p.vendor} ${p.productName}`}
                               width={56}
                               height={56}
+                              loading="lazy"
                               quality={90}
                               sizes="56px"
                               className="object-contain w-full h-full"

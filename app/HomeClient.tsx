@@ -207,6 +207,7 @@ function EditorPickCard({
           <img
             src={product.imageUrl}
             alt={product.productName}
+            loading="lazy"
             className="absolute inset-0 w-full h-full object-contain"
           />
         </div>
