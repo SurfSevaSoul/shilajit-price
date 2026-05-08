@@ -56,7 +56,7 @@ const faqItems: FaqItem[] = [
     name: "Does shilajit show up on a drug test?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "No. Shilajit does not contain any compound that would register as a positive result on standard athletic drug tests, including WADA-standard urine and blood panels. Its bioactive components — fulvic acid, humic acid, DBPs, and trace minerals — are not controlled substances and produce no metabolites that match screened compounds. Shilajit's testosterone-supporting effects work through natural hormonal optimization (supporting the body's own LH signaling), not through introduction of exogenous hormones. This is not prohibited under WADA rules.",
+      text: "Shilajit does not contain any substances typically screened for in standard workplace or athletic drug tests. It contains no synthetic compounds, steroids, stimulants, or controlled substances. Standard WADA, USADA, and workplace urine tests screen for specific prohibited compounds — none of which are present in purified shilajit. However, low-quality or adulterated shilajit products could theoretically contain undisclosed additives. Brands that test for sexual enhancement adulterants — like Natural Shilajit — provide an additional layer of verification.",
     },
   },
   {
@@ -65,6 +65,14 @@ const faqItems: FaqItem[] = [
     acceptedAnswer: {
       "@type": "Answer",
       text: "For competitive athletes, Natural Shilajit stands out for publishing adulterant testing results — making it the only brand in our database that specifically tests for sexual enhancement adulterants, a category of contamination that standard COAs miss. Black Lotus (IAS Labs Batch 93, Altai Mountains Siberia) is the top choice for fulvic acid concentration per dollar with full heavy metals verification. Pure Himalayan (ISO 17025 accredited lab, Himalayan Mountains 16,000ft) has the cleanest tablet heavy metals panel of any tested brand. Pürblack (5 US Patents, multi-region) offers unique DBP and Urolithin A verification with GMP certification. All four brands have passed full independent heavy metals panels.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Is shilajit tested for in sports drug testing?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Shilajit is not a prohibited substance under WADA's Prohibited List and is not specifically tested for in sports drug testing programs. It is a natural mineral resin, not a synthetic performance-enhancing drug. Athletes subject to drug testing should still choose brands with verified third-party COA testing to ensure their product contains no undisclosed additives or adulterants.",
     },
   },
 ];
