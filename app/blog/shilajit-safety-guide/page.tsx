@@ -409,8 +409,14 @@ export default function ShilajitSafetyGuide() {
             The MSK assessment is measured and accurate, not alarmist. Their safety concerns
             center on product-level contamination risks and the lack of consistent standards —
             which are real problems in the supplement market generally, and especially so for
-            shilajit. These concerns are addressed by purchasing from brands that provide
-            independent, accredited lab testing with actual measured values, not marketing claims.
+            shilajit.{" "}
+            <Link href="/blog/nccih-shilajit-safety" className="text-[#10B981] hover:underline font-medium">
+              NCCIH&apos;s official position on shilajit
+            </Link>{" "}
+            echoes the same core concerns: unverified products, inconsistent purity, and heavy
+            metals risk when sourcing is undocumented. These concerns are addressed by purchasing
+            from brands that provide independent, accredited lab testing with actual measured
+            values, not marketing claims.
           </p>
           <p>
             What MSK does not say: that all shilajit is dangerous, that traditional use evidence

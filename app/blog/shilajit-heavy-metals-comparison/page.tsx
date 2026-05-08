@@ -527,7 +527,11 @@ export default function ShilajitHeavyMetalsComparison() {
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">What This Means for Memorial Sloan Kettering&apos;s Warning</h2>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
-          Memorial Sloan Kettering Cancer Center flags heavy metal contamination as a documented safety concern with shilajit — and that concern is legitimate. Unverified shilajit products from uncontrolled sources can and do contain heavy metals at dangerous levels. Published case reports of heavy metal toxicity from shilajit products exist in the medical literature.
+          Memorial Sloan Kettering Cancer Center flags heavy metal contamination as a documented safety concern with shilajit — and that concern is legitimate. Unverified shilajit products from uncontrolled sources can and do contain heavy metals at dangerous levels. Published case reports of heavy metal toxicity from shilajit products exist in the medical literature.{" "}
+          <Link href="/blog/nccih-shilajit-safety" className="text-[#10B981] hover:underline">
+            What NCCIH says about shilajit heavy metals
+          </Link>{" "}
+          reinforces this position: the agency specifically cites contamination risk as the primary safety concern with unverified shilajit sources.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
           The data in this article represents exactly the kind of verification MSK recommends consumers look for. MSK&apos;s concern is not that shilajit is inherently dangerous — it is that most products on the market cannot prove they are safe because they have not been independently tested. The five brands compared here have done that testing and published the results.
