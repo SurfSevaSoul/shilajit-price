@@ -18,7 +18,7 @@ const POST_URL = `${BASE_URL}/blog/lotus-blooming-herbs-shilajit-review`;
 const title =
   "Lotus Blooming Herbs Shilajit Review: COA Data, Sourcing & Ayurvedic Credentials";
 const description =
-  "Lotus Blooming Herbs claims to be the first company to bring pure resin shilajit to the West. We verified their COA data, reviewed their sourcing at 16,000–18,000ft, and assessed their Ayurvedic practitioner credentials.";
+  "Lotus Blooming Herbs Authentic Shilajit reviewed: A2LA ISO 17025 lab testing, the lowest lead of any brand we've tested at 0.040 mcg/serving, and Ayurvedic practitioner ownership. Here's the full COA breakdown.";
 
 export const metadata: Metadata = {
   title,
