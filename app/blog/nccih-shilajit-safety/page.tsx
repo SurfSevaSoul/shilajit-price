@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "NCCIH on Shilajit: What the Official Safety Guidance Actually Says | ShilajitPrice.com",
   description:
-    "NCCIH flags heavy metals contamination and pregnancy risk in shilajit supplements. Here's what the official guidance actually says, what it doesn't say, and how to find a brand that addresses their concerns.",
+    "NCCIH flags heavy metals contamination risk in shilajit supplements. Here's exactly what the official guidance says, what it doesn't say, and which brands have the verified lab data to address their concerns.",
   keywords:
     "nccih shilajit, nccih shilajit safety, nccih shilajit heavy metals, national center for complementary integrative health shilajit, shilajit safety official guidance",
   alternates: { canonical: POST_URL },
