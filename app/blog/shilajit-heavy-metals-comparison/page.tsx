@@ -15,7 +15,7 @@ const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 export const metadata: Metadata = {
   title: "Shilajit Heavy Metals Test Results 2026 — Lab Data Compared Across 5 Brands",
   description:
-    "Actual batch-specific heavy metals COA data for Black Lotus, Pure Himalayan, Natural Shilajit, Pürblack, and Lotus Blooming Herbs — tested by accredited US labs. See which brand tests cleanest.",
+    "We compared heavy metals lab data across 5 shilajit brands using accredited COA results. Lead, arsenic, mercury, and cadmium — here's what each brand's testing actually shows.",
   keywords:
     "shilajit heavy metals test results, shilajit heavy metals lab data, safest shilajit brand heavy metals, shilajit lead arsenic mercury test, shilajit COA heavy metals, shilajit cadmium test",
   alternates: { canonical: POST_URL },
