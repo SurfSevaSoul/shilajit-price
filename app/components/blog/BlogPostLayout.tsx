@@ -212,6 +212,14 @@ export default function BlogPostLayout({
             <article className="flex-1 min-w-0 space-y-10">
               {children}
 
+              {/* Auto-injected: Mid-content quiz CTA */}
+              {quizCta && (
+                <div className="my-8 p-5 rounded-xl border border-emerald-200 bg-emerald-50">
+                  <p className="text-sm font-semibold text-emerald-700 mb-1">Not sure which shilajit is right for you?</p>
+                  <a href="/quiz" className="text-emerald-600 font-semibold underline">Take our free 60-second quiz →</a>
+                </div>
+              )}
+
               {/* Auto-injected: CTA */}
               {ctaVariant === "pure-himalayan" ? <PureHimalayanCTA /> : <BlackLotusCTA />}
 
