@@ -113,6 +113,7 @@ export default function ShilajitBannedSports() {
       currentSlug="shilajit-banned-sports"
       breadcrumbLabel="Is Shilajit Banned in Sports?"
       faqItems={faqItems}
+      quizCta="card"
     >
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

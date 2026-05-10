@@ -108,6 +108,7 @@ export default function LotusBloomingHerbsReview() {
       currentSlug="lotus-blooming-herbs-shilajit-review"
       breadcrumbLabel="Lotus Blooming Herbs Review"
       faqItems={faqItems}
+      quizCta="card"
     >
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
