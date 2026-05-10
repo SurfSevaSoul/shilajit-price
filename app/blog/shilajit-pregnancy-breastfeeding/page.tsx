@@ -88,7 +88,7 @@ export default function ShilajitPregnancyBreastfeeding() {
       currentSlug="shilajit-pregnancy-breastfeeding"
       breadcrumbLabel="Shilajit During Pregnancy & Breastfeeding"
       faqItems={faqItems}
-      quizCta="line"
+      quizCta="card"
       ctaVariant="pure-himalayan"
     >
       {/* Medical disclaimer */}

@@ -99,7 +99,7 @@ export default function ShilajitSideEffects() {
         updatedAt="2026-04-24"
         readingTimeMin={9}
         currentSlug="shilajit-side-effects"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="Shilajit Side Effects"
         faqItems={faqItems}
       >

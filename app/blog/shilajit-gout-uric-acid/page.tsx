@@ -85,7 +85,7 @@ export default function ShilajitGoutUricAcid() {
       updatedAt="2026-05-04"
       readingTimeMin={8}
       currentSlug="shilajit-gout-uric-acid"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Shilajit and Gout"
       faqItems={faqItems}
     >

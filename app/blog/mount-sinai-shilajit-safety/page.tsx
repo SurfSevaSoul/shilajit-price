@@ -98,7 +98,7 @@ export default function MountSinaiShilajitSafety() {
       currentSlug={SLUG}
       breadcrumbLabel="Mount Sinai & Shilajit Safety"
       faqItems={faqItems}
-      quizCta="line"
+      quizCta="card"
     >
       {/* Medical disclaimer */}
       <div className="bg-amber-50 border-2 border-amber-200 rounded-xl p-4 text-xs text-[#4A6358] leading-relaxed">

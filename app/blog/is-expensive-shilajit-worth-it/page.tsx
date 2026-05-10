@@ -178,7 +178,7 @@ export default function IsExpensiveShilajitWorthIt() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="is-expensive-shilajit-worth-it"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="Is Expensive Shilajit Worth It"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

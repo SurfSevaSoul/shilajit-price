@@ -84,7 +84,7 @@ export default function ShilajitHemochromatosis() {
       updatedAt="2026-05-01"
       readingTimeMin={9}
       currentSlug="shilajit-hemochromatosis"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Shilajit & Hemochromatosis"
       faqItems={faqItems}
     >

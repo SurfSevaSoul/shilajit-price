@@ -83,7 +83,7 @@ export default function ShilajitLiverKidneys() {
       updatedAt="2026-05-04"
       readingTimeMin={9}
       currentSlug="shilajit-liver-kidneys"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Shilajit Liver & Kidney Safety"
       faqItems={faqItems}
     >

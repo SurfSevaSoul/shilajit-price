@@ -92,7 +92,7 @@ export default function DoesShilajitWork() {
         updatedAt="2026-04-18"
         readingTimeMin={10}
         currentSlug="does-shilajit-work"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="Does Shilajit Work?"
         faqItems={faqItems}
       >

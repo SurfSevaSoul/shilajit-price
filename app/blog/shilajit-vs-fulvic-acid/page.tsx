@@ -85,7 +85,7 @@ export default function ShilajitVsFulvicAcid() {
       updatedAt="2026-05-01"
       readingTimeMin={10}
       currentSlug="shilajit-vs-fulvic-acid"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Shilajit vs Fulvic Acid"
       faqItems={faqItems}
     >

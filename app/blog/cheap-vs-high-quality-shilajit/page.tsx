@@ -142,7 +142,7 @@ export default function CheapVsHighQualityShilajit() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="cheap-vs-high-quality-shilajit"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="Cheap vs High Quality Shilajit"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

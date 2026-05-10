@@ -84,7 +84,7 @@ export default function ShilajitPowderVsResin() {
       updatedAt="2026-05-04"
       readingTimeMin={9}
       currentSlug="shilajit-powder-vs-resin"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Shilajit Powder vs Resin"
       faqItems={faqItems}
     >

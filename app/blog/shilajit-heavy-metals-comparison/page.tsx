@@ -85,7 +85,7 @@ export default function ShilajitHeavyMetalsComparison() {
       currentSlug={SLUG}
       breadcrumbLabel="Shilajit Heavy Metals Comparison"
       faqItems={faqItems}
-      quizCta="line"
+      quizCta="card"
       ctaVariant="black-lotus"
     >
       {/* Disclosure */}

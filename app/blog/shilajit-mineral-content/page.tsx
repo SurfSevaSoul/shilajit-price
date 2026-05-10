@@ -112,7 +112,7 @@ export default function ShilajitMineralContent() {
       currentSlug={SLUG}
       breadcrumbLabel="Shilajit Mineral Content"
       faqItems={faqItems}
-      quizCta="line"
+      quizCta="card"
       ctaVariant="pure-himalayan"
     >
       {/* Disclosure */}

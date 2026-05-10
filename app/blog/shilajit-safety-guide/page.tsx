@@ -89,7 +89,7 @@ export default function ShilajitSafetyGuide() {
       breadcrumbLabel="Is Shilajit Safe?"
       faqItems={faqItems}
       ctaVariant="pure-himalayan"
-      quizCta="line"
+      quizCta="card"
     >
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

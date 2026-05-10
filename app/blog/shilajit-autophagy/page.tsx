@@ -85,7 +85,7 @@ export default function ShilajitAutophagy() {
       updatedAt="2026-05-04"
       readingTimeMin={8}
       currentSlug="shilajit-autophagy"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Shilajit and Autophagy"
       faqItems={faqItems}
     >

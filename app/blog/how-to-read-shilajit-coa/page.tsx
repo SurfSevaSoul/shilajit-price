@@ -93,7 +93,7 @@ export default function HowToReadShilajitCoa() {
         updatedAt="2026-04-15"
         readingTimeMin={7}
         currentSlug="how-to-read-shilajit-coa"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="How to Read a Shilajit COA"
         faqItems={faqItems}
       >

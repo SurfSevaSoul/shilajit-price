@@ -106,7 +106,7 @@ export default function HowToSpotFakeShilajit() {
         updatedAt="2026-04-13"
         readingTimeMin={7}
         currentSlug="how-to-spot-fake-shilajit"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="How to Spot Fake Shilajit"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

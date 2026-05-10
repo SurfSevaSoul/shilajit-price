@@ -148,7 +148,7 @@ export default function BestShilajitGummies2026() {
       updatedAt="2026-05-01"
       readingTimeMin={9}
       currentSlug="best-shilajit-gummies-2026"
-      quizCta="line"
+      quizCta="card"
       breadcrumbLabel="Best Shilajit Gummies 2026"
       faqItems={faqItems}
       ctaVariant="black-lotus"

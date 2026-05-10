@@ -96,7 +96,7 @@ export default function IsShilajitAScam() {
         updatedAt="2026-04-14"
         readingTimeMin={8}
         currentSlug="is-shilajit-a-scam"
-        quizCta="line"
+        quizCta="card"
         breadcrumbLabel="Is Shilajit a Scam?"
         faqItems={faqItems}
         ctaVariant="pure-himalayan"

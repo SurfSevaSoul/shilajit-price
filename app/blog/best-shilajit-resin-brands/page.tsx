@@ -95,7 +95,7 @@ export default function BestShilajitResinBrands() {
       currentSlug={SLUG}
       breadcrumbLabel="Best Shilajit Resin Brands 2026"
       faqItems={faqItems}
-      quizCta="line"
+      quizCta="card"
     >
       {/* Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

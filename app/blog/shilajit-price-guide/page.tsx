@@ -88,7 +88,7 @@ export default function ShilajitPriceGuide() {
       breadcrumbLabel="Shilajit Price Guide 2026"
       faqItems={faqItems}
       ctaVariant="black-lotus"
-      quizCta="line"
+      quizCta="card"
     >
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

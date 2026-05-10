@@ -100,7 +100,7 @@ export default function MemorialSloanKetteringShilajit() {
       currentSlug={SLUG}
       breadcrumbLabel="Memorial Sloan Kettering & Shilajit Safety"
       faqItems={faqItems}
-      quizCta="line"
+      quizCta="card"
       ctaVariant="black-lotus"
     >
       {/* Medical disclaimer */}
