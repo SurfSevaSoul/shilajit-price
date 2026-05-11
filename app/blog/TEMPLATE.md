@@ -37,7 +37,7 @@ import BlogCTA from "../../components/blog/BlogCTA";
 
 // ─── Constants ───────────────────────────────────────────────────────────────
 
-const BASE_URL = "https://shilajitprice.com";
+const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "your-slug-here";
 const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 
