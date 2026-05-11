@@ -36,10 +36,17 @@ const securityHeaders = [
 const nextConfig: NextConfig = {
   async redirects() {
     return [
+      // Non-www → www canonical redirect
       {
         source: "/:path*",
         has: [{ type: "host", value: "shilajitprice.com" }],
         destination: "https://www.shilajitprice.com/:path*",
+        permanent: true,
+      },
+      // /gram → price-per-gram post (fixes GSC 404)
+      {
+        source: "/gram",
+        destination: "/blog/shilajit-price-per-gram",
         permanent: true,
       },
     ];
