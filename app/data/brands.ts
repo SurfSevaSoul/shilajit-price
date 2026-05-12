@@ -8,6 +8,8 @@ export interface Brand {
   certifications: string[];
   description: string;
   affiliateUrl: string;
+  discountCode?: string;
+  discountPercent?: number;
 }
 
 export const BRANDS: Brand[] = [
@@ -22,6 +24,8 @@ export const BRANDS: Brand[] = [
     description:
       "5th and 6th generation shilajit live resin made in the USA. Patent-backed purification process with precious metal infusions. Quality is measured by DBP (dibenzo-α-pyrones) content and Urolithin A ppm — not fulvic acid %. COA data from Pürblack Inc., Temecula, CA (May–December 2025). The most premium and research-backed shilajit brand on the market.",
     affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
+    discountCode: "SHILAJIT15",
+    discountPercent: 15,
   },
   {
     id: "natural-shilajit",

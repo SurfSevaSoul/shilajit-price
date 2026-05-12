@@ -137,6 +137,7 @@ const BRANDS = [
     href: AFFILIATE_PB,
     btnClass:
       "bg-[#182B1F] hover:bg-[#10B981] text-white",
+    discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
   },
   {
     key: "lbh",
@@ -618,6 +619,7 @@ export default function ShilajitForOver50() {
               color: "border-purple-200 bg-purple-50",
               labelColor: "text-purple-700",
               href: AFFILIATE_PB,
+              discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
             },
             {
               goal: "Best for Himalayan provenance & lowest lead",
@@ -628,7 +630,7 @@ export default function ShilajitForOver50() {
               labelColor: "text-amber-700",
               href: AFFILIATE_LBH,
             },
-          ].map(({ goal, pick, reason, color, labelColor, href }) => (
+          ].map(({ goal, pick, reason, color, labelColor, href, discountNote }) => (
             <div key={goal} className={`border rounded-xl p-5 ${color}`}>
               <div className={`text-[10px] font-black uppercase tracking-widest mb-1 ${labelColor}`}>
                 {goal}
@@ -645,6 +647,7 @@ export default function ShilajitForOver50() {
               >
                 Check Price →
               </a>
+              {discountNote && <p className="mt-1.5 text-[9px] text-[#7BA899]">Code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> — {discountNote}</p>}
             </div>
           ))}
         </div>
@@ -805,7 +808,10 @@ export default function ShilajitForOver50() {
                     {b.pricePerGram}
                   </td>
                   <td className="px-4 py-3 text-[#7BA899]">{b.origin}</td>
-                  <td className="px-4 py-3 text-[#0D1F14]">{b.bestFor}</td>
+                  <td className="px-4 py-3 text-[#0D1F14]">
+                    {b.bestFor}
+                    {b.discountNote && <span className="block mt-1 text-[9px] text-[#7BA899]">Code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> — 15% off</span>}
+                  </td>
                 </tr>
               ))}
             </tbody>

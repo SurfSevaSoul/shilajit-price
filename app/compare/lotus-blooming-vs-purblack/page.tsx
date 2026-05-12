@@ -462,6 +462,7 @@ export default function LotusBloomingVsPurblackPage() {
                 >
                   Shop Pürblack →
                 </a>
+                <p className="mt-2 text-[10px] text-center text-[#7BA899]">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
               </div>
             </div>
           </section>

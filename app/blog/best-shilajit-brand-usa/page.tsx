@@ -505,7 +505,7 @@ export default function BestShilajitBrandUSA() {
               fulvic: "Does not report fulvic acid — uses DBP (16.5–21.9%) and Urolithin A (up to 58.497 ppm)",
               source: "Multi-region — no single geographic claim",
               metals: "Full heavy metals panel — within FDA limits",
-              note: "Patented purification process; 5 US patents",
+              note: "Patented purification process; 5 US patents. Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
               href: AFFILIATE_PB,
             },
           ].map((b) => (

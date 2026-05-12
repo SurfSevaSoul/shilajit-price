@@ -214,6 +214,9 @@ export default function PurblackShilajitReview() {
         >
           View Pürblack on Official Site →
         </a>
+        <p className="mt-3 text-xs text-[#7BA899]">
+          Use code <strong className="text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.
+        </p>
       </div>
 
       {/* Intro */}

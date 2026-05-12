@@ -685,6 +685,7 @@ export default function LabDataPage() {
               >
                 View Pürblack →
               </a>
+              <p className="mt-2 text-[10px] text-[#7BA899]">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
             </div>
           </div>
 

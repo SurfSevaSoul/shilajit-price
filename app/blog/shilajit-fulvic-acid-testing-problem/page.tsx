@@ -555,6 +555,7 @@ export default function ShilajitFulvicAcidTestingProblem() {
               labLine: "Pürblack Inc., Temecula CA · GMP pharmaceutical facility",
               href: AFFILIATE_PB,
               btnColor: "bg-[#182B1F] hover:bg-violet-600",
+              discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
             },
             {
               brand: "Lotus Blooming Herbs",
@@ -576,7 +577,7 @@ export default function ShilajitFulvicAcidTestingProblem() {
               href: AFFILIATE_NS,
               btnColor: "bg-[#182B1F] hover:bg-teal-600",
             },
-          ].map(({ brand, tier, tierColor, source, faLine, labLine, href, btnColor }) => (
+          ].map(({ brand, tier, tierColor, source, faLine, labLine, href, btnColor, discountNote }) => (
             <div key={brand} className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm">
               <div className="bg-[#F0FAF4] border-b border-[#D1EDD8] px-4 py-3 flex items-center gap-2">
                 <span className={`w-7 h-7 rounded-full ring-1 flex items-center justify-center text-xs font-black shrink-0 ${tierColor}`}>{tier}</span>
@@ -605,6 +606,7 @@ export default function ShilajitFulvicAcidTestingProblem() {
                   View {brand} →
                 </a>
                 <p className="text-center text-[9px] text-[#7BA899] mt-1.5">Affiliate link — commission at no extra cost</p>
+                {discountNote && <p className="text-center text-[9px] text-[#7BA899] mt-1"><strong className="font-bold text-[#0D1F14]">Code SHILAJIT15</strong> — {discountNote}</p>}
               </div>
             </div>
           ))}

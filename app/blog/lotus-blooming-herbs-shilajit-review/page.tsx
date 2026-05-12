@@ -889,7 +889,7 @@ export default function LotusBloomingHerbsReview() {
             },
             {
               label: "Pürblack",
-              sub: "5 US Patents · DBP 16.5–21.9% · Multi-region",
+              sub: "5 US Patents · DBP 16.5–21.9% · Multi-region · Code SHILAJIT15 for 15% off",
               href: PB_BASE,
             },
           ].map((item) => (

@@ -458,6 +458,7 @@ export default function PurblackVsPureHimalayanPage() {
                 >
                   Shop Pürblack →
                 </a>
+                <p className="mt-2 text-[10px] text-center text-[#7BA899]">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
               </div>
               <div className="bg-[#F0FAF4] rounded-2xl border border-[#D1EDD8] p-5">
                 <div className="font-black text-[#0D1F14] text-sm mb-2">

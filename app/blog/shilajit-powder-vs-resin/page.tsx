@@ -612,6 +612,7 @@ export default function ShilajitPowderVsResin() {
                 note: "5 US patents · Pharmaceutical-grade US manufacturing · DBP + Urolithin A verified · GMP certified · Live resin format",
                 href: AFFILIATE_PB,
                 badge: "bg-emerald-500 text-white",
+                discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
               },
             ].map((brand) => (
               <div key={brand.name} className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5">
@@ -631,6 +632,7 @@ export default function ShilajitPowderVsResin() {
                 >
                   Shop {brand.name} →
                 </a>
+                {brand.discountNote && <p className="mt-1.5 text-center text-[9px] text-[#7BA899]"><strong className="font-bold text-[#0D1F14]">Code SHILAJIT15</strong> — {brand.discountNote}</p>}
               </div>
             ))}
           </div>

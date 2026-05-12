@@ -477,6 +477,7 @@ export default function PurblackVsBlackLotus() {
                 Shop Pürblack Live Resin →
               </a>
               <p className="text-center text-[9px] text-[#7BA899] mt-2">Affiliate link — commission at no extra cost</p>
+              <p className="text-center text-[9px] text-[#7BA899] mt-1">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
             </div>
           </div>
         </div>
