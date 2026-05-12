@@ -320,6 +320,42 @@ const REGISTERED_POSTS: BlogPost[] = [
     category: "Buying Guide",
   },
   {
+    slug: "shilajit-fulvic-acid-testing-problem",
+    title: "The Problem with Shilajit Fulvic Acid Claims: No Standard, Agricultural Humates & What One Founder Told Us",
+    description:
+      "Fulvic acid percentages in shilajit marketing are often misleading — different testing methods produce incomparable results, and some figures may not reflect shilajit-derived fulvic acid at all. Here's what one brand founder told us and what the data actually shows.",
+    publishedAt: "2026-05-12",
+    updatedAt: "2026-05-12",
+    readingTimeMin: 13,
+    tags: ["Research", "Lab Testing", "Fulvic Acid", "COA Verified"],
+    coverEmoji: "🧪",
+    category: "Research",
+  },
+  {
+    slug: "fractal-forest-shilajit-review",
+    title: "Fractal Forest Shilajit Review: COA Data, Wild American Drops & Himalayan Resin Compared",
+    description:
+      "Fractal Forest shilajit reviewed with full COA data: Himalayan resin, Himalayan drops (all heavy metals ND — cleanest on site), and Wild American drops with 71.31% verified fulvic acid. Plus 15% off with code SHILAJIT-PRICE.",
+    publishedAt: "2026-05-12",
+    updatedAt: "2026-05-12",
+    readingTimeMin: 12,
+    tags: ["Brand Reviews", "COA Verified", "Himalayan", "Wild American"],
+    coverEmoji: "🌿",
+    category: "Reviews",
+  },
+  {
+    slug: "nootropics-depot-primavie-review",
+    title: "Nootropics Depot PrimaVie Shilajit Review: COA, Heavy Metals & How It Compares",
+    description:
+      "Nootropics Depot PrimaVie shilajit reviewed: what their COA testing covers, how PrimaVie standardization works, and how it compares to dedicated shilajit brands with batch-specific lab data.",
+    publishedAt: "2026-05-08",
+    updatedAt: "2026-05-08",
+    readingTimeMin: 11,
+    tags: ["Brand Reviews", "COA Verified", "Ingredient Brands"],
+    coverEmoji: "🔬",
+    category: "Reviews",
+  },
+  {
     slug: "shilajit-beginners-guide",
     title: "Shilajit for Beginners — Complete First-Time Buyer's Guide",
     description:
