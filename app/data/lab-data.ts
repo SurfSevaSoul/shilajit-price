@@ -652,6 +652,65 @@ export const LAB_DATA: Record<string, LabEntry> = {
   // Batch BHC4429/2024057703, August 2025.
   // Fulvic acid not disclosed — brand philosophy holds that FA measurement
   // lacks universal scientific standards.
+  // ── FRACTAL FOREST ───────────────────────────────────────────────────────
+  // Resin: Certified Laboratories, Burbank CA (A2LA ISO 17025), Batch 20G, July 2024.
+  // Himalayan Drops: Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01), Batch LOT 1001, March 2026.
+  // Wild American Drops: IAS Laboratories, Phoenix AZ, Batch 24E0373, November 2024.
+  "fractal-forest-himalayan-resin": {
+    productId: "fractal-forest-himalayan-resin",
+    coaStatus: "verified",
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025)",
+    testingLabAccreditation: "A2LA ISO 17025",
+    batchNumber: "20G",
+    testDate: "2024-07-25",
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Batch 20G — Certified Laboratories, Burbank CA (A2LA ISO 17025) — July 2024",
+      "Heavy metals (ICP-MS): Lead 1.10 ppm · Arsenic 1.16 ppm · Cadmium 0.042 ppm · Mercury 0.008 ppm",
+      "Heavy metals within normal range for purified resin. Fulvic acid not tested on this batch.",
+    ],
+  },
+  "fractal-forest-himalayan-drops": {
+    productId: "fractal-forest-himalayan-drops",
+    coaStatus: "verified",
+    testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
+    testingLabAccreditation: "A2LA ISO 17025, Cert 3034.01",
+    batchNumber: "LOT 1001",
+    testDate: "2026-03-04",
+    microbiologyClean: true,
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Batch LOT 1001 — Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01) — March 2026",
+      "Heavy metals: Lead ND · Arsenic ND · Cadmium ND · Mercury ND — all four not detected",
+      "Cleanest heavy metals result of any product on site.",
+      "Microbiology: E.Coli Absent · Salmonella Absent · S.Aureus Absent · Total Plate Count <10 · Mold <10 · Yeast <10",
+      "Fulvic acid not tested on this batch.",
+    ],
+  },
+  "fractal-forest-american-drops": {
+    productId: "fractal-forest-american-drops",
+    coaStatus: "verified",
+    testingLab: "IAS Laboratories, Phoenix AZ",
+    batchNumber: "24E0373",
+    testDate: "2024-11-15",
+    fulvicAcidPct: 71.31,
+    humicAcidPct: 4.17,
+    mineralPanel: {
+      Potassium: "58,800 ppm",
+      Calcium: "27,519 ppm",
+      Magnesium: "10,000 ppm",
+    },
+    heavyMetals: { lead: "pass", mercury: "pass", arsenic: "pass", cadmium: "pass" },
+    notes: [
+      "Batch 24E0373 — IAS Laboratories, Phoenix AZ — November 2024",
+      "Fulvic acid: 71.31% via J.M. Verploegh and L.A. Brandvold method",
+      "Humic acid: 4.17%",
+      "Heavy metals: Lead ND · Arsenic 0.07 ppm · Cadmium 0.07 ppm · Mercury 0.02 ppm",
+      "Comprehensive mineral panel: Potassium 58,800 ppm · Calcium 27,519 ppm · Magnesium 10,000 ppm",
+      "North American sourced — unique in the market.",
+    ],
+  },
+
   "lotus-blooming-authentic-shilajit": {
     productId: "lotus-blooming-authentic-shilajit",
     coaStatus: "verified",

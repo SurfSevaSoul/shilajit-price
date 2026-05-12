@@ -48,6 +48,18 @@ export const BRANDS: Brand[] = [
     affiliateUrl: "https://www.purehimalayanshilajit.com/?ref=4792",
   },
   {
+    id: "fractal-forest",
+    name: "Fractal Forest",
+    slug: "fractal-forest",
+    origin: "Himalayan Mountains, Gilgit Baltistan region, 16,000ft (resin and Himalayan drops); North American sourced (Wild American drops)",
+    lab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01) + IAS Laboratories, Phoenix AZ",
+    coa: true,
+    certifications: ["A2LA ISO 17025 Lab Tested", "Third-Party Tested", "Kauai, Hawaii Based"],
+    description:
+      "Fractal Forest is a wellness brand based in Kauai, Hawaii offering Himalayan and Wild American shilajit products. They are known for their liquid shilajit drops format — rare in the market — and test with A2LA ISO 17025 accredited labs (Certified Laboratories, Burbank CA) and IAS Laboratories (Phoenix AZ).",
+    affiliateUrl: "https://fractalforest.co/SHILAJIT-PRICE",
+  },
+  {
     id: "lotus-blooming-herbs",
     name: "Lotus Blooming Herbs",
     slug: "lotus-blooming-herbs",
