@@ -2670,7 +2670,7 @@ export const PRODUCTS: Product[] = [
     testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
     affiliateUrl: "https://fractalforest.co/SHILAJIT-PRICE",
     description: "Himalayan resin sourced from Gilgit Baltistan at 16,000ft. Heavy metals COA by Certified Laboratories, Burbank CA (A2LA ISO 17025). Batch 20G, July 2024.",
-    imageUrl: "https://fractalforest.co/cdn/shop/files/Shilajit_Resin_Front.jpg?v=1761264830",
+    imageUrl: "/images/products/fractal-forest-himalayan-resin.png",
   },
   {
     id: "fractal-forest-himalayan-drops",
@@ -2700,7 +2700,7 @@ export const PRODUCTS: Product[] = [
     testingLab: "Certified Laboratories, Burbank CA (A2LA ISO 17025, Cert 3034.01)",
     affiliateUrl: "https://fractalforest.co/SHILAJIT-PRICE",
     description: "Liquid shilajit drops — rare format in the market. 30ml. All four heavy metals ND on Batch LOT 1001 COA (Certified Laboratories, Burbank CA, A2LA ISO 17025, March 2026). Cleanest heavy metals result of any product on site.",
-    imageUrl: "https://fractalforest.co/cdn/shop/files/YMK8652_e2375ce7-c42b-4c86-b6fd-8270ed450d9d.jpg?v=1761264591",
+    imageUrl: "/images/products/fractal-forest-himalayan-drops.png",
   },
   {
     id: "fractal-forest-american-drops",
@@ -2731,7 +2731,7 @@ export const PRODUCTS: Product[] = [
     testingLab: "IAS Laboratories, Phoenix AZ",
     affiliateUrl: "https://fractalforest.co/SHILAJIT-PRICE",
     description: "North American sourced shilajit drops — unique in the market. 30ml. 71.31% fulvic acid, 4.17% humic acid (IAS Labs, Batch 24E0373, Nov 2024). Rich mineral panel: Potassium 58,800 ppm · Calcium 27,519 ppm · Magnesium 10,000 ppm.",
-    imageUrl: "https://fractalforest.co/cdn/shop/files/YMK8681_54563877-737f-45c3-b3f3-392d675d579d.jpg?v=1759275164",
+    imageUrl: "/images/products/fractal-forest-american-drops.png",
   },
 
   {
