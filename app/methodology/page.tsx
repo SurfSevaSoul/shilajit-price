@@ -19,13 +19,13 @@ const TIER_DEFINITIONS = [
     tier: "S",
     color: "bg-amber-100 text-amber-800 ring-1 ring-amber-300",
     label: "S-Tier — Best in Class",
-    desc: "Full third-party COA published publicly, 80%+ verified fulvic acid, all four heavy metals tested and passing, known source altitude, cold-process or traditional purification, free shipping, and money-back guarantee. These are the only products we actively recommend purchasing.",
+    desc: "Full third-party COA published publicly, verified fulvic acid 70%+ OR documented alternative quality markers from accredited lab testing (e.g. DBP content, Urolithin A), all four heavy metals tested and passing, known source altitude, cold-process or traditional purification, free shipping, and money-back guarantee. These are the only products we actively recommend purchasing.",
   },
   {
     tier: "A",
     color: "bg-emerald-100 text-emerald-800 ring-1 ring-emerald-300",
     label: "A-Tier — High Quality",
-    desc: "Third-party tested with COA available, good purity score (7–8/10), heavy metals tested, known sourcing. May lack one or two S-tier criteria (e.g., slightly higher price per gram, or fulvic acid between 60–79%).",
+    desc: "Third-party tested with COA available, good purity score (7–8/10), heavy metals tested, known sourcing. May lack one or two S-tier criteria (e.g., slightly higher price per gram, or fulvic acid between 60–74% where tested, or strong alternative quality markers with partial COA disclosure).",
   },
   {
     tier: "B",
@@ -237,7 +237,7 @@ export default function MethodologyPage() {
           <h2 className="text-xl font-black text-[#0D1F14] mb-4" style={{ fontFamily: "var(--font-jakarta)" }}>Affiliate Relationships &amp; Editorial Independence</h2>
           <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm">
             <p className="text-sm text-[#4A6358] leading-relaxed mb-3">
-              ShilajitPrice.com has affiliate partnerships with <strong className="text-[#0D1F14]">Black Lotus Shilajit</strong> and <strong className="text-[#0D1F14]">Pure Himalayan Shilajit</strong>. When you purchase through our affiliate links, we earn a commission at no extra cost to you.
+              ShilajitPrice.com has affiliate partnerships with <strong className="text-[#0D1F14]">Black Lotus Shilajit</strong>, <strong className="text-[#0D1F14]">Lotus Blooming Herbs</strong>, <strong className="text-[#0D1F14]">Pure Himalayan Shilajit</strong>, <strong className="text-[#0D1F14]">Natural Shilajit</strong>, <strong className="text-[#0D1F14]">Pürblack</strong>, and <strong className="text-[#0D1F14]">Fractal Forest</strong>. When you purchase through our affiliate links, we earn a commission at no extra cost to you. Fractal Forest readers also receive 15% off with code <strong className="text-[#0D1F14]">SHILAJIT-PRICE</strong>.
             </p>
             <p className="text-sm text-[#4A6358] leading-relaxed mb-3">
               <strong className="text-[#10B981]">Affiliate relationships do not influence tier scores, rankings, or any data point on this site.</strong> These brands are featured because their published lab data earned them S-tier scores — not because of our commercial relationship with them.
