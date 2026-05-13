@@ -6,7 +6,7 @@ import BlogFilterClient from "./BlogFilterClient";
 export const metadata: Metadata = {
   title: "Shilajit Blog — Guides, Reviews & Price Comparisons | ShilajitPrice.com",
   description:
-    "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 26 expert articles to help you find the best shilajit supplement.",
+    "In-depth shilajit buying guides, brand rankings, price comparisons, and product reviews. 70+ expert guides to help you find the best shilajit supplement.",
   alternates: { canonical: "https://www.shilajitprice.com/blog" },
   openGraph: {
     title: "Shilajit Blog — Guides, Reviews & Price Comparisons",

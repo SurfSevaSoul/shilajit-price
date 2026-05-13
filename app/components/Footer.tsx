@@ -338,8 +338,8 @@ export default function Footer() {
               ShilajitPrice.com participates in affiliate advertising programs.
               When you click affiliate links on this site and make a purchase,
               we may receive a commission at no additional cost to you. Our
-              featured partners are Black Lotus Shilajit, Pure Himalayan
-              Shilajit, Natural Shilajit, Pürblack, and Lotus Blooming Herbs. Affiliate relationships do not
+              featured partners are Black Lotus Shilajit, Lotus Blooming Herbs,
+              Pure Himalayan Shilajit, Natural Shilajit, Pürblack, and Fractal Forest. Affiliate relationships do not
               influence product rankings or tier assignments — all ratings are
               based on independent evaluation of lab reports, COAs, pricing, and
               sourcing transparency. We only recommend products we genuinely
