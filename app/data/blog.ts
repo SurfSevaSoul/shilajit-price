@@ -332,6 +332,18 @@ const REGISTERED_POSTS: BlogPost[] = [
     category: "Rankings",
   },
   {
+    slug: "best-shilajit-powder",
+    title: "Best Shilajit Powder in 2026 — What to Look For and What to Avoid",
+    description:
+      "Most shilajit powder on the market is adulterated or untested. Here's how to identify genuine powder-form shilajit, what the COA data shows, and the only brands worth buying.",
+    publishedAt: "2026-05-13",
+    updatedAt: "2026-05-13",
+    readingTimeMin: 10,
+    tags: ["Rankings", "Powder", "Buying Guide", "Lab Testing"],
+    coverEmoji: "⚗️",
+    category: "Rankings",
+  },
+  {
     slug: "best-shilajit-liquid-drops",
     title: "Best Shilajit Liquid Drops & Tinctures in 2026 — Ranked by COA Data",
     description:
