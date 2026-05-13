@@ -332,6 +332,18 @@ const REGISTERED_POSTS: BlogPost[] = [
     category: "Rankings",
   },
   {
+    slug: "best-shilajit-liquid-drops",
+    title: "Best Shilajit Liquid Drops & Tinctures in 2026 — Ranked by COA Data",
+    description:
+      "The best shilajit liquid drops ranked by actual COA data. Fractal Forest Himalayan Drops has all four heavy metals completely undetected — the cleanest result on the market. Plus the only North American shilajit drops with 71.31% verified fulvic acid.",
+    publishedAt: "2026-05-13",
+    updatedAt: "2026-05-13",
+    readingTimeMin: 11,
+    tags: ["Rankings", "Liquid Drops", "Buying Guide", "Lab Testing"],
+    coverEmoji: "💧",
+    category: "Rankings",
+  },
+  {
     slug: "shilajit-fulvic-acid-testing-problem",
     title: "The Problem with Shilajit Fulvic Acid Claims: No Standard, Agricultural Humates & What One Founder Told Us",
     description:
