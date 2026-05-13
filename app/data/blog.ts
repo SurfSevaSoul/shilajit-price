@@ -332,6 +332,18 @@ const REGISTERED_POSTS: BlogPost[] = [
     category: "Rankings",
   },
   {
+    slug: "shilajit-honey",
+    title: "Shilajit Honey — What It Is, Does It Work & Is Black Lotus Worth It?",
+    description:
+      "Shilajit honey blends combine purified shilajit resin with raw honey for a traditional Ayurvedic delivery format. Here's how it compares to pure resin and whether Black Lotus's honey blend is worth buying.",
+    publishedAt: "2026-05-13",
+    updatedAt: "2026-05-13",
+    readingTimeMin: 8,
+    tags: ["Buying Guide", "Black Lotus", "Honey", "Ayurveda"],
+    coverEmoji: "🍯",
+    category: "Buying Guide",
+  },
+  {
     slug: "best-shilajit-powder",
     title: "Best Shilajit Powder in 2026 — What to Look For and What to Avoid",
     description:
