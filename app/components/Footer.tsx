@@ -109,6 +109,7 @@ export default function Footer() {
                 { label: "Pure Himalayan Shilajit", href: "https://www.purehimalayanshilajit.com/?ref=4792" },
                 { label: "Natural Shilajit", href: "https://naturalshilajit.com/?rfsn=9069392.c841fa" },
                 { label: "Pürblack", href: "https://purblack.pxf.io/c/7221460/3041684/36963" },
+                { label: "Fractal Forest", href: "https://fractalforest.co/SHILAJIT-PRICE" },
               ].map(({ label, href }) => (
                 <li key={label}>
                   <a
@@ -159,6 +160,42 @@ export default function Footer() {
                     rel="noopener noreferrer sponsored"
                     data-click-location="footer"
                     data-product-name={`Black Lotus ${label}`}
+                    className="text-sm text-[#9EC9AD]/70 hover:text-[#10B981] transition-colors duration-150 flex items-center gap-1.5"
+                  >
+                    <svg
+                      className="w-2.5 h-2.5 text-[#10B981] shrink-0"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Fractal Forest */}
+            <h3 className="text-xs font-bold text-[#9EC9AD]/50 uppercase tracking-widest mb-4 mt-6">
+              Shop Fractal Forest
+            </h3>
+            <ul className="space-y-2">
+              {[
+                { label: "Himalayan Resin (14g)", href: "https://fractalforest.co/SHILAJIT-PRICE" },
+                { label: "Himalayan Drops (30ml)", href: "https://fractalforest.co/SHILAJIT-PRICE" },
+                { label: "Wild American Drops (30ml)", href: "https://fractalforest.co/SHILAJIT-PRICE" },
+              ].map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer sponsored"
+                    data-click-location="footer"
+                    data-product-name={`Fractal Forest ${label}`}
                     className="text-sm text-[#9EC9AD]/70 hover:text-[#10B981] transition-colors duration-150 flex items-center gap-1.5"
                   >
                     <svg
