@@ -175,6 +175,7 @@ export default function ShilajitForOver50() {
       quizCta="card"
       breadcrumbLabel="Shilajit for Men Over 50"
       faqItems={faqItems}
+      medicallyReviewed={true}
     >
       {/* Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

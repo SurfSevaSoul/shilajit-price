@@ -356,8 +356,8 @@ export default function AltaiVsHimalayanShilajit() {
               <div className="space-y-3">
                 {[
                   { name: "Lotus Blooming Herbs Authentic Shilajit™ Resin", tier: "S", price: "~$60", perG: "—", fulvic: "Not disclosed", coa: true },
-                  { name: "Pure Himalayan Shilajit Resin 30g", tier: "S", price: "$39.99", perG: "$1.33/g", fulvic: "~58% (2021)", coa: true },
-                  { name: "Pure Himalayan Shilajit Tablets 90ct", tier: "S", price: "$34.99", perG: "—", fulvic: "ISO verified", coa: true },
+                  { name: "Pure Himalayan Shilajit Resin 30g", tier: "A", price: "$39.99", perG: "$1.33/g", fulvic: "~58% (2021)", coa: true },
+                  { name: "Pure Himalayan Shilajit Tablets 90ct", tier: "A", price: "$34.99", perG: "—", fulvic: "ISO verified", coa: true },
                   { name: "Himalayan Healing Resin 55g Gold Grade", tier: "A", price: "$44.99", perG: "$0.82/g", fulvic: "Verified", coa: true },
                   { name: "Essencraft Himalayan Resin 60g", tier: "B", price: "$86.97", perG: "$1.45/g", fulvic: "Unverified", coa: false },
                 ].map((p) => (
@@ -415,7 +415,7 @@ export default function AltaiVsHimalayanShilajit() {
         <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">Verified Options From Both Origins</div>
           <h3 className="text-base font-black text-[#0D1F14] mb-3">
-            Three S-Tier picks — verified lab data, both regions
+Top verified picks — lab data from both regions
           </h3>
 
           <div className="grid gap-4 sm:grid-cols-3 mb-4">
@@ -451,7 +451,7 @@ export default function AltaiVsHimalayanShilajit() {
 
             {/* Pure Himalayan */}
             <div className="border border-[#D1EDD8] rounded-xl p-4">
-              <div className="text-xs font-bold text-[#7BA899] uppercase tracking-widest mb-1">Ladakh Origin · S-Tier</div>
+              <div className="text-xs font-bold text-[#7BA899] uppercase tracking-widest mb-1">Ladakh Origin · A-Tier</div>
               <div className="font-black text-[#0D1F14] text-sm mb-1">Pure Himalayan Shilajit Resin</div>
               <div className="text-xs text-[#0D1F14] mb-3">60% fulvic acid · ISO/IEC 17025 lab · $1.33/g · Ladakh-sourced</div>
               <a

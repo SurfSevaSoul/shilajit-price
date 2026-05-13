@@ -236,12 +236,12 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
   "natural-shilajit-vs-pure-himalayan": {
     title: "Natural Shilajit vs Pure Himalayan Shilajit — Full Comparison (2026)",
     metaDescription:
-      "Natural Shilajit vs Pure Himalayan: compare DBP verification, ISO/IEC 17025 lab accreditation, origin, fulvic acid %, and price. Both are S-tier — here's the difference.",
+      "Natural Shilajit vs Pure Himalayan: compare DBP verification, ISO/IEC 17025 lab accreditation, origin, fulvic acid %, and price. Both are A-tier — here's the difference.",
     intro:
-      "Natural Shilajit and Pure Himalayan Shilajit represent two different philosophies of verification excellence: Natural Shilajit leads on biomarker depth (DBP testing, triple-method COA), while Pure Himalayan leads on lab accreditation standard (ISO/IEC 17025). Both are S-tier brands with strong documentation. The sourcing differs too — Altai vs Himalayan.",
+      "Natural Shilajit and Pure Himalayan Shilajit represent two different philosophies of verification excellence: Natural Shilajit leads on biomarker depth (DBP testing, triple-method COA), while Pure Himalayan leads on lab accreditation standard (ISO/IEC 17025). Both are A-tier brands with strong documentation. The sourcing differs too — Altai vs Himalayan.",
     winnerSlug: "natural-shilajit",
     verdict:
-      "Natural Shilajit edges ahead on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Pure Himalayan counters with A2LA ISO/IEC 17025 lab accreditation (Certified Laboratories, Burbank CA) and a lower price per gram ($1.33 vs $2.45). Note: Natural Shilajit does not disclose fulvic acid percentage; Pure Himalayan's FA reference is ~58% (Batch RE18, 2021 COA — UV method, non-A2LA result). Both earn S-tier; the right pick depends on whether verification depth or price matters more.",
+      "Natural Shilajit edges ahead on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Pure Himalayan counters with A2LA ISO/IEC 17025 lab accreditation (Certified Laboratories, Burbank CA) and a lower price per gram ($1.33 vs $2.45). Note: Natural Shilajit does not disclose fulvic acid percentage; Pure Himalayan's FA reference is ~58% (Batch RE18, 2021 COA — UV method, non-A2LA result). Both are A-tier; the right pick depends on whether verification depth or price matters more.",
     whyAWins: [
       "DBP (Dibenzo-α-pyrones) verified — confirms the presence of shilajit's secondary biomarkers",
       "COA testing by DaaneLabs + Harken Research — microbiology, heavy metals, minerals, and adulterant panels",
@@ -314,7 +314,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     metaDescription:
       "Natural Shilajit vs Sayan: both are Altai-sourced COA-verified brands, but they differ on DBP verification, fulvic acid %, price, and overall tier. Full comparison.",
     intro:
-      "Natural Shilajit and Sayan are both Altai-sourced products with published COAs — but they sit at very different points on the quality spectrum. Natural Shilajit is S-tier with DBP verification and triple-method testing; Sayan is A-tier with a solid ISO-accredited COA but lower fulvic acid and no GMP. This comparison covers everything.",
+      "Natural Shilajit and Sayan are both Altai-sourced products with published COAs — but they sit at very different points on the quality spectrum. Natural Shilajit is A-tier with DBP verification and triple-method testing; Sayan ranks lower with a solid ISO-accredited COA but lower fulvic acid and no GMP. This comparison covers everything.",
     winnerSlug: "natural-shilajit",
     verdict:
       "Natural Shilajit wins on every quality metric: DBP verification, GMP certification, and COA testing by DaaneLabs + Harken Research covering microbiology, heavy metals, and minerals. Note: Natural Shilajit does not disclose fulvic acid %; Sayan reports ~32% FA. Sayan wins on price — their bulk 100g option is among the cheapest documented Altai products available. For buyers who want maximum quality documentation, Natural Shilajit is the clear choice. For budget-first buyers, Sayan remains a credible option.",

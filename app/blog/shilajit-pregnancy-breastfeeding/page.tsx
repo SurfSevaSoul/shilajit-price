@@ -90,6 +90,7 @@ export default function ShilajitPregnancyBreastfeeding() {
       faqItems={faqItems}
       quizCta="card"
       ctaVariant="pure-himalayan"
+      medicallyReviewed={true}
     >
       {/* Medical disclaimer */}
       <div className="bg-red-50 border-2 border-red-200 rounded-xl p-4 text-xs text-red-800 leading-relaxed">

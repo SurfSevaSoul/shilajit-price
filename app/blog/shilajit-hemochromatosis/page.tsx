@@ -87,6 +87,7 @@ export default function ShilajitHemochromatosis() {
       quizCta="card"
       breadcrumbLabel="Shilajit & Hemochromatosis"
       faqItems={faqItems}
+      medicallyReviewed={true}
     >
       {/* Medical disclaimer */}
       <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-800 leading-relaxed">

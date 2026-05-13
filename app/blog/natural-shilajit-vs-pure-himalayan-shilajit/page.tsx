@@ -82,7 +82,7 @@ const faqItems: FaqItem[] = [
     name: "Which brand is better value — Natural Shilajit or Pure Himalayan Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "It depends on the specific product and format. Natural Shilajit's Sun-Dried Tablets at $30 for 120 tablets (60 servings at 1000mg/day) offer the lowest cost-per-serving among verified S-tier tablet products at approximately $0.50/serving. Pure Himalayan's resin and solid formats offer excellent value for resin buyers, particularly the Soft Resin at $39.99 for 150 servings ($0.27/serving). For tablets, Natural Shilajit wins on price. For liquid and resin formats, Pure Himalayan is competitive. Neither brand is overpriced for the verification level they provide.",
+      text: "It depends on the specific product and format. Natural Shilajit's Sun-Dried Tablets at $30 for 120 tablets (60 servings at 1000mg/day) offer the lowest cost-per-serving among verified A-tier tablet products at approximately $0.50/serving. Pure Himalayan's resin and solid formats offer excellent value for resin buyers, particularly the Soft Resin at $39.99 for 150 servings ($0.27/serving). For tablets, Natural Shilajit wins on price. For liquid and resin formats, Pure Himalayan is competitive. Neither brand is overpriced for the verification level they provide.",
     },
   },
 ];
@@ -136,7 +136,7 @@ export default function NaturalShilajitVsPureHimalayan() {
             They are also meaningfully different from each other — different geological
             sources, different testing approaches, different product formats, and different
             price points across their lineups. This guide covers all of it without favoring
-            either brand. Both are legitimate S-tier choices; the right one depends on your
+            either brand. Both are legitimate A-tier choices; the right one depends on your
             specific priorities.
           </p>
           <p>
@@ -477,7 +477,7 @@ export default function NaturalShilajitVsPureHimalayan() {
                 {
                   name: "Liquid Drops 50mL",
                   price: "$99.99",
-                  detail: "50 servings at 1000mg · S-tier tincture · Highest dose per serving",
+                  detail: "50 servings at 1000mg · ISO-certified tincture · Highest dose per serving",
                   href: PH_LINKS.liquid,
                 },
               ].map((p) => (

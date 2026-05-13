@@ -37,7 +37,7 @@ const faqItems: FaqItem[] = [
     name: "Is Pure Himalayan Shilajit a legitimate brand?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Pure Himalayan Shilajit is one of our S-tier rated brands. They publish Certificates of Analysis from A2LA ISO/IEC 17025 accredited laboratories (Certified Laboratories and Micro Quality Labs, Burbank CA — Cert 3034.01). Their FA reference is ~58% (Batch RE18, 2021 COA, UV method — noted as non-A2LA result). Most recent heavy metals COA: September 2024, showing exceptionally clean results across all product forms. These are meaningful transparency markers that most brands do not provide.",
+      text: "Yes. Pure Himalayan Shilajit is one of our A-tier rated brands. They publish Certificates of Analysis from A2LA ISO/IEC 17025 accredited laboratories (Certified Laboratories and Micro Quality Labs, Burbank CA — Cert 3034.01). Their FA reference is ~58% (Batch RE18, 2021 COA, UV method — noted as non-A2LA result). Most recent heavy metals COA: September 2024, showing exceptionally clean results across all product forms. These are meaningful transparency markers that most brands do not provide.",
     },
   },
   {
@@ -61,7 +61,7 @@ const faqItems: FaqItem[] = [
     name: "How does Pure Himalayan compare to Black Lotus Shilajit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Black Lotus Resin leads on fulvic acid (64.51% resin, Batch 93 COA, 2025 vs Pure Himalayan's ~58% from Batch RE18, 2021 COA) and is our #1 overall pick. Pure Himalayan counters with A2LA ISO/IEC 17025 lab accreditation (Certified Laboratories and Micro Quality Labs, Burbank CA) and genuine Himalayan sourcing. Both are S-tier. If fulvic acid potency is the priority, Black Lotus wins. If you specifically want Himalayan-origin shilajit with the most rigorous independent lab accreditation, Pure Himalayan is the top choice in that category.",
+      text: "Black Lotus Resin leads on fulvic acid (64.51% resin, Batch 93 COA, 2025 vs Pure Himalayan's ~58% from Batch RE18, 2021 COA) and is our #1 overall pick. Pure Himalayan counters with A2LA ISO/IEC 17025 lab accreditation (Certified Laboratories and Micro Quality Labs, Burbank CA) and genuine Himalayan sourcing. Black Lotus is S-tier; Pure Himalayan is A-tier. If fulvic acid potency is the priority, Black Lotus wins. If you specifically want Himalayan-origin shilajit with the most rigorous independent lab accreditation, Pure Himalayan is the top choice in that category.",
     },
   },
   {
@@ -130,7 +130,7 @@ export default function PureHimalayanShilajitReview() {
               { label: "Altitude", value: "14,000+ ft" },
               { label: "Fulvic Acid", value: "~58%*" },
               { label: "Lab Cert", value: "ISO/IEC 17025" },
-              { label: "Overall Rating", value: "S-Tier" },
+              { label: "Overall Rating", value: "A-Tier" },
             ].map((item) => (
               <div key={item.label} className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm text-center">
                 <div className="text-lg font-black text-[#10B981]">{item.value}</div>
@@ -269,7 +269,7 @@ export default function PureHimalayanShilajitReview() {
                     perG: "$1.33/g",
                     fulvic: "~58%*",
                     cert: "ISO/IEC 17025",
-                    tier: "S",
+                    tier: "A",
                     alt: false,
                   },
                   {
@@ -279,7 +279,7 @@ export default function PureHimalayanShilajitReview() {
                     perG: "$2.00/g",
                     fulvic: "—",
                     cert: "ISO/IEC 17025",
-                    tier: "S",
+                    tier: "A",
                     alt: true,
                   },
                   {
@@ -289,7 +289,7 @@ export default function PureHimalayanShilajitReview() {
                     perG: "$1.94/g",
                     fulvic: "—",
                     cert: "ISO/IEC 17025",
-                    tier: "S",
+                    tier: "A",
                     alt: false,
                   },
                 ].map((row) => (
@@ -363,7 +363,7 @@ export default function PureHimalayanShilajitReview() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Pure Himalayan vs Black Lotus</h2>
           <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
             <p>
-              These are the two brands we rate S-tier. Here is how they compare on the metrics that matter most:
+              These are our top two picks. Here is how they compare on the metrics that matter most:
             </p>
           </div>
           <div className="overflow-x-auto rounded-xl border border-[#D1EDD8] mt-4">
@@ -383,7 +383,7 @@ export default function PureHimalayanShilajitReview() {
                   { metric: "Resin Price (30g)", ph: "$39.99", bl: "$36.99", winner: "Black Lotus", alt: false },
                   { metric: "Source Origin", ph: "Himalayan", bl: "Altai", winner: "Depends on preference", alt: true },
                   { metric: "Heavy Metals Tested", ph: "Yes", bl: "Yes", winner: "Tie", alt: false },
-                  { metric: "Overall Tier", ph: "S", bl: "S", winner: "Tie", alt: true },
+                  { metric: "Overall Tier", ph: "A", bl: "S", winner: "Black Lotus", alt: true },
                 ].map((row) => (
                   <tr key={row.metric} className={row.alt ? "bg-[#F0FAF4]" : "bg-white"}>
                     <td className="px-3 py-3 font-medium text-[#0D1F14]">{row.metric}</td>
@@ -411,14 +411,14 @@ export default function PureHimalayanShilajitReview() {
             <div className="flex items-center gap-3 mb-4">
               <span className="text-3xl">🏔️</span>
               <div>
-                <div className="font-black text-[#0D1F14] text-base">Pure Himalayan Shilajit — S-Tier Pick</div>
+                <div className="font-black text-[#0D1F14] text-base">Pure Himalayan Shilajit — A-Tier Pick</div>
                 <div className="text-xs text-[#7BA899]">Best ISO-certified Himalayan-sourced shilajit</div>
               </div>
               <div className="ml-auto text-2xl font-black text-[#10B981]">9/10</div>
             </div>
             <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
               <p>
-                Pure Himalayan Shilajit earns an S-tier rating and a 9/10 score. Their A2LA ISO/IEC 17025 accredited lab certification (Certified Laboratories and Micro Quality Labs, Burbank CA — Cert 3034.01) is the strongest specific lab accreditation claim in our verified database. Their FA reference is ~58% (Batch RE18, 2021 COA, UV method — non-A2LA result); their 2024 heavy metals data is exceptionally clean across all product forms. They also have one of the most comprehensive mineral panels of any shilajit brand — 20+ minerals documented by ICP-MS and ICP-OES.
+                Pure Himalayan Shilajit earns an A-tier rating and a 9/10 score. Their A2LA ISO/IEC 17025 accredited lab certification (Certified Laboratories and Micro Quality Labs, Burbank CA — Cert 3034.01) is the strongest specific lab accreditation claim in our verified database. Their FA reference is ~58% (Batch RE18, 2021 COA, UV method — non-A2LA result); their 2024 heavy metals data is exceptionally clean across all product forms. They also have one of the most comprehensive mineral panels of any shilajit brand — 20+ minerals documented by ICP-MS and ICP-OES.
               </p>
               <p>
                 The resin at $39.99 ($1.33/g) is a reasonable price for the quality level. If you prioritize ISO certification as your trust signal, or you specifically want Himalayan-origin shilajit, this is the clearest recommendation in that category.

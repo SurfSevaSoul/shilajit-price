@@ -592,23 +592,23 @@ export default function SiberianVsHimalayanShilajit() {
           </div>
 
           {/* Pure Himalayan */}
-          <div className="bg-white border-2 border-amber-200 rounded-2xl p-5 shadow-sm flex flex-col">
-            <div className="text-[9px] font-bold text-amber-600 uppercase tracking-widest mb-1">
-              Himalayan Mountains · 16,000+ ft · S-Tier
+          <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl p-5 shadow-sm flex flex-col">
+            <div className="text-[9px] font-bold text-[#10B981] uppercase tracking-widest mb-1">
+              Himalayan Mountains · 16,000+ ft · A-Tier
             </div>
             <h3 className="text-base font-extrabold text-[#0D1F14] mb-2">Pure Himalayan Shilajit</h3>
             <ul className="space-y-1.5 text-xs text-[#0D1F14] mb-4 flex-1">
-              <li className="flex gap-2"><span className="text-amber-500">✓</span> Himalayan Mountains at 16,000+ ft — not Altai</li>
-              <li className="flex gap-2"><span className="text-amber-500">✓</span> ISO/IEC 17025 accredited lab testing</li>
-              <li className="flex gap-2"><span className="text-amber-500">✓</span> 60% fulvic acid by COA</li>
-              <li className="flex gap-2"><span className="text-amber-500">✓</span> Up to 99.9% pure, no fillers</li>
-              <li className="flex gap-2"><span className="text-amber-500">✓</span> $1.33/g — strongest Himalayan-origin COA</li>
+              <li className="flex gap-2"><span className="text-emerald-500">✓</span> Himalayan Mountains at 16,000+ ft — not Altai</li>
+              <li className="flex gap-2"><span className="text-emerald-500">✓</span> ISO/IEC 17025 accredited lab testing</li>
+              <li className="flex gap-2"><span className="text-emerald-500">✓</span> 60% fulvic acid by COA</li>
+              <li className="flex gap-2"><span className="text-emerald-500">✓</span> Up to 99.9% pure, no fillers</li>
+              <li className="flex gap-2"><span className="text-emerald-500">✓</span> $1.33/g — strongest Himalayan-origin COA</li>
             </ul>
             <a
               href={PURE_HIMALAYAN_RESIN}
               target="_blank"
               rel="noopener noreferrer sponsored"
-              className="flex items-center justify-center gap-2 py-2.5 rounded-full bg-[#182B1F] hover:bg-amber-500 text-white font-bold text-xs transition-colors"
+              className="flex items-center justify-center gap-2 py-2.5 rounded-full bg-[#182B1F] hover:bg-[#10B981] text-white font-bold text-xs transition-colors"
             >
               Shop Pure Himalayan →
             </a>

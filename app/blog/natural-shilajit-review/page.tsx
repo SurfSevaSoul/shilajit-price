@@ -41,7 +41,7 @@ const faqItems: FaqItem[] = [
     name: "Is Natural Shilajit legit?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Yes. Natural Shilajit is one of the most rigorously verified shilajit brands available. Their COA testing is conducted by DaaneLabs (Naples, FL) for microbiology and Harken Research (Los Angeles, CA) for heavy metals and minerals (October–November 2024). Capsules additionally carry Eurofins Amazon certification (June 2024). They include DBP (Dibenzo-α-pyrones) verification — the most specific authenticity test for genuine shilajit. They source from UNESCO-protected Altai Mountain regions, are GMP certified, and FDA registered. We rate their flagship 20g resin as S-tier.",
+      text: "Yes. Natural Shilajit is one of the most rigorously verified shilajit brands available. Their COA testing is conducted by DaaneLabs (Naples, FL) for microbiology and Harken Research (Los Angeles, CA) for heavy metals and minerals (October–November 2024). Capsules additionally carry Eurofins Amazon certification (June 2024). They include DBP (Dibenzo-α-pyrones) verification — the most specific authenticity test for genuine shilajit. They source from UNESCO-protected Altai Mountain regions, are GMP certified, and FDA registered. We rate their flagship 20g resin as A-tier.",
     },
   },
   {
@@ -73,7 +73,7 @@ const faqItems: FaqItem[] = [
     name: "How does Natural Shilajit compare to Black Lotus?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "Both are S-tier Altai-sourced brands with strong COA documentation. Black Lotus leads on disclosed fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA — Natural Shilajit does not disclose FA%) and price-per-gram ($1.23 vs $2.45 for the flagship). Natural Shilajit leads on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Black Lotus has free shipping; Natural Shilajit does not on all orders. For maximum verified potency at lowest cost: Black Lotus. For the most thoroughly verified product available: Natural Shilajit.",
+      text: "Both are thoroughly verified Altai-sourced brands with strong COA documentation. Black Lotus (S-tier) leads on disclosed fulvic acid percentage (64.51% resin / 74.30% caps, Batch 93 COA — Natural Shilajit does not disclose FA%) and price-per-gram ($1.23 vs $2.45 for the flagship). Natural Shilajit (A-tier) leads on verification depth — DBP testing and COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) represent the most comprehensive analysis in our database. Black Lotus has free shipping; Natural Shilajit does not on all orders. For maximum verified potency at lowest cost: Black Lotus. For the most thoroughly verified product available: Natural Shilajit.",
     },
   },
 ];
@@ -146,7 +146,7 @@ export default function NaturalShilajitReview() {
           </>
         }
         description="Natural Shilajit is one of the most verification-focused brands in the market — UNESCO-protected Altai sourcing, DBP testing, and a triple-method COA. This review breaks down every product, the lab data, and who should actually buy it."
-        tags={["Brand Reviews", "COA Verified", "S-Tier", "Altai"]}
+        tags={["Brand Reviews", "COA Verified", "A-Tier", "Altai"]}
         publishedAt="2026-04-18"
         updatedAt="2026-04-18"
         readingTimeMin={9}
@@ -164,7 +164,7 @@ export default function NaturalShilajitReview() {
         {/* Quick verdict */}
         <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-12 h-12 rounded-xl bg-amber-400 flex items-center justify-center text-amber-900 font-black text-xl shrink-0">S</div>
+            <div className="w-12 h-12 rounded-xl bg-emerald-500 flex items-center justify-center text-white font-black text-xl shrink-0">A</div>
             <div>
               <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Overall Rating — 9.2 / 10</div>
               <h3 className="text-base font-black text-[#0D1F14]">Natural Shilajit</h3>
@@ -398,8 +398,8 @@ export default function NaturalShilajitReview() {
                 {
                   brand: "Natural Shilajit",
                   color: "border-[#10B981]",
-                  badge: "bg-amber-400 text-amber-900",
-                  tier: "S",
+                  badge: "bg-emerald-500 text-white",
+                  tier: "A",
                   who: "Buyers who want the most deeply verified product available. DBP testing and triple-method COA represent the strongest authenticity guarantee in the market. Also ideal for bulk buyers — the 150g jar at $1.66/g is excellent value.",
                 },
                 {
@@ -412,8 +412,8 @@ export default function NaturalShilajitReview() {
                 {
                   brand: "Pure Himalayan",
                   color: "border-[#D1EDD8]",
-                  badge: "bg-amber-400 text-amber-900",
-                  tier: "S",
+                  badge: "bg-emerald-500 text-white",
+                  tier: "A",
                   who: "Buyers who specifically want ISO/IEC 17025 lab accreditation or prefer Himalayan + Altai dual-source origin. Strong choice if lab certification standard is the priority over DBP testing.",
                 },
               ].map((card) => (
@@ -458,7 +458,7 @@ export default function NaturalShilajitReview() {
               <h3 className="font-bold text-red-500 text-sm mb-3">Cons</h3>
               <ul className="space-y-2">
                 {[
-                  "$2.45/g for the flagship 20g jar — premium price vs other S-tier brands",
+                  "$2.45/g for the flagship 20g jar — premium price vs other verified brands",
                   "No free shipping on all orders (unlike Black Lotus)",
                   "Fulvic acid % not disclosed — brand reports quality via DBP instead; Black Lotus publishes 64.51%/74.30% (resin/capsules, Batch 93 COA)",
                   "No ISO/IEC 17025 lab accreditation (Pure Himalayan has this)",
@@ -484,7 +484,7 @@ export default function NaturalShilajitReview() {
               Natural Shilajit earns a 9.2/10 from our team. The verification depth here is genuinely exceptional — DBP testing alone distinguishes them from every other brand in our database, and the triple-method COA approach is the closest thing to definitive authenticity proof available in the consumer market.
             </p>
             <p>
-              The deductions reflect real tradeoffs: the per-gram cost on the flagship jar is the highest of any S-tier product we track, and Natural Shilajit does not disclose fulvic acid percentage (Black Lotus publishes 64.51% resin / 74.30% capsules via Batch 93 COA). For buyers whose primary goal is maximum disclosed bioactive concentration per dollar, Black Lotus is the stronger value. For buyers who want the deepest possible assurance that what they&apos;re taking is genuine, fully characterized shilajit, Natural Shilajit is the answer.
+              The deductions reflect real tradeoffs: the per-gram cost on the flagship jar is the highest of any A-tier product we track, and Natural Shilajit does not disclose fulvic acid percentage (Black Lotus publishes 64.51% resin / 74.30% capsules via Batch 93 COA). For buyers whose primary goal is maximum disclosed bioactive concentration per dollar, Black Lotus is the stronger value. For buyers who want the deepest possible assurance that what they&apos;re taking is genuine, fully characterized shilajit, Natural Shilajit is the answer.
             </p>
             <p>
               The 150g bulk jar at $249 ($1.66/g) is worth highlighting specifically — it makes Natural Shilajit significantly more competitive for consistent long-term users and is the format we&apos;d recommend for anyone committing to a 6-month supplementation protocol.
@@ -497,7 +497,7 @@ export default function NaturalShilajitReview() {
 
         {/* CTA block */}
         <div className="bg-white border border-[#9EC9AD] rounded-2xl p-6 shadow-lg shadow-emerald-900/10">
-          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">S-Tier — DBP Verified · Triple-Method COA</div>
+          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">A-Tier — DBP Verified · Triple-Method COA</div>
           <h3 className="text-base font-black text-[#0D1F14] mb-1">Natural Shilajit — Full Product Lineup</h3>
           <p className="text-xs text-[#7BA899] mb-4">
             UNESCO Altai source · GMP certified · FDA registered · DBP verified on every batch

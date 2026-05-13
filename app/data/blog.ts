@@ -320,6 +320,18 @@ const REGISTERED_POSTS: BlogPost[] = [
     category: "Buying Guide",
   },
   {
+    slug: "best-shilajit-tablets",
+    title: "Best Shilajit Tablets in 2026 — Ranked by Lab Data & Purity",
+    description:
+      "The best shilajit tablets ranked by verified COA data. Black Lotus tablets test at 73.11% fulvic acid — the highest of any tablet on the market. Here's how tablets compare to resin and capsules.",
+    publishedAt: "2026-05-13",
+    updatedAt: "2026-05-13",
+    readingTimeMin: 10,
+    tags: ["Rankings", "Tablets", "Buying Guide", "Lab Testing"],
+    coverEmoji: "💊",
+    category: "Rankings",
+  },
+  {
     slug: "shilajit-fulvic-acid-testing-problem",
     title: "The Problem with Shilajit Fulvic Acid Claims: No Standard, Agricultural Humates & What One Founder Told Us",
     description:

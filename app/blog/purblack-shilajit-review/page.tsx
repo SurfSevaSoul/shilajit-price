@@ -547,8 +547,8 @@ export default function PurblackShilajitReview() {
               <tbody>
                 {[
                   { brand: "Black Lotus Pure Altai Resin", tier: "S", ppg: "$1.23/g", coa: true, us: false },
-                  { brand: "Pure Himalayan Shilajit", tier: "S", ppg: "$1.33/g", coa: true, us: false },
-                  { brand: "Natural Shilajit Resin 20g", tier: "S", ppg: "$2.45/g", coa: true, us: false },
+                  { brand: "Pure Himalayan Shilajit", tier: "A", ppg: "$1.33/g", coa: true, us: false },
+                  { brand: "Natural Shilajit Resin 20g", tier: "A", ppg: "$2.45/g", coa: true, us: false },
                   { brand: "Pürblack True Gold 30g", tier: "A", ppg: "$3.11/g", coa: true, us: true },
                   { brand: "Pürblack Research Grade 15g", tier: "A", ppg: "$3.67/g", coa: true, us: true },
                   { brand: "Pürblack White Rabbit (all)", tier: "A", ppg: "$5.00/g", coa: true, us: true },
@@ -556,7 +556,7 @@ export default function PurblackShilajitReview() {
                   <tr key={row.brand} className={`border-b border-[#D1EDD8] last:border-0 ${row.brand.includes("Pürblack") ? "bg-violet-50" : i % 2 === 0 ? "bg-white" : "bg-[#F0FAF4]"}`}>
                     <td className="px-4 py-3 font-semibold text-[#0D1F14]">{row.brand}</td>
                     <td className="px-4 py-3">
-                      <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[10px] font-black ${row.tier === "S" ? "bg-amber-400 text-amber-900" : "bg-amber-100 text-amber-800 ring-1 ring-amber-300"}`}>{row.tier}</span>
+                      <span className={`inline-flex items-center justify-center w-6 h-6 rounded text-[10px] font-black ${row.tier === "S" ? "bg-amber-400 text-amber-900" : "bg-emerald-500 text-white"}`}>{row.tier}</span>
                     </td>
                     <td className="px-4 py-3 font-bold text-[#0D1F14]">{row.ppg}</td>
                     <td className="px-4 py-3 text-center">{row.coa ? <Check /> : <X />}</td>
@@ -568,7 +568,7 @@ export default function PurblackShilajitReview() {
           </div>
 
           <p>
-            The table illustrates the trade-off clearly. The S-tier brands — Black Lotus, Pure Himalayan, Natural Shilajit — all deliver verified quality at $1.23–$2.45/g and do not manufacture in the US. Pürblack manufactures in the US under pharmaceutical standards and holds 5 patents, but that comes at a significant per-gram premium.
+            The table illustrates the trade-off clearly. Black Lotus (S-tier), Pure Himalayan, and Natural Shilajit (both A-tier) all deliver verified quality at $1.23–$2.45/g and do not manufacture in the US. Pürblack manufactures in the US under pharmaceutical standards and holds 5 patents, but that comes at a significant per-gram premium.
           </p>
           <p>
             The question is whether US pharmaceutical manufacturing, patent protection, and precious metal infusions are worth that delta. For most buyers optimizing on quality per dollar, the answer is no — Black Lotus or Natural Shilajit will serve you better. For buyers for whom those specific attributes are intrinsically valuable — and that is a legitimate segment — Pürblack delivers on what it promises. The bulk X7 format ($2.38/g for 210g of True Gold) is the closest the brand gets to cost-competitive pricing.
@@ -638,7 +638,7 @@ export default function PurblackShilajitReview() {
 
         <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed mt-4">
           <p>
-            S-tier brands like Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA) and Pure Himalayan (~58%, Batch RE18, 2021 COA) publish specific FA percentages, which makes direct FA comparison with Pürblack impossible — they measure different things. What Pürblack&apos;s COA does establish is compound authenticity and bioactive presence via DBP and Urolithin A — meaningful quality markers even without an FA disclosure. Full verified lab data across all brands is available in our{" "}
+            Top-ranked brands like Black Lotus (64.51% resin / 74.30% caps, Batch 93 COA, S-tier) and Pure Himalayan (~58%, Batch RE18, 2021 COA, A-tier) publish specific FA percentages, which makes direct FA comparison with Pürblack impossible — they measure different things. What Pürblack&apos;s COA does establish is compound authenticity and bioactive presence via DBP and Urolithin A — meaningful quality markers even without an FA disclosure. Full verified lab data across all brands is available in our{" "}
             <Link href="/lab-data" className="text-[#10B981] hover:underline">lab data database →</Link>
           </p>
           <p>
@@ -661,7 +661,7 @@ export default function PurblackShilajitReview() {
             The positives are real: 5 US patents, pharmaceutical-grade US manufacturing, multi-region sourcing, third-party COA verification, and a product lineup that includes innovations (True Gold, White Rabbit) that simply do not exist elsewhere in the shilajit category. Pürblack is a legitimate premium product from a brand that has invested in scientific documentation rather than just marketing claims.
           </p>
           <p>
-            The limitations are also real: the highest price per gram in our verified database, fulvic acid percentage is not reported (quality is measured by DBP and Urolithin A instead), and limited accessibility for buyers on a budget. If you are comparing Pürblack to a $30 Amazon resin, Pürblack wins by every metric. If you are comparing Pürblack to Black Lotus at $1.23/g or Natural Shilajit at $2.45/g with S-tier verification, the calculus depends entirely on whether US manufacturing and patent protection matter specifically to you.
+            The limitations are also real: the highest price per gram in our verified database, fulvic acid percentage is not reported (quality is measured by DBP and Urolithin A instead), and limited accessibility for buyers on a budget. If you are comparing Pürblack to a $30 Amazon resin, Pürblack wins by every metric. If you are comparing Pürblack to Black Lotus at $1.23/g (S-tier) or Natural Shilajit at $2.45/g (A-tier), the calculus depends entirely on whether US manufacturing and patent protection matter specifically to you.
           </p>
           <p>
             Our recommendation: start with the <strong>True Gold 30g at $93.33</strong> ($3.11/g — best single-jar value in the lineup). If you find Pürblack fits your protocol and you are committed for the long term, move to the True Gold X7 at $2.38/g. If you are primarily focused on maximum verified fulvic acid per dollar, the{" "}

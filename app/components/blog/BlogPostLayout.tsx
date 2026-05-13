@@ -6,6 +6,7 @@ import PureHimalayanCTA from "./PureHimalayanCTA";
 import BlogSidebar from "./BlogSidebar";
 import QuizCTA from "./QuizCTA";
 import AuthorBio from "../AuthorBio";
+import MedicalReviewer from "../MedicalReviewer";
 
 const BASE_URL = "https://www.shilajitprice.com";
 
@@ -31,6 +32,8 @@ interface BlogPostLayoutProps {
   ctaVariant?: "black-lotus" | "pure-himalayan";
   /** "card" = full quiz CTA card; "line" = single-line text CTA; undefined = none */
   quizCta?: "card" | "line";
+  /** Set true on YMYL posts (health, safety, dosing, drug interactions) to render the MedicalReviewer card and add reviewedBy schema */
+  medicallyReviewed?: boolean;
   children: ReactNode;
 }
 
@@ -54,6 +57,7 @@ export default function BlogPostLayout({
   faqItems,
   ctaVariant = "black-lotus",
   quizCta,
+  medicallyReviewed = false,
   children,
 }: BlogPostLayoutProps) {
   const postUrl = `${BASE_URL}/blog/${currentSlug}`;
@@ -258,6 +262,9 @@ export default function BlogPostLayout({
 
               {/* Auto-injected: Author bio */}
               <AuthorBio />
+
+              {/* Auto-injected: Factual accuracy note (YMYL posts only) */}
+              {medicallyReviewed && <MedicalReviewer />}
 
               {/* Auto-injected: Related posts */}
               <RelatedPosts currentSlug={currentSlug} />

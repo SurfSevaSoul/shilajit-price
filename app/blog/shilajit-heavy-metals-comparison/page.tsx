@@ -87,6 +87,7 @@ export default function ShilajitHeavyMetalsComparison() {
       faqItems={faqItems}
       quizCta="card"
       ctaVariant="black-lotus"
+      medicallyReviewed={true}
     >
       {/* Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

@@ -75,7 +75,7 @@ const faqSchema = {
       name: "Has Natural Shilajit been independently verified as a legitimate brand?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Natural Shilajit was established in 2014 and has served over 180,000 customers globally. Their COA is publicly available on their website (naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests), with heavy metals and minerals testing by Harken Research (Los Angeles, CA) and microbiology by DaaneLabs (Naples, FL), both October–November 2024. Capsules additionally hold Eurofins Amazon certification (June 2024). They hold DBP verification — the most specific authenticity test for genuine shilajit — GMP certification, and FDA facility registration. Their raw material is sourced from UNESCO-protected Altai Mountains in Siberia. ShilajitPrice.com rates Natural Shilajit S-tier, the highest classification in our database. Their decade-long track record and six-figure customer base provide strong real-world validation alongside their documented laboratory credentials.",
+        text: "Yes. Natural Shilajit was established in 2014 and has served over 180,000 customers globally. Their COA is publicly available on their website (naturalshilajit.com/pages/shilajit-resin-certificates-of-analysis-lab-tests), with heavy metals and minerals testing by Harken Research (Los Angeles, CA) and microbiology by DaaneLabs (Naples, FL), both October–November 2024. Capsules additionally hold Eurofins Amazon certification (June 2024). They hold DBP verification — the most specific authenticity test for genuine shilajit — GMP certification, and FDA facility registration. Their raw material is sourced from UNESCO-protected Altai Mountains in Siberia. ShilajitPrice.com rates Natural Shilajit A-tier — a high-quality, rigorously tested brand placed at A-tier due to non-accredited labs (DaaneLabs, Harken Research) relative to ISO/IEC 17025 standards. Their decade-long track record and six-figure customer base provide strong real-world validation alongside their documented laboratory credentials.",
       },
     },
     {
@@ -131,8 +131,8 @@ const PURBLACK = {
 const NATURAL_SHILAJIT = {
   name: "Natural Shilajit",
   shortName: "Natural Shilajit",
-  tier: "S",
-  tierColor: "bg-amber-400 text-amber-900",
+  tier: "A",
+  tierColor: "bg-emerald-500 text-white",
   fulvicAcid: "Not Disclosed",
   pricePerGram: "$2.45/g",
   origin: "UNESCO-protected Altai Mountains, Siberia",
@@ -255,7 +255,7 @@ export default function PurblackVsNaturalShilajitPage() {
             <div className="mt-5 inline-flex items-center gap-2 bg-[#10B981]/20 border border-[#10B981]/40 rounded-full px-4 py-1.5 text-sm">
               <span className="text-[#10B981] font-bold">Our Pick:</span>
               <span className="text-white font-semibold">Natural Shilajit</span>
-              <span className="text-[#9EC9AD] text-xs">(DBP verified, S-tier, best per-gram value)</span>
+              <span className="text-[#9EC9AD] text-xs">(DBP verified, A-tier, best per-gram value)</span>
             </div>
           </div>
         </div>
@@ -345,7 +345,7 @@ export default function PurblackVsNaturalShilajitPage() {
               The most significant quality differentiator Natural Shilajit holds is <strong>DBP (Dibenzo-α-pyrones) verification</strong>. DBPs are secondary biomarkers specific to genuine shilajit — their presence in a COA confirms the product is authentic shilajit rather than a fulvic acid isolate or adulterated compound. Their COA testing is conducted by <strong>DaaneLabs (Naples, FL)</strong> for microbiology and <strong>Harken Research (Los Angeles, CA)</strong> for heavy metals and minerals (October–November 2024), with capsules additionally holding Eurofins Amazon certification (June 2024). Natural Shilajit does not disclose fulvic acid percentage — their verification approach centers on DBP authenticity and comprehensive heavy metals and microbiology panels. Natural Shilajit is GMP certified and FDA registered.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Natural Shilajit is S-tier in our database — the highest classification — and holds GMP certification alongside their FDA facility registration. Their product range covers resin (20g and 150g bulk), vegan tablets, sun-dried tablets, capsules, and NutriHoney blend, giving long-term users flexible format options. The <strong>150g bulk resin at $0.67/g</strong> is one of the most cost-effective entry points for documented S-tier shilajit available anywhere, making Natural Shilajit the standout choice for buyers who want premium verification at a sustainable long-term price.
+              Natural Shilajit is A-tier in our database and holds GMP certification alongside their FDA facility registration. Their product range covers resin (20g and 150g bulk), vegan tablets, sun-dried tablets, capsules, and NutriHoney blend, giving long-term users flexible format options. The <strong>150g bulk resin at $0.67/g</strong> is one of the most cost-effective entry points for documented A-tier shilajit available anywhere, making Natural Shilajit the standout choice for buyers who want premium verification at a sustainable long-term price.
             </p>
           </section>
 
@@ -388,7 +388,7 @@ export default function PurblackVsNaturalShilajitPage() {
           <section className="bg-white rounded-2xl border border-[#D1EDD8] p-6">
             <h2 className="text-xl font-black text-[#0D1F14] mb-3">The verdict</h2>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Natural Shilajit wins this comparison on the metrics that matter most for documented supplement quality: S-tier rating, DBP verification (the most specific authenticity test for genuine shilajit), COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) covering microbiology, heavy metals, minerals, and adulterant panels, a decade-long track record, and a lower price per gram — including a 150g bulk option at $0.67/g that makes sustained use genuinely cost-effective. Note: Natural Shilajit does not disclose fulvic acid percentage. Pürblack wins on process innovation: 5 US patents covering their live resin methodology, multi-region sourcing across three mountain ranges, and US pharmaceutical-grade manufacturing represent a distinct and credentialed production approach. If you are an experienced buyer specifically interested in patent-backed live resin technology or precious metal infusions, Pürblack is the strongest available option for that exploration. For most buyers — especially those optimizing for verification depth, biomarker authenticity, and long-term value — Natural Shilajit is the clearer choice.
+              Natural Shilajit wins this comparison on the metrics that matter most for documented supplement quality: A-tier rating with DBP verification (the most specific authenticity test for genuine shilajit), COA testing by DaaneLabs (Naples, FL) and Harken Research (Los Angeles, CA) covering microbiology, heavy metals, minerals, and adulterant panels, a decade-long track record, and a lower price per gram — including a 150g bulk option at $0.67/g that makes sustained use genuinely cost-effective. Note: Natural Shilajit does not disclose fulvic acid percentage. Pürblack wins on process innovation: 5 US patents covering their live resin methodology, multi-region sourcing across three mountain ranges, and US pharmaceutical-grade manufacturing represent a distinct and credentialed production approach. If you are an experienced buyer specifically interested in patent-backed live resin technology or precious metal infusions, Pürblack is the strongest available option for that exploration. For most buyers — especially those optimizing for verification depth, biomarker authenticity, and long-term value — Natural Shilajit is the clearer choice.
             </p>
           </section>
 
@@ -418,7 +418,7 @@ export default function PurblackVsNaturalShilajitPage() {
               </h3>
               <ul className="space-y-2">
                 {[
-                  "DBP (Dibenzo-α-pyrones) verified — the only S-tier brand to confirm shilajit's secondary biomarkers",
+                  "DBP (Dibenzo-α-pyrones) verified — confirms shilajit's secondary biomarkers, a test almost no other brand provides",
                   "Triple-method COA (ICP-MS + LC-MS + FTIR) — deepest publicly documented testing stack in our database",
                   "UNESCO-protected Altai source — legally documented origin with conservation-zone traceability",
                   "10+ year track record, 180,000+ customers, GMP + FDA-registered facility, bulk 150g at $0.67/g",
@@ -458,7 +458,7 @@ export default function PurblackVsNaturalShilajitPage() {
                   Buy Natural Shilajit if…
                 </div>
                 <p className="text-xs text-[#0D1F14] leading-relaxed">
-                  You want the most thoroughly verified shilajit product at a price that supports long-term daily use. Natural Shilajit's DBP verification, triple-method COA, UNESCO Altai sourcing, decade-long track record, and 180,000+ customer base represent the deepest verification stack of any brand in our database at a reasonable price. The 150g bulk option at $0.67/g makes it one of the best long-term value propositions among S-tier products.
+                  You want the most thoroughly verified shilajit product at a price that supports long-term daily use. Natural Shilajit's DBP verification, triple-method COA, UNESCO Altai sourcing, decade-long track record, and 180,000+ customer base represent the deepest verification stack of any brand in our database at a reasonable price. The 150g bulk option at $0.67/g makes it one of the best long-term value propositions among verified A-tier products.
                 </p>
                 <a
                   href={NATURAL_SHILAJIT.affiliateUrl}

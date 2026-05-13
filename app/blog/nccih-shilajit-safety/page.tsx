@@ -129,6 +129,7 @@ export default function NccihShilajitSafety() {
       quizCta="card"
       breadcrumbLabel="NCCIH Shilajit Safety"
       faqItems={faqItems}
+      medicallyReviewed={true}
     >
       {/* Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">

@@ -86,6 +86,7 @@ export default function ShilajitLiverKidneys() {
       quizCta="card"
       breadcrumbLabel="Shilajit Liver & Kidney Safety"
       faqItems={faqItems}
+      medicallyReviewed={true}
     >
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
