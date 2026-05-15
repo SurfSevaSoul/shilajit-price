@@ -375,7 +375,7 @@ export default function BestShilajitResinBrands() {
       {/* #3 Natural Shilajit */}
       <section>
         <div className="flex items-center gap-3 mb-4">
-          <span className="w-10 h-10 rounded-full bg-amber-400 text-amber-900 flex items-center justify-center text-sm font-black shrink-0">S</span>
+          <span className="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm font-black shrink-0">A</span>
           <h2 className="text-2xl font-black text-[#0D1F14]">
             #3 — Natural Shilajit Altai Resin 20g
           </h2>
@@ -383,8 +383,7 @@ export default function BestShilajitResinBrands() {
         <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm hover:border-[#9EC9AD] transition-colors">
           <div className="bg-[#F0FAF4] border-b border-[#D1EDD8] px-5 py-3 flex flex-wrap gap-2">
             {[
-              "~70% Fulvic Acid",
-              "S-Tier",
+              "A-Tier",
               "DBP Verified",
               "ICP-MS Tested",
               "UNESCO Altai",
@@ -404,8 +403,8 @@ export default function BestShilajitResinBrands() {
               </div>
               <div className="bg-[#F0FAF4] rounded-lg p-3">
                 <p className="text-[#7BA899] font-semibold mb-0.5">Fulvic Acid</p>
-                <p className="text-[#0D1F14] font-bold text-base">~70%</p>
-                <p className="text-[#10B981] font-semibold">ICP-MS · LC-MS · FTIR</p>
+                <p className="text-[#0D1F14] font-bold text-base">Not Disclosed</p>
+                <p className="text-[#10B981] font-semibold">DaaneLabs + Harken Research</p>
               </div>
               <div className="bg-[#F0FAF4] rounded-lg p-3">
                 <p className="text-[#7BA899] font-semibold mb-0.5">Source</p>
@@ -415,7 +414,7 @@ export default function BestShilajitResinBrands() {
             </div>
             <div className="space-y-3 text-sm text-[#0D1F14] leading-relaxed">
               <p>
-                Natural Shilajit earns the #2 position for the most comprehensive testing
+                Natural Shilajit earns the #3 position for the most comprehensive testing
                 methodology of any product we've evaluated. Their COA uses ICP-MS (inductively
                 coupled plasma mass spectrometry), LC-MS (liquid chromatography-mass
                 spectrometry), and FTIR (Fourier-transform infrared spectroscopy) — the
@@ -457,7 +456,7 @@ export default function BestShilajitResinBrands() {
       {/* #4 Pure Himalayan */}
       <section>
         <div className="flex items-center gap-3 mb-4">
-          <span className="w-10 h-10 rounded-full bg-amber-400 text-amber-900 flex items-center justify-center text-sm font-black shrink-0">S</span>
+          <span className="w-10 h-10 rounded-full bg-emerald-500 text-white flex items-center justify-center text-sm font-black shrink-0">A</span>
           <h2 className="text-2xl font-black text-[#0D1F14]">
             #4 — Pure Himalayan Authentic Shilajit Resin 30g
           </h2>
@@ -465,8 +464,8 @@ export default function BestShilajitResinBrands() {
         <div className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm hover:border-[#9EC9AD] transition-colors">
           <div className="bg-[#F0FAF4] border-b border-[#D1EDD8] px-5 py-3 flex flex-wrap gap-2">
             {[
-              "60% Fulvic Acid",
-              "S-Tier",
+              "~58% FA (2021 COA)",
+              "A-Tier",
               "ISO/IEC 17025",
               "Heavy Metals Tested",
               "ISO Verified",
@@ -485,8 +484,8 @@ export default function BestShilajitResinBrands() {
               </div>
               <div className="bg-[#F0FAF4] rounded-lg p-3">
                 <p className="text-[#7BA899] font-semibold mb-0.5">Fulvic Acid</p>
-                <p className="text-[#0D1F14] font-bold text-base">60%</p>
-                <p className="text-[#10B981] font-semibold">ISO/IEC 17025 verified</p>
+                <p className="text-[#0D1F14] font-bold text-base">~58% (2021 COA)</p>
+                <p className="text-[#10B981] font-semibold">Certified Laboratories, Burbank CA</p>
               </div>
               <div className="bg-[#F0FAF4] rounded-lg p-3">
                 <p className="text-[#7BA899] font-semibold mb-0.5">Source</p>
@@ -505,10 +504,10 @@ export default function BestShilajitResinBrands() {
                 and verifiable.
               </p>
               <p>
-                At 60% verified fulvic acid, it sits below Black Lotus resin (64.51%) and Natural
-                Shilajit (~70%), but the laboratory accreditation gives additional confidence
-                that the 60% figure is accurate — which matters when comparing brands with
-                higher but potentially unverified claims.
+                At ~58% verified fulvic acid (2021 COA), it sits below Black Lotus resin (64.51%),
+                but the laboratory accreditation gives additional confidence that the figure is
+                accurate — which matters when comparing brands with higher but potentially
+                unverified claims.
               </p>
               <p>
                 At $1.33/g it is slightly more expensive per gram than Black Lotus but
@@ -660,11 +659,11 @@ export default function BestShilajitResinBrands() {
                 },
                 {
                   name: "Natural Shilajit Resin",
-                  tier: "S",
+                  tier: "A",
                   weight: "20g",
                   price: "$49.00",
                   ppg: "$2.45",
-                  fa: "~70%",
+                  fa: "ND",
                   purity: "9/10",
                   coa: true,
                   hm: true,
@@ -673,11 +672,11 @@ export default function BestShilajitResinBrands() {
                 },
                 {
                   name: "Pure Himalayan Resin",
-                  tier: "S",
+                  tier: "A",
                   weight: "30g",
                   price: "$39.99",
                   ppg: "$1.33",
-                  fa: "60%",
+                  fa: "~58%",
                   purity: "9/10",
                   coa: true,
                   hm: true,
@@ -978,7 +977,7 @@ export default function BestShilajitResinBrands() {
             <a href={AFFILIATE_PH_RESIN} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-semibold">
               Pure Himalayan Authentic Resin
             </a>{" "}
-            — ISO/IEC 17025 accredited lab, 60% FA, strong brand transparency.
+            — ISO/IEC 17025 accredited lab, ~58% FA (2021 COA), strong brand transparency.
           </p>
         </div>
         <p className="text-xs text-[#7BA899] mt-4">

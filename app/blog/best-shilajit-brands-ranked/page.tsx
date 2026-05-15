@@ -125,11 +125,11 @@ const TOP_BRANDS = [
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
     pricePerGram: "$1.08",
-    fulvic: "~70%",
+    fulvic: "Not Disclosed",
     coa: true,
     thirdParty: true,
-    source: "Himalaya",
-    verdict: "Strong A-tier — third-party tested, high fulvic acid, transparent brand",
+    source: "UNESCO Altai Mountains, Siberia",
+    verdict: "Strong A-tier — third-party tested, DBP verified, transparent brand",
     affiliate: `https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20`,
   },
   {
@@ -391,7 +391,7 @@ export default function BestShilajitBrandsRanked() {
                 rank: "#4",
                 name: "Natural Shilajit",
                 color: "border-[#D1EDD8]",
-                verdict: "One of the stronger third-party-tested brands on Amazon. Himalayan sourced, 70%+ fulvic acid, and a transparent COA make this a reliable A-tier pick at roughly $1.08/gram for their resin. Multiple size options and positive long-term customer reviews add confidence.",
+                verdict: "One of the stronger third-party-tested brands on Amazon. UNESCO Altai Mountains sourced, DBP verified, and a transparent COA make this a reliable A-tier pick at roughly $1.08/gram for their resin. Fulvic acid is not disclosed. Multiple size options and positive long-term customer reviews add confidence.",
               },
               {
                 rank: "#5",

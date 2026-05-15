@@ -336,7 +336,7 @@ export default function BestShilajitCapsules() {
 
           <ProductCard
             rank={2}
-            tier="S"
+            tier="A"
             badge="Best Value"
             name="Natural Shilajit Sun-Dried Tablets 120ct"
             vendor="Natural Shilajit"
@@ -347,7 +347,7 @@ export default function BestShilajitCapsules() {
             testingLab="ISO/IEC Accredited, DBP-verified"
             source="UNESCO Altai Mountains, Siberia"
             pros={[
-              "Best cost-per-serving of any verified S-tier capsule product",
+              "Best cost-per-serving of any verified A-tier capsule product",
               "DBP (dibenzo-alpha-pyrones) content verified — rare in capsule form",
               "120 tablets, 60-day supply at 1000mg/day",
               "FDA registered, GMP certified, 30-day guarantee",
@@ -364,7 +364,7 @@ export default function BestShilajitCapsules() {
 
           <ProductCard
             rank={3}
-            tier="S"
+            tier="A"
             name="Natural Shilajit Veg Tabs 60ct"
             vendor="Natural Shilajit"
             price="$35.00"
