@@ -14,7 +14,7 @@ const POST_URL = `${BASE_URL}/blog/shilajit-pregnancy-breastfeeding`;
 const title =
   "Shilajit During Pregnancy & Breastfeeding: What the Medical Evidence Actually Says";
 const description =
-  "Memorial Sloan Kettering, NCCIH, and integrative medicine all flag shilajit as unsafe during pregnancy. Here's what the evidence says and what expecting mothers need to know.";
+  "Should you take shilajit while pregnant or breastfeeding? NIH, NCCIH, and MSK all flag heavy metal risks. Here's what the evidence actually says and what most brands won't tell you.";
 
 export const metadata: Metadata = {
   title,
