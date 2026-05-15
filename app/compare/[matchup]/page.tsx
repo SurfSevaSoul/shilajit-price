@@ -59,13 +59,13 @@ const BRANDS: Record<string, BrandData> = {
   "pure-himalayan": {
     name: "Pure Himalayan Shilajit",
     shortName: "Pure Himalayan",
-    tier: "S",
-    tierColor: "bg-amber-400 text-amber-900",
-    fulvicAcid: "60%",
+    tier: "A",
+    tierColor: "bg-emerald-500 text-white",
+    fulvicAcid: "~58% (2021 COA)",
     pricePerGram: "$1.33/g",
-    origin: "Himalayas & Altai (dual-source)",
+    origin: "Himalayan Mountains, 16,000+ ft",
     coa: true,
-    coaDetail: "ISO/IEC 17025 Accredited Lab",
+    coaDetail: "Certified Laboratories + MQL, Burbank CA (A2LA ISO 17025)",
     dbpVerified: false,
     heavyMetals: "pass",
     gmpCertified: true,
@@ -80,13 +80,13 @@ const BRANDS: Record<string, BrandData> = {
   "natural-shilajit": {
     name: "Natural Shilajit",
     shortName: "Natural Shilajit",
-    tier: "S",
-    tierColor: "bg-amber-400 text-amber-900",
-    fulvicAcid: "~70%",
+    tier: "A",
+    tierColor: "bg-emerald-500 text-white",
+    fulvicAcid: "Not Disclosed",
     pricePerGram: "$2.45/g",
     origin: "UNESCO-protected Altai Mountains, Siberia",
     coa: true,
-    coaDetail: "ICP-MS · LC-MS · FTIR verified",
+    coaDetail: "DaaneLabs (Naples, FL) + Harken Research (Los Angeles, CA) — DBP verified",
     dbpVerified: true,
     heavyMetals: "pass",
     gmpCertified: true,
@@ -162,7 +162,7 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
     metaDescription:
       "Black Lotus vs Pure Himalayan Shilajit: head-to-head comparison of fulvic acid %, COA lab standards, price per gram, origin, and overall value. Which should you buy?",
     intro:
-      "Black Lotus and Pure Himalayan Shilajit are the two highest-rated brands in our database — both hold S-tier rankings, both publish verified third-party COAs, and both come with free shipping. The differences are real but nuanced: fulvic acid percentage, lab accreditation type, and sourcing philosophy. This comparison breaks down every metric to help you choose.",
+      "Black Lotus (S-tier) and Pure Himalayan Shilajit (A-tier) are two of the highest-rated brands in our database — both publish verified third-party COAs and both come with free shipping. The differences are real but nuanced: fulvic acid percentage, lab accreditation type, and sourcing philosophy. This comparison breaks down every metric to help you choose.",
     winnerSlug: "black-lotus",
     verdict:
       "Black Lotus wins on price-per-gram ($1.23 vs $1.33) and publishes product-specific fulvic acid figures (64.51% resin, 74.30% capsules per Batch 93 COA). Pure Himalayan wins on lab accreditation specificity — their ISO/IEC 17025-accredited testing is the most rigorous internationally recognized standard available. Both are genuinely excellent; the right pick depends on what you prioritize.",
@@ -198,12 +198,12 @@ const MATCHUP_CONTENT: Record<string, MatchupContent> = {
   "black-lotus-vs-natural-shilajit": {
     title: "Black Lotus vs Natural Shilajit — Full Comparison (2026)",
     metaDescription:
-      "Black Lotus vs Natural Shilajit: compare fulvic acid %, DBP verification, price per gram, COA depth, and overall value. Both are S-tier Altai brands — here's how they differ.",
+      "Black Lotus vs Natural Shilajit: compare fulvic acid %, DBP verification, price per gram, COA depth, and overall value. Black Lotus is S-tier, Natural Shilajit is A-tier — here's how they differ.",
     intro:
-      "Both Black Lotus and Natural Shilajit are S-tier Altai-sourced brands with verified COAs. The key differentiators: Natural Shilajit holds DBP (Dibenzo-α-pyrones) verification and uses a triple-method COA (ICP-MS, LC-MS, FTIR), while Black Lotus leads on fulvic acid percentage and price-per-gram. This comparison covers every metric to help you choose.",
+      "Black Lotus (S-tier) and Natural Shilajit (A-tier) are both Altai-sourced brands with verified COAs. The key differentiators: Natural Shilajit holds DBP (Dibenzo-α-pyrones) verification and uses a triple-method COA (ICP-MS, LC-MS, FTIR), while Black Lotus leads on fulvic acid percentage and price-per-gram. This comparison covers every metric to help you choose.",
     winnerSlug: "black-lotus",
     verdict:
-      "Black Lotus wins on value — $1.23/g vs $2.45/g is a significant gap. Black Lotus also discloses fulvic acid percentage (64.51% resin / 74.30% capsules, Batch 93 COA); Natural Shilajit does not disclose FA%. Natural Shilajit wins on verification depth: DBP testing and COA by DaaneLabs + Harken Research represent the most comprehensive analysis in our database. If budget and FA transparency matter, Black Lotus is the stronger value. If verification depth is the priority, Natural Shilajit earns that distinction.",
+      "Black Lotus (S-tier) wins on value — $1.23/g vs $2.45/g is a significant gap. Black Lotus also discloses fulvic acid percentage (64.51% resin / 74.30% capsules, Batch 93 COA); Natural Shilajit does not disclose FA%. Natural Shilajit (A-tier) wins on verification depth: DBP testing and COA by DaaneLabs + Harken Research represent the most comprehensive analysis in our database. If budget and FA transparency matter, Black Lotus is the stronger value. If verification depth is the priority, Natural Shilajit earns that distinction.",
     whyAWins: [
       "Discloses fulvic acid %: 64–74% COA-verified (Batch 93, IAS Labs) — Natural Shilajit does not disclose FA%",
       "$1.23/g vs $2.45/g — nearly half the price per gram",

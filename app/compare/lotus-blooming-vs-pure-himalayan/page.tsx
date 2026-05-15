@@ -128,8 +128,8 @@ const LBH = {
 const PURE_HIMALAYAN = {
   name: "Pure Himalayan Shilajit",
   shortName: "Pure Himalayan",
-  tier: "S",
-  tierColor: "bg-amber-400 text-amber-900",
+  tier: "A",
+  tierColor: "bg-emerald-500 text-white",
   fulvicAcid: "~58% (2021 COA)",
   pricePerGram: "$1.33/g",
   origin: "Himalayan Mountains, 16,000ft",
@@ -237,7 +237,7 @@ export default function LotusBloomingVsPureHimalayanPage() {
               Lotus Blooming Herbs vs Pure Himalayan Shilajit
             </h1>
             <p className="text-sm text-[#9EC9AD] leading-relaxed max-w-2xl">
-              This is a uniquely close comparison — both brands source from the Himalayan Mountains and both use <strong>Certified Laboratories in Burbank, CA</strong>, an A2LA ISO 17025 accredited testing facility (Certificate 3034.01). Lotus Blooming Herbs sits at 16,000–18,000 feet altitude, is operated by an Ayurvedic practitioner with NAMA and AHPA memberships, and reports heavy metals at the per-serving microgram level — with Lead at 0.040 mcg, among the lowest in our database. Pure Himalayan Shilajit sources at 16,000ft, discloses approximately 58% fulvic acid (2021 COA), ships free, and costs $1.33/g — nearly five times less per gram. Both are S-tier. The decision comes down to altitude advantage and Ayurvedic pedigree versus price transparency and FA disclosure.
+              This is a uniquely close comparison — both brands source from the Himalayan Mountains and both use <strong>Certified Laboratories in Burbank, CA</strong>, an A2LA ISO 17025 accredited testing facility (Certificate 3034.01). Lotus Blooming Herbs sits at 16,000–18,000 feet altitude, is operated by an Ayurvedic practitioner with NAMA and AHPA memberships, and reports heavy metals at the per-serving microgram level — with Lead at 0.040 mcg, among the lowest in our database. Pure Himalayan Shilajit sources at 16,000ft, discloses approximately 58% fulvic acid (2021 COA), ships free, and costs $1.33/g — nearly five times less per gram. Lotus Blooming Herbs is S-tier; Pure Himalayan is A-tier. The decision comes down to altitude advantage and Ayurvedic pedigree versus price transparency and FA disclosure.
             </p>
 
             <div className="mt-5 inline-flex items-center gap-2 bg-[#10B981]/20 border border-[#10B981]/40 rounded-full px-4 py-1.5 text-sm">
@@ -332,10 +332,10 @@ export default function LotusBloomingVsPureHimalayanPage() {
               Pure Himalayan Shilajit sources from the Himalayan Mountains at 16,000 feet and is tested by <strong>Certified Laboratories and MQL in Burbank, CA</strong> (A2LA ISO 17025, Certificate 3034.01, September 2024) — the same accredited testing facility used by Lotus Blooming Herbs. Their batch-specific COA (Batch STH11) covers heavy metals at the per-200mg serving level: Lead 0.095 mcg, Arsenic 0.192 mcg, Cadmium 0.066 mcg, Mercury ND — all passing results. They additionally disclose approximately <strong>58% fulvic acid from a 2021 COA</strong>, providing a documented bioactive benchmark that Lotus Blooming Herbs does not publish.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              Pure Himalayan is <strong>GMP certified</strong> and ships free with a verified 30g resin jar at <strong>$39.99 ($1.33/g)</strong>. At that price point — nearly five times less per gram than Lotus Blooming Herbs — they offer exceptional value for Himalayan-sourced, ISO 17025 verified shilajit. The combination of S-tier quality rating, Himalayan sourcing, A2LA-accredited lab COA, disclosed fulvic acid percentage, GMP certification, and free shipping makes Pure Himalayan one of the most accessible high-quality options in our database.
+              Pure Himalayan is <strong>GMP certified</strong> and ships free with a verified 30g resin jar at <strong>$39.99 ($1.33/g)</strong>. At that price point — nearly five times less per gram than Lotus Blooming Herbs — they offer exceptional value for Himalayan-sourced, ISO 17025 verified shilajit. The combination of A-tier quality rating, Himalayan sourcing, A2LA-accredited lab COA, disclosed fulvic acid percentage, GMP certification, and free shipping makes Pure Himalayan one of the most accessible high-quality options in our database.
             </p>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              For first-time buyers who specifically want a Himalayan resin with documented fulvic acid content and lab accreditation comparable to Lotus Blooming Herbs at a fraction of the price, Pure Himalayan is a highly logical entry point. The brand does not hold the Ayurvedic practitioner ownership credentials of Lotus Blooming Herbs, and its sourcing altitude (16,000ft) is at the lower end of LBH's reported 16,000–18,000ft range — but both brands use the same A2LA-accredited lab and both carry S-tier ratings on our scoring methodology.
+              For first-time buyers who specifically want a Himalayan resin with documented fulvic acid content and lab accreditation comparable to Lotus Blooming Herbs at a fraction of the price, Pure Himalayan is a highly logical entry point. The brand does not hold the Ayurvedic practitioner ownership credentials of Lotus Blooming Herbs, and its sourcing altitude (16,000ft) is at the lower end of LBH's reported 16,000–18,000ft range — but both brands use the same A2LA-accredited lab — LBH at S-tier, Pure Himalayan at A-tier on our scoring methodology.
             </p>
           </section>
 
@@ -378,7 +378,7 @@ export default function LotusBloomingVsPureHimalayanPage() {
           <section className="bg-white rounded-2xl border border-[#D1EDD8] p-6">
             <h2 className="text-xl font-black text-[#0D1F14] mb-3">The verdict</h2>
             <p className="text-sm text-[#0D1F14] leading-relaxed">
-              This is genuinely one of the closest matchups in our database — both brands are S-tier Himalayan resins tested by the same A2LA ISO 17025 accredited lab. Lotus Blooming Herbs earns the edge on altitude (up to 18,000ft vs 16,000ft), Ayurvedic practitioner ownership with NAMA and AHPA credentials, and per-serving heavy metals that are lower across all four tested metals (Lead 0.040 mcg vs 0.095 mcg; Arsenic 0.091 mcg vs 0.192 mcg). Pure Himalayan wins clearly on price ($1.33/g vs $6.00/g — nearly 5× less expensive), discloses ~58% fulvic acid that LBH does not, and includes free shipping. If price is a meaningful consideration, Pure Himalayan is an exceptional value for Himalayan-sourced S-tier shilajit. If you want the highest-altitude Himalayan resin from a practitioner-owned Ayurvedic source with the cleanest per-serving heavy metal readings, Lotus Blooming Herbs is the pick — but be prepared to pay a significant premium.
+              This is a strong matchup — both brands are Himalayan resins tested by the same A2LA ISO 17025 accredited lab, with Lotus Blooming Herbs at S-tier and Pure Himalayan at A-tier. Lotus Blooming Herbs earns the edge on altitude (up to 18,000ft vs 16,000ft), Ayurvedic practitioner ownership with NAMA and AHPA credentials, and per-serving heavy metals that are lower across all four tested metals (Lead 0.040 mcg vs 0.095 mcg; Arsenic 0.091 mcg vs 0.192 mcg). Pure Himalayan wins clearly on price ($1.33/g vs $6.00/g — nearly 5× less expensive), discloses ~58% fulvic acid that LBH does not, and includes free shipping. If price is a meaningful consideration, Pure Himalayan is an exceptional value for Himalayan-sourced A-tier shilajit. If you want the highest-altitude Himalayan resin from a practitioner-owned Ayurvedic source with the cleanest per-serving heavy metal readings, Lotus Blooming Herbs is the pick — but be prepared to pay a significant premium.
             </p>
           </section>
 
@@ -447,7 +447,7 @@ export default function LotusBloomingVsPureHimalayanPage() {
                   Buy Pure Himalayan if…
                 </div>
                 <p className="text-xs text-[#0D1F14] leading-relaxed">
-                  You want a well-documented, S-tier Himalayan shilajit at a price-per-gram that is accessible for regular supplementation. Pure Himalayan delivers ~58% fulvic acid disclosed, the same A2LA ISO 17025 accredited lab as Lotus Blooming Herbs, GMP certification, free shipping, and Himalayan sourcing — all for $1.33/g. This is the right choice for the majority of Himalayan-focused buyers, especially first-timers and those who value a disclosed FA% alongside strong safety testing.
+                  You want a well-documented, A-tier Himalayan shilajit at a price-per-gram that is accessible for regular supplementation. Pure Himalayan delivers ~58% fulvic acid disclosed, the same A2LA ISO 17025 accredited lab as Lotus Blooming Herbs, GMP certification, free shipping, and Himalayan sourcing — all for $1.33/g. This is the right choice for the majority of Himalayan-focused buyers, especially first-timers and those who value a disclosed FA% alongside strong safety testing.
                 </p>
                 <a
                   href={PURE_HIMALAYAN.affiliateUrl}
