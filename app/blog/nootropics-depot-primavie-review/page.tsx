@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title:
     "Nootropics Depot PrimaVie Shilajit Review: COA, Heavy Metals & How It Compares | ShilajitPrice.com",
   description:
-    "Nootropics Depot PrimaVie shilajit reviewed: what their COA testing covers, how PrimaVie standardization works, and how it compares to dedicated shilajit brands with batch-specific lab data.",
+    "Nootropics Depot's Primavie shilajit is popular — but what does the COA actually show? We pulled the heavy metals data and fulvic acid figures so you don't have to guess.",
   keywords:
     "nootropics depot primavie review, nootropics depot shilajit, primavie shilajit review, primavie vs shilajit resin, nootropics depot shilajit COA, primavie fulvic acid, primavie DBP",
   alternates: { canonical: POST_URL },
