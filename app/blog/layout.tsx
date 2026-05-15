@@ -13,18 +13,18 @@ export default function BlogLayout({ children }: { children: ReactNode }) {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-1 shrink-0">
             <span className="text-lg font-black text-[#10B981]">ShilajitPrice</span>
-            <span className="text-lg font-black text-[#0D1F14]">.com</span>
+            <span className="text-lg font-black text-white">.com</span>
           </Link>
           <div className="hidden sm:flex items-center gap-5 text-sm">
             <Link
               href="/#deals"
-              className="text-[#0D1F14] hover:text-[#10B981] transition-colors"
+              className="text-[#9EC9AD] hover:text-white transition-colors"
             >
               Compare
             </Link>
             <Link
               href="/compare"
-              className="text-[#0D1F14] hover:text-[#10B981] transition-colors"
+              className="text-[#9EC9AD] hover:text-white transition-colors"
             >
               Full Table
             </Link>
