@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title:
     "Mount Sinai on Shilajit: What Their Herb & Supplement Database Actually Says | ShilajitPrice.com",
   description:
-    "Mount Sinai's integrative medicine database flags heavy metals contamination risk in shilajit. Here's what their guidance actually says and which brands address their core concerns.",
+    "Mount Sinai warns shilajit carries heavy metal contamination risks. We break down their exact safety guidance and show which brands have third-party lab results to address those concerns.",
   keywords:
     "mount sinai shilajit, mount sinai shilajit safety, mount sinai shilajit heavy metals, icahn school of medicine shilajit, mount sinai integrative medicine shilajit",
   alternates: { canonical: POST_URL },
