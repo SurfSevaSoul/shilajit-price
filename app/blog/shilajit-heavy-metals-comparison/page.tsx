@@ -15,7 +15,7 @@ const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 export const metadata: Metadata = {
   title: "Shilajit Heavy Metals Test Results 2026 — Lab Data Compared Across 5 Brands",
   description:
-    "We compared heavy metals lab data across 5 shilajit brands using accredited COA results. Lead, arsenic, mercury, and cadmium — here's what each brand's testing actually shows.",
+    "We pulled COA data for 6 shilajit brands and compared every heavy metal result. One brand had all 4 metals undetected. See the full side-by-side breakdown.",
   keywords:
     "shilajit heavy metals test results, shilajit heavy metals lab data, safest shilajit brand heavy metals, shilajit lead arsenic mercury test, shilajit COA heavy metals, shilajit cadmium test",
   alternates: { canonical: POST_URL },
