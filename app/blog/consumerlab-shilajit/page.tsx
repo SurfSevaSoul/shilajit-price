@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "Does ConsumerLab Test Shilajit? What Independent Testing Actually Shows | ShilajitPrice.com",
   description:
-    "ConsumerLab tests shilajit supplements for heavy metals and label accuracy — but batch-specific COA data tells you more. Here's what independent testing shows and how to evaluate any brand.",
+    "ConsumerLab tested shilajit supplements for heavy metals and purity. We cover their findings, what they mean for buyers, and how our affiliate partners' COA data compares.",
   keywords:
     "consumerlab shilajit, consumerlab shilajit review, consumerlab shilajit test, shilajit independent testing, shilajit lab testing",
   alternates: { canonical: POST_URL },
