@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "NCCIH on Shilajit: What the Official Safety Guidance Actually Says | ShilajitPrice.com",
   description:
-    "NCCIH flags heavy metals contamination risk in shilajit supplements. Here's exactly what the official guidance says, what it doesn't say, and which brands have the verified lab data to address their concerns.",
+    "The NCCIH warns shilajit may contain lead, mercury, and arsenic. Here's what their safety guidance actually says — and which brands have clean lab results.",
   keywords:
     "nccih shilajit, nccih shilajit safety, nccih shilajit heavy metals, national center for complementary integrative health shilajit, shilajit safety official guidance",
   alternates: { canonical: POST_URL },
