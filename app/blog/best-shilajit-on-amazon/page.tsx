@@ -62,7 +62,7 @@ const faqItems: FaqItem[] = [
     name: "Is it better to buy shilajit on Amazon or direct?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "For premium shilajit (S-tier brands), buying direct from the brand is almost always better. Direct purchase eliminates Amazon's 15–17% referral fee, which either inflates the price you pay or compresses the brand's margin in ways that can incentivize quality shortcuts. Premium brands like Black Lotus, Natural Shilajit, and Pure Himalayan sell exclusively direct-to-consumer — offering fresher inventory, better price per gram, and direct brand guarantees. For mid-tier verified products (Sayan, PrimaVie), Amazon is perfectly appropriate and the review history provides useful validation.",
+      text: "For premium shilajit (S-tier and A-tier verified brands), buying direct from the brand is almost always better. Direct purchase eliminates Amazon's 15–17% referral fee, which either inflates the price you pay or compresses the brand's margin in ways that can incentivize quality shortcuts. Top verified brands like Black Lotus (S-tier), Natural Shilajit (A-tier), and Pure Himalayan (A-tier) sell exclusively direct-to-consumer — offering fresher inventory, better price per gram, and direct brand guarantees. For budget verified products (Sayan, PrimaVie), Amazon is perfectly appropriate and the review history provides useful validation.",
     },
   },
   {
@@ -334,17 +334,17 @@ export default function BestShilajitOnAmazon() {
                 },
                 {
                   name: "Natural Shilajit Resin (Direct)",
-                  tier: "S",
-                  badge: "bg-amber-400 text-amber-900",
-                  note: "~70% FA · DBP verified · Triple-method COA",
+                  tier: "A",
+                  badge: "bg-emerald-500 text-white",
+                  note: "Not Disclosed · DBP verified · Triple-method COA",
                   channel: "Direct only",
                   href: NS_DIRECT,
                 },
                 {
                   name: "Pure Himalayan Resin (Direct)",
-                  tier: "S",
-                  badge: "bg-amber-400 text-amber-900",
-                  note: "60% FA · ISO/IEC 17025 · $1.33/g",
+                  tier: "A",
+                  badge: "bg-emerald-500 text-white",
+                  note: "~58% FA (2021 COA) · ISO/IEC 17025 · $1.33/g",
                   channel: "Direct only",
                   href: PH_DIRECT,
                 },

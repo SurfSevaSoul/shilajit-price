@@ -117,7 +117,7 @@ const UNDER_50_PICKS = [
     price: "$27.99",
     weight: "15g",
     pricePerGram: "$1.87",
-    fulvic: "~70%",
+    fulvic: "Not Disclosed",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
     coa: true,

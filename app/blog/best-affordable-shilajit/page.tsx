@@ -138,7 +138,7 @@ const VALUE_PICKS = [
     weight: "30g",
     pricePerGram: "$1.17",
     costPerServing: "~$0.20",
-    fulvic: "~70%",
+    fulvic: "Not Disclosed",
     coa: true,
     thirdParty: true,
     badge: "Best Amazon Value",

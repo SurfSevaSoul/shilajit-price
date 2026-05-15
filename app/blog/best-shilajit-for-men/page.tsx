@@ -108,9 +108,9 @@ const TOP_PICKS = [
     name: "Natural Shilajit Resin",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
-    fulvic: "~70%",
+    fulvic: "Not Disclosed",
     pricePerGram: "$1.08",
-    verdict: "Best Amazon alternative — third-party COA, 70%+ FA, Himalayan source, strong review history",
+    verdict: "Best Amazon alternative — DBP verified, UNESCO Altai source, triple-method COA, strong review history",
     affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
   },
   {

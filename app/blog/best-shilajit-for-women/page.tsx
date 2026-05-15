@@ -344,10 +344,10 @@ export default function BestShilajitForWomen() {
                       Pure Himalayan Authentic Resin 30g
                     </a>
                   </td>
-                  <td className="px-3 py-3 text-center font-bold text-emerald-600">S</td>
+                  <td className="px-3 py-3 text-center font-bold text-emerald-600">A</td>
                   <td className="px-3 py-3 text-center">$39.99</td>
                   <td className="px-3 py-3 text-center">$1.33/g</td>
-                  <td className="px-3 py-3 text-center font-semibold">60%</td>
+                  <td className="px-3 py-3 text-center font-semibold">~58%</td>
                   <td className="px-3 py-3 text-center">✓</td>
                   <td className="px-3 py-3 text-[#0D1F14]">ISO/IEC 17025 certified testing, Himalayan source</td>
                 </tr>
@@ -363,7 +363,7 @@ export default function BestShilajitForWomen() {
                       Pure Himalayan Tablets 90ct
                     </a>
                   </td>
-                  <td className="px-3 py-3 text-center font-bold text-emerald-600">S</td>
+                  <td className="px-3 py-3 text-center font-bold text-emerald-600">A</td>
                   <td className="px-3 py-3 text-center">$34.99</td>
                   <td className="px-3 py-3 text-center">$1.94/g</td>
                   <td className="px-3 py-3 text-center font-semibold">—</td>
