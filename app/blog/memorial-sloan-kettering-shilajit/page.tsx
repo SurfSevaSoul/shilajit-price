@@ -14,7 +14,7 @@ const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 export const metadata: Metadata = {
   title: "Memorial Sloan Kettering & Shilajit: Safety, Heavy Metals & What the Research Shows | ShilajitPrice.com",
   description:
-    "What Memorial Sloan Kettering says about shilajit safety, heavy metals, and pregnancy risks — plus how to choose a lab-verified brand that addresses these concerns.",
+    "Memorial Sloan Kettering flags shilajit for heavy metal contamination. We break down their exact warnings and show which brands have the lab data to back up safety claims.",
   keywords:
     "memorial sloan kettering shilajit, memorial sloan kettering shilajit safety, memorial sloan kettering shilajit heavy metals, memorial sloan kettering shilajit pregnancy, shilajit safety women, is shilajit safe heavy metals",
   alternates: { canonical: POST_URL },
