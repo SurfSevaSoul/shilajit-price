@@ -13,7 +13,7 @@ const POST_URL = `${BASE_URL}/blog/shilajit-hemochromatosis`;
 
 const title = "Shilajit & Hemochromatosis: Iron Overload Risk, Lab Data & What Doctors Recommend";
 const description =
-  "Can you take shilajit with hemochromatosis? We break down shilajit's iron content, fulvic acid's absorption effects, and what people with iron overload disorders need to know before supplementing.";
+  "Shilajit contains iron — a problem if you have hemochromatosis or high ferritin. We review the evidence on iron content, COA data from 6 brands, and what experts recommend.";
 
 export const metadata: Metadata = {
   title,
