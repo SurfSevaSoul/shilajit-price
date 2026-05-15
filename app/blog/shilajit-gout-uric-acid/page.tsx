@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Shilajit and Gout: Uric Acid Risk, What the Research Says & Who Should Be Cautious | ShilajitPrice.com",
   description:
-    "No clinical trial has studied shilajit in gout patients specifically — but the contraindication guidance is clear. Here's what people with high uric acid need to know before supplementing.",
+    "Shilajit may raise uric acid levels — a real concern if you have gout. We reviewed the clinical evidence and explain exactly what the research says about the risk.",
   keywords:
     "shilajit gout, shilajit uric acid, shilajit contraindications gout, can you take shilajit with gout, shilajit uric acid levels, shilajit kidney stones uric acid, shilajit hyperuricemia",
   alternates: { canonical: POST_URL },
