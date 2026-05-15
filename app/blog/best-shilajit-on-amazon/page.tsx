@@ -16,7 +16,7 @@ const POST_URL = `${BASE_URL}/blog/best-shilajit-on-amazon`;
 export const metadata: Metadata = {
   title: "Best Shilajit on Amazon 2026: Lab-Tested Picks That Actually Pass",
   description:
-    "Amazon is flooded with fake and low-quality shilajit. Here's how to spot the red flags, which brands actually pass lab testing, and when direct purchase beats Amazon.",
+    "Most shilajit on Amazon has no COA. We found the ones that do — with verified fulvic acid percentages and clean heavy metals results. Updated for 2026.",
   keywords:
     "best shilajit on amazon, amazon shilajit review, shilajit amazon 2026, real shilajit amazon, shilajit amazon fake",
   alternates: { canonical: POST_URL },
