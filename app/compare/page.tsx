@@ -157,7 +157,18 @@ export default function ComparePage() {
         case "amazonReviewCount": cmp = (a.amazonReviewCount ?? 0) - (b.amazonReviewCount ?? 0); break;
         case "origin": cmp = (a.origin ?? "Unknown").localeCompare(b.origin ?? "Unknown"); break;
       }
-      return sortDir === "asc" ? cmp : -cmp;
+
+      // Apply primary sort direction
+      const primary = sortDir === "asc" ? cmp : -cmp;
+      if (primary !== 0) return primary;
+
+      // Secondary: products with photos (affiliate partners) always cluster first
+      const aHasImg = a.imageUrl ? 0 : 1;
+      const bHasImg = b.imageUrl ? 0 : 1;
+      if (aHasImg !== bHasImg) return aHasImg - bHasImg;
+
+      // Tertiary: alphabetical by vendor
+      return a.vendor.localeCompare(b.vendor);
     });
 
     return list;
