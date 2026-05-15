@@ -46,7 +46,7 @@ const quizSchema = {
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 type Step = "intro" | 1 | 2 | 3 | 4 | 5 | 6 | 7 | "result";
-type OutcomeKey = "bl" | "ph" | "ns" | "mst" | "blConv" | "pb" | "lbh";
+type OutcomeKey = "bl" | "ph" | "ns" | "mst" | "blConv" | "pb" | "lbh" | "ff";
 
 // ── Questions ─────────────────────────────────────────────────────────────────
 const QUESTIONS: {
@@ -344,42 +344,65 @@ const OUTCOME_DATA: Record<
     tip: "💡 Pro tip: Lotus Blooming Herbs uses filtered spring water purification — no solvents. Dissolve a pea-sized portion (~250mg) in warm water. The multi-generational collection partnership means consistent sourcing from one specific Himalayan valley at 16,000–18,000ft.",
     gaName: "lotus_blooming_herbs",
   },
+  ff: {
+    name: "Fractal Forest",
+    headline: "Your best match is Fractal Forest",
+    subhead:
+      "Liquid drops format with the cleanest heavy metals result in our database — the right pick for experienced users who want something genuinely different",
+    tier: "A",
+    fulvicAcid: "71.31% (Wild American Drops)",
+    pricePerGram: "15% off w/ SHILAJIT-PRICE",
+    form: "Liquid Drops",
+    origin: "Himalayan / North American",
+    badges: ["✓ All HMs ND (Himalayan Drops)", "✓ COA Verified", "✓ A2LA ISO 17025"],
+    primaryCta: {
+      label: "Shop Fractal Forest — Use Code SHILAJIT-PRICE →",
+      url: "https://fractalforest.co/SHILAJIT-PRICE",
+    },
+    runnerUp: {
+      name: "Black Lotus Tincture (S-tier alternative)",
+      url: "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE",
+      label: "Also consider →",
+    },
+    tip: "💡 Pro tip: Use code SHILAJIT-PRICE at fractalforest.co for 15% off. Fractal Forest's Himalayan Drops (LOT 1001, Certified Laboratories Burbank CA — A2LA ISO 17025) have all four heavy metals completely not detected — the cleanest result of any liquid shilajit drops in our database. Their Wild American Drops are the only North American sourced shilajit drops with a verified COA, testing at 71.31% fulvic acid.",
+    gaName: "fractal_forest",
+  },
 };
 
 // ── Scoring ───────────────────────────────────────────────────────────────────
 function computeScores(answers: Record<number, string>): Record<OutcomeKey, number> {
-  const s: Record<OutcomeKey, number> = { bl: 0, ph: 0, ns: 0, mst: 0, blConv: 0, pb: 0, lbh: 0 };
+  const s: Record<OutcomeKey, number> = { bl: 0, ph: 0, ns: 0, mst: 0, blConv: 0, pb: 0, lbh: 0, ff: 0 };
 
   switch (answers[1]) {
-    case "energy":       s.bl += 3; s.ph += 1; s.ns += 1; s.mst += 1; s.blConv += 1; s.lbh += 1; break;
+    case "energy":       s.bl += 3; s.ph += 1; s.ns += 1; s.mst += 1; s.blConv += 1; s.lbh += 1; s.ff += 1; break;
     case "testosterone": s.bl += 4; s.ph += 1; s.ns += 1; s.mst += 1; s.lbh += 1; break;
     case "cognitive":    s.bl += 1; s.ph += 2; s.ns += 3; s.pb += 4; s.lbh += 1; break;
-    case "longevity":    s.bl += 1; s.ph += 1; s.ns += 4; s.pb += 2; s.lbh += 2; break;
+    case "longevity":    s.bl += 1; s.ph += 1; s.ns += 4; s.pb += 2; s.lbh += 2; s.ff += 1; break;
     case "general":      s.bl += 1; s.ph += 3; s.ns += 1; s.mst += 2; s.lbh += 3; break;
   }
 
   switch (answers[2]) {
     case "resin":        s.bl += 3; s.ns += 3; s.pb += 2; s.lbh += 3; break;
     case "capsules":     s.bl += 2; s.ph += 2; s.mst += 3; s.lbh += 1; break;
-    case "convenience":  s.blConv += 5; s.ph += 1; break;
-    case "value":        s.mst += 3; s.bl += 1; s.ns += 1; s.lbh += 2; break;
+    case "convenience":  s.blConv += 5; s.ph += 1; s.ff += 4; break;
+    case "value":        s.mst += 3; s.bl += 1; s.ns += 1; s.lbh += 2; s.ff += 1; break;
   }
 
   switch (answers[3]) {
     case "budget":  s.mst += 5; break;
-    case "mid":     s.bl += 2; s.ph += 2; s.ns += 1; s.lbh += 2; break;
-    case "premium": s.bl += 2; s.ns += 3; s.pb += 5; s.lbh += 2; break;
+    case "mid":     s.bl += 2; s.ph += 2; s.ns += 1; s.lbh += 2; s.ff += 1; break;
+    case "premium": s.bl += 2; s.ns += 3; s.pb += 5; s.lbh += 2; s.ff += 1; break;
     case "any":     s.ph += 2; s.mst += 1; s.bl += 1; s.lbh += 1; break;
   }
 
   switch (answers[4]) {
     case "resin":       s.bl += 2; s.ns += 2; s.pb += 2; s.lbh += 3; break;
     case "capsules":    s.bl += 1; s.ph += 2; s.mst += 3; s.lbh += 1; break;
-    case "convenience": s.blConv += 4; s.ph += 1; break;
+    case "convenience": s.blConv += 4; s.ph += 1; s.ff += 4; break;
   }
 
   switch (answers[5]) {
-    case "strict":   s.bl += 3; s.ns += 4; s.pb += 3; s.lbh += 2; break;
+    case "strict":   s.bl += 3; s.ns += 4; s.pb += 3; s.lbh += 2; s.ff += 3; break;
     case "moderate": s.mst += 2; s.ph += 2; s.bl += 1; s.lbh += 2; break;
     case "relaxed":  s.mst += 3; s.blConv += 1; s.lbh += 1; break;
   }
@@ -387,13 +410,13 @@ function computeScores(answers: Record<number, string>): Record<OutcomeKey, numb
   switch (answers[6]) {
     case "vegan": s.ph += 1; s.ns += 1; s.lbh += 1; break;
     case "none":  s.bl += 1; s.lbh += 1; break;
-    case "clean": s.ns += 2; s.bl += 1; s.pb += 2; s.lbh += 4; break;
+    case "clean": s.ns += 2; s.bl += 1; s.pb += 2; s.lbh += 4; s.ff += 2; break;
   }
 
   switch (answers[7]) {
     case "beginner":     s.ph += 4; s.lbh += 2; break;
-    case "intermediate": s.bl += 2; s.mst += 1; s.pb += 1; s.lbh += 2; break;
-    case "experienced":  s.ns += 3; s.bl += 1; s.pb += 3; s.lbh += 2; break;
+    case "intermediate": s.bl += 2; s.mst += 1; s.pb += 1; s.lbh += 2; s.ff += 1; break;
+    case "experienced":  s.ns += 3; s.bl += 1; s.pb += 3; s.lbh += 2; s.ff += 4; break;
   }
 
   return s;
@@ -464,6 +487,14 @@ function getReasonBullets(
         `Ayurvedic practitioner-owned brand with traditional Himalayan sourcing at 16,000–18,000ft — aligned with your interest in ${goal}`,
         "A2LA ISO 17025 accredited lab (Certified Laboratories Burbank) — the same gold-standard accreditation as the most rigorous brands in our database",
         "Lead 0.040 mcg/serving — among the cleanest heavy metals results of any brand we have reviewed, with a comprehensive microbiology panel",
+      ];
+    case "ff":
+      return [
+        "Fractal Forest Himalayan Drops have all four heavy metals completely not detected (Lead ND, Arsenic ND, Cadmium ND, Mercury ND) — the cleanest heavy metals result of any liquid shilajit in our database",
+        "Wild American Shilajit Drops (IAS Laboratories, Batch 24E0373) test at 71.31% fulvic acid — the only North American sourced shilajit drops with a verified COA in our database",
+        answers[7] === "experienced"
+          ? "Ideal for experienced shilajit users looking for a unique liquid format with verified COA data — something genuinely different from mainstream resin or capsule options"
+          : "Liquid drops deliver shilajit in pre-dissolved solution — fast-absorbing, no measuring or dissolving required. Use code SHILAJIT-PRICE for 15% off at fractalforest.co",
       ];
   }
 }

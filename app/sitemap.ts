@@ -50,6 +50,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85,
     },
     {
+      url: `${BASE_URL}/compare/fractal-forest-vs-black-lotus`,
+      lastModified: new Date("2026-05-14"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${BASE_URL}/compare/fractal-forest-vs-lotus-blooming`,
+      lastModified: new Date("2026-05-14"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${BASE_URL}/compare/fractal-forest-vs-pure-himalayan`,
+      lastModified: new Date("2026-05-14"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
+      url: `${BASE_URL}/compare/fractal-forest-vs-purblack`,
+      lastModified: new Date("2026-05-14"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+    },
+    {
       url: `${BASE_URL}/lab-data`,
       lastModified: new Date("2026-04-14"),
       changeFrequency: "weekly",
