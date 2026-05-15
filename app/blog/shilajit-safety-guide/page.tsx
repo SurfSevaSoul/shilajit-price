@@ -10,7 +10,7 @@ const POST_URL = `${BASE_URL}/blog/shilajit-safety-guide`;
 export const metadata: Metadata = {
   title: "Is Shilajit Safe? FDA Warnings, Heavy Metals & What the Data Shows (2026)",
   description:
-    "Is shilajit safe? We reviewed FDA guidance, NCCIH warnings, and lab data from 5 verified brands. Here's what the science actually says — and how to find a clean product.",
+    "Which shilajit brands pass heavy metals testing — and which don't? We reviewed COA data from 6 brands so you know exactly what you're buying.",
   keywords:
     "is shilajit safe, shilajit safety, shilajit side effects, shilajit heavy metals, shilajit FDA approved, shilajit Memorial Sloan Kettering, who should not take shilajit",
   alternates: { canonical: POST_URL },
