@@ -10,8 +10,9 @@ import Footer from "../components/Footer";
 const SELECTOR_BRANDS = [
   { slug: "black-lotus", name: "Black Lotus Shilajit", tier: "S", fa: "64–74% (by form)", ppg: "$1.23/g", origin: "Altai Mountains, Siberia", coa: "Full-panel 3rd-party (IAS Labs)", gmp: true, ship: true },
   { slug: "lotus-blooming-herbs", name: "Lotus Blooming Herbs", tier: "S", fa: "Not disclosed", ppg: "See site", origin: "Himalayan Mountains, 16,000–18,000ft", coa: "Certified Laboratories Burbank (A2LA ISO 17025)", gmp: true, ship: false },
-  { slug: "pure-himalayan", name: "Pure Himalayan Shilajit", tier: "S", fa: "58% (2021)", ppg: "$1.33/g", origin: "Himalayas & Altai", coa: "A2LA ISO/IEC 17025 Accredited", gmp: true, ship: true },
-  { slug: "natural-shilajit", name: "Natural Shilajit", tier: "S", fa: "Not Disclosed", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "DaaneLabs + Harken Research", gmp: true, ship: false },
+  { slug: "pure-himalayan", name: "Pure Himalayan Shilajit", tier: "A", fa: "~58% (2021 COA)", ppg: "$1.33/g", origin: "Himalayan Mountains, 16,000+ ft", coa: "Certified Laboratories + MQL, Burbank CA (A2LA ISO 17025)", gmp: true, ship: true },
+  { slug: "natural-shilajit", name: "Natural Shilajit", tier: "A", fa: "Not Disclosed", ppg: "$2.45/g", origin: "UNESCO Altai Mountains", coa: "DaaneLabs (Naples, FL) + Harken Research (Los Angeles, CA)", gmp: true, ship: false },
+  { slug: "fractal-forest", name: "Fractal Forest", tier: "A", fa: "71.31% (Wild American Drops)", ppg: "15% off w/ SHILAJIT-PRICE", origin: "Himalayan / North American", coa: "Certified Laboratories, Burbank CA (A2LA ISO 17025)", gmp: true, ship: false },
   { slug: "purblack", name: "Pürblack", tier: "A", fa: "Not Reported — DBP verified", ppg: "$3.11/g", origin: "Caucasus, Siberia, Himalayas", coa: "Pürblack Inc., Temecula CA", gmp: true, ship: false },
   { slug: "sayan", name: "Sayan Health", tier: "A", fa: "~32%", ppg: "$1.33/g", origin: "Altai Mountains, Siberia", coa: "ISO-accredited Lab", gmp: false, ship: true },
   { slug: "primavie", name: "PrimaVie®", tier: "A", fa: "50% (std.)", ppg: "$1.50/g", origin: "Himalayas (India)", coa: "BSCG + ISO/IEC", gmp: true, ship: true },
@@ -28,6 +29,10 @@ const VALID_MATCHUPS = new Set([
   "purblack-vs-black-lotus",
   "purblack-vs-natural-shilajit",
   "purblack-vs-pure-himalayan",
+  "fractal-forest-vs-black-lotus",
+  "fractal-forest-vs-lotus-blooming",
+  "fractal-forest-vs-pure-himalayan",
+  "fractal-forest-vs-purblack",
 ]);
 
 function getMatchupSlug(a: string, b: string): string | null {
@@ -598,6 +603,10 @@ export default function ComparePage() {
           <p className="text-xs text-[#7BA899] mb-4">Deep-dive head-to-head analysis with verdict, side-by-side tables, and FAQs.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
             {[
+              { slug: "fractal-forest-vs-black-lotus", label: "Fractal Forest vs Black Lotus" },
+              { slug: "fractal-forest-vs-lotus-blooming", label: "Fractal Forest vs Lotus Blooming Herbs" },
+              { slug: "fractal-forest-vs-pure-himalayan", label: "Fractal Forest vs Pure Himalayan" },
+              { slug: "fractal-forest-vs-purblack", label: "Fractal Forest vs Pürblack" },
               { slug: "lotus-blooming-vs-black-lotus", label: "Lotus Blooming Herbs vs Black Lotus" },
               { slug: "lotus-blooming-vs-pure-himalayan", label: "Lotus Blooming Herbs vs Pure Himalayan" },
               { slug: "lotus-blooming-vs-natural-shilajit", label: "Lotus Blooming Herbs vs Natural Shilajit" },
