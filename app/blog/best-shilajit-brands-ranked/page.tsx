@@ -121,6 +121,19 @@ const TOP_BRANDS = [
   },
   {
     rank: 4,
+    name: "Pure Himalayan Shilajit",
+    tier: "A",
+    tierColor: "bg-emerald-500 text-white",
+    pricePerGram: "$1.33",
+    fulvic: "~58%",
+    coa: true,
+    thirdParty: false,
+    source: "Himalayan",
+    verdict: "Reliable Himalayan resin — ~58% fulvic acid verified by COA, clean heavy metals, honest pricing",
+    affiliate: `https://www.purehimalayanshilajit.com/?ref=4792`,
+  },
+  {
+    rank: 5,
     name: "Essencraft",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
@@ -133,7 +146,7 @@ const TOP_BRANDS = [
     affiliate: `https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20`,
   },
   {
-    rank: 5,
+    rank: 6,
     name: "PrimaVie (Jarrow)",
     tier: "B",
     tierColor: "bg-blue-500 text-white",
@@ -146,7 +159,7 @@ const TOP_BRANDS = [
     affiliate: `https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20`,
   },
   {
-    rank: 6,
+    rank: 7,
     name: "Pürblack",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
@@ -388,27 +401,34 @@ export default function BestShilajitBrandsRanked() {
           </div>
         </section>
 
-        {/* #5–7 briefer */}
+        {/* #4–7 briefer */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#4–6: The best of the rest</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#4–7: The best of the rest</h2>
           <div className="space-y-4">
             {[
               {
                 rank: "#4",
+                name: "Pure Himalayan Shilajit",
+                color: "border-[#D1EDD8]",
+                verdict: "A reliable Himalayan resin with ~58% fulvic acid backed by a COA, clean heavy metals results, and straightforward honest pricing. Fulvic acid is not independently third-party verified but the COA documentation is available and the heavy metals panel is clean. A solid A-tier pick for buyers who want Himalayan sourcing at a competitive price point.",
+                review: { href: "/blog/pure-himalayan-shilajit-review", text: "Pure Himalayan Shilajit review" },
+              },
+              {
+                rank: "#5",
                 name: "Essencraft",
                 color: "border-blue-700/40",
                 verdict: "A premium-priced Himalayan resin with 78.49% fulvic acid verified by Eurofins (ISO 17025 certified, Batch 205153, June 2024) — one of the highest independently confirmed figures we've seen. Heavy metals results are reported as pass/fail rather than exact ppm values, which is a minor transparency gap, but the overall documentation quality is strong. Best for buyers who want a verified high-fulvic-acid number and don't mind paying a small premium.",
                 review: undefined,
               },
               {
-                rank: "#5",
+                rank: "#6",
                 name: "PrimaVie / Jarrow Formulas",
                 color: "border-amber-200",
                 verdict: "PrimaVie is the most research-backed shilajit extract in capsule form, with multiple human clinical trials. It's a standardized extract rather than raw resin, so bioavailability may differ. GMP certified, broadly available, and the safest choice for those who prefer a capsule with clinical validation.",
                 review: undefined,
               },
               {
-                rank: "#6",
+                rank: "#7",
                 name: "Pürblack",
                 color: "border-purple-200",
                 verdict: "Pürblack takes a fundamentally different approach to quality differentiation: rather than competing on fulvic acid percentage, they measure Dibenzo-α-pyrones (DBP content at 16.5–21.9%) and Urolithin A (up to 58.497 ppm) — biomarkers associated with mitochondrial and cellular health that most brands don't report at all. Their resin is backed by 5 US patents and manufactured in a US pharmaceutical-grade facility, making it the most research-grade option in the market. Discount code SHILAJIT15 gives 15% off.",
