@@ -171,6 +171,19 @@ const TOP_BRANDS = [
     verdict: "Best premium resin — differentiated by DBP content (16.5–21.9%) and Urolithin A (up to 58.497 ppm), 5 patents, research-grade",
     affiliate: `https://purblack.pxf.io/c/7221460/3041684/36963`,
   },
+  {
+    rank: 8,
+    name: "Fractal Forest",
+    tier: "A",
+    tierColor: "bg-emerald-500 text-white",
+    pricePerGram: "$1.57",
+    fulvic: "71.31%",
+    coa: true,
+    thirdParty: true,
+    source: "Himalayan / North American",
+    verdict: "Best liquid drops — unique format, Himalayan Drops have all heavy metals ND on A2LA ISO 17025 certified lab, cleanest result of any product on site",
+    affiliate: `https://fractalforest.co/SHILAJIT-PRICE`,
+  },
 ];
 
 export default function BestShilajitBrandsRanked() {
@@ -401,9 +414,9 @@ export default function BestShilajitBrandsRanked() {
           </div>
         </section>
 
-        {/* #4–7 briefer */}
+        {/* #4–8 briefer */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#4–7: The best of the rest</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#4–8: The best of the rest</h2>
           <div className="space-y-4">
             {[
               {
@@ -433,6 +446,13 @@ export default function BestShilajitBrandsRanked() {
                 color: "border-purple-200",
                 verdict: "Pürblack takes a fundamentally different approach to quality differentiation: rather than competing on fulvic acid percentage, they measure Dibenzo-α-pyrones (DBP content at 16.5–21.9%) and Urolithin A (up to 58.497 ppm) — biomarkers associated with mitochondrial and cellular health that most brands don't report at all. Their resin is backed by 5 US patents and manufactured in a US pharmaceutical-grade facility, making it the most research-grade option in the market. Discount code SHILAJIT15 gives 15% off.",
                 review: { href: "/blog/purblack-shilajit-review", text: "Pürblack shilajit review" },
+              },
+              {
+                rank: "#8",
+                name: "Fractal Forest",
+                color: "border-teal-300",
+                verdict: "Fractal Forest is the only brand on this list offering liquid drops alongside traditional resin. Their Himalayan Drops had all four heavy metals completely undetected on A2LA ISO 17025 certified testing from Certified Labs — the cleanest result of any product we have reviewed. Wild American Drops are North American sourced, a unique option for buyers who prefer domestic origin. Use code SHILAJIT-PRICE for a discount.",
+                review: undefined,
               },
             ].map(({ rank, name, color, verdict, review }) => (
               <div key={rank} className={`bg-white border ${color} rounded-xl p-5`}>
