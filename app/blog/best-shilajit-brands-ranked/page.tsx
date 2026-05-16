@@ -58,7 +58,7 @@ const faqItems: FaqItem[] = [
     name: "What is the best shilajit brand on Amazon?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "On Amazon, Sayan Shilajit and Natural Shilajit RS rank among the best based on verified COA availability, customer review volume, and published fulvic acid content. However, the best shilajit brands — including Black Lotus — often sell direct-to-consumer, which allows them to maintain stricter quality control and provide more transparent documentation than marketplace listings.",
+      text: "For Amazon buyers, PrimaVie by Jarrow Formulas is the most clinically studied option. For the best overall value we recommend checking Natural Shilajit directly at naturalshilajit.com.",
     },
   },
   {
@@ -108,29 +108,16 @@ const TOP_BRANDS = [
   },
   {
     rank: 3,
-    name: "Sayan Shilajit",
-    tier: "A",
-    tierColor: "bg-emerald-500 text-white",
-    pricePerGram: "$0.87",
-    fulvic: "~60%",
-    coa: true,
-    thirdParty: false,
-    source: "Siberian Altai",
-    verdict: "Best budget pick — COA available, wide size range, good Amazon presence",
-    affiliate: `https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20`,
-  },
-  {
-    rank: 4,
     name: "Natural Shilajit",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
-    pricePerGram: "$1.08",
-    fulvic: "Not Disclosed",
+    pricePerGram: "$1.20",
+    fulvic: "Not disclosed",
     coa: true,
     thirdParty: true,
-    source: "UNESCO Altai Mountains, Siberia",
-    verdict: "Strong A-tier — third-party tested, DBP verified, transparent brand",
-    affiliate: `https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20`,
+    source: "Himalayan",
+    verdict: "Best value pick — rigorously tested, transparent sourcing, no fillers or additives",
+    affiliate: `https://naturalshilajit.com/?rfsn=9069392.c841fa`,
   },
   {
     rank: 5,
@@ -138,11 +125,11 @@ const TOP_BRANDS = [
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
     pricePerGram: "$1.43",
-    fulvic: "75%+",
+    fulvic: "78.49%",
     coa: true,
     thirdParty: true,
     source: "Himalaya",
-    verdict: "Premium transparency — 75% FA, heavy metals tested, slight price premium justified",
+    verdict: "Premium transparency — 78.49% fulvic acid verified by Eurofins ISO 17025, all four heavy metals passed independent testing",
     affiliate: `https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20`,
   },
   {
@@ -157,6 +144,19 @@ const TOP_BRANDS = [
     source: "India (licensed)",
     verdict: "Best capsule standardized extract — patented PrimaVie extract, GMP certified, widely studied",
     affiliate: `https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20`,
+  },
+  {
+    rank: 7,
+    name: "Pürblack",
+    tier: "A",
+    tierColor: "bg-emerald-500 text-white",
+    pricePerGram: "N/A",
+    fulvic: "Not reported",
+    coa: true,
+    thirdParty: true,
+    source: "Himalayan/Altai blend",
+    verdict: "Best premium resin — differentiated by DBP content (16.5–21.9%) and Urolithin A (up to 58.497 ppm), 5 patents, research-grade",
+    affiliate: `https://purblack.pxf.io/c/7221460/3041684/36963`,
   },
 ];
 
@@ -372,36 +372,32 @@ export default function BestShilajitBrandsRanked() {
           </div>
         </section>
 
-        {/* #3 Sayan */}
+        {/* #3 Natural Shilajit */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#3 Best Budget Pick: Sayan Shilajit</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#3 Best Value Pick: Natural Shilajit</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Sayan is a Siberian-sourced shilajit brand with a genuine COA and a strong Amazon track record. At under $1/gram across their larger sizes, they offer genuine value for cost-conscious buyers who still want documentation. Their fulvic acid content (~60%) is lower than Black Lotus but still in a legitimate therapeutic range.
+              Natural Shilajit is a well-tested Himalayan resin with transparent sourcing and a strong commitment to purity. Their resin is sourced directly from the Himalayas with no fillers, additives, or artificial processing — what you get is pure, unprocessed shilajit resin backed by independent third-party documentation.
             </p>
             <p>
-              Their main limitation is the lack of independent third-party testing — their COA appears to be from an in-house or affiliated lab. The fulvic acid claims are plausible but not independently verified. For strict buyers, this is a dealbreaker. For budget-conscious buyers who still want a documented option, Sayan is the strongest entry-level pick.
+              Their Certificate of Analysis is produced by an independent third-party laboratory and covers heavy metals and contaminant screening. Fulvic acid content is not disclosed on their COA — rather than publishing an unverified figure, they let sourcing transparency and rigorous testing speak for itself. This is a principled position we see in a small number of quality brands.
+            </p>
+            <p>
+              At $1.20/gram, Natural Shilajit represents strong value among independently tested Himalayan resin options. For buyers who want documented quality without the premium pricing of our top two S-tier picks, this is the strongest A-tier choice available direct-to-consumer.
             </p>
           </div>
         </section>
 
-        {/* #4–6 briefer */}
+        {/* #5–7 briefer */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#4–6: The best of the rest</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">#5–7: The best of the rest</h2>
           <div className="space-y-4">
             {[
-              {
-                rank: "#4",
-                name: "Natural Shilajit",
-                color: "border-[#D1EDD8]",
-                verdict: "One of the stronger third-party-tested brands on Amazon. UNESCO Altai Mountains sourced, DBP verified, and a transparent COA make this a reliable A-tier pick at roughly $1.08/gram for their resin. Fulvic acid is not disclosed. Multiple size options and positive long-term customer reviews add confidence.",
-                review: { href: "/blog/natural-shilajit-review", text: "Natural Shilajit review" },
-              },
               {
                 rank: "#5",
                 name: "Essencraft",
                 color: "border-blue-700/40",
-                verdict: "A premium-priced Himalayan resin with 75%+ fulvic acid and heavy metals testing. Slightly higher $/gram than our top two picks but justifies it with quality documentation. Best for buyers who want maximum transparency and don't mind paying a small premium.",
+                verdict: "A premium-priced Himalayan resin with 78.49% fulvic acid verified by Eurofins (ISO 17025 certified, Batch 205153, June 2024) — one of the highest independently confirmed figures we've seen. Heavy metals results are reported as pass/fail rather than exact ppm values, which is a minor transparency gap, but the overall documentation quality is strong. Best for buyers who want a verified high-fulvic-acid number and don't mind paying a small premium.",
                 review: undefined,
               },
               {
@@ -410,6 +406,13 @@ export default function BestShilajitBrandsRanked() {
                 color: "border-amber-200",
                 verdict: "PrimaVie is the most research-backed shilajit extract in capsule form, with multiple human clinical trials. It's a standardized extract rather than raw resin, so bioavailability may differ. GMP certified, broadly available, and the safest choice for those who prefer a capsule with clinical validation.",
                 review: undefined,
+              },
+              {
+                rank: "#7",
+                name: "Pürblack",
+                color: "border-purple-200",
+                verdict: "Pürblack takes a fundamentally different approach to quality differentiation: rather than competing on fulvic acid percentage, they measure Dibenzo-α-pyrones (DBP content at 16.5–21.9%) and Urolithin A (up to 58.497 ppm) — biomarkers associated with mitochondrial and cellular health that most brands don't report at all. Their resin is backed by 5 US patents and manufactured in a US pharmaceutical-grade facility, making it the most research-grade option in the market. Discount code SHILAJIT15 gives 15% off.",
+                review: { href: "/blog/purblack-shilajit-review", text: "Pürblack shilajit review" },
               },
             ].map(({ rank, name, color, verdict, review }) => (
               <div key={rank} className={`bg-white border ${color} rounded-xl p-5`}>
@@ -460,11 +463,10 @@ export default function BestShilajitBrandsRanked() {
             {[
               { type: "Best overall / highest quality", pick: "Black Lotus Shilajit Resin", reason: "S-tier, 64–74% FA (by form), third-party COA, $1.33/g" },
               { type: "Most traditional / Ayurvedic", pick: "Lotus Blooming Herbs Authentic Shilajit™", reason: "S-tier, Himalayan 16,000–18,000ft, A2LA ISO 17025, practitioner-owned" },
-              { type: "Best on a budget", pick: "Sayan Shilajit (large size)", reason: "A-tier, ~$0.87/g, COA available" },
+              { type: "Best value pick", pick: "Natural Shilajit", reason: "A-tier, rigorously tested, transparent sourcing" },
+              { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 78.49% FA (Eurofins ISO 17025), heavy metals tested" },
               { type: "Best capsule (standardized extract)", pick: "Jarrow PrimaVie", reason: "B-tier, clinically studied, GMP certified" },
-              { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 75%+ FA, heavy metals tested" },
-              { type: "Best for high review count + Amazon Prime", pick: "Natural Shilajit RS", reason: "A-tier, third-party tested, 4.4★ on Amazon" },
-              { type: "Best for US patents + pharma-grade manufacturing", pick: "Pürblack True Gold", reason: "A-tier, 5 US patents, US pharmaceutical facility" },
+              { type: "Best premium research-grade resin", pick: "Pürblack", reason: "A-tier, patented, DBP and Urolithin A verified" },
             ].map(({ type, pick, reason }) => (
               <div key={type} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 bg-white border border-[#D1EDD8] rounded-xl px-4 py-3">
                 <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-wider sm:w-44 shrink-0">{type}</span>
