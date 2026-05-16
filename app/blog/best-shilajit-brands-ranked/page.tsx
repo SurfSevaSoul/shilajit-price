@@ -272,13 +272,16 @@ export default function BestShilajitBrandsRanked() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">#1 Best Overall: Black Lotus Shilajit</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Black Lotus earns the top spot because they do something remarkably rare in this market: they publish everything. Their Certificate of Analysis is linked directly to specific product lot numbers, tested by an independent ISO-accredited laboratory, and shows specific measured values — not just &quot;pass.&quot;
+              Black Lotus earns the top spot because they do something remarkably rare in this market: they publish everything. Their Certificate of Analysis is linked directly to specific product lot numbers, tested by an independent ISO-accredited laboratory, and shows specific measured values — not just &quot;pass.&quot; Not sure what each field means?{" "}
+              <Link href="/blog/how-to-read-shilajit-coa" className="text-[#10B981] hover:underline font-semibold">Our COA reading guide</Link>{" "}
+              breaks down what to look for.
             </p>
             <p>
               The independently tested fulvic acid content ranges from 64.51% (resin) to 74.30% (capsules) depending on product form — per Batch 93 COA from IAS Laboratories. Their source is specified to altitude (above 14,000 feet in the Altai Mountains), collection method disclosed, and purification is described as cold-process water filtration — the method that best preserves bioactive compounds.
             </p>
             <p>
-              At $39.99 for 30g of resin ($1.33/gram), they&apos;re not the cheapest. But when you account for the fulvic acid concentration, you&apos;re getting more bioactive material per dollar than most products priced similarly. Their capsule option at $34.99 provides cost-per-serving comparable to many B-tier competitors.
+              At $39.99 for 30g of resin ($1.33/gram), they&apos;re not the cheapest. But when you account for the fulvic acid concentration, you&apos;re getting more bioactive material per dollar than most products priced similarly. Their capsule option at $34.99 provides cost-per-serving comparable to many B-tier competitors. For a deeper look at sourcing, testing methodology, and value,{" "}
+              <Link href="/blog/black-lotus-shilajit-review" className="text-[#10B981] hover:underline font-semibold">read our full Black Lotus Shilajit review</Link>.
             </p>
           </div>
         </section>
@@ -392,26 +395,35 @@ export default function BestShilajitBrandsRanked() {
                 name: "Natural Shilajit",
                 color: "border-[#D1EDD8]",
                 verdict: "One of the stronger third-party-tested brands on Amazon. UNESCO Altai Mountains sourced, DBP verified, and a transparent COA make this a reliable A-tier pick at roughly $1.08/gram for their resin. Fulvic acid is not disclosed. Multiple size options and positive long-term customer reviews add confidence.",
+                review: { href: "/blog/natural-shilajit-review", text: "Natural Shilajit review" },
               },
               {
                 rank: "#5",
                 name: "Essencraft",
                 color: "border-blue-700/40",
                 verdict: "A premium-priced Himalayan resin with 75%+ fulvic acid and heavy metals testing. Slightly higher $/gram than our top two picks but justifies it with quality documentation. Best for buyers who want maximum transparency and don't mind paying a small premium.",
+                review: undefined,
               },
               {
                 rank: "#6",
                 name: "PrimaVie / Jarrow Formulas",
                 color: "border-amber-200",
                 verdict: "PrimaVie is the most research-backed shilajit extract in capsule form, with multiple human clinical trials. It's a standardized extract rather than raw resin, so bioavailability may differ. GMP certified, broadly available, and the safest choice for those who prefer a capsule with clinical validation.",
+                review: undefined,
               },
-            ].map(({ rank, name, color, verdict }) => (
+            ].map(({ rank, name, color, verdict, review }) => (
               <div key={rank} className={`bg-white border ${color} rounded-xl p-5`}>
                 <div className="flex items-center gap-2 mb-2">
                   <span className="text-sm font-black text-[#10B981]">{rank}</span>
                   <h3 className="text-sm font-bold text-[#0D1F14]">{name}</h3>
                 </div>
                 <p className="text-xs text-[#0D1F14] leading-relaxed">{verdict}</p>
+                {review && (
+                  <p className="text-xs text-[#7BA899] mt-1.5">
+                    Read our full{" "}
+                    <Link href={review.href} className="text-[#10B981] hover:underline font-semibold">{review.text}</Link>.
+                  </p>
+                )}
               </div>
             ))}
           </div>
@@ -422,7 +434,8 @@ export default function BestShilajitBrandsRanked() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Brands to avoid in 2026</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Without naming specific brands, here are the profiles of products that routinely score poorly in our database:
+              Without naming specific brands, here are the profiles of products that routinely score poorly in our database — for what levels actually matter, see our{" "}
+              <Link href="/blog/shilajit-safety-guide" className="text-[#10B981] hover:underline font-semibold">heavy metals safety guide</Link>:
             </p>
             <div className="space-y-3">
               {[
@@ -462,7 +475,7 @@ export default function BestShilajitBrandsRanked() {
           </div>
           <p className="text-xs text-[#7BA899] mt-4 leading-relaxed">
             New to Pürblack? Read our in-depth{" "}
-            <a href="/blog/purblack-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Pürblack shilajit review — 5 patents, True Gold, and who it&apos;s worth it for</a>.
+            <Link href="/blog/purblack-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Pürblack shilajit review — 5 patents, True Gold, and who it&apos;s worth it for</Link>.
           </p>
           <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
             Looking for a Himalayan option with Ayurvedic practitioner ownership and A2LA ISO 17025 lab verification? See{" "}
@@ -478,6 +491,20 @@ export default function BestShilajitBrandsRanked() {
             Comparing resin, powder, and capsules? See our{" "}
             <Link href="/blog/shilajit-powder-vs-resin" className="text-[#10B981] hover:underline font-semibold">full breakdown of every shilajit format including powder</Link>{" "}
             — with COA data compared across formats and a processing method explainer.
+          </p>
+          <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
+            Interested in the Himalayan sourced option with A2LA ISO 17025 lab verification at ~58% fulvic acid? See our{" "}
+            <Link href="/blog/pure-himalayan-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Pure Himalayan Shilajit review</Link>{" "}
+            — covering sourcing, COA data, and how it compares to higher-ranked resin options.
+          </p>
+          <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
+            Specifically shopping for testosterone support? We ranked every shilajit brand by COA quality and fulvic acid concentration in our guide to the{" "}
+            <Link href="/blog/best-shilajit-for-testosterone" className="text-[#10B981] hover:underline font-semibold">best shilajit for testosterone</Link>.
+          </p>
+          <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
+            Only want resin? See our dedicated ranking of the{" "}
+            <Link href="/blog/best-shilajit-resin-brands" className="text-[#10B981] hover:underline font-semibold">best shilajit resin brands</Link>{" "}
+            — sorted by fulvic acid content, source altitude, and lab verification standard.
           </p>
         </section>
       </BlogPostLayout>
