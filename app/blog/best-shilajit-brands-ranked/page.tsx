@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ChecklistDownload from "../../components/ChecklistDownload";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 
 const AFFILIATE_BASE = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
@@ -349,6 +350,8 @@ export default function BestShilajitBrandsRanked() {
           </div>
           <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
         </div>
+
+        <ChecklistDownload location="ranked_post" />
 
         {/* #2 Lotus Blooming Herbs */}
         <section>

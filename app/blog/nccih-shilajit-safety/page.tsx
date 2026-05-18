@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 const AFFILIATE_BL =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
@@ -494,6 +495,8 @@ export default function NccihShilajitSafety() {
             Affiliate link — commission earned at no extra cost to you
           </p>
         </div>
+
+        <ChecklistDownload location="nccih_post" />
 
         {/* LBH */}
         <div className="bg-white border-2 border-amber-200 rounded-2xl p-6 shadow-sm hover:border-amber-300 transition-colors mb-4">

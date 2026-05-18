@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 import PureHimalayanCTA from "../../components/blog/PureHimalayanCTA";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const BASE_URL = "https://www.shilajitprice.com";
@@ -646,6 +647,8 @@ export default function ShilajitSafetyGuide() {
         subtext="The only brand in our database with ISO/IEC 17025 accredited lab verification — the highest internationally recognized standard for testing competence. Full heavy metals panel, actual measured values, up to 99.9% purity."
         buttonText="Shop Pure Himalayan Resin — $39.99 →"
       />
+
+      <ChecklistDownload location="safety_guide" />
 
       {/* LBH Safety CTA */}
       <div className="bg-amber-50/40 border-2 border-amber-200 rounded-2xl p-6 shadow-sm">

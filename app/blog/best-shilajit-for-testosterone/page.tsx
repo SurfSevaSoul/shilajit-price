@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 import BlogCTA from "../../components/blog/BlogCTA";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 const AFFILIATE_RESIN =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
@@ -308,6 +309,8 @@ export default function BestShilajitForTestosterone() {
             <p className="text-center text-[10px] text-[#7BA899] mt-2">Affiliate link — commission earned at no extra cost to you</p>
           </div>
         </section>
+
+        <ChecklistDownload location="testosterone_post" />
 
         {/* LBH Featured */}
         <section>

@@ -10,6 +10,7 @@ import DealCard from "./components/DealCard";
 import HowItWorks from "./components/HowItWorks";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
+import ChecklistDownload from "./components/ChecklistDownload";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const PAGE_SIZE = 12;
@@ -814,6 +815,11 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
             </div>
           </div>
         </section>
+
+        {/* ── CHECKLIST DOWNLOAD ───────────────────────────────────────────── */}
+        <div className="max-w-2xl mx-auto px-4 sm:px-6">
+          <ChecklistDownload location="homepage" />
+        </div>
 
         {/* ── 6. SHILAJIT BUYING GUIDES ────────────────────────────────────── */}
         <section className="py-16 bg-white border-t border-[#D1EDD8]">

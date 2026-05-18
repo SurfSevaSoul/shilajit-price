@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 // Affiliate constants
 const AFFILIATE_RESIN =
@@ -582,6 +583,8 @@ export default function BlackLotusShilajitReview() {
             See all Black Lotus products →
           </a>
         </div>
+
+        <ChecklistDownload location="bl_review" />
       </BlogPostLayout>
   );
 }

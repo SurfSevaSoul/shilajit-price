@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 const AFFILIATE_BL = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
@@ -669,6 +670,8 @@ export default function ShilajitHeavyMetalsComparison() {
           ))}
         </div>
       </section>
+
+      <ChecklistDownload location="heavy_metals_post" />
 
       {/* Conclusion */}
       <section>
