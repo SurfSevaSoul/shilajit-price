@@ -713,6 +713,10 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
               <a href="/quiz" className="text-[#10B981] hover:text-[#182B1F] font-semibold transition-colors underline underline-offset-2 decoration-[#9EC9AD]">
                 Get a personalized pick →
               </a>
+              {" · "}
+              <a href="https://www.amazon.com/s?k=shilajit&tag=shilajit0a-20" target="_blank" rel="noopener noreferrer sponsored" className="hover:text-[#0D1F14] transition-colors">
+                Also available on Amazon
+              </a>
             </p>
 
             {/* Main content: sidebar + grid */}
