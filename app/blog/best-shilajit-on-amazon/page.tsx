@@ -3,8 +3,8 @@ import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 
 // ── Affiliate constants ────────────────────────────────────────────────────
-const PRIMAVIE_AMAZON = "https://www.amazon.com/dp/B08NZ39J8D?tag=shilajit0a-20";
-const SAYAN_AMAZON = "https://www.amazon.com/dp/B072BY1WLK?tag=shilajit0a-20";
+const PRIMAVIE_AMAZON = "https://www.amazon.com/dp/B08NZ39J8D?tag=shilajitprice-20";
+const SAYAN_AMAZON = "https://www.amazon.com/dp/B072BY1WLK?tag=shilajitprice-20";
 const BL_DIRECT =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
 const NS_DIRECT =

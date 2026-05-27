@@ -112,7 +112,7 @@ const TOP_SOURCES = [
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
     verdict: "Strong Amazon option — third-party COA, US distribution, Himalayan source, good review history",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
     showBoth: false,
   },
   {
@@ -127,7 +127,7 @@ const TOP_SOURCES = [
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
     verdict: "Premium Amazon option — 75%+ FA, heavy metals tested, full documentation. Higher $/gram but justified quality",
-    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajitprice-20",
     showBoth: false,
   },
   {
@@ -142,7 +142,7 @@ const TOP_SOURCES = [
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
     verdict: "Best budget US option — COA available, legitimate brand, strong Amazon presence, lowest $/gram with documentation",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
     showBoth: false,
   },
   {
@@ -157,7 +157,7 @@ const TOP_SOURCES = [
     tier: "B",
     tierColor: "bg-blue-500 text-white",
     verdict: "Best clinically-studied option — patented PrimaVie extract, GMP certified, widely distributed, research-backed dosing",
-    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajitprice-20",
     showBoth: false,
   },
 ];

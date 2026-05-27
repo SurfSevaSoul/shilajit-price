@@ -38,7 +38,7 @@ export function getAffiliateName(href: string): AffiliateName | null {
   if (href.includes("fractalforest")) {
     return "Fractal Forest";
   }
-  if (href.includes("shilajit0a-20") || href.includes("amzn.to")) {
+  if (href.includes("shilajitprice-20") || href.includes("amzn.to")) {
     return "Amazon";
   }
   return null;

@@ -11,7 +11,7 @@ const POST_URL = `${BASE_URL}/blog/${SLUG}`;
 const LINKS = {
   blCapsules: "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE",
   nsVegtabs: "https://naturalshilajit.com/?rfsn=9069392.c841fa",
-  primavie: "https://www.amazon.com/dp/B078K1F7ZK?tag=shilajit0a-20",
+  primavie: "https://www.amazon.com/dp/B078K1F7ZK?tag=shilajitprice-20",
 };
 
 export const metadata: Metadata = {

@@ -112,7 +112,7 @@ const TOP_PICKS = [
     pricePerGram: "$1.08",
     coaVerified: true,
     verdict: "Third-party tested A-tier with 70%+ FA — strong energy-support option at a lower price point",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
   },
   {
     rank: 4,
@@ -123,7 +123,7 @@ const TOP_PICKS = [
     pricePerGram: "$0.71",
     coaVerified: true,
     verdict: "Best budget energy pick — lowest $/gram with COA, adequate FA for basic mitochondrial support",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
   },
   {
     rank: 5,
@@ -134,7 +134,7 @@ const TOP_PICKS = [
     pricePerGram: "N/A",
     coaVerified: true,
     verdict: "Clinically studied standardized extract — the research-grade capsule option with proven energy markers",
-    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajitprice-20",
   },
 ];
 

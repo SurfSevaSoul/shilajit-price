@@ -9,7 +9,7 @@ import {
 } from "@/app/data/products";
 
 // ── Affiliate helpers ──────────────────────────────────────────────────────
-const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=shilajit0a-20`;
+const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=shilajitprice-20`;
 
 // ── Brand data ─────────────────────────────────────────────────────────────
 interface BrandData {

@@ -107,7 +107,7 @@ const TOP_PICKS = [
     coaVerified: true,
     thirdParty: true,
     verdict: "Strong third-party-tested option — DBP verified, UNESCO Altai sourced, A-tier with rigorous testing methodology",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
     cta: "Check on Amazon →",
   },
   {
@@ -120,7 +120,7 @@ const TOP_PICKS = [
     coaVerified: true,
     thirdParty: true,
     verdict: "Premium-priced with 75%+ FA and heavy metals testing — justified quality documentation",
-    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajitprice-20",
     cta: "Check on Amazon →",
   },
   {
@@ -133,7 +133,7 @@ const TOP_PICKS = [
     coaVerified: true,
     thirdParty: false,
     verdict: "Best budget option — lower fulvic acid but COA-backed and the best $/gram in its tier",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
     cta: "Check on Amazon →",
   },
   {
@@ -146,7 +146,7 @@ const TOP_PICKS = [
     coaVerified: true,
     thirdParty: true,
     verdict: "Patented standardized extract used in clinical trials — best capsule option for those who want proven research-grade dosing",
-    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajitprice-20",
     cta: "Check on Amazon →",
   },
 ];

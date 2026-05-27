@@ -123,7 +123,7 @@ const UNDER_50_PICKS = [
     coa: true,
     thirdParty: true,
     verdict: "Third-party tested A-tier under $30 — higher $/gram but genuine quality with COA accessible.",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
     badge: "Best Amazon Pick",
   },
   {
@@ -138,7 +138,7 @@ const UNDER_50_PICKS = [
     coa: true,
     thirdParty: false,
     verdict: "Lowest $/gram with a COA — good budget entry point for first-time buyers, lower FA than premium options.",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
     badge: "Best Budget",
   },
   {
@@ -153,7 +153,7 @@ const UNDER_50_PICKS = [
     coa: true,
     thirdParty: true,
     verdict: "High purity in a small trial size — ideal for testing quality before committing to a larger purchase.",
-    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajitprice-20",
     badge: "Best Trial Size",
   },
 ];

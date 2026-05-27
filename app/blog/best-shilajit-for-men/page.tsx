@@ -111,7 +111,7 @@ const TOP_PICKS = [
     fulvic: "Not Disclosed",
     pricePerGram: "$1.08",
     verdict: "Best Amazon alternative — DBP verified, UNESCO Altai source, triple-method COA, strong review history",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
   },
   {
     rank: 4,
@@ -121,7 +121,7 @@ const TOP_PICKS = [
     fulvic: "75%+",
     pricePerGram: "$1.43",
     verdict: "Premium transparency pick — 75%+ FA, heavy metals tested, full documentation",
-    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B0897H2SFN?tag=shilajitprice-20",
   },
   {
     rank: 5,
@@ -131,7 +131,7 @@ const TOP_PICKS = [
     fulvic: "~60%",
     pricePerGram: "$0.71",
     verdict: "Best budget for men — lowest $/gram with a COA, good for those prioritizing cost over max potency",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
   },
 ];
 

@@ -707,7 +707,7 @@ export default function ShilajitBeginnersGuide() {
                     is well above the average Amazon listing.
                   </p>
                   <a
-                    href="https://www.amazon.com/dp/B072BY1WLK?tag=shilajit0a-20"
+                    href="https://www.amazon.com/dp/B072BY1WLK?tag=shilajitprice-20"
                     target="_blank"
                     rel="noopener noreferrer sponsored"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border-2 border-[#D1EDD8] hover:border-[#10B981] text-[#0D1F14] text-xs font-semibold transition-colors"

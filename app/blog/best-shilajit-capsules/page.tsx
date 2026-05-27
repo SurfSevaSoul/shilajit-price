@@ -14,7 +14,7 @@ const LINKS = {
   nsVegtabs: "https://naturalshilajit.com/products/vegtabs?rfsn=9069392.c841fa",
   nsSunDried: "https://naturalshilajit.com/products/natural-shilajit-sun-dried-tablets-120-pcs?rfsn=9069392.c841fa",
   phTablets: "https://www.purehimalayanshilajit.com/himalayan-shilajit-tablets/?ref=4792",
-  primavie: "https://www.amazon.com/dp/B078K1F7ZK?tag=shilajit0a-20",
+  primavie: "https://www.amazon.com/dp/B078K1F7ZK?tag=shilajitprice-20",
 };
 
 export const metadata: Metadata = {

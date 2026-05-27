@@ -714,7 +714,7 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
                 Get a personalized pick →
               </a>
               {" · "}
-              <a href="https://www.amazon.com/s?k=shilajit&tag=shilajit0a-20" target="_blank" rel="noopener noreferrer sponsored" className="hover:text-[#0D1F14] transition-colors">
+              <a href="https://www.amazon.com/s?k=shilajit&tag=shilajitprice-20" target="_blank" rel="noopener noreferrer sponsored" className="hover:text-[#0D1F14] transition-colors">
                 Also available on Amazon
               </a>
             </p>

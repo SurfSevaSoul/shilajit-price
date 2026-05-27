@@ -266,7 +266,7 @@ const OUTCOME_DATA: Record<
     badges: ["✓ COA Verified", "✓ BSCG Certified", "✓ cGMP"],
     primaryCta: {
       label: "Check Price →",
-      url: "https://www.amazon.com/dp/B08NZ39J8D?tag=shilajit0a-20",
+      url: "https://www.amazon.com/dp/B08NZ39J8D?tag=shilajitprice-20",
     },
     runnerUp: {
       name: "Pure Himalayan Shilajit",

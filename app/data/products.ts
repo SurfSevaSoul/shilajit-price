@@ -96,7 +96,7 @@ export const LOTUS_BLOOMING_HERBS_LINKS: Record<string, string> = {
   authenticShilajit: "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380",
 };
 
-const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=shilajit0a-20`;
+const amz = (asin: string) => `https://www.amazon.com/dp/${asin}?tag=shilajitprice-20`;
 
 export const PRODUCTS: Product[] = [
 

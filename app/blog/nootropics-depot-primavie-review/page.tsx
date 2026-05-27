@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 
-// Amazon Associates links (tag: shilajit0a-20) — no direct Nootropics Depot affiliate yet
+// Amazon Associates links (tag: shilajitprice-20) — no direct Nootropics Depot affiliate yet
 const ND_AMAZON =
-  "https://www.amazon.com/s?k=nootropics+depot+primavie+shilajit&tag=shilajit0a-20";
+  "https://www.amazon.com/s?k=nootropics+depot+primavie+shilajit&tag=shilajitprice-20";
 
 // Partner brand affiliate links
 const BL_BASE =
@@ -206,7 +206,7 @@ export default function NootropicsDepotPrimaVieReview() {
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
         <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page
-        are affiliate links. Amazon Associates links use tag shilajit0a-20 and earn a commission at
+        are affiliate links. Amazon Associates links use tag shilajitprice-20 and earn a commission at
         no extra cost to you. ShilajitPrice.com does not currently have a direct affiliate
         partnership with Nootropics Depot — we recommend checking their site directly for current
         pricing. See our{" "}
@@ -837,7 +837,7 @@ export default function NootropicsDepotPrimaVieReview() {
                 Find Nootropics Depot PrimaVie on Amazon →
               </a>
               <p className="text-[10px] text-[#7BA899] mt-1.5">
-                Amazon Associates link (tag: shilajit0a-20) — commission at no extra cost to you
+                Amazon Associates link (tag: shilajitprice-20) — commission at no extra cost to you
               </p>
             </div>
             <div className="bg-white border border-[#D1EDD8] rounded-xl p-4">

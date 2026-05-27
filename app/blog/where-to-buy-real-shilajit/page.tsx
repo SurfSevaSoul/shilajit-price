@@ -152,7 +152,7 @@ const TOP_VENDORS = [
     shipping: "Amazon Prime / standard",
     price: "$0.87+/gram",
     guarantee: "Amazon return policy",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
     highlight: false,
   },
   {
@@ -165,7 +165,7 @@ const TOP_VENDORS = [
     shipping: "Amazon Prime",
     price: "~$1.08/gram",
     guarantee: "Amazon return policy",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
     highlight: false,
   },
   {
@@ -178,7 +178,7 @@ const TOP_VENDORS = [
     shipping: "Amazon Prime / stores",
     price: "~$0.90/serving",
     guarantee: "Amazon return policy",
-    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajitprice-20",
     highlight: false,
   },
 ];

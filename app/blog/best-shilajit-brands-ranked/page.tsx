@@ -144,7 +144,7 @@ const TOP_BRANDS = [
     thirdParty: true,
     source: "Himalaya",
     verdict: "Premium transparency — 78.49% fulvic acid verified by Eurofins ISO 17025, all four heavy metals passed independent testing",
-    affiliate: `https://www.amazon.com/dp/B0897H2SFN?tag=shilajit0a-20`,
+    affiliate: `https://www.amazon.com/dp/B0897H2SFN?tag=shilajitprice-20`,
   },
   {
     rank: 6,
@@ -157,7 +157,7 @@ const TOP_BRANDS = [
     thirdParty: true,
     source: "India (licensed)",
     verdict: "Best capsule standardized extract — patented PrimaVie extract, GMP certified, widely studied",
-    affiliate: `https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajit0a-20`,
+    affiliate: `https://www.amazon.com/dp/B01NAMIYZ5?tag=shilajitprice-20`,
   },
   {
     rank: 7,

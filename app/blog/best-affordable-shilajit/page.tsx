@@ -111,7 +111,7 @@ const VALUE_PICKS = [
     thirdParty: false,
     badge: "Lowest $/gram",
     verdict: "The most affordable $/gram with documentation — best for long-term budget-conscious users who prioritize cost",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
   },
   {
     rank: 3,
@@ -143,7 +143,7 @@ const VALUE_PICKS = [
     thirdParty: true,
     badge: "Best Amazon Value",
     verdict: "Third-party tested A-tier at a competitive price — solid value for Amazon Prime shoppers",
-    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B07KXVHNMV?tag=shilajitprice-20",
   },
   {
     rank: 5,
@@ -159,7 +159,7 @@ const VALUE_PICKS = [
     thirdParty: false,
     badge: "Best Entry Price",
     verdict: "Cheapest COA-backed 30g resin — best entry-level choice for first-time buyers on a tight budget",
-    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajit0a-20",
+    affiliate: "https://www.amazon.com/dp/B01MS9E5A9?tag=shilajitprice-20",
   },
 ];
 
