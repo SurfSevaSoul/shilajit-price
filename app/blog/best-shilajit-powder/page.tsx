@@ -222,7 +222,12 @@ export default function BestShilajitPowder() {
           </p>
           <p>
             This guide applies the same standard used across our database: only products with
-            published, batch-specific COAs from accredited labs appear in the rankings. For our
+            published, batch-specific COAs from accredited labs appear in the rankings — consistent
+            with our main guide to the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">
+              best shilajit brands
+            </Link>{" "}
+            across all formats. For our
             full scoring methodology, see{" "}
             <Link href="/methodology" className="text-[#10B981] hover:underline">
               how we rank and score shilajit products →

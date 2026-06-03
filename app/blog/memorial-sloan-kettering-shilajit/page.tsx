@@ -123,7 +123,8 @@ export default function MemorialSloanKetteringShilajit() {
           MSK's database documents real concerns about shilajit: heavy metal contamination risk, limited human clinical evidence, absence of FDA approval, and specific cautions for pregnant and breastfeeding women. None of these concerns should be dismissed. They are accurate characterizations of the risk profile of <em>unverified shilajit</em> — and they explain why the shilajit market's quality gap is so consequential.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed">
-          The nuance that MSK's necessarily general database cannot fully address is the distinction between unverified products and brands that have specifically invested in third-party laboratory testing to address these exact concerns. This article explains what MSK actually documents, where those concerns apply most sharply, and what verifiable data exists to help buyers navigate the quality gap.
+          The nuance that MSK's necessarily general database cannot fully address is the distinction between unverified products and brands that have specifically invested in third-party laboratory testing to address these exact concerns. This article explains what MSK actually documents, where those concerns apply most sharply, and what verifiable data exists to help buyers navigate the quality gap. For brands that have specifically addressed MSK&apos;s testing concerns with published independent COA data, see{" "}
+          <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">our top shilajit picks</Link>.
         </p>
       </section>
 

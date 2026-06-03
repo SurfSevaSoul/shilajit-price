@@ -220,7 +220,11 @@ export default function BestShilajitTablets() {
             The catch is the same as with capsules: the format is opaque. A tablet filled with
             concentrated high-purity shilajit looks identical to a tablet filled with low-grade
             powder. The only way to tell the difference is a published Certificate of Analysis
-            from an accredited third-party lab. This guide ranks only products that meet that standard.
+            from an accredited third-party lab. This guide ranks only products that meet that standard —
+            the same standard applied across our guide to the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">
+              best shilajit on the market
+            </Link>.
           </p>
           <p>
             For our full scoring methodology, see{" "}

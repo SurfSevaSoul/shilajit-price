@@ -124,7 +124,12 @@ export default function ShilajitPowderVsResin() {
           <p>
             This post covers how each format is made, what the actual COA data shows across
             formats for the same brand, how to choose based on your priorities, and which
-            brands provide the most transparent format-specific testing. The data may
+            brands provide the most transparent format-specific testing — cross-referenced with
+            our full ranking of the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">
+              highest-rated shilajit
+            </Link>{" "}
+            brands. The data may
             surprise you — in one case, capsules test higher in fulvic acid percentage than
             the same brand&apos;s resin, and understanding why is key to making a good
             purchasing decision.

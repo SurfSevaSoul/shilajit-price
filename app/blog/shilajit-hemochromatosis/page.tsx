@@ -104,7 +104,9 @@ export default function ShilajitHemochromatosis() {
       <section>
         <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
           <p>
-            Shilajit is widely promoted for energy, vitality, and mineral replenishment — and for most healthy adults, those benefits come with a well-characterized safety profile. But for people managing hemochromatosis or other iron overload disorders, shilajit raises a specific and legitimate question that most supplement guides don&apos;t answer clearly: is it safe?
+            Shilajit is widely promoted for energy, vitality, and mineral replenishment — and for most healthy adults, those benefits come with a well-characterized safety profile when sourced from the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">best shilajit brands</Link>{" "}
+            that publish independent COA data. But for people managing hemochromatosis or other iron overload disorders, shilajit raises a specific and legitimate question that most supplement guides don&apos;t answer clearly: is it safe?
           </p>
           <p>
             The concern is not theoretical. Shilajit naturally contains iron from the mineral-rich mountain rock formations where it forms. More importantly, its primary active compound — fulvic acid — is a chelating agent documented to enhance mineral absorption across the gut lining. The combination of iron content and absorption enhancement creates a dual mechanism that warrants serious consideration for anyone whose body already accumulates iron in excess.

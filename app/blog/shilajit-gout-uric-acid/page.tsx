@@ -132,7 +132,9 @@ export default function ShilajitGoutUricAcid() {
             available evidence actually shows about shilajit&apos;s effects on uric acid, what the
             formal contraindication guidance says, the kidney stone connection, and practical
             steps for anyone with gout who is considering supplementing anyway and wants to
-            do so as safely as possible.
+            do so as safely as possible. For anyone cleared to supplement, our guide to the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">highest-rated shilajit</Link>{" "}
+            brands covers which products carry the cleanest heavy metals COA data — a particularly relevant factor for people managing uric acid levels.
           </p>
         </div>
       </section>

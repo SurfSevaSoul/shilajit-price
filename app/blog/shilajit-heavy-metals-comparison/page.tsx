@@ -105,7 +105,8 @@ export default function ShilajitHeavyMetalsComparison() {
           The solution is not to avoid shilajit — it is to buy from brands that test and publish the results. A Certificate of Analysis (COA) from an accredited independent laboratory showing actual measured values is the only way to verify what is actually in the product you are taking. Marketing language like &quot;pure&quot; or &quot;clean&quot; means nothing without a COA to back it up.
         </p>
         <p className="text-sm text-[#4A6358] leading-relaxed">
-          This post presents actual batch-specific heavy metals COA data for five brands in our database: Black Lotus Shilajit, Pure Himalayan Shilajit, Natural Shilajit, Pürblack, and Lotus Blooming Herbs. Every number below came directly from a named accredited laboratory&apos;s Certificate of Analysis. We explain what the numbers mean, put them in context against FDA safety limits, and give you an honest read on which products test cleanest.
+          This post presents actual batch-specific heavy metals COA data for five brands in our database: Black Lotus Shilajit, Pure Himalayan Shilajit, Natural Shilajit, Pürblack, and Lotus Blooming Herbs. Every number below came directly from a named accredited laboratory&apos;s Certificate of Analysis. We explain what the numbers mean, put them in context against FDA safety limits, and give you an honest read on which products test cleanest — and how those results factor into our full ranking of the{" "}
+          <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">best shilajit brands</Link>.
         </p>
       </section>
 

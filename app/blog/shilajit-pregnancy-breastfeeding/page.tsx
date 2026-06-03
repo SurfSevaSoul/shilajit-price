@@ -138,7 +138,10 @@ export default function ShilajitPregnancyBreastfeeding() {
             about fulvic acid as a proposed alternative, and what the honest answer is for
             expecting and nursing mothers. The CTAs at the bottom of this page are framed
             specifically for after pregnancy and breastfeeding — they are not recommendations
-            for use during these periods.
+            for use during these periods. For post-pregnancy supplementation options, see our
+            guide to the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">highest-rated shilajit</Link>{" "}
+            brands with published independent heavy metals testing.
           </p>
         </div>
       </section>

@@ -169,7 +169,11 @@ export default function NccihShilajitSafety() {
               We cover what NCCIH actually says about shilajit (and what they
               don't say), the specific contamination distinction their guidance
               implies, and how their criteria map to verifiable product
-              standards. For a broader safety overview, see our{" "}
+              standards — including which of the{" "}
+              <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">
+                top-rated shilajit brands
+              </Link>{" "}
+              directly meet those criteria. For a broader safety overview, see our{" "}
               <Link
                 href="/blog/shilajit-safety-guide"
                 className="text-[#10B981] hover:underline font-medium"

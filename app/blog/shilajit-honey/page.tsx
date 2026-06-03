@@ -212,7 +212,10 @@ export default function ShilajitHoney() {
             product lineup. It uses the same sourcing and lab verification program as their other
             products — Altai Mountains, Siberia (never Himalayan), tested at IAS Laboratories,
             Phoenix AZ. Their full product range batch test (Batch 93, May–June 2025) returned
-            Mercury ND and a clean heavy metals panel across all product forms.
+            Mercury ND and a clean heavy metals panel across all product forms. Black Lotus holds
+            the #1 position among the{" "}
+            <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">top-rated shilajit brands</Link>{" "}
+            in our database, based on verified fulvic acid percentage, independent lab accreditation, and price per gram.
           </p>
         </div>
 

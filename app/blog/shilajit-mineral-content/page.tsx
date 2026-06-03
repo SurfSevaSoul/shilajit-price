@@ -284,7 +284,9 @@ export default function ShilajitMineralContent() {
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">How Does This Compare to Other Shilajit Brands?</h2>
         <p className="text-sm text-[#4A6358] leading-relaxed mb-4">
-          The honest answer is: we don&apos;t know for other brands, because no equivalent data exists in the public domain. This is the core problem with the &quot;84+ trace minerals&quot; claim that proliferates across the shilajit market — it cannot be evaluated without published, quantified, lab-verified data.
+          The honest answer is: we don&apos;t know for other brands, because no equivalent data exists in the public domain. The brands featured in{" "}
+          <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-medium">our top shilajit picks</Link>{" "}
+          are specifically selected because they have invested in quantified mineral data that makes this comparison possible. This is the core problem with the &quot;84+ trace minerals&quot; claim that proliferates across the shilajit market — it cannot be evaluated without published, quantified, lab-verified data.
         </p>
 
         <div className="overflow-x-auto rounded-2xl border-2 border-[#D1EDD8] shadow-sm mb-5">
