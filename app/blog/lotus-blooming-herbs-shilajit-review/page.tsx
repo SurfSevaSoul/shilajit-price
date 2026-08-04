@@ -159,6 +159,40 @@ export default function LotusBloomingHerbsReview() {
         </div>
       </section>
 
+      {/* ── Product Card ─────────────────────────────────────────────────── */}
+      <div className="bg-[#0D1F14] rounded-2xl p-6 border border-[#1E3A28]">
+        <div className="mb-4">
+          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">
+            S-Tier — COA Verified
+          </div>
+          <h3 className="text-base font-black text-white mb-2">
+            Lotus Blooming Herbs Shilajit
+          </h3>
+          <p className="text-xs text-[#9EC9AD] leading-relaxed">
+            Ayurvedic practitioner-owned brand (NAMA member) and the first to bring pure resin shilajit to the Western market. Himalayan sourcing at 16,000–18,000ft, purified with filtered spring water, tested at Certified Laboratories Burbank CA — A2LA ISO 17025, the same gold-standard accreditation used by Pure Himalayan Shilajit.
+          </p>
+        </div>
+        <div className="bg-[#10B981]/10 border border-[#10B981]/30 rounded-xl px-4 py-3 mb-4">
+          <p className="text-sm font-black text-[#10B981] mb-1">
+            A2LA ISO 17025 Certified · Lead 0.040 mcg/serving
+          </p>
+          <p className="text-[10px] text-[#9EC9AD] leading-relaxed">
+            Certified Laboratories Burbank CA (Cert 3034.01) · Lowest lead of any shilajit brand we&apos;ve tested · Cadmium 0.004 mcg/serving
+          </p>
+        </div>
+        <a
+          href={LBH_BASE}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="block w-full text-center py-3 rounded-xl bg-[#10B981] hover:bg-[#0ea572] text-white font-bold text-sm transition-colors"
+        >
+          Shop Lotus Blooming Herbs →
+        </a>
+        <p className="text-center text-[10px] text-[#7BA899] mt-2">
+          Affiliate link — commission earned at no extra cost to you
+        </p>
+      </div>
+
       {/* ── 2. Who Is Lotus Blooming Herbs ───────────────────────────────── */}
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
@@ -558,6 +592,26 @@ export default function LotusBloomingHerbsReview() {
         </div>
       </section>
 
+      {/* ── Mid-post CTA ─────────────────────────────────────────────────── */}
+      <div className="flex flex-col sm:flex-row items-center gap-4 bg-[#F0FAF4] border-2 border-[#D1EDD8] rounded-2xl px-5 py-4">
+        <div className="flex-1 min-w-0">
+          <p className="text-sm font-black text-[#0D1F14]">
+            S-Tier · Lead 0.040 mcg/serving · A2LA ISO 17025 Lab
+          </p>
+          <p className="text-xs text-[#4A6358] mt-0.5">
+            Lotus Blooming Herbs — Himalayan 16,000–18,000ft · Ayurvedic practitioner-owned
+          </p>
+        </div>
+        <a
+          href={LBH_BASE}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="shrink-0 inline-flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-[#10B981] hover:bg-[#0ea572] text-white font-bold text-sm transition-colors whitespace-nowrap"
+        >
+          Shop Lotus Blooming Herbs →
+        </a>
+      </div>
+
       {/* ── 6. Comparison ─────────────────────────────────────────────────── */}
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
@@ -821,6 +875,18 @@ export default function LotusBloomingHerbsReview() {
           </p>
         </div>
       </section>
+
+      {/* Pre-buy-box inline CTA */}
+      <div className="text-center py-2">
+        <a
+          href={LBH_BASE}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          className="inline-flex items-center gap-2 text-sm font-semibold text-[#10B981] hover:underline"
+        >
+          Shop Lotus Blooming Herbs at lotusbloomingherbs.com →
+        </a>
+      </div>
 
       {/* Primary CTA — Lotus Blooming Herbs */}
       <div className="bg-white border-2 border-amber-200 rounded-2xl p-6 shadow-lg shadow-amber-900/10">
