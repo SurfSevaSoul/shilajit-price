@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 // ── Affiliate constants ────────────────────────────────────────────────────
 const PRIMAVIE_AMAZON = "https://www.amazon.com/dp/B08NZ39J8D?tag=shilajitprice-20";
@@ -157,6 +158,8 @@ export default function BestShilajitOnAmazon() {
             </p>
           </div>
         </section>
+
+        <ChecklistDownload location="best-shilajit-on-amazon" compact />
 
         {/* Why most Amazon shilajit is low quality */}
         <section>

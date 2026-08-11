@@ -234,6 +234,8 @@ export default function BestShilajitBrandsRanked() {
           </div>
         </section>
 
+        <ChecklistDownload location="best-shilajit-brands-ranked" compact />
+
         {/* Ranking methodology */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Our ranking methodology</h2>

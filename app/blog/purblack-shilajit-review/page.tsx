@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 // Affiliate constant
 const AFFILIATE = "https://purblack.pxf.io/c/7221460/3041684/36963";
@@ -242,6 +243,8 @@ export default function PurblackShilajitReview() {
           </p>
         </div>
       </section>
+
+      <ChecklistDownload location="purblack-shilajit-review" compact />
 
       {/* Brand overview */}
       <section>

@@ -110,6 +110,8 @@ export default function ShilajitHeavyMetalsComparison() {
         </p>
       </section>
 
+      <ChecklistDownload location="shilajit-heavy-metals-comparison" compact />
+
       {/* 2. Methodology */}
       <section>
         <h2 className="text-2xl font-black text-[#0D1F14] mb-4">How We Got This Data</h2>

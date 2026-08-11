@@ -227,6 +227,8 @@ export default function BlackLotusShilajitReview() {
           </div>
         </section>
 
+        <ChecklistDownload location="black-lotus-shilajit-review" compact />
+
         {/* Brand overview */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">

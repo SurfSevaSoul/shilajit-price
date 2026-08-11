@@ -719,6 +719,33 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
               </a>
             </p>
 
+            {/* ── CHECKLIST CALLOUT (above product grid) ─────────────────────── */}
+            <div className="bg-[#0D1F14] border border-[#1E3A28] rounded-2xl px-5 py-4 mb-5 flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <div className="flex-1 min-w-0">
+                <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-0.5">Free Download</p>
+                <p className="text-sm font-black text-white leading-snug">
+                  The Shilajit Buyer&apos;s Checklist — Know what to look for before you buy
+                </p>
+              </div>
+              <a
+                href="/downloads/shilajit-buyers-checklist.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => {
+                  if (typeof window !== "undefined" && typeof (window as Window & { gtag?: Function }).gtag === "function") {
+                    (window as Window & { gtag?: Function }).gtag("event", "checklist_download", {
+                      click_location: "homepage",
+                      file_name: "shilajit-buyers-checklist.pdf",
+                    });
+                  }
+                }}
+                className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-[#10B981] hover:bg-[#0ea572] text-white font-semibold text-sm transition-colors whitespace-nowrap"
+              >
+                Download PDF →
+              </a>
+            </div>
+
             {/* Main content: sidebar + grid */}
             <div className="flex flex-col lg:flex-row gap-6 items-start">
               <SidebarFilters filters={filters} onChange={setFilters} totalResults={filtered.length} />
@@ -820,10 +847,6 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
           </div>
         </section>
 
-        {/* ── CHECKLIST DOWNLOAD ───────────────────────────────────────────── */}
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <ChecklistDownload location="homepage" />
-        </div>
 
         {/* ── 6. SHILAJIT BUYING GUIDES ────────────────────────────────────── */}
         <section className="py-16 bg-white border-t border-[#D1EDD8]">

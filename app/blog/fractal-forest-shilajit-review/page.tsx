@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 // ── Affiliate constants ────────────────────────────────────────────────────
 const FF_BASE = "https://fractalforest.co/SHILAJIT-PRICE";
@@ -167,6 +168,8 @@ export default function FractalForestShilajitReview() {
           </p>
         </div>
       </section>
+
+      <ChecklistDownload location="fractal-forest-shilajit-review" compact />
 
       {/* ── Product Card ─────────────────────────────────────────────────── */}
       <div className="bg-[#0D1F14] rounded-2xl p-6 border border-[#1E3A28]">

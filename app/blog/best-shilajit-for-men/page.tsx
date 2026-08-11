@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 import BlogCTA from "../../components/blog/BlogCTA";
+import ChecklistDownload from "../../components/ChecklistDownload";
 
 const AFFILIATE_RESIN =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
@@ -178,6 +179,8 @@ export default function BestShilajitForMen() {
             </p>
           </div>
         </section>
+
+        <ChecklistDownload location="best-shilajit-for-men" compact />
 
         {/* Top benefits */}
         <section>

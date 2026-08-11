@@ -198,6 +198,8 @@ export default function BestShilajitForTestosterone() {
           </div>
         </section>
 
+        <ChecklistDownload location="best-shilajit-for-testosterone" compact />
+
         {/* What to look for */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">What to look for when buying shilajit for testosterone support</h2>

@@ -2,15 +2,38 @@
 
 interface ChecklistDownloadProps {
   location: string;
+  compact?: boolean;
 }
 
-export default function ChecklistDownload({ location }: ChecklistDownloadProps) {
+export default function ChecklistDownload({ location, compact = false }: ChecklistDownloadProps) {
   function handleClick() {
     if (typeof window !== "undefined" && typeof (window as Window & { gtag?: Function }).gtag === "function") {
       (window as Window & { gtag?: Function }).gtag("event", "checklist_download", {
         click_location: location,
+        file_name: "shilajit-buyers-checklist.pdf",
       });
     }
+  }
+
+  if (compact) {
+    return (
+      <div className="flex items-center gap-2 bg-[#F0FAF4] border border-[#D1EDD8] rounded-lg px-4 py-2.5 my-4 text-xs text-[#4A6358] leading-relaxed">
+        <span>📋</span>
+        <span>
+          Free: Shilajit Buyer&apos;s Checklist —{" "}
+          <a
+            href="/downloads/shilajit-buyers-checklist.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={handleClick}
+            className="text-[#10B981] font-semibold hover:underline"
+          >
+            Download PDF
+          </a>
+        </span>
+      </div>
+    );
   }
 
   return (
