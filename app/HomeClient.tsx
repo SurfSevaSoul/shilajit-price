@@ -608,6 +608,32 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
           </div>
         </div>
 
+        {/* ── FEATURED POST CALLOUT ────────────────────────────────────────── */}
+        <div className="bg-[#182B1F]">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3">
+            <Link
+              href="/blog/shilajit-testosterone-blood-test-results"
+              className="group flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-6"
+            >
+              <span className="shrink-0 inline-flex items-center px-2 py-0.5 rounded text-[9px] font-black text-[#10B981] uppercase tracking-widest border border-[#10B981]/40 bg-[#10B981]/10 w-fit">
+                Featured — Real Data
+              </span>
+              <span className="flex-1 min-w-0">
+                <span className="text-sm font-bold text-white group-hover:text-[#10B981] transition-colors leading-snug">
+                  6 Years of Shilajit. 3 Months of Blood Work. Here&apos;s What Actually Changed.
+                </span>
+                <span className="hidden sm:inline text-[#9EC9AD] mx-2">·</span>
+                <span className="block sm:inline text-xs text-[#9EC9AD] mt-0.5 sm:mt-0">
+                  Free testosterone up 32%. Full protocol, lab panels, and what I actually concluded.
+                </span>
+              </span>
+              <span className="shrink-0 text-xs font-semibold text-[#10B981] group-hover:underline underline-offset-2 whitespace-nowrap">
+                Read the full blood work →
+              </span>
+            </Link>
+          </div>
+        </div>
+
         {/* ── 3–5. DEALS SECTION ───────────────────────────────────────────── */}
         <section id="deals" className="py-12 bg-[#E8F5EC]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
