@@ -70,6 +70,38 @@ const faqItems: FaqItem[] = [
       text: "It depends on what drives the premium. Brands charging more because of verified high fulvic acid content (70%+), third-party COA, high-altitude sourcing, and cold-process purification are justified in their pricing. Brands charging premium prices without these credentials are not. Always compare price per gram rather than total package price, and verify the COA before purchasing.",
     },
   },
+  {
+    "@type": "Question",
+    name: "What is the best shilajit brand in 2026?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Black Lotus Shilajit is the best shilajit brand in 2026 based on independently verified lab data. Their Altai-sourced resin scores S-tier with 64.51% fulvic acid confirmed by IAS Laboratories (Batch 93), a full heavy metals panel with mercury undetected, and GMP-certified manufacturing. Lotus Blooming Herbs ranks second — S-tier — with A2LA ISO 17025 certification and the cleanest heavy metals data of any Himalayan-sourced resin we've tested.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "How are shilajit brands ranked on this site?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Brands are ranked across five weighted criteria: COA quality and accessibility (30%), verified fulvic acid percentage from a third-party ISO-accredited lab (25%), sourcing and altitude transparency (20%), price per gram (15%), and customer satisfaction signals (10%). No brand can pay for a higher ranking. A brand with no publicly accessible COA cannot score above C-tier regardless of marketing claims.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "Which shilajit brands have third-party lab testing?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "The brands with verified third-party lab testing in our database are: Black Lotus Shilajit (IAS Laboratories, Phoenix AZ), Lotus Blooming Herbs (A2LA ISO 17025 certified), Essencraft (Eurofins ISO 17025), Fractal Forest (A2LA ISO 17025 certified for Himalayan Drops), PrimaVie by Jarrow Formulas (GMP certified, patented extract), Natural Shilajit (third-party COA), and Pürblack (independent testing with 5 patents). Pure Himalayan Shilajit publishes a COA but through their own lab rather than an independent third party.",
+    },
+  },
+  {
+    "@type": "Question",
+    name: "What shilajit brand has the highest fulvic acid percentage?",
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: "Essencraft leads on published fulvic acid percentage at 78.49% verified by Eurofins ISO 17025. Black Lotus Shilajit Extra Strength Capsules report 74.30% and their resin reports 64.51% (both per Batch 93, IAS Laboratories). Fractal Forest reports 71.31%. Claims above 80% without ISO-accredited third-party verification should be treated skeptically — extraction method and measurement protocol significantly affect reported percentages.",
+    },
+  },
 ];
 
 function CheckIcon() {
@@ -218,16 +250,16 @@ export default function BestShilajitBrandsRanked() {
 
         {/* Intro */}
         <section>
-          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Why most shilajit brand rankings are wrong</h2>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">The best shilajit brands — ranked by lab data, not commission rates</h2>
           <div className="space-y-4 text-sm text-[#0D1F14] leading-relaxed">
             <p>
-              Most &quot;best shilajit brands&quot; lists are affiliate-driven content where the #1 pick is whoever pays the highest commission rate. You&apos;ll see the same 3–5 brands recycled across dozens of sites with no actual data behind the rankings — no COA comparisons, no fulvic acid percentages, no price-per-gram analysis.
+              The best shilajit brands in 2026 are ranked here by one standard: independently verified data. <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-medium">Black Lotus Shilajit</a> holds the #1 position with 64–74% fulvic acid confirmed by IAS Laboratories (Batch 93), a full heavy metals panel with mercury undetected, and Altai Mountain sourcing — the strongest combination of verification and value in our database.
             </p>
             <p>
-              We built <Link href="/" className="text-[#10B981] hover:underline">ShilajitPrice.com</Link> specifically because this kind of data-free ranking dominates the market. We&apos;ve collected and analyzed 25+ data points per product across 55+ products from 20+ brands. This ranking reflects that research — not who pays us the most.
+              Every brand on this list has been evaluated on COA quality, third-party heavy metals testing, verified fulvic acid percentage, sourcing transparency, and price per gram. A brand without a publicly linked, third-party Certificate of Analysis does not qualify for the top tiers — no exceptions.
             </p>
             <p>
-              Our ranking methodology weights five factors: COA quality and accessibility (30%), verified fulvic acid percentage (25%), sourcing and altitude transparency (20%), price-per-gram competitiveness (15%), and customer satisfaction signals (10%). A brand that scores well commercially but has opaque testing gets penalized hard. If you&apos;re unsure whether shilajit or a standalone fulvic acid supplement is right for you, see our guide on{" "}
+              Most &quot;best shilajit brands&quot; lists are affiliate-driven, ranking whoever pays the highest commission. We built <Link href="/" className="text-[#10B981] hover:underline">ShilajitPrice.com</Link> to fix that — 25+ data points per product across 55+ products, updated regularly. If you&apos;re unsure whether shilajit or a standalone fulvic acid supplement is right for you, see our guide on{" "}
               <Link href="/blog/shilajit-vs-fulvic-acid" className="text-[#10B981] hover:underline">the difference between shilajit and fulvic acid supplements</Link>{" "}
               before deciding.
             </p>
@@ -553,6 +585,36 @@ export default function BestShilajitBrandsRanked() {
             <Link href="/blog/best-shilajit-resin-brands" className="text-[#10B981] hover:underline font-semibold">best shilajit resin brands</Link>{" "}
             — sorted by fulvic acid content, source altitude, and lab verification standard.
           </p>
+        </section>
+
+        {/* FAQ */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Frequently asked questions</h2>
+          <div className="space-y-4">
+            {[
+              {
+                q: "What is the best shilajit brand in 2026?",
+                a: <>Black Lotus Shilajit is the best shilajit brand in 2026 based on independently verified lab data. Their Altai-sourced resin scores S-tier with 64.51% fulvic acid confirmed by IAS Laboratories (Batch 93), a full heavy metals panel with mercury undetected, and GMP-certified manufacturing. <a href={LBH_PRODUCT} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-medium">Lotus Blooming Herbs</a> ranks second — S-tier — with A2LA ISO 17025 certification and the cleanest heavy metals data of any Himalayan-sourced resin we&apos;ve tested.</>,
+              },
+              {
+                q: "How are shilajit brands ranked on this site?",
+                a: "Brands are ranked across five weighted criteria: COA quality and accessibility (30%), verified fulvic acid percentage from a third-party ISO-accredited lab (25%), sourcing and altitude transparency (20%), price per gram (15%), and customer satisfaction signals (10%). No brand can pay for a higher ranking. A brand with no publicly accessible COA cannot score above C-tier regardless of marketing claims.",
+              },
+              {
+                q: "Which shilajit brands have third-party lab testing?",
+                a: "The brands with verified third-party lab testing in our database are: Black Lotus Shilajit (IAS Laboratories, Phoenix AZ), Lotus Blooming Herbs (A2LA ISO 17025 certified), Essencraft (Eurofins ISO 17025), Fractal Forest (A2LA ISO 17025 certified for Himalayan Drops), PrimaVie by Jarrow Formulas (GMP certified, patented extract), Natural Shilajit (third-party COA), and Pürblack (independent testing with 5 patents). Pure Himalayan Shilajit publishes a COA but through their own lab rather than an independent third party.",
+              },
+              {
+                q: "What shilajit brand has the highest fulvic acid percentage?",
+                a: "Essencraft leads on published fulvic acid percentage at 78.49% verified by Eurofins ISO 17025. Black Lotus Extra Strength Capsules report 74.30% and their resin 64.51% (both Batch 93, IAS Laboratories). Fractal Forest reports 71.31%. Claims above 80% without ISO-accredited third-party verification should be treated skeptically — extraction method and measurement protocol significantly affect reported percentages.",
+              },
+            ].map(({ q, a }) => (
+              <div key={q} className="bg-white border border-[#D1EDD8] rounded-xl p-5">
+                <h3 className="text-sm font-bold text-[#0D1F14] mb-2">{q}</h3>
+                <p className="text-sm text-[#4A6358] leading-relaxed">{a}</p>
+              </div>
+            ))}
+          </div>
         </section>
       </BlogPostLayout>
   );
