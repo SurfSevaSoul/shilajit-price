@@ -428,6 +428,174 @@ export default function TestosteroneBloodTestResults() {
           </p>
         </div>
       </section>
+
+      {/* Month 4 Update */}
+      <section>
+        <h2 className="text-2xl font-black text-[#0D1F14] mb-4">
+          Month 4 Update — August 10, 2026
+        </h2>
+        <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+          <p>Four months in. This is the panel I didn&apos;t expect.</p>
+          <p>
+            Total testosterone came in at 737 ng/dL — up from 537 at month 3 and 599 at baseline. That&apos;s a 23% increase over baseline and 37% above month 3.
+          </p>
+          <p>
+            Free testosterone: 158.95 pg/mL. Up from 123.47 at month 3 and 93.0 at baseline. That&apos;s a 70.9% increase from where I started.
+          </p>
+          <p>
+            Bioavailable testosterone calculated at approximately 285–295 ng/dL via Vermeulen equation — up roughly 50% from the 191.2 baseline.
+          </p>
+          <p>
+            SHBG came in at 31.2 nmol/L, estrogen at 32.5 pg/mL. Both in healthy range.
+          </p>
+        </div>
+
+        <h3 className="text-lg font-bold text-[#0D1F14] mt-8 mb-4">Month 4 hormone data</h3>
+        <div className="overflow-x-auto rounded-xl border border-[#D1EDD8] mb-8">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-[#0D1F14] text-white">
+                <th className="text-left px-4 py-3 font-bold text-xs uppercase tracking-wide">Marker</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Baseline</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Month 2</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Month 3</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Month 4</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Change from Baseline</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { marker: "Total T (ng/dL)", baseline: "599", m2: "544", m3: "537", m4: "737", change: "+23%", positive: true },
+                { marker: "Free T (pg/mL)", baseline: "93.0", m2: "111.48", m3: "123.47", m4: "158.95", change: "+70.9%", positive: true },
+                { marker: "Bioavailable T (ng/dL)", baseline: "191.2", m2: "~233", m3: "~243", m4: "~285–295", change: "+50%+", positive: true },
+                { marker: "SHBG (nmol/L)", baseline: "29", m2: "32.2", m3: "27.3", m4: "31.2", change: "+7.6%", positive: null },
+                { marker: "Estrogen (pg/mL)", baseline: "<30", m2: "25.5", m3: "40.5", m4: "32.5", change: "—", positive: null },
+              ].map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F7FCF9]"}>
+                  <td className="px-4 py-3 font-medium text-[#0D1F14]">{row.marker}</td>
+                  <td className="px-4 py-3 text-center text-[#4A6358]">{row.baseline}</td>
+                  <td className="px-4 py-3 text-center text-[#4A6358]">{row.m2}</td>
+                  <td className="px-4 py-3 text-center text-[#4A6358]">{row.m3}</td>
+                  <td className="px-4 py-3 text-center font-semibold text-[#0D1F14]">{row.m4}</td>
+                  <td className="px-4 py-3 text-center font-semibold">
+                    {row.positive === true && <span className="text-[#10B981]">{row.change}</span>}
+                    {row.positive === false && <span className="text-rose-500">{row.change}</span>}
+                    {row.positive === null && <span className="text-[#7BA899]">{row.change}</span>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <h3 className="text-lg font-bold text-[#0D1F14] mt-8 mb-4">Month 4 metabolic and cardiovascular data</h3>
+        <div className="overflow-x-auto rounded-xl border border-[#D1EDD8] mb-6">
+          <table className="w-full text-sm">
+            <thead>
+              <tr className="bg-[#0D1F14] text-white">
+                <th className="text-left px-4 py-3 font-bold text-xs uppercase tracking-wide">Marker</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Month 2</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Month 3</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Month 4</th>
+                <th className="text-center px-4 py-3 font-bold text-xs uppercase tracking-wide">Change M3→M4</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { marker: "Total Cholesterol (mg/dL)", m2: "160", m3: "154", m4: "160", change: "+3.9%", positive: null },
+                { marker: "HDL (mg/dL)", m2: "61.6", m3: "61.8", m4: "61.7", change: "0%", positive: null },
+                { marker: "LDL (mg/dL)", m2: "85.96", m3: "80.76", m4: "88", change: "+9%", positive: false },
+                { marker: "ApoB (mg/dL)", m2: "70.9", m3: "70.3", m4: "70.7", change: "+0.6%", positive: null },
+                { marker: "Triglycerides (mg/dL)", m2: "62.2", m3: "57.2", m4: "51.5", change: "−10%", positive: true },
+                { marker: "Trig/HDL Ratio", m2: "1.0", m3: "0.92", m4: "0.83", change: "−9.8%", positive: true },
+                { marker: "hsCRP (mg/L)", m2: "<0.5", m3: "<0.5", m4: "<0.5", change: "—", positive: null },
+                { marker: "Remnant Cholesterol (mg/dL)", m2: "12.44", m3: "11.43", m4: "10.29", change: "−10%", positive: true },
+                { marker: "LDL/ApoB Ratio", m2: "1.21", m3: "1.14", m4: "1.24", change: "+8.8%", positive: null },
+                { marker: "Vitamin D (ng/mL)", m2: "57.3", m3: "48.3", m4: "59.1", change: "+22.4%", positive: true },
+                { marker: "Ferritin (ng/mL)", m2: "117", m3: "118", m4: "87.9", change: "−25.5%", positive: null },
+                { marker: "Fructosamine (umol/L)", m2: "238", m3: "227", m4: "261", change: "+15%", positive: false },
+                { marker: "Uric Acid (mg/dL)", m2: "4.16", m3: "4.29", m4: "4.15", change: "−3.3%", positive: true },
+                { marker: "GGT (U/L)", m2: "12.6", m3: "12.4", m4: "10.1", change: "−18.5%", positive: true },
+                { marker: "ALP (U/L)", m2: "60.6", m3: "67.1", m4: "67.6", change: "+0.7%", positive: null },
+                { marker: "Creatinine (mg/dL)", m2: "0.924", m3: "0.857", m4: "1.05", change: "+22.5%", positive: null },
+                { marker: "eGFR", m2: "115.92", m3: "115.92", m4: "94.93", change: "−18.1%", positive: null },
+                { marker: "Albumin (g/dL)", m2: "4.71", m3: "4.48", m4: "4.84", change: "+8%", positive: null },
+                { marker: "Cortisol (ug/dL)", m2: "—", m3: "—", m4: "20.5*", change: "—", positive: null },
+                { marker: "Biological Age", m2: "—", m3: "29 yr 3 mo", m4: "29 yr 7 mo", change: "—", positive: null },
+                { marker: "Rythm Score", m2: "—", m3: "90%", m4: "87%", change: "—", positive: null },
+              ].map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? "bg-white" : "bg-[#F7FCF9]"}>
+                  <td className="px-4 py-3 font-medium text-[#0D1F14]">{row.marker}</td>
+                  <td className="px-4 py-3 text-center text-[#4A6358]">{row.m2}</td>
+                  <td className="px-4 py-3 text-center text-[#4A6358]">{row.m3}</td>
+                  <td className="px-4 py-3 text-center font-semibold text-[#0D1F14]">{row.m4}</td>
+                  <td className="px-4 py-3 text-center font-semibold">
+                    {row.positive === true && <span className="text-[#10B981]">{row.change}</span>}
+                    {row.positive === false && <span className="text-rose-500">{row.change}</span>}
+                    {row.positive === null && <span className="text-[#7BA899]">{row.change}</span>}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
+          *First cortisol measurement. Morning peak timing is the likely explanation for the out-of-range flag — cortisol naturally peaks 30–45 minutes post-waking.
+        </p>
+
+        <h3 className="text-lg font-bold text-[#0D1F14] mt-8 mb-3">What changed in the protocol</h3>
+        <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+          <p>
+            One notable protocol change between month 3 and month 4: I switched from LipoAshwagandha sCO2 (
+            <a href={LBH_BASE} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-medium">Lotus Blooming Herbs</a>
+            ) to a standard KSM-66 extract (Jacked Factory). TSH reverted from 1.77 back to 3.01 as a result.
+          </p>
+          <p>
+            That&apos;s a meaningful data point. The sCO2 extraction method appears to produce a meaningfully different thyroid response than standard KSM-66. Month 5 I&apos;m switching back to LipoAshwagandha sCO2 from{" "}
+            <a href={LBH_BASE} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-medium">Lotus Blooming Herbs</a>
+            {" "}to see if TSH drops again.
+          </p>
+        </div>
+
+        <h3 className="text-lg font-bold text-[#0D1F14] mt-8 mb-3">What I make of the month 4 numbers</h3>
+        <div className="space-y-4 text-[#0D1F14] text-sm leading-relaxed">
+          <p>
+            The testosterone numbers are the most significant finding in four months of tracking. A 70.9% increase in free testosterone from baseline is not subtle. Whether shilajit is the primary driver, a contributing factor, or incidental to other protocol elements — I can&apos;t isolate cause and effect from an n=1 self-experiment. What I can say is that I&apos;m four months into a consistent protocol built around{" "}
+            <a href={BL_BASE} target="_blank" rel="noopener noreferrer sponsored" className="text-[#10B981] hover:underline font-medium">Black Lotus Shilajit</a>
+            {" "}as the foundation, and these are the numbers.
+          </p>
+          <p>
+            Triglycerides continued declining to 51.5 mg/dL. Trig/HDL ratio at 0.83 — well below the 1.0 threshold most functional medicine practitioners consider optimal. hsCRP undetectable for the third consecutive draw. Cardiovascular risk markers are trending in the right direction across every measure that matters.
+          </p>
+          <p>
+            Ferritin dropped from 118 to 87.9. Still within normal range but I&apos;m monitoring it. Could be training volume, dietary iron intake, or something else entirely.
+          </p>
+          <p>
+            Creatinine rose slightly to 1.05 and eGFR dropped from 115.92 to 94.93. Both still well within normal range. I&apos;ll watch this at month 5.
+          </p>
+          <p>
+            Vitamin D recovered to 59.1 after dropping to 48.3 at month 3 — consistent with increased D3 supplementation through summer.
+          </p>
+          <p>
+            Chronological age: 35 years 9 months. Biological age: 29 years 7 months. Running 6 years and 2 months younger than my actual age at month 4.
+          </p>
+          <p>
+            Month 5 panel is scheduled. I&apos;ll post the results here when they&apos;re in.
+          </p>
+          <p>
+            If you want to run your own panel and track what your protocol is actually doing:{" "}
+            <a
+              href="https://rythm.health/danielttorres13"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#10B981] hover:underline font-medium"
+            >
+              Rythm Health
+            </a>
+            {" "}— $20 off your first test with my link.
+          </p>
+        </div>
+      </section>
     </BlogPostLayout>
   );
 }
