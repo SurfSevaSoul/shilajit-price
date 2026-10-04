@@ -375,6 +375,22 @@ export default function BestShilajitOnAmazon() {
             </p>
           </div>
         </section>
+
+        {/* Against the Odds callout */}
+        <div className="bg-[#0D1F14] border border-[#1E3A28] rounded-2xl p-6">
+          <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-2">Want the complete protocol?</p>
+          <p className="text-sm text-white leading-relaxed mb-4">
+            This post covers the bloodwork. <em>Against the Odds</em> covers everything else — the full supplement stack with clinical context, the lifestyle protocol, the sauna breakdown, sleep optimization, and the emotional health framework behind the numbers. 71% free testosterone increase, biological age of 29 at 35, no TRT, no pharmaceuticals.
+          </p>
+          <a
+            href="https://www.sevasoulstudios.com/the-growth-studio/p/against-the-odds-natural-mens-health-protocol"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#10B981] hover:bg-[#0ea572] text-white font-semibold text-sm transition-colors"
+          >
+            Get the Protocol — $9.99 →
+          </a>
+        </div>
       </BlogPostLayout>
   );
 }
