@@ -121,6 +121,8 @@ export default function ShilajitTestosteroneStudy() {
             This guide walks through every relevant clinical study, explains what was measured
             and in whom, provides the actual dosages used, and gives you a realistic picture
             of what shilajit supplementation may (and may not) do for your testosterone levels.
+            For a practitioner&apos;s perspective outside the lab, see{" "}
+            <Link href="/blog/shilajit-testosterone-blood-test-results" className="text-[#10B981] hover:underline font-medium">real blood work tracking shilajit effects over four months</Link>.
           </p>
         </div>
 

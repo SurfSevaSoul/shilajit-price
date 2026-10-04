@@ -343,6 +343,9 @@ export default function BestShilajitBrandsRanked() {
             <p>
               At $39.99 for 30g of resin ($1.33/gram), they&apos;re not the cheapest. But when you account for the fulvic acid concentration, you&apos;re getting more bioactive material per dollar than most products priced similarly. Their capsule option at $34.99 provides cost-per-serving comparable to many B-tier competitors. For a deeper look at sourcing, testing methodology, and value,{" "}
               <Link href="/blog/black-lotus-shilajit-review" className="text-[#10B981] hover:underline font-semibold">read our full Black Lotus Shilajit review</Link>.
+              {" "}If you want to see how Black Lotus performs in a real multi-month protocol, our editor published{" "}
+              <Link href="/blog/shilajit-testosterone-blood-test-results" className="text-[#10B981] hover:underline font-medium">shilajit testosterone blood test results</Link>{" "}
+              tracking free T, SHBG, and a full metabolic panel over four months.
             </p>
           </div>
         </section>
