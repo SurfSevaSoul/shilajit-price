@@ -6,7 +6,7 @@ const AFFILIATE_BL = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=51
 const AFFILIATE_FF = "https://fractalforest.co/SHILAJIT-PRICE";
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 const AFFILIATE_LBH = "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 
 const BASE_URL = "https://www.shilajitprice.com";
@@ -555,7 +555,7 @@ export default function ShilajitFulvicAcidTestingProblem() {
               labLine: "Pürblack Inc., Temecula CA · GMP pharmaceutical facility",
               href: AFFILIATE_PB,
               btnColor: "bg-[#182B1F] hover:bg-violet-600",
-              discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
+              discountNote: undefined,
             },
             {
               brand: "Lotus Blooming Herbs",
@@ -606,7 +606,6 @@ export default function ShilajitFulvicAcidTestingProblem() {
                   View {brand} →
                 </a>
                 <p className="text-center text-[9px] text-[#7BA899] mt-1.5">Affiliate link — commission at no extra cost</p>
-                {discountNote && <p className="text-center text-[9px] text-[#7BA899] mt-1"><strong className="font-bold text-[#0D1F14]">Code SHILAJIT15</strong> — {discountNote}</p>}
               </div>
             </div>
           ))}

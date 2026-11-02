@@ -8,7 +8,7 @@ const AFFILIATE_LBH =
   "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/best-shilajit-brand-usa`;
@@ -505,7 +505,7 @@ export default function BestShilajitBrandUSA() {
               fulvic: "Does not report fulvic acid — uses DBP (16.5–21.9%) and Urolithin A (up to 58.497 ppm)",
               source: "Multi-region — no single geographic claim",
               metals: "Full heavy metals panel — within FDA limits",
-              note: "Patented purification process; 5 US patents. Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
+              note: "Patented purification process; 5 US patents.",
               href: AFFILIATE_PB,
             },
           ].map((b) => (

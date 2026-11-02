@@ -121,7 +121,7 @@ const PURBLACK = {
   gmpCertified: true,
   freeShipping: false,
   bestFor: "5 US patents · pharmaceutical-grade processing · precious metal infusions",
-  affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
+  affiliateUrl: "",
   productLabel: "True Gold Live Resin 30g — $93.33",
   price: "$93.33",
   reviewSlug: "purblack-shilajit-review",

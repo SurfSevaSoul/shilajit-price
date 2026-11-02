@@ -13,7 +13,7 @@ const LBH_BASE =
   "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const PH_BASE = "https://www.purehimalayanshilajit.com/?ref=4792";
 const NS_BASE = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const PB_BASE = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const PB_BASE = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/nootropics-depot-primavie-review`;
@@ -142,7 +142,7 @@ const COMPARISON = [
     tierColor: "bg-amber-100 text-amber-800 ring-1 ring-amber-300",
     href: PB_BASE,
     thisPage: false,
-    discountNote: "Code SHILAJIT15 — 15% off your entire order at Pürblack.",
+    discountNote: undefined,
   },
   {
     brand: "Nootropics Depot PrimaVie",
@@ -722,7 +722,7 @@ export default function NootropicsDepotPrimaVieReview() {
             {
               name: "Pürblack",
               tagline: "5 US patents, US pharmaceutical-grade manufacturing — multi-region",
-              body: "Pürblack Inc., Temecula CA. December 2025 COA. Does not report fulvic acid percentage — uses DBP (16.5–21.9%) and Urolithin A (up to 58.497 ppm) as quality markers. 5 US Patents on purification and formulation. Pharmaceutical-grade US manufacturing. Source: multi-region (Caucasus, Siberia, Himalayas). Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
+              body: "Pürblack Inc., Temecula CA. December 2025 COA. Does not report fulvic acid percentage — uses DBP (16.5–21.9%) and Urolithin A (up to 58.497 ppm) as quality markers. 5 US Patents on purification and formulation. Pharmaceutical-grade US manufacturing. Source: multi-region (Caucasus, Siberia, Himalayas).",
               href: PB_BASE,
             },
           ].map((brand) => (

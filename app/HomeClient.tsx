@@ -83,14 +83,13 @@ function bestValueScore(p: (typeof PRODUCTS)[0]) {
 // Pin one flagship product per featured partner to the front of their
 // respective tier group — tier integrity is always preserved.
 // S-tier pins: Black Lotus → Lotus Blooming Herbs → Natural Shilajit (in that order within S)
-// A-tier pins: Pure Himalayan → Pürblack (in that order within A)
+// A-tier pins: Pure Himalayan (in that order within A)
 // If a pinned product is absent (filtered out) it is silently skipped.
 const PINNED_PARTNER_IDS = [
   "bl-resin",                           // S — Black Lotus Pure Altai Resin 30g
   "lotus-blooming-authentic-shilajit",  // S — Lotus Blooming Herbs Authentic Shilajit™
   "natural-shilajit-resin-20g",         // S — Natural Shilajit Resin 20g
   "ph-soft-resin",                      // A — Pure Himalayan Soft Resin
-  "purblack-true-gold-30g",             // A — Pürblack True Gold Live Resin
 ];
 
 const TIER_SEQUENCE = ["S", "A", "B", "C", "D"] as const;
@@ -385,8 +384,7 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
     const blPick = PRODUCTS.find((p) => p.id === "bl-resin");
     const lbhPick = PRODUCTS.find((p) => p.id === "lotus-blooming-authentic-shilajit");
     const nsPick = PRODUCTS.find((p) => p.id === "natural-shilajit-resin-20g");
-    const purblackPick = PRODUCTS.find((p) => p.id === "purblack-true-gold-30g");
-    return [blPick, lbhPick, nsPick, purblackPick].filter(Boolean) as (typeof PRODUCTS)[0][];
+    return [blPick, lbhPick, nsPick].filter(Boolean) as (typeof PRODUCTS)[0][];
   }, []);
 
   const editorPickMeta: { label: string; accent: AccentVariant; reason?: string; customBullets?: string[]; customTier?: string }[] = [
@@ -411,19 +409,6 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
       label: "Best Value",
       accent: "teal",
       reason: "DBP-verified and batch-tested — best choice for buyers who want maximum sourcing transparency.",
-    },
-    {
-      label: "Best Premium",
-      accent: "violet",
-      reason: "Five US patents and pharmaceutical-grade processing for serious biohackers who want the premium tier.",
-      customTier: "S",
-      customBullets: [
-        "✓ COA verified",
-        "✓ US Patents (x5)",
-        "✓ Third-party tested",
-        "✓ Made in USA",
-        "✓ Gold-infused (555 PPM)",
-      ],
     },
   ];
 
@@ -458,7 +443,7 @@ export default function HomeClient({ blogPostCount }: { blogPostCount: number })
           // 1. Tier (S → A → B → C → D)
           const tierDiff = TIER_ORDER[a.tier] - TIER_ORDER[b.tier];
           if (tierDiff !== 0) return tierDiff;
-          // 2. sortOrder descending (higher = earlier; Pürblack = 100, default = 0)
+          // 2. sortOrder descending (higher = earlier; default = 0)
           const orderDiff = (b.sortOrder ?? 0) - (a.sortOrder ?? 0);
           if (orderDiff !== 0) return orderDiff;
           // 3. Products with a real image before placeholder-only products

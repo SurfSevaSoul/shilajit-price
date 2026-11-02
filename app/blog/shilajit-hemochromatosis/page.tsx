@@ -6,7 +6,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 const PH_BASE = "https://www.purehimalayanshilajit.com/?ref=4792";
 const BL_BASE = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const NS_BASE = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const PB_BASE = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const PB_BASE = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-hemochromatosis`;

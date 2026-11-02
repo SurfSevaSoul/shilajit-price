@@ -8,7 +8,7 @@ const AFFILIATE_BL =
 const AFFILIATE_NS =
   "https://naturalshilajit.com/products/natural-shilajit-resin?rfsn=9069392.c841fa";
 const PURE_HIMALAYAN_RESIN = "https://www.purehimalayanshilajit.com/buy-shilajit/?ref=4792";
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-heavy-metals-fda`;

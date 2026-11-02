@@ -6,7 +6,7 @@ const AFFILIATE_BL =
   "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 const AFFILIATE_LBH =
   "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 
@@ -137,7 +137,7 @@ const BRANDS = [
     href: AFFILIATE_PB,
     btnClass:
       "bg-[#182B1F] hover:bg-[#10B981] text-white",
-    discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
+    discountNote: undefined,
   },
   {
     key: "lbh",
@@ -620,7 +620,7 @@ export default function ShilajitForOver50() {
               color: "border-purple-200 bg-purple-50",
               labelColor: "text-purple-700",
               href: AFFILIATE_PB,
-              discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
+              discountNote: undefined,
             },
             {
               goal: "Best for Himalayan provenance & lowest lead",
@@ -648,7 +648,6 @@ export default function ShilajitForOver50() {
               >
                 Check Price →
               </a>
-              {discountNote && <p className="mt-1.5 text-[9px] text-[#7BA899]">Code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> — {discountNote}</p>}
             </div>
           ))}
         </div>
@@ -811,7 +810,6 @@ export default function ShilajitForOver50() {
                   <td className="px-4 py-3 text-[#7BA899]">{b.origin}</td>
                   <td className="px-4 py-3 text-[#0D1F14]">
                     {b.bestFor}
-                    {b.discountNote && <span className="block mt-1 text-[9px] text-[#7BA899]">Code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> — 15% off</span>}
                   </td>
                 </tr>
               ))}

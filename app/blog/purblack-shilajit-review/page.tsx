@@ -3,8 +3,8 @@ import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 import ChecklistDownload from "../../components/ChecklistDownload";
 
-// Affiliate constant
-const AFFILIATE = "https://purblack.pxf.io/c/7221460/3041684/36963";
+// Affiliate link removed — Pürblack is no longer a partner
+const AFFILIATE = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/purblack-shilajit-review`;
@@ -191,6 +191,13 @@ export default function PurblackShilajitReview() {
       breadcrumbLabel="Pürblack Shilajit Review"
       faqItems={faqItems}
     >
+      {/* Archived notice */}
+      <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-sm text-amber-800 leading-relaxed">
+        <span className="font-bold">This review has been archived.</span> Pürblack is no longer an affiliate partner on ShilajitPrice.com. The information below is preserved for reference. For current top picks, see our{" "}
+        <Link href="/blog/best-shilajit-brands-ranked" className="font-semibold underline">best shilajit brands ranked</Link>{" "}
+        guide.
+      </div>
+
       {/* FTC Disclosure */}
       <div className="bg-white border border-[#D1EDD8] rounded-xl p-4 text-xs text-[#7BA899] leading-relaxed">
         <span className="font-semibold text-[#0D1F14]">Disclosure:</span> Some links on this page are affiliate links. If you purchase through them, we may earn a commission at no extra cost to you. This does not affect our rankings — see our{" "}
@@ -207,16 +214,8 @@ export default function PurblackShilajitReview() {
             <p className="text-xs text-[#7BA899]">5 US Patents · Pharmaceutical-grade US facility · Multi-region sourcing · COA verified</p>
           </div>
         </div>
-        <a
-          href={AFFILIATE}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors shadow-md shadow-violet-900/20"
-        >
-          View Pürblack on Official Site →
-        </a>
-        <p className="mt-3 text-xs text-[#7BA899]">
-          Use code <strong className="text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.
+        <p className="mt-2 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+          Pürblack is no longer an affiliate partner. Purchase directly at purblack.com.
         </p>
       </div>
 
@@ -692,18 +691,14 @@ export default function PurblackShilajitReview() {
             { label: "True Gold X7 Bulk", sub: "$500 · $2.38/g · Long-term" },
             { label: "White Rabbit Line", sub: "$75 · Targeted formulas" },
           ].map((item) => (
-            <a
+            <div
               key={item.label}
-              href={AFFILIATE}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              className="flex flex-col items-center gap-1 border border-[#D1EDD8] rounded-xl p-4 hover:border-violet-300 transition-colors"
+              className="flex flex-col items-center gap-1 border border-[#D1EDD8] rounded-xl p-4"
             >
               <span className="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 ring-1 ring-amber-300 flex items-center justify-center font-black text-sm">A</span>
               <span className="text-xs font-bold text-[#0D1F14] text-center">{item.label}</span>
               <span className="text-[10px] text-[#7BA899] text-center">{item.sub}</span>
-              <span className="mt-1 text-[11px] text-violet-500 font-semibold">View →</span>
-            </a>
+            </div>
           ))}
         </div>
 
@@ -711,14 +706,9 @@ export default function PurblackShilajitReview() {
           Want to see how Pürblack compares to Black Lotus, Natural Shilajit, and other top brands by lab data?{" "}
           <Link href="/blog/best-shilajit-brands-ranked" className="text-[#10B981] hover:underline font-semibold">See our full ranked brand database →</Link>
         </p>
-        <a
-          href={AFFILIATE}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
-        >
-          Shop Pürblack Official Site →
-        </a>
+        <p className="text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+          Pürblack is no longer an affiliate partner. Purchase directly at purblack.com.
+        </p>
       </div>
     </BlogPostLayout>
   );

@@ -9,7 +9,7 @@ const AFFILIATE_LBH =
   "https://lotusbloomingherbs.com/products/authentic-shilajit?variant=1734489987&aff=380";
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/nccih-shilajit-safety`;

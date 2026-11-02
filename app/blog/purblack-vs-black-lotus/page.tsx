@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayout";
 
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 const AFFILIATE_BL = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_BL_RESIN = "https://black-lotus-shilajit-shop.myshopify.com/products/wholesale-resin?sca_ref=5188496.BbHTin3axE";
 
@@ -477,7 +477,6 @@ export default function PurblackVsBlackLotus() {
                 Shop Pürblack Live Resin →
               </a>
               <p className="text-center text-[9px] text-[#7BA899] mt-2">Affiliate link — commission at no extra cost</p>
-              <p className="text-center text-[9px] text-[#7BA899] mt-1">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
             </div>
           </div>
         </div>

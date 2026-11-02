@@ -91,7 +91,7 @@ const faqItems: FaqItem[] = [
     name: "Which shilajit brands have third-party lab testing?",
     acceptedAnswer: {
       "@type": "Answer",
-      text: "The brands with verified third-party lab testing in our database are: Black Lotus Shilajit (IAS Laboratories, Phoenix AZ), Lotus Blooming Herbs (A2LA ISO 17025 certified), Essencraft (Eurofins ISO 17025), Fractal Forest (A2LA ISO 17025 certified for Himalayan Drops), PrimaVie by Jarrow Formulas (GMP certified, patented extract), Natural Shilajit (third-party COA), and Pürblack (independent testing with 5 patents). Pure Himalayan Shilajit publishes a COA but through their own lab rather than an independent third party.",
+      text: "The brands with verified third-party lab testing in our database are: Black Lotus Shilajit (IAS Laboratories, Phoenix AZ), Lotus Blooming Herbs (A2LA ISO 17025 certified), Essencraft (Eurofins ISO 17025), Fractal Forest (A2LA ISO 17025 certified for Himalayan Drops), PrimaVie by Jarrow Formulas (GMP certified, patented extract), and Natural Shilajit (third-party COA). Pure Himalayan Shilajit publishes a COA but through their own lab rather than an independent third party.",
     },
   },
   {
@@ -193,19 +193,6 @@ const TOP_BRANDS = [
   },
   {
     rank: 7,
-    name: "Pürblack",
-    tier: "A",
-    tierColor: "bg-emerald-500 text-white",
-    pricePerGram: "N/A",
-    fulvic: "Not reported",
-    coa: true,
-    thirdParty: true,
-    source: "Himalayan/Altai blend",
-    verdict: "Best premium resin — differentiated by DBP content (16.5–21.9%) and Urolithin A (up to 58.497 ppm), 5 patents, research-grade",
-    affiliate: `https://purblack.pxf.io/c/7221460/3041684/36963`,
-  },
-  {
-    rank: 8,
     name: "Fractal Forest",
     tier: "A",
     tierColor: "bg-emerald-500 text-white",
@@ -482,13 +469,6 @@ export default function BestShilajitBrandsRanked() {
               },
               {
                 rank: "#7",
-                name: "Pürblack",
-                color: "border-purple-200",
-                verdict: "Pürblack takes a fundamentally different approach to quality differentiation: rather than competing on fulvic acid percentage, they measure Dibenzo-α-pyrones (DBP content at 16.5–21.9%) and Urolithin A (up to 58.497 ppm) — biomarkers associated with mitochondrial and cellular health that most brands don't report at all. Their resin is backed by 5 US patents and manufactured in a US pharmaceutical-grade facility, making it the most research-grade option in the market. Discount code SHILAJIT15 gives 15% off.",
-                review: { href: "/blog/purblack-shilajit-review", text: "Pürblack shilajit review" },
-              },
-              {
-                rank: "#8",
                 name: "Fractal Forest",
                 color: "border-teal-300",
                 verdict: "Fractal Forest is the only brand on this list offering liquid drops alongside traditional resin. Their Himalayan Drops had all four heavy metals completely undetected on A2LA ISO 17025 certified testing from Certified Labs — the cleanest result of any product we have reviewed. Wild American Drops are North American sourced, a unique option for buyers who prefer domestic origin. Use code SHILAJIT-PRICE for a discount.",
@@ -562,7 +542,6 @@ export default function BestShilajitBrandsRanked() {
               { type: "Best value pick", pick: "Natural Shilajit", reason: "A-tier, rigorously tested, transparent sourcing" },
               { type: "Best for premium transparency", pick: "Essencraft Himalayan Resin", reason: "A-tier, 78.49% FA (Eurofins ISO 17025), heavy metals tested" },
               { type: "Best capsule (standardized extract)", pick: "Jarrow PrimaVie", reason: "B-tier, clinically studied, GMP certified" },
-              { type: "Best premium research-grade resin", pick: "Pürblack", reason: "A-tier, patented, DBP and Urolithin A verified" },
             ].map(({ type, pick, reason }) => (
               <div key={type} className="flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-3 bg-white border border-[#D1EDD8] rounded-xl px-4 py-3">
                 <span className="text-[10px] font-bold text-[#7BA899] uppercase tracking-wider sm:w-44 shrink-0">{type}</span>
@@ -572,10 +551,6 @@ export default function BestShilajitBrandsRanked() {
             ))}
           </div>
           <p className="text-xs text-[#7BA899] mt-4 leading-relaxed">
-            New to Pürblack? Read our in-depth{" "}
-            <Link href="/blog/purblack-shilajit-review" className="text-[#10B981] hover:underline font-semibold">Pürblack shilajit review — 5 patents, True Gold, and who it&apos;s worth it for</Link>.
-          </p>
-          <p className="text-xs text-[#7BA899] mt-2 leading-relaxed">
             Looking for a Himalayan option with Ayurvedic practitioner ownership and A2LA ISO 17025 lab verification? See{" "}
             <Link href="/blog/lotus-blooming-herbs-shilajit-review" className="text-[#10B981] hover:underline font-semibold">our full Lotus Blooming Herbs review</Link>{" "}
             — the first brand to bring pure resin shilajit to the West.
@@ -621,7 +596,7 @@ export default function BestShilajitBrandsRanked() {
               },
               {
                 q: "Which shilajit brands have third-party lab testing?",
-                a: "The brands with verified third-party lab testing in our database are: Black Lotus Shilajit (IAS Laboratories, Phoenix AZ), Lotus Blooming Herbs (A2LA ISO 17025 certified), Essencraft (Eurofins ISO 17025), Fractal Forest (A2LA ISO 17025 certified for Himalayan Drops), PrimaVie by Jarrow Formulas (GMP certified, patented extract), Natural Shilajit (third-party COA), and Pürblack (independent testing with 5 patents). Pure Himalayan Shilajit publishes a COA but through their own lab rather than an independent third party.",
+                a: "The brands with verified third-party lab testing in our database are: Black Lotus Shilajit (IAS Laboratories, Phoenix AZ), Lotus Blooming Herbs (A2LA ISO 17025 certified), Essencraft (Eurofins ISO 17025), Fractal Forest (A2LA ISO 17025 certified for Himalayan Drops), PrimaVie by Jarrow Formulas (GMP certified, patented extract), and Natural Shilajit (third-party COA). Pure Himalayan Shilajit publishes a COA but through their own lab rather than an independent third party.",
               },
               {
                 q: "What shilajit brand has the highest fulvic acid percentage?",

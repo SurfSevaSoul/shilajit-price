@@ -677,15 +677,7 @@ export default function LabDataPage() {
                 </div>
               </div>
 
-              <a
-                href="https://purblack.pxf.io/c/7221460/3041684/36963"
-                target="_blank"
-                rel="noopener noreferrer sponsored"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#F0FAF4] hover:bg-emerald-100 border border-[#D1EDD8] hover:border-[#10B981] text-[#10B981] text-xs font-semibold transition-colors"
-              >
-                View Pürblack →
-              </a>
-              <p className="mt-2 text-[10px] text-[#7BA899]">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
+              <p className="mt-2 text-[10px] text-[#7BA899]">Available at purblack.com.</p>
             </div>
           </div>
 

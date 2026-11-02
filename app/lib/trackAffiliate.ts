@@ -7,7 +7,6 @@ export type AffiliateName =
   | "Black Lotus"
   | "Pure Himalayan"
   | "Natural Shilajit"
-  | "Purblack"
   | "Lotus Blooming Herbs"
   | "Fractal Forest"
   | "Amazon";
@@ -28,9 +27,6 @@ export function getAffiliateName(href: string): AffiliateName | null {
   }
   if (href.includes("naturalshilajit.com")) {
     return "Natural Shilajit";
-  }
-  if (href.includes("purblack.pxf.io")) {
-    return "Purblack";
   }
   if (href.includes("lotusbloomingherbs.com")) {
     return "Lotus Blooming Herbs";

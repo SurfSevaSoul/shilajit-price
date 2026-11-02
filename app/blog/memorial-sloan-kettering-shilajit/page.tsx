@@ -5,7 +5,7 @@ import BlogPostLayout, { type FaqItem } from "../../components/blog/BlogPostLayo
 const AFFILIATE_BL = "https://black-lotus-shilajit-shop.myshopify.com?sca_ref=5188496.BbHTin3axE";
 const AFFILIATE_PH = "https://www.purehimalayanshilajit.com/?ref=4792";
 const AFFILIATE_NS = "https://naturalshilajit.com/?rfsn=9069392.c841fa";
-const AFFILIATE_PB = "https://purblack.pxf.io/c/7221460/3041684/36963";
+const AFFILIATE_PB = "";
 
 const BASE_URL = "https://www.shilajitprice.com";
 const SLUG = "memorial-sloan-kettering-shilajit";
@@ -472,7 +472,7 @@ export default function MemorialSloanKetteringShilajit() {
               href: AFFILIATE_PB,
               btnColor: "bg-[#182B1F] hover:bg-violet-600",
               productName: "Purblack Live Resin",
-              discountNote: "Use code SHILAJIT15 for 15% off your entire order at Pürblack.",
+              discountNote: undefined,
             },
           ].map(({ brand, tier, tierColor, tagline, bullets, href, btnColor, productName, discountNote }) => (
             <div key={brand} className="bg-white border-2 border-[#D1EDD8] rounded-2xl overflow-hidden shadow-sm">
@@ -502,7 +502,6 @@ export default function MemorialSloanKetteringShilajit() {
                   View {brand} →
                 </a>
                 <p className="text-center text-[9px] text-[#7BA899] mt-1.5">Affiliate link — commission at no extra cost</p>
-                {discountNote && <p className="text-center text-[9px] text-[#7BA899] mt-1"><strong className="font-bold text-[#0D1F14]">Code SHILAJIT15</strong> — {discountNote}</p>}
               </div>
             </div>
           ))}

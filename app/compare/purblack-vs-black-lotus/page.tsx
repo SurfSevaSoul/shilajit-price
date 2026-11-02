@@ -123,7 +123,7 @@ const PURBLACK = {
   freeShipping: false,
   bestFor: "Patent-backed process & precious metal infusions",
   purityScore: 9,
-  affiliateUrl: "https://purblack.pxf.io/c/7221460/3041684/36963",
+  affiliateUrl: "",
   productLabel: "True Gold Live Resin 30g — $93.33",
   price: "$93.33",
   reviewSlug: "purblack-shilajit-review",
@@ -448,7 +448,6 @@ export default function PurblackVsBlackLotusPage() {
                 >
                   Shop Pürblack →
                 </a>
-                <p className="mt-2 text-[10px] text-center text-[#7BA899]">Use code <strong className="font-bold text-[#0D1F14]">SHILAJIT15</strong> for 15% off your entire order at Pürblack.</p>
               </div>
               <div className="bg-[#F0FAF4] rounded-2xl border border-[#D1EDD8] p-5">
                 <div className="font-black text-[#0D1F14] text-sm mb-2">
