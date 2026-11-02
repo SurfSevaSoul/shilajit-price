@@ -510,6 +510,28 @@ export default function BlackLotusShilajitReview() {
           </div>
         </section>
 
+        {/* Related reading */}
+        <section>
+          <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Related reading</h2>
+          <div className="grid gap-3 sm:grid-cols-3">
+            <Link href="/blog/black-lotus-shilajit-resin-vs-tablets-vs-capsules"
+              className="bg-white border border-[#D1EDD8] rounded-xl p-4 hover:border-[#9EC9AD] transition-colors group">
+              <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">Deep Dive</p>
+              <p className="text-sm font-bold text-[#0D1F14] group-hover:text-emerald-700 leading-tight">Resin vs Tablets vs Capsules — COA Numbers Compared</p>
+            </Link>
+            <Link href="/blog/shilajit-gift-guide"
+              className="bg-white border border-[#D1EDD8] rounded-xl p-4 hover:border-[#9EC9AD] transition-colors group">
+              <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">Buying Guide</p>
+              <p className="text-sm font-bold text-[#0D1F14] group-hover:text-emerald-700 leading-tight">Best Shilajit Gift 2026 — Lab-Verified Picks</p>
+            </Link>
+            <Link href="/blog/shilajit-black-friday-deals"
+              className="bg-white border border-[#D1EDD8] rounded-xl p-4 hover:border-[#9EC9AD] transition-colors group">
+              <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">Buying Guide</p>
+              <p className="text-sm font-bold text-[#0D1F14] group-hover:text-emerald-700 leading-tight">Black Friday 2026 — How to Spot a Real Deal</p>
+            </Link>
+          </div>
+        </section>
+
         {/* Against the Odds callout */}
         <div className="bg-[#0D1F14] border border-[#1E3A28] rounded-2xl p-6">
           <p className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-2">Want the complete protocol?</p>
