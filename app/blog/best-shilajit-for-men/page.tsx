@@ -182,6 +182,27 @@ export default function BestShilajitForMen() {
 
         <ChecklistDownload location="best-shilajit-for-men" compact />
 
+        {/* Black Lotus buy box — top 25% */}
+        <div className="bg-white border-2 border-[#9EC9AD] rounded-2xl p-5 shadow-lg shadow-emerald-900/10">
+          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">#1 for Men — S-Tier</div>
+          <h3 className="text-base font-black text-[#0D1F14] mb-1">Black Lotus Shilajit</h3>
+          <p className="text-xs text-[#7BA899] mb-3">64.51% FA (resin) · 74.30% (tablets) · Mercury ND · Altai sourced · Full COA every batch</p>
+          <p className="text-xs text-[#4A6358] leading-relaxed mb-4">
+            Highest verified fulvic acid in our database. IAS Laboratories (Phoenix AZ), Verploegh/Brandvold method. Mercury not detected across all forms. Want to track results with blood work? See the{" "}
+            <Link href="/blog/shilajit-testosterone-blood-test-results" className="text-[#10B981] hover:underline font-semibold">shilajit testosterone blood test results guide</Link>.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors">
+              View Resin →
+            </a>
+            <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0D1F14] hover:bg-[#182B1F] text-white text-sm font-semibold transition-colors">
+              View Capsules →
+            </a>
+          </div>
+        </div>
+
         {/* Top benefits */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">Top evidence-backed benefits for men</h2>
@@ -437,6 +458,7 @@ export default function BestShilajitForMen() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Related guides</h2>
           <div className="space-y-3">
             {[
+              { href: "/blog/shilajit-testosterone-blood-test-results", title: "Shilajit Testosterone Blood Test Results", desc: "Real blood work data — what 90 days of tracking actually shows" },
               { href: "/blog/best-shilajit-for-testosterone", title: "Best Shilajit for Testosterone", desc: "Clinical research breakdown + top 5 picks ranked by fulvic acid content" },
               { href: "/blog/best-shilajit-for-energy", title: "Best Shilajit for Energy and Fatigue", desc: "How shilajit works at the cellular level + top products for energy" },
               { href: "/blog/shilajit-resin-vs-capsules", title: "Resin vs Capsules vs Powder", desc: "Full form-factor comparison for bioavailability and convenience" },

@@ -11,16 +11,16 @@ const BASE_URL = "https://www.shilajitprice.com";
 const POST_URL = `${BASE_URL}/blog/shilajit-dosage-guide`;
 
 export const metadata: Metadata = {
-  title: "How Much Shilajit Should You Take? Complete Dosage Guide 2026",
+  title: "Shilajit Dosage: Exact Amounts by Form + Timing",
   description:
-    "Research-backed shilajit dosage guide: recommended amounts by form factor, timing, cycling, what happens with too much, and how to start safely as a new user.",
+    "Exact shilajit doses by form factor (resin, capsules, powder), the research-backed timing protocol, how to cycle, and what to do in your first 90 days. Includes a dosage table.",
   keywords:
     "shilajit dosage, how much shilajit to take, shilajit serving size, shilajit resin dosage, shilajit capsules dosage, shilajit cycling, when to take shilajit",
   alternates: { canonical: POST_URL },
   openGraph: {
-    title: "How Much Shilajit Should You Take? Complete Dosage Guide 2026",
+    title: "Shilajit Dosage: Exact Amounts by Form + Timing",
     description:
-      "Research-backed shilajit dosage guide: recommended amounts by form factor, timing, cycling, what happens with too much, and how to start safely as a new user.",
+      "Exact shilajit doses by form factor (resin, capsules, powder), the research-backed timing protocol, how to cycle, and what to do in your first 90 days. Includes a dosage table.",
     url: POST_URL,
     siteName: "ShilajitPrice.com",
     type: "article",

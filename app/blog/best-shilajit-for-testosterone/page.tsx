@@ -200,6 +200,27 @@ export default function BestShilajitForTestosterone() {
 
         <ChecklistDownload location="best-shilajit-for-testosterone" compact />
 
+        {/* Black Lotus buy box — top 25% */}
+        <div className="bg-white border-2 border-[#9EC9AD] rounded-2xl p-5 shadow-lg shadow-emerald-900/10">
+          <div className="text-[10px] font-bold text-[#10B981] uppercase tracking-widest mb-1">#1 Testosterone Pick — S-Tier</div>
+          <h3 className="text-base font-black text-[#0D1F14] mb-1">Black Lotus Shilajit</h3>
+          <p className="text-xs text-[#7BA899] mb-3">64.51% FA (resin) · 74.30% (tablets) · Mercury ND · Altai sourced · Full COA every batch</p>
+          <p className="text-xs text-[#4A6358] leading-relaxed mb-4">
+            The highest verified fulvic acid in our database, tested every batch by IAS Laboratories (Phoenix AZ). Mercury not detected across all three formats. For the 90-day testosterone tracking protocol, see our{" "}
+            <Link href="/blog/shilajit-testosterone-blood-test-results" className="text-[#10B981] hover:underline font-semibold">shilajit testosterone blood test results guide</Link>.
+          </p>
+          <div className="flex flex-wrap gap-3">
+            <a href={AFFILIATE_RESIN} target="_blank" rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-white text-sm font-semibold transition-colors">
+              View Resin →
+            </a>
+            <a href={AFFILIATE_CAPS} target="_blank" rel="noopener noreferrer sponsored"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#0D1F14] hover:bg-[#182B1F] text-white text-sm font-semibold transition-colors">
+              View Capsules →
+            </a>
+          </div>
+        </div>
+
         {/* What to look for */}
         <section>
           <h2 className="text-2xl font-black text-[#0D1F14] mb-5">What to look for when buying shilajit for testosterone support</h2>
@@ -289,7 +310,7 @@ export default function BestShilajitForTestosterone() {
                 "Tested every batch by IAS Laboratories, Phoenix, AZ",
                 "161mg fulvic acid per serving (batch #93-94)",
                 "Full heavy metals panel within FDA action levels",
-                "Himalayan source above 14,000 feet",
+                "Altai Mountain source (Siberian Altai)",
                 "Free shipping on all orders",
               ].map((item) => (
                 <div key={item} className="flex items-start gap-2">
@@ -401,6 +422,7 @@ export default function BestShilajitForTestosterone() {
           <h2 className="text-2xl font-black text-[#0D1F14] mb-4">Keep reading</h2>
           <div className="space-y-3">
             {[
+              { href: "/blog/shilajit-testosterone-blood-test-results", title: "Shilajit Testosterone Blood Test Results", desc: "Real blood work data — what 90 days of tracking actually shows" },
               { href: "/blog/best-shilajit-for-men", title: "Best Shilajit for Men in 2026", desc: "Full guide to energy, testosterone, and performance benefits for men" },
               { href: "/blog/best-shilajit-brands-ranked", title: "Best Shilajit Brands Ranked", desc: "Top 10 brands compared by COA quality, fulvic acid, and price per gram" },
               { href: "/blog/how-to-spot-fake-shilajit", title: "How to Spot Fake Shilajit", desc: "5 tests for authenticity and the red flags to avoid" },
